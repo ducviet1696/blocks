@@ -7,10 +7,7 @@
     "screenshot": "download3.jpg",
     "thumbnail": "download3-4x3.webp",
     "description": "A component displaying a download card with a logo, a heading, a description, version, file size, system requirements, download and view buttons, and trust indicators.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:42.656Z"
-    ],
+    "createdAt": "2025-07-01T03:37:42.656Z",
     "dependencies": [
         "lucide-react"
     ],

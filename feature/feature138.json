@@ -7,10 +7,7 @@
     "screenshot": "feature138.jpg",
     "thumbnail": "feature138-4x3.webp",
     "description": "A component featuring three sections, each with an image and text side-by-side, headers, and a \"Learn more\" link. Alternates image/text order between sections.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.656Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.656Z",
     "dependencies": [
         "lucide-react"
     ],

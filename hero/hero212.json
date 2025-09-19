@@ -7,10 +7,7 @@
     "screenshot": "hero212.jpg",
     "thumbnail": "hero212-4x3.webp",
     "description": "Animated image carousel with auto-switching feature & a unique marquee with cards. Includes a central button & decorative elements.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "react"

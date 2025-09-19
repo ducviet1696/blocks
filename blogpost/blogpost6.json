@@ -7,10 +7,7 @@
     "screenshot": "blogpost6.jpg",
     "thumbnail": "blogpost6-4x3.webp",
     "description": "A blog post component with dynamic breadcrumb navigation, author bio, social sharing, and interactive chapter selection.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.801Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.801Z",
     "dependencies": [
         "lucide-react",
         "react"

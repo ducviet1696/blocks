@@ -7,10 +7,7 @@
     "screenshot": "feature172.jpg",
     "thumbnail": "feature172-4x3.webp",
     "description": "A feature block splits into a 2-item top grid and a 3-item bottom grid, offering detailed insights and visuals for solutions. Unique image alignments highlight offerings.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.588Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.588Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

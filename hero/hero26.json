@@ -7,10 +7,7 @@
     "screenshot": "hero26.jpg",
     "thumbnail": "hero26-4x3.webp",
     "description": "A component featuring a promotional message with an introductory badge link, a large headline, a detailed description integrating icons, and two large buttons for actions.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.612Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.612Z",
     "dependencies": [
         "lucide-react"
     ],

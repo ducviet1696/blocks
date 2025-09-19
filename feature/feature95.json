@@ -7,10 +7,7 @@
     "screenshot": "feature95.jpg",
     "thumbnail": "feature95-4x3.webp",
     "description": "A component with a badge, a title, and a paragraph, followed by a 4-column tabbed interface that switches content views.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.203Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.203Z",
     "dependencies": [
         "\"@radix-ui/react-tabs\""
     ],

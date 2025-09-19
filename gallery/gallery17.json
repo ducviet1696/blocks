@@ -7,10 +7,7 @@
     "screenshot": "gallery17.jpg",
     "thumbnail": "gallery17-4x3.webp",
     "description": "A carousel component featuring an image gallery with navigation arrows and pagination dots. Each image scales and adjusts opacity on selection.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.850Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.850Z",
     "dependencies": [
         "react"
     ],

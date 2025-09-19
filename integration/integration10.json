@@ -7,10 +7,7 @@
     "screenshot": "integration10.jpg",
     "thumbnail": "integration10-4x3.webp",
     "description": "A component showcasing a list of integrations with titles, descriptions, and \"Connect\" buttons, arranged in a single column with a minimalist design.",
-    "createdAt": [
-        3,
-        "2025-04-29T05:49:25.987Z"
-    ],
+    "createdAt": "2025-04-29T05:49:25.987Z",
     "dependencies": [
         "react"
     ],

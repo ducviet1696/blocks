@@ -7,10 +7,7 @@
     "screenshot": "feature214.jpg",
     "thumbnail": "feature214-4x3.webp",
     "description": "A carousel showcasing AI-powered features with autoplaying video cards on hover, including icons and brief descriptions.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.793Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.793Z",
     "dependencies": [
         "lucide-react",
         "react"

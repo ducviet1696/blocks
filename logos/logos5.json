@@ -7,10 +7,7 @@
     "screenshot": "logos5.jpg",
     "thumbnail": "logos5-4x3.webp",
     "description": "A dual-row logo showcase component, featuring 4 logos on the top row and 5 on the bottom, with hover effects and external links.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.628Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.628Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

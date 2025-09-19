@@ -7,10 +7,7 @@
     "screenshot": "gallery10.jpg",
     "thumbnail": "gallery10-4x3.webp",
     "description": "A testimonial carousel component with text content, navigation buttons, and progress indicator. It has a dual-column layout with quotes and images.",
-    "createdAt": [
-        3,
-        "2025-01-20T22:48:37.025Z"
-    ],
+    "createdAt": "2025-01-20T22:48:37.025Z",
     "dependencies": [
         "lucide-react",
         "react"

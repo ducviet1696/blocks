@@ -7,10 +7,7 @@
     "screenshot": "navbar4.jpg",
     "thumbnail": "navbar4-4x3.webp",
     "description": "A navigational component with six main categories, each expanding into detailed sub-menus including solutions, products, company information, customer stories, partner programs, and resources. Features interactive elements for a comprehensive exploration.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.627Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.627Z",
     "dependencies": [
         "lucide-react",
         "react"

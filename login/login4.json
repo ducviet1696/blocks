@@ -7,10 +7,7 @@
     "screenshot": "login4.jpg",
     "thumbnail": "login4-4x3.webp",
     "description": "A login form featuring email and password fields, \"Remember me\" checkbox & Google Login. Includes forgot password & signup links.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.250Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.250Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "pricing29.jpg",
     "thumbnail": "pricing29-4x3.webp",
     "description": "A component displaying 3 pricing tiers with features and CTA buttons, highlighted by design variations for the middle tier.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.379Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.379Z",
     "dependencies": [
         "lucide-react",
         "react"

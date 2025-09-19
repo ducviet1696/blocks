@@ -7,10 +7,7 @@
     "screenshot": "testimonial11.jpg",
     "thumbnail": "testimonial11-4x3.webp",
     "description": "A component displaying a testimonial section with a rating block, supporting multiple columns, and dynamic testimonial visibility based on screen size.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.651Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.651Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "hero5.jpg",
     "thumbnail": "hero5-4x3.webp",
     "description": "A component with a dual-column layout featuring a text block and an image. It includes a heading, paragraph, and a button with an icon. Uses a flexible structure for alignment.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.621Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.621Z",
     "dependencies": [
         "lucide-react"
     ],

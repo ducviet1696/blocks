@@ -7,10 +7,7 @@
     "screenshot": "hero236.jpg",
     "thumbnail": "hero236-4x3.webp",
     "description": "A component features a dynamic, interactive 3D cloud of icons and statistics highlighting key metrics. It splits into two main sections: one side lists achievements using icons and numbers, and the other displays a rotating, interactive cloud of technology icons.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:31.977Z"
-    ],
+    "createdAt": "2025-08-28T06:52:31.977Z",
     "dependencies": [
         "lucide-react",
         "react",

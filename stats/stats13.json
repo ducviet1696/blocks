@@ -7,10 +7,7 @@
     "screenshot": "stats13.jpg",
     "thumbnail": "stats13-4x3.webp",
     "description": "A component showcasing animated bars comparing values, with tooltips and percentage indicators for enhanced visual analysis. Includes a candy-striped background.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:40.857Z"
-    ],
+    "createdAt": "2025-05-04T23:59:40.857Z",
     "dependencies": [
         "\"@number-flow/react\"",
         "framer-motion",

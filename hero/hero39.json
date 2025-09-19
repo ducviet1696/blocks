@@ -7,10 +7,7 @@
     "screenshot": "hero39.jpg",
     "thumbnail": "hero39-4x3.webp",
     "description": "A component with a 2-column layout; one side presents text and a button, the other showcases a stylized, geometric arrangement of elements.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.620Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.620Z",
     "dependencies": [
         "lucide-react"
     ],

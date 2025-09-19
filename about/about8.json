@@ -7,10 +7,7 @@
     "screenshot": "about8.jpg",
     "thumbnail": "about8-4x3.webp",
     "description": "This component features sections about a modern financial entity, including a hero section with a mission statement, stats, core API, a founding team with images, and a unique design with SVG patterns.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.332Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.332Z",
     "dependencies": [
         "react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "hero200.jpg",
     "thumbnail": "hero200-4x3.webp",
     "description": "A component showcasing a centered introductory text with a button and a dynamic phone mockup animation, structured in a single-column layout.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.404Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.404Z",
     "dependencies": [
         "framer-motion",
         "react"

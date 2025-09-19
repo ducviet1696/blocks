@@ -7,10 +7,7 @@
     "screenshot": "careers7.jpg",
     "thumbnail": "careers7-4x3.webp",
     "description": "A component listing job categories and jobs with titles, locations, and \"View listing\" buttons in a structured layout.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.336Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.336Z",
     "dependencies": [],
     "registryDependencies": [
         {

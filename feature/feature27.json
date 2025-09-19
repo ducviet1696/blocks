@@ -7,10 +7,7 @@
     "screenshot": "feature27.jpg",
     "thumbnail": "feature27-4x3.webp",
     "description": "A component featuring an \"Overview\" badge, centered title, and text, followed by two columns of images with captions, and a full-width image with a caption.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.563Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.563Z",
     "dependencies": [],
     "registryDependencies": [
         {

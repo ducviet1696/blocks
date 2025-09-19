@@ -7,10 +7,7 @@
     "screenshot": "hero222.jpg",
     "thumbnail": "hero222-4x3.webp",
     "description": "A component displaying dynamic text with mouse tracking cursor effects, utilizing animated elements and a center-aligned layout with a background image.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

@@ -7,10 +7,7 @@
     "screenshot": "feature236.jpg",
     "thumbnail": "feature236-4x3.webp",
     "description": "This component displays a centralized promotional message for a website builder with interactive elements, including animated buttons and dynamic borders, spanning multiple text sizes and has animated ping effects.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.383Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.383Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

@@ -7,10 +7,7 @@
     "screenshot": "integration1.jpg",
     "thumbnail": "integration1-4x3.webp",
     "description": "A component showcasing a collection of integration options with app icons, titles, and descriptions, arranged in up to two columns.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.459Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.459Z",
     "dependencies": [
         "react"
     ],

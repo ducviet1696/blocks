@@ -7,10 +7,7 @@
     "screenshot": "feature160.jpg",
     "thumbnail": "feature160-4x3.webp",
     "description": "A tabbed component with 4 items, each with an icon, title, and description. Clicking a tab shows a related image. Uses a grid layout for tabs.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.667Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.667Z",
     "dependencies": [
         "lucide-react",
         "react"

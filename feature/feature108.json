@@ -7,10 +7,7 @@
     "screenshot": "feature108.jpg",
     "thumbnail": "feature108-4x3.webp",
     "description": "A tabbed component with 3 tabs, each displaying a title, description, badge, a button with text, and an image. Layout includes two columns in larger views.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.016Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.016Z",
     "dependencies": [
         "\"@radix-ui/react-tabs\"",
         "lucide-react"

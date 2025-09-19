@@ -7,10 +7,7 @@
     "screenshot": "resources3.jpg",
     "thumbnail": "resources3-4x3.webp",
     "description": "A component showcasing a featured post with an image and a list of resources, each with a date, category, and title, arranged in columns.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:40:38.831Z"
-    ],
+    "createdAt": "2025-07-01T03:40:38.831Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature63.jpg",
     "thumbnail": "feature63-4x3.webp",
     "description": "A component showcasing a group of 6 features, each with a title, description, and image, arranged in up to 3 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.583Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.583Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "feature285.jpg",
     "thumbnail": "feature285-4x3.webp",
     "description": "A component with a 2-column layout featuring a brand logo, title, text, and button on one side and dual vertical marquees with interactive images on the other. Unique for image blur on hover.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:05.465Z"
-    ],
+    "createdAt": "2025-08-28T06:51:05.465Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

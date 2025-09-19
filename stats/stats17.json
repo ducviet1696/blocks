@@ -7,10 +7,7 @@
     "screenshot": "stats17.jpg",
     "thumbnail": "stats17-4x3.webp",
     "description": "A stat component displaying a radial chart and key metrics in a 2-column layout, including an SEO optimization percentage, number of built blocks, and a total visitors' trend with icons.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:53:02.276Z"
-    ],
+    "createdAt": "2025-08-28T06:53:02.276Z",
     "dependencies": [
         "lucide-react",
         "react",

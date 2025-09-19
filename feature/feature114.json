@@ -7,10 +7,7 @@
     "screenshot": "feature114.jpg",
     "thumbnail": "feature114-4x3.webp",
     "description": "A component featuring dual-column layout with avatars, a heading, stats, and vertically auto-scrolling carousels showcasing features.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.825Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.825Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "lucide-react"

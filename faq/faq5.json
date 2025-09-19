@@ -7,10 +7,7 @@
     "screenshot": "faq5.jpg",
     "thumbnail": "faq5-4x3.webp",
     "description": "A FAQ component with a badge, heading, and description at the top, followed by a list of questions and answers presented in a single-column layout. Each item features a numeric label.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.113Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.113Z",
     "dependencies": [],
     "registryDependencies": [
         {

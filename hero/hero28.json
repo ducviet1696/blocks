@@ -7,10 +7,7 @@
     "screenshot": "hero28.jpg",
     "thumbnail": "hero28-4x3.webp",
     "description": "A component featuring a background pattern, centered title, subtitle, and button, with decorative icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.613Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.613Z",
     "dependencies": [],
     "registryDependencies": [
         {

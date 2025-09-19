@@ -7,10 +7,7 @@
     "screenshot": "feature213.jpg",
     "thumbnail": "feature213-4x3.webp",
     "description": "A component showcasing features through tabs, detailing functionality with related images and summaries. Includes a main title, 3 tabbed descriptions, and images set in a 16:9 aspect ratio.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.793Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.793Z",
     "dependencies": [],
     "registryDependencies": [
         {

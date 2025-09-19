@@ -7,10 +7,7 @@
     "screenshot": "casestudy1.jpg",
     "thumbnail": "casestudy1-4x3.webp",
     "description": "A component presenting a case study with navigation breadcrumbs, a main section featuring a title, introduction, image, metrics in a 4-column layout, detailed text with an alert and a table, alongside a sticky sidebar with company logo, summary, sector, and action buttons.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.422Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.422Z",
     "dependencies": [
         "lucide-react"
     ],

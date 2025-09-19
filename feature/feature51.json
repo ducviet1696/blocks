@@ -7,10 +7,7 @@
     "screenshot": "feature51.jpg",
     "thumbnail": "feature51-4x3.webp",
     "description": "A tabbed component with 3 options featuring icons. Toggles content display with images.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.573Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.573Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature220b.jpg",
     "thumbnail": "feature220b-4x3.webp",
     "description": "A component showcases statistics and a video/content layout. It has a 2-column grid with stats at the top, a video on the left, and descriptive content on the right.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:56.681Z"
-    ],
+    "createdAt": "2025-07-01T03:37:56.681Z",
     "dependencies": [
         "lucide-react"
     ],

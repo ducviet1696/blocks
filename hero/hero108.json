@@ -7,10 +7,7 @@
     "screenshot": "hero108.jpg",
     "thumbnail": "hero108-4x3.webp",
     "description": "A component featuring a large title about earning from real estate, a list of benefits with check icons, and a &#x27;Start Now&#x27; button. Includes an image section on the right.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:04:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:04:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

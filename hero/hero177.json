@@ -7,10 +7,7 @@
     "screenshot": "hero177.jpg",
     "thumbnail": "hero177-4x3.webp",
     "description": "A component featuring an app rating badge, a bold headline, descriptive text, list of benefits, call-to-action buttons, and two images in distinct aspect ratios.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:37:05.339Z"
-    ],
+    "createdAt": "2024-12-16T05:37:05.339Z",
     "dependencies": [
         "lucide-react"
     ],

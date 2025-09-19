@@ -7,10 +7,7 @@
     "screenshot": "hero10.jpg",
     "thumbnail": "hero10-4x3.webp",
     "description": "A promotional hero block with a background pattern, featuring a badge, a heading, a paragraph, two buttons, and a section showcasing logos.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.606Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.606Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "feature180.jpg",
     "thumbnail": "feature180-4x3.webp",
     "description": "A component contrasting two scenarios with/without a product through icons and text in a 2-column layout, highlighting benefits and downfalls.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.784Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.784Z",
     "dependencies": [
         "lucide-react"
     ],

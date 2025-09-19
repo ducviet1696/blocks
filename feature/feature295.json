@@ -7,10 +7,7 @@
     "screenshot": "feature295.jpg",
     "thumbnail": "feature295-4x3.webp",
     "description": "This component displays projects with filters for categories and roles, and a toggle to show all. It features a 1-3 column grid of project cards.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:38:07.522Z"
-    ],
+    "createdAt": "2025-07-01T03:38:07.522Z",
     "dependencies": [
         "lucide-react",
         "react"

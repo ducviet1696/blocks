@@ -7,10 +7,7 @@
     "screenshot": "hero219.jpg",
     "thumbnail": "hero219-4x3.webp",
     "description": "A dynamic hero block featuring animated text, a particle effect background, and multiple vertical marquees with icons. It includes an engaging headline and a blurred white background overlay.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "react"

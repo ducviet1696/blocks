@@ -7,10 +7,7 @@
     "screenshot": "blog14.jpg",
     "thumbnail": "blog14-4x3.webp",
     "description": "A blog component showcasing 1 main post in a 2-column layout and 3 popular posts in a 3-column layout, featuring images, categories, and summaries.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.419Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.419Z",
     "dependencies": [],
     "registryDependencies": [
         {

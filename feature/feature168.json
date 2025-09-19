@@ -7,10 +7,7 @@
     "screenshot": "feature168.jpg",
     "thumbnail": "feature168-4x3.webp",
     "description": "A component that showcases 3 productivity features with titles, descriptions, and visuals in a 3-column layout, including a highlighted \"Features\" Badge and a main heading.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.588Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.588Z",
     "dependencies": [
         "lucide-react",
         "react"

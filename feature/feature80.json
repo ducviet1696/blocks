@@ -7,10 +7,7 @@
     "screenshot": "feature80.jpg",
     "thumbnail": "feature80-4x3.webp",
     "description": "A component displaying an image next to descriptive text, links with icons, and overlapping avatars, arranged in a flex layout with a 2-column format for widescreens.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.597Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.597Z",
     "dependencies": [
         "lucide-react"
     ],

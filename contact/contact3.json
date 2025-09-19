@@ -7,10 +7,7 @@
     "screenshot": "contact3.jpg",
     "thumbnail": "contact3-4x3.webp",
     "description": "A contact component with a heading, two buttons, and sections for support, sales, inquiries, verification, and global offices. Uses icons and grid layouts.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.097Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.097Z",
     "dependencies": [
         "lucide-react"
     ],

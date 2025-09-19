@@ -7,10 +7,7 @@
     "screenshot": "hero60.jpg",
     "thumbnail": "hero60-4x3.webp",
     "description": "A hero component with a gradient background, featuring a bold title, a descriptive paragraph, and a large call-to-action button with an icon.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.888Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.888Z",
     "dependencies": [
         "lucide-react"
     ],

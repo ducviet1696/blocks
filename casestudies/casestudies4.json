@@ -7,10 +7,7 @@
     "screenshot": "casestudies4.jpg",
     "thumbnail": "casestudies4-4x3.webp",
     "description": "A component displaying a case study summary with an author section, 3 statistics, and a call-to-action button. It features a two-column layout with images.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.255Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.255Z",
     "dependencies": [
         "lucide-react"
     ],

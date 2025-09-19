@@ -7,10 +7,7 @@
     "screenshot": "about3.jpg",
     "thumbnail": "about3-4x3.webp",
     "description": "An about component with a two-column header, a three-column main section for images and text, a logo section, and an achievements showcase. Includes dynamic content and stylized backgrounds.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:35:11.909Z"
-    ],
+    "createdAt": "2024-08-05T05:35:11.909Z",
     "dependencies": [],
     "registryDependencies": [
         {

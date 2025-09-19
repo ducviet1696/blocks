@@ -7,10 +7,7 @@
     "screenshot": "feature86.jpg",
     "thumbnail": "feature86-4x3.webp",
     "description": "A 3-column layout component with a semi-transparent overlay, featuring a badge, texts, a separator, and a video demo link on the left, and a video placeholder image spanning 2 columns on the right.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.199Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.199Z",
     "dependencies": [
         "lucide-react"
     ],

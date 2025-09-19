@@ -7,10 +7,7 @@
     "screenshot": "testimonial6.jpg",
     "thumbnail": "testimonial6-4x3.webp",
     "description": "A carousel showcasing testimonials with navigational controls, featuring a title, user quotes, and their avatars. Each slide shows 1-3 testimonials based on size.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.657Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.657Z",
     "dependencies": [],
     "registryDependencies": [
         {

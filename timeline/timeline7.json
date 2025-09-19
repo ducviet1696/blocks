@@ -7,10 +7,7 @@
     "screenshot": "timeline7.jpg",
     "thumbnail": "timeline7-4x3.webp",
     "description": "A component with a stepper UI to guide through a process, featuring dynamic progress indication, navigational buttons, and transition animations.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.426Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.426Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

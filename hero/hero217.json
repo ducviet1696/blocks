@@ -7,10 +7,7 @@
     "screenshot": "hero217.jpg",
     "thumbnail": "hero217-4x3.webp",
     "description": "A component featuring a main title, a motivational subtitle, dynamic meteors animation, an interactive 3D globe with configurable arcs connecting points, and a CTA button with an animated icon.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "lucide-react",
         "next",

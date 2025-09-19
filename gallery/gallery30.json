@@ -7,10 +7,7 @@
     "screenshot": "gallery30.jpg",
     "thumbnail": "gallery30-4x3.webp",
     "description": "An interactive gallery component with dynamically shuffled images that are draggable. Includes title and description.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:21.897Z"
-    ],
+    "createdAt": "2025-08-28T06:52:21.897Z",
     "dependencies": [
         "framer-motion",
         "react"

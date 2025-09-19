@@ -7,10 +7,7 @@
     "screenshot": "feature36.jpg",
     "thumbnail": "feature36-4x3.webp",
     "description": "A component with a 3-column layout for case studies, featuring one larger highlighted card and five smaller ones, each with a title, badge for the larger card, and a \"Continue reading\" link.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.569Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.569Z",
     "dependencies": [],
     "registryDependencies": [
         {

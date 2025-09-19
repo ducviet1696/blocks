@@ -7,10 +7,7 @@
     "screenshot": "testimonial19.jpg",
     "thumbnail": "testimonial19-4x3.webp",
     "description": "A carousel showcasing client testimonials with a 5-star rating system, client roles, and avatars. Features auto-scroll and multi-column layout.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.915Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.915Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "lucide-react",

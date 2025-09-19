@@ -7,10 +7,7 @@
     "screenshot": "blog7.jpg",
     "thumbnail": "blog7-4x3.webp",
     "description": "A blog showcase block with a header, description, and 3-column grid of posts, featuring images, titles, summaries, and read-more links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.540Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.540Z",
     "dependencies": [
         "lucide-react"
     ],

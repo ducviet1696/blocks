@@ -7,10 +7,7 @@
     "screenshot": "cta26.jpg",
     "thumbnail": "cta26-4x3.webp",
     "description": "A component featuring a full-width image background, overlaid with a call-to-action (CTA) message and a large button. Below, two detailed information blocks are displayed side-by-side, each with an icon, title, and description.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:34.904Z"
-    ],
+    "createdAt": "2025-07-01T03:37:34.904Z",
     "dependencies": [
         "lucide-react"
     ],

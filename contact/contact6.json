@@ -7,10 +7,7 @@
     "screenshot": "contact6.jpg",
     "thumbnail": "contact6-4x3.webp",
     "description": "A contact form component with two columns: one for direct contact info using icons and one for a submission form.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.806Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.806Z",
     "dependencies": [
         "lucide-react",
         "react"

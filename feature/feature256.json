@@ -7,10 +7,7 @@
     "screenshot": "feature256.jpg",
     "thumbnail": "feature256-4x3.webp",
     "description": "A component displaying developer tools and guides, with two distinct sections. Tools section has a 2-3 column layout with icons; Guides use a 1-2 column format with text.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:58.520Z"
-    ],
+    "createdAt": "2025-07-01T03:37:58.520Z",
     "dependencies": [],
     "registryDependencies": [
         {

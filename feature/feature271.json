@@ -7,10 +7,7 @@
     "screenshot": "feature271.jpg",
     "thumbnail": "feature271-4x3.webp",
     "description": "A component showcasing features with an animated background, a central title, a labeled introduction, and a two-column list, each with an icon and a description.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:41.975Z"
-    ],
+    "createdAt": "2025-08-28T06:50:41.975Z",
     "dependencies": [
         "lucide-react",
         "react"

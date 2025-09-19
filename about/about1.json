@@ -7,10 +7,7 @@
     "screenshot": "about1.jpg",
     "thumbnail": "about1-4x3.webp",
     "description": "This component features a multi-section layout introducing a mission with bold statements, detailed objectives, and a call to action for team expansion. It includes text blocks, icons, and image placeholders, organized in columns that adjust between single and multiple (up to three) across different sections. Notably, it incorporates an interactive grid with icons and concise messages to illustrate key points or values.",
-    "createdAt": [
-        3,
-        "2024-10-17T01:55:00.000Z"
-    ],
+    "createdAt": "2024-10-17T01:55:00.000Z",
     "dependencies": [
         "lucide-react"
     ],

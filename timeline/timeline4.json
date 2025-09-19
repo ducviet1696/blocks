@@ -7,10 +7,7 @@
     "screenshot": "timeline4.jpg",
     "thumbnail": "timeline4-4x3.webp",
     "description": "A component showcasing a step-by-step guide with alternating layout, custom badges, icons, and diagonal patterns.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.642Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.642Z",
     "dependencies": [
         "lucide-react"
     ],

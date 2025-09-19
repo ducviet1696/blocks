@@ -7,10 +7,7 @@
     "screenshot": "hero100.jpg",
     "thumbnail": "hero100-4x3.webp",
     "description": "A component featuring a 2-column layout, with text and a call-to-action button on one side and an image on the other. Unique for its visual layering effect.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:28:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:28:05.350Z",
     "dependencies": [],
     "registryDependencies": [
         {

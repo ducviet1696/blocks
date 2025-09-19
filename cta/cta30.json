@@ -7,10 +7,7 @@
     "screenshot": "cta30.jpg",
     "thumbnail": "cta30-4x3.webp",
     "description": "This component displays overlapping avatars, a bold title, a descriptive paragraph, and a featured button with a playful tagline next to a custom line graphic.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.368Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.368Z",
     "dependencies": [],
     "registryDependencies": [
         {

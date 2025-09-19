@@ -7,10 +7,7 @@
     "screenshot": "feature33.jpg",
     "thumbnail": "feature33-4x3.webp",
     "description": "This component displays a main title, a subtitle, an image, and a three-column layout of cards, each containing a title, text, and link.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.567Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.567Z",
     "dependencies": [],
     "registryDependencies": [
         {

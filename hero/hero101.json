@@ -7,10 +7,7 @@
     "screenshot": "hero101.jpg",
     "thumbnail": "hero101-4x3.webp",
     "description": "A component with a promotional header, featuring a title, description, start button, and demo video button that triggers a modal with a video player. It also displays partner logos below.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:39:05.321Z"
-    ],
+    "createdAt": "2024-12-16T05:39:05.321Z",
     "dependencies": [
         "lucide-react",
         "react"

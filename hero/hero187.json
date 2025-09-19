@@ -7,10 +7,7 @@
     "screenshot": "hero187.jpg",
     "thumbnail": "hero187-4x3.webp",
     "description": "A dual-section component with a gradient border. Features text block, 4 distinct features with icons, two buttons, and a carousel with auto-play and slide indication.",
-    "createdAt": [
-        3,
-        "2024-12-20T09:25:13.636Z"
-    ],
+    "createdAt": "2024-12-20T09:25:13.636Z",
     "dependencies": [
         "embla-carousel-autoplay",
         "lucide-react",

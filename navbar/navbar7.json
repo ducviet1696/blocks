@@ -7,10 +7,7 @@
     "screenshot": "navbar7.jpg",
     "thumbnail": "navbar7-4x3.webp",
     "description": "A multifunctional navigation component featuring dropdown menus for solutions and resources, a platform category with logos, and authentication buttons. It includes a mobile-friendly menu triggered by an icon.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.462Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.462Z",
     "dependencies": [
         "lucide-react",
         "react"

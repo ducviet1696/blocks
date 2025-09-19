@@ -7,10 +7,7 @@
     "screenshot": "team2.jpg",
     "thumbnail": "team2-4x3.webp",
     "description": "A component showcasing a team with a section title, description, and a grid of profiles (up to 4 columns), each with an avatar, name, role, description, and social links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.646Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.646Z",
     "dependencies": [
         "lucide-react"
     ],

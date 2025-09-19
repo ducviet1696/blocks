@@ -7,10 +7,7 @@
     "screenshot": "footer3.jpg",
     "thumbnail": "footer3-4x3.webp",
     "description": "A footer component with a logo, navigation links in 2-5 columns, social icons, newsletter subscription form, and legal links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.600Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.600Z",
     "dependencies": [
         "react-icons"
     ],

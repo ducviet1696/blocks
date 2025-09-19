@@ -7,10 +7,7 @@
     "screenshot": "feature245.jpg",
     "thumbnail": "feature245-4x3.webp",
     "description": "A component showcasing eight feature highlights with animated text and decorative slashes, centered around a single card image, structured in a dual-column layout.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.384Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.384Z",
     "dependencies": [
         "framer-motion",
         "react"

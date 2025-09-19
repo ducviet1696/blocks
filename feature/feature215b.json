@@ -7,10 +7,7 @@
     "screenshot": "feature215b.jpg",
     "thumbnail": "feature215b-4x3.webp",
     "description": "A component featuring a collection of horizontal cards, each with a video, icon, title, summary, and link. Cards activate video on hover.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:49.312Z"
-    ],
+    "createdAt": "2025-07-01T03:37:49.312Z",
     "dependencies": [
         "lucide-react",
         "react"

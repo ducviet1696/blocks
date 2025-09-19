@@ -7,10 +7,7 @@
     "screenshot": "banner5.jpg",
     "thumbnail": "banner5-4x3.webp",
     "description": "A dismissible banner component with an icon, title, description, and external link button. Features a close button, adapts layout from column to row on wider screens.",
-    "createdAt": [
-        3,
-        "2025-01-05T03:59:55.495Z"
-    ],
+    "createdAt": "2025-01-05T03:59:55.495Z",
     "dependencies": [
         "lucide-react",
         "react"

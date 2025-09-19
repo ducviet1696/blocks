@@ -7,10 +7,7 @@
     "screenshot": "hero197.jpg",
     "thumbnail": "hero197-4x3.webp",
     "description": "A component featuring a dotted background, a badge with a sparkle icon, a large gradient text headline, a description, and two buttons side by side on smaller screens and stacked on larger screens.",
-    "createdAt": [
-        3,
-        "2025-02-24T03:01:53.436Z"
-    ],
+    "createdAt": "2025-02-24T03:01:53.436Z",
     "dependencies": [
         "lucide-react"
     ],

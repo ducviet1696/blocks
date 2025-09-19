@@ -7,10 +7,7 @@
     "screenshot": "feature293.jpg",
     "thumbnail": "feature293-4x3.webp",
     "description": "A subscription component with a headline, description, email input, button, and animated background. It spans the full screen, contains two columns in the input area, and features dynamic sparkles.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:21.784Z"
-    ],
+    "createdAt": "2025-08-28T06:51:21.784Z",
     "dependencies": [
         "lucide-react",
         "react"

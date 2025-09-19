@@ -7,10 +7,7 @@
     "screenshot": "blog12.jpg",
     "thumbnail": "blog12-4x3.webp",
     "description": "A blog preview block with a header, three article cards in a 3-column layout, and a \"View All Blogs\" button. Each card includes an image, title, summary, author avatar, and read time.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.796Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.796Z",
     "dependencies": [
         "lucide-react"
     ],

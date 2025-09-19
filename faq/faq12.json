@@ -7,10 +7,7 @@
     "screenshot": "faq12.jpg",
     "thumbnail": "faq12-4x3.webp",
     "description": "An FAQ component displaying questions under categories with a clickable sidebar for navigation. Features include dynamic active state updates and smooth scrolling.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.577Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.577Z",
     "dependencies": [
         "react"
     ],

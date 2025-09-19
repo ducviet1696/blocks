@@ -7,10 +7,7 @@
     "screenshot": "stats4.jpg",
     "thumbnail": "stats4-4x3.webp",
     "description": "A component displays platform ratings from Apple Store, Play Store, and Trustpilot, along with a headline. It uses star icons for ratings and logos for each platform.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:07:35.867Z"
-    ],
+    "createdAt": "2024-11-15T06:07:35.867Z",
     "dependencies": [
         "lucide-react",
         "react-icons"

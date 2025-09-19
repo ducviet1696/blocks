@@ -7,10 +7,7 @@
     "screenshot": "feature94.jpg",
     "thumbnail": "feature94-4x3.webp",
     "description": "A component showcasing a title, a button, and a 4-column layout with cards, each containing images, titles, and text about different features.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.203Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.203Z",
     "dependencies": [],
     "registryDependencies": [
         {

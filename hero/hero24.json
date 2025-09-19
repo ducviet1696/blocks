@@ -7,10 +7,7 @@
     "screenshot": "hero24.jpg",
     "thumbnail": "hero24-4x3.webp",
     "description": "A marketing block with an image, title, button, and 4 columns highlighting features with icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.611Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.611Z",
     "dependencies": [
         "lucide-react"
     ],

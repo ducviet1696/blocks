@@ -7,10 +7,7 @@
     "screenshot": "feature221.jpg",
     "thumbnail": "feature221-4x3.webp",
     "description": "A component showcasing 4 unique features in a 2-column layout with gradient badges, detailed descriptions, and a \"Learn More\" button. It includes a prominent title and subtitle.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.794Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.794Z",
     "dependencies": [
         "lucide-react"
     ],

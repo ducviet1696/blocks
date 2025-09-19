@@ -7,10 +7,7 @@
     "screenshot": "about7.jpg",
     "thumbnail": "about7-4x3.webp",
     "description": "A component showcasing a company&#x27;s background with a hero section, images, and detailed narrative on their journey, including a call-to-action for open roles.",
-    "createdAt": [
-        3,
-        "2024-12-20T09:25:13.514Z"
-    ],
+    "createdAt": "2024-12-20T09:25:13.514Z",
     "dependencies": [
         "lucide-react"
     ],

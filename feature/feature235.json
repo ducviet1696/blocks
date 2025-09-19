@@ -7,10 +7,7 @@
     "screenshot": "feature235.jpg",
     "thumbnail": "feature235-4x3.webp",
     "description": "A component displays UI blocks with flickering image animations and a stylized border effect. It includes descriptive text and buttons, within a dual-column layout.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.383Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.383Z",
     "dependencies": [
         "lucide-react"
     ],

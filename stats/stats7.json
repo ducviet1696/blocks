@@ -7,10 +7,7 @@
     "screenshot": "stats7.jpg",
     "thumbnail": "stats7-4x3.webp",
     "description": "A component displaying weekly stats in a bordered block with 3 metrics (work completed, progress metric, error rate), each with percentages, arrows indicating trend, and progress bars.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:07:35.868Z"
-    ],
+    "createdAt": "2024-11-15T06:07:35.868Z",
     "dependencies": [
         "lucide-react"
     ],

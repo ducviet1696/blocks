@@ -7,10 +7,7 @@
     "screenshot": "feature3.jpg",
     "thumbnail": "feature3-4x3.webp",
     "description": "A component showcasing a 3-column layout of cards, each featuring an icon, title, text, and image, adaptable to 1 or 2 columns on smaller screens.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.566Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.566Z",
     "dependencies": [
         "lucide-react"
     ],

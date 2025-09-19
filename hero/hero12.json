@@ -7,10 +7,7 @@
     "screenshot": "hero12.jpg",
     "thumbnail": "hero12-4x3.webp",
     "description": "A promotional component with a unique radial gradient background, a centered layout featuring a logo, a bold title with styled text, body text, two call-to-action buttons, and a showcase area for technology logos with hover effects.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.607Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.607Z",
     "dependencies": [
         "lucide-react"
     ],

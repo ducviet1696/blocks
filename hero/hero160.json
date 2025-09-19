@@ -7,10 +7,7 @@
     "screenshot": "hero160.jpg",
     "thumbnail": "hero160-4x3.webp",
     "description": "This component displays an overlay text and buttons on an image backdrop with an aspect-ratio image below. Features a badge with an award, a gradient headline, a subtext, and action buttons. Also includes a small text with icons.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:12:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:12:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature288.jpg",
     "thumbnail": "feature288-4x3.webp",
     "description": "A component featuring a central text block with embedded clickable previews, housed within a single column layout, emphasizing the ease of integration and customization.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:12.505Z"
-    ],
+    "createdAt": "2025-08-28T06:51:12.505Z",
     "dependencies": [
         "react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature197.jpg",
     "thumbnail": "feature197-4x3.webp",
     "description": "This component displays features in an accordion with dynamic image updates. Layout includes 2 columns, interactive tabs on the left, image preview on the right.",
-    "createdAt": [
-        3,
-        "2025-01-05T02:09:48.131Z"
-    ],
+    "createdAt": "2025-01-05T02:09:48.131Z",
     "dependencies": [
         "react"
     ],

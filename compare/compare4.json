@@ -7,10 +7,7 @@
     "screenshot": "compare4.jpg",
     "thumbnail": "compare4-4x3.webp",
     "description": "A comparison component contrasting traditional vs cloud-native approaches across multiple metrics with hover-to-highlight functionality and a \"Get Started\" button.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.422Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.422Z",
     "dependencies": [
         "lucide-react"
     ],

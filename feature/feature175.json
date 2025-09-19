@@ -7,10 +7,7 @@
     "screenshot": "feature175.jpg",
     "thumbnail": "feature175-4x3.webp",
     "description": "This component displays features using tabs with vertical orientation, switches images and descriptions onClick, includes custom icons.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.589Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.589Z",
     "dependencies": [
         "lucide-react"
     ],

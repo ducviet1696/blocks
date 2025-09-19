@@ -7,10 +7,7 @@
     "screenshot": "timeline11.jpg",
     "thumbnail": "timeline11-4x3.webp",
     "description": "A 4-column timeline component showcasing phases with icons, dates, titles, and descriptions. Features an animated progress indicator.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.425Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.425Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

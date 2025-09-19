@@ -7,10 +7,7 @@
     "screenshot": "feature62.jpg",
     "thumbnail": "feature62-4x3.webp",
     "description": "A three-row component featuring alternating image-text layouts with descriptive text blocks and images in bordered, rounded frames.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.582Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.582Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

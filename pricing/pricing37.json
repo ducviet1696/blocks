@@ -7,10 +7,7 @@
     "screenshot": "pricing37.jpg",
     "thumbnail": "pricing37-4x3.webp",
     "description": "A premium plan showcase block with a title, subtitle, price, and features list followed by a button. Uses iconography for feature representation.",
-    "createdAt": [
-        3,
-        "2025-08-28T04:52:58.722Z"
-    ],
+    "createdAt": "2025-08-28T04:52:58.722Z",
     "dependencies": [
         "lucide-react",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "hero152.jpg",
     "thumbnail": "hero152-4x3.webp",
     "description": "This component features a centered column with a trusted badge, a bold heading, a descriptive paragraph, and two buttons. It also includes an angled 3-image composition.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:32:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:32:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

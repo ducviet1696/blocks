@@ -7,10 +7,7 @@
     "screenshot": "community4.jpg",
     "thumbnail": "community4-4x3.webp",
     "description": "A component with a title, description, and a grid of links to social platforms, each with an icon, a unique color background, headings, and descriptions.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.172Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.172Z",
     "dependencies": [
         "lucide-react",
         "react-icons"

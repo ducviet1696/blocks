@@ -7,10 +7,7 @@
     "screenshot": "hero185.jpg",
     "thumbnail": "hero185-4x3.webp",
     "description": "A component with two columns; one for a headline, subtext, and a large image, the other features two images and descriptive text emphasizing productivity and collaboration.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.614Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.614Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

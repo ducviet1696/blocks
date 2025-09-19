@@ -7,10 +7,7 @@
     "screenshot": "feature218.jpg",
     "thumbnail": "feature218-4x3.webp",
     "description": "A component featuring two columns with a 1:2 ratio, showcasing a promotional message and a call-to-action button on the left, and an image with a unique fade effect on the right.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.834Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.834Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "testimonial14.jpg",
     "thumbnail": "testimonial14-4x3.webp",
     "description": "A carousel component showcasing testimonials, featuring text quotes, avatars, names, roles, and a 5-star rating system. Includes navigation dots for carousel control.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.654Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.654Z",
     "dependencies": [
         "react"
     ],

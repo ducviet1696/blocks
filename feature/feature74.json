@@ -7,10 +7,7 @@
     "screenshot": "feature74.jpg",
     "thumbnail": "feature74-4x3.webp",
     "description": "A component with a title, description, and 2-column grid each hosting an image and text describing different features, with a \"Book a demo\" link.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.593Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.593Z",
     "dependencies": [
         "lucide-react"
     ],

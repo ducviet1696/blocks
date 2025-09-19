@@ -7,10 +7,7 @@
     "screenshot": "feature50.jpg",
     "thumbnail": "feature50-4x3.webp",
     "description": "A component with a central message and a button, followed by a grid of 3 visual blocks, each with text and \"Learn more\" buttons. One spans full-width, others take half.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.573Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.573Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature186.jpg",
     "thumbnail": "feature186-4x3.webp",
     "description": "A tabbed component displaying features with icons, descriptions, and images. It toggles between three key features, each with its visual and text content.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.436Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.436Z",
     "dependencies": [
         "lucide-react",
         "react"

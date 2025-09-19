@@ -7,10 +7,7 @@
     "screenshot": "contact11.jpg",
     "thumbnail": "contact11-4x3.webp",
     "description": "A component featuring a contact form with fields for personal and company details, alongside sections for corporate information, email contacts, and social media links.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.571Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.571Z",
     "dependencies": [
         "lucide-react"
     ],

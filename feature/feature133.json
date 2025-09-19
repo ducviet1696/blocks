@@ -7,10 +7,7 @@
     "screenshot": "feature133.jpg",
     "thumbnail": "feature133-4x3.webp",
     "description": "A component featuring three sections highlighting business integrations with icons, titles, and descriptions. Layout includes a main header and a 3-column section beneath it.",
-    "createdAt": [
-        3,
-        "2024-10-17T05:25:53.973Z"
-    ],
+    "createdAt": "2024-10-17T05:25:53.973Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "gallery20.jpg",
     "thumbnail": "gallery20-4x3.webp",
     "description": "A gallery component displaying overlapping, draggable images with dynamic animation. Includes textual content and a button, all within a single column layout.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.818Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.818Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

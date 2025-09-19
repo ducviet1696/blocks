@@ -7,10 +7,7 @@
     "screenshot": "feature215a.jpg",
     "thumbnail": "feature215a-4x3.webp",
     "description": "A component showcasing a grid of cards with videos, icons, and texts. Features hover-to-play videos and links.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:48.027Z"
-    ],
+    "createdAt": "2025-07-01T03:37:48.027Z",
     "dependencies": [
         "lucide-react",
         "react"

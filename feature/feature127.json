@@ -7,10 +7,7 @@
     "screenshot": "feature127.jpg",
     "thumbnail": "feature127-4x3.webp",
     "description": "This block showcases utilities with dynamic grid visuals and descriptive cards, detailing features through icons, titles, and texts alongside faded image backgrounds.",
-    "createdAt": [
-        3,
-        "2024-10-17T05:25:53.970Z"
-    ],
+    "createdAt": "2024-10-17T05:25:53.970Z",
     "dependencies": [
         "lucide-react"
     ],

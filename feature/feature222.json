@@ -7,10 +7,7 @@
     "screenshot": "feature222.jpg",
     "thumbnail": "feature222-4x3.webp",
     "description": "A component displaying a grid of cards with images, titles, stats, and a \"Read Story\" button. Cards are dynamically populated from a list.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.794Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.794Z",
     "dependencies": [
         "lucide-react"
     ],

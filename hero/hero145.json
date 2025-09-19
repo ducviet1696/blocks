@@ -7,10 +7,7 @@
     "screenshot": "hero145.jpg",
     "thumbnail": "hero145-4x3.webp",
     "description": "This component displays a full-width background with a dynamic, animated heading that changes text over time and includes a description with buttons for user actions.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:10:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:10:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

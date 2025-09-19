@@ -7,10 +7,7 @@
     "screenshot": "testimonial15.jpg",
     "thumbnail": "testimonial15-4x3.webp",
     "description": "A component with a 2-column layout, showcasing a headline, description, button, company logos, and 4 personalized testimonials with avatars.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.654Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.654Z",
     "dependencies": [],
     "registryDependencies": [
         {

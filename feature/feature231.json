@@ -7,10 +7,7 @@
     "screenshot": "feature231.jpg",
     "thumbnail": "feature231-4x3.webp",
     "description": "A component showcasing 4 features and a call-to-action, split into 2 columns on larger screens. Each feature is numbered and detailed.",
-    "createdAt": [
-        3,
-        "2025-02-24T03:01:53.418Z"
-    ],
+    "createdAt": "2025-02-24T03:01:53.418Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "signup4.jpg",
     "thumbnail": "signup4-4x3.webp",
     "description": "A signup component featuring a logo, headings, email/password inputs, and social media signup options (Google, Facebook, Apple). Includes a &#x27;login&#x27; link.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.906Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.906Z",
     "dependencies": [],
     "registryDependencies": [
         {

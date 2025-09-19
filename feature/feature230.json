@@ -7,10 +7,7 @@
     "screenshot": "feature230.jpg",
     "thumbnail": "feature230-4x3.webp",
     "description": "A component showcasing cloud service benefits using a large header, description, and 4 feature callouts with icons, arranged in a 4:6 column layout.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.370Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.370Z",
     "dependencies": [
         "lucide-react"
     ],

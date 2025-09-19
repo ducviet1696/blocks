@@ -7,10 +7,7 @@
     "screenshot": "feature191.jpg",
     "thumbnail": "feature191-4x3.webp",
     "description": "A component featuring a highlighted message and a 3-column layout of cards, each card displaying a sequence badge, a title, description, and image.",
-    "createdAt": [
-        3,
-        "2025-01-20T22:48:37.015Z"
-    ],
+    "createdAt": "2025-01-20T22:48:37.015Z",
     "dependencies": [
         "lucide-react"
     ],

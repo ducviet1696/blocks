@@ -7,10 +7,7 @@
     "screenshot": "feature142.jpg",
     "thumbnail": "feature142-4x3.webp",
     "description": "A grid-based component with a unique layout, featuring an image and text in a stylized block with border details, accompanied by a list with icons and a badge.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.658Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.658Z",
     "dependencies": [
         "lucide-react"
     ],

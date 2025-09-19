@@ -7,10 +7,7 @@
     "screenshot": "feature90.jpg",
     "thumbnail": "feature90-4x3.webp",
     "description": "A marketing component featuring a title, description, button, a row of logos, and a link to more integrations.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.200Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.200Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "hero151.jpg",
     "thumbnail": "hero151-4x3.webp",
     "description": "A component featuring a title, description, large button, overlapping avatars with quotes, and a 2x2 grid of images incorporating unique aspect ratios and placements.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:47:05.332Z"
-    ],
+    "createdAt": "2024-12-16T05:47:05.332Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "hero237.jpg",
     "thumbnail": "hero237-4x3.webp",
     "description": "A component featuring a split layout with a \"Why Us?\" pitch, key stats, and orbiting tech logos on one side, and dynamic circular orbit animations on the other.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:33.941Z"
-    ],
+    "createdAt": "2025-08-28T06:52:33.941Z",
     "dependencies": [
         "lucide-react",
         "react"

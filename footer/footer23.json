@@ -7,10 +7,7 @@
     "screenshot": "footer23.jpg",
     "thumbnail": "footer23-4x3.webp",
     "description": "A footer component with a logo, description, link columns, and an animated globe. Includes 3 sections with navigational links and separators.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.816Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.816Z",
     "dependencies": [],
     "registryDependencies": [
         {

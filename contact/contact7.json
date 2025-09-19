@@ -7,10 +7,7 @@
     "screenshot": "contact7.jpg",
     "thumbnail": "contact7-4x3.webp",
     "description": "A contact block with title, description, and 3 columns for email, address, and phone, each with icons.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.807Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.807Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature116.jpg",
     "thumbnail": "feature116-4x3.webp",
     "description": "This component displays a title, subtitle, and a grid of images (3 columns, 2 rows) with hover effects and call-to-action links.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.826Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.826Z",
     "dependencies": [
         "lucide-react"
     ],

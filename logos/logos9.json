@@ -7,10 +7,7 @@
     "screenshot": "logos9.jpg",
     "thumbnail": "logos9-4x3.webp",
     "description": "A component showcasing product team endorsements and logos in carousels, with auto-scrolling functionality and dynamic column adjustments.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.415Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.415Z",
     "dependencies": [
         "embla-carousel-auto-scroll"
     ],

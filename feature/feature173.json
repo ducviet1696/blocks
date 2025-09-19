@@ -7,10 +7,7 @@
     "screenshot": "feature173.jpg",
     "thumbnail": "feature173-4x3.webp",
     "description": "A component showcasing metrics with icons in a 3-column layout, highlighting improvements in bugs, notifications, and chaos. Features gradient cards.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.588Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.588Z",
     "dependencies": [
         "lucide-react"
     ],

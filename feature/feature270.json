@@ -7,10 +7,7 @@
     "screenshot": "feature270.jpg",
     "thumbnail": "feature270-4x3.webp",
     "description": "A component displaying customizable feature blocks with images, titles, and descriptions in a grid of 2 or 3 columns, depending on screen size.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:39.046Z"
-    ],
+    "createdAt": "2025-08-28T06:50:39.046Z",
     "dependencies": [
         "motion",
         "react"

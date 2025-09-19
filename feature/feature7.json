@@ -7,10 +7,7 @@
     "screenshot": "feature7.jpg",
     "thumbnail": "feature7-4x3.webp",
     "description": "A 2-column component with a full-width image and a text block featuring an icon, a bold title, descriptive text, and a list with checkmarks.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.589Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.589Z",
     "dependencies": [
         "lucide-react"
     ],

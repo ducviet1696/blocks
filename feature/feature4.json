@@ -7,10 +7,7 @@
     "screenshot": "feature4.jpg",
     "thumbnail": "feature4-4x3.webp",
     "description": "A component featuring a main title, a card with text and an oversized image, and a 2-column layout with another card and a quote box.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.571Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.571Z",
     "dependencies": [
         "lucide-react"
     ],

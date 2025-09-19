@@ -7,10 +7,7 @@
     "screenshot": "login6.jpg",
     "thumbnail": "login6-4x3.webp",
     "description": "A login form component with email and password fields, sign-in and Google sign-up buttons, links for account creation and password recovery.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.413Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.413Z",
     "dependencies": [],
     "registryDependencies": [
         {

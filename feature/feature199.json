@@ -7,10 +7,7 @@
     "screenshot": "feature199.jpg",
     "thumbnail": "feature199-4x3.webp",
     "description": "A component displaying a dynamic list of features with images - 3:2 column split, scrolls to highlight features.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.786Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.786Z",
     "dependencies": [
         "react"
     ],

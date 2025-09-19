@@ -7,10 +7,7 @@
     "screenshot": "faq14.jpg",
     "thumbnail": "faq14-4x3.webp",
     "description": "An FAQ component with a central heading, a subtitle, and grouped questions within collapsible cards, each representing a category. Includes a decorative background.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.340Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.340Z",
     "dependencies": [
         "react"
     ],

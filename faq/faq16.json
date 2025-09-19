@@ -7,10 +7,7 @@
     "screenshot": "faq16.jpg",
     "thumbnail": "faq16-4x3.webp",
     "description": "An accordion-style FAQ block with a title and expandable question items, set in a centered layout with a max-width.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.369Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.369Z",
     "dependencies": [
         "react"
     ],

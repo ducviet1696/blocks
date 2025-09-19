@@ -7,10 +7,7 @@
     "screenshot": "hero68.jpg",
     "thumbnail": "hero68-4x3.webp",
     "description": "A component with a promotional message, featuring a central title, a subtitle, buttons for action calls (trial/demo), and a 3-column footer highlighting service benefits with icons.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.889Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.889Z",
     "dependencies": [
         "lucide-react"
     ],

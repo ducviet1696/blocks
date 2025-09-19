@@ -7,10 +7,7 @@
     "screenshot": "casestudies1.jpg",
     "thumbnail": "casestudies1-4x3.webp",
     "description": "A component with a grid layout of promotional blocks, featuring 2 large and 5 smaller items across 2 columns, showcasing images, logos, and headings.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.254Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.254Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

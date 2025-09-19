@@ -7,10 +7,7 @@
     "screenshot": "hero171.jpg",
     "thumbnail": "hero171-4x3.webp",
     "description": "This component displays a hero section with two main blocks: content with text, buttons, avatars, and stats on the left, and a grid layout with vector graphics and images on the right. It includes a modal video dialog.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:48:05.338Z"
-    ],
+    "createdAt": "2024-12-16T05:48:05.338Z",
     "dependencies": [
         "lucide-react",
         "react"

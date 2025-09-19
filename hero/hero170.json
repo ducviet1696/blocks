@@ -7,10 +7,7 @@
     "screenshot": "hero170.jpg",
     "thumbnail": "hero170-4x3.webp",
     "description": "A component featuring a headline, a subtext, buttons for app download and GitHub star, integration options with icons, and a video preview with decorative dots.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:18:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:18:05.350Z",
     "dependencies": [
         "react-icons"
     ],

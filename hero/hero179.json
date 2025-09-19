@@ -7,10 +7,7 @@
     "screenshot": "hero179.jpg",
     "thumbnail": "hero179-4x3.webp",
     "description": "A component with a 2-column layout. The left column contains text layers, and the right has overlapping images with unique aspect ratios.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:34:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:34:05.350Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "integration4.jpg",
     "thumbnail": "integration4-4x3.webp",
     "description": "A component depicting global connectivity with a central title, supportive text, and graphical illustrations of interconnected nodes, accented by a large background image.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.460Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.460Z",
     "dependencies": [
         "lucide-react"
     ],

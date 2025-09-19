@@ -7,10 +7,7 @@
     "screenshot": "community7.jpg",
     "thumbnail": "community7-4x3.webp",
     "description": "A component showcasing social media platforms in a 3-column layout, with icons, links, online status, and follower counts.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.173Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.173Z",
     "dependencies": [
         "react-icons"
     ],

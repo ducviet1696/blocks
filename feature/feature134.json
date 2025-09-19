@@ -7,10 +7,7 @@
     "screenshot": "feature134.jpg",
     "thumbnail": "feature134-4x3.webp",
     "description": "This component displays a feature section with an outline badge, a title, a subtitle, and a 3-column layout of clickable feature cards, each with titles, descriptions, icons, and images.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.829Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.829Z",
     "dependencies": [
         "lucide-react"
     ],

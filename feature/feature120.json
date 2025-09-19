@@ -7,10 +7,7 @@
     "screenshot": "feature120.jpg",
     "thumbnail": "feature120-4x3.webp",
     "description": "A component showcasing business tools with a 2-column layout, avatars, quotes, action button, and a 4-column stats grid.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.828Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.828Z",
     "dependencies": [],
     "registryDependencies": [
         {

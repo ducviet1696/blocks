@@ -7,10 +7,7 @@
     "screenshot": "feature102.jpg",
     "thumbnail": "feature102-4x3.webp",
     "description": "A component displaying a title, a brief description, and 3 features with images. Each feature includes a number indicator, title, and description.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.014Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.014Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

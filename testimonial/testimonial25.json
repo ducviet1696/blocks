@@ -7,10 +7,7 @@
     "screenshot": "testimonial25.jpg",
     "thumbnail": "testimonial25-4x3.webp",
     "description": "Testimonial carousel with navigation buttons, cards displaying quotes, authors, roles, companies, and images.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:58:00.693Z"
-    ],
+    "createdAt": "2025-01-23T06:58:00.693Z",
     "dependencies": [
         "lucide-react"
     ],

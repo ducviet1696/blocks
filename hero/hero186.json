@@ -7,10 +7,7 @@
     "screenshot": "hero186.jpg",
     "thumbnail": "hero186-4x3.webp",
     "description": "A component with two columns: Main content on left with title, description, and buttons; Features list on right with icons. Includes an image below.",
-    "createdAt": [
-        3,
-        "2024-12-20T09:23:45.418Z"
-    ],
+    "createdAt": "2024-12-20T09:23:45.418Z",
     "dependencies": [
         "lucide-react"
     ],

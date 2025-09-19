@@ -7,10 +7,7 @@
     "screenshot": "feature144.jpg",
     "thumbnail": "feature144-4x3.webp",
     "description": "A component featuring a central heading, a description, and three Cards, each with an image, a title, and a Badge. The Cards display in a single column for mobile and in rows for larger screens.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.659Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.659Z",
     "dependencies": [],
     "registryDependencies": [
         {

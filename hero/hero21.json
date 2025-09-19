@@ -7,10 +7,7 @@
     "screenshot": "hero21.jpg",
     "thumbnail": "hero21-4x3.webp",
     "description": "A component with a headline, description, badges, buttons for actions & demo, and a call-to-action link. Includes an image beneath text content. Uses 2 columns and rounded design elements.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.611Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.611Z",
     "dependencies": [
         "lucide-react"
     ],

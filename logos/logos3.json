@@ -7,10 +7,7 @@
     "screenshot": "logos3.jpg",
     "thumbnail": "logos3-4x3.webp",
     "description": "A component displaying logos in a carousel with auto-scroll feature. Logos are shown in columns that adjust layout based on screen size.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.624Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.624Z",
     "dependencies": [
         "embla-carousel-auto-scroll"
     ],

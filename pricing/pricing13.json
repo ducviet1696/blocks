@@ -7,10 +7,7 @@
     "screenshot": "pricing13.jpg",
     "thumbnail": "pricing13-4x3.webp",
     "description": "A component showcasing 3 add-on options, each with a title, description, and pricing/contact info. It features an image and introductory text.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.633Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.633Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

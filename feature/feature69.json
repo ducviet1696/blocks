@@ -7,10 +7,7 @@
     "screenshot": "feature69.jpg",
     "thumbnail": "feature69-4x3.webp",
     "description": "A carousel component with an image slider and a side list detailing features. It evolves around dynamically updating content based on user interaction.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.589Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.589Z",
     "dependencies": [
         "lucide-react",
         "react"

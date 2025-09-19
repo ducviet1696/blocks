@@ -7,10 +7,7 @@
     "screenshot": "pricing3.jpg",
     "thumbnail": "pricing3-4x3.webp",
     "description": "A pricing block with a yearly billing switch, featuring 3 columns for Basic, Standard, and Premium plans. Includes feature lists and pricing details.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.636Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.636Z",
     "dependencies": [
         "lucide-react",
         "react"

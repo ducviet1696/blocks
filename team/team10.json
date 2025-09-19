@@ -7,10 +7,7 @@
     "screenshot": "team10.jpg",
     "thumbnail": "team10-4x3.webp",
     "description": "A block displaying a team with a title, introduction, and button, followed by a multi-column layout of team members&#x27; avatars and roles.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.988Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.988Z",
     "dependencies": [],
     "registryDependencies": [
         {

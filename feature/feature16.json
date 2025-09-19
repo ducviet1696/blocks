@@ -7,10 +7,7 @@
     "screenshot": "feature16.jpg",
     "thumbnail": "feature16-4x3.webp",
     "description": "A component featuring a three-column layout, each with icons (Timer, ZoomIn, Zap) for \"Performance\", \"Quality\", and \"Innovation\", with descriptions.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.557Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.557Z",
     "dependencies": [
         "lucide-react"
     ],

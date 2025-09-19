@@ -7,10 +7,7 @@
     "screenshot": "feature167.jpg",
     "thumbnail": "feature167-4x3.webp",
     "description": "A feature presentation block with tabs for \"Smart Task Management,\" \"Automated Scheduling,\" and \"Personalized Insights.\" Includes badges, animated tab indicators, and images for each feature.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.587Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.587Z",
     "dependencies": [
         "lucide-react"
     ],

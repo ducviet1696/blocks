@@ -7,10 +7,7 @@
     "screenshot": "hero4.jpg",
     "thumbnail": "hero4-4x3.webp",
     "description": "A two-column component featuring an image and a text section with avatars, star ratings, and buttons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.620Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.620Z",
     "dependencies": [
         "lucide-react"
     ],

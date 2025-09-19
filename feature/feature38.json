@@ -7,10 +7,7 @@
     "screenshot": "feature38.jpg",
     "thumbnail": "feature38-4x3.webp",
     "description": "A component showcasing a heading, text, a button, and a list with icons next to headings. Features a large image beside the text content.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.570Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.570Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature19.jpg",
     "thumbnail": "feature19-4x3.webp",
     "description": "A component displaying tabs each with a title, description, list of features, and an image, arranged in a 2-column layout for larger screens.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.558Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.558Z",
     "dependencies": [
         "lucide-react"
     ],

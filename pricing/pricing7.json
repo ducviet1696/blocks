@@ -7,10 +7,7 @@
     "screenshot": "pricing7.jpg",
     "thumbnail": "pricing7-4x3.webp",
     "description": "A component displaying pricing options with a billing cycle toggle (monthly/annually), supporting discount display. Includes a 2-column layout for plan comparisons, featuring dynamic pricing, plan benefits, and \"Start a free trial\" buttons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.639Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.639Z",
     "dependencies": [
         "lucide-react",
         "react"

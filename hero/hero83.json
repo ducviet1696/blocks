@@ -7,10 +7,7 @@
     "screenshot": "hero83.jpg",
     "thumbnail": "hero83-4x3.webp",
     "description": "A component featuring a badge with a star icon, a title, a paragraph, two buttons, and a row of three varying-width images below.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.869Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.869Z",
     "dependencies": [],
     "registryDependencies": [
         {

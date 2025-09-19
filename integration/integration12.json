@@ -7,10 +7,7 @@
     "screenshot": "integration12.jpg",
     "thumbnail": "integration12-4x3.webp",
     "description": "A component features platform integration with a list of 5 permissions. Includes two logo comparisons, title, description, and buttons for actions.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.325Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.325Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature220.jpg",
     "thumbnail": "feature220-4x3.webp",
     "description": "A component showcasing user stats, a customer testimonial with avatar, and an autoplaying video in a 2-column layout. It includes styled text and a button.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.834Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.834Z",
     "dependencies": [
         "lucide-react"
     ],

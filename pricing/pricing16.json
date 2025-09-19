@@ -7,10 +7,7 @@
     "screenshot": "pricing16.jpg",
     "thumbnail": "pricing16-4x3.webp",
     "description": "A pricing component with a toggle for monthly/yearly billing, displaying 3 tiers, discounts for yearly plans, and key features.",
-    "createdAt": [
-        3,
-        "2024-12-27T07:51:28.663Z"
-    ],
+    "createdAt": "2024-12-27T07:51:28.663Z",
     "dependencies": [
         "lucide-react",
         "react"

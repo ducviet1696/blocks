@@ -7,10 +7,7 @@
     "screenshot": "feature37.jpg",
     "thumbnail": "feature37-4x3.webp",
     "description": "A component with a 5-column grid layout, featuring 4 blocks with images and text descriptions, 2 columns wide for the first and last, 3 for the middle two. Each has a rounded, accent-colored background.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.569Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.569Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "hero175.jpg",
     "thumbnail": "hero175-4x3.webp",
     "description": "A block featuring a promo link, a bold title with a highlight, a descriptive paragraph, and buttons for action and demo with icons. Includes a semi-transparent overlay.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:19:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:19:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

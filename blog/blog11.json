@@ -7,10 +7,7 @@
     "screenshot": "blog11.jpg",
     "thumbnail": "blog11-4x3.webp",
     "description": "A component with a sticky header displaying \"Blog Posts\" and navigation links, beside a 2-column grid of blog entries featuring images and titles.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.796Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.796Z",
     "dependencies": [
         "lucide-react"
     ],

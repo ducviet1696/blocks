@@ -7,10 +7,7 @@
     "screenshot": "feature119.jpg",
     "thumbnail": "feature119-4x3.webp",
     "description": "A component featuring a badge, a title, a 3-column layout of steps, and an image. Each column details a step with a numbered badge and text.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.827Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.827Z",
     "dependencies": [],
     "registryDependencies": [
         {

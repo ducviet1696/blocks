@@ -7,10 +7,7 @@
     "screenshot": "navbar1.jpg",
     "thumbnail": "navbar1-4x3.webp",
     "description": "A navigational component with dynamic menus, offering desktop and mobile layouts, incorporating icons and accordion features for sub-menus.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.625Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.625Z",
     "dependencies": [
         "lucide-react"
     ],

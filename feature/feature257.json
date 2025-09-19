@@ -7,10 +7,7 @@
     "screenshot": "feature257.jpg",
     "thumbnail": "feature257-4x3.webp",
     "description": "A component displays tools in cards with categories, logos, names. Columns adjust from 1 to 3 based on the display size. Unique hover effects.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:38:00.126Z"
-    ],
+    "createdAt": "2025-07-01T03:38:00.126Z",
     "dependencies": [],
     "registryDependencies": [
         {

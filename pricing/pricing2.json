@@ -7,10 +7,7 @@
     "screenshot": "pricing2.jpg",
     "thumbnail": "pricing2-4x3.webp",
     "description": "A dual-column pricing component with a toggle for monthly/yearly plans, including plan features and purchase links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.635Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.635Z",
     "dependencies": [
         "lucide-react",
         "react"

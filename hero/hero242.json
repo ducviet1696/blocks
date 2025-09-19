@@ -7,10 +7,7 @@
     "screenshot": "hero242.jpg",
     "thumbnail": "hero242-4x3.webp",
     "description": "A split-layout component featuring a text area with a heading, paragraphs, buttons, and a list of features on one side, and a bar chart displaying data on the other.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:43.352Z"
-    ],
+    "createdAt": "2025-08-28T06:52:43.352Z",
     "dependencies": [
         "lucide-react",
         "react",

@@ -7,10 +7,7 @@
     "screenshot": "hero141.jpg",
     "thumbnail": "hero141-4x3.webp",
     "description": "A component with a video background, featuring a central column for text, a call-to-action button, and a 5-star rating.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:08:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:08:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature28.jpg",
     "thumbnail": "feature28-4x3.webp",
     "description": "A two-column component featuring image placeholders, badges, and \"learn more\" links with right-pointing chevrons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.564Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.564Z",
     "dependencies": [
         "lucide-react"
     ],

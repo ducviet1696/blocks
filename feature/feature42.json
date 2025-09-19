@@ -7,10 +7,7 @@
     "screenshot": "feature42.jpg",
     "thumbnail": "feature42-4x3.webp",
     "description": "A component showcasing core values in a 3-column layout, with a large header spanning two rows and 4 smaller sections for individual values.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.571Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.571Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

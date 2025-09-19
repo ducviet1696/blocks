@@ -7,10 +7,7 @@
     "screenshot": "logos2.jpg",
     "thumbnail": "logos2-4x3.webp",
     "description": "A two-column block featuring certifications with text and a button on one side and a 3x2 grid of logos on the other.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.624Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.624Z",
     "dependencies": [
         "lucide-react"
     ],

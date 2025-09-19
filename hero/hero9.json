@@ -7,10 +7,7 @@
     "screenshot": "hero9.jpg",
     "thumbnail": "hero9-4x3.webp",
     "description": "A component featuring a gradient background, badge, headline, paragraph, two buttons, and a shadowed code block next to an image area.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.622Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.622Z",
     "dependencies": [
         "lucide-react"
     ],

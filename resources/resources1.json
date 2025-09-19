@@ -7,10 +7,7 @@
     "screenshot": "resources1.jpg",
     "thumbnail": "resources1-4x3.webp",
     "description": "The Resources1 component is a comprehensive resources page that displays a collection of reports and articles with a featured post, category filtering, email subscription form, and a responsive grid layout of resource cards, all built with Shadcn UI components and featuring modern design patterns.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.879Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.879Z",
     "dependencies": [
         "\"@hookform/resolvers\"",
         "lucide-react",

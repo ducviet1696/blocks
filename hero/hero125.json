@@ -7,10 +7,7 @@
     "screenshot": "hero125.jpg",
     "thumbnail": "hero125-4x3.webp",
     "description": "Component features a 2-column layout with a focus on returns management. Includes icons, a big title, a paragraph, and a button. The right column showcases an image with exchange options.",
-    "createdAt": [
-        3,
-        "2024-12-16T06:00:05.326Z"
-    ],
+    "createdAt": "2024-12-16T06:00:05.326Z",
     "dependencies": [
         "lucide-react"
     ],

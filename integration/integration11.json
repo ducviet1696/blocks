@@ -7,10 +7,7 @@
     "screenshot": "integration11.jpg",
     "thumbnail": "integration11-4x3.webp",
     "description": "A tabbed component showcasing categorized integrations with toggles for connection status and details button. Layout scales from 1 to 3 columns.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.325Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.325Z",
     "dependencies": [
         "react"
     ],

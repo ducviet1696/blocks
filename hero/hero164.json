@@ -7,10 +7,7 @@
     "screenshot": "hero164.jpg",
     "thumbnail": "hero164-4x3.webp",
     "description": "A component showcasing a dual-column layout with a pitch and a playable video teaser. The left column has text and sign-up, while the right shows an image. Features a popup for video.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:25:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:25:05.350Z",
     "dependencies": [
         "lucide-react",
         "react"

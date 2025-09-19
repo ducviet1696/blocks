@@ -7,10 +7,7 @@
     "screenshot": "gallery22.jpg",
     "thumbnail": "gallery22-4x3.webp",
     "description": "An interactive gallery block with coverflow effect, auto-slide feature, and social media links. Displays images in a carousel, each paired with name and role. Includes left/right navigation buttons.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "lucide-react",
         "react",

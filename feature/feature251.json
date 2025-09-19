@@ -7,10 +7,7 @@
     "screenshot": "feature251.jpg",
     "thumbnail": "feature251-4x3.webp",
     "description": "A component featuring four cards with animations, icons, and text for showcasing features such as workflows, task tracking, and integrations.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.805Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.805Z",
     "dependencies": [
         "motion",
         "react"

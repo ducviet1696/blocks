@@ -7,10 +7,7 @@
     "screenshot": "careers4.jpg",
     "thumbnail": "careers4-4x3.webp",
     "description": "A component displaying job openings with categories, titles, and locations, styled with a central heading and grid layout for job listings.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.092Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.092Z",
     "dependencies": [],
     "registryDependencies": [
         {

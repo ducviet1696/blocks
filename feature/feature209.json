@@ -7,10 +7,7 @@
     "screenshot": "feature209.jpg",
     "thumbnail": "feature209-4x3.webp",
     "description": "A gallery component with a text and button panel on left and image carousel on right, including image thumbnails for selection and a patterned background overlay.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.793Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.793Z",
     "dependencies": [
         "lucide-react",
         "react"

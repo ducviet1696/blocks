@@ -7,10 +7,7 @@
     "screenshot": "signup1.jpg",
     "thumbnail": "signup1-4x3.webp",
     "description": "A signup component featuring a logo, customizable headings, email and password fields, buttons for account creation and Google signup, and a login redirect.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.641Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.641Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "feature286.jpg",
     "thumbnail": "feature286-4x3.webp",
     "description": "A component featuring an intro, 3 cards with glowing stars, pricing, and a \"View All\" button. Each card has \"Add to cart\" functionality and displays collection names and prices.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:07.503Z"
-    ],
+    "createdAt": "2025-08-28T06:51:07.503Z",
     "dependencies": [
         "lucide-react",
         "react"

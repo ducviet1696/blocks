@@ -7,10 +7,7 @@
     "screenshot": "feature124.jpg",
     "thumbnail": "feature124-4x3.webp",
     "description": "A dual-section block featuring a text column with a heading, description, checklist, and button, alongside an image column with a decorative background pattern and gradient overlays.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.648Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.648Z",
     "dependencies": [
         "lucide-react"
     ],

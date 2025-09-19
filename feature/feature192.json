@@ -7,10 +7,7 @@
     "screenshot": "feature192.jpg",
     "thumbnail": "feature192-4x3.webp",
     "description": "An accordion component presenting features with selectable items on one side and corresponding images on the other. It includes dynamic image display based on selection.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.351Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.351Z",
     "dependencies": [
         "react"
     ],

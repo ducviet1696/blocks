@@ -7,10 +7,7 @@
     "screenshot": "waitlist1.jpg",
     "thumbnail": "waitlist1-4x3.webp",
     "description": "A component featuring a \"Join the Waitlist\" title, a description, an email input field, and a button. Includes avatars showing user count.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:53:05.968Z"
-    ],
+    "createdAt": "2025-08-28T06:53:05.968Z",
     "dependencies": [
         "react"
     ],

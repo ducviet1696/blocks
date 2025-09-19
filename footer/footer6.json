@@ -7,10 +7,7 @@
     "screenshot": "footer6.jpg",
     "thumbnail": "footer6-4x3.webp",
     "description": "A footer component with a logo, description, navigation links across two columns, a newsletter sign-up form, and copyright/terms section.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.602Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.602Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

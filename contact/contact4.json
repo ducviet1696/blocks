@@ -7,10 +7,7 @@
     "screenshot": "contact4.jpg",
     "thumbnail": "contact4-4x3.webp",
     "description": "A contact component with a title, introduction, 3-column layout for different contact options, and a carousel showcasing locations with maps and details.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.098Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.098Z",
     "dependencies": [
         "embla-carousel-fade"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature281.jpg",
     "thumbnail": "feature281-4x3.webp",
     "description": "A testimonial display component featuring an animated card stack with user feedback, adjustable through attributes like offset and scale. Includes a \"Read More\" button.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:57.544Z"
-    ],
+    "createdAt": "2025-08-28T06:50:57.544Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

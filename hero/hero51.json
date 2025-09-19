@@ -7,10 +7,7 @@
     "screenshot": "hero51.jpg",
     "thumbnail": "hero51-4x3.webp",
     "description": "A component featuring a hero section with a catchy headline, subtitle, button, and unique background graphics. It includes multiple angled images for visual depth.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.242Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.242Z",
     "dependencies": [
         "lucide-react"
     ],

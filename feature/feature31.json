@@ -7,10 +7,7 @@
     "screenshot": "feature31.jpg",
     "thumbnail": "feature31-4x3.webp",
     "description": "A component featuring a central message with 2 columns below, mixing images and text. Includes headings, paragraphs, and links. Unique for its text-image alternating layout.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.567Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.567Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "feature190.jpg",
     "thumbnail": "feature190-4x3.webp",
     "description": "A component displaying a grid of features with images, titles, and descriptions. It includes a title, introductory text, and a button. Grid scales from 1 to 3 columns.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:21:57.733Z"
-    ],
+    "createdAt": "2025-01-23T07:21:57.733Z",
     "dependencies": [],
     "registryDependencies": [
         {

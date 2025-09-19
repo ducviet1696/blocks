@@ -7,10 +7,7 @@
     "screenshot": "banner1.jpg",
     "thumbnail": "banner1-4x3.webp",
     "description": "A dismissible banner component with a title, description, external link, and close button. It spans full width with a shadow border.",
-    "createdAt": [
-        3,
-        "2025-01-05T03:59:55.494Z"
-    ],
+    "createdAt": "2025-01-05T03:59:55.494Z",
     "dependencies": [
         "lucide-react",
         "react"

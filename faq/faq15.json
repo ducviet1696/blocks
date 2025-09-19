@@ -7,10 +7,7 @@
     "screenshot": "faq15.jpg",
     "thumbnail": "faq15-4x3.webp",
     "description": "An FAQ component with a title and a 2-column layout of items, each featuring an icon, heading, and description.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.778Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.778Z",
     "dependencies": [
         "lucide-react"
     ],

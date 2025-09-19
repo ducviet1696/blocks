@@ -7,10 +7,7 @@
     "screenshot": "hero192.jpg",
     "thumbnail": "hero192-4x3.webp",
     "description": "A hero component featuring a beta badge, a headline, a subtext, two buttons, and a placeholder image. It includes a call-to-action link with an arrow icon.",
-    "createdAt": [
-        3,
-        "2025-01-01T00:04:54.639Z"
-    ],
+    "createdAt": "2025-01-01T00:04:54.639Z",
     "dependencies": [
         "lucide-react"
     ],

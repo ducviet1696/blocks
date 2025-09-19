@@ -7,10 +7,7 @@
     "screenshot": "contact10.jpg",
     "thumbnail": "contact10-4x3.webp",
     "description": "A component featuring a contact form with a title, decorative dashed line separator, address/email/social links, and an inquiry form with fields for name, email, company, employee count, and message.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.571Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.571Z",
     "dependencies": [
         "lucide-react",
         "react"

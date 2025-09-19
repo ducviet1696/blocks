@@ -7,10 +7,7 @@
     "screenshot": "feature44.jpg",
     "thumbnail": "feature44-4x3.webp",
     "description": "A component displaying a grid of integration options with images and descriptions, adaptable from 1 to 3 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.572Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.572Z",
     "dependencies": [],
     "registryDependencies": [
         {

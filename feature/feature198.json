@@ -7,10 +7,7 @@
     "screenshot": "feature198.jpg",
     "thumbnail": "feature198-4x3.webp",
     "description": "A component showcasing 3 cards with icons, titles, and descriptions, each highlighting unique software benefits. Positioned dynamically for visual interest.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.437Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.437Z",
     "dependencies": [
         "lucide-react"
     ],

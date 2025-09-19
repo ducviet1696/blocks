@@ -7,10 +7,7 @@
     "screenshot": "feature207.jpg",
     "thumbnail": "feature207-4x3.webp",
     "description": "A component showcasing a 3-step workflow with titles, descriptions, and separators, styled in 2 columns for larger screens.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.793Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.793Z",
     "dependencies": [],
     "registryDependencies": [
         {

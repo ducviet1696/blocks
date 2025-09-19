@@ -7,10 +7,7 @@
     "screenshot": "hero78.jpg",
     "thumbnail": "hero78-4x3.webp",
     "description": "A component featuring a full-width background image with a dark overlay, includes a title, text, and button centered in a single column layout, and an additional noise effect overlay.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:09:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:09:05.350Z",
     "dependencies": [],
     "registryDependencies": [
         {

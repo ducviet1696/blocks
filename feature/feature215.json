@@ -7,10 +7,7 @@
     "screenshot": "feature215.jpg",
     "thumbnail": "feature215-4x3.webp",
     "description": "A carousel component showcasing AI editing features with video previews, titles, and summaries. Each carousel card plays its video on hover.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.833Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.833Z",
     "dependencies": [
         "lucide-react",
         "react"

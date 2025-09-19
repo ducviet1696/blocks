@@ -7,10 +7,7 @@
     "screenshot": "hero225.jpg",
     "thumbnail": "hero225-4x3.webp",
     "description": "A component displaying animated circles populated with tech icons and a central text message, accompanied by a call-to-action button.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.833Z",
     "dependencies": [
         "lucide-react",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "hero87.jpg",
     "thumbnail": "hero87-4x3.webp",
     "description": "A component with a title, text explanation, button, and image; features a 2-column layout with a decorative background in one column.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.892Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.892Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "testimonial8.jpg",
     "thumbnail": "testimonial8-4x3.webp",
     "description": "A component displaying testimonials in a masonry layout, with items structured in up to 3 columns adjusting to breakpoints. It includes a badge, a title, and a subtitle.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.659Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.659Z",
     "dependencies": [
         "react-responsive-masonry"
     ],

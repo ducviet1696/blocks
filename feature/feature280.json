@@ -7,10 +7,7 @@
     "screenshot": "feature280.jpg",
     "thumbnail": "feature280-4x3.webp",
     "description": "A layout showcasing user testimonials and a feature list with a title, separated into two columns, including checkboxes for features.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:55.686Z"
-    ],
+    "createdAt": "2025-08-28T06:50:55.686Z",
     "dependencies": [
         "lucide-react",
         "react"

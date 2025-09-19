@@ -7,10 +7,7 @@
     "screenshot": "cta12.jpg",
     "thumbnail": "cta12-4x3.webp",
     "description": "A call-to-action block featuring a heading, description, email input field, and a subscribe button arranged in a column, centered.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.546Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.546Z",
     "dependencies": [],
     "registryDependencies": [
         {

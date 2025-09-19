@@ -7,10 +7,7 @@
     "screenshot": "feature153.jpg",
     "thumbnail": "feature153-4x3.webp",
     "description": "A carousel component displaying key features of various platforms, allowing users to navigate through items with previous and next buttons. Each item presents an image, title, description, and a list of detailed info.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.664Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.664Z",
     "dependencies": [
         "lucide-react",
         "react"

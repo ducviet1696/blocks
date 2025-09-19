@@ -7,10 +7,7 @@
     "screenshot": "feature253.jpg",
     "thumbnail": "feature253-4x3.webp",
     "description": "A component featuring a title, text, and button on the left with a globe animation on the right in a two-column layout with a unique rotating arrow icon on the button hover.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.805Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.805Z",
     "dependencies": [
         "lucide-react",
         "react"

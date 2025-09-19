@@ -7,10 +7,7 @@
     "screenshot": "changelog8.jpg",
     "thumbnail": "changelog8-4x3.webp",
     "description": "A component displaying a changelog with a scrollspy sidebar. Features dynamic scroll highlighting & smooth navigation to sections.",
-    "createdAt": [
-        3,
-        "2025-02-21T01:07:30.380Z"
-    ],
+    "createdAt": "2025-02-21T01:07:30.380Z",
     "dependencies": [
         "react"
     ],

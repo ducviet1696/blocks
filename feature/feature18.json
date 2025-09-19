@@ -7,10 +7,7 @@
     "screenshot": "feature18.jpg",
     "thumbnail": "feature18-4x3.webp",
     "description": "A grid of customizable UI feature cards, each with an icon, title, description, and a \"Learn more\" link, arranged in up to 3 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.558Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.558Z",
     "dependencies": [
         "lucide-react"
     ],

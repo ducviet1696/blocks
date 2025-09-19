@@ -7,10 +7,7 @@
     "screenshot": "integration8.jpg",
     "thumbnail": "integration8-4x3.webp",
     "description": "A component featuring dual-direction marquee rows of logos, highlighted with fade edges.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.842Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.842Z",
     "dependencies": [
         "react"
     ],

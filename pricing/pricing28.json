@@ -7,10 +7,7 @@
     "screenshot": "pricing28.jpg",
     "thumbnail": "pricing28-4x3.webp",
     "description": "This component displays pricing packages with toggle for monthly/annual billing, features tooltip, and a \"Popular\" badge for a highlighted plan, all in a 4-column layout.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.463Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.463Z",
     "dependencies": [
         "lucide-react",
         "react"

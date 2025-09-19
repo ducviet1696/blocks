@@ -7,10 +7,7 @@
     "screenshot": "hero210.jpg",
     "thumbnail": "hero210-4x3.webp",
     "description": "A carousel component with animated image display, customizable autoplay, and unique coverflow effect. It features dynamic opacity transitions, includes a headline, subtext, and a button with hover scaling.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "react",

@@ -7,10 +7,7 @@
     "screenshot": "hero230.jpg",
     "thumbnail": "hero230-4x3.webp",
     "description": "A marketing component with customizable buttons, a title, a descriptive paragraph, a dual-carousel display for logos and images, and fading edges for carousel overflow.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.833Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "embla-carousel-autoplay",

@@ -7,10 +7,7 @@
     "screenshot": "hero35.jpg",
     "thumbnail": "hero35-4x3.webp",
     "description": "A 2-column block with a text section including a title, paragraph, and buttons, and a geometric patterned section with unique border details.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.618Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.618Z",
     "dependencies": [
         "lucide-react"
     ],

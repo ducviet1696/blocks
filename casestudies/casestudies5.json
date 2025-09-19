@@ -7,10 +7,7 @@
     "screenshot": "casestudies5.jpg",
     "thumbnail": "casestudies5-4x3.webp",
     "description": "A dual-column component showcasing testimonials with a dynamic carousel of images and text animations. Features navigable user feedback paired with logos and a 9-grid image layout.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.255Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.255Z",
     "dependencies": [
         "framer-motion",
         "react"

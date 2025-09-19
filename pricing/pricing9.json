@@ -7,10 +7,7 @@
     "screenshot": "pricing9.jpg",
     "thumbnail": "pricing9-4x3.webp",
     "description": "A pricing table component with a plan switcher, tooltips, and feature icons, displaying 3 tiers and key features in a 4-column layout.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.640Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.640Z",
     "dependencies": [
         "lucide-react",
         "react"

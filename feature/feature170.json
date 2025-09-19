@@ -7,10 +7,7 @@
     "screenshot": "feature170.jpg",
     "thumbnail": "feature170-4x3.webp",
     "description": "This component displays \"Our Core Values\" with a badge and a call-to-action link, followed by a three-column grid of icons and texts detailing each value.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.588Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.588Z",
     "dependencies": [
         "lucide-react"
     ],

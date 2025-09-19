@@ -7,10 +7,7 @@
     "screenshot": "login2.jpg",
     "thumbnail": "login2-4x3.webp",
     "description": "A login component featuring a logo, headings, email and password fields, login & Google signup buttons, and a signup link. Set in a centered, single-column layout with a focus on simplicity and readability.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.249Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.249Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "hero123.jpg",
     "thumbnail": "hero123-4x3.webp",
     "description": "A component with a 2-column layout: text with a button on one side and an image within an aspect ratio container on the other. Features a muted background.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:02:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:02:05.350Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "gallery33.jpg",
     "thumbnail": "gallery33-4x3.webp",
     "description": "A gallery component showcasing items in a grid that adjusts from 1 to 3 columns based on screen size. Features hover effects and links to more details.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:27.852Z"
-    ],
+    "createdAt": "2025-08-28T06:52:27.852Z",
     "dependencies": [
         "lucide-react",
         "react"

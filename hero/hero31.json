@@ -7,10 +7,7 @@
     "screenshot": "hero31.jpg",
     "thumbnail": "hero31-4x3.webp",
     "description": "A component featuring a welcome message, a description, two buttons, and dynamic overlapping blocks with varying dimensions. Incorporates a complex background design.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.615Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.615Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "hero196.jpg",
     "thumbnail": "hero196-4x3.webp",
     "description": "A component with an email form, announcement badge, headline, descriptive text, and a tabbed interface showcasing features through icons and images.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.831Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.831Z",
     "dependencies": [
         "\"@hookform/resolvers\"",
         "lucide-react",

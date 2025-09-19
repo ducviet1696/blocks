@@ -7,10 +7,7 @@
     "screenshot": "faq11.jpg",
     "thumbnail": "faq11-4x3.webp",
     "description": "An FAQ component with a column for inquiry intro and a column for categories. Features collapsible accordions for answers.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.576Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.576Z",
     "dependencies": [],
     "registryDependencies": [
         {

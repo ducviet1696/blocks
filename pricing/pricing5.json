@@ -7,10 +7,7 @@
     "screenshot": "pricing5.jpg",
     "thumbnail": "pricing5-4x3.webp",
     "description": "A pricing component with two plans, offering comparison across features in a table and emphasized call-to-actions. Provides a clear visual differentiation between plans.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.638Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.638Z",
     "dependencies": [
         "lucide-react"
     ],

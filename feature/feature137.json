@@ -7,10 +7,7 @@
     "screenshot": "feature137.jpg",
     "thumbnail": "feature137-4x3.webp",
     "description": "A component displays values/principles in 2 sections: 4 with images, 4 with icons, in a mix of single and dual-column layouts.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.655Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.655Z",
     "dependencies": [
         "lucide-react"
     ],

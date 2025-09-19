@@ -7,10 +7,7 @@
     "screenshot": "feature113.jpg",
     "thumbnail": "feature113-4x3.webp",
     "description": "A tabbed component with 3 options, integrating text, badges, buttons, and images, showcasing different features. Each tab has a 2-column layout for content and visuals.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.825Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.825Z",
     "dependencies": [
         "lucide-react"
     ],

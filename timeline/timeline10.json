@@ -7,10 +7,7 @@
     "screenshot": "timeline10.jpg",
     "thumbnail": "timeline10-4x3.webp",
     "description": "A timeline component with 4 columns, highlighting project phases with dates, titles, and descriptions, using animation to show current progress.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.425Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.425Z",
     "dependencies": [
         "framer-motion",
         "react"

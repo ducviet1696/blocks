@@ -7,10 +7,7 @@
     "screenshot": "feature85.jpg",
     "thumbnail": "feature85-4x3.webp",
     "description": "A block highlighting features of a project management app with icons, titles, and descriptions arranged in up to 3 columns.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.198Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.198Z",
     "dependencies": [
         "lucide-react"
     ],

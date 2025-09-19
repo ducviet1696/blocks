@@ -7,10 +7,7 @@
     "screenshot": "hero206.jpg",
     "thumbnail": "hero206-4x3.webp",
     "description": "This component features a title, subtitle, avatars with a badge indicating trust from 10k+ users, and a browser mockup to showcase URLs.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.405Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.405Z",
     "dependencies": [
         "lucide-react",
         "react"

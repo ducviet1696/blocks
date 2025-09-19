@@ -7,10 +7,7 @@
     "screenshot": "hero159.jpg",
     "thumbnail": "hero159-4x3.webp",
     "description": "A 2-column component with an emphasis on financial services. Features a bold headline, descriptive text, interactive button with hover effect, and complementary images.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:30:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:30:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "hero36.jpg",
     "thumbnail": "hero36-4x3.webp",
     "description": "A component showcasing 3 cards in a row, highlighting features like \"Product Design,\" \"Development,\" and \"Marketing,\" with images, descriptions, and \"See more\" links. Includes a title, a badge stating \"New Release,\" and a description above the cards.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.618Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.618Z",
     "dependencies": [
         "lucide-react"
     ],

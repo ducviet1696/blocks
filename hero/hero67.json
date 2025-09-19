@@ -7,10 +7,7 @@
     "screenshot": "hero67.jpg",
     "thumbnail": "hero67-4x3.webp",
     "description": "A component featuring a logo, engaging headline, paragraph, a button with an icon, and overlapping avatars indicating endorsements. It ends with a large, rounded-top image.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.889Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.889Z",
     "dependencies": [
         "lucide-react"
     ],

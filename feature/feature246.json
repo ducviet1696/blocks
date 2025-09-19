@@ -7,10 +7,7 @@
     "screenshot": "feature246.jpg",
     "thumbnail": "feature246-4x3.webp",
     "description": "This block features a sign-up form with a dynamic list of benefits and an illustrative image. Includes a bold headline, 4 listed advantages with icons, and an input button combination for email sign-ups.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.385Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.385Z",
     "dependencies": [
         "lucide-react",
         "react"

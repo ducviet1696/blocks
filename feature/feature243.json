@@ -7,10 +7,7 @@
     "screenshot": "feature243.jpg",
     "thumbnail": "feature243-4x3.webp",
     "description": "A component displaying a vertical timeline layout of steps, each with an icon, title, and description. It uses cards for step details.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.384Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.384Z",
     "dependencies": [
         "lucide-react",
         "react"

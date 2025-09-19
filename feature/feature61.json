@@ -7,10 +7,7 @@
     "screenshot": "feature61.jpg",
     "thumbnail": "feature61-4x3.webp",
     "description": "A two-column layout component with an image on the left and descriptive text on the right, featuring large padding and text emphasis adjustments at different sizes.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.581Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.581Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

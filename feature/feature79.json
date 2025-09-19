@@ -7,10 +7,7 @@
     "screenshot": "feature79.jpg",
     "thumbnail": "feature79-4x3.webp",
     "description": "A feature block with a tagline, title, and description, followed by a grid of one main and three smaller linked feature items, each with hover effects and directional arrows.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.596Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.596Z",
     "dependencies": [
         "lucide-react"
     ],

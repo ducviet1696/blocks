@@ -7,10 +7,7 @@
     "screenshot": "feature64.jpg",
     "thumbnail": "feature64-4x3.webp",
     "description": "A component displaying a \"Coming Soon\" badge, a title, a descriptive paragraph, and two feature blocks in a 7-column grid, with the first block spanning 4 columns and the second 3 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.584Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.584Z",
     "dependencies": [],
     "registryDependencies": [
         {

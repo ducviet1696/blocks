@@ -7,10 +7,7 @@
     "screenshot": "feature289.jpg",
     "thumbnail": "feature289-4x3.webp",
     "description": "A component featuring a large title and a tech stack list with clickable links, arranged in a 2-column layout with adjustable gap sizes.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:13.998Z"
-    ],
+    "createdAt": "2025-08-28T06:51:13.998Z",
     "dependencies": [
         "lucide-react",
         "react"

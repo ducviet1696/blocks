@@ -7,10 +7,7 @@
     "screenshot": "hero238.jpg",
     "thumbnail": "hero238-4x3.webp",
     "description": "A visually engaging component displaying premium benefits with animation. Includes heading, two buttons, and a list with icons. Two-column layout on large screens, single-column on smaller. Unique fading animated note card on the right.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:35.904Z"
-    ],
+    "createdAt": "2025-08-28T06:52:35.904Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

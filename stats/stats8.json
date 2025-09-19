@@ -7,10 +7,7 @@
     "screenshot": "stats8.jpg",
     "thumbnail": "stats8-4x3.webp",
     "description": "A stats display component with a heading, description, and link, followed by a 4-column layout for statistics.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:07:35.868Z"
-    ],
+    "createdAt": "2024-11-15T06:07:35.868Z",
     "dependencies": [
         "lucide-react"
     ],

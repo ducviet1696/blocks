@@ -7,10 +7,7 @@
     "screenshot": "feature55.jpg",
     "thumbnail": "feature55-4x3.webp",
     "description": "A centered feature block with a title, description, and button. Uses a single-column layout with adjustable text sizes.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.575Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.575Z",
     "dependencies": [],
     "registryDependencies": [
         {

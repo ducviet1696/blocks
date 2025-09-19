@@ -7,10 +7,7 @@
     "screenshot": "feature22.jpg",
     "thumbnail": "feature22-4x3.webp",
     "description": "A component featuring a 3-column layout with a title, lists of features, and 3 showcases including images and descriptions of block functionalities.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.561Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.561Z",
     "dependencies": [
         "lucide-react"
     ],

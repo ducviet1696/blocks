@@ -7,10 +7,7 @@
     "screenshot": "feature9.jpg",
     "thumbnail": "feature9-4x3.webp",
     "description": "A component featuring a central title, description, badges, two textual cards, and an image in a three-column layout; includes \"Read more\" buttons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.598Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.598Z",
     "dependencies": [
         "lucide-react"
     ],

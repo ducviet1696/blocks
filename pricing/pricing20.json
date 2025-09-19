@@ -7,10 +7,7 @@
     "screenshot": "pricing20.jpg",
     "thumbnail": "pricing20-4x3.webp",
     "description": "A pricing component showcasing three plans, with toggled monthly/yearly prices, feature lists, and icons identifying plan types.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.632Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.632Z",
     "dependencies": [
         "lucide-react",
         "react"

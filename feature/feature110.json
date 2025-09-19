@@ -7,10 +7,7 @@
     "screenshot": "feature110.jpg",
     "thumbnail": "feature110-4x3.webp",
     "description": "A component featuring badges, a carousel with avatars, and descriptive text blocks, structured in a 2-column layout, each containing dynamic, premium, and structured content blocks.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.824Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.824Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "lucide-react"

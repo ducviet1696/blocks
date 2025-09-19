@@ -7,10 +7,7 @@
     "screenshot": "stats18.jpg",
     "thumbnail": "stats18-4x3.webp",
     "description": "A component featuring a central radar chart and a row of stats below, displaying numerical values and descriptions.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:53:03.561Z"
-    ],
+    "createdAt": "2025-08-28T06:53:03.561Z",
     "dependencies": [
         "react",
         "recharts"

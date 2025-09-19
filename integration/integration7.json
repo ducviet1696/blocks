@@ -7,10 +7,7 @@
     "screenshot": "integration7.jpg",
     "thumbnail": "integration7-4x3.webp",
     "description": "A component showcasing integration with various tools, featuring two column layout, icons, and descriptions. Unique for its customizable gradient placeholders.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.845Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.845Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "feature294.jpg",
     "thumbnail": "feature294-4x3.webp",
     "description": "This component showcases 5 features with icons, titles, and descriptions, arranged in up to 3 columns, and includes a sparkle effect background.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:20.556Z"
-    ],
+    "createdAt": "2025-08-28T06:52:20.556Z",
     "dependencies": [
         "lucide-react",
         "react"

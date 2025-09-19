@@ -7,10 +7,7 @@
     "screenshot": "hero136.jpg",
     "thumbnail": "hero136-4x3.webp",
     "description": "A component showcasing a large header, descriptive text, two buttons, logos of trusted companies, and a uniquely styled image display with an asymmetrical background design.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:13:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:13:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

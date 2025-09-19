@@ -7,10 +7,7 @@
     "screenshot": "feature145.jpg",
     "thumbnail": "feature145-4x3.webp",
     "description": "A component featuring a customizable accordion for showcasing features with text and images, including a dynamic image display area that updates based on accordion selection.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.660Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.660Z",
     "dependencies": [
         "react"
     ],

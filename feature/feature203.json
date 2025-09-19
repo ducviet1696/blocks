@@ -7,10 +7,7 @@
     "screenshot": "feature203.jpg",
     "thumbnail": "feature203-4x3.webp",
     "description": "A component displaying 4 cards in a 2-column grid, each with an icon, title, description, and a list of features with check icons.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.936Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.936Z",
     "dependencies": [
         "lucide-react",
         "react"

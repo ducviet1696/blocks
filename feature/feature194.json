@@ -7,10 +7,7 @@
     "screenshot": "feature194.jpg",
     "thumbnail": "feature194-4x3.webp",
     "description": "A component showcasing 4 unique features with icons in a 4-column layout, each with a description and \"Learn more\" link.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.351Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.351Z",
     "dependencies": [
         "lucide-react"
     ],

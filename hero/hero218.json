@@ -7,10 +7,7 @@
     "screenshot": "hero218.jpg",
     "thumbnail": "hero218-4x3.webp",
     "description": "A component featuring an animated, centralized headline with a supportive tagline above. Includes visually dynamic, particle background and a button with an icon that animates on hover. Uses 3D text animation for emphasis.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

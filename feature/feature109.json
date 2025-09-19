@@ -7,10 +7,7 @@
     "screenshot": "feature109.jpg",
     "thumbnail": "feature109-4x3.webp",
     "description": "A two-column layout block, featuring an outlined badge, large headings, descriptive text, and a button with an icon in the first column. The second column showcases an image with overlay text, including an avatar badge and a link.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.016Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.016Z",
     "dependencies": [
         "lucide-react"
     ],

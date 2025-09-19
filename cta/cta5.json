@@ -7,10 +7,7 @@
     "screenshot": "cta5.jpg",
     "thumbnail": "cta5-4x3.webp",
     "description": "A component featuring an image and a call-to-action (CTA) side by side in a two-column layout, with an appealing button and engaging text.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.548Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.548Z",
     "dependencies": [],
     "registryDependencies": [
         {

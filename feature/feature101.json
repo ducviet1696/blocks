@@ -7,10 +7,7 @@
     "screenshot": "feature101.jpg",
     "thumbnail": "feature101-4x3.webp",
     "description": "A layout showcasing capabilities with a title, description, and 5 feature blocks in a 3-column grid. Unique elements include icons, hover animations on images, and varied block sizing.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.013Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.013Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature188.jpg",
     "thumbnail": "feature188-4x3.webp",
     "description": "A component displaying 3 resources with titles, descriptions, and images, structured in a bordered container with horizontal dividers.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.436Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.436Z",
     "dependencies": [
         "lucide-react"
     ],

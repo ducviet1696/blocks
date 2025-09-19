@@ -7,10 +7,7 @@
     "screenshot": "feature254.jpg",
     "thumbnail": "feature254-4x3.webp",
     "description": "Interactive block with layered orbiting circles of images, a central message \"Connecting Devs,\" and a call-to-action button.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.805Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.805Z",
     "dependencies": [
         "lucide-react",
         "react"

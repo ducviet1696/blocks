@@ -7,10 +7,7 @@
     "screenshot": "feature59.jpg",
     "thumbnail": "feature59-4x3.webp",
     "description": "A component presenting a main feature with a large description and image, followed by three smaller feature blocks with descriptions and images, organized in a 2-column layout.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.578Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.578Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

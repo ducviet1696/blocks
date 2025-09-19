@@ -7,10 +7,7 @@
     "screenshot": "login7.jpg",
     "thumbnail": "login7-4x3.webp",
     "description": "A login component featuring a card layout with a logo, a &#x27;Sign up with Google&#x27; button, a divider with &#x27;OR&#x27;, email and password fields, and a submit button.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.414Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.414Z",
     "dependencies": [],
     "registryDependencies": [
         {

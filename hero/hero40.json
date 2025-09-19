@@ -7,10 +7,7 @@
     "screenshot": "hero40.jpg",
     "thumbnail": "hero40-4x3.webp",
     "description": "A component with a decorative background and a two-column layout. The first column features a welcome message and action buttons. The second showcases integration options with icons and descriptions.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.620Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.620Z",
     "dependencies": [
         "lucide-react"
     ],

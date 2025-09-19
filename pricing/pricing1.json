@@ -7,10 +7,7 @@
     "screenshot": "pricing1.jpg",
     "thumbnail": "pricing1-4x3.webp",
     "description": "A pricing component showcasing 4 tiers with varying features, descriptions, and call-to-action buttons, displayed in a columnar layout with a heading section mentioning options and custom plan availability.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.629Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.629Z",
     "dependencies": [
         "lucide-react"
     ],

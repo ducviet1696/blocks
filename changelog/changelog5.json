@@ -7,10 +7,7 @@
     "screenshot": "changelog5.jpg",
     "thumbnail": "changelog5-4x3.webp",
     "description": "A component that displays changelogs with features like a sticky timeline navigation, vertical separators, and scroll-spy functionality for active section highlighting.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.913Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.913Z",
     "dependencies": [
         "lucide-react",
         "react"

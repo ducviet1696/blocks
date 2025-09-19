@@ -7,10 +7,7 @@
     "screenshot": "feature5.jpg",
     "thumbnail": "feature5-4x3.webp",
     "description": "A component with a 3-column layout on large screens, shrinking to 2 and then 1 column. Features 2 cards, one double the width of the other, each with icons, text, and images.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.573Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.573Z",
     "dependencies": [
         "lucide-react"
     ],

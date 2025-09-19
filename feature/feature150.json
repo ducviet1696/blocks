@@ -7,10 +7,7 @@
     "screenshot": "feature150.jpg",
     "thumbnail": "feature150-4x3.webp",
     "description": "A component showcasing 2 CRM solutions with hover effects, images, and a \"Learn More\" or \"Get Started\" button.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.663Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.663Z",
     "dependencies": [
         "lucide-react"
     ],

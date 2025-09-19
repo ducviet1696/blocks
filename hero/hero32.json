@@ -7,10 +7,7 @@
     "screenshot": "hero32.jpg",
     "thumbnail": "hero32-4x3.webp",
     "description": "A component with a background layer, a left section displaying a heading, description, and button, and a right section with rows of integration icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.616Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.616Z",
     "dependencies": [],
     "registryDependencies": [
         {

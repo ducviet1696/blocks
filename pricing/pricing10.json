@@ -7,10 +7,7 @@
     "screenshot": "pricing10.jpg",
     "thumbnail": "pricing10-4x3.webp",
     "description": "A pricing component displays 4 plans in columns, detailing features, price, and an annual billing switch. Includes badges for discounts and a \"Recommended\" tag.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.630Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.630Z",
     "dependencies": [
         "lucide-react",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "feature121.jpg",
     "thumbnail": "feature121-4x3.webp",
     "description": "A component displays features in a grid, each with an icon, title, and description. Interactive blocks reveal descriptions on click.",
-    "createdAt": [
-        3,
-        "2024-10-17T05:25:53.968Z"
-    ],
+    "createdAt": "2024-10-17T05:25:53.968Z",
     "dependencies": [
         "lucide-react",
         "react"

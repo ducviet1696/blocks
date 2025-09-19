@@ -7,10 +7,7 @@
     "screenshot": "hero173.jpg",
     "thumbnail": "hero173-4x3.webp",
     "description": "A component displaying text, images in overlapped layout with buttons for action & video modal. Uses 2-column grid, with a dynamic video pop-up.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:33:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:33:05.350Z",
     "dependencies": [
         "lucide-react",
         "react"

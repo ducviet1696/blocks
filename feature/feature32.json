@@ -7,10 +7,7 @@
     "screenshot": "feature32.jpg",
     "thumbnail": "feature32-4x3.webp",
     "description": "A component with a title and a 3-column layout for testimonials, one large featured testimonial spans two columns and rows.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.567Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.567Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

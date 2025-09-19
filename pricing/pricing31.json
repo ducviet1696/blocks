@@ -7,10 +7,7 @@
     "screenshot": "pricing31.jpg",
     "thumbnail": "pricing31-4x3.webp",
     "description": "A component displaying 3 pricing plans with features, highlighting the \"most popular\" choice. Each plan card lists price, benefits, and a CTA button.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.878Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.878Z",
     "dependencies": [
         "lucide-react"
     ],

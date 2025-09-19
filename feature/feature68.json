@@ -7,10 +7,7 @@
     "screenshot": "feature68.jpg",
     "thumbnail": "feature68-4x3.webp",
     "description": "A component that showcases six features with icons, titles, and descriptions in a 1-2-3 column layout, with an introductory section.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.588Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.588Z",
     "dependencies": [
         "lucide-react"
     ],

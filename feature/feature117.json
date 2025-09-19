@@ -7,10 +7,7 @@
     "screenshot": "feature117.jpg",
     "thumbnail": "feature117-4x3.webp",
     "description": "A 3-column component showcasing features with images, hover effects, icons, and links for exploring more.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.827Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.827Z",
     "dependencies": [
         "lucide-react"
     ],

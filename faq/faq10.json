@@ -7,10 +7,7 @@
     "screenshot": "faq10.jpg",
     "thumbnail": "faq10-4x3.webp",
     "description": "An FAQ component with a title, intro text, and accordion-style questions. It includes a badge icon and a bordered layout.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.576Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.576Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "pricing8.jpg",
     "thumbnail": "pricing8-4x3.webp",
     "description": "A pricing component featuring a title, intro text, a card with price detail, a trial button, and a 3-column list of features with check icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.640Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.640Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "hero195.jpg",
     "thumbnail": "hero195-4x3.webp",
     "description": "A dynamic component featuring a header with a title, description, and buttons, below which tabs display images with an animated border effect.",
-    "createdAt": [
-        3,
-        "2025-03-22T04:36:11.199Z"
-    ],
+    "createdAt": "2025-03-22T04:36:11.199Z",
     "dependencies": [
         "lucide-react",
         "react"

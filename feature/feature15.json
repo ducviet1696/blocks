@@ -7,10 +7,7 @@
     "screenshot": "feature15.jpg",
     "thumbnail": "feature15-4x3.webp",
     "description": "A component with a title/description header and a 2-column grid of features, each with icons, titles, and text.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.556Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.556Z",
     "dependencies": [
         "lucide-react"
     ],

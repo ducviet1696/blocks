@@ -7,10 +7,7 @@
     "screenshot": "hero221.jpg",
     "thumbnail": "hero221-4x3.webp",
     "description": "A component featuring animated text over a video, with a centered tagline below. Includes a button with an animated arrow icon.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

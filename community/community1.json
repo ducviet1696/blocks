@@ -7,10 +7,7 @@
     "screenshot": "community1.jpg",
     "thumbnail": "community1-4x3.webp",
     "description": "A component featuring a logo, a call-to-action for joining a community, and social buttons for Twitter, GitHub, and Discord.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.172Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.172Z",
     "dependencies": [
         "react-icons"
     ],

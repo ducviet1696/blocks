@@ -7,10 +7,7 @@
     "screenshot": "feature30.jpg",
     "thumbnail": "feature30-4x3.webp",
     "description": "A component featuring a 3-column layout with 2 images and a text block, showcasing a blend of aesthetics and information.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.566Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.566Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "hero58.jpg",
     "thumbnail": "hero58-4x3.webp",
     "description": "This component displays a 2-column layout with a large title, subtitle, and button on one side, and an image on the other. It features a unique background pattern behind the image.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.887Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.887Z",
     "dependencies": [
         "lucide-react"
     ],

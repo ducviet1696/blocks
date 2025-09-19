@@ -7,10 +7,7 @@
     "screenshot": "feature277.jpg",
     "thumbnail": "feature277-4x3.webp",
     "description": "A 4-column grid feature block with interactive cards displaying titles, descriptions, icons, and \"Read More\" buttons. Cards reveal a colored background on hover.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:51.344Z"
-    ],
+    "createdAt": "2025-08-28T06:50:51.344Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

@@ -7,10 +7,7 @@
     "screenshot": "blog24.jpg",
     "thumbnail": "blog24-4x3.webp",
     "description": "A component displaying a collection of blog posts with images, titles, summaries, labels, authors, and dates, plus a view-all button.",
-    "createdAt": [
-        3,
-        "2025-01-05T00:41:04.973Z"
-    ],
+    "createdAt": "2025-01-05T00:41:04.973Z",
     "dependencies": [
         "lucide-react"
     ],

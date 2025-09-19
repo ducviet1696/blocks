@@ -7,10 +7,7 @@
     "screenshot": "stats1.jpg",
     "thumbnail": "stats1-4x3.webp",
     "description": "A component displaying performance stats in 3 columns, highlighted by large numbers and explanatory texts, centered around platform efficiency gains.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:07:35.866Z"
-    ],
+    "createdAt": "2024-11-15T06:07:35.866Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

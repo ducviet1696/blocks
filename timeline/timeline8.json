@@ -7,10 +7,7 @@
     "screenshot": "timeline8.jpg",
     "thumbnail": "timeline8-4x3.webp",
     "description": "A vertical timeline block, showcasing events with dates, displayed in a centered max-width container with decorative separators.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.426Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.426Z",
     "dependencies": [
         "react"
     ],

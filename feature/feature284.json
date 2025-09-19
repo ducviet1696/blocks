@@ -7,10 +7,7 @@
     "screenshot": "feature284.jpg",
     "thumbnail": "feature284-4x3.webp",
     "description": "A grid component displaying features with images, titles, descriptions, and badges. Incorporates a glowing effect on hover. GridLayout varies from 1-4 columns.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:03.495Z"
-    ],
+    "createdAt": "2025-08-28T06:51:03.495Z",
     "dependencies": [
         "lucide-react",
         "react"

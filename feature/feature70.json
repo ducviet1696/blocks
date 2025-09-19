@@ -7,10 +7,7 @@
     "screenshot": "feature70.jpg",
     "thumbnail": "feature70-4x3.webp",
     "description": "A carousel-based component showcasing features with descriptions, navigable by interactive list items. Layout includes an image carousel and a detailed description list on two columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.590Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.590Z",
     "dependencies": [
         "lucide-react",
         "react"

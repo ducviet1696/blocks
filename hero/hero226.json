@@ -7,10 +7,7 @@
     "screenshot": "hero226.jpg",
     "thumbnail": "hero226-4x3.webp",
     "description": "A carousel component with autoplay functionality, displaying images and text. Includes navigational dots and a \"Try it for free\" button.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.833Z",
     "dependencies": [
         "embla-carousel-autoplay",
         "framer-motion",

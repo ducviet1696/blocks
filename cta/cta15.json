@@ -7,10 +7,7 @@
     "screenshot": "cta15.jpg",
     "thumbnail": "cta15-4x3.webp",
     "description": "A component featuring a call to action with gradient background, text, and buttons on one side, and an image with a subtle overlay effect on the other. Designed in a two-column layout that adjusts to single column on smaller screens.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.104Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.104Z",
     "dependencies": [],
     "registryDependencies": [
         {

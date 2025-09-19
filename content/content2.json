@@ -7,10 +7,7 @@
     "screenshot": "content2.jpg",
     "thumbnail": "content2-4x3.webp",
     "description": "A component showcasing a content management system&#x27;s features, types, and instructions on adding or managing content, with 2-column layout for content types and alert features.",
-    "createdAt": [
-        3,
-        "2024-11-15T05:55:13.721Z"
-    ],
+    "createdAt": "2024-11-15T05:55:13.721Z",
     "dependencies": [
         "lucide-react"
     ],

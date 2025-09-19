@@ -7,10 +7,7 @@
     "screenshot": "feature283.jpg",
     "thumbnail": "feature283-4x3.webp",
     "description": "A component with an interactive image gallery, headline, text, and button. Features draggable, animate-on-scroll images with hover effects.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:00.504Z"
-    ],
+    "createdAt": "2025-08-28T06:51:00.504Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

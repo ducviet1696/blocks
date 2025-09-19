@@ -7,10 +7,7 @@
     "screenshot": "feature204.jpg",
     "thumbnail": "feature204-4x3.webp",
     "description": "A split layout component with an image on one side and text areas alongside features on the other, including a call-to-action button and icons.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.366Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.366Z",
     "dependencies": [
         "lucide-react"
     ],

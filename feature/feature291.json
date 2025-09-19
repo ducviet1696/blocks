@@ -7,10 +7,7 @@
     "screenshot": "feature291.jpg",
     "thumbnail": "feature291-4x3.webp",
     "description": "An interactive input component that animates and vanishes text, with a dynamic marquee and clickable options for user input enhancement.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:17.266Z"
-    ],
+    "createdAt": "2025-08-28T06:51:17.266Z",
     "dependencies": [
         "lucide-react",
         "motion",

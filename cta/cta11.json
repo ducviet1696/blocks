@@ -7,10 +7,7 @@
     "screenshot": "cta11.jpg",
     "thumbnail": "cta11-4x3.webp",
     "description": "A component with heading, description, and up to two buttons, arranged vertically with emphasis styling.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.545Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.545Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

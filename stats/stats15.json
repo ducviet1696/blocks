@@ -7,10 +7,7 @@
     "screenshot": "stats15.jpg",
     "thumbnail": "stats15-4x3.webp",
     "description": "Dynamic stats display component with animated numbers, toggling year buttons, and an animated link illustration that changes based on the selected year. Features 4 columns of data.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:43.857Z"
-    ],
+    "createdAt": "2025-05-04T23:59:43.857Z",
     "dependencies": [
         "\"@number-flow/react\"",
         "framer-motion",

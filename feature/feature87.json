@@ -7,10 +7,7 @@
     "screenshot": "feature87.jpg",
     "thumbnail": "feature87-4x3.webp",
     "description": "A block featuring badges, headings, lists, and an image. It&#x27;s structured in a 3-column grid with text and icons on the left, and a large image spanning two columns on the right.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.199Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.199Z",
     "dependencies": [
         "lucide-react"
     ],

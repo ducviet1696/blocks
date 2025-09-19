@@ -7,10 +7,7 @@
     "screenshot": "hero187a.jpg",
     "thumbnail": "hero187a-4x3.webp",
     "description": "A component featuring a carousel with auto-play functionality, a section with text content, and a grid layout displaying four features with icons. Includes navigation buttons.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:38:14.598Z"
-    ],
+    "createdAt": "2025-07-01T03:38:14.598Z",
     "dependencies": [
         "embla-carousel-autoplay",
         "lucide-react",

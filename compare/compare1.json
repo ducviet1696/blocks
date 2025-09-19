@@ -7,10 +7,7 @@
     "screenshot": "compare1.jpg",
     "thumbnail": "compare1-4x3.webp",
     "description": "A comparative block showcasing features between two entities in a 3-column layout with icons to highlight specific traits.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.772Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.772Z",
     "dependencies": [
         "lucide-react",
         "react"

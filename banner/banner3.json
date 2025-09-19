@@ -7,10 +7,7 @@
     "screenshot": "banner3.jpg",
     "thumbnail": "banner3-4x3.webp",
     "description": "A subscription block featuring a title, description, email input, and subscribe button. Includes a dismissible icon and adapts layout between single and multi-column views.",
-    "createdAt": [
-        3,
-        "2025-01-05T03:59:55.495Z"
-    ],
+    "createdAt": "2025-01-05T03:59:55.495Z",
     "dependencies": [
         "lucide-react",
         "react"

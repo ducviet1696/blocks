@@ -7,10 +7,7 @@
     "screenshot": "stats14.jpg",
     "thumbnail": "stats14-4x3.webp",
     "description": "A countdown display component with an animated timer, promotional text, and a call-to-action button. Features a decorated container with dotted accents.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:43.857Z"
-    ],
+    "createdAt": "2025-05-04T23:59:43.857Z",
     "dependencies": [
         "\"@number-flow/react\"",
         "framer-motion",

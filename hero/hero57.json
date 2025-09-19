@@ -7,10 +7,7 @@
     "screenshot": "hero57.jpg",
     "thumbnail": "hero57-4x3.webp",
     "description": "A component showcasing AI-powered proposal creation with engaging features, including decorative icons and dashed banners emphasizing speed, security, and professionalism. Center-aligns its title and description within a single column layout, accentuated by a subtle background pattern and a call-to-action button.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.244Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.244Z",
     "dependencies": [
         "lucide-react"
     ],

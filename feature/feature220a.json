@@ -7,10 +7,7 @@
     "screenshot": "feature220a.jpg",
     "thumbnail": "feature220a-4x3.webp",
     "description": "A component featuring badges, headings, text, a large button, and a video. It includes stats in a 3-column layout, a dotted background pattern, and primary color highlights.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:54.327Z"
-    ],
+    "createdAt": "2025-07-01T03:37:54.327Z",
     "dependencies": [
         "lucide-react"
     ],

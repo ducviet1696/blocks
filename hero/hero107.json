@@ -7,10 +7,7 @@
     "screenshot": "hero107.jpg",
     "thumbnail": "hero107-4x3.webp",
     "description": "A component with a dual-column layout, featuring an attention-grabbing headline, a decorative button with unique animation, and a side image embellished with a \"Hire Me\" call-to-action button.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:21:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:21:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

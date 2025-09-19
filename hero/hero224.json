@@ -7,10 +7,7 @@
     "screenshot": "hero224.jpg",
     "thumbnail": "hero224-4x3.webp",
     "description": "A component with a headline, text, two buttons, and an image cloud. It&#x27;s a split layout with text on one side and images on the other.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "lucide-react",
         "react",

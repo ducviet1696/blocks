@@ -7,10 +7,7 @@
     "screenshot": "integration13.jpg",
     "thumbnail": "integration13-4x3.webp",
     "description": "A component showcasing a collection of integrations with iconic apps, featuring hover-activated animation for emphasis and links for more details.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:51.188Z"
-    ],
+    "createdAt": "2025-08-28T06:52:51.188Z",
     "dependencies": [
         "framer-motion",
         "react"

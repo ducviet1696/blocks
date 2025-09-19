@@ -7,10 +7,7 @@
     "screenshot": "feature29.jpg",
     "thumbnail": "feature29-4x3.webp",
     "description": "A component with a 2-column layout including images and text blocks, showcasing features via placeholders and descriptions.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.565Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.565Z",
     "dependencies": [],
     "registryDependencies": [
         {

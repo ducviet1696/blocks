@@ -7,10 +7,7 @@
     "screenshot": "feature54.jpg",
     "thumbnail": "feature54-4x3.webp",
     "description": "A tabbed component showcasing features with images and subfeatures. Includes 5 tabs, images for each feature, and a 3-column layout for subfeatures.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.575Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.575Z",
     "dependencies": [
         "react"
     ],

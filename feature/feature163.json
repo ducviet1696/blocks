@@ -7,10 +7,7 @@
     "screenshot": "feature163.jpg",
     "thumbnail": "feature163-4x3.webp",
     "description": "A component with a 5-column grid layout, featuring 4 blocks each with text, images, and varying column spans. Unique rounded image integration.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.669Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.669Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

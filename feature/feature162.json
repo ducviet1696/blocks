@@ -7,10 +7,7 @@
     "screenshot": "feature162.jpg",
     "thumbnail": "feature162-4x3.webp",
     "description": "A component featuring 1 row with text and an image, followed by 2 more images below, each in a rounded border.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.668Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.668Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

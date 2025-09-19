@@ -7,10 +7,7 @@
     "screenshot": "hero228.jpg",
     "thumbnail": "hero228-4x3.webp",
     "description": "A component showcasing a carousel of testimonials with dynamic rotation effect and custom scrollbar animation. Displays names below images.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.833Z",
     "dependencies": [
         "embla-carousel-autoplay",
         "framer-motion",

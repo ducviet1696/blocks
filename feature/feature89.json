@@ -7,10 +7,7 @@
     "screenshot": "feature89.jpg",
     "thumbnail": "feature89-4x3.webp",
     "description": "A component with a promotional section and 3-column feature display, incorporating text blocks, an image placeholder, and icons for efficiency, resource optimization, and simplified operations.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.200Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.200Z",
     "dependencies": [
         "lucide-react"
     ],

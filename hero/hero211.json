@@ -7,10 +7,7 @@
     "screenshot": "hero211.jpg",
     "thumbnail": "hero211-4x3.webp",
     "description": "A component featuring a hero block with a motivational title, a text block, an image carousel with pagination, a \"Get Started\" button with a unique pop-up text animation, and a marquee of cards at the bottom.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "react",

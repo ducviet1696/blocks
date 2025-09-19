@@ -7,10 +7,7 @@
     "screenshot": "cta20.jpg",
     "thumbnail": "cta20-4x3.webp",
     "description": "A call-to-action block with centered text, a large button labeled \"Get Started,\" flanked by separators, within a single-column layout.",
-    "createdAt": [
-        3,
-        "2024-12-27T07:51:28.628Z"
-    ],
+    "createdAt": "2024-12-27T07:51:28.628Z",
     "dependencies": [],
     "registryDependencies": [
         {

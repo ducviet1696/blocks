@@ -7,10 +7,7 @@
     "screenshot": "footer11.jpg",
     "thumbnail": "footer11-4x3.webp",
     "description": "A component with a logo, menu links across 3 columns, social media icons, and a large image. Offers product, company, and legal info sections.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.599Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.599Z",
     "dependencies": [
         "lucide-react"
     ],

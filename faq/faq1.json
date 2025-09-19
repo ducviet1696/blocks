@@ -7,10 +7,7 @@
     "screenshot": "faq1.jpg",
     "thumbnail": "faq1-4x3.webp",
     "description": "An accordion-style FAQ component with a customizable heading and list of questions and answers.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.550Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.550Z",
     "dependencies": [],
     "registryDependencies": [
         {

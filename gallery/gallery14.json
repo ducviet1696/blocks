@@ -7,10 +7,7 @@
     "screenshot": "gallery14.jpg",
     "thumbnail": "gallery14-4x3.webp",
     "description": "A gallery component with a carousel of items, featuring dynamic navigation dots that expand with titles on the active item. Layout includes a headline, description, and 2-column design with imagery.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.814Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.814Z",
     "dependencies": [
         "react"
     ],

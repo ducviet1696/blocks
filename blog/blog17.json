@@ -7,10 +7,7 @@
     "screenshot": "blog17.jpg",
     "thumbnail": "blog17-4x3.webp",
     "description": "A component showcases blog articles with filtering. Layout includes an article display area (3-column wide) and a category filter sidebar (1-column), plus introductory text. Features dynamic filtering by category.",
-    "createdAt": [
-        3,
-        "2024-11-15T05:55:13.705Z"
-    ],
+    "createdAt": "2024-11-15T05:55:13.705Z",
     "dependencies": [
         "react"
     ],

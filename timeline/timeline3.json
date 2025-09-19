@@ -7,10 +7,7 @@
     "screenshot": "timeline3.jpg",
     "thumbnail": "timeline3-4x3.webp",
     "description": "A component with a two-column layout. It displays a heading, description, and two buttons on one side. The other side visualizes features with images, titles, and descriptions.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.784Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.784Z",
     "dependencies": [],
     "registryDependencies": [
         {

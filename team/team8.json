@@ -7,10 +7,7 @@
     "screenshot": "team8.jpg",
     "thumbnail": "team8-4x3.webp",
     "description": "A carousel component showcasing team members with images, roles, and years of experience. Includes navigation buttons and a separator.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.988Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.988Z",
     "dependencies": [],
     "registryDependencies": [
         {

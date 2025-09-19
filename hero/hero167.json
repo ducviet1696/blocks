@@ -7,10 +7,7 @@
     "screenshot": "hero167.jpg",
     "thumbnail": "hero167-4x3.webp",
     "description": "A dual-column component with text and buttons in one and dynamic images in the other, featuring outlined buttons that change on hover, and images within aspect ratios.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:38:05.336Z"
-    ],
+    "createdAt": "2024-12-16T05:38:05.336Z",
     "dependencies": [
         "lucide-react"
     ],

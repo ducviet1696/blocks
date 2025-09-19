@@ -7,10 +7,7 @@
     "screenshot": "navbar24.jpg",
     "thumbnail": "navbar24-4x3.webp",
     "description": "A dynamic navbar component featuring an animated dock with interactive icons for navigation linked to different sections.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:54.394Z"
-    ],
+    "createdAt": "2025-08-28T06:52:54.394Z",
     "dependencies": [
         "lucide-react",
         "motion",

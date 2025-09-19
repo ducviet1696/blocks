@@ -7,10 +7,7 @@
     "screenshot": "blog4.jpg",
     "thumbnail": "blog4-4x3.webp",
     "description": "A blog component with a header, \"View all posts\" button, and a grid layout (up to 3 columns) displaying posts with image, label, title, summary, author avatar, and publish date.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.538Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.538Z",
     "dependencies": [],
     "registryDependencies": [
         {

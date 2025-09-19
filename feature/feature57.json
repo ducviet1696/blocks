@@ -7,10 +7,7 @@
     "screenshot": "feature57.jpg",
     "thumbnail": "feature57-4x3.webp",
     "description": "A component showcasing a feature list with an image carousel. It has selectable tabs that scroll images into view and update dynamically.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.577Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.577Z",
     "dependencies": [
         "lucide-react",
         "react"

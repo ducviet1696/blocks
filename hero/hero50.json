@@ -7,10 +7,7 @@
     "screenshot": "hero50.jpg",
     "thumbnail": "hero50-4x3.webp",
     "description": "A component with a call-to-action link, centered title, description text, and two buttons. Features images with overlapping effects.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.241Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.241Z",
     "dependencies": [
         "lucide-react"
     ],

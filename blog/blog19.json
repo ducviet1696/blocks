@@ -7,10 +7,7 @@
     "screenshot": "blog19.jpg",
     "thumbnail": "blog19-4x3.webp",
     "description": "This component displays a block titled \"Related articles\" with a button to see all articles. It features a 1 to 4 column grid layout of article summaries.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:26:17.988Z"
-    ],
+    "createdAt": "2024-11-15T06:26:17.988Z",
     "dependencies": [],
     "registryDependencies": [
         {

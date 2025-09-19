@@ -7,10 +7,7 @@
     "screenshot": "feature130.jpg",
     "thumbnail": "feature130-4x3.webp",
     "description": "A component showcasing business integrations with 3 segments, including icons, titles, and text. Features a 3-column layout with images.",
-    "createdAt": [
-        3,
-        "2024-10-17T05:25:53.973Z"
-    ],
+    "createdAt": "2024-10-17T05:25:53.973Z",
     "dependencies": [
         "lucide-react"
     ],

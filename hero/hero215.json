@@ -7,10 +7,7 @@
     "screenshot": "hero215.jpg",
     "thumbnail": "hero215-4x3.webp",
     "description": "A component featuring a large title and paragraph, alongside a &#x27;Contact Us&#x27; button and right-aligned image. Unique for its overlaid text and button on a full viewport height background.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "lucide-react",
         "react"

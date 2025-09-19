@@ -7,10 +7,7 @@
     "screenshot": "pricing6.jpg",
     "thumbnail": "pricing6-4x3.webp",
     "description": "A pricing component with a heading, description, price, features list, and a call-to-action button. Features 3 groups of listed perks.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.638Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.638Z",
     "dependencies": [
         "lucide-react"
     ],

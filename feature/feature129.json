@@ -7,10 +7,7 @@
     "screenshot": "feature129.jpg",
     "thumbnail": "feature129-4x3.webp",
     "description": "A tabbed component showcasing integrations like Slack & Google Drive, featuring descriptions, images, and \"Learn more\" links. Has a title and subtitle.",
-    "createdAt": [
-        3,
-        "2024-10-17T05:25:53.971Z"
-    ],
+    "createdAt": "2024-10-17T05:25:53.971Z",
     "dependencies": [
         "react"
     ],

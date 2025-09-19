@@ -7,10 +7,7 @@
     "screenshot": "changelog4.jpg",
     "thumbnail": "changelog4-4x3.webp",
     "description": "A changelog component with social links, a scroll progress indicator, and two updates sections featuring avatars, dates, large text headers, and detailed lists.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.772Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.772Z",
     "dependencies": [
         "react",
         "react-icons"

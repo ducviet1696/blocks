@@ -7,10 +7,7 @@
     "screenshot": "faq3.jpg",
     "thumbnail": "faq3-4x3.webp",
     "description": "A FAQ component with collapsible questions, a support section with avatars and a contact button.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.552Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.552Z",
     "dependencies": [],
     "registryDependencies": [
         {

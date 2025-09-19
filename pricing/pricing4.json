@@ -7,10 +7,7 @@
     "screenshot": "pricing4.jpg",
     "thumbnail": "pricing4-4x3.webp",
     "description": "A component displaying a pricing section with 3 tiers and a customizable payment frequency toggle (Monthly/Yearly). Includes feature lists and call-to-action buttons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.637Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.637Z",
     "dependencies": [
         "lucide-react",
         "react"

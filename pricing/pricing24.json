@@ -7,10 +7,7 @@
     "screenshot": "pricing24.jpg",
     "thumbnail": "pricing24-4x3.webp",
     "description": "A pricing component with a toggle for annual billing, displaying 3 plans in columns, featuring highlights and a call-to-action button per plan, with special emphasis on a popular choice via scaling and ring decoration.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.633Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.633Z",
     "dependencies": [
         "lucide-react",
         "react"

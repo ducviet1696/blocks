@@ -7,10 +7,7 @@
     "screenshot": "compare6.jpg",
     "thumbnail": "compare6-4x3.webp",
     "description": "A component displaying a comparative analysis of models in a table with tabs for model selection. Features statue indicators and fixed columns.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.771Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.771Z",
     "dependencies": [
         "lucide-react",
         "react"

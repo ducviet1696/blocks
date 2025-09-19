@@ -7,10 +7,7 @@
     "screenshot": "team3.jpg",
     "thumbnail": "team3-4x3.webp",
     "description": "A component displaying a team section with a hiring call, team intro, and dynamic grid of team members (up to 8), including avatar, name, role, and social links. Grid adapts from 1 to 4 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.647Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.647Z",
     "dependencies": [
         "lucide-react"
     ],

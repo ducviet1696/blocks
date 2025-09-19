@@ -7,10 +7,7 @@
     "screenshot": "hero227.jpg",
     "thumbnail": "hero227-4x3.webp",
     "description": "A component featuring icons with text, a bold animated headline, a paragraph, dual buttons, and a phone mockup animation.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:40.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:40.833Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

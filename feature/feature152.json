@@ -7,10 +7,7 @@
     "screenshot": "feature152.jpg",
     "thumbnail": "feature152-4x3.webp",
     "description": "A component featuring a central title and message, with clickable icons arranged in a staggered layout. Visual enhancements include overlaid decorative circles and gradient effects.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.664Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.664Z",
     "dependencies": [
         "lucide-react"
     ],

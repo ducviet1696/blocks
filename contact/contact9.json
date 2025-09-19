@@ -7,10 +7,7 @@
     "screenshot": "contact9.jpg",
     "thumbnail": "contact9-4x3.webp",
     "description": "A component with a contact form and methods listed in columns, featuring input fields, checkboxes, and buttons for submissions alongside icons for email, phone, and office directions.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:52:35.528Z"
-    ],
+    "createdAt": "2025-01-23T06:52:35.528Z",
     "dependencies": [
         "lucide-react",
         "react"

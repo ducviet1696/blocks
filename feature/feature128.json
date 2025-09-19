@@ -7,10 +7,7 @@
     "screenshot": "feature128.jpg",
     "thumbnail": "feature128-4x3.webp",
     "description": "A component featuring a title, a subtext, and a 2-3 column layout of items, each with an icon and a description.",
-    "createdAt": [
-        3,
-        "2024-10-17T05:25:53.971Z"
-    ],
+    "createdAt": "2024-10-17T05:25:53.971Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "about2.jpg",
     "thumbnail": "about2-4x3.webp",
     "description": "A multi-section component featuring a title, a descriptive paragraph, a 3-image grid, a series of stat blocks, client logos, and benefits with images and text. Layout varies responsively, with image and text grids adjusting for mobile. Unique features include a testimonials section and a stats showcase.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.055Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.055Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

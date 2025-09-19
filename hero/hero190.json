@@ -7,10 +7,7 @@
     "screenshot": "hero190.jpg",
     "thumbnail": "hero190-4x3.webp",
     "description": "A component with text, a button, and decorative patterns, flanked by bordered sections. It features a prominent heading, subtext, and a styled button with an icon.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:24:40.625Z"
-    ],
+    "createdAt": "2024-12-16T05:24:40.625Z",
     "dependencies": [
         "lucide-react"
     ],

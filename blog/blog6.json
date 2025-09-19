@@ -7,10 +7,7 @@
     "screenshot": "blog6.jpg",
     "thumbnail": "blog6-4x3.webp",
     "description": "A blog display component with a headline, intro text, and a grid of posts (up to 3 columns). It features images, badges, authors&#x27; avatars, and pagination.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.539Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.539Z",
     "dependencies": [],
     "registryDependencies": [
         {

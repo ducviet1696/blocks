@@ -7,10 +7,7 @@
     "screenshot": "login5.jpg",
     "thumbnail": "login5-4x3.webp",
     "description": "A login component featuring a 2-column layout with one column for form inputs including email and password fields, a checkbox for \"Remember me\", and buttons for submitting the form or logging in with Google. The second column displays an image.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.251Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.251Z",
     "dependencies": [],
     "registryDependencies": [
         {

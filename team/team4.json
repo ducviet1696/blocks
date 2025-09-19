@@ -7,10 +7,7 @@
     "screenshot": "team4.jpg",
     "thumbnail": "team4-4x3.webp",
     "description": "A component showcasing a team with 4 profile cards, including images, roles, bios, and social links. Each row adapts to screen size, displaying up to 4 columns.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.637Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.637Z",
     "dependencies": [
         "lucide-react"
     ],

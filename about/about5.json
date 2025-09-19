@@ -7,10 +7,7 @@
     "screenshot": "about5.jpg",
     "thumbnail": "about5-4x3.webp",
     "description": "A component showcasing an about section with a 2-column layout featuring a title, description, an image, statistics, and logos, aimed at illustrating workflow simplification by a developer-centric platform.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.795Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.795Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

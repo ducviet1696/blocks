@@ -7,10 +7,7 @@
     "screenshot": "feature111.jpg",
     "thumbnail": "feature111-4x3.webp",
     "description": "A component showcasing features with 2 columns, badges, headings, descriptions, links, and images. Unique for its centered content and outlined badges.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.824Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.824Z",
     "dependencies": [
         "lucide-react"
     ],

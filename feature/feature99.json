@@ -7,10 +7,7 @@
     "screenshot": "feature99.jpg",
     "thumbnail": "feature99-4x3.webp",
     "description": "A component displaying a setup guide with a heading, introductory section, and a 3-column layout for steps, each having a title and description.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.066Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.066Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

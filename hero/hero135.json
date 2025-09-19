@@ -7,10 +7,7 @@
     "screenshot": "hero135.jpg",
     "thumbnail": "hero135-4x3.webp",
     "description": "A component with a section for customer stories and a video. It has a 2-column layout with text-badges, headlines, paragraphs, and a play button overlaying a looped video. A dialog for fullscreen video playback is included.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:29:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:29:05.350Z",
     "dependencies": [
         "lucide-react",
         "react"

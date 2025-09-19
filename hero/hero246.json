@@ -7,10 +7,7 @@
     "screenshot": "hero246.jpg",
     "thumbnail": "hero246-4x3.webp",
     "description": "Data visualization block featuring a chart with trends over time, surrounded by a title, a summary, interactive buttons, and unique background patterns.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:49.644Z"
-    ],
+    "createdAt": "2025-08-28T06:52:49.644Z",
     "dependencies": [
         "react",
         "recharts"

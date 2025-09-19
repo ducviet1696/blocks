@@ -7,10 +7,7 @@
     "screenshot": "feature35.jpg",
     "thumbnail": "feature35-4x3.webp",
     "description": "A 4-column component with a large title spans 2 rows, followed by 3 content blocks, each with a title, text, and link. An arrow icon accents links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.568Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.568Z",
     "dependencies": [
         "lucide-react"
     ],

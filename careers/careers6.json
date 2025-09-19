@@ -7,10 +7,7 @@
     "screenshot": "careers6.jpg",
     "thumbnail": "careers6-4x3.webp",
     "description": "A dual-column block showcasing job openings with badges for categories and icons for job types and locations.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.804Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.804Z",
     "dependencies": [
         "lucide-react"
     ],

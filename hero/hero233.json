@@ -7,10 +7,7 @@
     "screenshot": "hero233.jpg",
     "thumbnail": "hero233-4x3.webp",
     "description": "A hero component with a text banner, animated background lines, and buttons, featuring a central title with special text effects and call-to-action buttons.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.833Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

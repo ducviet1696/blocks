@@ -7,10 +7,7 @@
     "screenshot": "product1.jpg",
     "thumbnail": "product1-4x3.webp",
     "description": "A component showcasing a product description with a narrative, features, reviewer avatar, social share buttons, and a download button in a 2-column layout.",
-    "createdAt": [
-        3,
-        "2024-11-15T05:55:13.906Z"
-    ],
+    "createdAt": "2024-11-15T05:55:13.906Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "team5.jpg",
     "thumbnail": "team5-4x3.webp",
     "description": "A component featuring a team section with a hiring call, team intro, and buttons. It displays 8 profiles in up to 4 columns with photos, names, roles, and descriptions.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.648Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.648Z",
     "dependencies": [],
     "registryDependencies": [
         {

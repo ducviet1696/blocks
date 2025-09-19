@@ -7,10 +7,7 @@
     "screenshot": "hero16.jpg",
     "thumbnail": "hero16-4x3.webp",
     "description": "A component featuring a central column with a bold heading, a text block, and two buttons, above an image with a gradient mask.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.609Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.609Z",
     "dependencies": [],
     "registryDependencies": [
         {

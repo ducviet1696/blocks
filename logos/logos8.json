@@ -7,10 +7,7 @@
     "screenshot": "logos8.jpg",
     "thumbnail": "logos8-4x3.webp",
     "description": "A logos showcase component with a title, subtitle, and a grid of logos from various companies, customizable via props.",
-    "createdAt": [
-        3,
-        "2024-11-12T00:21:38.112Z"
-    ],
+    "createdAt": "2024-11-12T00:21:38.112Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

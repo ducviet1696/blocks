@@ -7,10 +7,7 @@
     "screenshot": "hero180.jpg",
     "thumbnail": "hero180-4x3.webp",
     "description": "A component with a title, description, two buttons, and a complex image layout with overlay effects and gradient backgrounds.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:20:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:20:05.350Z",
     "dependencies": [],
     "registryDependencies": [
         {

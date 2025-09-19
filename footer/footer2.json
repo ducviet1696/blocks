@@ -7,10 +7,7 @@
     "screenshot": "footer2.jpg",
     "thumbnail": "footer2-4x3.webp",
     "description": "A footer component with a logo and tagline, 1-4 columns of menu items, and a bottom row for copyright and policy links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.599Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.599Z",
     "dependencies": [],
     "registryDependencies": [
         {

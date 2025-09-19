@@ -7,10 +7,7 @@
     "screenshot": "feature139.jpg",
     "thumbnail": "feature139-4x3.webp",
     "description": "A component featuring a badge, a heading, a paragraph, an image, and a 4-column grid of items with numbers, titles, and descriptions.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.656Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.656Z",
     "dependencies": [],
     "registryDependencies": [
         {

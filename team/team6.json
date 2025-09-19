@@ -7,10 +7,7 @@
     "screenshot": "team6.jpg",
     "thumbnail": "team6-4x3.webp",
     "description": "A component displaying a team section with a hiring call, team introduction, and a grid of team members&#x27; profiles including their roles, descriptions, and social links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.648Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.648Z",
     "dependencies": [],
     "registryDependencies": [
         {

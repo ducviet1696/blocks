@@ -7,10 +7,7 @@
     "screenshot": "blog21.jpg",
     "thumbnail": "blog21-4x3.webp",
     "description": "A carousel component displaying blog posts with navigation arrows, tags, and a \"View All Articles\" button.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.420Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.420Z",
     "dependencies": [
         "lucide-react",
         "react"

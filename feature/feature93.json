@@ -7,10 +7,7 @@
     "screenshot": "feature93.jpg",
     "thumbnail": "feature93-4x3.webp",
     "description": "A component featuring staggered avatars and a 3-column layout with icons, highlighting customer care themes, and focusing on support, solutions, and feedback.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.202Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.202Z",
     "dependencies": [
         "lucide-react"
     ],

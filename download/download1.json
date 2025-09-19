@@ -7,10 +7,7 @@
     "screenshot": "download1.jpg",
     "thumbnail": "download1-4x3.webp",
     "description": "A component with a heading and description, containing three cards for different platforms (desktop, iOS, android) each with titles, subtitles, descriptions, and download options.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:38.334Z"
-    ],
+    "createdAt": "2025-07-01T03:37:38.334Z",
     "dependencies": [
         "lucide-react"
     ],

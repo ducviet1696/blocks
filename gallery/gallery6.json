@@ -7,10 +7,7 @@
     "screenshot": "gallery6.jpg",
     "thumbnail": "gallery6-4x3.webp",
     "description": "A carousel component with a heading, &#x27;Book a demo&#x27; link, scrolling buttons, and dynamic content blocks comprising images, titles, and summaries.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.605Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.605Z",
     "dependencies": [
         "lucide-react",
         "react"

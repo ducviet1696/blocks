@@ -7,10 +7,7 @@
     "screenshot": "gallery11.jpg",
     "thumbnail": "gallery11-4x3.webp",
     "description": "A travel destination gallery with 4 items in a carousel, each item featuring an image, title, and description. Has a heading and \"Explore All\" button.",
-    "createdAt": [
-        3,
-        "2025-01-20T22:48:37.025Z"
-    ],
+    "createdAt": "2025-01-20T22:48:37.025Z",
     "dependencies": [
         "lucide-react"
     ],

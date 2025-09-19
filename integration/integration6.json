@@ -7,10 +7,7 @@
     "screenshot": "integration6.jpg",
     "thumbnail": "integration6-4x3.webp",
     "description": "A component with a headline, description, interactive button leading to more content, and two logo carousels separated by dividers, all within a dark-themed layout.",
-    "createdAt": [
-        3,
-        "2025-04-30T03:08:16.872Z"
-    ],
+    "createdAt": "2025-04-30T03:08:16.872Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "embla-carousel-autoplay",

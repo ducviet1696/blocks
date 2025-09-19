@@ -7,10 +7,7 @@
     "screenshot": "feature83.jpg",
     "thumbnail": "feature83-4x3.webp",
     "description": "A component with a 2-column layout featuring badges, icons, and text to highlight flexible support and collaborative tools. Includes a decorative background effect.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.198Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.198Z",
     "dependencies": [
         "lucide-react"
     ],

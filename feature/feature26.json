@@ -7,10 +7,7 @@
     "screenshot": "feature26.jpg",
     "thumbnail": "feature26-4x3.webp",
     "description": "A component displaying 6 features with icons, titles, and descriptions in a grid of up to 3 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.563Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.563Z",
     "dependencies": [
         "lucide-react"
     ],

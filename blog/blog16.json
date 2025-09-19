@@ -7,10 +7,7 @@
     "screenshot": "blog16.jpg",
     "thumbnail": "blog16-4x3.webp",
     "description": "A blog section showcasing articles with dates, titles, categories, and team logos in a 4-column layout, featuring hover effects and navigation icons.",
-    "createdAt": [
-        3,
-        "2024-11-15T05:55:13.704Z"
-    ],
+    "createdAt": "2024-11-15T05:55:13.704Z",
     "dependencies": [
         "lucide-react",
         "react"

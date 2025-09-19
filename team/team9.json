@@ -7,10 +7,7 @@
     "screenshot": "team9.jpg",
     "thumbnail": "team9-4x3.webp",
     "description": "A component showcasing team members with tabbed categorization and search functionality, displaying member details within a grid layout of up to 4 columns.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.988Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.988Z",
     "dependencies": [
         "\"@radix-ui/react-tabs\"",
         "lucide-react",

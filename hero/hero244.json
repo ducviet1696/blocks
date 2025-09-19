@@ -7,10 +7,7 @@
     "screenshot": "hero244.jpg",
     "thumbnail": "hero244-4x3.webp",
     "description": "A component featuring a two-column layout: one for promotional content including a header, text, and buttons; the other showcases draggable cards with images and titles.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:46.510Z"
-    ],
+    "createdAt": "2025-08-28T06:52:46.510Z",
     "dependencies": [
         "lucide-react",
         "react"

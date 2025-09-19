@@ -7,10 +7,7 @@
     "screenshot": "hero205.jpg",
     "thumbnail": "hero205-4x3.webp",
     "description": "This component showcases a hero section with a large headline, professional information, CTA buttons, and an animated card. It utilizes icons and a custom animation for visual appeal.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.404Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.404Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

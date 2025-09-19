@@ -7,10 +7,7 @@
     "screenshot": "footer12.jpg",
     "thumbnail": "footer12-4x3.webp",
     "description": "A footer component with three sections for navigation links, social media, and legal text. Includes an image with external link indicators for social media.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.599Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.599Z",
     "dependencies": [
         "lucide-react"
     ],

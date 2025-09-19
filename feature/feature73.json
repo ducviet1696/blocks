@@ -7,10 +7,7 @@
     "screenshot": "feature73.jpg",
     "thumbnail": "feature73-4x3.webp",
     "description": "A component displays a heading, description, and a link followed by a grid of features with images, each detailing a specific capability. Two-column layout for larger screens, single for smaller.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.592Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.592Z",
     "dependencies": [
         "lucide-react"
     ],

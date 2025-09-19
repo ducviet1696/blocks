@@ -7,10 +7,7 @@
     "screenshot": "signup6.jpg",
     "thumbnail": "signup6-4x3.webp",
     "description": "A signup component featuring email/password fields, Google signup, and a login redirect. Layout includes a centered form in a 400px column.",
-    "createdAt": [
-        3,
-        "2025-02-21T02:40:51.807Z"
-    ],
+    "createdAt": "2025-02-21T02:40:51.807Z",
     "dependencies": [],
     "registryDependencies": [
         {

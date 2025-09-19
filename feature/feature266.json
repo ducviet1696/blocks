@@ -7,10 +7,7 @@
     "screenshot": "feature266.jpg",
     "thumbnail": "feature266-4x3.webp",
     "description": "A component showcasing a \"FRAGMENTS OF LIGHT & STILLNESS\" collection with a three-column grid of cards featuring image tooltips, staggered animations, and a hover effect enhancing visual context.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:38:05.883Z"
-    ],
+    "createdAt": "2025-07-01T03:38:05.883Z",
     "dependencies": [
         "framer-motion"
     ],

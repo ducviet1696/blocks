@@ -7,10 +7,7 @@
     "screenshot": "cta23.jpg",
     "thumbnail": "cta23-4x3.webp",
     "description": "A component with a newsletter subscription form, badge, heading, description, and features list, styled with icons and varying text sizes.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.425Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.425Z",
     "dependencies": [
         "lucide-react"
     ],

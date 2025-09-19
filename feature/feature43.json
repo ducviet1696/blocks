@@ -7,10 +7,7 @@
     "screenshot": "feature43.jpg",
     "thumbnail": "feature43-4x3.webp",
     "description": "A component showcasing 6 reasons with icons, titles, and descriptions in a 3-column grid for \"Why Work With Us?\".",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.572Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.572Z",
     "dependencies": [
         "lucide-react"
     ],

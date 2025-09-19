@@ -7,10 +7,7 @@
     "screenshot": "feature241.jpg",
     "thumbnail": "feature241-4x3.webp",
     "description": "A component displaying a header and a grid of cards, each with an icon, title, and description about team features. Grid has 2 columns. Cards animate on hover.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.384Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.384Z",
     "dependencies": [
         "lucide-react",
         "react"

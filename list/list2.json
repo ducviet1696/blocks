@@ -7,10 +7,7 @@
     "screenshot": "list2.jpg",
     "thumbnail": "list2-4x3.webp",
     "description": "A component displaying a list of awards with icons, titles, categories, and descriptions. Includes headings and buttons to view details.",
-    "createdAt": [
-        3,
-        "2024-11-15T05:55:13.891Z"
-    ],
+    "createdAt": "2024-11-15T05:55:13.891Z",
     "dependencies": [
         "lucide-react",
         "react"

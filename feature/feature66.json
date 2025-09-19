@@ -7,10 +7,7 @@
     "screenshot": "feature66.jpg",
     "thumbnail": "feature66-4x3.webp",
     "description": "A component featuring a title and a 2-column grid of large, hover-zoom image cards with overlaid text and logos, scaling to 1-column on smaller screens.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.586Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.586Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

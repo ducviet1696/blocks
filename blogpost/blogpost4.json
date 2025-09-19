@@ -7,10 +7,7 @@
     "screenshot": "blogpost4.jpg",
     "thumbnail": "blogpost4-4x3.webp",
     "description": "A component displaying an article with breadcrumbs, author details, and sections with dynamic navigation. It features sticky social share icons and a \"Back to top\" button.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.253Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.253Z",
     "dependencies": [
         "lucide-react",
         "react"

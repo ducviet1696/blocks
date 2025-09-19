@@ -7,10 +7,7 @@
     "screenshot": "hero29.jpg",
     "thumbnail": "hero29-4x3.webp",
     "description": "A welcome block with centered text, two call-to-action buttons, a 5-star rating display, and a large image placeholder. Features a detailed background design.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.613Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.613Z",
     "dependencies": [
         "lucide-react"
     ],

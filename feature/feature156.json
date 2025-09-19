@@ -7,10 +7,7 @@
     "screenshot": "feature156.jpg",
     "thumbnail": "feature156-4x3.webp",
     "description": "A component displaying tabs with 3 columns, featuring dynamic visual content for software development themes upon tab selection.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.665Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.665Z",
     "dependencies": [
         "react"
     ],

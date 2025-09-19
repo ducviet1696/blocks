@@ -7,10 +7,7 @@
     "screenshot": "cta4.jpg",
     "thumbnail": "cta4-4x3.webp",
     "description": "A call-to-action block with a title, description, button, and list of features. Uses a 2-column layout within a larger container.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.548Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.548Z",
     "dependencies": [
         "lucide-react"
     ],

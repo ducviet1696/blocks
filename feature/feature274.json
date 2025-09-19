@@ -7,10 +7,7 @@
     "screenshot": "feature274.jpg",
     "thumbnail": "feature274-4x3.webp",
     "description": "A component displaying a title, a text paragraph, and a grid of 4 animated cards that reveal information on hover.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:45.696Z"
-    ],
+    "createdAt": "2025-08-28T06:50:45.696Z",
     "dependencies": [
         "framer-motion",
         "react"

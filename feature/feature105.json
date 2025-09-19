@@ -7,10 +7,7 @@
     "screenshot": "feature105.jpg",
     "thumbnail": "feature105-4x3.webp",
     "description": "A component featuring tabs with icons and text, each tab showing a different image.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.015Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.015Z",
     "dependencies": [
         "\"@radix-ui/react-tabs\"",
         "lucide-react"

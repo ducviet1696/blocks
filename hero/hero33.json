@@ -7,10 +7,7 @@
     "screenshot": "hero33.jpg",
     "thumbnail": "hero33-4x3.webp",
     "description": "A two-column block featuring text, buttons, and pricing info on one side and a full-cover image on the other. Includes a title, introductory text, and styled buttons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.616Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.616Z",
     "dependencies": [
         "lucide-react"
     ],

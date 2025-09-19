@@ -7,10 +7,7 @@
     "screenshot": "testimonial4.jpg",
     "thumbnail": "testimonial4-4x3.webp",
     "description": "A testimonial component with 1 large image & text block plus 3 smaller text cards, each featuring an avatar.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.656Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.656Z",
     "dependencies": [],
     "registryDependencies": [
         {

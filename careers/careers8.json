@@ -7,10 +7,7 @@
     "screenshot": "careers8.jpg",
     "thumbnail": "careers8-4x3.webp",
     "description": "A dynamic job listing component with a filter for departments, displaying job categories and openings in grids up to 3 columns wide.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.768Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.768Z",
     "dependencies": [
         "react"
     ],

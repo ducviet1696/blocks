@@ -7,10 +7,7 @@
     "screenshot": "feature248.jpg",
     "thumbnail": "feature248-4x3.webp",
     "description": "A centered text reveal component with a dark background, featuring a motivational message, adaptable to large screens up to 86rem wide.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.804Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.804Z",
     "dependencies": [
         "motion",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "blogpost5.jpg",
     "thumbnail": "blogpost5-4x3.webp",
     "description": "A blog post component with dynamic navigation highlighting active sections, breadcrumbs, author info, and social share buttons. Layout includes an 8:3 column split for content and sidebar.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.253Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.253Z",
     "dependencies": [
         "lucide-react",
         "react"

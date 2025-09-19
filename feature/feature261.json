@@ -7,10 +7,7 @@
     "screenshot": "feature261.jpg",
     "thumbnail": "feature261-4x3.webp",
     "description": "A component featuring a grid layout with varying content blocks, including image backgrounds, statistics, pricing, and avatar groupings, aimed at promoting design quality, efficiency, and a premium library.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:38:02.100Z"
-    ],
+    "createdAt": "2025-07-01T03:38:02.100Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "blog30.jpg",
     "thumbnail": "blog30-4x3.webp",
     "description": "A component displaying blog posts in a column layout, including images, titles, dates, and descriptions. Features a \"Read\" button with an arrow icon.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.361Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.361Z",
     "dependencies": [
         "lucide-react",
         "react"

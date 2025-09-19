@@ -7,10 +7,7 @@
     "screenshot": "hero89.jpg",
     "thumbnail": "hero89-4x3.webp",
     "description": "A component with a split layout, 50% width text block and 45% width image block with an aspect ratio. Features a heading, text, button, and decorative arrow SVG.",
-    "createdAt": [
-        3,
-        "2024-12-16T04:57:04.086Z"
-    ],
+    "createdAt": "2024-12-16T04:57:04.086Z",
     "dependencies": [],
     "registryDependencies": [
         {

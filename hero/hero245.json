@@ -7,10 +7,7 @@
     "screenshot": "hero245.jpg",
     "thumbnail": "hero245-4x3.webp",
     "description": "A component with a hiring banner, central slogan, supporting text, download buttons, and dynamic background.antal panels fadeIn based on device.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:47.956Z"
-    ],
+    "createdAt": "2025-08-28T06:52:47.956Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

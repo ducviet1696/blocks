@@ -7,10 +7,7 @@
     "screenshot": "resources4.jpg",
     "thumbnail": "resources4-4x3.webp",
     "description": "A component showcasing recent updates with a title, list items including titles, categories, avatars, dates, and interactive hover effects.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:40:40.244Z"
-    ],
+    "createdAt": "2025-07-01T03:40:40.244Z",
     "dependencies": [
         "lucide-react",
         "react"

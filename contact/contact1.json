@@ -7,10 +7,7 @@
     "screenshot": "contact1.jpg",
     "thumbnail": "contact1-4x3.webp",
     "description": "A component with a two-column layout, integrating a promotional header, bullet points with icons, overlapping avatars, company logos, and a detailed form for demo booking.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.543Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.543Z",
     "dependencies": [
         "lucide-react"
     ],

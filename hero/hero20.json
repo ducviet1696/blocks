@@ -7,10 +7,7 @@
     "screenshot": "hero20.jpg",
     "thumbnail": "hero20-4x3.webp",
     "description": "A carousel-linked accordion block with a 2-column layout: icons & FAQs on the left, images rotating in sync on the right. Unique features include timed content transition and interactive FAQ accordion.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.610Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.610Z",
     "dependencies": [
         "embla-carousel-fade",
         "lucide-react",

@@ -7,10 +7,7 @@
     "screenshot": "feature52.jpg",
     "thumbnail": "feature52-4x3.webp",
     "description": "A component featuring tabbed navigation with icons and titles, transitioning to different content images on selection.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.574Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.574Z",
     "dependencies": [
         "lucide-react"
     ],

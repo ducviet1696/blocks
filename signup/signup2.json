@@ -7,10 +7,7 @@
     "screenshot": "signup2.jpg",
     "thumbnail": "signup2-4x3.webp",
     "description": "A signup component with logo, headings, email/password inputs, and buttons for account creation and Google signup, arranged in a centered column layout.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.272Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.272Z",
     "dependencies": [],
     "registryDependencies": [
         {

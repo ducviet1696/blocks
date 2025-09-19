@@ -7,10 +7,7 @@
     "screenshot": "stats12.jpg",
     "thumbnail": "stats12-4x3.webp",
     "description": "This component displays dynamic stats with a toggle for monthly/yearly views, animated graph, and call-to-action button. It has a 2-column layout with animated numbers and icons.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.856Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.856Z",
     "dependencies": [
         "\"@number-flow/react\"",
         "framer-motion",

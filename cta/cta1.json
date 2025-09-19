@@ -7,10 +7,7 @@
     "screenshot": "cta1.jpg",
     "thumbnail": "cta1-4x3.webp",
     "description": "A component features a card split into text and image sections, with a call-to-action button and decorative icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.544Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.544Z",
     "dependencies": [
         "lucide-react"
     ],

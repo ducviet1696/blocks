@@ -7,10 +7,7 @@
     "screenshot": "cta18.jpg",
     "thumbnail": "cta18-4x3.webp",
     "description": "A call-to-action component with two columns: text (with a title and buttons) on one side, and unique, angled placeholder images on the other.",
-    "createdAt": [
-        3,
-        "2024-12-27T07:51:28.627Z"
-    ],
+    "createdAt": "2024-12-27T07:51:28.627Z",
     "dependencies": [
         "lucide-react"
     ],

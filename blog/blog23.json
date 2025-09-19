@@ -7,10 +7,7 @@
     "screenshot": "blog23.jpg",
     "thumbnail": "blog23-4x3.webp",
     "description": "A component displaying a tagline, heading, and description at the top, followed by a series of articles with images, labels, authors, dates, and summaries, ending with a \"View all\" button.",
-    "createdAt": [
-        3,
-        "2025-01-05T00:41:04.973Z"
-    ],
+    "createdAt": "2025-01-05T00:41:04.973Z",
     "dependencies": [
         "lucide-react"
     ],

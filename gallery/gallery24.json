@@ -7,10 +7,7 @@
     "screenshot": "gallery24.jpg",
     "thumbnail": "gallery24-4x3.webp",
     "description": "An interactive gallery block that showcases images with dynamic resizing and details on hover or click, including an \"Add to Cart\" button.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.818Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.818Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

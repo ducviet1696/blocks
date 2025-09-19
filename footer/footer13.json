@@ -7,10 +7,7 @@
     "screenshot": "footer13.jpg",
     "thumbnail": "footer13-4x3.webp",
     "description": "This component is a multi-section footer block featuring a call-to-action, newsletter signup, navigational links, and social media connections. It includes 4 columns of navigation links and uses buttons and input for interactions.",
-    "createdAt": [
-        3,
-        "2025-01-23T06:56:18.599Z"
-    ],
+    "createdAt": "2025-01-23T06:56:18.599Z",
     "dependencies": [
         "lucide-react"
     ],

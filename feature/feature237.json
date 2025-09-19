@@ -7,10 +7,7 @@
     "screenshot": "feature237.jpg",
     "thumbnail": "feature237-4x3.webp",
     "description": "This component displays a grid of cards detailing system features, each with metrics, status, and deployment info. Two-column layout on medium screens.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.383Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.383Z",
     "dependencies": [
         "lucide-react",
         "react"

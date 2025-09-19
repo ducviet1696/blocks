@@ -7,10 +7,7 @@
     "screenshot": "gallery31.jpg",
     "thumbnail": "gallery31-4x3.webp",
     "description": "A product showcase block with a dynamic grid layout of 1-4 columns, displaying items with hover effects, titles, and prices.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:23.562Z"
-    ],
+    "createdAt": "2025-08-28T06:52:23.562Z",
     "dependencies": [
         "react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature189.jpg",
     "thumbnail": "feature189-4x3.webp",
     "description": "This component showcases a 2-column layout: overlapping images on the left and a content section with a headline, feature list, and button on the right.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:21:57.732Z"
-    ],
+    "createdAt": "2025-01-23T07:21:57.732Z",
     "dependencies": [
         "lucide-react"
     ],

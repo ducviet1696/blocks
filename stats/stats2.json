@@ -7,10 +7,7 @@
     "screenshot": "stats2.jpg",
     "thumbnail": "stats2-4x3.webp",
     "description": "A 3-column block displaying platform insights with arrows and icons denoting trends and values, includes descriptive texts.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:07:35.866Z"
-    ],
+    "createdAt": "2024-11-15T06:07:35.866Z",
     "dependencies": [
         "lucide-react"
     ],

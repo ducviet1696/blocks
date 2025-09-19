@@ -7,10 +7,7 @@
     "screenshot": "cta16.jpg",
     "thumbnail": "cta16-4x3.webp",
     "description": "A component featuring a centered call-to-action with a decorative icon, a bold headline, and two buttons. It&#x27;s set against a darkened full-width background image.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.104Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.104Z",
     "dependencies": [
         "lucide-react"
     ],

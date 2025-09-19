@@ -7,10 +7,7 @@
     "screenshot": "feature217b.jpg",
     "thumbnail": "feature217b-4x3.webp",
     "description": "This component showcases three accessibility features with icons in a 3-column layout, including titles and summaries, against a dynamic background.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:52.457Z"
-    ],
+    "createdAt": "2025-07-01T03:37:52.457Z",
     "dependencies": [
         "lucide-react"
     ],

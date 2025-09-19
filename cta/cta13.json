@@ -7,10 +7,7 @@
     "screenshot": "cta13.jpg",
     "thumbnail": "cta13-4x3.webp",
     "description": "A component with a call-to-action, a title, text, email input, and a subscription button. Features a privacy policy link. Layout adjusts across sizes.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.547Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.547Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "feature176.jpg",
     "thumbnail": "feature176-4x3.webp",
     "description": "A component displaying analytical data through cards, badges, progress bars, and charts, organized in a two-column grid. Features include performance evaluations, skill badges, data metrics, and interactive elements.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.435Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.435Z",
     "dependencies": [
         "lucide-react",
         "recharts"

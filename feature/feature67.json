@@ -7,10 +7,7 @@
     "screenshot": "feature67.jpg",
     "thumbnail": "feature67-4x3.webp",
     "description": "A component displaying a group title and a 2-column grid of 6 feature cards, each with an icon, title, and description.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.587Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.587Z",
     "dependencies": [
         "lucide-react"
     ],

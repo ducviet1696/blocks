@@ -7,10 +7,7 @@
     "screenshot": "hero162.jpg",
     "thumbnail": "hero162-4x3.webp",
     "description": "A component featuring a 2-column layout with a prominent headline, subtext, and button on one side, and a grid of images and testimonials on the other.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:42:05.335Z"
-    ],
+    "createdAt": "2024-12-16T05:42:05.335Z",
     "dependencies": [],
     "registryDependencies": [
         {

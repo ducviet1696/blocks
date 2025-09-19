@@ -7,10 +7,7 @@
     "screenshot": "hero204.jpg",
     "thumbnail": "hero204-4x3.webp",
     "description": "This component displays a hero section with centered text, an email sign-up form, and two animated phone mockups. It includes headings, a paragraph, and input/button for sign-up.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.404Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.404Z",
     "dependencies": [
         "framer-motion",
         "react"

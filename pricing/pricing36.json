@@ -7,10 +7,7 @@
     "screenshot": "pricing36.jpg",
     "thumbnail": "pricing36-4x3.webp",
     "description": "Two-column pricing component, showcasing starter and enterprise plans with features, prices, and call-to-action buttons.",
-    "createdAt": [
-        3,
-        "2025-08-28T04:52:56.160Z"
-    ],
+    "createdAt": "2025-08-28T04:52:56.160Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature181.jpg",
     "thumbnail": "feature181-4x3.webp",
     "description": "A component showcasing four key features in a grid layout. Each card has a large masked index number, feature details, and a time badge.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.435Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.435Z",
     "dependencies": [
         "lucide-react"
     ],

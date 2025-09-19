@@ -7,10 +7,7 @@
     "screenshot": "hero3.jpg",
     "thumbnail": "hero3-4x3.webp",
     "description": "A component featuring text, star ratings with avatars, and buttons. It employs a 2-column layout with large image display. Unique elements include overlapped avatars and star ratings.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.614Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.614Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature115.jpg",
     "thumbnail": "feature115-4x3.webp",
     "description": "A block showcasing 6 key features with badges, headings, descriptions, and images. Laid out in up to 3 columns, it includes customizable cards for each feature.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.826Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.826Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "gallery16.jpg",
     "thumbnail": "gallery16-4x3.webp",
     "description": "A component displaying a carousel and tabs for navigating items, which comprise an image, title, description, and note. Features include dynamic tab indicators and previous/next buttons.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.387Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.387Z",
     "dependencies": [
         "react"
     ],

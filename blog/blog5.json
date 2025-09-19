@@ -7,10 +7,7 @@
     "screenshot": "blog5.jpg",
     "thumbnail": "blog5-4x3.webp",
     "description": "A blog component showcasing posts in a grid layout with image, label, title, summary, and author info. Includes a header with a title and optional button.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.538Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.538Z",
     "dependencies": [],
     "registryDependencies": [
         {

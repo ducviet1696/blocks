@@ -7,10 +7,7 @@
     "screenshot": "content3.jpg",
     "thumbnail": "content3-4x3.webp",
     "description": "A component with a breadcrumb navigation, heading, subtext, buttons, a sidebar with topics, and a main content area divided into a 5-column layout, including images, texts, a table, an alert, and dynamic on-page navigation highlighting visible sections.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.915Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.915Z",
     "dependencies": [
         "lucide-react",
         "react"

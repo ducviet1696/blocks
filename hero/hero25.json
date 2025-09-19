@@ -7,10 +7,7 @@
     "screenshot": "hero25.jpg",
     "thumbnail": "hero25-4x3.webp",
     "description": "A hero block featuring a centered title, subtitle, customizable buttons, and a list highlighting 3 key benefits with icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.612Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.612Z",
     "dependencies": [
         "lucide-react"
     ],

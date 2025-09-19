@@ -7,10 +7,7 @@
     "screenshot": "feature161.jpg",
     "thumbnail": "feature161-4x3.webp",
     "description": "A 2-column component featuring a title, text, buttons, and a row of logos with decorative border accents.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.668Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.668Z",
     "dependencies": [],
     "registryDependencies": [
         {

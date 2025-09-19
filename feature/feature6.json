@@ -7,10 +7,7 @@
     "screenshot": "feature6.jpg",
     "thumbnail": "feature6-4x3.webp",
     "description": "A 2-column layout component featuring an icon, a bold headline, descriptive text, a list with checkmarks, and a full-width image.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.579Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.579Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "casestudy8.jpg",
     "thumbnail": "casestudy8-4x3.webp",
     "description": "A component featuring a main article with text and an image, paired with a detailed sidebar containing company information. Layout switches from column to row on larger screens.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.256Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.256Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "gallery12.jpg",
     "thumbnail": "gallery12-4x3.webp",
     "description": "A component displaying a carousel of features with images, titles, and descriptions, navigable via prev/next buttons. It includes a heading and subtext above the carousel.",
-    "createdAt": [
-        3,
-        "2025-01-20T22:48:37.025Z"
-    ],
+    "createdAt": "2025-01-20T22:48:37.025Z",
     "dependencies": [
         "lucide-react",
         "react"

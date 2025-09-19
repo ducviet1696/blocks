@@ -7,10 +7,7 @@
     "screenshot": "hero163.jpg",
     "thumbnail": "hero163-4x3.webp",
     "description": "A component featuring a title, subtitle, and a 2-4 column grid of images and a testimonial, with images in rounded containers.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:17:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:17:05.350Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

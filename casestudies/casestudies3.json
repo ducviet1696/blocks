@@ -7,10 +7,7 @@
     "screenshot": "casestudies3.jpg",
     "thumbnail": "casestudies3-4x3.webp",
     "description": "A component displaying featured and other casestudies with visuals, titles, and links, formatted in a grid with hover effects.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.255Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.255Z",
     "dependencies": [
         "lucide-react",
         "react"

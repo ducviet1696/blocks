@@ -7,10 +7,7 @@
     "screenshot": "feature82.jpg",
     "thumbnail": "feature82-4x3.webp",
     "description": "A component showcasing integration options with icons and descriptions, structured in up to 4 columns, including a headline, subtext, and a button above a separator.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.197Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.197Z",
     "dependencies": [
         "lucide-react"
     ],

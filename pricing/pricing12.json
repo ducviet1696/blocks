@@ -7,10 +7,7 @@
     "screenshot": "pricing12.jpg",
     "thumbnail": "pricing12-4x3.webp",
     "description": "A component displaying add-on options in two sections: \"featured\" in a grid layout and \"other\" in a list layout, with prices and descriptions.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.632Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.632Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

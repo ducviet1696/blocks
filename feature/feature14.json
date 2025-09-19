@@ -7,10 +7,7 @@
     "screenshot": "feature14.jpg",
     "thumbnail": "feature14-4x3.webp",
     "description": "A two-column component featuring secure payments and automated invoicing, with text descriptions and check-marked features, complemented by numbered image placeholders.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.556Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.556Z",
     "dependencies": [
         "lucide-react"
     ],

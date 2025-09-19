@@ -7,10 +7,7 @@
     "screenshot": "gallery7.jpg",
     "thumbnail": "gallery7-4x3.webp",
     "description": "A component that combines a 2-column text intro with a looping AI-themed image carousel. Unique feature: staggered image positions.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.797Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.797Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "lucide-react"

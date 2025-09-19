@@ -7,10 +7,7 @@
     "screenshot": "careers5.jpg",
     "thumbnail": "careers5-4x3.webp",
     "description": "A component displaying job openings with titles, categories, descriptions, and details on type and location. It has a header and lists jobs in a single column.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.803Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.803Z",
     "dependencies": [
         "lucide-react"
     ],

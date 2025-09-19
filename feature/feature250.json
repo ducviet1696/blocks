@@ -7,10 +7,7 @@
     "screenshot": "feature250.jpg",
     "thumbnail": "feature250-4x3.webp",
     "description": "A component displaying a title, subtitle, and an animated, interactive illustration with networked CPUs and dynamic beams connecting them, laid out in a flexible column or row arrangement depending on screen size.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.805Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.805Z",
     "dependencies": [
         "lucide-react",
         "react"

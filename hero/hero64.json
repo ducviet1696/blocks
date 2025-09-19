@@ -7,10 +7,7 @@
     "screenshot": "hero64.jpg",
     "thumbnail": "hero64-4x3.webp",
     "description": "A testimonial display component with a title, descriptions, a call-to-action button, customer ratings, and profile images in a two-column layout.",
-    "createdAt": [
-        3,
-        "2024-12-16T04:58:04.086Z"
-    ],
+    "createdAt": "2024-12-16T04:58:04.086Z",
     "dependencies": [
         "react-icons"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "logos1.jpg",
     "thumbnail": "logos1-4x3.webp",
     "description": "A component displaying a title and a row of partner logos with adjustable gaps, featuring grayscale and partial opacity effects.",
-    "createdAt": [
-        3,
-        "2024-09-18T03:41:40.661Z"
-    ],
+    "createdAt": "2024-09-18T03:41:40.661Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

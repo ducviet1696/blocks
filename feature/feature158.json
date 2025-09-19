@@ -7,10 +7,7 @@
     "screenshot": "feature158.jpg",
     "thumbnail": "feature158-4x3.webp",
     "description": "A component displaying three key features with images & descriptions, centered titles, and a \"View More\" button. Each feature is in a column within a row for desktops.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.666Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.666Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "feature104.jpg",
     "thumbnail": "feature104-4x3.webp",
     "description": "A component featuring a header with an outlined badge, a title, a paragraph, a placeholder image, and six sections with icons and texts in a 3-column layout.",
-    "createdAt": [
-        3,
-        "2024-09-09T00:41:29.014Z"
-    ],
+    "createdAt": "2024-09-09T00:41:29.014Z",
     "dependencies": [
         "lucide-react"
     ],

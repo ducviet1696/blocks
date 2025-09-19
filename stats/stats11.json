@@ -7,10 +7,7 @@
     "screenshot": "stats11.jpg",
     "thumbnail": "stats11-4x3.webp",
     "description": "A statistical block displaying achievements with a unique background gradient, 2-column layout for stats, and decorative circles in the backdrop.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.987Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.987Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "changelog2.jpg",
     "thumbnail": "changelog2-4x3.webp",
     "description": "A changelog component with a title, NEW badge, description, email signup, and dated entries with images, headlines, and text links.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.337Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.337Z",
     "dependencies": [
         "lucide-react"
     ],

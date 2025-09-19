@@ -7,10 +7,7 @@
     "screenshot": "testimonial7.jpg",
     "thumbnail": "testimonial7-4x3.webp",
     "description": "A component showcasing two auto-scrolling carousels of client testimonials, with avatars, names, roles, and quotes, plus a section header.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.658Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.658Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "react"

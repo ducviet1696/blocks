@@ -7,10 +7,7 @@
     "screenshot": "feature184.jpg",
     "thumbnail": "feature184-4x3.webp",
     "description": "A component displaying features with interactive tabs and images. Uses a 2-column layout, including a dynamic image and detailed tabs for each feature. Includes buttons.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.436Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.436Z",
     "dependencies": [
         "lucide-react",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "hero231.jpg",
     "thumbnail": "hero231-4x3.webp",
     "description": "A component with dual content sections: text/buttons on the left and a rotating carousel of images/logos on the right. Includes customizable buttons and dynamic image presentation.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.833Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "lucide-react",

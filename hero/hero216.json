@@ -7,10 +7,7 @@
     "screenshot": "hero216.jpg",
     "thumbnail": "hero216-4x3.webp",
     "description": "This component displays a centered message and button with animated meteors and a large globe graphic. Column layout, uses shifting arrow button animation.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "lucide-react",
         "react"

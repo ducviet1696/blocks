@@ -7,10 +7,7 @@
     "screenshot": "feature118.jpg",
     "thumbnail": "feature118-4x3.webp",
     "description": "A feature block highlighting workflow tools with a header, 3 columns of benefits/stats, and a contact prompt. Uses icons and a placeholder image.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.827Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.827Z",
     "dependencies": [
         "lucide-react"
     ],

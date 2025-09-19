@@ -7,10 +7,7 @@
     "screenshot": "timeline6.jpg",
     "thumbnail": "timeline6-4x3.webp",
     "description": "A two-column component featuring a sticky section with a bold statement on the left and a scrollable section on the right showcasing icons with related titles and descriptions.",
-    "createdAt": [
-        3,
-        "2025-01-20T22:48:37.053Z"
-    ],
+    "createdAt": "2025-01-20T22:48:37.053Z",
     "dependencies": [
         "lucide-react"
     ],

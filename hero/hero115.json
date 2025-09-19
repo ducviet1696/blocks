@@ -7,10 +7,7 @@
     "screenshot": "hero115.jpg",
     "thumbnail": "hero115-4x3.webp",
     "description": "A component featuring a centered section with an icon, heading, description, button with an icon, optional trust text, and a large image. Includes a decorative, layered circular backdrop.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.869Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.869Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "hero232.jpg",
     "thumbnail": "hero232-4x3.webp",
     "description": "A component featuring centered text and buttons within a full-screen background, complemented by animated SVG illustrations on sides.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:41.833Z"
-    ],
+    "createdAt": "2025-05-04T23:59:41.833Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

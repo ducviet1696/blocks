@@ -7,10 +7,7 @@
     "screenshot": "hero1.jpg",
     "thumbnail": "hero1-4x3.webp",
     "description": "A promotional component with an option for a badge, a heading, a description, two buttons, and an image. Features a 2-column layout, customizable elements, and icons for links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.605Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.605Z",
     "dependencies": [
         "lucide-react"
     ],

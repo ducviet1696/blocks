@@ -7,10 +7,7 @@
     "screenshot": "hero15.jpg",
     "thumbnail": "hero15-4x3.webp",
     "description": "A component featuring a central slogan, description, singular primary action, and icons displaying ratings from various platforms.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.608Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.608Z",
     "dependencies": [
         "lucide-react",
         "react-icons"

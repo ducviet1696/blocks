@@ -7,10 +7,7 @@
     "screenshot": "navbar5.jpg",
     "thumbnail": "navbar5-4x3.webp",
     "description": "A navbar component with a logo, navigation menus, sign-in/start buttons, and a collapsible menu for smaller screens, featuring a 2-column layout for feature links.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.756Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.756Z",
     "dependencies": [
         "lucide-react"
     ],

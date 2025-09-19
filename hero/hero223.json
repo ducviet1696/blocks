@@ -7,10 +7,7 @@
     "screenshot": "hero223.jpg",
     "thumbnail": "hero223-4x3.webp",
     "description": "A component featuring a centered headline with shadow text effect, background animation, and two action buttons, all within a radial gradient mask.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "lucide-react",
         "motion",

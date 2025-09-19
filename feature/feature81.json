@@ -7,10 +7,7 @@
     "screenshot": "feature81.jpg",
     "thumbnail": "feature81-4x3.webp",
     "description": "A component showcasing a feature group with a tagline, title, and description. Includes a 4-column grid with clickable images and \"Read more\" links.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.598Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.598Z",
     "dependencies": [
         "lucide-react"
     ],

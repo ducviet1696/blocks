@@ -7,10 +7,7 @@
     "screenshot": "feature136.jpg",
     "thumbnail": "feature136-4x3.webp",
     "description": "A component featuring a productivity tools overview with stats (installs, active users, etc.), and 3 benefits. Layout includes a 2-column section with an image and a 3-column grid for benefits.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.830Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.830Z",
     "dependencies": [
         "lucide-react"
     ],

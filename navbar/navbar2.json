@@ -7,10 +7,7 @@
     "screenshot": "navbar2.jpg",
     "thumbnail": "navbar2-4x3.webp",
     "description": "A dual-layout navigation block with dynamic accordion submenus for mobile and horizontal list for desktop, featuring authentication links and a slide-in menu.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.461Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.461Z",
     "dependencies": [
         "\"@radix-ui/react-navigation-menu\"",
         "lucide-react",

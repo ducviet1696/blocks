@@ -7,10 +7,7 @@
     "screenshot": "testimonial13.jpg",
     "thumbnail": "testimonial13-4x3.webp",
     "description": "A component featuring a testimonial with overlapping avatars and a quote, showcased on a single-column layout with centered text.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.653Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.653Z",
     "dependencies": [],
     "registryDependencies": [
         {

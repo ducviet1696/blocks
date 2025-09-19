@@ -7,10 +7,7 @@
     "screenshot": "hero18.jpg",
     "thumbnail": "hero18-4x3.webp",
     "description": "A component with a centered title, text, two buttons, and a main image, flanked by decorative icons in a symmetric layout.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.609Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.609Z",
     "dependencies": [],
     "registryDependencies": [
         {

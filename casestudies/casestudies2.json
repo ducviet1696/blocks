@@ -7,10 +7,7 @@
     "screenshot": "casestudies2.jpg",
     "thumbnail": "casestudies2-4x3.webp",
     "description": "A component showcasing customer satisfaction metrics and testimonials, featuring a 3-column layout with images, quotes, and statistical data.",
-    "createdAt": [
-        3,
-        "2025-04-29T03:45:21.255Z"
-    ],
+    "createdAt": "2025-04-29T03:45:21.255Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "gallery32.jpg",
     "thumbnail": "gallery32-4x3.webp",
     "description": "An interactive gallery component with dimension-variable, overlapping images and blur effect on hover. Contains descriptive text animations.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:25.156Z"
-    ],
+    "createdAt": "2025-08-28T06:52:25.156Z",
     "dependencies": [
         "framer-motion",
         "react"

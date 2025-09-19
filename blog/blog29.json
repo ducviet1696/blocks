@@ -7,10 +7,7 @@
     "screenshot": "blog29.jpg",
     "thumbnail": "blog29-4x3.webp",
     "description": "A component displaying blog posts with dates, titles, content snippets, tags, and a link icon. Each post is separated by a line.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.361Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.361Z",
     "dependencies": [
         "lucide-react",
         "react"

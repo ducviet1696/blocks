@@ -7,10 +7,7 @@
     "screenshot": "feature227.jpg",
     "thumbnail": "feature227-4x3.webp",
     "description": "A 2-column block featuring a large title, descriptive text, and bullet points with icons on one side, and an image with overlaid gradients on the other.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.937Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.937Z",
     "dependencies": [
         "lucide-react"
     ],

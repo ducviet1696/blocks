@@ -7,10 +7,7 @@
     "screenshot": "hero90.jpg",
     "thumbnail": "hero90-4x3.webp",
     "description": "A component with a 2-column layout, showcasing text on the left and an interactive avatar feature on the right. The avatars overlay with testimonials.",
-    "createdAt": [
-        3,
-        "2024-12-16T04:45:05.356Z"
-    ],
+    "createdAt": "2024-12-16T04:45:05.356Z",
     "dependencies": [],
     "registryDependencies": [
         {

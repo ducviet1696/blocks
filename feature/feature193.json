@@ -7,10 +7,7 @@
     "screenshot": "feature193.jpg",
     "thumbnail": "feature193-4x3.webp",
     "description": "A component showcasing features with dynamic layouts, multi-column grid, and decorative background gradients. Includes title, descriptions, and images.",
-    "createdAt": [
-        3,
-        "2025-01-23T07:49:23.351Z"
-    ],
+    "createdAt": "2025-01-23T07:49:23.351Z",
     "dependencies": [
         "react"
     ],

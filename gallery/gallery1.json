@@ -7,10 +7,7 @@
     "screenshot": "gallery1.jpg",
     "thumbnail": "gallery1-4x3.webp",
     "description": "A gallery block showcasing 3 case studies with dynamic resizing; includes images, logos, text, and interactive effects on mouse hover.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.602Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.602Z",
     "dependencies": [
         "lucide-react",
         "react"

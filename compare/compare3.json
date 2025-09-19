@@ -7,10 +7,7 @@
     "screenshot": "compare3.jpg",
     "thumbnail": "compare3-4x3.webp",
     "description": "A 3-column comparison block showcasing features between two options, highlighted with icons and badges for visual differentiation.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.336Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.336Z",
     "dependencies": [
         "lucide-react"
     ],

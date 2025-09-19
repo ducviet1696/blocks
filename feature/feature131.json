@@ -7,10 +7,7 @@
     "screenshot": "feature131.jpg",
     "thumbnail": "feature131-4x3.webp",
     "description": "This component displays core features using an accordion layout for text and a dynamic image section, where selecting a text tab changes the displayed image.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.653Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.653Z",
     "dependencies": [
         "react"
     ],

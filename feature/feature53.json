@@ -7,10 +7,7 @@
     "screenshot": "feature53.jpg",
     "thumbnail": "feature53-4x3.webp",
     "description": "A component displaying a grid of logos and titles, transitioning from 2 to 4 columns, with unique numbering for each item.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.574Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.574Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

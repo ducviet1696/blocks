@@ -7,10 +7,7 @@
     "screenshot": "community3.jpg",
     "thumbnail": "community3-4x3.webp",
     "description": "A component showcasing a community invitation with social icons, descriptions, and a 1-3 column layout of cards for different platforms.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.172Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.172Z",
     "dependencies": [
         "lucide-react",
         "react-icons"

@@ -7,10 +7,7 @@
     "screenshot": "feature71.jpg",
     "thumbnail": "feature71-4x3.webp",
     "description": "A component featuring a central text block with a tagline, title, and description, followed by action buttons. It includes a grid layout with images, metrics, and interactive elements in 4 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.591Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.591Z",
     "dependencies": [
         "lucide-react"
     ],

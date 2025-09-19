@@ -7,10 +7,7 @@
     "screenshot": "hero129.jpg",
     "thumbnail": "hero129-4x3.webp",
     "description": "This component features a two-column layout with a bold headline, text content, buttons including one with an icon, overlapping avatars, and a unique phone image showcase with a 3D effect.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:03:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:03:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

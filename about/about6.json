@@ -7,10 +7,7 @@
     "screenshot": "about6.jpg",
     "thumbnail": "about6-4x3.webp",
     "description": "A component featuring \"Our Story\" and \"Our Workplace\" sections, with text descriptions and a two-column layout containing multiple images.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.604Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.604Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

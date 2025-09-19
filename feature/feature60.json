@@ -7,10 +7,7 @@
     "screenshot": "feature60.jpg",
     "thumbnail": "feature60-4x3.webp",
     "description": "A component with a two-column layout featuring an image on one side and text content on the other, including a large header and detailed description.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.580Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.580Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

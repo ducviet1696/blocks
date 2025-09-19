@@ -7,10 +7,7 @@
     "screenshot": "hero240.jpg",
     "thumbnail": "hero240-4x3.webp",
     "description": "A component featuring a 3D marquee of images, an email subscription form, and a section with a custom logo and descriptive text.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:52:39.888Z"
-    ],
+    "createdAt": "2025-08-28T06:52:39.888Z",
     "dependencies": [
         "react"
     ],

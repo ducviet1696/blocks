@@ -7,10 +7,7 @@
     "screenshot": "feature56.jpg",
     "thumbnail": "feature56-4x3.webp",
     "description": "A component displaying a primary feature block followed by a 3-column layout, each containing a feature description and image.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.576Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.576Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

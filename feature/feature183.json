@@ -7,10 +7,7 @@
     "screenshot": "feature183.jpg",
     "thumbnail": "feature183-4x3.webp",
     "description": "A component featuring a trendy hero area with an overlaid phone image, SVG patterning, and two info cards, plus a row of three stat cards below.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.436Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.436Z",
     "dependencies": [
         "lucide-react"
     ],

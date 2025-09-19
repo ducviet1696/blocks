@@ -7,10 +7,7 @@
     "screenshot": "feature143.jpg",
     "thumbnail": "feature143-4x3.webp",
     "description": "A component showcasing features with a badge & a grid layout. Utilizes a 3x3 grid for visuals, lists features with icons, and emphasizes modern design.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.659Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.659Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature17.jpg",
     "thumbnail": "feature17-4x3.webp",
     "description": "A component showcasing 6 core features with icons, using a 2-column grid layout, including a heading and subheading.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.557Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.557Z",
     "dependencies": [
         "lucide-react"
     ],

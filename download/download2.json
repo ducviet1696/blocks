@@ -7,10 +7,7 @@
     "screenshot": "download2.jpg",
     "thumbnail": "download2-4x3.webp",
     "description": "A component displaying download options for desktop, iOS, and Android, alongside descriptions and buttons/links for each platform, arranged in a three-column layout.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:37:40.525Z"
-    ],
+    "createdAt": "2025-07-01T03:37:40.525Z",
     "dependencies": [
         "lucide-react"
     ],

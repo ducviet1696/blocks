@@ -7,10 +7,7 @@
     "screenshot": "hero84.jpg",
     "thumbnail": "hero84-4x3.webp",
     "description": "A component featuring a badge and text block on top, with a layered, overlapping image gallery below, arranged asymmetrically.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:46:05.355Z"
-    ],
+    "createdAt": "2024-12-16T05:46:05.355Z",
     "dependencies": [],
     "registryDependencies": [
         {

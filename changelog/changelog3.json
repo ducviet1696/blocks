@@ -7,10 +7,7 @@
     "screenshot": "changelog3.jpg",
     "thumbnail": "changelog3-4x3.webp",
     "description": "A component displaying updates with sections for dates, tags (e.g., &#x27;Maintenance&#x27;), and content including images. Uses a two-column layout on desktop.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.771Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.771Z",
     "dependencies": [],
     "registryDependencies": [
         {

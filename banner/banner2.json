@@ -7,10 +7,7 @@
     "screenshot": "banner2.jpg",
     "thumbnail": "banner2-4x3.webp",
     "description": "An alert component with dismissible functionality, featuring a title, description, and button. It shows an icon, supports hidden on mobile devices.",
-    "createdAt": [
-        3,
-        "2025-01-05T03:59:55.495Z"
-    ],
+    "createdAt": "2025-01-05T03:59:55.495Z",
     "dependencies": [
         "lucide-react",
         "react"

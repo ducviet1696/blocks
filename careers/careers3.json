@@ -7,10 +7,7 @@
     "screenshot": "careers3.jpg",
     "thumbnail": "careers3-4x3.webp",
     "description": "A block displaying job openings by category, with titles, descriptions, locations, and links. Uses badges for categories and icons for location/navigation.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.091Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.091Z",
     "dependencies": [
         "lucide-react"
     ],

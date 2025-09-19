@@ -7,10 +7,7 @@
     "screenshot": "compare8.jpg",
     "thumbnail": "compare8-4x3.webp",
     "description": "A comparison component showcasing features with icons, descriptions, and status indicators for two frameworks, including tooltips for certain features.",
-    "createdAt": [
-        3,
-        "2025-04-29T05:49:25.923Z"
-    ],
+    "createdAt": "2025-04-29T05:49:25.923Z",
     "dependencies": [
         "lucide-react",
         "react"

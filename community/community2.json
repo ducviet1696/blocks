@@ -7,10 +7,7 @@
     "screenshot": "community2.jpg",
     "thumbnail": "community2-4x3.webp",
     "description": "A component showcasing 4 social platform links in a 1-2-4 column layout, encouraging community engagement through actions like follow, connect, contribute, and join.",
-    "createdAt": [
-        3,
-        "2025-04-29T08:27:56.172Z"
-    ],
+    "createdAt": "2025-04-29T08:27:56.172Z",
     "dependencies": [
         "lucide-react",
         "react-icons"

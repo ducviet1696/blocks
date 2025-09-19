@@ -7,10 +7,7 @@
     "screenshot": "blog22.jpg",
     "thumbnail": "blog22-4x3.webp",
     "description": "A blog component showcasing a featured post with image, title, and author avatar followed by a list of secondary posts in a two-column layout with images.",
-    "createdAt": [
-        3,
-        "2025-01-26T04:31:17.420Z"
-    ],
+    "createdAt": "2025-01-26T04:31:17.420Z",
     "dependencies": [
         "lucide-react"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "testimonial3.jpg",
     "thumbnail": "testimonial3-4x3.webp",
     "description": "A testimonial component with a quote, image logo, and author attribution centered in a bordered block with adjustable padding.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.656Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.656Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

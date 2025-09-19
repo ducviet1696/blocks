@@ -7,10 +7,7 @@
     "screenshot": "hero127.jpg",
     "thumbnail": "hero127-4x3.webp",
     "description": "A component displaying a marketing degree promotion, featuring an interactive news badge, a bold title with highlighted keywords, two call-to-action buttons, and a section with user testimonials through avatars and stats on active users and episodes.",
-    "createdAt": [
-        3,
-        "2024-12-16T05:05:05.350Z"
-    ],
+    "createdAt": "2024-12-16T05:05:05.350Z",
     "dependencies": [
         "lucide-react"
     ],

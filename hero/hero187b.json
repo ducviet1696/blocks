@@ -7,10 +7,7 @@
     "screenshot": "hero187b.jpg",
     "thumbnail": "hero187b-4x3.webp",
     "description": "A split-layout component with a carousel and descriptive content. Features auto-playing carousel images with indicators and a section highlighting key features with icons.",
-    "createdAt": [
-        3,
-        "2025-07-01T03:38:16.602Z"
-    ],
+    "createdAt": "2025-07-01T03:38:16.602Z",
     "dependencies": [
         "embla-carousel-autoplay",
         "lucide-react",

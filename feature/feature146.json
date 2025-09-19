@@ -7,10 +7,7 @@
     "screenshot": "feature146.jpg",
     "thumbnail": "feature146-4x3.webp",
     "description": "A component featuring title sections, text descriptions, and images across two rows with unique dashed border decorations.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.660Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.660Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

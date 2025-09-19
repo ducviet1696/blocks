@@ -7,10 +7,7 @@
     "screenshot": "feature290.jpg",
     "thumbnail": "feature290-4x3.webp",
     "description": "Interactive input block with animation, dynamic suggestions, and customizable icons. Features a unique disappearing text effect.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:51:15.367Z"
-    ],
+    "createdAt": "2025-08-28T06:51:15.367Z",
     "dependencies": [
         "lucide-react",
         "motion",

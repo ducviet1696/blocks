@@ -7,10 +7,7 @@
     "screenshot": "hero37.jpg",
     "thumbnail": "hero37-4x3.webp",
     "description": "A component featuring a center-aligned text block with a \"New Release\" announcement, headline, and descriptive text, followed by primary and secondary buttons. Includes a decorative background of spiraled dots and three angled, overlapping blocks beneath.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.618Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.618Z",
     "dependencies": [
         "lucide-react"
     ],

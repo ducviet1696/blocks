@@ -7,10 +7,7 @@
     "screenshot": "blog28.jpg",
     "thumbnail": "blog28-4x3.webp",
     "description": "A component displaying five tech blog posts in a grid with adaptive column counts based on screen size, featuring prominent display for the first post.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.765Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.765Z",
     "dependencies": [],
     "registryDependencies": [],
     "attrs": {

@@ -7,10 +7,7 @@
     "screenshot": "signup7.jpg",
     "thumbnail": "signup7-4x3.webp",
     "description": "This component is a two-column layout for account creation, featuring sign-up options with Google, Email, or SSO, terms agreement links, and a side section showcasing benefits and logos.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.855Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.855Z",
     "dependencies": [
         "lucide-react",
         "react-icons"

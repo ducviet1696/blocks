@@ -7,10 +7,7 @@
     "screenshot": "product2.jpg",
     "thumbnail": "product2-4x3.webp",
     "description": "An accordion-based component displaying customizable service packages. Features expandable sections for details, with a 3-column layout for content within each package.",
-    "createdAt": [
-        3,
-        "2025-01-21T06:26:36.238Z"
-    ],
+    "createdAt": "2025-01-21T06:26:36.238Z",
     "dependencies": [
         "react"
     ],

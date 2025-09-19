@@ -7,10 +7,7 @@
     "screenshot": "signup9.jpg",
     "thumbnail": "signup9-4x3.webp",
     "description": "A signup component with Google signup option, email input, and a carousel of logos at the bottom.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.420Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.420Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "hero85.jpg",
     "thumbnail": "hero85-4x3.webp",
     "description": "A block featuring dynamic carousels, badges, and buttons aimed at showcasing solutions and engaging users. It includes a 2-column layout with auto-scroll carousels.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.891Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.891Z",
     "dependencies": [
         "embla-carousel-auto-scroll"
     ],

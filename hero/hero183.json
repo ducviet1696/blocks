@@ -7,10 +7,7 @@
     "screenshot": "hero183.jpg",
     "thumbnail": "hero183-4x3.webp",
     "description": "A component featuring a premium badge, a bold title with descriptive text, buttons for actions, and a grid of images with decorative lines transitioning into a carousel for smaller views.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.803Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.803Z",
     "dependencies": [
         "react"
     ],

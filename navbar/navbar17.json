@@ -7,10 +7,7 @@
     "screenshot": "navbar17.jpg",
     "thumbnail": "navbar17-4x3.webp",
     "description": "A navigation component with dynamic indicator for active links and a mobile menu with an animated icon for toggling.",
-    "createdAt": [
-        3,
-        "2025-03-16T01:37:40.415Z"
-    ],
+    "createdAt": "2025-03-16T01:37:40.415Z",
     "dependencies": [
         "lucide-react",
         "react"

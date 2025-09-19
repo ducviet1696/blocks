@@ -7,10 +7,7 @@
     "screenshot": "integration5.jpg",
     "thumbnail": "integration5-4x3.webp",
     "description": "A component showcasing integration options with title, description, buttons, and a two-column layout with logos.",
-    "createdAt": [
-        3,
-        "2025-02-20T23:47:50.810Z"
-    ],
+    "createdAt": "2025-02-20T23:47:50.810Z",
     "dependencies": [
         "lucide-react"
     ],

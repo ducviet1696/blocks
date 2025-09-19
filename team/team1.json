@@ -7,10 +7,7 @@
     "screenshot": "team1.jpg",
     "thumbnail": "team1-4x3.webp",
     "description": "A team showcase component with a title, subtitle, description, and a grid of member avatars, names, and roles, supporting up to 4 columns.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.645Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.645Z",
     "dependencies": [],
     "registryDependencies": [
         {

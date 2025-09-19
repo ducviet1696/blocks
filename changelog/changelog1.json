@@ -7,10 +7,7 @@
     "screenshot": "changelog1.jpg",
     "thumbnail": "changelog1-4x3.webp",
     "description": "A component displaying a changelog with entries including version info, date, and details. Features badges, buttons, and conditional rendering of lists and images.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.092Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.092Z",
     "dependencies": [
         "lucide-react"
     ],

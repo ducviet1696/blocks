@@ -7,10 +7,7 @@
     "screenshot": "feature147.jpg",
     "thumbnail": "feature147-4x3.webp",
     "description": "A component showcasing integrations in a grid layout; features a heading, subheading, and 3-column grid of cards with images, titles, and descriptions.",
-    "createdAt": [
-        3,
-        "2024-11-15T01:10:23.660Z"
-    ],
+    "createdAt": "2024-11-15T01:10:23.660Z",
     "dependencies": [],
     "registryDependencies": [
         {

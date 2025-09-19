@@ -7,10 +7,7 @@
     "screenshot": "feature200.jpg",
     "thumbnail": "feature200-4x3.webp",
     "description": "A component displaying 3 columns of features, each with icons, titles, and lists, distinguished by unique background gradients.",
-    "createdAt": [
-        3,
-        "2025-04-23T05:25:33.366Z"
-    ],
+    "createdAt": "2025-04-23T05:25:33.366Z",
     "dependencies": [
         "lucide-react"
     ],

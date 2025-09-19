@@ -7,10 +7,7 @@
     "screenshot": "signup3.jpg",
     "thumbnail": "signup3-4x3.webp",
     "description": "A signup component with a logo, forms for email and password, and social login options (Google, Github, Facebook). Fits in a column of max-width 340px.",
-    "createdAt": [
-        3,
-        "2024-10-09T05:37:59.272Z"
-    ],
+    "createdAt": "2024-10-09T05:37:59.272Z",
     "dependencies": [
         "react-icons"
     ],

@@ -7,10 +7,7 @@
     "screenshot": "feature149.jpg",
     "thumbnail": "feature149-4x3.webp",
     "description": "A component featuring dual interactive panels with a central decorative divider, expanding on hover. Each contains a button, heading, and text, against a backdrop image with gradient overlays.",
-    "createdAt": [
-        3,
-        "2024-11-15T06:07:35.776Z"
-    ],
+    "createdAt": "2024-11-15T06:07:35.776Z",
     "dependencies": [],
     "registryDependencies": [
         {

@@ -7,10 +7,7 @@
     "screenshot": "feature21.jpg",
     "thumbnail": "feature21-4x3.webp",
     "description": "A component showcasing utility features with icons, badges, and cards in a two-column layout, incorporating headings, paragraphs, and images.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.560Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.560Z",
     "dependencies": [
         "lucide-react"
     ],

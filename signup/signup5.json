@@ -7,10 +7,7 @@
     "screenshot": "signup5.jpg",
     "thumbnail": "signup5-4x3.webp",
     "description": "A signup component with 2 columns; one for form inputs including name, email, password, and Google sign-up, and another for an image. Includes a text link for existing accounts.",
-    "createdAt": [
-        3,
-        "2024-10-16T10:18:02.906Z"
-    ],
+    "createdAt": "2024-10-16T10:18:02.906Z",
     "dependencies": [],
     "registryDependencies": [
         {

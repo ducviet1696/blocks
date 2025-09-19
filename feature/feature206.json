@@ -7,10 +7,7 @@
     "screenshot": "feature206.jpg",
     "thumbnail": "feature206-4x3.webp",
     "description": "A component featuring a title, description, and a grid of images paired with texts to explain various features. Grid adjusts from 2 to 4 columns.",
-    "createdAt": [
-        3,
-        "2025-02-27T04:55:16.937Z"
-    ],
+    "createdAt": "2025-02-27T04:55:16.937Z",
     "dependencies": [],
     "registryDependencies": [
         {

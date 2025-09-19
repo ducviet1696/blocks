@@ -7,10 +7,7 @@
     "screenshot": "feature276.jpg",
     "thumbnail": "feature276-4x3.webp",
     "description": "A component displaying a 3-column grid of cards for features like \"Plug & Play\", \"Customizable\", each with an icon, title, and description. It highlights a card on hover.",
-    "createdAt": [
-        3,
-        "2025-08-28T06:50:49.570Z"
-    ],
+    "createdAt": "2025-08-28T06:50:49.570Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

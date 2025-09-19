@@ -7,10 +7,7 @@
     "screenshot": "gallery13.jpg",
     "thumbnail": "gallery13-4x3.webp",
     "description": "A carousel component showcasing items with images, titles, descriptions, and icons in a 2:3 column layout. It dynamically updates the active display and navigation functionality.",
-    "createdAt": [
-        3,
-        "2025-01-20T22:48:37.025Z"
-    ],
+    "createdAt": "2025-01-20T22:48:37.025Z",
     "dependencies": [
         "lucide-react",
         "react"

@@ -7,10 +7,7 @@
     "screenshot": "footer1.jpg",
     "thumbnail": "footer1-4x3.webp",
     "description": "A component showcasing a footer layout with logos, navigation links across 4 columns, download buttons, and social icons.",
-    "createdAt": [
-        3,
-        "2024-08-05T05:21:46.599Z"
-    ],
+    "createdAt": "2024-08-05T05:21:46.599Z",
     "dependencies": [
         "react-icons"
     ],

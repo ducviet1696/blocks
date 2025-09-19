@@ -7,10 +7,7 @@
     "screenshot": "hero214.jpg",
     "thumbnail": "hero214-4x3.webp",
     "description": "An animated gallery component cycling through portraits with a main headline. It features auto-changing images, and a masked layout with a \"Contact Us\" button.",
-    "createdAt": [
-        3,
-        "2025-05-04T23:59:42.832Z"
-    ],
+    "createdAt": "2025-05-04T23:59:42.832Z",
     "dependencies": [
         "framer-motion",
         "lucide-react",

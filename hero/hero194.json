@@ -7,10 +7,7 @@
     "screenshot": "hero194.jpg",
     "thumbnail": "hero194-4x3.webp",
     "description": "This component features a dual-layout block with a text section and a vertical carousel of images. The text section includes a main heading, a paragraph, and a button with an icon. The image carousel presents team photos that auto-scroll. In larger views, multiple image carousels with slightly rotated images appear side by side.",
-    "createdAt": [
-        3,
-        "2025-03-30T02:38:45.831Z"
-    ],
+    "createdAt": "2025-03-30T02:38:45.831Z",
     "dependencies": [
         "embla-carousel-auto-scroll",
         "lucide-react"
