@@ -1,0 +1,52 @@
+{
+    "id": "hero206",
+    "access": "basic",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero206.jpg",
+    "thumbnail": "hero206-4x3.webp",
+    "description": "This component features a title, subtitle, avatars with a badge indicating trust from 10k+ users, and a browser mockup to showcase URLs.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.405Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero206",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport {\n  ChevronLeft,\n  ChevronRight,\n  Copy,\n  Plus,\n  RotateCw,\n  Share,\n} from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Hero206 = () => {\n  return (\n    <section className=\"bg-background\">\n      <div className=\"container relative py-32\">\n        <header className=\"mx-auto max-w-3xl text-center\">\n          <h1 className=\"font-anton text-foreground text-5xl font-semibold uppercase md:text-7xl\">\n            Shadcn Blocks <br /> Just Copy/Paste.\n          </h1>\n          <p className=\"text-muted-foreground my-7 max-w-3xl tracking-tight md:text-xl\">\n            Lorem ipsum dolor sit amet consectetur adipiasicing elit.Lorem ipsum\n            dolor sit amet consectetur Lorem\n          </p>\n        </header>\n\n        <Badge\n          variant=\"outline\"\n          className=\"mx-auto mt-10 flex w-fit cursor-pointer items-center justify-center rounded-full border py-1 pl-2 pr-3 font-normal transition-all ease-in-out hover:gap-3\"\n        >\n          <Avatar className=\"relative -mr-5 overflow-hidden rounded-full border md:size-10\">\n            <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\" alt=\"\" />\n            <AvatarFallback>AB</AvatarFallback>\n          </Avatar>\n          <Avatar className=\"relative -mr-5 overflow-hidden rounded-full border md:size-10\">\n            <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp\" alt=\"\" />\n            <AvatarFallback>AB</AvatarFallback>\n          </Avatar>\n          <Avatar className=\"relative -mr-5 overflow-hidden rounded-full border md:size-10\">\n            <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\" alt=\"\" />\n            <AvatarFallback>AB</AvatarFallback>\n          </Avatar>\n          <p className=\"ml-6 capitalize tracking-tight md:text-lg\">\n            {\" \"}\n            Trusted by <span className=\"text-foreground font-bold\">\n              10k+\n            </span>{\" \"}\n            users.\n          </p>\n        </Badge>\n\n        <div className=\"relative mt-12 flex h-full w-full flex-col items-center justify-center\">\n          <BrowserMockup\n            className=\"w-full\"\n            url=\"https://shadcnblocks.com/block/hero206\"\n            DahboardUrlDesktop=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/dashboard/dashboard-1.png\"\n            DahboardUrlMobile=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/dashboard/dashboard-mobile-1.png\"\n          />\n          <div className=\"bg-linear-to-t absolute bottom-0 h-2/3 w-full from-white to-transparent\" />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero206 };\n\nconst BrowserMockup = ({\n  className = \"\",\n  url = \"https://shadcnblocks.com/block/hero206\",\n  DahboardUrlDesktop = \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/dashboard/dashboard-1.png\",\n  DahboardUrlMobile = \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/dashboard/dashboard-mobile-1.png\",\n}) => (\n  <div\n    className={cn(\n      \"rounded-4xl relative w-full overflow-hidden border\",\n      className,\n    )}\n  >\n    <div className=\"bg-muted lg:gap-25 flex items-center justify-between gap-10 px-8 py-4\">\n      <div className=\"flex items-center gap-2\">\n        <div className=\"size-3 rounded-full bg-red-500\" />\n        <div className=\"size-3 rounded-full bg-yellow-500\" />\n        <div className=\"size-3 rounded-full bg-green-500\" />\n        <div className=\"ml-6 hidden items-center gap-2 opacity-40 lg:flex\">\n          <ChevronLeft className=\"size-5\" />\n          <ChevronRight className=\"size-5\" />\n        </div>\n      </div>\n      <div className=\"flex w-full items-center justify-center\">\n        <p className=\"bg-background relative hidden w-full rounded-full px-4 py-1 text-center text-sm tracking-tight md:block\">\n          {url}\n          <RotateCw className=\"absolute right-3 top-2 size-3.5\" />\n        </p>\n      </div>\n\n      <div className=\"flex items-center gap-4 opacity-40\">\n        <Share className=\"size-4\" />\n        <Plus className=\"size-4\" />\n        <Copy className=\"size-4\" />\n      </div>\n    </div>\n\n    <div className=\"relative w-full\">\n      <img\n        src={DahboardUrlDesktop}\n        alt=\"\"\n        className=\"object-cove hidden aspect-video h-full w-full object-top md:block\"\n      />\n      <img\n        src={DahboardUrlMobile}\n        alt=\"\"\n        className=\"block h-full w-full object-cover md:hidden\"\n      />\n    </div>\n    <div className=\"bg-muted absolute bottom-0 z-10 flex w-full items-center justify-center py-3 md:hidden\">\n      <p className=\"relative flex items-center gap-2 rounded-full px-8 py-1 text-center text-sm tracking-tight\">\n        {url}\n      </p>\n    </div>\n  </div>\n);\n"
+}

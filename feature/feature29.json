@@ -1,0 +1,43 @@
+{
+    "id": "feature29",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature29.jpg",
+    "thumbnail": "feature29-4x3.webp",
+    "description": "A component with a 2-column layout including images and text blocks, showcasing features via placeholders and descriptions.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.565Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature29",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Separator } from \"@/components/ui/separator\";\n\nconst Feature29 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto grid max-w-5xl gap-10 md:grid-cols-2\">\n          <div className=\"order-1 flex flex-col gap-2 rounded-lg border p-2\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video w-full rounded-lg border object-cover\"\n            />\n            <Separator />\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video w-full rounded-lg border object-cover\"\n            />\n          </div>\n          <div className=\"order-3 rounded-lg border p-2\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n              alt=\"placeholder\"\n              className=\"h-full w-full rounded-lg border object-cover\"\n            />\n          </div>\n          <div className=\"order-2 -mt-6 max-w-[412px] md:order-3\">\n            <p className=\"mb-6 text-sm text-muted-foreground md:mb-12\">\n              Lorem ipsum dolor sit amet.\n            </p>\n            <h3 className=\"mb-3 text-2xl font-medium md:mb-6\">\n              Quality and Durability\n            </h3>\n            <p className=\"mb-6\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi\n              distinctio maiores sint cupiditate ab ullam numquam a similique\n              vel itaque.\n            </p>\n            <a href=\"#\" className=\"font-medium hover:underline\">\n              Learn more about our process\n            </a>\n          </div>\n          <div className=\"order-4 -mt-6 max-w-[412px] md:order-3\">\n            <p className=\"mb-6 text-sm text-muted-foreground md:mb-12\">\n              Lorem ipsum dolor sit amet.\n            </p>\n            <h3 className=\"mb-3 text-2xl font-medium md:mb-6\">\n              Transform Your Space a Reality\n            </h3>\n            <p className=\"mb-6\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi\n              distinctio maiores sint cupiditate ab ullam numquam a similique\n              vel itaque.\n            </p>\n            <a href=\"#\" className=\"font-medium hover:underline\">\n              Learn more about our process\n            </a>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature29 };\n"
+}

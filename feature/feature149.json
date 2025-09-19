@@ -1,0 +1,43 @@
+{
+    "id": "feature149",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature149.jpg",
+    "thumbnail": "feature149-4x3.webp",
+    "description": "A component featuring dual interactive panels with a central decorative divider, expanding on hover. Each contains a button, heading, and text, against a backdrop image with gradient overlays.",
+    "createdAt": [
+        3,
+        "2024-11-15T06:07:35.776Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature149",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature149 = () => {\n  return (\n    <section className=\"py-12 md:py-32\">\n      <div className=\"container px-4 md:px-6\">\n        <div className=\"relative flex flex-col md:flex-row md:gap-0\">\n          {/* Background image - positioned absolutely */}\n          <img\n            src=\"https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            alt=\"Background image\"\n            className=\"absolute left-0 top-0 z-[-1] h-full w-full rounded-2xl object-cover\"\n          />\n\n          {/* Left panel */}\n          <div\n            className=\"group relative flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 p-6 md:h-[600px] md:w-1/2 md:p-10 md:transition-[width] hover:md:w-2/3\"\n            onClick={() => {\n              window.scrollTo({ top: 0 });\n            }}\n          >\n            <div className=\"bg-linear-to-b absolute left-0 top-0 z-[-1] h-full w-full rounded-t-[20px] from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:backdrop-blur-0 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40 md:group-hover:backdrop-blur-0\" />\n            <Button\n              variant=\"outline\"\n              className=\"bg-background/10 hover:bg-background/20 rounded-full border-white/20 text-white\"\n            >\n              CRM Software\n            </Button>\n            <h1 className=\"text-3xl font-bold text-white md:text-5xl\">\n              Streamline Sales\n            </h1>\n            <p className=\"max-w-md text-left text-white/90\">\n              Streamline your sales process with our innovative CRM software.\n              Manage leads, track interactions, and boost your sales efficiency.\n            </p>\n          </div>\n\n          {/* Desktop divider - only visible on desktop */}\n          <div className=\"bg-background relative hidden h-[600px] w-5 md:block\">\n            <div className=\"absolute left-[-40px] top-0 h-[40px] w-[40px] rounded-[1rem] shadow-[10px_-10px_0_0_#fff]\" />\n            <div className=\"absolute right-[-40px] top-0 h-[40px] w-[40px] rounded-[1rem] shadow-[-10px_-10px_0_0_#fff]\" />\n            <div className=\"absolute bottom-0 left-[-40px] h-[40px] w-[40px] rounded-[1rem] shadow-[10px_10px_0_0_#fff]\" />\n            <div className=\"absolute bottom-0 right-[-40px] h-[40px] w-[40px] rounded-[1rem] shadow-[-10px_10px_0_0_#fff]\" />\n          </div>\n\n          {/* Right panel */}\n          <div\n            className=\"group relative flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 p-6 md:h-[600px] md:w-1/2 md:items-end md:p-10 md:transition-[width] hover:md:w-2/3\"\n            onClick={() => {\n              console.log(\"click\");\n            }}\n          >\n            <div className=\"bg-linear-to-t absolute left-0 top-0 z-[-1] h-full w-full rounded-b-[20px] from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:backdrop-blur-0 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40 md:group-hover:backdrop-blur-0\" />\n            <Button\n              variant=\"outline\"\n              className=\"bg-background/10 hover:bg-background/20 rounded-full border-white/20 text-white\"\n            >\n              Analytics Suite\n            </Button>\n            <h1 className=\"text-left text-3xl font-bold text-white md:text-right md:text-5xl\">\n              Measure Success\n            </h1>\n            <p className=\"max-w-md text-left text-white/90 md:text-right\">\n              Enhance customer satisfaction and retention with our powerful CRM\n              tools. Analyze data and make informed decisions to drive growth.\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature149 };\n"
+}

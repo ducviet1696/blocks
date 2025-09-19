@@ -1,0 +1,45 @@
+{
+    "id": "feature282",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature282.jpg",
+    "thumbnail": "feature282-4x3.webp",
+    "description": "A 2-column component featuring an interactive encryption card and detailed text on encryption technology, with security highlights listed using bullet-like icons.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:50:59.051Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "evervault-card.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/evervault-card.json",
+            "docsUrl": "https://ui.aceternity.com/components/evervault-card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature282",
+    "collection": "block",
+    "group": "feature",
+    "code": "import React from \"react\";\n\nimport { EvervaultCard } from \"@/components/aceternity/evervault-card\";\n\nconst Feature282 = () => {\n  return (\n    <section className=\"w-screen overflow-hidden py-32\">\n      <div className=\"container grid h-full w-full grid-cols-1 gap-12 md:grid-cols-2\">\n        <div>\n          <div className=\"bg-primary border-primary/20 mx-auto flex h-full w-full flex-col gap-4 rounded-lg border p-4 md:max-w-sm\">\n            <div className=\"bg-background border-border/50 h-full w-full rounded-md border p-4\">\n              <EvervaultCard\n                text=\"Hover to Encrypt\"\n                className=\"w-full text-center text-xl font-medium tracking-tight\"\n              />\n            </div>\n            <div className=\"space-y-2 p-4\">\n              <p className=\"text-muted-foreground font-mono text-sm\">\n                AES-256 Encryption\n              </p>\n              <p className=\"text-primary-foreground text-lg font-semibold\">\n                Block-Grade Security\n              </p>\n            </div>\n          </div>\n        </div>\n        <div>\n          <h2 className=\"text-muted-foreground mb-2 font-mono text-sm\">\n            Enterprise Security Solutions\n          </h2>\n          <h2 className=\"text-3xl font-semibold tracking-tight md:max-w-lg\">\n            Advanced Encryption Technology for Modern Applications\n          </h2>\n          <p className=\"text-muted-foreground mt-6 leading-relaxed md:max-w-lg\">\n            Our encryption infrastructure utilizes state-of-the-art\n            cryptographic algorithms to ensure your data remains secure at rest\n            and in transit. With AES-256 encryption, RSA key exchange, and\n            perfect forward secrecy, we provide enterprise-grade protection for\n            your most sensitive information.\n          </p>\n          <p className=\"text-muted-foreground mt-4 leading-relaxed md:max-w-lg\">\n            Built with zero-knowledge architecture, our security framework\n            ensures that only authorized users can access encrypted data.\n            Multi-layer authentication, hardware security modules, and\n            continuous monitoring provide comprehensive protection against\n            modern security threats.\n          </p>\n          <div className=\"mt-8 space-y-3\">\n            <div className=\"flex items-center gap-3\">\n              <div className=\"bg-primary h-2 w-2 rounded-full\"></div>\n              <span className=\"text-muted-foreground font-mono text-sm\">\n                256-bit encryption keys\n              </span>\n            </div>\n            <div className=\"flex items-center gap-3\">\n              <div className=\"bg-primary h-2 w-2 rounded-full\"></div>\n              <span className=\"text-muted-foreground font-mono text-sm\">\n                End-to-end encryption\n              </span>\n            </div>\n            <div className=\"flex items-center gap-3\">\n              <div className=\"bg-primary h-2 w-2 rounded-full\"></div>\n              <span className=\"text-muted-foreground font-mono text-sm\">\n                Zero-knowledge architecture\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\nexport { Feature282 };\n"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "feature242",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature242.jpg",
+    "thumbnail": "feature242-4x3.webp",
+    "description": "A carousel block with testimonials, navigation arrows, and a current indicator, featuring interactive elements and overlaid text on images.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.384Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature",
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature242",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ChevronRight, Plus } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\nconst Feature242 = () => {\n  const [api, setApi] = React.useState<CarouselApi>();\n  const [current, setCurrent] = React.useState(0);\n  const [count, setCount] = React.useState(0);\n\n  const testimonials = [\n    {\n      title: \"Just Copy Paste Shadcn Blocks\",\n      imgSrc:\n        \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-exchange-between-the-user-and-the-global-network.svg\",\n      href: \"#\",\n    },\n    {\n      title: \"Build Modern UI/UX\",\n      imgSrc:\n        \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-letters-and-arrows-flying-out-of-a-black-hole.svg\",\n      href: \"#\",\n    },\n    {\n      title: \"Streamline Your Workflow\",\n      imgSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-loading-the-next-page.svg\",\n      href: \"#\",\n    },\n    {\n      title: \"Collaborate Effectively\",\n      imgSrc:\n        \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-many-browser-windows-with-different-information.svg\",\n      href: \"#\",\n    },\n  ];\n\n  React.useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    setCount(testimonials.length);\n    setCurrent(api.selectedScrollSnap() + 1);\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap() + 1);\n    });\n  }, [api, testimonials.length]);\n\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container relative flex flex-col items-center md:px-0 lg:pt-8\">\n        <div className=\"relative z-10 w-full items-center justify-between lg:flex\">\n          <h1 className=\"max-w-2xl text-5xl font-semibold tracking-tighter md:text-7xl\">\n            Made for modern UI/UX teams\n          </h1>\n          <p className=\"text-muted-foreground/80 mt-8 max-w-lg tracking-tight md:text-xl lg:mt-0\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\n            ad minim veniam, quis nostrud exercitation.{\" \"}\n            <span className=\"text-foreground group inline-flex cursor-pointer items-center font-medium transition-all ease-in-out\">\n              Read more here{\" \"}\n              <ChevronRight\n                size={17}\n                className=\"ml-1 mt-px transition-all ease-in-out group-hover:ml-2\"\n              />{\" \"}\n            </span>\n          </p>\n        </div>\n        <DottedDiv className=\"mt-8 flex w-full items-center justify-center px-2 py-10\">\n          <Carousel\n            opts={{\n              align: \"center\",\n              loop: true,\n            }}\n            className=\"w-full\"\n            setApi={setApi}\n          >\n            <CarouselContent className=\"m-0 flex w-full\">\n              {testimonials.map((item, index) => (\n                <CarouselItem\n                  key={index}\n                  className=\"px-2 md:basis-1/2 lg:basis-1/3\"\n                >\n                  <div className=\"bg-muted group relative flex h-full max-h-96 w-full flex-col items-end justify-between text-ellipsis rounded-3xl p-5\">\n                    <img\n                      className=\"max-h-72 w-full opacity-100 transition-all ease-in-out group-hover:scale-90 group-hover:opacity-60\"\n                      src={item.imgSrc}\n                      alt={item.title}\n                    />\n                    <div className=\"flex w-full items-center justify-between gap-4\">\n                      <h5 className=\"text-2xl font-medium leading-7 tracking-tighter transition-all ease-in-out group-hover:translate-x-4\">\n                        {item.title}\n                      </h5>\n                      <a\n                        href={item.href}\n                        className=\"relative z-10 cursor-pointer\"\n                      >\n                        <Button\n                          variant=\"outline\"\n                          className=\"hover:bg-muted h-12 w-12 rounded-full bg-transparent transition-all ease-in-out\"\n                        >\n                          <Plus className=\"scale-150\" />\n                        </Button>\n                      </a>\n                    </div>\n                  </div>\n                </CarouselItem>\n              ))}\n            </CarouselContent>\n\n            <div className=\"mt-8 flex w-full items-center justify-between px-4\">\n              <div className=\"flex items-center gap-2\">\n                <span className=\"text-lg font-medium\">\n                  {current.toString().padStart(2, \"0\")}\n                </span>\n                <span className=\"text-muted-foreground\">/</span>\n                <span className=\"text-muted-foreground\">\n                  {count.toString().padStart(2, \"0\")}\n                </span>\n              </div>\n\n              <div className=\"relative mr-10 flex gap-2\">\n                <CarouselPrevious className=\"h-10 w-10\" />\n                <CarouselNext variant=\"default\" className=\"h-10 w-10\" />\n              </div>\n            </div>\n          </Carousel>\n        </DottedDiv>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature242 };\n\nconst DottedDiv = ({\n  children,\n  className,\n}: {\n  children: React.ReactNode;\n  className?: string;\n}) => (\n  <div className={cn(\"relative\", className)}>\n    <div className=\"bg-muted absolute -left-[12.5px] top-4 h-[1.5px] w-[110%] md:-left-20\" />\n    <div className=\"bg-muted absolute -left-[12.5px] bottom-4 h-[1.5px] w-[110%] md:-left-20\" />\n    <div className=\"bg-muted absolute -top-4 left-0 h-[110%] w-[1.5px]\" />\n    <div className=\"bg-muted absolute -top-4 right-0 h-[110%] w-[1.5px]\" />\n    <div className=\"bg-foreground absolute left-[-3px] top-[12.5px] z-10 h-2 w-2 rounded-full\" />\n    <div className=\"bg-foreground absolute right-[-3px] top-[12.5px] z-10 h-2 w-2 rounded-full\" />\n    <div className=\"bg-foreground absolute bottom-[12.5px] left-[-3px] z-10 h-2 w-2 rounded-full\" />\n    <div className=\"bg-foreground absolute bottom-[12.5px] right-[-3px] z-10 h-2 w-2 rounded-full\" />\n    {children}\n  </div>\n);\n"
+}

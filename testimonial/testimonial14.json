@@ -1,0 +1,57 @@
+{
+    "id": "testimonial14",
+    "access": "pro",
+    "weight": 18,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial14.jpg",
+    "thumbnail": "testimonial14-4x3.webp",
+    "description": "A carousel component showcasing testimonials, featuring text quotes, avatars, names, roles, and a 5-star rating system. Includes navigation dots for carousel control.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.654Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "testimonial14",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst testimonials = [\n  {\n    id: \"testimonial-1\",\n    text: \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.\",\n    name: \"Customer Name\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n  },\n  {\n    id: \"testimonial-2\",\n    text: \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.\",\n    name: \"Customer Name\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\",\n  },\n  {\n    id: \"testimonial-3\",\n    text: \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.\",\n    name: \"Customer Name\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\",\n  },\n];\n\nconst Testimonial14 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    const updateCurrent = () => {\n      setCurrent(api.selectedScrollSnap());\n    };\n\n    api.on(\"select\", updateCurrent);\n    return () => {\n      api.off(\"select\", updateCurrent);\n    };\n  }, [api]);\n\n  return (\n    <section className=\"py-32\">\n      <Carousel setApi={setApi}>\n        <CarouselContent>\n          {testimonials.map((testimonial) => (\n            <CarouselItem key={testimonial.id}>\n              <div className=\"container flex flex-col items-center text-center\">\n                <p className=\"mb-8 max-w-4xl font-medium md:px-8 lg:text-3xl\">\n                  &ldquo;{testimonial.text}&rdquo;\n                </p>\n                <Avatar className=\"mb-2 size-12 md:size-24\">\n                  <AvatarImage src={testimonial.avatar} />\n                  <AvatarFallback>{testimonial.name}</AvatarFallback>\n                </Avatar>\n                <p className=\"mb-1 text-sm font-medium md:text-lg\">\n                  {testimonial.name}\n                </p>\n              </div>\n            </CarouselItem>\n          ))}\n        </CarouselContent>\n      </Carousel>\n      <div className=\"container flex justify-center py-16\">\n        {testimonials.map((testimonial, index) => (\n          <Button\n            key={testimonial.id}\n            variant=\"ghost\"\n            size=\"sm\"\n            onClick={() => {\n              api?.scrollTo(index);\n            }}\n          >\n            <div\n              className={`size-2.5 rounded-full ${index === current ? \"bg-primary\" : \"bg-input\"}`}\n            />\n          </Button>\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial14 };\n"
+}

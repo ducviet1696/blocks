@@ -1,0 +1,52 @@
+{
+    "id": "gallery8",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery8.jpg",
+    "thumbnail": "gallery8-4x3.webp",
+    "description": "A carousel component displaying resources in 3 columns, featuring navigation, separators, and dynamic link icons.",
+    "createdAt": [
+        3,
+        "2025-02-27T04:55:16.954Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery8",
+    "collection": "block",
+    "group": "gallery",
+    "code": "import { MoveRight } from \"lucide-react\";\nimport { Fragment } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst resources = [\n  {\n    title: \"Getting Started with Templates\",\n    category: \"guide\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    title: \"Template Pricing & Plans\",\n    category: \"pricing\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    title: \"Introducing Our New Template Builder\",\n    category: \"news\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  },\n  {\n    title: \"Modern Design Patterns: Creating Responsive Templates for 2025\",\n    category: \"tutorial\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n  },\n  {\n    title: \"The Ultimate Guide to Template Customization\",\n    category: \"ebook\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n  },\n  {\n    title: \"Template Success Stories: Year in Review\",\n    category: \"blog\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n  },\n];\n\nconst Gallery8 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container\">\n        <h2 className=\"text-2xl font-bold text-pretty\">\n          Start building with our template collection\n        </h2>\n        <Carousel>\n          <div className=\"mt-6 grid gap-x-14 gap-y-10 lg:mt-16 lg:grid-cols-3\">\n            <div className=\"order-3 flex flex-col gap-6 lg:order-none\">\n              {resources.slice(0, 3).map((resource, idx) => (\n                <Fragment key={idx}>\n                  <div className=\"flex flex-col gap-1\">\n                    <div className=\"font-mono text-sm text-muted-foreground uppercase\">\n                      {resource.category}\n                    </div>\n                    <a\n                      href={resource.link}\n                      className=\"group flex items-center gap-2 font-semibold\"\n                    >\n                      {resource.title}\n                      <MoveRight className=\"mt-0.5 w-5 shrink-0 transition-transform duration-300 group-hover:translate-x-1\" />\n                    </a>\n                  </div>\n                  <Separator />\n                </Fragment>\n              ))}\n              <a\n                href=\"#\"\n                className=\"group flex items-center gap-2 font-semibold\"\n              >\n                View all resources\n                <MoveRight className=\"mt-0.5 w-5 transition-transform duration-300 group-hover:translate-x-1\" />\n              </a>\n            </div>\n            <div className=\"order-1 lg:order-none lg:col-span-2 [&>div[data-slot=carousel-content]]:overflow-visible [&>div[data-slot=carousel-content]]:[clip-path:inset(-100vw_-100vw_-100vw_0)]\">\n              <CarouselContent className=\"ml-0 max-w-[min(calc(100vw-4rem),24rem)] select-none sm:max-w-96\">\n                {resources.map((item, idx) => (\n                  <CarouselItem\n                    className={cn(\n                      \"w-fit border-y border-l border-border pl-0 transition-colors duration-300 hover:bg-muted/50\",\n                      idx === resources.length - 1 && \"border-r\",\n                    )}\n                    key={idx}\n                  >\n                    <a href={item.link} className=\"block h-full\">\n                      <img\n                        src={item.image}\n                        alt={item.title}\n                        className=\"aspect-video object-cover\"\n                      />\n                      <div className=\"px-6 py-8\">\n                        <div className=\"text-sm text-muted-foreground uppercase\">\n                          {item.category}\n                        </div>\n                        <h3 className=\"mt-2 text-xl font-semibold lg:text-2xl\">\n                          {item.title}\n                        </h3>\n                      </div>\n                    </a>\n                  </CarouselItem>\n                ))}\n              </CarouselContent>\n            </div>\n            <div className=\"order-2 flex items-center gap-4 lg:order-none lg:col-start-2\">\n              <CarouselPrevious className=\"static size-12 translate-x-0 translate-y-0\" />\n              <CarouselNext className=\"static size-12 translate-x-0 translate-y-0\" />\n            </div>\n          </div>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery8 };\n"
+}

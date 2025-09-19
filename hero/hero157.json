@@ -1,0 +1,45 @@
+{
+    "id": "hero157",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero157.jpg",
+    "thumbnail": "hero157-4x3.webp",
+    "description": "A hero component with a full-width background, features a tagline, a large heading, a descriptive text, and a button leading to projects. Utilizes overlay for text prominence.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:11:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero157",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { MoveUpRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero157 = () => {\n  return (\n    <section className=\"font-poppins dark relative h-svh max-h-[1400px] w-full overflow-hidden bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/full-width-backgrounds/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg')] bg-cover bg-center bg-no-repeat py-12 after:absolute after:left-0 after:top-0 after:block after:h-full after:w-full after:bg-black/65 after:content-[''] md:py-20\">\n      <div className=\"container relative z-20 h-full w-full max-w-[85rem]\">\n        <div className=\"flex h-full w-full flex-col justify-end gap-12\">\n          <div className=\"flex max-w-[61.375rem] flex-col gap-1\">\n            <p className=\"text-muted-foreground text-sm uppercase leading-none\">\n              #WORLDS NUMBER ONE\n            </p>\n            <h1 className=\"leading-snug! text-foreground text-3xl md:text-4xl lg:text-6xl\">\n              Designing Distinctive Spaces with Cutting-Edge Architectural\n              Innovations\n            </h1>\n          </div>\n          <div className=\"flex w-full flex-col justify-between gap-5 sm:flex-row sm:items-center\">\n            <p className=\"border-muted-foreground text-muted-foreground max-w-[20.25rem] border-l pl-6 text-base\">\n              Harnessing the power of architecture to reshape lives and uplift\n              communities.\n            </p>\n            <div className=\"shrink-0\">\n              <Button\n                asChild\n                variant=\"outline\"\n                className=\"border-muted-foreground/40 text-foreground group flex h-fit w-fit items-center gap-3 rounded-full border bg-transparent px-6 py-4 text-sm uppercase hover:bg-transparent\"\n              >\n                <a href=\"#\">\n                  <p className=\"group-hover:underline\">Our projects</p>\n                  <MoveUpRight className=\"h-4! w-4! fill-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1\" />\n                </a>\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero157 };\n"
+}

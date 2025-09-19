@@ -1,0 +1,34 @@
+{
+    "id": "testimonial3",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial3.jpg",
+    "thumbnail": "testimonial3-4x3.webp",
+    "description": "A testimonial component with a quote, image logo, and author attribution centered in a bordered block with adjustable padding.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.656Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "testimonial3",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "const Testimonial3 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-6 border-y py-14 text-center md:py-20\">\n          <q className=\"block max-w-4xl text-2xl font-medium lg:text-3xl\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo\n            nesciunt iste distinctio corporis, alias illum.\n          </q>\n          <div className=\"flex flex-col items-center gap-2 sm:flex-row\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg\"\n              alt=\"shadcn\"\n              className=\"h-7\"\n            />\n            <p className=\"font-medium\">John Doe, Founder & CEO of Company</p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial3 };\n"
+}

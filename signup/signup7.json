@@ -1,0 +1,52 @@
+{
+    "id": "signup7",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "signup7.jpg",
+    "thumbnail": "signup7-4x3.webp",
+    "description": "This component is a two-column layout for account creation, featuring sign-up options with Google, Email, or SSO, terms agreement links, and a side section showcasing benefits and logos.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.855Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "signup"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "signup7",
+    "collection": "block",
+    "group": "signup",
+    "code": "import { CheckSquare, FolderKanban, Users } from \"lucide-react\";\nimport { FcGoogle } from \"react-icons/fc\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Signup7 = () => {\n  return (\n    <section className=\"bg-muted/60 2xl:bg-background py-32\">\n      <div className=\"container lg:max-w-[1400px] lg:px-0 2xl:px-8\">\n        <div className=\"border-border lg:bg-muted/30 grid rounded-2xl lg:grid-cols-2 2xl:border 2xl:py-10\">\n          <div className=\"mx-auto flex max-w-xl flex-col justify-between lg:px-20\">\n            <div className=\"lg:mt-24\">\n              <div className=\"flex flex-col gap-2\">\n                <h1 className=\"text-2xl font-bold\">\n                  Create your account today\n                </h1>\n                <p className=\"text-muted-foreground font-medium\">\n                  Basic plan for personal use. Premium plans for teams and\n                  businesses.\n                </p>\n              </div>\n              <div className=\"mt-16 flex flex-col gap-6\">\n                <Button>\n                  <FcGoogle />\n                  Continue with Google\n                </Button>\n                <div className=\"flex items-center gap-2\">\n                  <Separator className=\"flex-1\" />\n                  <span className=\"text-muted-foreground text-sm\">or</span>\n                  <Separator className=\"flex-1\" />\n                </div>\n                <div className=\"flex flex-col gap-2\">\n                  <Button variant=\"outline\">Continue with Email</Button>\n                  <Button\n                    variant=\"ghost\"\n                    className=\"text-muted-foreground hover:text-primary\"\n                  >\n                    or Enterprise SSO\n                  </Button>\n                </div>\n              </div>\n            </div>\n            <div className=\"mt-10\">\n              <p className=\"text-muted-foreground text-sm\">\n                Already a user?{\" \"}\n                <a href=\"/#\" className=\"text-primary\">\n                  Log in\n                </a>\n              </p>\n              <p className=\"text-muted-foreground text-sm\">\n                By continuing, you agree to our{\" \"}\n                <a href=\"/#\" className=\"text-primary\">\n                  Terms{\" \"}\n                </a>\n                and{\" \"}\n                <a href=\"/#\" className=\"text-primary\">\n                  Privacy Policy.\n                </a>\n              </p>\n            </div>\n          </div>\n          <div className=\"border-border lg:bg-muted/60 rounded-l-2xl pt-14 lg:border-y lg:border-l lg:py-8 lg:pl-12\">\n            <div className=\"mx-auto flex max-w-xl justify-between gap-4 lg:mx-0 lg:max-w-none lg:justify-start lg:gap-8\">\n              <div className=\"flex flex-row items-center gap-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/ph-monthly.svg\"\n                  alt=\"g2 monthly\"\n                  className=\"h-10\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/producthunt-badge.png\"\n                  alt=\"g2\"\n                  className=\"h-10\"\n                />\n              </div>\n            </div>\n            <div className=\"border-border bg-muted mt-6 hidden rounded-l-xl border-y border-l border-dashed py-1.5 pl-1.5 lg:block\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"placeholder\"\n                className=\"border-border max-h-[450px] w-full rounded-l-xl border-y border-l object-cover\"\n              />\n            </div>\n            <div className=\"mr-3 mt-8 hidden grid-cols-3 gap-3 lg:grid\">\n              <div>\n                <FolderKanban className=\"mb-1 size-4\" />\n                <p className=\"text-sm font-medium\">Organize your workspaces</p>\n                <p className=\"text-muted-foreground text-sm\">\n                  Keep all your work organized in one centralized dashboard.\n                </p>\n              </div>\n              <div>\n                <CheckSquare className=\"mb-1 size-4\" />\n                <p className=\"text-sm font-medium\">Track tasks and deadlines</p>\n                <p className=\"text-muted-foreground text-sm\">\n                  Set priorities and monitor progress across all your projects.\n                </p>\n              </div>\n              <div>\n                <Users className=\"mb-1 size-4\" />\n                <p className=\"text-sm font-medium\">\n                  Collaborate with your team\n                </p>\n                <p className=\"text-muted-foreground text-sm\">\n                  Share documents and communicate with teammates in real-time.\n                </p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Signup7 };\n"
+}

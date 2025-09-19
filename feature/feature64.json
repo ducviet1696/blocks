@@ -1,0 +1,43 @@
+{
+    "id": "feature64",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature64.jpg",
+    "thumbnail": "feature64-4x3.webp",
+    "description": "A component displaying a \"Coming Soon\" badge, a title, a descriptive paragraph, and two feature blocks in a 7-column grid, with the first block spanning 4 columns and the second 3 columns.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.584Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature64",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Badge } from \"@/components/ui/badge\";\n\nconst Feature64 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container flex flex-col items-center gap-16 lg:px-16\">\n        <div className=\"text-center\">\n          <Badge variant=\"outline\" className=\"mb-6\">\n            Coming Soon\n          </Badge>\n          <h3 className=\"mb-3 text-3xl font-semibold text-pretty md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl\">\n            Feature group\n          </h3>\n          <p className=\"text-muted-foreground lg:max-w-3xl lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n            doloremque mollitia fugiat omnis! Porro facilis quo animi\n            consequatur. Explicabo.\n          </p>\n        </div>\n        <div className=\"grid w-full gap-6 lg:grid-cols-7\">\n          <div className=\"flex flex-col rounded-lg border border-border bg-accent p-6 md:p-8 lg:col-span-4\">\n            <div className=\"flex justify-center\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"mb-6 aspect-4/3 sm:max-h-64 md:mb-8 lg:w-full\"\n              />\n            </div>\n            <div className=\"mt-auto flex flex-col\">\n              <p className=\"mb-2 text-sm font-semibold md:text-base\">Feature</p>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Nam vitae molestie arcu. Quisque eu libero orci.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col rounded-lg border border-border bg-accent p-6 md:p-8 lg:col-span-3\">\n            <div className=\"flex justify-center\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"placeholder\"\n                className=\"mb-6 aspect-4/3 sm:max-h-64 md:mb-8 lg:w-full\"\n              />\n            </div>\n            <div className=\"mt-auto flex flex-col\">\n              <p className=\"mb-2 text-sm font-semibold md:text-base\">Feature</p>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Nam vitae molestie arcu. Quisque eu libero orci.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature64 };\n"
+}

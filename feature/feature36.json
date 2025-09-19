@@ -1,0 +1,49 @@
+{
+    "id": "feature36",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature36.jpg",
+    "thumbnail": "feature36-4x3.webp",
+    "description": "A component with a 3-column layout for case studies, featuring one larger highlighted card and five smaller ones, each with a title, badge for the larger card, and a \"Continue reading\" link.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.569Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature36",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Badge } from \"@/components/ui/badge\";\nimport { Card } from \"@/components/ui/card\";\n\nconst Feature36 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 gap-5 lg:grid-cols-3\">\n          <a className=\"group lg:col-span-2 lg:row-span-2\" href=\"#\">\n            <Card className=\"h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary lg:p-20\">\n              <div className=\"flex flex-col gap-8\">\n                <Badge className=\"w-fit\">Studies</Badge>\n                <div className=\"flex flex-col gap-6\">\n                  <p className=\"text-base lg:text-lg lg:font-medium\">\n                    Case Study\n                  </p>\n                  <h3 className=\"text-xl font-medium lg:text-5xl\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  </h3>\n                  <p className=\"lg:text-lg lg:font-medium\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                    Repellat cupiditate dicta accusamus quae nesciunt deserunt\n                    cum deleniti atque consequuntur quis!\n                  </p>\n                </div>\n                <p className=\"font-medium group-hover:underline\">\n                  Continue reading\n                </p>\n              </div>\n            </Card>\n          </a>\n          <a className=\"group\" href=\"#\">\n            <Card className=\"h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary\">\n              <div className=\"flex flex-col gap-8\">\n                <div className=\"flex flex-col gap-6\">\n                  <p>Case Study</p>\n                  <h3 className=\"text-xl font-medium\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  </h3>\n                </div>\n                <p className=\"font-medium group-hover:underline\">\n                  Continue reading\n                </p>\n              </div>\n            </Card>\n          </a>\n          <a className=\"group\" href=\"#\">\n            <Card className=\"h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary\">\n              <div className=\"flex flex-col gap-8\">\n                <div className=\"flex flex-col gap-6\">\n                  <p>Case Study</p>\n                  <h3 className=\"text-xl font-medium\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  </h3>\n                </div>\n                <p className=\"font-medium group-hover:underline\">\n                  Continue reading\n                </p>\n              </div>\n            </Card>\n          </a>\n          <a className=\"group\" href=\"#\">\n            <Card className=\"h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary\">\n              <div className=\"flex flex-col gap-8\">\n                <div className=\"flex flex-col gap-6\">\n                  <p>Case Study</p>\n                  <h3 className=\"text-xl font-medium\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  </h3>\n                </div>\n                <p className=\"font-medium group-hover:underline\">\n                  Continue reading\n                </p>\n              </div>\n            </Card>\n          </a>\n          <a className=\"group\" href=\"#\">\n            <Card className=\"h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary\">\n              <div className=\"flex flex-col gap-8\">\n                <div className=\"flex flex-col gap-6\">\n                  <p>Case Study</p>\n                  <h3 className=\"text-xl font-medium\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  </h3>\n                </div>\n                <p className=\"font-medium group-hover:underline\">\n                  Continue reading\n                </p>\n              </div>\n            </Card>\n          </a>\n          <a className=\"group\" href=\"#\">\n            <Card className=\"h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary\">\n              <div className=\"flex flex-col gap-8\">\n                <div className=\"flex flex-col gap-6\">\n                  <p>Case Study</p>\n                  <h3 className=\"text-xl font-medium\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  </h3>\n                </div>\n                <p className=\"font-medium group-hover:underline\">\n                  Continue reading\n                </p>\n              </div>\n            </Card>\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature36 };\n"
+}

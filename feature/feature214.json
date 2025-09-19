@@ -1,0 +1,53 @@
+{
+    "id": "feature214",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature214.jpg",
+    "thumbnail": "feature214-4x3.webp",
+    "description": "A carousel showcasing AI-powered features with autoplaying video cards on hover, including icons and brief descriptions.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.793Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature",
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature214",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport type { LucideIcon } from \"lucide-react\";\nimport {\n  AudioLines,\n  Captions,\n  Eye,\n  Languages,\n  ListMinus,\n  ScanFace,\n  TextQuote,\n} from \"lucide-react\";\nimport { useRef } from \"react\";\n\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardTitle,\n} from \"@/components/ui/card\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\ninterface card {\n  video: string;\n  Icon: LucideIcon;\n  title: string;\n  link: string;\n  summary: string;\n}\n\nconst List: Array<card> = [\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4\",\n    Icon: Eye,\n    title: \"Smart Code Analysis\",\n    link: \"#\",\n    summary:\n      \"Advanced AI that analyzes your code in real-time, identifying patterns and potential improvements as you type.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4\",\n    Icon: Languages,\n    title: \"Multi-Language Support\",\n    link: \"#\",\n    summary:\n      \"Seamlessly work with multiple programming languages while maintaining consistent code quality and style.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-7-640_360_30fps.mp4\",\n    Icon: AudioLines,\n    title: \"Intelligent Refactoring\",\n    link: \"#\",\n    summary:\n      \"Let AI handle complex refactoring tasks, from method extraction to class restructuring, with perfect accuracy.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4\",\n    Icon: ListMinus,\n    title: \"Code Cleanup\",\n    link: \"#\",\n    summary:\n      \"Automatically remove unused imports, dead code, and redundant statements while maintaining functionality.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4\",\n    Icon: ScanFace,\n    title: \"Security Scanner\",\n    link: \"#\",\n    summary:\n      \"Advanced vulnerability detection that identifies potential security risks and suggests immediate fixes.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4\",\n    Icon: TextQuote,\n    title: \"Documentation Generator\",\n    link: \"#\",\n    summary:\n      \"Transform your code into comprehensive documentation with AI-powered comment generation and formatting.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-7-640_360_30fps.mp4\",\n    Icon: Captions,\n    title: \"Code Suggestions\",\n    link: \"#\",\n    summary:\n      \"Get intelligent code completions and suggestions that adapt to your coding style and project requirements.\",\n  },\n];\nconst CarouselCard = ({ video, Icon, title, link, summary }: card) => {\n  const videoRef = useRef<HTMLVideoElement | null>(null);\n  return (\n    <a\n      href={link}\n      className=\"group block h-full\"\n      onMouseEnter={() => {\n        if (videoRef.current) {\n          videoRef.current.play();\n        }\n      }}\n      onMouseLeave={() => {\n        if (videoRef.current) {\n          videoRef.current.pause();\n          videoRef.current.currentTime = 0;\n        }\n      }}\n    >\n      <Card className=\"min-h-[39.75rem] bg-muted p-8 shadow-none transition-all group-hover:shadow-md\">\n        <CardContent className=\"p-0\">\n          <div className=\"relative\">\n            <div className=\"h-[20rem] w-full overflow-hidden rounded-[0.5rem]\">\n              <video\n                src={video}\n                className=\"block size-full object-cover object-center\"\n                ref={videoRef}\n                controls={false}\n                muted={true}\n              />\n            </div>\n            <div className=\"absolute -top-3 -left-2 flex size-9 rounded-[0.5rem] bg-primary\">\n              <Icon className=\"m-auto size-4 stroke-primary-foreground\" />\n            </div>\n          </div>\n          <div className=\"mt-8 flex flex-col gap-2\">\n            <CardTitle className=\"text-2xl leading-[130%] font-normal tracking-[-0.48px] text-foreground\">\n              {title}\n            </CardTitle>\n            <CardDescription className=\"text-lg leading-[150%] tracking-[-0.36px]\">\n              {summary}\n            </CardDescription>\n          </div>\n        </CardContent>\n      </Card>\n    </a>\n  );\n};\nconst Feature214 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-16 flex max-w-[47.5rem] flex-col gap-6\">\n          <h2 className=\"text-center font-serif text-4xl md:text-5xl xl:text-7xl\">\n            AI-powered editing in an instant\n          </h2>\n          <p className=\"text-center text-xl\">\n            Refine your appearance, improve your audio, and tackle all the\n            obvious, tedious edits\u2014instantly with just a few clicks, thanks to\n            your AI editing assistant.\n          </p>\n        </div>\n        <Carousel\n          opts={{\n            align: \"start\",\n          }}\n          className=\"w-full\"\n        >\n          <CarouselContent className=\"py-4\">\n            {List.map((item, index) => (\n              <CarouselItem\n                key={index}\n                className=\"basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4\"\n              >\n                <CarouselCard {...item} />\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n          <div className=\"mt-8 flex w-full justify-end gap-4\">\n            <CarouselPrevious className=\"static size-12\" />\n            <CarouselNext className=\"static size-12\" />\n          </div>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature214 };\n"
+}

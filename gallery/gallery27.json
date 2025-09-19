@@ -1,0 +1,43 @@
+{
+    "id": "gallery27",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery27.jpg",
+    "thumbnail": "gallery27-4x3.webp",
+    "description": "A team carousel featuring images, names, and roles with navigation buttons, looping functionality. Displays items 2 on medium screens, 1/4 on large.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery27",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\nconst teamMembers = [\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg\",\n    title: \"Joana Doe\",\n    designation: \"Creative Director\",\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg\",\n    title: \"John Smith\",\n    designation: \"Lead Developer\",\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person3.jpeg\",\n    title: \"Alice Johnson\",\n    designation: \"Project Manager\",\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person4.jpeg\",\n    title: \"Robert Brown\",\n    designation: \"UX Designer\",\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person5.jpeg\",\n    title: \"Emily White\",\n    designation: \"Marketing Specialist\",\n  },\n];\n\nconst Gallery27 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h1 className=\"font-calSans text-6xl\">The Team Behind Our Success</h1>\n        <p className=\"mt-3 max-w-xl text-muted-foreground\">\n          {\" \"}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n          eiusmod tempor incididunt ut labore et dolore magnam veniam, quis\n          nostrud exercitation ullamco laboris nisi ut aliqui\n        </p>\n        <Carousel\n          opts={{\n            align: \"start\",\n            loop: true,\n          }}\n          className=\"relative w-full pt-15\"\n        >\n          <div className=\"absolute top-0 right-0 flex h-12 w-20 items-center justify-end gap-2\">\n            <CarouselPrevious\n              variant=\"default\"\n              className=\"absolute left-0 rounded-none\"\n            />\n            <CarouselNext\n              variant=\"default\"\n              className=\"absolute right-0 rounded-none\"\n            />\n          </div>\n          <CarouselContent>\n            {teamMembers.map((member, index) => (\n              <CarouselItem key={index} className=\"md:basis-1/2 lg:basis-1/4\">\n                <div className=\"group\">\n                  <img\n                    src={member.src}\n                    alt={member.title}\n                    className=\"h-92 w-full object-cover transition-all duration-300 group-hover:translate-y-[-10px]\"\n                  />\n                  <h3 className=\"mt-4 text-2xl font-semibold\">\n                    {member.title}\n                  </h3>\n                  <p className=\"text-muted-foreground\">{member.designation}</p>\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery27 };\n"
+}

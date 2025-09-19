@@ -1,0 +1,45 @@
+{
+    "id": "feature170",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature170.jpg",
+    "thumbnail": "feature170-4x3.webp",
+    "description": "This component displays \"Our Core Values\" with a badge and a call-to-action link, followed by a three-column grid of icons and texts detailing each value.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.588Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature170",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight, Heart, Lightbulb, Shield, UserPen } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst values = [\n  {\n    title: \"User-Centered Design\",\n    description:\n      \"We prioritize the user experience, ensuring every feature adds real value and is intuitive to use.\",\n    icon: UserPen,\n  },\n  {\n    title: \"Continuous Innovation\",\n    description:\n      \"We are committed to pushing boundaries, and evolving to meet the needs of modern teams.\",\n    icon: Lightbulb,\n  },\n  {\n    title: \"Integrity and Transparency\",\n    description:\n      \"We build with honesty and clarity, fostering trust with our users and partners.\",\n    icon: Shield,\n  },\n];\n\nconst Feature170 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col gap-6 py-4 lg:py-8\">\n          <Badge\n            variant=\"outline\"\n            className=\"w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm\"\n          >\n            <Heart className=\"size-4\" />\n            <span>We live by</span>\n          </Badge>\n          <h2 className=\"text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl\">\n            Our Core Values\n          </h2>\n          <div className=\"flex flex-col gap-2\">\n            <p className=\"text-muted-foreground\">\n              We believe in principles that guide our growth and inspire our\n              community.\n            </p>\n            <p className=\"inline-flex items-center gap-1 text-primary\">\n              <span className=\"underline\">Learn More</span>\n              <ArrowRight className=\"size-4\" />\n            </p>\n          </div>\n        </div>\n\n        <div className=\"mt-10 grid gap-8 sm:grid-cols-2 md:mt-14 lg:grid-cols-3\">\n          {values.map((value, index) => (\n            <div className=\"flex gap-2.5\" key={index}>\n              <value.icon className=\"mt-0.5 size-[18px] shrink-0\" />\n              <div>\n                <h3 className=\"text-lg leading-none! tracking-[-0.96px] lg:text-2xl\">\n                  {value.title}\n                </h3>\n                <p className=\"mt-2.5 text-sm tracking-[-0.36px] text-muted-foreground\">\n                  {value.description}\n                </p>\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature170 };\n"
+}

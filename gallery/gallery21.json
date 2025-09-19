@@ -1,0 +1,48 @@
+{
+    "id": "gallery21",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery21.jpg",
+    "thumbnail": "gallery21-4x3.webp",
+    "description": "Interactive gallery component with image slider, effect animations, and a call-to-action button.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react",
+        "swiper"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery21",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight } from \"lucide-react\";\nimport React, { useEffect, useState } from \"react\";\nimport { Autoplay, EffectCoverflow } from \"swiper/modules\";\nimport { Swiper, SwiperSlide } from \"swiper/react\";\nimport \"swiper/css/effect-coverflow\";\nimport \"swiper/css/pagination\";\nimport \"swiper/css/navigation\";\nimport \"swiper/css\";\nimport \"swiper/css/effect-cards\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Gallery21 = () => {\n  const [domLoaded, setDomLoaded] = useState(false);\n\n  useEffect(() => {\n    setDomLoaded(true);\n  }, []);\n  const images = [\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n      alt: \"Portrait of Joanna Doe in urban setting\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n      alt: \"Portrait of Joan Doe in natural lighting\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n      alt: \"Portrait of Sarah Chen in studio setting\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n      alt: \"Portrait of Joanna Doe in urban setting\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n      alt: \"Portrait of Joan Doe in natural lighting\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n      alt: \"Portrait of Sarah Chen in studio setting\",\n    },\n  ];\n\n  const css = `\n  .mySwiper21 {\n    width: 100%;\n    height: 420px;\n    padding-bottom: 50px;\n  }\n  \n  .mySwiper21 .swiper-slide {\n    background-position: center;\n    background-size: cover;\n    width: 300px;\n  }\n  \n  .mySwiper21 .swiper-slide img {\n    display: block;\n    width: 100%;\n  }\n\n  .swiper-3d .swiper-slide-shadow-left {\n    background-image: none;\n  }\n  .swiper-3d .swiper-slide-shadow-right{\n    background: none;\n  }\n  `;\n  return (\n    <section className=\"py-32\">\n      <style>{css}</style>\n      <div className=\"relative container flex max-w-4xl flex-col items-center gap-10 overflow-x-clip\">\n        {/* Left and right mask */}\n        <div className=\"pointer-events-none absolute left-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent lg:w-66\" />\n        <div className=\"pointer-events-none absolute right-0 z-10 h-full w-24 bg-gradient-to-l from-white to-transparent lg:w-66\" />\n\n        <div className=\"relative h-[420px] max-w-4xl\">\n          {domLoaded && (\n            <motion.div\n              className=\"relative h-full w-full\"\n              initial={{ opacity: 0, translateY: 20 }}\n              animate={{ opacity: 1, translateY: 0 }}\n              transition={{\n                duration: 0.3,\n                delay: 0.5,\n              }}\n            >\n              <Swiper\n                spaceBetween={50}\n                autoplay={{\n                  delay: 1500,\n                  disableOnInteraction: false,\n                }}\n                effect=\"coverflow\"\n                grabCursor={true}\n                centeredSlides={true}\n                loop={true}\n                slidesPerView={2.447}\n                coverflowEffect={{\n                  rotate: 0,\n                  stretch: 0,\n                  depth: 100,\n                  modifier: 2.5,\n                }}\n                className=\"mySwiper21\"\n                modules={[EffectCoverflow, Autoplay]}\n              >\n                {images.map((image, index) => (\n                  <SwiperSlide key={index}>\n                    <img\n                      className=\"h-full w-full overflow-hidden rounded-3xl object-cover shadow-lg\"\n                      src={image.src}\n                      alt={image.alt}\n                    />\n                  </SwiperSlide>\n                ))}\n              </Swiper>\n            </motion.div>\n          )}\n        </div>\n        <div className=\"flex flex-col items-center justify-center\">\n          <h3 className=\"max-w-sm px-2 text-center text-2xl font-medium tracking-tight\">\n            Hear the Music: An Experience Like Never Before\n          </h3>\n          <Button\n            variant=\"secondary\"\n            className=\"group mt-10 flex items-center justify-center gap-2 rounded-full tracking-tight\"\n          >\n            Explore the world\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:rotate-0\" />\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery21 };\n"
+}

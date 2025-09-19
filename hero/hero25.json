@@ -1,0 +1,45 @@
+{
+    "id": "hero25",
+    "access": "pro",
+    "weight": 8,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero25.jpg",
+    "thumbnail": "hero25-4x3.webp",
+    "description": "A hero block featuring a centered title, subtitle, customizable buttons, and a list highlighting 3 key benefits with icons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.612Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero25",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Blocks, MoveRight, Wrench, Zap } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero25 = ({ className }: { className?: string }) => {\n  return (\n    <section className={cn(\"py-20 md:py-28 lg:py-36\", className)}>\n      <div className=\"container px-4 md:px-6\">\n        <div className=\"mx-auto max-w-4xl text-center\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\"\n            alt=\"placeholder\"\n            className=\"mx-auto mb-6 w-14 md:mb-8 md:w-20 lg:mb-10 lg:w-24\"\n          />\n          <span className=\"mb-2 inline-block text-sm font-medium tracking-wider text-muted-foreground uppercase md:text-base\">\n            SYSTEMS\n          </span>\n          <h1 className=\"mt-4 text-4xl leading-tight font-bold text-balance md:text-5xl lg:text-7xl lg:leading-[1.1]\">\n            A system crafted for team success and growth\n          </h1>\n          <div className=\"mt-10 flex flex-col justify-center gap-4 sm:flex-row\">\n            <Button size=\"lg\" className=\"px-8 py-6 text-base font-medium\">\n              Get started\n              <MoveRight className=\"ml-2 size-5\" strokeWidth={1.5} />\n            </Button>\n            <Button\n              size=\"lg\"\n              variant=\"secondary\"\n              className=\"px-8 py-6 text-base font-medium\"\n            >\n              Read the docs\n              <MoveRight className=\"ml-2 size-5\" strokeWidth={1.5} />\n            </Button>\n          </div>\n          <div className=\"mt-10 lg:mt-12\">\n            <ul className=\"flex flex-wrap justify-center gap-6 text-sm text-muted-foreground lg:text-base\">\n              <li className=\"flex items-center gap-2.5 whitespace-nowrap\">\n                <Zap className=\"size-5 text-primary\" />\n                Quick setup guide\n              </li>\n              <li className=\"flex items-center gap-2.5 whitespace-nowrap\">\n                <Blocks className=\"size-5 text-primary\" />\n                Fully customizable\n              </li>\n              <li className=\"flex items-center gap-2.5 whitespace-nowrap\">\n                <Wrench className=\"size-5 text-primary\" />\n                Easy to use components\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero25 };\n"
+}

@@ -1,0 +1,55 @@
+{
+    "id": "hero83",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero83.jpg",
+    "thumbnail": "hero83-4x3.webp",
+    "description": "A component featuring a badge with a star icon, a title, a paragraph, two buttons, and a row of three varying-width images below.",
+    "createdAt": [
+        3,
+        "2025-04-30T03:08:16.869Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero83",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\ninterface ButtonType {\n  title: string;\n  url: string;\n  variant: \"outline\" | \"default\";\n}\n\nconst BUTTONS: ButtonType[] = [\n  {\n    title: \"Explore\",\n    url: \"#\",\n    variant: \"default\",\n  },\n  {\n    title: \"Sign up\",\n    url: \"#\",\n    variant: \"outline\",\n  },\n];\n\nconst IMAGES = [\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    alt: \"\",\n    ratio: 0.644736842,\n    className: \"w-[30%]\",\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    alt: \"\",\n    ratio: 0.926829268,\n    className: \"w-[40%]\",\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    alt: \"\",\n    ratio: 0.644736842,\n    className: \"w-[30%]\",\n  },\n];\n\nconst Hero83 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-center gap-10 pb-8\">\n          <Badge variant=\"secondary\">Announcing our new features</Badge>\n          <h1 className=\"max-w-lg text-center text-4xl font-semibold md:max-w-2xl md:text-6xl\">\n            Achieve More with Elite Access Pro\n          </h1>\n          <p className=\"text-foreground max-w-lg text-center font-medium\">\n            Enhance your career hunt with increased visibility, first-look\n            opportunities and monetary incentives!\n          </p>\n          <div className=\"flex w-full max-w-lg flex-col items-center justify-center gap-4 md:flex-row md:gap-6\">\n            {BUTTONS.map((btn, index) => (\n              <Button\n                asChild\n                variant={btn.variant}\n                size=\"lg\"\n                className=\"w-full md:flex-1\"\n                key={`hero-btn-${index}`}\n              >\n                <a href={btn.url}>{btn.title}</a>\n              </Button>\n            ))}\n          </div>\n        </div>\n        <div className=\"flex w-full items-end justify-center gap-4\">\n          {IMAGES.map((img, index) => (\n            <div className={img.className} key={`hero-img-${index}`}>\n              <AspectRatio ratio={img.ratio} className=\"rounded-md border\">\n                <img\n                  src={img.src}\n                  alt={img.alt}\n                  className=\"block size-full object-cover object-[50%_0%]\"\n                />\n              </AspectRatio>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero83 };\n"
+}

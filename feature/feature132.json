@@ -1,0 +1,34 @@
+{
+    "id": "feature132",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature132.jpg",
+    "thumbnail": "feature132-4x3.webp",
+    "description": "A component displaying a welcome message, a description, a \"Get Started\" button, and a 4-column layout of items with images, titles, and descriptions.",
+    "createdAt": [
+        3,
+        "2024-10-17T05:25:53.973Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature132",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nconst itemsData = [\n  {\n    id: 1,\n    title: \"Performance\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 2,\n    title: \"Innovation\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 3,\n    title: \"Quality\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 4,\n    title: \"Accessibility\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n];\n\nconst Feature132 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h2 className=\"mb-6 text-center text-5xl font-semibold\">\n          Welcome to Our Website\n        </h2>\n        <p className=\"text-muted-foreground m-auto max-w-3xl text-center text-xl\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n          doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur.\n          Explicabo.\n        </p>\n        <a\n          className=\"border-muted bg-background hover:border-muted-foreground mx-auto mt-8 block w-fit rounded-full border-2 px-6 py-4 text-sm font-semibold transition\"\n          href=\"#\"\n        >\n          Get Started\n        </a>\n        <div className=\"mx-auto mt-16 flex flex-col gap-6 md:flex-row\">\n          {itemsData.map((item) => (\n            <a className=\"block\" href=\"#\" key={item.id}>\n              <img\n                src={item.imageSrc}\n                alt=\"placeholder\"\n                className=\"mb-6 h-full max-h-72 w-full rounded-2xl object-cover transition hover:brightness-90 lg:max-h-96\"\n              />\n              <h6 className=\"mb-3 text-lg font-semibold\">{item.title}</h6>\n              <p className=\"text-muted-foreground text-sm\">\n                {item.description}\n              </p>\n            </a>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature132 };\n"
+}

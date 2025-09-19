@@ -1,0 +1,51 @@
+{
+    "id": "feature54",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature54.jpg",
+    "thumbnail": "feature54-4x3.webp",
+    "description": "A tabbed component showcasing features with images and subfeatures. Includes 5 tabs, images for each feature, and a 3-column layout for subfeatures.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.575Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature54",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst features = [\n  {\n    id: \"feature-1\",\n    title: \"Task Management\",\n    description:\n      \"Organize and prioritize your work with our intuitive task management system.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    subfeatures: [\n      {\n        id: \"subfeature-1\",\n        title: \"Smart Lists\",\n        description:\n          \"Create custom lists that automatically organize your tasks based on priority, due date, or project.\",\n      },\n      {\n        id: \"subfeature-2\",\n        title: \"Time Tracking\",\n        description:\n          \"Built-in time tracking helps you understand where your time goes and improve your productivity habits.\",\n      },\n      {\n        id: \"subfeature-3\",\n        title: \"Recurring Tasks\",\n        description:\n          \"Set up recurring tasks for routine work and never worry about forgetting important regular activities.\",\n      },\n    ],\n  },\n  {\n    id: \"feature-2\",\n    title: \"Team Collaboration\",\n    description: \"Work seamlessly with your team in a unified workspace.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    subfeatures: [\n      {\n        id: \"subfeature-1\",\n        title: \"Real-time Editing\",\n        description:\n          \"Collaborate on documents in real-time with multiple team members to streamline your workflow.\",\n      },\n      {\n        id: \"subfeature-2\",\n        title: \"Task Delegation\",\n        description:\n          \"Assign tasks to team members with detailed instructions and monitor progress without micromanaging.\",\n      },\n      {\n        id: \"subfeature-3\",\n        title: \"Team Chat\",\n        description:\n          \"Integrated messaging keeps all communication in context and reduces the need for separate chat tools.\",\n      },\n    ],\n  },\n  {\n    id: \"feature-3\",\n    title: \"Workflow Automation\",\n    description: \"Automate repetitive tasks and streamline your processes.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    subfeatures: [\n      {\n        id: \"subfeature-1\",\n        title: \"Custom Triggers\",\n        description:\n          \"Create custom triggers that automatically start workflows based on specific conditions or events.\",\n      },\n      {\n        id: \"subfeature-2\",\n        title: \"Integration Hub\",\n        description:\n          \"Connect with your favorite tools and services to create seamless workflows across your entire tech stack.\",\n      },\n      {\n        id: \"subfeature-3\",\n        title: \"Templates Library\",\n        description:\n          \"Access pre-built automation templates for common business processes to save time on setup.\",\n      },\n    ],\n  },\n  {\n    id: \"feature-4\",\n    title: \"Analytics Dashboard\",\n    description: \"Gain insights into team performance and productivity trends.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n    subfeatures: [\n      {\n        id: \"subfeature-1\",\n        title: \"Productivity Metrics\",\n        description:\n          \"Track individual and team productivity with customizable metrics that matter to your business.\",\n      },\n      {\n        id: \"subfeature-2\",\n        title: \"Time Analysis\",\n        description:\n          \"Visualize how time is spent across projects and identify opportunities to optimize your workflow.\",\n      },\n      {\n        id: \"subfeature-3\",\n        title: \"Custom Reports\",\n        description:\n          \"Generate detailed reports for stakeholders showing progress, bottlenecks, and resource allocation.\",\n      },\n    ],\n  },\n  {\n    id: \"feature-5\",\n    title: \"Smart Calendar\",\n    description: \"Intelligent scheduling that optimizes your workday.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n    subfeatures: [\n      {\n        id: \"subfeature-1\",\n        title: \"Meeting Planner\",\n        description:\n          \"AI-powered meeting scheduler that finds the optimal time slots based on participants' availability and preferences.\",\n      },\n      {\n        id: \"subfeature-2\",\n        title: \"Focus Time Blocks\",\n        description:\n          \"Automatically block out dedicated focus time for deep work based on your productivity patterns.\",\n      },\n      {\n        id: \"subfeature-3\",\n        title: \"Smart Reminders\",\n        description:\n          \"Contextual reminders that adapt to your work habits and help you stay on track with important deadlines.\",\n      },\n    ],\n  },\n];\n\nconst Feature54 = () => {\n  const [selection, setSelection] = useState(features[0].id);\n  return (\n    <section className=\"py-32\">\n      <div className=\"flex flex-col items-center md:gap-y-4 lg:px-16\">\n        <div className=\"container flex flex-col items-center\">\n          <h3 className=\"mb-3 text-center text-3xl font-semibold text-pretty md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl\">\n            Powerful Features for Your Workflow\n          </h3>\n        </div>\n        <div className=\"w-full text-center\">\n          <Tabs value={selection} onValueChange={setSelection}>\n            <div className=\"relative\">\n              <div className=\"container mb-6 hidden min-w-fit flex-col items-center md:flex lg:mb-8 lg:max-w-5xl\">\n                <TabsList className=\"gap-x-2\">\n                  {features.map((feature) => (\n                    <TabsTrigger key={feature.id} value={feature.id}>\n                      {feature.title}\n                    </TabsTrigger>\n                  ))}\n                </TabsList>\n              </div>\n              <div className=\"pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--color-background)_0%,transparent_10%,transparent_90%,var(--color-background)_100%)] md:hidden\" />\n            </div>\n            <div className=\"container w-full lg:max-w-5xl\">\n              {features.map((feature) => (\n                <TabsContent key={feature.id} value={feature.id}>\n                  <div className=\"\">\n                    <div className=\"aspect-[1.67] w-full rounded-lg border border-border bg-accent\">\n                      <img\n                        src={feature.image}\n                        alt={feature.title}\n                        className=\"h-full w-full object-cover object-center\"\n                      />\n                    </div>\n                    <div className=\"hidden grid-cols-3 gap-6 py-6 md:grid\">\n                      {feature.subfeatures.map((subfeature) => (\n                        <div\n                          key={subfeature.id}\n                          className=\"flex flex-col text-left\"\n                        >\n                          <p className=\"mb-2 text-xs font-semibold\">\n                            {subfeature.title}\n                          </p>\n                          <p className=\"mb-8 text-xs text-muted-foreground\">\n                            {subfeature.description}\n                          </p>\n                        </div>\n                      ))}\n                    </div>\n                  </div>\n                </TabsContent>\n              ))}\n            </div>\n            <div className=\"flex justify-center py-3 md:hidden\">\n              {features.map((feature) => (\n                <Button\n                  key={feature.id}\n                  variant=\"ghost\"\n                  size=\"sm\"\n                  onClick={() => {\n                    setSelection(feature.id);\n                  }}\n                >\n                  <div\n                    className={`size-2 rounded-full ${feature.id === selection ? \"bg-primary\" : \"bg-input\"}`}\n                  />\n                </Button>\n              ))}\n            </div>\n          </Tabs>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature54 };\n"
+}

@@ -1,0 +1,51 @@
+{
+    "id": "hero4",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero4.jpg",
+    "thumbnail": "hero4-4x3.webp",
+    "description": "A two-column component featuring an image and a text section with avatars, star ratings, and buttons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.620Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero4",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowDownRight, Star } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero4 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container grid items-center gap-10 lg:grid-cols-2 lg:gap-20\">\n        <div className=\"flex justify-end bg-muted\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder hero\"\n            className=\"max-h-[600px] w-full rounded-md object-cover lg:max-h-[800px]\"\n          />\n        </div>\n        <div className=\"flex flex-col items-center text-center lg:max-w-3xl lg:items-start lg:text-left\">\n          <h1 className=\"my-6 text-4xl font-bold text-pretty lg:text-6xl xl:text-7xl\">\n            Blocks built with Shadcn & Tailwind\n          </h1>\n          <p className=\"mb-8 max-w-xl text-muted-foreground lg:text-xl\">\n            Finely crafted components built with React, Tailwind and Shadcn UI.\n            Developers can copy and paste these blocks directly into their\n            project.\n          </p>\n          <div className=\"mb-12 flex w-fit flex-col items-center gap-4 sm:flex-row\">\n            <span className=\"inline-flex items-center -space-x-4\">\n              <Avatar className=\"size-12 border\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <Avatar className=\"size-12 border\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <Avatar className=\"size-12 border\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <Avatar className=\"size-12 border\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <Avatar className=\"size-12 border\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n            </span>\n            <div>\n              <div className=\"flex items-center gap-1\">\n                <Star className=\"size-5 fill-yellow-400 text-yellow-400\" />\n                <Star className=\"size-5 fill-yellow-400 text-yellow-400\" />\n                <Star className=\"size-5 fill-yellow-400 text-yellow-400\" />\n                <Star className=\"size-5 fill-yellow-400 text-yellow-400\" />\n                <Star className=\"size-5 fill-yellow-400 text-yellow-400\" />\n                <span className=\"font-semibold\">5.0</span>\n              </div>\n              <p className=\"text-left font-medium text-muted-foreground\">\n                from 200+ reviews\n              </p>\n            </div>\n          </div>\n          <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start\">\n            <Button className=\"w-full sm:w-auto\">Sign Up</Button>\n            <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n              Get Started\n              <ArrowDownRight className=\"ml-2 size-4\" />\n            </Button>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero4 };\n"
+}

@@ -1,0 +1,57 @@
+{
+    "id": "hero68",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero68.jpg",
+    "thumbnail": "hero68-4x3.webp",
+    "description": "A component with a promotional message, featuring a central title, a subtitle, buttons for action calls (trial/demo), and a 3-column footer highlighting service benefits with icons.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.889Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero68",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight, DollarSign, Medal, Sparkle, Zap } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero68 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"border-x border-t border-dashed px-4 py-20 md:px-16\">\n          <div className=\"mx-auto max-w-3xl\">\n            <a\n              href=\"#\"\n              className=\"mx-auto mb-4 flex w-fit items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm\"\n            >\n              <Badge>New</Badge>\n              v2.2 is out now!\n              <ArrowRight className=\"inline size-4\" />\n            </a>\n            <h1 className=\"my-4 mb-6 text-center text-3xl font-semibold lg:text-8xl\">\n              Fast websites for startups\n            </h1>\n            <p className=\"mx-auto mb-6 max-w-2xl text-center text-muted-foreground lg:text-xl\">\n              We craft powerful websites to accelerate your startup&apos;s\n              growth.\n            </p>\n            <div className=\"flex flex-col justify-center gap-2 sm:flex-row\">\n              <Button size=\"lg\" className=\"w-full gap-2 sm:w-auto lg:mt-10\">\n                <div className=\"size-2 rounded-full bg-green-400\"></div>\n                Start your free trial\n              </Button>\n              <Button\n                variant=\"outline\"\n                size=\"lg\"\n                className=\"w-full gap-2 sm:w-auto lg:mt-10\"\n              >\n                <Avatar className=\"size-8 rounded-full ring-1 ring-input\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                Schedule a demo\n              </Button>\n            </div>\n          </div>\n        </div>\n        <div className=\"relative grid border-x border-dashed md:grid-cols-3\">\n          <Sparkle className=\"absolute top-0 right-0 h-auto w-5 translate-x-2.5 -translate-y-2.5 fill-primary\" />\n          <Sparkle className=\"absolute top-0 left-0 h-auto w-5 -translate-x-2.5 -translate-y-2.5 fill-primary\" />\n          <div className=\"flex items-center gap-6 border-t border-dashed p-4 font-medium md:justify-center lg:p-10 lg:text-lg\">\n            <span className=\"flex size-10 shrink-0 items-center justify-center rounded-md bg-muted text-sm lg:size-12 lg:text-base\">\n              <Zap className=\"w-5 lg:w-6\" />\n            </span>\n            2-4 week delivery\n          </div>\n          <div className=\"flex items-center gap-6 border-x border-t border-dashed p-4 font-medium md:justify-center lg:p-10 lg:text-lg\">\n            <span className=\"flex size-10 shrink-0 items-center justify-center rounded-md bg-muted text-sm lg:size-12 lg:text-base\">\n              <DollarSign className=\"w-5 lg:w-6\" />\n            </span>\n            Upfront, no hidden fees\n          </div>\n          <div className=\"flex items-center gap-6 border-t border-dashed p-4 font-medium md:justify-center lg:p-10 lg:text-lg\">\n            <span className=\"flex size-10 shrink-0 items-center justify-center rounded-md bg-muted text-sm lg:size-12 lg:text-base\">\n              <Medal className=\"w-5 lg:w-6\" />\n            </span>\n            Full refund if not satisfied\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero68 };\n"
+}

@@ -1,0 +1,51 @@
+{
+    "id": "pricing8",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing8.jpg",
+    "thumbnail": "pricing8-4x3.webp",
+    "description": "A pricing component featuring a title, intro text, a card with price detail, a trial button, and a 3-column list of features with check icons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.640Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing8",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { Check } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Card } from \"@/components/ui/card\";\n\nconst features = [\n  \"Automated backups\",\n  \"24/7 support\",\n  \"Unlimited projects\",\n  \"Unlimited users\",\n  \"Custom domain\",\n  \"Custom branding\",\n  \"Advanced analytics\",\n  \"Custom permissions\",\n  \"Advanced reports\",\n];\n\nconst Pricing8 = () => {\n  return (\n    <section className=\"bg-muted py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-4 text-center\">\n          <h2 className=\"mb-2 text-3xl font-medium lg:text-5xl\">Pricing</h2>\n          <p className=\"max-w-lg text-muted-foreground\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum\n            dolorem asperiores expedita!\n          </p>\n        </div>\n        <div className=\"mt-10\">\n          <Card className=\"mx-auto flex w-full max-w-sm flex-col justify-between gap-10 rounded-lg p-6 text-center\">\n            <p className=\"text-2xl\">Starting at</p>\n            <div>\n              <div className=\"flex justify-center\">\n                <span className=\"text-lg\">$</span>\n                <span className=\"text-4xl font-medium lg:text-5xl\">\n                  16/month\n                </span>\n              </div>\n              <p className=\"mt-1 text-sm text-muted-foreground\">\n                With a 7-day free trial\n              </p>\n            </div>\n            <Button className=\"w-full\" size=\"lg\">\n              TRY FOR FREE\n            </Button>\n          </Card>\n          <p className=\"lg:text-1xl mt-8 text-center text-xl font-medium lg:mt-10\">\n            What&apos;s included in the plan\n          </p>\n          <ul className=\"mx-auto mt-4 grid w-fit md:w-auto md:max-w-2xl md:grid-cols-2 md:pl-14 lg:max-w-4xl lg:grid-cols-3\">\n            {features.map((feature, index) => (\n              <li\n                key={index}\n                className=\"mt-4 flex items-center gap-2 text-sm font-medium\"\n              >\n                <Check className=\"size-5\" />\n                <span className=\"text-muted-foreground\">{feature}</span>\n              </li>\n            ))}\n          </ul>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing8 };\n"
+}

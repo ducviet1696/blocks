@@ -1,0 +1,56 @@
+{
+    "id": "feature205",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature205.jpg",
+    "thumbnail": "feature205-4x3.webp",
+    "description": "A two-column component featuring interactive tabs (Efficiency, Collaboration, Insights) with descriptive text and related images showcasing benefits.",
+    "createdAt": [
+        3,
+        "2025-04-23T05:25:33.367Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "scrollable-tabslist",
+            "registryId": "shadcnblocks",
+            "registryItemUrl": "https://shadcnblocks.com/r/scrollable-tabslist",
+            "docsUrl": "https://shadcnblocks.com/block/scrollable-tabslist"
+        },
+        {
+            "name": "scroll-area",
+            "registryId": "shadcn",
+            "registryItemUrl": "scroll-area",
+            "docsUrl": "https://ui.shadcn.com/docs/components/scroll-area"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcnblocks",
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature205",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ScrollableTabsList } from \"@/components/shadcnblocks/scrollable-tabslist\";\nimport { ScrollBar } from \"@/components/ui/scroll-area\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst Feature205 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <Tabs\n          defaultValue=\"efficiency\"\n          className=\"rounded-4xl border-border grid grid-cols-1 gap-8 border p-4 lg:grid-cols-2 lg:p-8 xl:gap-20\"\n        >\n          <div className=\"flex flex-col-reverse justify-between gap-8 lg:flex-col\">\n            <div>\n              <TabsContent\n                value=\"efficiency\"\n                className=\"animate-in fade-in flex flex-col gap-6 duration-300\"\n              >\n                <span className=\"text-muted-foreground text-xs uppercase\">\n                  Efficiency\n                </span>\n                <div className=\"flex flex-col gap-4\">\n                  <h2 className=\"text-3xl font-medium\">\n                    Streamline. Automate. Focus.\n                  </h2>\n                  <p className=\"text-muted-foreground\">\n                    Our AI-powered workspace eliminates repetitive tasks and\n                    centralizes your workflow. Spend time on what matters.\n                  </p>\n                </div>\n              </TabsContent>\n              <TabsContent\n                value=\"collaboration\"\n                className=\"animate-in fade-in flex flex-col gap-6 duration-300\"\n              >\n                <span className=\"text-muted-foreground text-xs uppercase\">\n                  Collaboration\n                </span>\n                <div className=\"flex flex-col gap-4\">\n                  <h2 className=\"text-3xl font-medium\">\n                    Connect. Create. Collaborate.\n                  </h2>\n                  <p className=\"text-muted-foreground\">\n                    Real-time editing and seamless sharing keep your team in\n                    sync. Communication tools built right into your workspace.\n                  </p>\n                </div>\n              </TabsContent>\n              <TabsContent\n                value=\"insights\"\n                className=\"animate-in fade-in flex flex-col gap-6 duration-300\"\n              >\n                <span className=\"text-muted-foreground text-xs uppercase\">\n                  Insights\n                </span>\n                <div className=\"flex flex-col gap-4\">\n                  <h2 className=\"text-3xl font-medium\">\n                    Track. Analyze. Optimize.\n                  </h2>\n                  <p className=\"text-muted-foreground\">\n                    Our analytics dashboard visualizes productivity patterns and\n                    identifies bottlenecks and areas for improvement.\n                  </p>\n                </div>\n              </TabsContent>\n            </div>\n            <ScrollableTabsList>\n              <TabsList className=\"mx-auto h-12 rounded-full p-2 lg:mx-0\">\n                <TabsTrigger\n                  value=\"efficiency\"\n                  className=\"h-full rounded-full px-4 py-2\"\n                >\n                  Efficiency\n                </TabsTrigger>\n                <TabsTrigger\n                  value=\"collaboration\"\n                  className=\"h-full rounded-full px-4 py-2\"\n                >\n                  Collaboration\n                </TabsTrigger>\n                <TabsTrigger\n                  value=\"insights\"\n                  className=\"h-full rounded-full px-4 py-2\"\n                >\n                  Insights\n                </TabsTrigger>\n              </TabsList>\n              <ScrollBar orientation=\"horizontal\" className=\"h-2\" />\n            </ScrollableTabsList>\n          </div>\n          <div>\n            <TabsContent\n              value=\"efficiency\"\n              className=\"animate-in fade-in duration-300\"\n            >\n              <div className=\"relative\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-hCb3lIB8L8E-unsplash.jpg\"\n                  alt=\"placeholder\"\n                  className=\"h-[440px] w-full rounded-3xl object-cover lg:h-[540px]\"\n                />\n                <div className=\"from-primary/80 absolute inset-0 rounded-3xl bg-gradient-to-tr via-transparent to-transparent\" />\n                <div className=\"text-background absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6\">\n                  <div className=\"flex flex-col gap-1.5\">\n                    <p className=\"text-4xl font-medium lg:text-5xl\">40%</p>\n                    <p className=\"font-medium\">less time on admin tasks</p>\n                  </div>\n                  <div className=\"flex flex-col gap-1.5\">\n                    <p className=\"text-4xl font-medium lg:text-5xl\">$720</p>\n                    <p className=\"font-medium\">saved per employee monthly</p>\n                  </div>\n                </div>\n              </div>\n            </TabsContent>\n            <TabsContent\n              value=\"collaboration\"\n              className=\"animate-in fade-in duration-300\"\n            >\n              <div className=\"relative\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-MChSQHxGZrQ-unsplash.jpg\"\n                  alt=\"placeholder\"\n                  className=\"h-[440px] w-full rounded-3xl object-cover lg:h-[540px]\"\n                />\n                <div className=\"from-primary/80 absolute inset-0 rounded-3xl bg-gradient-to-tr via-transparent to-transparent\" />\n                <div className=\"text-background absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6\">\n                  <div className=\"flex flex-col gap-1.5\">\n                    <p className=\"text-4xl font-medium lg:text-5xl\">3x</p>\n                    <p className=\"font-medium\">faster project completion</p>\n                  </div>\n                  <div className=\"flex flex-col gap-1.5\">\n                    <p className=\"text-4xl font-medium lg:text-5xl\">87%</p>\n                    <p className=\"font-medium\">increase in team engagement</p>\n                  </div>\n                </div>\n              </div>\n            </TabsContent>\n            <TabsContent\n              value=\"insights\"\n              className=\"animate-in fade-in duration-300\"\n            >\n              <div className=\"relative\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-AkftcHujUmk-unsplash.jpg\"\n                  alt=\"placeholder\"\n                  className=\"h-[440px] w-full rounded-3xl object-cover lg:h-[540px]\"\n                />\n                <div className=\"from-primary/80 absolute inset-0 rounded-3xl bg-gradient-to-tr via-transparent to-transparent\" />\n                <div className=\"text-background absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6\">\n                  <div className=\"flex flex-col gap-1.5\">\n                    <p className=\"text-4xl font-medium lg:text-5xl\">65%</p>\n                    <p className=\"font-medium\">better resource allocation</p>\n                  </div>\n                  <div className=\"flex flex-col gap-1.5\">\n                    <p className=\"text-4xl font-medium lg:text-5xl\">28%</p>\n                    <p className=\"font-medium\">increased productivity</p>\n                  </div>\n                </div>\n              </div>\n            </TabsContent>\n          </div>\n        </Tabs>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature205 };\n"
+}

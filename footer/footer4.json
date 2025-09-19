@@ -1,0 +1,64 @@
+{
+    "id": "footer4",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "footer4.jpg",
+    "thumbnail": "footer4-4x3.webp",
+    "description": "A footer component with a logo, social icons, link sections, a newsletter subscription, and legal links. GridLayout adapts to 6 columns on large screens.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.600Z"
+    ],
+    "dependencies": [
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "logo",
+            "registryId": "shadcnblocks",
+            "registryItemUrl": "https://shadcnblocks.com/r/logo",
+            "docsUrl": "https://shadcnblocks.com/block/logo"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "footer"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcnblocks",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "footer4",
+    "collection": "block",
+    "group": "footer",
+    "code": "import { FaDiscord, FaTwitter } from \"react-icons/fa\";\n\nimport {\n  Logo,\n  LogoImageDesktop,\n  LogoImageMobile,\n} from \"@/components/shadcnblocks/logo\";\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst sections = [\n  {\n    title: \"Product\",\n    links: [\n      { name: \"Overview\", href: \"#\" },\n      { name: \"Pricing\", href: \"#\" },\n      { name: \"Marketplace\", href: \"#\" },\n      { name: \"Features\", href: \"#\" },\n      { name: \"Integrations\", href: \"#\" },\n      { name: \"Pricing\", href: \"#\" },\n    ],\n  },\n  {\n    title: \"Company\",\n    links: [\n      { name: \"About\", href: \"#\" },\n      { name: \"Team\", href: \"#\" },\n      { name: \"Blog\", href: \"#\" },\n      { name: \"Careers\", href: \"#\" },\n      { name: \"Contact\", href: \"#\" },\n      { name: \"Privacy\", href: \"#\" },\n    ],\n  },\n  {\n    title: \"Resources\",\n    links: [\n      { name: \"Help\", href: \"#\" },\n      { name: \"Sales\", href: \"#\" },\n      { name: \"Advertise\", href: \"#\" },\n    ],\n  },\n];\n\ninterface Footer4Props {\n  logo?: {\n    url: string;\n    src: string;\n    alt: string;\n    title: string;\n    srcMobile: string;\n  };\n}\nconst Footer4 = ({\n  logo = {\n    url: \"https://www.shadcnblocks.com\",\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblocks-logo-word.svg\",\n    srcMobile: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblocks-logo.svg\",\n    alt: \"logo\",\n    title: \"Shadcnblocks.com\",\n  },\n}: Footer4Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <footer>\n          <div className=\"grid grid-cols-2 gap-8 lg:grid-cols-6\">\n            <div className=\"col-span-2 flex h-full items-center justify-between md:items-start lg:col-span-3 lg:flex-col\">\n              <Logo url=\"https://shadcnblocks.com\">\n                <LogoImageDesktop\n                  src={logo.src}\n                  alt={logo.alt}\n                  title={logo.title}\n                  className=\"h-9\"\n                />\n                <LogoImageMobile\n                  src={logo.srcMobile}\n                  alt={logo.alt}\n                  title={logo.title}\n                  className=\"h-8\"\n                />\n              </Logo>\n              <ul className=\"text-muted-foreground flex items-center space-x-6\">\n                <li className=\"hover:text-primary font-medium\">\n                  <a href=\"#\">\n                    <FaDiscord className=\"size-6\" />\n                  </a>\n                </li>\n\n                <li className=\"hover:text-primary font-medium\">\n                  <a href=\"#\">\n                    <FaTwitter className=\"size-6\" />\n                  </a>\n                </li>\n              </ul>\n            </div>\n            <Separator className=\"col-span-2 my-6 lg:hidden\" />\n            {sections.map((section, sectionIdx) => (\n              <div key={sectionIdx}>\n                <h3 className=\"mb-4 font-bold\">{section.title}</h3>\n                <ul className=\"text-muted-foreground space-y-4\">\n                  {section.links.map((link, linkIdx) => (\n                    <li\n                      key={linkIdx}\n                      className=\"hover:text-primary font-medium\"\n                    >\n                      <a href={link.href}>{link.name}</a>\n                    </li>\n                  ))}\n                </ul>\n              </div>\n            ))}\n          </div>\n          <Separator className=\"my-14 lg:my-20\" />\n          <div className=\"flex flex-col justify-between gap-8 lg:flex-row lg:items-center\">\n            <div>\n              <p className=\"mb-2 text-3xl font-semibold lg:text-4xl\">\n                Join our newsletter\n              </p>\n              <p className=\"text-muted-foreground\">\n                Get exclusive news, features, and updates.\n              </p>\n            </div>\n            <div className=\"flex w-full max-w-sm items-center space-x-2\">\n              <Input type=\"email\" placeholder=\"Email\" />\n              <Button type=\"submit\">Subscribe</Button>\n            </div>\n          </div>\n          <Separator className=\"my-14 lg:my-20\" />\n          <div className=\"text-muted-foreground flex flex-col justify-between gap-4 text-sm font-medium md:flex-row md:items-center\">\n            <ul className=\"flex gap-4\">\n              <li className=\"hover:text-primary underline\">\n                <a href=\"#\"> Terms and Conditions</a>\n              </li>\n              <li className=\"hover:text-primary underline\">\n                <a href=\"#\"> Privacy Policy</a>\n              </li>\n            </ul>\n            <p>\u00a9 2024 Shadcnblocks.com. All rights reserved.</p>\n          </div>\n        </footer>\n      </div>\n    </section>\n  );\n};\n\nexport { Footer4 };\n"
+}

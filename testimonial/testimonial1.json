@@ -1,0 +1,70 @@
+{
+    "id": "testimonial1",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial1.jpg",
+    "thumbnail": "testimonial1-4x3.webp",
+    "description": "A testimonial block displaying client feedback with navigation buttons, responsive carousel for mobile, and a 4-column masonry layout for larger screens.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.649Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react-responsive-masonry"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "testimonial1",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "\"use client\";\n\nimport { Globe } from \"lucide-react\";\nimport Masonry from \"react-responsive-masonry\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent, CardFooter } from \"@/components/ui/card\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\nconst testimonials = [\n  {\n    name: \"John Doe\",\n    role: \"CEO & Founder\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur odio, maxime corporis, ducimus dolorem possimus aspernatur blanditiis.\",\n  },\n  {\n    name: \"Jane Doe\",\n    role: \"CTO\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\",\n    content:\n      \"Lorem ipsum dolor adipisicing elit. Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur odio, maxime corporis.\",\n  },\n  {\n    name: \"John Smith\",\n    role: \"COO\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur odio, maxime corporis, ducimus dolorem possimus aspernatur blanditiis asperiores voluptatem.\",\n  },\n  {\n    name: \"Jane Smith\",\n    role: \"Tech Lead\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur blanditiis asperiores voluptatem Ipsam ipsa cumque.\",\n  },\n  {\n    name: \"Richard Doe\",\n    role: \"Designer\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. repellat consequatur odio, maxime corporis, ducimus dolorem possimus aspernatur blanditiis asperiores voluptatem Ipsam ipsa cumque deleniti.\",\n  },\n  {\n    name: \"Gordon Doe\",\n    role: \"Developer\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur odio, maxime corporis, ducimus dolorem possimus aspernatur blanditiis asperiores voluptatem Ipsam ipsa cumque deleniti.\",\n  },\n  {\n    name: \"Alex Doe\",\n    role: \"UI & UX Designer\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur odio, maxime corporis, ducimus asperiores voluptatem architecto? Ipsam ipsa cumque deleniti.\",\n  },\n  {\n    name: \"Tom Doe\",\n    role: \"Cloud Engineer\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp\",\n    content:\n      \"Lorem ipsum dolor Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat consequatur odio, maxime corporis, ducimus dolorem possimus aspernatur blanditiis.\",\n  },\n];\n\nconst Testimonial1 = () => {\n  return (\n    <section className=\"mb-32 border-b pt-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-6\">\n          <Badge variant=\"outline\">Testimonials</Badge>\n          <h2 className=\"mb-2 text-center text-3xl font-semibold lg:text-5xl\">\n            Meet our happy clients\n          </h2>\n          <p className=\"text-muted-foreground lg:text-lg\">\n            All of our 1000+ clients are happy\n          </p>\n          <div className=\"flex w-full flex-col justify-center gap-4 sm:flex-row\">\n            <Button className=\"w-full sm:w-auto\">\n              <Globe className=\"mr-2 size-4\" />\n              Primary Button\n            </Button>\n            <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n              <Globe className=\"mr-2 size-4\" />\n              Secondary Button\n            </Button>\n          </div>\n          <div className=\"mt-6 block lg:mt-14 lg:hidden\">\n            <Carousel opts={{}} className=\"w-full max-w-[264px] sm:max-w-md\">\n              <CarouselContent>\n                {testimonials.map((testimonial, idx) => (\n                  <CarouselItem key={idx} className=\"flex items-center\">\n                    <Card>\n                      <CardContent className=\"px-6 pt-6 leading-7 text-foreground/70\">\n                        <q>{testimonial.content}</q>\n                      </CardContent>\n                      <CardFooter>\n                        <div className=\"flex gap-4 leading-5\">\n                          <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                            <AvatarImage\n                              src={testimonial.avatar}\n                              alt={testimonial.name}\n                            />\n                          </Avatar>\n                          <div className=\"text-sm\">\n                            <p className=\"font-medium\">{testimonial.name}</p>\n                            <p className=\"text-muted-foreground\">\n                              {testimonial.role}\n                            </p>\n                          </div>\n                        </div>\n                      </CardFooter>\n                    </Card>\n                  </CarouselItem>\n                ))}\n              </CarouselContent>\n              <CarouselPrevious />\n              <CarouselNext />\n            </Carousel>\n          </div>\n          <div className=\"mt-14 hidden h-[522px] w-full overflow-hidden lg:block\">\n            <Masonry gutter=\"20px\" columnsCount={4}>\n              {testimonials.map((testimonial, idx) => {\n                return (\n                  <Card\n                    key={idx}\n                    className={cn(\n                      \"max-w-md\",\n                      idx === 1 && \"mt-10\",\n                      idx === 2 && \"mt-20\",\n                    )}\n                  >\n                    <CardContent className=\"px-6 pt-6 leading-7 text-foreground/70\">\n                      <q>{testimonial.content}</q>\n                    </CardContent>\n                    <CardFooter>\n                      <div className=\"flex gap-4 leading-5\">\n                        <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                          <AvatarImage\n                            src={testimonial.avatar}\n                            alt={testimonial.name}\n                          />\n                        </Avatar>\n                        <div className=\"text-sm\">\n                          <p className=\"font-medium\">{testimonial.name}</p>\n                          <p className=\"text-muted-foreground\">\n                            {testimonial.role}\n                          </p>\n                        </div>\n                      </div>\n                    </CardFooter>\n                  </Card>\n                );\n              })}\n            </Masonry>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial1 };\n"
+}

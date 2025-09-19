@@ -1,0 +1,52 @@
+{
+    "id": "feature186",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature186.jpg",
+    "thumbnail": "feature186-4x3.webp",
+    "description": "A tabbed component displaying features with icons, descriptions, and images. It toggles between three key features, each with its visual and text content.",
+    "createdAt": [
+        3,
+        "2025-01-26T04:31:17.436Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature186",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Database, LockKeyhole, Sparkles } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\ninterface DataItem {\n  id: string;\n  title: string;\n  description: string;\n  image: string;\n  icon: React.ReactNode;\n}\n\nconst DATA: DataItem[] = [\n  {\n    id: \"feature-1\",\n    title: \"Innovative Solutions\",\n    description: \"Discover cutting-edge tools to revolutionize your workflow.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n    icon: <Sparkles className=\"h-6 w-6 text-white\" />,\n  },\n  {\n    id: \"feature-2\",\n    title: \"Data Management\",\n    description: \"Efficiently organize and manage your data with ease.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\",\n    icon: <Database className=\"h-6 w-6 text-white\" />,\n  },\n  {\n    id: \"feature-3\",\n    title: \"Advanced Security\",\n    description: \"Protect your assets with state-of-the-art security features.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\",\n    icon: <LockKeyhole className=\"h-6 w-6 text-white\" />,\n  },\n];\n\nconst Feature186 = () => {\n  const [selection, setSelection] = useState(DATA[0].id);\n\n  return (\n    <section className=\"relative py-16 md:py-32\">\n      <div\n        className=\"absolute left-0 right-0 top-0 z-0 h-[800px] w-screen bg-repeat opacity-30 [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_70%)]\"\n        style={{\n          backgroundImage: \"url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/architect.svg')\",\n          backgroundSize: \"60px\",\n        }}\n      />\n      <div className=\"container relative z-10\">\n        <div>\n          <h2 className=\"text-4xl font-medium sm:text-5xl lg:text-6xl\">\n            Our Key Features\n          </h2>\n          <p className=\"text-muted-foreground mt-4 md:text-lg\">\n            Unlock the full potential of your projects with our powerful and\n            intuitive features.\n          </p>\n\n          {/* Tabs */}\n          <div className=\"mt-4 lg:mt-8\">\n            <Tabs value={selection} onValueChange={setSelection}>\n              <div className=\"relative\">\n                <div className=\"overflow-auto\">\n                  {/* TabsTrigger Container Aligned Left */}\n                  <div className=\"mb-6 flex min-w-fit flex-col items-start lg:mb-8\">\n                    <TabsList className=\"gap-4 bg-transparent\">\n                      {DATA.map((feature) => (\n                        <TabsTrigger key={feature.id} value={feature.id}>\n                          {feature.title}\n                        </TabsTrigger>\n                      ))}\n                    </TabsList>\n                  </div>\n                  <div className=\"pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--background))_0%,transparent_10%,transparent_90%,hsl(var(--background))_100%)] md:hidden\" />\n                </div>\n              </div>\n\n              {/* TabsContent */}\n              <div className=\"relative w-full overflow-hidden\">\n                {DATA.map((feature) => (\n                  <TabsContent\n                    key={feature.id}\n                    value={feature.id}\n                    className=\"relative z-20\"\n                  >\n                    <div className=\"aspect-3/2 bg-accent w-full rounded-lg p-6 md:p-14 md:px-24\">\n                      <div className=\"mx-auto max-w-full md:mx-0 md:max-w-md\">\n                        <div className=\"flex size-12 items-center justify-center rounded-full bg-black\">\n                          {feature.icon}\n                        </div>\n                        <div className=\"my-4 md:my-8\">\n                          <h1 className=\"text-lg font-bold sm:text-xl lg:text-2xl\">\n                            {feature.title}\n                          </h1>\n                          <span className=\"text-muted-foreground text-base sm:text-lg lg:text-xl\">\n                            {feature.description}\n                          </span>\n                        </div>\n                      </div>\n                      <img\n                        src={feature.image}\n                        alt={feature.title}\n                        className=\"mt-4 h-full w-full rounded-lg object-cover object-center md:mt-0\"\n                      />\n                    </div>\n                  </TabsContent>\n                ))}\n              </div>\n\n              {/* Mobile Navigation Dots */}\n              <div className=\"flex justify-center py-3 md:hidden\">\n                {DATA.map((feature) => (\n                  <Button\n                    key={feature.id}\n                    variant=\"ghost\"\n                    size=\"sm\"\n                    onClick={() => {\n                      setSelection(feature.id);\n                    }}\n                  >\n                    <div\n                      className={`size-2 rounded-full ${\n                        feature.id === selection ? \"bg-primary\" : \"bg-input\"\n                      }`}\n                    />\n                  </Button>\n                ))}\n              </div>\n            </Tabs>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature186 };\n"
+}

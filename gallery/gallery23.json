@@ -1,0 +1,47 @@
+{
+    "id": "gallery23",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery23.jpg",
+    "thumbnail": "gallery23-4x3.webp",
+    "description": "Interactive gallery with expandable images and detailed captions on hover, featuring a statement and button on the left.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.818Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery23",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { AnimatePresence, motion } from \"framer-motion\";\nimport { ArrowRight, ShoppingCart } from \"lucide-react\";\nimport React, { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst images = [\n  {\n    id: 1,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random5.jpeg\",\n    title: \"Summer Collection\",\n    code: \"#0031\",\n  },\n  {\n    id: 2,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n    title: \"The Music Festival\",\n    code: \"#0030\",\n  },\n  {\n    id: 3,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random13.jpeg\",\n    title: \"Winter Special\",\n    code: \"#0032\",\n  },\n  {\n    id: 4,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n  {\n    id: 5,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n];\n\nconst Gallery23 = () => {\n  const [activeImage, setActiveImage] = useState<number | null>(1);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container overflow-hidden p-10\">\n        <div className=\"relative flex flex-col items-center justify-between gap-12 border bg-muted p-10 py-20 md:flex-row\">\n          <DashedBorderV className=\"absolute -top-10 -left-px h-[150%] w-px\" />\n          <DashedBorderH className=\"absolute -top-px -left-10 h-px w-[150%]\" />\n          <DashedBorderV className=\"absolute -top-10 -right-px h-[150%] w-px\" />\n          <DashedBorderH className=\"absolute -bottom-px -left-12 h-px w-[150%]\" />\n          <div className=\"flex h-142 flex-col justify-center\">\n            <h1 className=\"max-w-lg font-calSans text-5xl\">\n              We don&apos;t Believe in talk we deliver Results\n            </h1>\n            <p className=\"text-md mt-10 max-w-md opacity-55\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n              eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur\n              adipiscing{\" \"}\n            </p>\n            <Button\n              variant=\"default\"\n              className=\"group mt-10 flex w-fit items-center justify-center gap-2 rounded-full tracking-tight\"\n            >\n              Contact Us\n              <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:rotate-0\" />\n            </Button>\n          </div>\n          <div className=\"flex flex-col items-center justify-center gap-1\">\n            {images.map((image, index) => (\n              <motion.div\n                key={image.id}\n                className=\"group relative cursor-pointer overflow-hidden rounded-4xl border\"\n                initial={{ height: \"2.5rem\", width: \"24rem\" }}\n                animate={{\n                  height: activeImage === index ? \"24rem\" : \"2.5rem\",\n                }}\n                transition={{ duration: 0.3, ease: \"easeInOut\" }}\n                onClick={() => setActiveImage(index)}\n                onHoverStart={() => setActiveImage(index)}\n              >\n                <AnimatePresence>\n                  {activeImage === index && (\n                    <motion.div\n                      initial={{ opacity: 0 }}\n                      animate={{ opacity: 1 }}\n                      exit={{ opacity: 0 }}\n                      className=\"absolute h-full w-full bg-gradient-to-t from-black/80 to-transparent\"\n                    />\n                  )}\n                </AnimatePresence>\n                <AnimatePresence>\n                  {activeImage === index && (\n                    <motion.div\n                      initial={{ opacity: 0, y: 20 }}\n                      animate={{ opacity: 1, y: 0 }}\n                      exit={{ opacity: 0, y: 20 }}\n                      className=\"absolute flex h-full w-full flex-col items-end justify-end px-4 pb-5\"\n                    >\n                      <p className=\"text-left text-xs text-white/50\">\n                        {image.code}\n                      </p>\n                      <h3 className=\"text-3xl font-bold text-white\">\n                        {image.title.split(\" \")[0]}\n                        <span className=\"font-playfair italic\">\n                          {\" \"}\n                          {image.title.split(\" \")[1]}{\" \"}\n                        </span>\n                      </h3>\n                      <Button\n                        variant=\"secondary\"\n                        className=\"mt-3 flex w-fit items-center justify-center gap-2 rounded-full text-xs\"\n                      >\n                        Add to Cart <ShoppingCart size={14} />\n                      </Button>\n                    </motion.div>\n                  )}\n                </AnimatePresence>\n                <img\n                  src={image.src}\n                  className=\"size-full object-cover\"\n                  alt={image.title}\n                />\n              </motion.div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nconst DashedBorderH = (props: React.SVGProps<SVGSVGElement>) => {\n  return (\n    <svg {...props} fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <line\n        opacity=\"0.2\"\n        x1=\"1571.5\"\n        y1=\"0.570312\"\n        x2=\"0.683594\"\n        y2=\"0.570271\"\n        stroke=\"black\"\n        strokeDasharray=\"5 5\"\n      />\n    </svg>\n  );\n};\nconst DashedBorderV = (props: React.SVGProps<SVGSVGElement>) => {\n  return (\n    <svg {...props} fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <line\n        opacity=\"0.2\"\n        x1=\"0.631348\"\n        y1=\"0.208984\"\n        x2=\"0.631311\"\n        y2=\"828.348\"\n        stroke=\"black\"\n        strokeDasharray=\"5 5\"\n      />\n    </svg>\n  );\n};\n\nexport { Gallery23 };\n"
+}

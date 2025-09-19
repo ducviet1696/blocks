@@ -1,0 +1,51 @@
+{
+    "id": "cta1",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta1.jpg",
+    "thumbnail": "cta1-4x3.webp",
+    "description": "A component features a card split into text and image sections, with a call-to-action button and decorative icons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.544Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "cta1",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { ArrowRight, Sparkles } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Card } from \"@/components/ui/card\";\n\nconst Cta1 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <Card className=\"flex flex-col justify-between border-muted pb-0 md:flex-row md:py-6\">\n          <div className=\"p-6 md:max-w-96\">\n            <div className=\"mb-2 flex items-center gap-2\">\n              <span className=\"flex size-7 items-center justify-center rounded-full bg-muted\">\n                <Sparkles className=\"size-4\" strokeWidth={1.5} />\n              </span>\n              <h4 className=\"text-2xl font-bold\">Call to Action</h4>\n            </div>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n              Architecto illo praesentium nisi, accusantium quae.\n            </p>\n            <Button className=\"mt-8\">\n              Get Started <ArrowRight className=\"ml-2 size-4\" />\n            </Button>\n          </div>\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder\"\n            className=\"aspect-video object-cover md:max-w-96\"\n          />\n        </Card>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta1 };\n"
+}

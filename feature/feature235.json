@@ -1,0 +1,52 @@
+{
+    "id": "feature235",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature235.jpg",
+    "thumbnail": "feature235-4x3.webp",
+    "description": "A component displays UI blocks with flickering image animations and a stylized border effect. It includes descriptive text and buttons, within a dual-column layout.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.383Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "shine-border",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/shine-border",
+            "docsUrl": "https://magicui.design/docs/components/shine-border"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature235",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ArrowRight, Donut } from \"lucide-react\";\n\nimport { ShineBorder } from \"@/components/magicui/shine-border\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature235 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <style jsx global>{`\n        :root {\n          --shine-color-1: #48e5c7;\n          --shine-color-2: #48e54d;\n          --shine-color-3: #e5dc48;\n        }\n        @keyframes flicker {\n          0%,\n          100% {\n            opacity: 1;\n          }\n          50% {\n            opacity: 0.3;\n          }\n        }\n        .animate-flicker {\n          animation: flicker 3s ease-in-out infinite;\n        }\n        .animation-delay-0 {\n          animation-delay: 0s;\n        }\n        .animation-delay-500 {\n          animation-delay: 500ms;\n        }\n        .animation-delay-1000 {\n          animation-delay: 1000ms;\n        }\n        .animation-delay-1500 {\n          animation-delay: 1500ms;\n        }\n        .animation-delay-2000 {\n          animation-delay: 2000ms;\n        }\n        .animation-delay-2500 {\n          animation-delay: 2500ms;\n        }\n      `}</style>\n      <div className=\"container flex flex-col items-center justify-center gap-10 md:justify-between lg:max-w-6xl lg:flex-row\">\n        <div className=\"z-10 flex max-w-lg flex-col gap-12\">\n          <div>\n            <Button\n              variant=\"ghost\"\n              className=\"relative flex gap-3 rounded-full border-2 border-dashed border-muted p-5 text-base font-semibold text-foreground transition-all ease-in-out hover:gap-5\"\n            >\n              Your website builder\n              <Donut />\n            </Button>\n          </div>\n          <h1 className=\"text-7xl font-semibold tracking-tighter text-foreground\">\n            Beautifully designed blocks for Shadcn UI\n          </h1>\n          <p className=\"text-xl font-normal tracking-tight text-muted-foreground\">\n            Finely crafted components built with React, Tailwind and Shadcn UI.\n            Developers can copy and paste these blocks directly into their\n            project.\n          </p>\n          <div>\n            <Button\n              variant=\"outline\"\n              className=\"relative flex gap-3  rounded-full border-2 border-dashed border-muted p-5 text-base font-semibold text-foreground transition-all ease-in-out hover:gap-5\"\n            >\n              View on Github <ArrowRight />\n            </Button>\n          </div>\n        </div>\n        <div className=\"relative max-w-3xl\">\n          <div className=\"relative z-10 inline-flex items-center justify-start gap-2 rounded-3xl border border-border bg-muted p-2\">\n            <div className=\"inline-flex w-76 flex-col items-center justify-start gap-5\">\n              <div className=\"relative gap-2 rounded-2xl bg-background p-1.5\">\n                <ShineBorder\n                  borderWidth={2}\n                  shineColor={[\n                    \"var(--shine-color-1)\",\n                    \"var(--shine-color-2)\",\n                    \"var(--shine-color-3)\",\n                  ]}\n                />\n                <div className=\"flex flex-1 flex-wrap content-center items-center justify-center gap-1\">\n                  <div className=\"relative h-24 w-36 overflow-hidden rounded-2xl\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                      alt=\"Architecture 1\"\n                      className=\"animate-flicker animation-delay-0 h-full w-full object-cover\"\n                    />\n                  </div>\n                  <div className=\"relative h-24 w-36 overflow-hidden rounded-2xl\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                      alt=\"Architecture 2\"\n                      className=\"animate-flicker animation-delay-500 h-full w-full object-cover\"\n                    />\n                  </div>\n                  <div className=\"relative h-24 w-36 overflow-hidden rounded-2xl\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                      alt=\"Architecture 1\"\n                      className=\"animate-flicker animation-delay-1000 h-full w-full object-cover\"\n                    />\n                  </div>\n                  <div className=\"relative h-24 w-36 overflow-hidden rounded-2xl\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                      alt=\"Architecture 2\"\n                      className=\"animate-flicker animation-delay-1500 h-full w-full object-cover\"\n                    />\n                  </div>\n                  <div className=\"relative h-24 w-36 overflow-hidden rounded-2xl\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n                      alt=\"Architecture 3\"\n                      className=\"animate-flicker animation-delay-2000 h-full w-full object-cover\"\n                    />\n                  </div>\n                  <div className=\"relative h-24 w-36 overflow-hidden rounded-2xl\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\"\n                      alt=\"Architecture 4\"\n                      className=\"animate-flicker animation-delay-2500 h-full w-full object-cover\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <svg\n            width=\"583\"\n            height=\"455\"\n            className=\"absolute right-48 bottom-[-60]\"\n            viewBox=\"0 0 583 455\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              d=\"M2.55487 322.329V453L305.639 451.57V341.935C305.639 312.547 329.463 288.723 358.851 288.723H542.008C563.381 288.723 580.707 271.397 580.707 250.024V40.8934C580.707 19.5203 563.381 2.19406 542.008 2.19406H332.877C311.504 2.19406 294.178 19.5203 294.178 40.8934V230.418C294.178 259.806 270.354 283.629 240.966 283.629H41.2542C19.8812 283.629 2.55487 300.956 2.55487 322.329Z\"\n              fill=\"url(#paint0_linear_1_801)\"\n              stroke=\"url(#paint1_linear_1_801)\"\n              strokeOpacity=\"0.18\"\n              strokeWidth=\"3.22494\"\n              strokeLinecap=\"round\"\n              strokeDasharray=\"9.67 9.67\"\n            />\n            <defs>\n              <linearGradient\n                id=\"paint0_linear_1_801\"\n                x1=\"407.667\"\n                y1=\"36.7886\"\n                x2=\"264.86\"\n                y2=\"511.534\"\n                gradientUnits=\"userSpaceOnUse\"\n              >\n                <stop stopColor=\"#F3F3F3\" />\n                <stop offset=\"1\" stopColor=\"#F9F9F9\" stopOpacity=\"0\" />\n              </linearGradient>\n              <linearGradient\n                id=\"paint1_linear_1_801\"\n                x1=\"340.7\"\n                y1=\"99.5801\"\n                x2=\"237.281\"\n                y2=\"508.087\"\n                gradientUnits=\"userSpaceOnUse\"\n              >\n                <stop stopColor=\"#666666\" />\n                <stop offset=\"1\" stopColor=\"white\" stopOpacity=\"0\" />\n              </linearGradient>\n            </defs>\n          </svg>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature235 };\n"
+}

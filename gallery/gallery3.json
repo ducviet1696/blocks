@@ -1,0 +1,58 @@
+{
+    "id": "gallery3",
+    "access": "pro",
+    "weight": 200,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery3.jpg",
+    "thumbnail": "gallery3-4x3.webp",
+    "description": "A carousel component showcasing case studies with navigational arrows and dynamic scroll availability indicators, including images, titles, descriptions, and read more links.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.603Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery3",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { ArrowLeft, ArrowRight } from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst data = [\n  {\n    id: \"feature-1\",\n    title: \"Smart AI Assistant\",\n    description:\n      \"Powered by advanced language models to handle complex queries, automate tasks, and provide intelligent responses with high accuracy.\",\n    label: \"Core AI\",\n    href: \"https://www.shadcnblocks.com\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n  },\n  {\n    id: \"feature-2\",\n    title: \"Data Analytics\",\n    description:\n      \"Transform raw data into actionable insights using machine learning algorithms and predictive analytics for informed decision-making.\",\n    label: \"Analytics\",\n    href: \"https://www.shadcnblocks.com\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n  },\n  {\n    id: \"feature-3\",\n    title: \"Process Automation\",\n    description:\n      \"Streamline workflows and automate repetitive tasks with intelligent process automation, increasing efficiency and reducing errors.\",\n    label: \"Automation\",\n    href: \"https://www.shadcnblocks.com\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n  },\n  {\n    id: \"feature-4\",\n    title: \"Knowledge Base\",\n    description:\n      \"Access and manage comprehensive information with our AI-powered knowledge base that learns and improves from each interaction.\",\n    label: \"Learning\",\n    href: \"https://www.shadcnblocks.com\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n  },\n  {\n    id: \"feature-5\",\n    title: \"API Integration\",\n    description:\n      \"Seamlessly integrate with existing systems through our robust API framework, enabling smooth data exchange and functionality extension.\",\n    label: \"Integration\",\n    href: \"https://www.shadcnblocks.com\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n  },\n];\n\nconst Gallery3 = () => {\n  const [carouselApi, setCarouselApi] = useState<CarouselApi>();\n  const [canScrollPrev, setCanScrollPrev] = useState(false);\n  const [canScrollNext, setCanScrollNext] = useState(false);\n  useEffect(() => {\n    if (!carouselApi) {\n      return;\n    }\n    const updateSelection = () => {\n      setCanScrollPrev(carouselApi.canScrollPrev());\n      setCanScrollNext(carouselApi.canScrollNext());\n    };\n    updateSelection();\n    carouselApi.on(\"select\", updateSelection);\n    return () => {\n      carouselApi.off(\"select\", updateSelection);\n    };\n  }, [carouselApi]);\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mb-8 flex items-end justify-between md:mb-14 lg:mb-16\">\n          <h2 className=\"text-3xl font-medium tracking-tight md:text-4xl lg:text-5xl\">\n            Case Studies\n          </h2>\n          <div className=\"shrink-0 gap-2 md:flex\">\n            <Button\n              size=\"icon\"\n              variant=\"ghost\"\n              onClick={() => {\n                carouselApi?.scrollPrev();\n              }}\n              disabled={!canScrollPrev}\n              className=\"disabled:pointer-events-auto\"\n            >\n              <ArrowLeft className=\"size-5\" />\n            </Button>\n            <Button\n              size=\"icon\"\n              variant=\"ghost\"\n              onClick={() => {\n                carouselApi?.scrollNext();\n              }}\n              disabled={!canScrollNext}\n              className=\"disabled:pointer-events-auto\"\n            >\n              <ArrowRight className=\"size-5\" />\n            </Button>\n          </div>\n        </div>\n      </div>\n      <div className=\"w-full\">\n        <Carousel\n          setApi={setCarouselApi}\n          opts={{\n            breakpoints: {\n              \"(max-width: 768px)\": {\n                dragFree: true,\n              },\n            },\n          }}\n        >\n          <CarouselContent className=\"mr-[20px] ml-[20px] 2xl:mr-[calc(50vw-700px+20px)] 2xl:ml-[calc(50vw-700px+20px)]\">\n            {data.map((item) => (\n              <CarouselItem\n                key={item.id}\n                className=\"max-w-[320px] pl-[20px] lg:max-w-[360px]\"\n              >\n                <a\n                  href={item.href}\n                  className=\"group flex flex-col justify-between rounded-xl bg-muted p-6\"\n                >\n                  <div>\n                    <div className=\"flex aspect-3/2 overflow-clip rounded-xl\">\n                      <div className=\"flex-1\">\n                        <div className=\"relative h-full w-full origin-bottom transition duration-300 group-hover:scale-105\">\n                          <img\n                            src={item.image}\n                            alt={item.title}\n                            className=\"h-full w-full object-cover object-center\"\n                          />\n                        </div>\n                      </div>\n                    </div>\n                  </div>\n                  <div className=\"mt-6\">\n                    <Badge>{item.label}</Badge>\n                  </div>\n                  <div className=\"mb-2 line-clamp-3 pt-4 text-lg font-medium break-words md:mb-3 md:pt-4 md:text-xl lg:pt-4 lg:text-2xl\">\n                    {item.title}\n                  </div>\n                  <div className=\"mb-8 line-clamp-2 text-sm text-muted-foreground md:mb-12 md:text-base lg:mb-9\">\n                    {item.description}\n                  </div>\n                  <div className=\"flex items-center text-sm\">\n                    Read more{\" \"}\n                    <ArrowRight className=\"ml-2 size-5 transition-transform group-hover:translate-x-1\" />\n                  </div>\n                </a>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery3 };\n"
+}

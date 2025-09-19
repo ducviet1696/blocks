@@ -1,0 +1,45 @@
+{
+    "id": "feature134",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature134.jpg",
+    "thumbnail": "feature134-4x3.webp",
+    "description": "This component displays a feature section with an outline badge, a title, a subtitle, and a 3-column layout of clickable feature cards, each with titles, descriptions, icons, and images.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.829Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature134",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight, Flame } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature134 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-3xl flex-col items-center gap-4\">\n          <Badge\n            variant=\"outline\"\n            className=\"flex items-center gap-1 px-2.5 py-1.5 text-sm\"\n          >\n            <Flame className=\"h-auto w-4\" />\n            Key Highlights\n          </Badge>\n          <h2 className=\"text-center text-3xl font-semibold lg:text-4xl\">\n            Enhance Your Workflow\n          </h2>\n          <p className=\"text-center text-muted-foreground lg:text-lg\">\n            Discover powerful tools to increase efficiency, simplify tasks, and\n            reach your goals faster.\n          </p>\n        </div>\n        <div className=\"mt-14 grid gap-5 lg:grid-cols-3\">\n          <a href=\"#\" className=\"flex flex-col rounded-lg border\">\n            <div className=\"flex justify-between p-6\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"font-medium md:text-lg\">\n                  Easy Event Scheduling\n                </h3>\n                <p className=\"text-sm text-muted-foreground md:text-base\">\n                  Plan effortlessly with integrated scheduling for smooth\n                  collaboration.\n                </p>\n              </div>\n              <span className=\"flex size-10 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4 -rotate-45\" />\n              </span>\n            </div>\n            <div className=\"rounded-lg p-1\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"size-full max-h-72 rounded-lg border object-cover\"\n              />\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col justify-between rounded-lg border lg:col-span-2\"\n          >\n            <div className=\"flex justify-between p-6\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"font-medium md:text-lg\">Unified Messaging</h3>\n                <p className=\"text-sm text-muted-foreground md:text-base\">\n                  Keep everyone connected with seamless communication tools.\n                </p>\n              </div>\n              <span className=\"flex size-10 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4 -rotate-45\" />\n              </span>\n            </div>\n            <div className=\"rounded-lg p-1\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"placeholder\"\n                className=\"h-full max-h-72 w-full rounded-lg border object-cover\"\n              />\n            </div>\n          </a>\n          <a href=\"#\" className=\"flex flex-col rounded-lg border\">\n            <div className=\"flex justify-between p-6\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"font-medium md:text-lg\">Smart Alerts</h3>\n                <p className=\"text-sm text-muted-foreground md:text-base\">\n                  Get timely updates to stay organized and ahead.\n                </p>\n              </div>\n              <span className=\"flex size-10 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4 -rotate-45\" />\n              </span>\n            </div>\n            <div className=\"rounded-lg p-1\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                alt=\"placeholder\"\n                className=\"size-full max-h-72 rounded-lg border object-cover\"\n              />\n            </div>\n          </a>\n          <a href=\"#\" className=\"flex flex-col rounded-lg border\">\n            <div className=\"flex justify-between p-6\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"font-medium md:text-lg\">Fast Feedback Cycles</h3>\n                <p className=\"text-sm text-muted-foreground md:text-base\">\n                  Speed up progress with quick input and decisions.\n                </p>\n              </div>\n              <span className=\"flex size-10 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4 -rotate-45\" />\n              </span>\n            </div>\n            <div className=\"rounded-lg p-1\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                alt=\"placeholder\"\n                className=\"size-full max-h-72 rounded-lg border object-cover\"\n              />\n            </div>\n          </a>\n          <a href=\"#\" className=\"flex flex-col rounded-lg border\">\n            <div className=\"flex justify-between p-6\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"font-medium md:text-lg\">File Sharing</h3>\n                <p className=\"text-sm text-muted-foreground md:text-base\">\n                  Share and retrieve important documents with ease.\n                </p>\n              </div>\n              <span className=\"flex size-10 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4 -rotate-45\" />\n              </span>\n            </div>\n            <div className=\"rounded-lg p-1\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n                alt=\"placeholder\"\n                className=\"size-full max-h-72 rounded-lg border object-cover\"\n              />\n            </div>\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature134 };\n"
+}

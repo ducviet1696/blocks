@@ -1,0 +1,43 @@
+{
+    "id": "hero30",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero30.jpg",
+    "thumbnail": "hero30-4x3.webp",
+    "description": "A hero block with 2 columns; left has text and buttons, right features a main image with a mesh background. Unique mesh and layered image presentation.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.614Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero30",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero30 = () => {\n  return (\n    <section className=\"relative overflow-hidden py-32\">\n      <div className=\"relative container\">\n        <div className=\"grid items-center gap-8 lg:grid-cols-2\">\n          <div className=\"flex flex-col items-center text-center lg:items-start lg:text-left\">\n            <h1 className=\"my-6 text-4xl font-bold text-pretty lg:text-6xl\">\n              Welcome to Our Website\n            </h1>\n            <p className=\"mb-8 max-w-xl text-muted-foreground lg:text-xl\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n              doloremque mollitia fugiat omnis! Porro facilis quo animi\n              consequatur. Explicabo.\n            </p>\n            <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start\">\n              <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n                Secondary\n              </Button>\n              <Button className=\"w-full sm:w-auto\">Primary</Button>\n            </div>\n          </div>\n          <div className=\"relative mt-16 -mb-16 flex justify-center gap-4 lg:mt-0 lg:mb-0 lg:justify-end\">\n            {/* Mesh background */}\n            <div className=\"absolute -inset-8 z-0 rounded-2xl bg-linear-to-r from-amber-100 via-red-200 to-teal-100 opacity-70 blur-3xl\"></div>\n\n            {/* Images with relative positioning to appear above the mesh */}\n            <div className=\"relative z-10\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder hero\"\n                className=\"h-[400px] rounded-lg border border-border object-cover object-center sm:max-w-[320px]\"\n              />\n            </div>\n            <div className=\"relative z-10 hidden flex-col gap-4 sm:flex md:hidden 2xl:flex\">\n              <div className=\"w-[256px] flex-1 overflow-clip rounded-lg border border-border bg-background\"></div>\n              <div className=\"aspect-2/1 w-[256px] overflow-clip rounded-lg border border-border bg-background\"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero30 };\n"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "hero57",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero57.jpg",
+    "thumbnail": "hero57-4x3.webp",
+    "description": "A component showcasing AI-powered proposal creation with engaging features, including decorative icons and dashed banners emphasizing speed, security, and professionalism. Center-aligns its title and description within a single column layout, accentuated by a subtle background pattern and a call-to-action button.",
+    "createdAt": [
+        3,
+        "2024-10-09T05:37:59.244Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero57",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { CheckCircle2, Globe, Lock, Star, Zap } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero57 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div\n          className=\"absolute inset-0 top-0 -z-10 mx-auto max-h-[600px] w-full opacity-10\"\n          style={{\n            backgroundImage: `url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/grid3.svg')`,\n            backgroundRepeat: \"repeat\",\n            maskImage:\n              \"radial-gradient(ellipse 80% 100% at 50% 30%, #000 40%, transparent 75%)\",\n            WebkitMaskImage:\n              \"radial-gradient(ellipse 80% 100% at 50% 30%, #000 40%, transparent 75%)\",\n          }}\n        ></div>\n        <h1 className=\"relative mx-auto mb-8 max-w-3xl flex-wrap text-center text-4xl font-semibold md:mb-10 md:text-6xl md:leading-snug\">\n          <span>\n            Create Winning\n            <span className=\"ml-1 opacity-50\">Proposals</span> 10X Faster with\n            <Globe className=\"mx-2 mb-1 inline-block h-auto w-8 md:mx-4 md:mb-3 md:w-14\" />\n            AI\n          </span>\n          <div className=\"absolute -top-10 -left-20 hidden w-fit -rotate-12 gap-1 border-b border-dashed border-muted-foreground text-sm font-normal text-muted-foreground underline-offset-3 lg:flex\">\n            <Zap className=\"h-auto w-3\" />\n            Fast\n          </div>\n          <div className=\"absolute top-14 -left-24 hidden w-fit -rotate-12 gap-1 border-b border-dashed border-muted-foreground text-sm font-normal text-muted-foreground underline-offset-3 lg:flex\">\n            <Lock className=\"h-auto w-3\" />\n            Secure\n          </div>\n          <div className=\"absolute -top-10 -right-24 hidden w-fit rotate-12 gap-1 border-b border-dashed border-muted-foreground text-sm font-normal text-muted-foreground underline-offset-3 lg:flex\">\n            Professional\n            <Star className=\"h-auto w-3\" />\n          </div>\n          <div className=\"absolute top-14 -right-28 hidden w-fit rotate-12 gap-1 border-b border-dashed border-muted-foreground text-sm font-normal text-muted-foreground underline-offset-3 lg:flex\">\n            Optimized\n            <CheckCircle2 className=\"h-auto w-3\" />\n          </div>\n        </h1>\n        <p className=\"mx-auto mb-10 max-w-3xl text-center font-medium text-muted-foreground md:text-xl\">\n          Penna let you build high-converting, website-style proposals with AI,\n          helping you win better customers without wasting time\n        </p>\n        <div className=\"flex flex-col items-center justify-center gap-3 pt-3 pb-12\">\n          <Button size=\"lg\">Start free 14-day trial</Button>\n          <div className=\"text-sm text-muted-foreground md:text-balance\">\n            Powered by GPT-4\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero57 };\n"
+}

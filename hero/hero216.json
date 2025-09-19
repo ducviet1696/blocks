@@ -1,0 +1,59 @@
+{
+    "id": "hero216",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero216.jpg",
+    "thumbnail": "hero216-4x3.webp",
+    "description": "This component displays a centered message and button with animated meteors and a large globe graphic. Column layout, uses shifting arrow button animation.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "globe",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/globe",
+            "docsUrl": "https://magicui.design/docs/components/globe"
+        },
+        {
+            "name": "meteors",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/meteors",
+            "docsUrl": "https://magicui.design/docs/components/meteors"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero216",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Globe } from \"@/components/magicui/globe\";\nimport { Meteors } from \"@/components/magicui/meteors\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero216 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container flex flex-col items-center justify-center gap-4 overflow-hidden\">\n        <p className=\"text-muted-foreground\">\n          Bridging Developers, Building the Future\n        </p>\n        <h1 className=\"max-w-3xl text-center font-calSans text-6xl md:text-7xl\">\n          Connecting Developers Worldwide\n        </h1>\n\n        <Meteors number={30} />\n\n        <Button\n          variant=\"secondary\"\n          className=\"group text-md mt-10 flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n        >\n          Get Started\n          <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n        </Button>\n        <div className=\"relative h-115 w-full overflow-y-clip\">\n          <Globe className=\"translate-y-40 scale-175\" />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero216 };\n"
+}

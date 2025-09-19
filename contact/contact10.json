@@ -1,0 +1,64 @@
+{
+    "id": "contact10",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "contact10.jpg",
+    "thumbnail": "contact10-4x3.webp",
+    "description": "A component featuring a contact form with a title, decorative dashed line separator, address/email/social links, and an inquiry form with fields for name, email, company, employee count, and message.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.571Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "textarea",
+            "registryId": "shadcn",
+            "registryItemUrl": "textarea",
+            "docsUrl": "https://ui.shadcn.com/docs/components/textarea"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "contact"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "contact10",
+    "collection": "block",
+    "group": "contact",
+    "code": "import { Facebook, Linkedin, Twitter } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nconst Contact10 = () => {\n  return (\n    <section className=\"relative mx-2.5 mt-2.5 rounded-t-2xl rounded-b-[36px] bg-linear-to-b from-amber-50 via-background to-background py-32 lg:mx-4 dark:from-amber-950\">\n      <div className=\"container max-w-2xl\">\n        <h1 className=\"text-center text-4xl font-semibold tracking-tight lg:text-5xl\">\n          Contact us\n        </h1>\n        <p className=\"mt-4 text-center leading-snug font-medium text-muted-foreground lg:mx-auto\">\n          Hopefully this form gets through our spam filters.\n        </p>\n\n        <div className=\"mt-10 flex justify-between gap-8 max-sm:flex-col md:mt-14 lg:mt-20 lg:gap-12\">\n          <div>\n            <h2 className=\"font-semibold\">Corporate office</h2>\n            <p className=\"mt-3 text-muted-foreground\">\n              1 Carlsberg Close\n              <br />\n              1260 Hillview, Australia\n            </p>\n          </div>\n\n          <div>\n            <h2 className=\"font-semibold\">Email us</h2>\n            <div className=\"mt-3\">\n              <div>\n                <p className=\"text-primary\">Careers</p>\n                <a\n                  href=\"#\"\n                  className=\"text-muted-foreground hover:text-foreground\"\n                >\n                  support@example.com\n                </a>\n              </div>\n            </div>\n          </div>\n\n          <div>\n            <h2 className=\"font-semibold\">Follow us</h2>\n            <div className=\"mt-3 flex gap-6 lg:gap-10\">\n              <a\n                href=\"#\"\n                className=\"text-muted-foreground hover:text-foreground\"\n              >\n                <Facebook className=\"size-5\" />\n              </a>\n              <a\n                href=\"#\"\n                className=\"text-muted-foreground hover:text-foreground\"\n              >\n                <Twitter className=\"size-5\" />\n              </a>\n              <a\n                href=\"#\"\n                className=\"text-muted-foreground hover:text-foreground\"\n              >\n                <Linkedin className=\"size-5\" />\n              </a>\n            </div>\n          </div>\n        </div>\n\n        <DashedLine className=\"my-12\" />\n\n        {/* Inquiry Form */}\n        <div className=\"mx-auto\">\n          <h2 className=\"text-lg font-semibold\">Inquiries</h2>\n          <form className=\"mt-8 space-y-5\">\n            <div className=\"space-y-2\">\n              <Label>Full name</Label>\n              <Input placeholder=\"First and last name\" />\n            </div>\n            <div className=\"space-y-2\">\n              <Label>Work email address</Label>\n              <Input placeholder=\"me@company.com\" type=\"email\" />\n            </div>\n            <div className=\"space-y-2\">\n              <Label>\n                Company name{\" \"}\n                <span className=\"text-muted-foreground\">(optional)</span>\n              </Label>\n              <Input placeholder=\"Company name\" />\n            </div>\n            <div className=\"space-y-2\">\n              <Label>\n                Number of employees{\" \"}\n                <span className=\"text-muted-foreground\">(optional)</span>\n              </Label>\n              <Input placeholder=\"e.g. 10-50\" />\n            </div>\n            <div className=\"space-y-2\">\n              <Label>Your message</Label>\n              <Textarea\n                placeholder=\"Write your message\"\n                className=\"min-h-[120px] resize-none\"\n              />\n            </div>\n\n            <div className=\"flex justify-end\">\n              <Button size=\"lg\" type=\"submit\" className=\"\">\n                Submit\n              </Button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </section>\n  );\n};\n\ninterface DashedLineProps {\n  orientation?: \"horizontal\" | \"vertical\";\n  className?: string;\n}\n\nconst DashedLine = ({\n  orientation = \"horizontal\",\n  className,\n}: DashedLineProps) => {\n  const isHorizontal = orientation === \"horizontal\";\n\n  return (\n    <div\n      className={cn(\n        \"relative text-muted-foreground\",\n        isHorizontal ? \"h-px w-full\" : \"h-full w-px\",\n        className,\n      )}\n    >\n      <div\n        className={cn(\n          isHorizontal\n            ? [\n                \"h-px w-full\",\n                \"bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]\",\n                \"[mask-image:linear-gradient(90deg,transparent,black_25%,black_75%,transparent)]\",\n              ]\n            : [\n                \"h-full w-px\",\n                \"bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]\",\n                \"[mask-image:linear-gradient(180deg,transparent,black_25%,black_75%,transparent)]\",\n              ],\n        )}\n      />\n    </div>\n  );\n};\n\nexport { Contact10 };\n"
+}

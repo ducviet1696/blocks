@@ -1,0 +1,45 @@
+{
+    "id": "feature28",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature28.jpg",
+    "thumbnail": "feature28-4x3.webp",
+    "description": "A two-column component featuring image placeholders, badges, and \"learn more\" links with right-pointing chevrons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.564Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature28",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature28 = () => {\n  return (\n    <section className=\"bg-gray-50 py-32 dark:bg-background\">\n      <div className=\"container\">\n        <div className=\"grid gap-10 lg:grid-cols-2 lg:gap-20\">\n          <div>\n            <div className=\"rounded-lg border bg-muted p-4 md:p-6\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"placeholder\"\n                className=\"aspect-video max-h-[500px] w-full rounded-lg object-cover\"\n              />\n            </div>\n            <div className=\"p-6\">\n              <div className=\"mb-1 flex items-center gap-2 font-semibold\">\n                Copy paste components <Badge>New</Badge>\n              </div>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n                laboriosam voluptatibus temporibus doloremque laudantium.\n              </p>\n              <a href=\"#\" className=\"mt-4 flex items-center gap-2 font-medium\">\n                Learn more\n                <ChevronRight className=\"w-4\" />\n              </a>\n            </div>\n          </div>\n          <div>\n            <div className=\"rounded-lg border bg-muted p-4 md:p-6\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"placeholder\"\n                className=\"aspect-video max-h-[500px] w-full rounded-lg object-cover\"\n              />\n            </div>\n            <div className=\"p-6\">\n              <p className=\"mb-1 flex items-center gap-2 font-semibold\">\n                100% customizable\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n                laboriosam voluptatibus temporibus doloremque laudantium.\n              </p>\n              <a href=\"#\" className=\"mt-4 flex items-center gap-2 font-medium\">\n                Learn more\n                <ChevronRight className=\"w-4\" />\n              </a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature28 };\n"
+}

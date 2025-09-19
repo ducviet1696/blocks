@@ -1,0 +1,49 @@
+{
+    "id": "testimonial6",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial6.jpg",
+    "thumbnail": "testimonial6-4x3.webp",
+    "description": "A carousel showcasing testimonials with navigational controls, featuring a title, user quotes, and their avatars. Each slide shows 1-3 testimonials based on size.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.657Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "testimonial6",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "import { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\nconst testimonials = [\n  {\n    name: \"John Doe\",\n    role: \"CEO & Founder\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt.  id ut omnis repellat. Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis.\",\n  },\n  {\n    name: \"Jane Doe\",\n    role: \"CTO\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat. Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.\",\n  },\n  {\n    name: \"John Smith\",\n    role: \"COO\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat. Lorem ipsum dolor sit.\",\n  },\n  {\n    name: \"Jane Smith\",\n    role: \"Tech Lead\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat. incidunt. Ratione, ullam? Iusto id ut omnis repellat ratione.\",\n  },\n  {\n    name: \"Richard Doe\",\n    role: \"Designer\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.\",\n  },\n  {\n    name: \"Gordon Doe\",\n    role: \"Developer\",\n    avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\",\n    content:\n      \"Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat. Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.\",\n  },\n];\n\nconst Testimonial6 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <Carousel className=\"w-full\">\n          <div className=\"mb-8 flex justify-between px-1 lg:mb-12\">\n            <h2 className=\"text-2xl font-semibold lg:text-5xl\">\n              Why Clients Love Us\n            </h2>\n            <div className=\"flex items-center space-x-2\">\n              <CarouselPrevious className=\"static translate-y-0\" />\n              <CarouselNext className=\"static translate-y-0\" />\n            </div>\n          </div>\n          <CarouselContent>\n            {testimonials.map((testimonial, idx) => (\n              <CarouselItem\n                key={idx}\n                className=\"basis-full md:basis-1/2 lg:basis-1/3\"\n              >\n                <div className=\"h-full p-1\">\n                  <div className=\"flex h-full flex-col justify-between rounded-lg border p-6\">\n                    <q className=\"leading-7 text-foreground/70\">\n                      {testimonial.content}\n                    </q>\n                    <div className=\"mt-6 flex gap-4 leading-5\">\n                      <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                        <AvatarImage\n                          src={testimonial.avatar}\n                          alt={testimonial.name}\n                        />\n                      </Avatar>\n                      <div className=\"text-sm\">\n                        <p className=\"font-medium\">{testimonial.name}</p>\n                        <p className=\"text-muted-foreground\">\n                          {testimonial.role}\n                        </p>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial6 };\n"
+}

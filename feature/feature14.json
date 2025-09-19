@@ -1,0 +1,36 @@
+{
+    "id": "feature14",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature14.jpg",
+    "thumbnail": "feature14-4x3.webp",
+    "description": "A two-column component featuring secure payments and automated invoicing, with text descriptions and check-marked features, complemented by numbered image placeholders.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.556Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature14",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { CheckCircle } from \"lucide-react\";\n\nconst Feature14 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"space-y-10 rounded-lg border py-10 md:px-4\">\n          <div className=\"grid rounded-lg border md:grid-cols-2\">\n            <div className=\"flex flex-col px-6 py-8 lg:px-8 lg:py-12 xl:px-12 xl:py-20\">\n              <h3 className=\"mb-3 text-2xl font-medium sm:mb-5 md:text-3xl lg:text-4xl\">\n                Secure Payments\n              </h3>\n              <div className=\"mb-8 text-sm text-muted-foreground sm:mb-10 md:text-base\">\n                Lorem ipsum dolor sit amet consectetur, adipisicing elit.\n                Pariatur modi et recusandae ducimus eligendi eveniet soluta\n                reprehenderit nostrum expedita omnis.\n              </div>\n              <ul className=\"mt-auto space-y-2 sm:space-y-3\">\n                <li className=\"flex gap-x-3\">\n                  <CheckCircle className=\"mt-0.5 size-4 shrink-0 sm:mt-1\" />\n                  <p className=\"text-sm md:text-base\">\n                    Secure payment gateway integration with Stripe\n                  </p>\n                </li>\n                <li className=\"flex gap-x-3\">\n                  <CheckCircle className=\"mt-0.5 size-4 shrink-0 sm:mt-1\" />\n                  <p className=\"text-sm md:text-base\">\n                    SSL encryption for secure transactions\n                  </p>\n                </li>\n              </ul>\n            </div>\n            <div className=\"relative order-first max-h-80 md:order-last md:max-h-[500px]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"h-full w-full object-cover\"\n              />\n              <span className=\"absolute top-5 left-5 flex size-6 items-center justify-center rounded-sm bg-primary font-mono text-xs text-primary-foreground md:top-10 md:left-10\">\n                01\n              </span>\n            </div>\n          </div>\n          <div className=\"grid rounded-lg border md:grid-cols-2\">\n            <div className=\"flex flex-col px-6 py-8 lg:px-8 lg:py-12 xl:px-12 xl:py-20\">\n              <h3 className=\"mb-3 text-2xl font-medium sm:mb-5 md:text-3xl lg:text-4xl\">\n                Automated Invoicing\n              </h3>\n              <div className=\"mb-8 text-sm text-muted-foreground sm:mb-10 md:text-base\">\n                Lorem ipsum dolor sit amet consectetur, adipisicing elit.\n                Pariatur modi et recusandae ducimus eligendi eveniet soluta\n                reprehenderit nostrum expedita omnis.\n              </div>\n              <ul className=\"mt-auto space-y-2 sm:space-y-3\">\n                <li className=\"flex gap-x-3\">\n                  <CheckCircle className=\"mt-0.5 size-4 shrink-0 sm:mt-1\" />\n                  <p className=\"text-sm md:text-base\">\n                    Automated invoicing for easy billing\n                  </p>\n                </li>\n              </ul>\n            </div>\n            <div className=\"relative order-first max-h-80 md:order-last md:max-h-[500px]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"placeholder\"\n                className=\"h-full w-full object-cover\"\n              />\n              <span className=\"absolute top-5 left-5 flex size-6 items-center justify-center rounded-sm bg-primary font-mono text-xs text-primary-foreground md:top-10 md:left-10\">\n                02\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature14 };\n"
+}

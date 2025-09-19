@@ -1,0 +1,46 @@
+{
+    "id": "feature78",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature78.jpg",
+    "thumbnail": "feature78-4x3.webp",
+    "description": "Feature block with tabs, showcasing three features, each with an image, title, description. Features a demo link with an animated arrow icon.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.595Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature78",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst features = [\n  {\n    id: \"feature-1\",\n    tabLabel: \"Feature 1\",\n    title: \"Feature 1\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    id: \"feature-2\",\n    tabLabel: \"Feature 2\",\n    title: \"Feature 2\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    id: \"feature-3\",\n    tabLabel: \"Feature 3\",\n    title: \"Feature 3\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  },\n];\n\nconst Feature78 = () => {\n  const [selection, setSelection] = useState(features[0].id);\n  return (\n    <section className=\"py-32\">\n      <div className=\"flex flex-col\">\n        <div className=\"container\">\n          <div className=\"lg:max-w-3xl\">\n            <h2 className=\"mb-2 text-xl font-semibold md:text-4xl\">\n              Powerful Features\n            </h2>\n            <a\n              href=\"#\"\n              className=\"group flex items-center text-xs font-medium md:text-base lg:text-lg\"\n            >\n              Book a demo{\" \"}\n              <ArrowRight className=\"ml-2 size-4 transition-transform group-hover:translate-x-1\" />\n            </a>\n          </div>\n        </div>\n        <div>\n          <Tabs value={selection} onValueChange={setSelection}>\n            <div className=\"relative mt-6\">\n              <div className=\"overflow-auto\">\n                <div className=\"container min-w-fit\">\n                  <TabsList>\n                    {features.map((feature) => (\n                      <TabsTrigger key={feature.id} value={feature.id}>\n                        {feature.tabLabel}\n                      </TabsTrigger>\n                    ))}\n                  </TabsList>\n                </div>\n                <div className=\"pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--color-background)_0%,transparent_10%,transparent_90%,var(--color-background)_100%)] md:hidden\" />\n              </div>\n            </div>\n            <div className=\"container\">\n              {features.map((feature) => (\n                <TabsContent key={feature.id} value={feature.id}>\n                  <div className=\"mt-12 flex flex-col md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8\">\n                    <div className=\"overflow-clip rounded-3xl md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]\">\n                      <img\n                        src={feature.image}\n                        alt={feature.tabLabel}\n                        className=\"aspect-16/9 h-full w-full object-cover object-center\"\n                      />\n                    </div>\n                    <div className=\"flex flex-col justify-center py-8 md:px-8 md:py-10 lg:px-10 lg:py-12\">\n                      <h3 className=\"mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n                        {feature.title}\n                      </h3>\n                      <p className=\"text-muted-foreground lg:text-lg\">\n                        {feature.description}\n                      </p>\n                    </div>\n                  </div>\n                </TabsContent>\n              ))}\n            </div>\n          </Tabs>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature78 };\n"
+}

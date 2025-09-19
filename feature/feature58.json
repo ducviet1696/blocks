@@ -1,0 +1,36 @@
+{
+    "id": "feature58",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature58.jpg",
+    "thumbnail": "feature58-4x3.webp",
+    "description": "A component displays an image alongside a list of 3 features, each with an icon, title, and description, laid out in a 2-column grid.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.578Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature58",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Bolt, Cloud, Star } from \"lucide-react\";\n\nconst features = [\n  {\n    id: \"feature-1\",\n    title: \"Feature 1\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    icon: Cloud,\n  },\n  {\n    id: \"feature-2\",\n    title: \"Feature 2\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    icon: Star,\n  },\n  {\n    id: \"feature-3\",\n    title: \"Feature 3\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    icon: Bolt,\n  },\n];\n\nconst Feature58 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid gap-x-20 rounded-lg border border-border bg-accent p-6 md:grid-cols-2 md:p-8 lg:p-16\">\n          <div className=\"mb-8 flex justify-center lg:justify-start xl:mb-0\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-square h-full w-full rounded-md object-cover object-center\"\n            />\n          </div>\n          <ul className=\"flex flex-col justify-center gap-y-8\">\n            {features.map((feature) => (\n              <li key={feature.id} className=\"flex\">\n                <feature.icon className=\"mr-3 size-5 shrink-0 lg:mr-6 lg:size-6\" />\n                <div>\n                  <div className=\"mb-3 h-5 text-sm font-semibold text-accent-foreground md:text-base\">\n                    {feature.title}\n                  </div>\n                  <div className=\"text-sm font-medium text-muted-foreground md:text-base\">\n                    {feature.description}\n                  </div>\n                </div>\n              </li>\n            ))}\n          </ul>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature58 };\n"
+}

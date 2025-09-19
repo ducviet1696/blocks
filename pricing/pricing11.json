@@ -1,0 +1,70 @@
+{
+    "id": "pricing11",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing11.jpg",
+    "thumbnail": "pricing11-4x3.webp",
+    "description": "A component with pricing plans & feature comparison. It displays billing options, plan details across columns, and uses collapsibles for mobile view.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.631Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "collapsible",
+            "registryId": "shadcn",
+            "registryItemUrl": "collapsible",
+            "docsUrl": "https://ui.shadcn.com/docs/components/collapsible"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        },
+        {
+            "name": "tooltip",
+            "registryId": "shadcn",
+            "registryItemUrl": "tooltip",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tooltip"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing11",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { Check, ChevronDown, Info, X } from \"lucide-react\";\nimport { Fragment, useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipProvider,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nconst plans = [\n  {\n    title: \"Free\",\n    price: { monthly: \"$9\", annually: \"$9\" },\n    href: \"#\",\n    recommended: false,\n  },\n  {\n    title: \"Basic\",\n    price: { monthly: \"$50\", annually: \"$45\" },\n    href: \"#\",\n    recommended: false,\n  },\n  {\n    title: \"Team\",\n    price: { monthly: \"$100\", annually: \"$90\" },\n    href: \"#\",\n    recommended: true,\n  },\n  {\n    title: \"Enterprise\",\n    price: { monthly: \"$200\", annually: \"$160\" },\n    href: \"#\",\n    recommended: false,\n  },\n];\n\nconst featureMatrix = [\n  {\n    title: \"Overview\",\n    features: [\n      {\n        title: \"Always included reature\",\n        inclusions: [\n          {\n            plan: \"Free\",\n            content: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n          },\n          {\n            plan: \"Basic\",\n            content: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n          },\n          {\n            plan: \"Teams\",\n            content: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n          },\n          {\n            plan: \"Enterprise\",\n            content: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n          },\n        ],\n      },\n      {\n        title: \"Number of products\",\n        info: \"Help text\",\n        inclusions: [\n          { plan: \"Free\", content: \"1\" },\n          { plan: \"Basic\", content: \"1\" },\n          { plan: \"Teams\", content: \"3\" },\n          { plan: \"Enterprise\", content: \"5\" },\n        ],\n      },\n      {\n        title: \"Number of transactions\",\n        info: \"Help text\",\n        inclusions: [\n          { plan: \"Free\", content: \"30 monthly\" },\n          { plan: \"Basic\", content: \"Unlimited\" },\n          { plan: \"Teams\", content: \"Unlimited\" },\n          { plan: \"Enterprise\", content: \"Unlimited\" },\n        ],\n      },\n    ],\n  },\n  {\n    title: \"Other features\",\n    features: [\n      {\n        title: \"Basic feature\",\n        inclusions: [\n          {\n            plan: \"Free\",\n            content: <Check className=\"size-4 lg:size-5\" />,\n          },\n          {\n            plan: \"Basic\",\n            content: <Check className=\"size-4 lg:size-5\" />,\n          },\n          {\n            plan: \"Teams\",\n            content: <Check className=\"size-4 lg:size-5\" />,\n          },\n          {\n            plan: \"Enterprise\",\n            content: <Check className=\"size-4 lg:size-5\" />,\n          },\n        ],\n      },\n      {\n        title: \"Enterprise feature\",\n        info: \"Hello\",\n        inclusions: [\n          {\n            plan: \"Free\",\n            content: <X className=\"size-4 text-muted-foreground lg:size-5\" />,\n          },\n          {\n            plan: \"Basic\",\n            content: <X className=\"size-4 text-muted-foreground lg:size-5\" />,\n          },\n          {\n            plan: \"Teams\",\n            content: <X className=\"size-4 text-muted-foreground lg:size-5\" />,\n          },\n          {\n            plan: \"Enterprise\",\n            content: <Check className=\"size-5\" />,\n          },\n        ],\n      },\n      {\n        title: \"Optional feature\",\n        info: \"Hello\",\n        inclusions: [\n          {\n            plan: \"Free\",\n            content: <X className=\"size-4 text-muted-foreground lg:size-5\" />,\n          },\n          {\n            plan: \"Basic\",\n            content: <X className=\"size-4 text-muted-foreground lg:size-5\" />,\n          },\n          {\n            plan: \"Teams\",\n            content: <Badge>Add-on</Badge>,\n          },\n          {\n            plan: \"Enterprise\",\n            content: <Badge>Add-on</Badge>,\n          },\n        ],\n      },\n    ],\n  },\n];\n\nconst Pricing11 = () => {\n  const [billing, setBilling] = useState<\"monthly\" | \"annually\">(\"monthly\");\n  return (\n    <TooltipProvider delayDuration={150}>\n      <section className=\"py-32\">\n        <div className=\"container mb-8 lg:mb-0\">\n          <div className=\"grid grid-cols-2 gap-y-12 md:gap-y-16\">\n            <div className=\"col-span-2 flex flex-col lg:col-span-1\">\n              <h1 className=\"my-6 text-3xl font-bold text-pretty md:text-4xl xl:text-5xl\">\n                Pricing Plans\n              </h1>\n              <p className=\"text-muted-foreground lg:text-xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit.\n              </p>\n            </div>\n          </div>\n        </div>\n        <div className=\"container\">\n          <div className=\"sticky top-16 bg-background\">\n            <div className=\"mb-8 hidden pt-8 lg:block\">\n              <div className=\"grid items-end gap-6 border-b border-border pb-8 lg:grid-cols-6\">\n                <div className=\"col-span-2\">\n                  <div className=\"flex h-full flex-col justify-end\">\n                    <span className=\"mb-2 text-xs font-medium text-muted-foreground\">\n                      Billing\n                    </span>\n                    <Tabs\n                      value={billing}\n                      onValueChange={setBilling as (value: string) => void}\n                    >\n                      <TabsList>\n                        <TabsTrigger value=\"monthly\">Monthly</TabsTrigger>\n                        <TabsTrigger value=\"annually\">Annually</TabsTrigger>\n                      </TabsList>\n                    </Tabs>\n                  </div>\n                </div>\n                {plans.map((plan) => (\n                  <div\n                    key={plan.title}\n                    className=\"rounded-lg border border-border p-3 2xl:p-4\"\n                  >\n                    <h3 className=\"mb-1 text-xl font-medium sm:text-2xl\">\n                      {plan.title}\n                    </h3>\n                    <p className=\"mb-4 text-sm font-medium text-muted-foreground\">\n                      {plan.price[billing]}\n                      <span className=\"hidden 2xl:inline\"> / monthly</span>\n                    </p>\n                    <Button\n                      variant={plan.recommended ? \"default\" : \"outline\"}\n                      className=\"w-full\"\n                    >\n                      <span className=\"2xl:hidden\">Register</span>\n                      <span className=\"hidden 2xl:inline\">\n                        Get started for free\n                      </span>\n                    </Button>\n                  </div>\n                ))}\n              </div>\n            </div>\n          </div>\n          <div className=\"space-y-8 lg:space-y-14\">\n            {featureMatrix.map((category) => (\n              <div key={category.title}>\n                <h3 className=\"mb-6 text-lg font-medium lg:mb-3\">\n                  {category.title}\n                </h3>\n                <div className=\"space-y-4 lg:space-y-0\">\n                  {category.features.map((feature) => (\n                    <Fragment key={feature.title}>\n                      <dl className=\"hidden grid-cols-6 gap-6 border-b border-border lg:grid\">\n                        <dt className=\"col-span-2 justify-between py-4 pb-4\">\n                          <Tooltip>\n                            <TooltipTrigger asChild>\n                              <h4 className=\"group flex min-h-6 items-center gap-x-1 font-medium\">\n                                {feature.title}{\" \"}\n                                {feature.info && (\n                                  <Info className=\"ml-2 size-4 cursor-pointer text-muted-foreground group-hover:text-accent-foreground\" />\n                                )}\n                              </h4>\n                            </TooltipTrigger>\n                            {feature.info && (\n                              <TooltipContent>{feature.info}</TooltipContent>\n                            )}\n                          </Tooltip>\n                        </dt>\n                        {feature.inclusions.map((inclusion) => (\n                          <dd\n                            key={inclusion.plan}\n                            className=\"hidden py-4 text-sm text-muted-foreground lg:block\"\n                          >\n                            {inclusion.content}\n                          </dd>\n                        ))}\n                      </dl>\n                      <Collapsible\n                        className=\"group lg:hidden\"\n                        defaultOpen={false}\n                      >\n                        <dl\n                          key={feature.title}\n                          className=\"border-b border-border\"\n                        >\n                          <CollapsibleTrigger className=\"w-full\">\n                            <dt className=\"flex items-center justify-between pb-4\">\n                              <Tooltip>\n                                <TooltipTrigger asChild>\n                                  <h4 className=\"group flex items-center gap-x-1 text-sm font-medium md:text-base\">\n                                    {feature.title}\n                                    {feature.info && (\n                                      <Info className=\"ml-2 size-4 cursor-pointer text-muted-foreground group-hover:text-accent-foreground\" />\n                                    )}\n                                  </h4>\n                                </TooltipTrigger>\n                                {feature.info && (\n                                  <TooltipContent>\n                                    {feature.info}\n                                  </TooltipContent>\n                                )}\n                              </Tooltip>\n\n                              <ChevronDown className='size-5 transition-transform group-data-[state=\"open\"]:rotate-180' />\n                            </dt>\n                          </CollapsibleTrigger>\n                          <CollapsibleContent>\n                            {feature.inclusions.map((inclusion) => (\n                              <dd\n                                key={inclusion.plan}\n                                className=\"flex items-center border-b border-border py-3 text-xs text-muted-foreground last:border-b-0 md:py-3.5\"\n                              >\n                                <div className=\"w-1/2 md:w-1/4\">\n                                  {inclusion.plan}\n                                </div>\n                                {inclusion.content}\n                              </dd>\n                            ))}\n                          </CollapsibleContent>\n                        </dl>\n                      </Collapsible>\n                    </Fragment>\n                  ))}\n                </div>\n              </div>\n            ))}\n          </div>\n          <p className=\"mt-4 hidden text-xs text-muted-foreground md:block\">\n            * Caveats and other conditions\n          </p>\n        </div>\n      </section>\n    </TooltipProvider>\n  );\n};\n\nexport { Pricing11 };\n"
+}

@@ -1,0 +1,52 @@
+{
+    "id": "feature154",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature154.jpg",
+    "thumbnail": "feature154-4x3.webp",
+    "description": "A component featuring dual infinite sliders with badges for features like Integrations, Automation, etc., inside a styled section with a gradient and wave overlay.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.665Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "marquee",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/marquee",
+            "docsUrl": "https://magicui.design/docs/components/marquee"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature154",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport {\n  Activity,\n  ArrowDownToLine,\n  ArrowUpDown,\n  Bell,\n  Brain,\n  CheckCircle,\n  Clock,\n  Code,\n  Database,\n  FileText,\n  GitBranch,\n  Redo,\n  Repeat,\n  Rocket,\n  Scaling,\n  Scan,\n  Zap,\n} from \"lucide-react\";\n\nimport { Marquee } from \"@/components/magicui/marquee\";\nimport { Badge } from \"@/components/ui/badge\";\n\nconst badges = [\n  {\n    title: \"Integrations\",\n    icon: <Code className=\"size-4\" />,\n  },\n  {\n    title: \"Automation\",\n    icon: <ArrowUpDown className=\"size-4\" />,\n  },\n  {\n    title: \"Workflows\",\n    icon: <GitBranch className=\"size-4\" />,\n  },\n  {\n    title: \"Triggers\",\n    icon: <Zap className=\"size-4\" />,\n  },\n  {\n    title: \"Scheduling\",\n    icon: <Clock className=\"size-4\" />,\n  },\n  {\n    title: \"Monitoring\",\n    icon: <Activity className=\"size-4\" />,\n  },\n  {\n    title: \"AI Processing\",\n    icon: <Brain className=\"size-4\" />,\n  },\n  {\n    title: \"Data Pipeline\",\n    icon: <Database className=\"size-4\" />,\n  },\n  {\n    title: \"Notifications\",\n    icon: <Bell className=\"size-4\" />,\n  },\n  {\n    title: \"Auto-Deploy\",\n    icon: <Rocket className=\"size-4\" />,\n  },\n  {\n    title: \"Testing\",\n    icon: <CheckCircle className=\"size-4\" />,\n  },\n  {\n    title: \"Reporting\",\n    icon: <FileText className=\"size-4\" />,\n  },\n  {\n    title: \"Customization\",\n    icon: <Redo className=\"size-4\" />,\n  },\n  {\n    title: \"Collaboration\",\n    icon: <ArrowDownToLine className=\"size-4\" />,\n  },\n  {\n    title: \"Security\",\n    icon: <Repeat className=\"size-4\" />,\n  },\n  {\n    title: \"Performance\",\n    icon: <Scan className=\"size-4\" />,\n  },\n  {\n    title: \"Scalability\",\n    icon: <Scaling className=\"size-4\" />,\n  },\n];\n\nconst Feature154 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 text-center\">\n          <Badge variant=\"outline\">Automations</Badge>\n          <h1 className=\"text-4xl font-semibold md:text-6xl\">\n            The best way to automate your workflow\n          </h1>\n          <p className=\"text-muted-foreground mx-auto max-w-3xl text-lg\">\n            Streamline operations with intelligent automation. Eliminate\n            repetitive tasks and focus on what matters most.\n          </p>\n        </div>\n        <div className=\"relative mt-10\">\n          <Marquee className=\"[--duration:30s]\">\n            {badges.map((badge) => (\n              <div\n                key={badge.title}\n                className=\"bg-muted flex items-center gap-2 rounded-full px-4 py-2\"\n              >\n                {badge.icon}\n                {badge.title}\n              </div>\n            ))}\n          </Marquee>\n          <Marquee reverse className=\"[--duration:30s]\">\n            {badges.map((badge) => (\n              <div\n                key={badge.title}\n                className=\"bg-muted flex items-center gap-2 rounded-full px-4 py-2\"\n              >\n                {badge.icon}\n                {badge.title}\n              </div>\n            ))}\n          </Marquee>\n          <div className=\"from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r\"></div>\n          <div className=\"from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l\"></div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature154 };\n"
+}

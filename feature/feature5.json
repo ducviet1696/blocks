@@ -1,0 +1,45 @@
+{
+    "id": "feature5",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature5.jpg",
+    "thumbnail": "feature5-4x3.webp",
+    "description": "A component with a 3-column layout on large screens, shrinking to 2 and then 1 column. Features 2 cards, one double the width of the other, each with icons, text, and images.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.573Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature5",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { AppWindowMac, Zap } from \"lucide-react\";\n\nimport { Card } from \"@/components/ui/card\";\n\nconst Feature5 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid gap-6 md:grid-cols-2 lg:grid-cols-3\">\n          <Card className=\"p-6 lg:col-span-2\">\n            <div className=\"text-left\">\n              <AppWindowMac className=\"mb-1 w-7\" />\n              <h2 className=\"mt-4 mb-1 text-lg font-semibold\">\n                Get your team on the same page.\n              </h2>\n              <p className=\"text-muted-foreground\">\n                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut\n                odit pariatur, ullam delectus modi excepturi ea dignissimos\n                mollitia minima unde animi qui omnis.\n              </p>\n            </div>\n            <div className=\"mt-7\">\n              <img\n                className=\"aspect-square max-h-[500px] w-full rounded-t-md object-cover object-center\"\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n              />\n            </div>\n          </Card>\n          <Card className=\"flex flex-col justify-between p-6\">\n            <div className=\"text-left\">\n              <Zap className=\"mb-1 w-7\" />\n              <h2 className=\"mt-4 mb-1 text-lg font-semibold\">\n                Fast and easy to use.\n              </h2>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque\n                corrupti sed.\n              </p>\n            </div>\n            <img\n              className=\"mt-7 aspect-square rounded-t-md object-cover lg:aspect-auto lg:h-full\"\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"placeholder\"\n            />\n          </Card>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature5 };\n"
+}

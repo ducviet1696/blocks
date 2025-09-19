@@ -1,0 +1,34 @@
+{
+    "id": "feature162",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature162.jpg",
+    "thumbnail": "feature162-4x3.webp",
+    "description": "A component featuring 1 row with text and an image, followed by 2 more images below, each in a rounded border.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.668Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature162",
+    "collection": "block",
+    "group": "feature",
+    "code": "const Feature162 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mb-4 flex flex-col gap-16 rounded-[36px] border border-gray-200 pt-10 pl-10 md:flex-row\">\n          <div className=\"max-w-96 text-lg\">\n            <span className=\"font-semibold\">\n              Always connected to your data.\n            </span>{\" \"}\n            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, cum!\n          </div>\n          <div className=\"w-full rounded-tl-[36px] rounded-br-[36px] p-1 pr-0 pb-0\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"logo\"\n              className=\"max-h-[450px] w-full rounded-tl-[36px] rounded-br-[36px] object-cover object-bottom transition-all duration-500\"\n            />\n          </div>\n        </div>\n        <div className=\"grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 md:grid-rows-1\">\n          <div className=\"flex flex-col rounded-[36px] border border-gray-200\">\n            <div className=\"p-10 text-lg\">\n              <span className=\"font-semibold\">A CRM for any use case.</span>{\" \"}\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n              Praesentium officiis nam et deserunt, eos neque.\n            </div>\n            <div className=\"flex-1 basis-auto\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"logo\"\n                className=\"h-full w-full rounded-b-[36px] object-cover transition-all duration-500\"\n              />\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"flex-1 basis-auto rounded-[36px]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                alt=\"logo\"\n                className=\"h-full w-full rounded-[36px] object-cover transition-all duration-500\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature162 };\n"
+}

@@ -1,0 +1,46 @@
+{
+    "id": "feature269",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature269.jpg",
+    "thumbnail": "feature269-4x3.webp",
+    "description": "A feature block lists 12 advantages with icons in a two-column grid and highlights services with an image in an adjacent visual card.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:50:37.333Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "3d-card.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/3d-card.json",
+            "docsUrl": "https://ui.aceternity.com/components/3d-card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature269",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { BadgeCheck } from \"lucide-react\";\nimport React from \"react\";\n\nimport {\n  CardBody,\n  CardContainer,\n  CardItem,\n} from \"@/components/aceternity/3d-card\";\n\nconst Feature269 = () => {\n  const features = [\n    \"Instant Implementation\",\n    \"One-Time Payment\",\n    \"Developer Friendly\",\n    \"Fully Responsive\",\n    \"Production Ready\",\n    \"Premium Support\",\n    \"Regular Updates\",\n    \"Customizable Design\",\n    \"Performance Optimized\",\n    \"Accessibility Compliant\",\n    \"Cross-Browser \",\n    \"Documentation Included\",\n  ];\n\n  return (\n    <section className=\"h-full w-screen overflow-hidden py-32\">\n      <div className=\"container relative flex h-full flex-col items-start justify-between gap-10 lg:flex-row\">\n        <div className=\"brder w-full space-y-5 lg:w-3/5\">\n          <h1 className=\"mb-15 mx-auto w-full max-w-lg text-center text-5xl font-medium font-semibold tracking-tighter lg:mx-0 lg:text-left lg:text-6xl\">\n            Why Choose Shadcn Blocks?\n          </h1>\n          <div className=\"mb-18 flex items-center gap-4 px-5 lg:max-w-md\">\n            <span className=\"bg-muted-foreground/20 h-px w-full\" />\n            <p className=\"text-muted-foreground/50 text-sm\">FEATURES</p>\n            <span className=\"bg-muted-foreground/20 h-px w-full\" />\n          </div>\n          <ul className=\"grid grid-cols-2 gap-3 lg:max-w-md\">\n            {features.map((feature) => (\n              <li key={feature} className=\"flex gap-2 lg:items-center\">\n                <BadgeCheck className=\"text-muted-foreground/80 size-4\" />\n                <p className=\"text-muted-foreground/80 tracking-tight\">\n                  {feature}\n                </p>\n              </li>\n            ))}\n          </ul>\n        </div>\n        <CardContainer\n          className=\"w-full\"\n          containerClassName=\"h-full   w-full p-0 m-0 lg:w-2/5\"\n        >\n          <CardBody className=\"group/card bg-muted/70 flex h-full !w-full flex-col items-center justify-center rounded-3xl p-5\">\n            <CardItem\n              translateZ=\"60\"\n              className=\"mb-2 mt-10 max-w-xs text-center text-3xl font-semibold leading-none tracking-tighter\"\n            >\n              #1 Biggest Shadcn Blocks Collection\n            </CardItem>\n            <CardItem\n              as=\"p\"\n              translateZ=\"25\"\n              className=\"my-4 flex w-full max-w-sm items-center justify-center text-sm tracking-tight\"\n            >\n              <span className=\"mr-2 opacity-50\">Welcome to</span>\n              <span className=\"font-semibold\">SHADCN BLOCKS</span>\n            </CardItem>\n            <CardItem translateZ=\"60\" className=\"mt-4 w-full max-w-[1000px]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\"\n                height=\"1000\"\n                width=\"1000\"\n                className=\"h-70 w-full rounded-3xl object-cover group-hover/card:shadow-xl\"\n                alt=\"thumbnail\"\n              />\n            </CardItem>\n          </CardBody>\n        </CardContainer>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature269 };\n"
+}

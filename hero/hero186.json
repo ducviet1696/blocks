@@ -1,0 +1,45 @@
+{
+    "id": "hero186",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero186.jpg",
+    "thumbnail": "hero186-4x3.webp",
+    "description": "A component with two columns: Main content on left with title, description, and buttons; Features list on right with icons. Includes an image below.",
+    "createdAt": [
+        3,
+        "2024-12-20T09:23:45.418Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero186",
+    "collection": "block",
+    "group": "hero",
+    "code": "import {\n  ArrowRight,\n  Blend,\n  ChartNoAxesColumn,\n  CircleDot,\n  Diamond,\n} from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst features = [\n  {\n    title: \"Tailored workflows\",\n    description: \"Track progress across custom issue flows for your team.\",\n    icon: CircleDot,\n  },\n  {\n    title: \"Milestones\",\n    description: \"Break projects down into concrete phases.\",\n    icon: Diamond,\n  },\n  {\n    title: \"Cross-team projects\",\n    description: \"Collaborate across teams and departments.\",\n    icon: Blend,\n  },\n  {\n    title: \"Progress insights\",\n    description: \"Track scope, velocity, and progress over time.\",\n    icon: ChartNoAxesColumn,\n  },\n];\n\nconst Hero186 = () => {\n  return (\n    <section className=\"bg-linear-to-b from-background via-background to-background relative mx-2.5 mt-2.5 rounded-b-[36px] rounded-t-2xl lg:mx-4\">\n      <div className=\"py-32\">\n        <div className=\"container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row\">\n          {/* Left side - Main content */}\n          <div className=\"flex-1\">\n            <h1 className=\"text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl\">\n              Shadcnblocks components for your next project\n            </h1>\n\n            <p className=\"text-muted-foreground mt-5 text-2xl\">\n              Streamline is the fit-for-purpose tool for planning and building\n              modern software products.\n            </p>\n\n            <div className=\"mt-8 flex flex-wrap items-center gap-4\">\n              <Button>Get started</Button>\n              <a href=\"#\">\n                <Button variant=\"outline\" className=\"h-auto\">\n                  <span className=\"flex items-center gap-2 whitespace-pre-wrap text-start\">\n                    Documentation <ArrowRight />\n                  </span>\n                </Button>\n              </a>\n            </div>\n          </div>\n\n          {/* Right side - Features */}\n          <div className=\"relative flex flex-1 flex-col justify-center space-y-5 max-lg:pt-10 lg:ps-10\">\n            <DashedLine\n              orientation=\"vertical\"\n              className=\"absolute left-0 top-0 max-lg:hidden\"\n            />\n            <DashedLine\n              orientation=\"horizontal\"\n              className=\"absolute top-0 lg:hidden\"\n            />\n            {features.map((feature) => {\n              const Icon = feature.icon;\n              return (\n                <div key={feature.title} className=\"flex gap-2.5 lg:gap-5\">\n                  <Icon className=\"mt-1 size-4 shrink-0 lg:size-5\" />\n                  <div>\n                    <h2 className=\"font-semibold\">{feature.title}</h2>\n                    <p className=\"text-muted-foreground text-sm\">\n                      {feature.description}\n                    </p>\n                  </div>\n                </div>\n              );\n            })}\n          </div>\n        </div>\n\n        <div className=\"container mt-12 md:mt-20 lg:mt-24\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n            alt=\"hero\"\n            className=\"w-full rounded-2xl object-cover object-center sm:h-[500px] lg:h-[793px]\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\ninterface DashedLineProps {\n  orientation?: \"horizontal\" | \"vertical\";\n  className?: string;\n}\n\nconst DashedLine = ({\n  orientation = \"horizontal\",\n  className,\n}: DashedLineProps) => {\n  const isHorizontal = orientation === \"horizontal\";\n\n  return (\n    <div\n      className={cn(\n        \"text-muted-foreground relative\",\n        isHorizontal ? \"h-px w-full\" : \"h-full w-px\",\n        className,\n      )}\n    >\n      <div\n        className={cn(\n          isHorizontal\n            ? [\n                \"h-px w-full\",\n                \"bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]\",\n                \"[mask-image:linear-gradient(90deg,transparent,black_25%,black_75%,transparent)]\",\n              ]\n            : [\n                \"h-full w-px\",\n                \"bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]\",\n                \"[mask-image:linear-gradient(180deg,transparent,black_25%,black_75%,transparent)]\",\n              ],\n        )}\n      />\n    </div>\n  );\n};\n\nexport { Hero186 };\n"
+}

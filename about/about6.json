@@ -1,0 +1,34 @@
+{
+    "id": "about6",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "about6.jpg",
+    "thumbnail": "about6-4x3.webp",
+    "description": "A component featuring \"Our Story\" and \"Our Workplace\" sections, with text descriptions and a two-column layout containing multiple images.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.604Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "about"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "about6",
+    "collection": "block",
+    "group": "about",
+    "code": "const About6 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-start gap-6 lg:flex-row\">\n          <div className=\"flex w-full flex-col items-start justify-start gap-24 lg:w-1/2\">\n            <div className=\"pr-6\">\n              <h1 className=\"mb-6 text-4xl font-bold md:text-5xl lg:mb-10 lg:text-6xl\">\n                Our Story\n              </h1>\n              <p className=\"mb-9 lg:text-xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed\n                alias repellendus perferendis earum facilis est soluta\n                consequatur placeat hic aliquid exercitationem, ex molestias nam\n                veniam distinctio maxime culpa magnam autem.\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                Similique dolore quas placeat expedita aliquam rerum tempore\n                amet, sequi ipsa ad quam, adipisci exercitationem nihil,\n                sapiente laborum minus doloribus consequuntur sed. Quo\n                repudiandae nihil quas voluptates, aut beatae reiciendis aliquid\n                perspiciatis quae explicabo inventore temporibus laborum,\n                nostrum omnis quos excepturi dolorum reprehenderit vel labore\n                eaque libero perferendis? Qui illo numquam beatae?\n              </p>\n            </div>\n            <div className=\"flex flex-col items-center justify-center gap-6 md:flex-row\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-MChSQHxGZrQ-unsplash.jpg\"\n                alt=\"about 1\"\n                className=\"aspect-[0.7] w-full rounded-lg object-cover md:w-1/2\"\n              />\n              <div className=\"flex w-full flex-col items-center justify-center gap-6 md:w-1/2\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-AkftcHujUmk-unsplash.jpg\"\n                  alt=\"about 2\"\n                  className=\"aspect-[1.1] rounded-lg object-cover\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-vGgn0xLdy8s-unsplash.jpg\"\n                  alt=\"about 3\"\n                  className=\"aspect-[0.7] rounded-lg object-cover\"\n                />\n              </div>\n            </div>\n          </div>\n          <div className=\"flex w-full flex-col items-center justify-center gap-12 pt-12 lg:w-1/2 lg:pt-48\">\n            <div className=\"flex flex-col items-center justify-center gap-6 md:flex-row\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/johnson-wang-iI4sR_nkkbc-unsplash.jpg\"\n                alt=\"about 4\"\n                className=\"aspect-[0.9] w-full rounded-lg object-cover md:w-1/2\"\n              />\n              <div className=\"flex w-full flex-col items-center justify-center gap-6 md:w-1/2\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg\"\n                  alt=\"about 5\"\n                  className=\"aspect-[0.8] rounded-lg object-cover\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/alvin-engler-bIhpiQA009k-unsplash.jpg\"\n                  alt=\"about 6\"\n                  className=\"aspect-[0.9] rounded-lg object-cover\"\n                />\n              </div>\n            </div>\n            <div className=\"px-8\">\n              <h1 className=\"mb-8 text-2xl font-semibold lg:mb-6\">\n                Our Workplace\n              </h1>\n              <p className=\"mb-9 lg:text-xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit\n                quae vel rem tenetur illum aspernatur. Ea, facere soluta cumque\n                laboriosam repudiandae quaerat inventore dolores saepe pariatur,\n                adipisci atque voluptate doloribus!\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure\n                aliquid laudantium minus distinctio exercitationem odio non\n                nihil blanditiis quae, beatae assumenda ad reiciendis soluta\n                dolorem. Natus repellendus quidem dolorum temporibus!\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { About6 };\n"
+}

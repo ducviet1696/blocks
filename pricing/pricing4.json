@@ -1,0 +1,70 @@
+{
+    "id": "pricing4",
+    "access": "basic",
+    "weight": 20,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing4.jpg",
+    "thumbnail": "pricing4-4x3.webp",
+    "description": "A component displaying a pricing section with 3 tiers and a customizable payment frequency toggle (Monthly/Yearly). Includes feature lists and call-to-action buttons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.637Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "radio-group",
+            "registryId": "shadcn",
+            "registryItemUrl": "radio-group",
+            "docsUrl": "https://ui.shadcn.com/docs/components/radio-group"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "pricing4",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { Check } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Label } from \"@/components/ui/label\";\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Pricing4 = () => {\n  const [isAnnually, setIsAnnually] = useState(false);\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-7xl flex-col gap-6\">\n          <h2 className=\"text-pretty text-4xl font-bold lg:text-6xl\">\n            Pricing\n          </h2>\n          <div className=\"flex flex-col justify-between gap-10 md:flex-row\">\n            <p className=\"text-muted-foreground max-w-3xl lg:text-xl\">\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat\n              odio, expedita neque ipsum pariatur suscipit!\n            </p>\n            <div className=\"bg-muted flex h-11 w-fit shrink-0 items-center rounded-md p-1 text-lg\">\n              <RadioGroup\n                defaultValue=\"monthly\"\n                className=\"h-full grid-cols-2\"\n                onValueChange={(value) => {\n                  setIsAnnually(value === \"annually\");\n                }}\n              >\n                <div className='has-[button[data-state=\"checked\"]]:bg-background h-full rounded-md transition-all'>\n                  <RadioGroupItem\n                    value=\"monthly\"\n                    id=\"monthly\"\n                    className=\"peer sr-only\"\n                  />\n                  <Label\n                    htmlFor=\"monthly\"\n                    className=\"text-muted-foreground peer-data-[state=checked]:text-primary flex h-full cursor-pointer items-center justify-center px-7 font-semibold\"\n                  >\n                    Monthly\n                  </Label>\n                </div>\n                <div className='has-[button[data-state=\"checked\"]]:bg-background h-full rounded-md transition-all'>\n                  <RadioGroupItem\n                    value=\"annually\"\n                    id=\"annually\"\n                    className=\"peer sr-only\"\n                  />\n                  <Label\n                    htmlFor=\"annually\"\n                    className=\"text-muted-foreground peer-data-[state=checked]:text-primary flex h-full cursor-pointer items-center justify-center gap-1 px-7 font-semibold\"\n                  >\n                    Yearly\n                  </Label>\n                </div>\n              </RadioGroup>\n            </div>\n          </div>\n          <div className=\"flex w-full flex-col items-stretch gap-6 md:flex-row\">\n            <div className=\"flex w-full flex-col rounded-lg border p-6 text-left\">\n              <Badge className=\"mb-8 block w-fit\">FREE</Badge>\n              <span className=\"text-4xl font-medium\">$0</span>\n              <p className=\"text-muted-foreground invisible\">Per month</p>\n              <Separator className=\"my-6\" />\n              <div className=\"flex flex-col justify-between gap-20\">\n                <ul className=\"text-muted-foreground space-y-4\">\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Unlimited Integrations</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Windows, Linux, Mac support</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>24/7 Support</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Free updates</span>\n                  </li>\n                </ul>\n                <Button className=\"w-full\">Get Started</Button>\n              </div>\n            </div>\n            <div className=\"flex w-full flex-col rounded-lg border p-6 text-left\">\n              <Badge className=\"mb-8 block w-fit\">PRO</Badge>\n              {isAnnually ? (\n                <>\n                  <span className=\"text-4xl font-medium\">$99</span>\n                  <p className=\"text-muted-foreground\">Per year</p>\n                </>\n              ) : (\n                <>\n                  <span className=\"text-4xl font-medium\">$9</span>\n                  <p className=\"text-muted-foreground\">Per month</p>\n                </>\n              )}\n              <Separator className=\"my-6\" />\n              <div className=\"flex h-full flex-col justify-between gap-20\">\n                <ul className=\"text-muted-foreground space-y-4\">\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Everything in FREE</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Live call suport every month</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Unlimited Storage</span>\n                  </li>\n                </ul>\n                <Button className=\"w-full\">Purchase</Button>\n              </div>\n            </div>\n            <div className=\"bg-muted flex w-full flex-col rounded-lg border p-6 text-left\">\n              <Badge className=\"mb-8 block w-fit\">Elite</Badge>\n              {isAnnually ? (\n                <>\n                  <span className=\"text-4xl font-medium\">$249</span>\n                  <p className=\"text-muted-foreground\">Per year</p>\n                </>\n              ) : (\n                <>\n                  <span className=\"text-4xl font-medium\">$9</span>\n                  <p className=\"text-muted-foreground\">Per month</p>\n                </>\n              )}\n              <Separator className=\"my-6\" />\n              <div className=\"flex h-full flex-col justify-between gap-20\">\n                <ul className=\"text-muted-foreground space-y-4\">\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Everything in PRO</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Advanced analytics</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Custom branding</span>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <Check className=\"size-4\" />\n                    <span>Unlimited users</span>\n                  </li>\n                </ul>\n                <Button className=\"w-full\">Purchase</Button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing4 };\n"
+}

@@ -1,0 +1,52 @@
+{
+    "id": "gallery9",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery9.jpg",
+    "thumbnail": "gallery9-4x3.webp",
+    "description": "A component with a heading, badge, and a carousel displaying images and texts with navigation indicators. Features clickable sections to scroll through content.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.717Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery9",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { Code, GitBranch, Sparkle } from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\nconst sections = [\n  {\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    title: \"Design\",\n    text: \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.\",\n    logo: <Code className=\"h-5 w-5\" />,\n  },\n  {\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    title: \"Develop\",\n    text: \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.\",\n    logo: <GitBranch className=\"h-5 w-5\" />,\n  },\n  {\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    title: \"Ship\",\n    text: \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.\",\n    logo: <Sparkle className=\"h-5 w-5\" />,\n  },\n];\n\nconst Gallery9 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n  const [count, setCount] = useState(0);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    setCount(api.scrollSnapList().length);\n    setCurrent(api.selectedScrollSnap() + 1);\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap() + 1);\n    });\n  }, [api]);\n\n  const scrollToSection = (index: number) => {\n    api?.scrollTo(index);\n  };\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mb-20 flex flex-col items-center justify-center gap-8\">\n          <h1 className=\"text-4xl\">\n            Cut the time it takes to close your books\n          </h1>\n\n          <Badge\n            variant=\"secondary\"\n            className=\"px-5 py-2 text-base font-normal\"\n          >\n            Lorem ipsum dolor sit amet consectetur.\n          </Badge>\n        </div>\n        <Carousel setApi={setApi} className=\"flex flex-col gap-10\">\n          <CarouselContent>\n            {sections.map((item, index) => (\n              <CarouselItem className=\"h-full w-full\" key={index}>\n                <img\n                  src={item.img}\n                  alt=\"logo\"\n                  className=\"aspect-square h-full w-full object-cover md:aspect-[2]\"\n                />\n                <div className=\"mt-8 flex cursor-pointer flex-col gap-2 md:hidden\">\n                  <div>{item.logo}</div>\n                  <div className=\"text-lg font-medium\">{item.title}</div>\n                  <div className=\"text-lg text-muted-foreground\">\n                    {item.text}\n                  </div>\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n          <div className=\"mb-8 hidden justify-between gap-8 md:flex\">\n            {sections.map((section, index) => (\n              <div\n                key={index}\n                onClick={() => scrollToSection(index)}\n                className=\"flex cursor-pointer flex-col gap-2\"\n              >\n                <div>{section.logo}</div>\n                <div className=\"text-lg font-medium\">{section.title}</div>\n                <div\n                  className={`text-lg ${index + 1 === current ? \"text-muted-foreground\" : \"text-muted-foreground/50\"} hover:text-muted-foreground`}\n                >\n                  {section.text}\n                </div>\n              </div>\n            ))}\n          </div>\n          <div className=\"flex items-center gap-8\">\n            <div>\n              {current} / {count}\n            </div>\n            <div className=\"flex items-center justify-start gap-2\">\n              <CarouselPrevious\n                className=\"static translate-y-0\"\n                disabled={false}\n              />\n              <CarouselNext className=\"static translate-y-0\" disabled={false} />\n            </div>\n          </div>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery9 };\n"
+}

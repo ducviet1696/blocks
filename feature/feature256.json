@@ -1,0 +1,43 @@
+{
+    "id": "feature256",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature256.jpg",
+    "thumbnail": "feature256-4x3.webp",
+    "description": "A component displaying developer tools and guides, with two distinct sections. Tools section has a 2-3 column layout with icons; Guides use a 1-2 column format with text.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:37:58.520Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "card-spotlight.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/card-spotlight.json",
+            "docsUrl": "https://ui.aceternity.com/components/card-spotlight"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": false,
+    "slug": "feature256",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { CardSpotlight } from \"@/components/aceternity/card-spotlight\";\n\nconst TOOLS = [\n  {\n    name: \"Shadcn UI\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-icon.svg\",\n    className: \"h-20  \",\n  },\n  {\n    name: \"Tailwind CSS\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon-black.svg\",\n    className: \"h-14\",\n  },\n  {\n    name: \"V0\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/v0-icon.svg\",\n    className: \"h-20\",\n  },\n  {\n    name: \"React\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon-black.svg\",\n    className: \"h-20\",\n  },\n  {\n    name: \"Astro\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg\",\n    className: \"h-20\",\n  },\n  {\n    name: \"Next.js\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-icon.svg\",\n    className: \"h-19\",\n  },\n];\n\nconst GUIDES = [\n  {\n    name: \"Platform\",\n    title: \"Next.js + TypeScript\",\n  },\n  {\n    name: \"UI Framework\",\n    title: \"Tailwind CSS\",\n  },\n  {\n    name: \"Icons & Assets\",\n    title: \"Lucide, Heroicons, GitHub Octicons\",\n  },\n  {\n    name: \"Tooling\",\n    title: \"Vercel, pnpm, TurboRepo\",\n  },\n];\n\nconst Feature256 = () => {\n  return (\n    <section className=\"py-16 sm:py-20 md:py-32\">\n      <div className=\"container flex flex-col gap-16 sm:gap-20 md:gap-24\">\n        <section>\n          <div className=\"flex flex-col items-start gap-8 md:justify-between lg:flex-row\">\n            <h2 className=\"text-3xl font-light tracking-wide sm:text-4xl md:text-5xl lg:w-1/3\">\n              Developer Tools\n            </h2>\n            <div className=\"grid w-full grid-cols-2 gap-4 lg:w-2/3 lg:grid-cols-3\">\n              {TOOLS.map((logo, idx) => (\n                <CardSpotlight\n                  key={idx}\n                  className=\"bg-accent border-muted group flex h-40 w-full items-center justify-center rounded-3xl rounded-md transition-all duration-300 hover:border-white/20 hover:bg-black sm:h-44 md:h-48\"\n                >\n                  <img\n                    src={logo.image}\n                    alt={`Developer tool logo ${idx + 1}`}\n                    className={`object-contain transition-all duration-300 group-hover:brightness-0 group-hover:invert ${logo.className}`}\n                  />\n                </CardSpotlight>\n              ))}\n            </div>\n          </div>\n        </section>\n\n        <section className=\"flex flex-col gap-8 md:items-start md:justify-between lg:flex-row\">\n          <h2 className=\"text-3xl font-light tracking-wide sm:text-4xl md:text-5xl lg:w-1/3\">\n            Guides\n          </h2>\n          <div className=\"grid grid-cols-1 gap-4 sm:grid-cols-2 lg:w-2/3\">\n            {GUIDES.map((item, idx) => (\n              <CardSpotlight\n                className=\"bg-accent border-muted group flex h-52 flex-col justify-between rounded-md p-6 transition-all duration-300 hover:border-white/20 hover:bg-black sm:h-64\"\n                key={idx}\n              >\n                <div className=\"border-border w-fit rounded-2xl border px-4 py-2 text-center text-sm transition-all duration-300 group-hover:border-white/30 group-hover:text-white\">\n                  {item.name}\n                </div>\n                <div className=\"text-xl font-medium transition-all duration-300 group-hover:text-white sm:text-2xl\">\n                  {item.title}\n                </div>\n              </CardSpotlight>\n            ))}\n          </div>\n        </section>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature256 };\n"
+}

@@ -1,0 +1,51 @@
+{
+    "id": "feature136",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature136.jpg",
+    "thumbnail": "feature136-4x3.webp",
+    "description": "A component featuring a productivity tools overview with stats (installs, active users, etc.), and 3 benefits. Layout includes a 2-column section with an image and a 3-column grid for benefits.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.830Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature136",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Calendar, Target, Trophy, Users } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Feature136 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid place-content-center gap-10 lg:grid-cols-2\">\n          <div className=\"mx-auto flex max-w-3xl flex-col items-center justify-center gap-4 lg:items-start\">\n            <Badge\n              variant=\"outline\"\n              className=\"flex items-center gap-1 px-2.5 py-1.5 text-sm\"\n            >\n              <Trophy className=\"h-auto w-4\" />\n              Key Aspects\n            </Badge>\n            <h2 className=\"text-center text-3xl font-semibold lg:text-left lg:text-4xl\">\n              Boost Productivity with Core Tools\n            </h2>\n            <p className=\"text-center text-muted-foreground lg:text-left lg:text-lg\">\n              Our platform offers dynamic tools for project management, helping\n              teams work smarter and achieve success with ease. We focus on\n              delivering user-friendly solutions that enhance collaboration and\n              streamline operations.\n            </p>\n\n            <div className=\"mt-9 flex w-full flex-col justify-center gap-6 md:flex-row lg:justify-start\">\n              <div className=\"flex justify-between gap-6\">\n                <div className=\"mx-auto\">\n                  <p className=\"mb-1.5 text-3xl font-bold\">4.2M+</p>\n                  <p className=\"text-muted-foreground\">Installs</p>\n                </div>\n                <Separator orientation=\"vertical\" className=\"h-auto\" />\n                <div className=\"mx-auto\">\n                  <p className=\"mb-1.5 text-3xl font-bold\">221k+</p>\n                  <p className=\"text-muted-foreground\">Users Active</p>\n                </div>\n              </div>\n              <Separator\n                orientation=\"vertical\"\n                className=\"hidden h-auto md:block\"\n              />\n              <Separator orientation=\"horizontal\" className=\"block md:hidden\" />\n              <div className=\"flex justify-between gap-6\">\n                <div className=\"mx-auto\">\n                  <p className=\"mb-1.5 text-3xl font-bold\">4.9</p>\n                  <p className=\"text-muted-foreground\">User Rating</p>\n                </div>\n                <Separator orientation=\"vertical\" className=\"h-auto\" />\n                <div className=\"mx-auto\">\n                  <p className=\"mb-1.5 text-3xl font-bold\">40+</p>\n                  <p className=\"text-muted-foreground\">Countries</p>\n                </div>\n              </div>\n            </div>\n          </div>\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder\"\n            className=\"ml-auto max-h-[450px] w-full rounded-xl object-cover\"\n          />\n        </div>\n        <div className=\"mt-10 grid gap-6 md:grid-cols-3\">\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex flex-col items-center gap-2 lg:flex-row\">\n                <Calendar className=\"h-auto w-6\" />\n                <h3 className=\"text-center text-lg font-medium lg:text-left\">\n                  Why Select Us?\n                </h3>\n              </div>\n              <p className=\"text-center text-sm text-muted-foreground md:text-base lg:text-left\">\n                We provide a full set of management tools, including ways to\n                collaborate easily.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex flex-col items-center gap-2 lg:flex-row\">\n                <Target className=\"h-auto w-6\" />\n                <h3 className=\"text-center text-lg font-medium lg:text-left\">\n                  Our Purpose\n                </h3>\n              </div>\n              <p className=\"text-center text-sm text-muted-foreground md:text-base lg:text-left\">\n                Our goal is to simplify workflows and help teams achieve more\n                with ease.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex flex-col items-center gap-2 lg:flex-row\">\n                <Users className=\"h-auto w-6\" />\n                <h3 className=\"text-center text-lg font-medium lg:text-left\">\n                  About Us\n                </h3>\n              </div>\n              <p className=\"text-center text-sm text-muted-foreground md:text-base lg:text-left\">\n                Our team is dedicated to offering high-quality solutions with\n                passion.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature136 };\n"
+}

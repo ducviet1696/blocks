@@ -1,0 +1,52 @@
+{
+    "id": "hero40",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero40.jpg",
+    "thumbnail": "hero40-4x3.webp",
+    "description": "A component with a decorative background and a two-column layout. The first column features a welcome message and action buttons. The second showcases integration options with icons and descriptions.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.620Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "marquee",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/marquee",
+            "docsUrl": "https://magicui.design/docs/components/marquee"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero40",
+    "collection": "block",
+    "group": "hero",
+    "code": "import {\n  ArrowRight,\n  ChartLine,\n  Check,\n  Cloud,\n  CloudCog,\n  Play,\n  Share2,\n  Sparkles,\n  Video,\n} from \"lucide-react\";\n\nimport { Marquee } from \"@/components/magicui/marquee\";\nimport { Button } from \"@/components/ui/button\";\n\nconst integrations = [\n  {\n    name: \"Storage\",\n    description: \"Store your videos in your favorite storage solution.\",\n    icon: Cloud,\n  },\n  {\n    name: \"AI\",\n    description: \"Use AI to generate videos, images, and more.\",\n    icon: Sparkles,\n  },\n  {\n    name: \"Video Editing\",\n    description: \"Edit your videos with your favorite video editing software.\",\n    icon: Video,\n  },\n  {\n    name: \"Video Hosting\",\n    description: \"Host your videos on your favorite video hosting solution.\",\n    icon: CloudCog,\n  },\n  {\n    name: \"Social Media\",\n    description: \"Share your videos on your favorite social media platforms.\",\n    icon: Share2,\n  },\n  {\n    name: \"Analytics\",\n    description:\n      \"Track video performance with your favorite analytics solution.\",\n    icon: ChartLine,\n  },\n];\n\nconst Hero40 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 gap-8 md:grid-cols-2\">\n          <div className=\"flex flex-col gap-6\">\n            <h1 className=\"text-6xl font-bold\">\n              Integrate with your favorite tools\n            </h1>\n            <p className=\"text-muted-foreground text-lg\">\n              Connect your favorite tools to your video production workflow.\n              Streamline your creative process by integrating with the platforms\n              and services you already use every day.\n            </p>\n            <div className=\"flex gap-4\">\n              <Button variant=\"outline\" size=\"lg\">\n                <span>Watch Demo</span>\n                <Play />\n              </Button>\n              <Button size=\"lg\">\n                <span>Get Started</span>\n                <ArrowRight />\n              </Button>\n            </div>\n            <div className=\"flex flex-col gap-3\">\n              <div className=\"flex items-center gap-2\">\n                <Check className=\"size-4 text-green-500\" />\n                <p className=\"text-muted-foreground text-sm\">\n                  <span className=\"font-bold\">100+</span> integrations available\n                </p>\n              </div>\n              <div className=\"flex items-center gap-2\">\n                <Check className=\"size-4 text-green-500\" />\n                <p className=\"text-muted-foreground text-sm\">\n                  <span className=\"font-bold\">30-day</span> free trial\n                </p>\n              </div>\n              <div className=\"flex items-center gap-2\">\n                <Check className=\"size-4 text-green-500\" />\n                <p className=\"text-muted-foreground text-sm\">\n                  <span className=\"font-bold\">24/7</span> support included\n                </p>\n              </div>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-6\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placeholder\"\n              className=\"border-border aspect-video w-full rounded-lg border object-cover\"\n            />\n            <div className=\"relative flex w-full flex-col items-center justify-center overflow-hidden\">\n              <Marquee className=\"[--duration:30s]\">\n                {integrations.map((integration) => (\n                  <div\n                    key={integration.name}\n                    className=\"border-border dark:bg-muted flex max-w-72 gap-2 rounded-lg border p-4\"\n                  >\n                    <integration.icon className=\"mt-0.5 size-4 shrink-0\" />\n                    <div className=\"flex flex-col gap-2\">\n                      <p className=\"text-sm\">{integration.name}</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        {integration.description}\n                      </p>\n                    </div>\n                  </div>\n                ))}\n              </Marquee>\n              <Marquee reverse className=\"[--duration:30s]\">\n                {integrations.map((integration) => (\n                  <div\n                    key={integration.name}\n                    className=\"border-border dark:bg-muted flex max-w-72 gap-2 rounded-lg border p-4\"\n                  >\n                    <integration.icon className=\"mt-0.5 size-4 shrink-0\" />\n                    <div className=\"flex flex-col gap-2\">\n                      <p className=\"text-sm\">{integration.name}</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        {integration.description}\n                      </p>\n                    </div>\n                  </div>\n                ))}\n              </Marquee>\n              <div className=\"from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r\"></div>\n              <div className=\"from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l\"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero40 };\n"
+}

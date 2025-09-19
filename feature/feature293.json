@@ -1,0 +1,60 @@
+{
+    "id": "feature293",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature293.jpg",
+    "thumbnail": "feature293-4x3.webp",
+    "description": "A subscription component with a headline, description, email input, button, and animated background. It spans the full screen, contains two columns in the input area, and features dynamic sparkles.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:51:21.784Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "sparkles.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/sparkles.json",
+            "docsUrl": "https://ui.aceternity.com/components/sparkles"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature",
+            "waitlist"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature293",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { SparklesCore } from \"@/components/aceternity/sparkles\";\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\n\nconst Feature293 = () => {\n  return (\n    <section className=\"bg-background text-foreground dark relative h-screen w-screen overflow-hidden py-32\">\n      <div className=\"container relative flex h-full flex-col items-center justify-center\">\n        <div className=\"w-full max-w-lg text-center\">\n          <h1 className=\"relative z-20 text-center text-5xl font-semibold tracking-tighter md:text-6xl lg:text-7xl\">\n            Subscribe for New Releases\n          </h1>\n          <p className=\"text-muted-foreground/50 mt-4\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sed\n            voluptate sequi molestias nam exercitationem.\n          </p>\n          <div className=\"mt-10 flex w-full max-w-lg gap-2\">\n            <Input\n              className=\"lg:h-13 h-11 w-full rounded-2xl border-none\"\n              placeholder=\"Enter Your email\"\n            />\n            <Button className=\"lg:h-13 h-11 rounded-2xl !px-4\">\n              Subscribe <ArrowRight className=\"size-4\" />\n            </Button>\n          </div>\n        </div>\n        <div className=\"relative mt-5 h-40 w-[40rem]\">\n          {/* Gradients */}\n          <div className=\"absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm\" />\n          <div className=\"absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent\" />\n          <div className=\"absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm\" />\n          <div className=\"absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent\" />\n\n          {/* Core component */}\n          <SparklesCore\n            background=\"transparent\"\n            minSize={0.4}\n            maxSize={1}\n            particleDensity={1200}\n            className=\"h-full w-full\"\n            particleColor=\"#FFFFFF\"\n          />\n\n          {/* Radial Gradient to prevent sharp edges */}\n          <div className=\"bg-background absolute inset-0 h-full w-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]\"></div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature293 };\n"
+}

@@ -1,0 +1,46 @@
+{
+    "id": "gallery7",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery7.jpg",
+    "thumbnail": "gallery7-4x3.webp",
+    "description": "A component that combines a 2-column text intro with a looping AI-themed image carousel. Unique feature: staggered image positions.",
+    "createdAt": [
+        3,
+        "2025-02-20T23:47:50.797Z"
+    ],
+    "dependencies": [
+        "embla-carousel-auto-scroll",
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery7",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport AutoScroll from \"embla-carousel-auto-scroll\";\nimport { MoveRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst images = [\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n];\n\nconst Gallery7 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mb-12 grid grid-cols-1 gap-x-12 gap-y-6 md:mb-16 md:grid-cols-2 md:gap-x-24\">\n          <div className=\"flex flex-col gap-8 md:gap-12\">\n            <h1 className=\"text-3xl font-bold md:text-4xl\">\n              Bringing your data to life with the power of AI\n            </h1>\n          </div>\n          <p>\n            We thrive on the power of AI. Our team is made up of some of the\n            most talented people in the world, and we&apos;re looking for new\n            ways to push the boundaries of what&apos;s possible. We&apos;re a\n            team of data scientists.\n          </p>\n          <a href=\"#\" className=\"font-medium hover:underline\">\n            Explore our solutions <MoveRight className=\"ml-2 inline size-5\" />\n          </a>\n        </div>\n      </div>\n      <div className=\"w-full\">\n        <div className=\"max-w-[100vw] overflow-x-hidden\">\n          <Carousel\n            opts={{\n              loop: true,\n            }}\n            plugins={[\n              AutoScroll({\n                speed: 0.9,\n              }),\n            ]}\n            className=\"pointer-events-none\"\n          >\n            <CarouselContent>\n              {images.map((image, index) => (\n                <CarouselItem key={index} className=\"basis-auto\">\n                  <div className=\"max-h-80 max-w-60\">\n                    <img\n                      src={image}\n                      alt=\"placeholder\"\n                      className={cn(\n                        \"mt-7 h-full w-full rounded-md object-cover\",\n                        index % 2 === 0 && \"mt-16\",\n                      )}\n                    />\n                  </div>\n                </CarouselItem>\n              ))}\n            </CarouselContent>\n          </Carousel>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery7 };\n"
+}

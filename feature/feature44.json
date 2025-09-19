@@ -1,0 +1,43 @@
+{
+    "id": "feature44",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature44.jpg",
+    "thumbnail": "feature44-4x3.webp",
+    "description": "A component displaying a grid of integration options with images and descriptions, adaptable from 1 to 3 columns.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.572Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature44",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Card } from \"@/components/ui/card\";\n\nconst integrations = [\n  {\n    title: \"Slack\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  },\n  {\n    title: \"Google Drive\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n  },\n  {\n    title: \"Dropbox\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n  },\n  {\n    title: \"Github\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n  },\n  {\n    title: \"Figma\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\",\n  },\n  {\n    title: \"Trello\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg\",\n  },\n  {\n    title: \"Asana\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  },\n  {\n    title: \"Jira\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n  },\n];\n\nconst Feature44 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h2 className=\"mb-4 text-2xl font-semibold lg:text-4xl\">\n          Integrations\n        </h2>\n        <p className=\"text-muted-foreground lg:text-lg\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui\n          dignissimos odit.\n        </p>\n        <ul className=\"mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3\">\n          {integrations.map((integration, i) => (\n            <li key={i}>\n              <Card className=\"p-6\">\n                <img\n                  src={integration.image}\n                  alt={integration.title}\n                  className=\"w-14\"\n                />\n                <h3 className=\"mt-4 mb-1 text-lg font-medium\">\n                  {integration.title}\n                </h3>\n                <p className=\"text-sm text-muted-foreground\">\n                  {integration.description}\n                </p>\n              </Card>\n            </li>\n          ))}\n        </ul>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature44 };\n"
+}

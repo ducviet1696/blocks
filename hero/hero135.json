@@ -1,0 +1,58 @@
+{
+    "id": "hero135",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero135.jpg",
+    "thumbnail": "hero135-4x3.webp",
+    "description": "A component with a section for customer stories and a video. It has a 2-column layout with text-badges, headlines, paragraphs, and a play button overlaying a looped video. A dialog for fullscreen video playback is included.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:29:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "dialog",
+            "registryId": "shadcn",
+            "registryItemUrl": "dialog",
+            "docsUrl": "https://ui.shadcn.com/docs/components/dialog"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero135",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\nimport { MessagesSquare, Play } from \"lucide-react\";\nimport { Fragment, useState } from \"react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Dialog,\n  DialogContent,\n  DialogHeader,\n  DialogTitle,\n} from \"@/components/ui/dialog\";\n\nconst Hero135 = () => {\n  const [isVideoOpen, setIsVideoOpen] = useState(false);\n\n  return (\n    <Fragment>\n      <section className=\"bg-primary/5 py-12 font-sans md:py-20\">\n        <div className=\"container\">\n          <div className=\"flex flex-col justify-center gap-8 lg:flex-row lg:items-center\">\n            <div className=\"flex flex-1 flex-col gap-10\">\n              <div className=\"bg-muted flex w-fit items-center gap-2 rounded-md py-2 pl-4 pr-3\">\n                <MessagesSquare className=\"stroke-primary h-7 w-7\" />\n                <div className=\"text-foreground text-lg font-bold\">\n                  Customer Stories\n                </div>\n              </div>\n              <h1 className=\"text-foreground max-w-96 text-7xl font-medium lg:text-8xl\">\n                Client Journeys\n              </h1>\n              <p className=\"text-muted-foreground max-w-96 text-3xl leading-normal lg:text-4xl\">\n                Inspiring tales of bold companies thriving with Us.\n              </p>\n            </div>\n            <div className=\"flex-1\">\n              <div className=\"relative w-full overflow-hidden rounded-3xl\">\n                <AspectRatio ratio={1}>\n                  <div className=\"size-full\">\n                    <video\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/man-1.mp4\"\n                      muted\n                      autoPlay\n                      loop\n                      className=\"size-full object-cover object-center\"\n                    />\n                    <Button\n                      size=\"icon\"\n                      onClick={() => setIsVideoOpen(true)}\n                      className=\"bg-background hover:bg-background absolute bottom-0 left-0 m-10 flex size-fit w-fit items-center gap-4 rounded-full py-3 pl-3 pr-8 transition-transform hover:scale-105\"\n                    >\n                      <div className=\"bg-primary flex h-20 w-20 rounded-full\">\n                        <Play className=\"size-7! m-auto fill-white stroke-white\" />\n                      </div>\n                      <div>\n                        <div className=\"text-foreground text-left text-base font-semibold\">\n                          John Doe\n                        </div>\n                        <div className=\"text-muted-foreground text-left text-base font-medium\">\n                          CEO\n                        </div>\n                      </div>\n                    </Button>\n                  </div>\n                </AspectRatio>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>\n        <DialogContent className=\"sm:max-w-[800px]\">\n          <DialogHeader>\n            <DialogTitle>Presentation Video</DialogTitle>\n          </DialogHeader>\n          <div className=\"aspect-video\">\n            <iframe\n              className=\"h-full w-full\"\n              src=\"https://www.youtube.com/embed/your-video-id\"\n              title=\"Presentation Video\"\n              allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n              allowFullScreen\n            ></iframe>\n          </div>\n        </DialogContent>\n      </Dialog>\n    </Fragment>\n  );\n};\n\nexport { Hero135 };\n"
+}

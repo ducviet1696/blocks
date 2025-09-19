@@ -1,0 +1,45 @@
+{
+    "id": "testimonial20",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial20.jpg",
+    "thumbnail": "testimonial20-4x3.webp",
+    "description": "A two-column testimonial block with dashed borders, featuring quotes, avatars, and names. Decorated with sparkle icons at its corners.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.781Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "testimonial20",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "import { Sparkle } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\n\nconst Testimonial20 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"relative grid border border-dashed md:grid-cols-2\">\n          <div className=\"border-dashed px-6 py-12 md:border-r md:px-12 md:py-16\">\n            <p className=\"mb-6 text-center font-medium md:text-xl\">\n              \u201cThe platform has exceeded our expectations in every way. The\n              implementation was smooth and\n              <strong className=\"ml-1 font-bold\">\n                the results are outstanding!\u201d\n              </strong>\n            </p>\n            <div className=\"flex flex-col items-center justify-center gap-4 md:flex-row\">\n              <Avatar className=\"size-14 rounded-full border\">\n                <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\" />\n              </Avatar>\n              <p className=\"text-center font-medium md:text-left\">\n                Sarah Mitchell, Director of Operations\n              </p>\n            </div>\n          </div>\n          <div className=\"px-6 py-12 text-center md:px-12 md:py-16\">\n            <p className=\"mb-6 text-center font-medium md:text-xl\">\n              \u201cThe team delivered\n              <strong className=\"mx-1 font-bold\">exceptional quality</strong>\n              throughout the entire process. The support has been remarkable at\n              every step.\u201d\n            </p>\n            <div className=\"flex flex-col items-center justify-center gap-4 md:flex-row\">\n              <Avatar className=\"size-14 rounded-full border\">\n                <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\" />\n              </Avatar>\n              <p className=\"text-center font-medium md:text-left\">\n                Michael Chen, Technical Lead\n              </p>\n            </div>\n          </div>\n          <Sparkle\n            strokeWidth={1}\n            className=\"absolute -top-[9px] -left-[9px] size-4 fill-primary\"\n          />\n          <Sparkle\n            strokeWidth={1}\n            className=\"absolute -top-2 -right-2 size-4 fill-primary\"\n          />\n          <Sparkle\n            strokeWidth={1}\n            className=\"absolute -right-2 -bottom-2 size-4 fill-primary\"\n          />\n          <Sparkle\n            strokeWidth={1}\n            className=\"absolute -bottom-2 -left-2 size-4 fill-primary\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial20 };\n"
+}

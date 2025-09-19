@@ -1,0 +1,47 @@
+{
+    "id": "hero238",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero238.jpg",
+    "thumbnail": "hero238-4x3.webp",
+    "description": "A visually engaging component displaying premium benefits with animation. Includes heading, two buttons, and a list with icons. Two-column layout on large screens, single-column on smaller. Unique fading animated note card on the right.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:35.904Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero238",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight, Blocks, Shield, Star, Zap } from \"lucide-react\";\nimport React, { ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero238 = () => {\n  const benefits = [\n    {\n      icon: Zap,\n      title: \"Early Access \",\n    },\n    {\n      icon: Star,\n      title: \"Latest Features \",\n    },\n    {\n      icon: Shield,\n      title: \"Priority Support\",\n    },\n    {\n      icon: Blocks,\n      title: \"Exclusive Blocks\",\n    },\n  ];\n\n  return (\n    <section className=\"h-full overflow-hidden w-screen lg:h-screen\">\n      <AuroraBackground>\n        <div className=\"container relative py-32 flex h-full flex-col lg:flex-row\">\n          <div className=\"mt-auto space-y-12 lg:w-1/2\">\n            <h1 className=\"mt-3 max-w-xl text-5xl font-medium font-semibold tracking-tighter lg:text-6xl\">\n              Unlock the Premium Blocks with Just one time payment\n            </h1>\n            <div className=\"flex items-center gap-4\">\n              <Button>Get Started</Button>\n              <Button variant=\"ghost\">\n                Explore benefits <ArrowRight />\n              </Button>\n            </div>\n            <ul className=\"mt-20 flex flex-wrap gap-4\">\n              {benefits.map((benifit, index) => {\n                const Icon = benifit.icon;\n                return (\n                  <li key={benifit.title} className=\"flex items-center gap-2\">\n                    <div className=\"size-\">\n                      <Icon className=\"size-4\" />\n                    </div>\n                    <span className=\"text-sm\">{benifit.title}</span>\n                    {index !== benefits.length - 1 && (\n                      <div className=\"bg-foreground ml-2 size-1 rounded-full\" />\n                    )}\n                  </li>\n                );\n              })}\n            </ul>\n          </div>\n          <div className=\"relative flex h-[500px] w-full items-center justify-center overflow-hidden lg:w-1/2\">\n            <motion.div\n              initial={{ opacity: 0, y: \"50%\" }}\n              animate={{ opacity: 1, y: 0 }}\n              transition={{ duration: 0.2, ease: \"easeOut\" }}\n              className=\"bg-primary text-secondary absolute bottom-0 right-0 w-[210px] rounded-2xl p-4 text-sm\"\n            >\n              <span className=\"mr-3 inline-block size-2 rounded-full bg-orange-500\" />\n              <span className=\"font-semibold\">ShadcnBlocks</span>\n              <span className=\"text-muted-foreground\">\n                \u2014 blocks Lorem ipsum dolor sit amet, consectetur amor{\" \"}\n              </span>\n            </motion.div>\n          </div>\n        </div>\n      </AuroraBackground>\n    </section>\n  );\n};\n\nexport { Hero238 };\n\n// Below is the modified component from Aceternity UI\n// Original source: npx shadcn@latest add https://ui.aceternity.com/registry/aurora-background.json\n// Modified so we could change the aurora animate class and colors\n\ninterface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {\n  children: ReactNode;\n  showRadialGradient?: boolean;\n}\n\nexport const AuroraBackground = ({\n  className,\n  children,\n  showRadialGradient = true,\n  ...props\n}: AuroraBackgroundProps) => {\n  return (\n    <main>\n      <div\n        className={cn(\n          \"transition-bg relative flex h-[100vh] flex-col items-center justify-center bg-zinc-50 text-slate-950 dark:bg-zinc-900\",\n          className,\n        )}\n        {...props}\n      >\n        <div\n          className=\"absolute inset-0 overflow-hidden\"\n          style={\n            {\n              \"--aurora\":\n                \"repeating-linear-gradient(100deg,#000_10%,#666_15%,#ccc_20%,#fff_25%,#333_30%)\",\n              \"--dark-gradient\":\n                \"repeating-linear-gradient(100deg,#000_0%,#000_7%,transparent_10%,transparent_12%,#000_16%)\",\n              \"--white-gradient\":\n                \"repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)\",\n\n              \"--gray-200\": \"#ccc\",\n              \"--gray-400\": \"#666\",\n              \"--gray-800\": \"#333\",\n              \"--black\": \"#000\",\n              \"--white\": \"#fff\",\n              \"--transparent\": \"transparent\",\n            } as React.CSSProperties\n          }\n        >\n          <div\n            //   I'm sorry but this is what peak developer performance looks like // trigger warning\n            className={cn(\n              `after:animate-aurora-background pointer-events-none absolute -inset-[10px] opacity-50 blur-[10px] invert filter will-change-transform [--aurora:repeating-linear-gradient(100deg,var(--black)_10%,var(--gray-400)_15%,var(--gray-200)_20%,var(--white)_25%,var(--gray-800)_30%)] [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)] [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)] [background-image:var(--white-gradient),var(--aurora)] [background-position:50%_50%,50%_50%] [background-size:300%,_200%] after:absolute after:inset-0 after:mix-blend-difference after:content-[\"\"] after:[background-attachment:fixed] after:[background-image:var(--white-gradient),var(--aurora)] after:[background-size:200%,_100%] dark:invert-0 dark:[background-image:var(--dark-gradient),var(--aurora)] after:dark:[background-image:var(--dark-gradient),var(--aurora)]`,\n\n              showRadialGradient &&\n                `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`,\n            )}\n          ></div>\n        </div>\n        {children}\n      </div>\n    </main>\n  );\n};\n"
+}

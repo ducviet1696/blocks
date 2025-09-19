@@ -1,0 +1,45 @@
+{
+    "id": "feature189",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature189.jpg",
+    "thumbnail": "feature189-4x3.webp",
+    "description": "This component showcases a 2-column layout: overlapping images on the left and a content section with a headline, feature list, and button on the right.",
+    "createdAt": [
+        3,
+        "2025-01-23T07:21:57.732Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature189",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature189 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid items-center gap-12 lg:grid-cols-2\">\n          <div className=\"relative mb-8 lg:mb-0\">\n            {/* Middle Image */}\n            <div className=\"relative -top-12 z-10 mx-auto w-[50%] sm:w-[35%]\">\n              <img\n                alt=\"Placeholder 2\"\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                className=\"h-[200px] rounded-lg object-cover shadow-lg sm:h-[300px]\"\n              />\n            </div>\n            {/* Left Image */}\n            <div className=\"absolute top-8 left-0 z-0 w-[50%] -rotate-12 sm:w-[35%]\">\n              <img\n                alt=\"Placeholder 1\"\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                className=\"h-[200px] rounded-lg object-cover shadow-lg sm:h-[300px]\"\n              />\n            </div>\n            {/* Right Image */}\n            <div className=\"absolute top-8 right-0 z-20 w-[50%] rotate-12 sm:w-[35%]\">\n              <img\n                alt=\"Placeholder 3\"\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                className=\"h-[200px] rounded-lg object-cover shadow-lg sm:h-[300px]\"\n              />\n            </div>\n          </div>\n\n          {/* Right Side: Content Section */}\n          <div className=\"max-w-xl max-lg:mx-auto lg:ml-auto\">\n            <h2 className=\"text-2xl font-medium text-black sm:text-3xl md:text-4xl lg:max-w-[80%]\">\n              Transform your business with our tools\n            </h2>\n\n            {/* List of Features */}\n            <div className=\"mt-6 grid gap-6 sm:mt-10 sm:gap-10\">\n              {/* Feature 1 */}\n              <div className=\"flex items-start gap-4\">\n                <div>\n                  <p className=\"font-semibold text-black\">Boost productivity</p>\n                  <p className=\"mt-1 text-sm text-muted-foreground sm:text-base\">\n                    Automate repetitive tasks and streamline your workflow to\n                    focus on what truly matters.\n                  </p>\n                </div>\n              </div>\n\n              {/* Feature 2 */}\n              <div className=\"flex items-start gap-4\">\n                <div>\n                  <p className=\"font-semibold text-black\">\n                    Real-time collaboration\n                  </p>\n                  <p className=\"mt-1 text-sm text-muted-foreground sm:text-base\">\n                    Work seamlessly with your team, no matter where they are,\n                    with real-time updates and communication.\n                  </p>\n                </div>\n              </div>\n\n              {/* Feature 3 */}\n              <div className=\"flex items-start gap-4\">\n                <div>\n                  <p className=\"font-semibold text-black\">Advanced analytics</p>\n                  <p className=\"mt-1 text-sm text-muted-foreground sm:text-base\">\n                    Gain insights into your performance with powerful analytics\n                    and data-driven decision-making tools.\n                  </p>\n                </div>\n              </div>\n            </div>\n\n            {/* Button */}\n            <Button\n              variant=\"secondary\"\n              className=\"mt-6 flex items-center gap-1 sm:mt-10\"\n            >\n              Learn more\n              <ArrowRight className=\"size-4\" />\n            </Button>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature189 };\n"
+}

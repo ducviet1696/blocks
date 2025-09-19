@@ -1,0 +1,50 @@
+{
+    "id": "testimonial12",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial12.jpg",
+    "thumbnail": "testimonial12-4x3.webp",
+    "description": "A component displaying carousel testimonials in a 3-column layout, featuring image+text on the left and detailed stats on the right.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.652Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial",
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "testimonial12",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "import {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Testimonial12 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"relative rounded-2xl bg-muted\">\n          <Carousel className=\"static\">\n            <CarouselContent className=\"-ml-4\">\n              <CarouselItem className=\"grid grid-cols-1 gap-y-10 pt-4 pr-4 pb-14 pl-8 sm:pt-8 lg:grid-cols-3 lg:gap-10 lg:p-20\">\n                <div>\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                    alt=\"placeholder\"\n                    className=\"mx-auto max-h-80 rounded-xl lg:mx-0 lg:max-h-none\"\n                  />\n                  <div className=\"mt-4 text-center\">\n                    <h3 className=\"font-semibold\">John Doe</h3>\n                    <p className=\"text-muted-foreground\">CEO, Company Name</p>\n                  </div>\n                </div>\n                <div className=\"col-span-2\">\n                  <div className=\"mb-6 flex items-center justify-center gap-2 lg:mb-8 lg:justify-start\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nike-icon.svg\"\n                      alt=\"logo\"\n                      className=\"h-auto w-7 lg:w-11\"\n                    />\n                    <span className=\"text-xl font-semibold lg:text-3xl\">\n                      Company Name\n                    </span>\n                  </div>\n                  <p className=\"text-center text-xl font-semibold lg:text-left lg:text-2xl\">\n                    \u201cLorem ipsum dolor sit amet, consectetur adipiscing elit.\n                    Sed do eiusmod tempor incididunt ut labore et dolore magna\n                    aliqua\u201d\n                  </p>\n                  <Separator className=\"my-8 lg:my-10\" />\n                  <div className=\"grid justify-center gap-10 text-center md:grid-cols-2 lg:justify-start lg:text-left\">\n                    <div className=\"flex flex-col\">\n                      <span className=\"mb-4 text-4xl font-semibold md:text-6xl\">\n                        2.2x\n                      </span>\n                      <span className=\"font-medium\">Monthly Active Users</span>\n                      <span className=\"text-muted-foreground\">\n                        Since last month\n                      </span>\n                    </div>\n                    <div className=\"flex flex-col\">\n                      <span className=\"mb-4 text-4xl font-semibold md:text-6xl\">\n                        256%\n                      </span>\n                      <span className=\"font-medium\">Increase in Revenue</span>\n                      <span className=\"text-muted-foreground\">\n                        Since last year\n                      </span>\n                    </div>\n                  </div>\n                </div>\n              </CarouselItem>\n              <CarouselItem className=\"grid grid-cols-1 gap-y-10 pt-4 pr-4 pb-14 pl-8 sm:pt-8 lg:grid-cols-3 lg:gap-10 lg:p-20\">\n                <div>\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                    alt=\"placeholder\"\n                    className=\"mx-auto max-h-80 rounded-xl lg:mx-0 lg:max-h-none\"\n                  />\n                  <div className=\"mt-4 text-center\">\n                    <h3 className=\"font-semibold\">Jane Doe</h3>\n                    <p className=\"text-muted-foreground\">CTO, Company 2</p>\n                  </div>\n                </div>\n                <div className=\"col-span-2\">\n                  <div className=\"mb-6 flex items-center justify-center gap-2 lg:mb-8 lg:justify-start\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg\"\n                      alt=\"logo\"\n                      className=\"h-auto w-5 lg:mr-1 lg:w-9\"\n                    />\n                    <span className=\"text-xl font-semibold lg:text-3xl\">\n                      Company Name\n                    </span>\n                  </div>\n                  <p className=\"text-center text-xl font-semibold lg:text-left lg:text-2xl\">\n                    \u201cLorem ipsum dolor sit amet, consectetur adipiscing elit.\n                    Sed do eiusmod tempor incididunt ut labore et dolore magna\n                    aliqua\u201d\n                  </p>\n                  <Separator className=\"my-8 lg:my-10\" />\n                  <div className=\"grid justify-center gap-10 text-center md:grid-cols-2 lg:justify-start lg:text-left\">\n                    <div className=\"flex flex-col\">\n                      <span className=\"mb-4 text-4xl font-semibold md:text-6xl\">\n                        1.5x\n                      </span>\n                      <span className=\"font-medium\">Monthly Active Users</span>\n                      <span className=\"text-muted-foreground\">\n                        Since last month\n                      </span>\n                    </div>\n                    <div className=\"flex flex-col\">\n                      <span className=\"mb-4 text-4xl font-semibold md:text-6xl\">\n                        150%\n                      </span>\n                      <span className=\"font-medium\">Increase in Revenue</span>\n                      <span className=\"text-muted-foreground\">\n                        Since last year\n                      </span>\n                    </div>\n                  </div>\n                </div>\n              </CarouselItem>\n            </CarouselContent>\n            <div className=\"absolute right-6 bottom-6 z-10 lg:right-10 lg:bottom-10\">\n              <div className=\"relative flex items-center gap-4\">\n                <CarouselPrevious className=\"static translate-y-0\" />\n                <CarouselNext className=\"static translate-y-0\" />\n              </div>\n            </div>\n          </Carousel>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial12 };\n"
+}

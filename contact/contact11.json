@@ -1,0 +1,63 @@
+{
+    "id": "contact11",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "contact11.jpg",
+    "thumbnail": "contact11-4x3.webp",
+    "description": "A component featuring a contact form with fields for personal and company details, alongside sections for corporate information, email contacts, and social media links.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.571Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "textarea",
+            "registryId": "shadcn",
+            "registryItemUrl": "textarea",
+            "docsUrl": "https://ui.shadcn.com/docs/components/textarea"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "contact"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "contact11",
+    "collection": "block",
+    "group": "contact",
+    "code": "import { Facebook, Linkedin, Twitter } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nconst formFields = [\n  {\n    label: \"Full name\",\n    name: \"fullName\",\n    placeholder: \"First and last name\",\n    type: \"text\",\n  },\n  {\n    label: \"Work email address\",\n    name: \"email\",\n    placeholder: \"me@company.com\",\n    type: \"email\",\n  },\n  {\n    label: \"Company name\",\n    name: \"company\",\n    placeholder: \"Company name\",\n    type: \"text\",\n    optional: true,\n  },\n  {\n    label: \"Number of employees\",\n    name: \"employees\",\n    placeholder: \"Company name\",\n    type: \"text\",\n    optional: true,\n  },\n  {\n    label: \"Your message\",\n    name: \"message\",\n    placeholder: \"Write your message\",\n    type: \"textarea\",\n  },\n];\n\nconst Contact11 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container max-w-4xl\">\n        <h1 className=\"text-center text-4xl font-semibold tracking-tight sm:text-5xl\">\n          Contact us\n        </h1>\n        <p className=\"mt-4 text-center text-muted-foreground\">\n          Hopefully this form gets through our spam filters.\n        </p>\n\n        <div className=\"mt-8 flex gap-10 max-md:flex-col md:mt-12 md:divide-x\">\n          {/* Contact Information */}\n          <div className=\"space-y-10 pr-10 md:gap-20\">\n            <div>\n              <h2 className=\"text-lg font-semibold\">Corporate office</h2>\n              <p className=\"mt-3 font-medium tracking-tight text-muted-foreground\">\n                1 Carlsberg Close\n                <br />\n                1260 Hillview, Australia\n              </p>\n            </div>\n\n            <div>\n              <h2 className=\"text-lg font-semibold\">Email us</h2>\n              <div className=\"mt-3 space-y-2\">\n                <div>\n                  <p className=\"text-primary\">Careers</p>\n                  <a\n                    href=\"#\"\n                    className=\"mt-3 tracking-tight text-muted-foreground\"\n                  >\n                    careers@example.com\n                  </a>\n                </div>\n                <div>\n                  <p className=\"text-primary\">Press</p>\n                  <a\n                    href=\"#\"\n                    className=\"mt-3 tracking-tight text-muted-foreground\"\n                  >\n                    press@example.com\n                  </a>\n                </div>\n              </div>\n            </div>\n\n            <div>\n              <h2 className=\"text-lg font-semibold\">Follow us</h2>\n              <div className=\"mt-3 flex gap-6\">\n                <a\n                  href=\"#\"\n                  className=\"text-muted-foreground hover:text-foreground\"\n                >\n                  <Facebook className=\"size-6\" />\n                </a>\n                <a\n                  href=\"#\"\n                  className=\"text-muted-foreground hover:text-foreground\"\n                >\n                  <Twitter className=\"size-6\" />\n                </a>\n                <a\n                  href=\"#\"\n                  className=\"text-muted-foreground hover:text-foreground\"\n                >\n                  <Linkedin className=\"size-6\" />\n                </a>\n              </div>\n            </div>\n          </div>\n\n          {/* Inquiry Form */}\n          <div className=\"flex-1\">\n            <h2 className=\"text-lg font-semibold\">Inquiries</h2>\n            <form className=\"mt-5 space-y-5\">\n              {formFields.map((field) => (\n                <div key={field.name} className=\"space-y-2\">\n                  <Label>\n                    {field.label}\n                    {field.optional && (\n                      <span className=\"text-muted-foreground/60\">\n                        {\" \"}\n                        (optional)\n                      </span>\n                    )}\n                  </Label>\n                  {field.type === \"textarea\" ? (\n                    <Textarea\n                      name={field.name}\n                      placeholder={field.placeholder}\n                      className=\"min-h-[120px] resize-none\"\n                    />\n                  ) : (\n                    <Input\n                      type={field.type}\n                      name={field.name}\n                      placeholder={field.placeholder}\n                    />\n                  )}\n                </div>\n              ))}\n\n              <div className=\"flex justify-end\">\n                <Button type=\"submit\" size=\"lg\">\n                  Submit\n                </Button>\n              </div>\n            </form>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Contact11 };\n"
+}

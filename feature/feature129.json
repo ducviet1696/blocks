@@ -1,0 +1,45 @@
+{
+    "id": "feature129",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature129.jpg",
+    "thumbnail": "feature129-4x3.webp",
+    "description": "A tabbed component showcasing integrations like Slack & Google Drive, featuring descriptions, images, and \"Learn more\" links. Has a title and subtitle.",
+    "createdAt": [
+        3,
+        "2024-10-17T05:25:53.971Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature129",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst tabs = [\n  {\n    id: 1,\n    tabName: \"Slack\",\n    tabDescription:\n      \"Communicate with your team, share updates, project discussions all in one place\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  },\n  {\n    id: 2,\n    tabName: \"Google Drive\",\n    tabDescription: \"Store, access, and collaborate on files with ease\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n  },\n  {\n    id: 3,\n    tabName: \"Dropbox\",\n    tabDescription: \"A reliable solution for file storage and sharing\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n  },\n  {\n    id: 4,\n    tabName: \"Github\",\n    tabDescription:\n      \"Manage your code repositories and collaborate on development projects\",\n    link: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n  },\n];\n\nconst Feature129 = () => {\n  const [activeTab, setActiveTab] = useState(\"1\");\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-3xl flex-col items-center gap-6\">\n          <h2 className=\"mb-4 text-center text-4xl font-semibold md:text-5xl\">\n            Unify Your flow with Integrations\n          </h2>\n          <p className=\"text-muted-foreground text-center text-lg md:text-xl\">\n            Streamline your processes and enhance productivity by connecting all\n            your favorite apps into one unified platform.\n          </p>\n        </div>\n        <div className=\"mt-12\">\n          <Tabs\n            defaultValue=\"1\"\n            className=\"mx-auto flex w-full flex-col items-center gap-8\"\n            value={activeTab}\n            onValueChange={setActiveTab}\n          >\n            <TabsList className=\"flex h-auto flex-wrap rounded-full p-1\">\n              {tabs.map((tab) => (\n                <TabsTrigger\n                  key={tab.id}\n                  value={tab.id.toString()}\n                  className={`rounded-full border border-solid border-transparent px-4 py-2 text-sm font-semibold transition ${activeTab === tab.id.toString() ? \"border-muted-2 border border-solid shadow-sm\" : \"\"}`}\n                >\n                  {tab.tabName}\n                </TabsTrigger>\n              ))}\n            </TabsList>\n            {tabs.map((tab) => (\n              <TabsContent\n                value={tab.id.toString()}\n                key={tab.id}\n                className=\"bg-accent mt-0 w-full overflow-hidden rounded-2xl px-14 pt-6 md:px-20 md:pt-8\"\n              >\n                <div className=\"flex flex-col justify-between\">\n                  <div className=\"mb-8 flex flex-col items-center justify-center gap-2 md:flex-row\">\n                    <p className=\"text-sm\">{tab.tabDescription}</p>\n                    <a\n                      href={tab.link}\n                      className=\"font-sm border-muted-2 whitespace-nowrap border-b-2 border-solid font-semibold\"\n                    >\n                      Learn more\n                    </a>\n                  </div>\n\n                  <div className=\"shadow- bg-background flex w-full items-center justify-center rounded-t-2xl\">\n                    <img\n                      src={tab.image}\n                      alt={tab.tabName}\n                      className=\"order-first w-full max-w-52 object-contain px-4 py-8 md:order-last md:max-w-64\"\n                    />\n                  </div>\n                </div>\n              </TabsContent>\n            ))}\n          </Tabs>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature129 };\n"
+}

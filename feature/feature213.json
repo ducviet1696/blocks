@@ -1,0 +1,49 @@
+{
+    "id": "feature213",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature213.jpg",
+    "thumbnail": "feature213-4x3.webp",
+    "description": "A component showcasing features through tabs, detailing functionality with related images and summaries. Includes a main title, 3 tabbed descriptions, and images set in a 16:9 aspect ratio.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.793Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature213",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\ninterface list {\n  title: string;\n  value: string;\n  summary: string;\n  image: {\n    src: string;\n    alt: string;\n  };\n}\n\nconst LIST: Array<list> = [\n  {\n    title: \"Edit your video simply by editing the text.\",\n    value: \"1\",\n    summary:\n      \"transcribes your recordings automatically. To edit the video, just edit the transcript\u2014hit delete to cut parts and copy-paste to rearrange segments. It\u2019s that easy.\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n      alt: \"\",\n    },\n  },\n  {\n    title: \"Crystal-clear audio delivered at lightning speed.\",\n    value: \"2\",\n    summary:\n      \"Eliminate filler words, close awkward pauses, and make it sound like a professional studio recording\u2014all with our AI and just a click or two.\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n      alt: \"\",\n    },\n  },\n  {\n    title: \"No need to remember your lines\u2014or tidy up your space.\",\n    value: \"3\",\n    summary:\n      \"Keep your gaze fixed on the camera, even if you were reading your script the entire time. Use AI green screen to swap out your messy background for a more professional one.\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n      alt: \"\",\n    },\n  },\n];\nconst Feature213 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-8 flex max-w-[52.5rem] flex-col items-center justify-between gap-6 md:mb-20\">\n          <h2 className=\"text-center text-5xl text-foreground lg:text-7xl\">\n            Speed up production without sacrificing quality\n          </h2>\n        </div>\n        <div>\n          <Tabs defaultValue={LIST[0].value} className=\"gap-14 xl:flex-row\">\n            <TabsList className=\"h-fit w-fit flex-col gap-2.5 bg-transparent p-0\">\n              {LIST.map((item, i) => (\n                <TabsTrigger\n                  className=\"flex-col items-start rounded-[0.75rem] p-5 text-left whitespace-normal data-[state=active]:bg-muted xl:max-w-[34.0625rem]\"\n                  key={`tab-trigger-${i}`}\n                  value={item.value}\n                >\n                  <div className=\"leading-normal font-bold\">{item.title}</div>\n                  <div className=\"leading-normal text-muted-foreground\">\n                    {item.summary}\n                  </div>\n                </TabsTrigger>\n              ))}\n            </TabsList>\n            {LIST.map((item, i) => (\n              <TabsContent\n                className=\"w-full\"\n                key={`tab-content-${i}`}\n                value={item.value}\n              >\n                <AspectRatio\n                  ratio={16 / 9}\n                  className=\"overflow-hidden rounded-[0.75rem]\"\n                >\n                  <img\n                    src={item.image.src}\n                    alt={item.image.alt}\n                    className=\"block size-full object-cover object-center\"\n                  />\n                </AspectRatio>\n              </TabsContent>\n            ))}\n          </Tabs>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature213 };\n"
+}

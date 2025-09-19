@@ -1,0 +1,45 @@
+{
+    "id": "feature124",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature124.jpg",
+    "thumbnail": "feature124-4x3.webp",
+    "description": "A dual-section block featuring a text column with a heading, description, checklist, and button, alongside an image column with a decorative background pattern and gradient overlays.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.648Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature124",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Check, ChevronRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst checkedItems: string[] = [\n  \"Responsive Design and Layout\",\n  \"Clean and Modern Design\",\n  \"Easy to Customize\",\n];\n\nconst Feature124 = () => {\n  return (\n    <section className=\"m-x-auto container flex flex-col items-start gap-20 py-32 md:flex-row md:items-center\">\n      <div className=\"w-full lg:w-[40%]\">\n        <h2 className=\"mb-8 text-3xl font-bold\">\n          Build faster with our blocks built for shadcn/ui\n        </h2>\n        <p className=\"mb-10\">\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n          laboriosam voluptatibus temporibus doloremque laudantium.\n        </p>\n        <ul className=\"mb-8 flex flex-col gap-2 text-muted-foreground\">\n          {checkedItems.map((item) => (\n            <li className=\"flex items-center gap-2\" key={item}>\n              <Check className=\"size-5\" /> {item}\n            </li>\n          ))}\n        </ul>\n        <Button variant=\"outline\">\n          See all blocks\n          <ChevronRight className=\"ml-2 h-4 w-4\" />\n        </Button>\n      </div>\n      <div className=\"relative flex h-[430px] w-full p-4 before:absolute before:inset-0 before:bg-primary/20 before:[mask-image:url(https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/cross-pattern.svg)] before:[mask-size:32px_32px] before:[mask-repeat:repeat]\">\n        <div className=\"absolute inset-0 z-1 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent to-background opacity-30\"></div>\n        <div className=\"relative z-10 m-auto w-[80%]\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder hero\"\n            className=\"max-h-[350px] w-full rounded-md object-cover\"\n          ></img>\n        </div>\n        <div className=\"absolute inset-0 z-5 bg-linear-to-r from-background/50 via-transparent to-background/50\"></div>\n        <div className=\"absolute inset-0 z-5 bg-linear-to-t from-background/50 via-transparent to-background/50\"></div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature124 };\n"
+}

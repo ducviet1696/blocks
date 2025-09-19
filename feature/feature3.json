@@ -1,0 +1,45 @@
+{
+    "id": "feature3",
+    "access": "basic",
+    "weight": 8,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature3.jpg",
+    "thumbnail": "feature3-4x3.webp",
+    "description": "A component showcasing a 3-column layout of cards, each featuring an icon, title, text, and image, adaptable to 1 or 2 columns on smaller screens.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.566Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature3",
+    "collection": "block",
+    "group": "feature",
+    "code": "import {\n  Code,\n  GitBranch,\n  List,\n  Play,\n  Sparkles,\n  WandSparkles,\n} from \"lucide-react\";\n\nimport {\n  Card,\n  CardContent,\n  CardFooter,\n  CardHeader,\n} from \"@/components/ui/card\";\n\nconst Feature3 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-5xl flex-col items-center gap-6 text-center\">\n          <h1 className=\"mb-6 text-4xl font-semibold text-pretty lg:text-5xl\">\n            This is where your feature goes\n          </h1>\n\n          <div className=\"mt-10 grid grid-cols-1 place-items-center gap-8 sm:grid-cols-2 lg:grid-cols-3\">\n            <Card>\n              <CardHeader className=\"pb-1\">\n                <Code className=\"size-4\" strokeWidth={1} />\n              </CardHeader>\n              <CardContent className=\"text-left\">\n                <h2 className=\"mb-1 text-lg font-semibold\">Card Title</h2>\n                <p className=\"leading-snug text-muted-foreground\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </p>\n              </CardContent>\n              <CardFooter className=\"justify-end pr-0 pb-0\">\n                <img\n                  className=\"h-40 w-full rounded-tl-md object-cover object-center\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                />\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardHeader className=\"pb-1\">\n                <Play className=\"size-4\" strokeWidth={1} />\n              </CardHeader>\n              <CardContent className=\"text-left\">\n                <h2 className=\"mb-1 text-lg font-semibold\">Card Title</h2>\n                <p className=\"leading-snug text-muted-foreground\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </p>\n              </CardContent>\n              <CardFooter className=\"justify-end pr-0 pb-0\">\n                <img\n                  className=\"h-40 w-full rounded-tl-md object-cover object-center\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                />\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardHeader className=\"pb-1\">\n                <GitBranch className=\"size-4\" strokeWidth={1} />\n              </CardHeader>\n              <CardContent className=\"text-left\">\n                <h2 className=\"mb-1 text-lg font-semibold\">Card Title</h2>\n                <p className=\"leading-snug text-muted-foreground\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </p>\n              </CardContent>\n              <CardFooter className=\"justify-end pr-0 pb-0\">\n                <img\n                  className=\"h-40 w-full rounded-tl-md object-cover object-center\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                />\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardHeader className=\"pb-1\">\n                <List className=\"size-4\" strokeWidth={1} />\n              </CardHeader>\n              <CardContent className=\"text-left\">\n                <h2 className=\"mb-1 text-lg font-semibold\">Card Title</h2>\n                <p className=\"leading-snug text-muted-foreground\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </p>\n              </CardContent>\n              <CardFooter className=\"justify-end pr-0 pb-0\">\n                <img\n                  className=\"h-40 w-full rounded-tl-md object-cover object-center\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                />\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardHeader className=\"pb-1\">\n                <WandSparkles className=\"size-4\" strokeWidth={1} />\n              </CardHeader>\n              <CardContent className=\"text-left\">\n                <h2 className=\"mb-1 text-lg font-semibold\">Card Title</h2>\n                <p className=\"leading-snug text-muted-foreground\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </p>\n              </CardContent>\n              <CardFooter className=\"justify-end pr-0 pb-0\">\n                <img\n                  className=\"h-40 w-full rounded-tl-md object-cover object-center\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                />\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardHeader className=\"pb-1\">\n                <Sparkles className=\"size-4\" strokeWidth={1} />\n              </CardHeader>\n              <CardContent className=\"text-left\">\n                <h2 className=\"mb-1 text-lg font-semibold\">Card Title</h2>\n                <p className=\"leading-snug text-muted-foreground\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </p>\n              </CardContent>\n              <CardFooter className=\"justify-end pr-0 pb-0\">\n                <img\n                  className=\"h-40 w-full rounded-tl-md object-cover object-center\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                />\n              </CardFooter>\n            </Card>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature3 };\n"
+}

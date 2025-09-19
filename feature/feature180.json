@@ -1,0 +1,45 @@
+{
+    "id": "feature180",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature180.jpg",
+    "thumbnail": "feature180-4x3.webp",
+    "description": "A component contrasting two scenarios with/without a product through icons and text in a 2-column layout, highlighting benefits and downfalls.",
+    "createdAt": [
+        3,
+        "2025-02-20T23:47:50.784Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature180",
+    "collection": "block",
+    "group": "feature",
+    "code": "import {\n  BarChart,\n  Bell,\n  Bot,\n  Check,\n  List,\n  MessageCircleOff,\n  MessageSquare,\n  Target,\n  Users,\n  X,\n} from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature180 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-xl flex-col items-center gap-5 pb-20 text-center\">\n          <Badge variant=\"outline\">How it works</Badge>\n          <h1 className=\"text-3xl font-medium text-pretty md:text-5xl\">\n            The Best way to optimize your sales team\n          </h1>\n          <p className=\"text-muted-foreground\">\n            We use AI to automate the process of finding and contacting\n            prospects and then follow up with them.\n          </p>\n        </div>\n        <div className=\"grid gap-8 md:grid-cols-2 md:gap-5\">\n          <div className=\"flex flex-col items-center gap-5 md:gap-9\">\n            <div className=\"flex items-center gap-3\">\n              <X className=\"h-6 text-red-400\" />\n              <p className=\"text-xl font-medium\">Without Acme</p>\n            </div>\n            <div className=\"h-full w-full rounded-md border p-9\">\n              <ul className=\"flex flex-col gap-8 font-medium text-primary/70\">\n                <li className=\"flex items-start gap-4\">\n                  <Users className=\"h-6 shrink-0\" />\n                  <p>Limited user targeting capabilities</p>\n                </li>\n                <li className=\"flex items-start gap-4\">\n                  <MessageSquare className=\"h-6 shrink-0\" />\n                  <p>Generic automated communication</p>\n                </li>\n                <li className=\"flex items-start gap-4\">\n                  <MessageCircleOff className=\"h-6 shrink-0\" />\n                  <p>Low engagement metrics</p>\n                </li>\n                <li className=\"flex items-start gap-4\">\n                  <List className=\"h-6 shrink-0\" />\n                  <p>Inefficient resource utilization</p>\n                </li>\n              </ul>\n            </div>\n          </div>\n          <div className=\"flex flex-col items-center gap-5 md:gap-9\">\n            <div className=\"flex items-center gap-3\">\n              <Check className=\"h-6 text-lime-400\" />\n              <p className=\"text-xl font-medium\">With Acme</p>\n            </div>\n            <div className=\"w-full rounded-md bg-linear-to-br from-primary via-primary/20 via-30% to-primary p-0.5\">\n              <div className=\"rounded-sm bg-background p-9\">\n                <ul className=\"flex flex-col gap-8 font-medium\">\n                  <li className=\"flex items-start gap-4\">\n                    <Target className=\"h-6 shrink-0\" />\n                    <p>Advanced targeting for optimal sales prospects</p>\n                  </li>\n                  <li className=\"flex items-start gap-4\">\n                    <Bot className=\"h-6 shrink-0\" />\n                    <p>AI-powered personalized communication</p>\n                  </li>\n                  <li className=\"flex items-start gap-4\">\n                    <Bell className=\"h-6 shrink-0\" />\n                    <p>Automated follow-ups with high engagement</p>\n                  </li>\n                  <li className=\"flex items-start gap-4\">\n                    <BarChart className=\"h-6 shrink-0\" />\n                    <p>Optimized sales team performance and results</p>\n                  </li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature180 };\n"
+}

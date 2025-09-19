@@ -1,0 +1,53 @@
+{
+    "id": "feature238",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature238.jpg",
+    "thumbnail": "feature238-4x3.webp",
+    "description": "A component showcasing a title, description, buttons for sign-up and demo, and three animated, overlapping cards with hover effects.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.383Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature238",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ChevronRightIcon } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\n\nconst Feature238 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <div className=\"mb-4 flex items-center justify-center gap-2\">\n          <img\n            className=\"size-6\"\n            alt=\"Copy paste icon\"\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n          />\n          <h2 className=\"text-center text-xl font-semibold tracking-tight text-foreground\">\n            Just Copy Paste\n          </h2>\n        </div>\n\n        <h1 className=\"text-center text-6xl font-bold tracking-tighter text-foreground md:text-[100px]\">\n          Amazing\n          <br />\n          components\n        </h1>\n\n        <p className=\"mx-auto mt-6 max-w-3xl text-center text-xl text-muted-foreground\">\n          Discover our collection of beautifully designed, ready-to-use\n          components that you can easily integrate into your projects.\n        </p>\n\n        <div className=\"relative mt-8 flex flex-col items-center justify-center\">\n          <Button className=\"w-75 rounded-2xl px-2 py-6 shadow-[0px_1px_3px_#0000001a,inset_0px_2px_0px_#ffffff40]\">\n            Sign up for free\n          </Button>\n          <a\n            href=\"#\"\n            className=\"group relative z-12 flex w-75 items-center justify-center rounded-2xl py-6 text-muted-foreground hover:bg-none\"\n          >\n            Book a demo\n            <ChevronRightIcon className=\"ml-1 h-4 w-4 transition-all ease-in-out group-hover:ml-4\" />\n          </a>\n        </div>\n\n        <motion.div\n          initial={{ opacity: 0 }}\n          animate={{ opacity: 100 }}\n          transition={{ ease: [0, 0.71, 0.2, 1.01], duration: 0.8 }}\n          className=\"relative mt-22 h-100\"\n        >\n          <motion.div\n            initial={{ y: 250 }}\n            animate={{ y: 0 }}\n            whileHover={{ y: -50 }}\n            transition={{ ease: [0, 0.71, 0.2, 1.01], duration: 0.8 }}\n            className=\"absolute top-20 left-0 z-8 hidden h-[350px] w-[550px] flex-col items-center justify-center rounded-3xl border border-border bg-muted p-2 md:flex\"\n          >\n            <Card className=\"relative h-full w-full rounded-2xl border\">\n              <CardContent className=\"flex h-full w-full items-center justify-center p-0\">\n                <div className=\"absolute top-4 left-4 flex items-center gap-2\">\n                  <div className=\"size-3.5 rounded-full bg-red-500\" />\n                  <div className=\"size-3.5 rounded-full bg-yellow-500\" />\n                  <div className=\"size-3.5 rounded-full bg-green-500\" />\n                </div>\n                {/* Browser Window Content */}\n                <img\n                  className=\"size-30\"\n                  alt=\"Block Logo\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n                />\n              </CardContent>\n            </Card>\n          </motion.div>\n          <motion.div\n            initial={{ y: 250 }}\n            animate={{ y: 0 }}\n            whileHover={{ y: -50 }}\n            transition={{\n              ease: [0, 0.71, 0.2, 1.01],\n              duration: 0.8,\n              delay: 0.05,\n            }}\n            className=\"absolute top-0 left-1/2 z-10 flex h-[350px] w-full max-w-[550px] -translate-x-1/2 flex-col items-center justify-center rounded-3xl border border-border bg-muted p-2\"\n          >\n            <Card className=\"relative h-full w-full rounded-2xl border bg-foreground\">\n              <CardContent className=\"flex h-full w-full items-center justify-center p-0\">\n                <div className=\"absolute top-4 left-4 flex items-center gap-2\">\n                  <div className=\"size-3.5 rounded-full bg-red-500\" />\n                  <div className=\"size-3.5 rounded-full bg-yellow-500\" />\n                  <div className=\"size-3.5 rounded-full bg-green-500\" />\n                </div>\n                {/* Browser Window Content */}\n                <img\n                  className=\"size-30\"\n                  alt=\"Block Logo\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-white-1.svg\"\n                />\n              </CardContent>\n            </Card>\n          </motion.div>\n          <motion.div\n            initial={{ y: 250 }}\n            animate={{ y: 0 }}\n            whileHover={{ y: -50 }}\n            transition={{\n              ease: [0, 0.71, 0.2, 1.01],\n              duration: 0.8,\n              delay: 0.1,\n            }}\n            className=\"absolute -top-18 right-0 z-11 hidden h-[350px] w-[550px] flex-col items-center justify-center rounded-3xl border border-border bg-muted p-2 md:flex\"\n          >\n            <Card className=\"relative h-full w-full rounded-2xl border\">\n              <CardContent className=\"flex h-full w-full items-center justify-center p-0\">\n                <div className=\"absolute top-4 left-4 flex items-center gap-2\">\n                  <div className=\"size-3.5 rounded-full bg-red-500\" />\n                  <div className=\"size-3.5 rounded-full bg-yellow-500\" />\n                  <div className=\"size-3.5 rounded-full bg-green-500\" />\n                </div>\n                {/* Browser Window Content */}\n                <img\n                  className=\"size-30\"\n                  alt=\"Block Logo\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n                />\n              </CardContent>\n            </Card>\n          </motion.div>\n        </motion.div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature238 };\n"
+}

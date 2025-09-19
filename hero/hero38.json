@@ -1,0 +1,45 @@
+{
+    "id": "hero38",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero38.jpg",
+    "thumbnail": "hero38-4x3.webp",
+    "description": "A 2-column component; left has text and buttons, right displays geometric art and shapes.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.619Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero38",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero38 = () => {\n  return (\n    <section>\n      <div className=\"container\">\n        <div className=\"grid items-center gap-8 lg:grid-cols-2\">\n          <div className=\"flex flex-col items-center py-32 text-center lg:mx-auto lg:items-start lg:px-0 lg:text-left\">\n            <p>New Release</p>\n            <h1 className=\"my-6 text-4xl font-bold text-pretty lg:text-6xl\">\n              Welcome to Our Website\n            </h1>\n            <p className=\"mb-8 max-w-xl text-muted-foreground lg:text-xl\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n              doloremque mollitia fugiat omnis! Porro facilis quo animi\n              consequatur. Explicabo.\n            </p>\n            <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start\">\n              <Button className=\"w-full sm:w-auto\">\n                <ArrowRight className=\"mr-2 size-4\" />\n                Primary\n              </Button>\n              <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n                Secondary\n              </Button>\n            </div>\n          </div>\n          <div className=\"relative aspect-3/4\">\n            <div className=\"absolute inset-0 flex items-center justify-center\">\n              <svg\n                xmlns=\"http://www.w3.org/2000/svg\"\n                version=\"1.1\"\n                viewBox=\"0 0 800 800\"\n                className=\"h-full w-full text-muted-foreground opacity-20\"\n              >\n                {Array.from(Array(720).keys()).map((dot, index, array) => {\n                  const angle = 0.2 * index;\n                  const scalar = 40 + index * (360 / array.length);\n                  const x = Math.round(Math.cos(angle) * scalar);\n                  const y = Math.round(Math.sin(angle) * scalar);\n\n                  return (\n                    <circle\n                      key={index}\n                      r={(3 * index) / array.length}\n                      cx={400 + x}\n                      cy={400 + y}\n                      opacity={1 - Math.sin(angle)}\n                    />\n                  );\n                })}\n              </svg>\n            </div>\n            <div className=\"absolute top-[10%] left-[8%] flex aspect-5/6 w-[38%] justify-center rounded-lg border border-border bg-accent\"></div>\n            <div className=\"absolute top-[20%] right-[12%] flex aspect-square w-[20%] justify-center rounded-lg border border-border bg-accent\"></div>\n            <div className=\"absolute right-[24%] bottom-[24%] flex aspect-5/6 w-[38%] justify-center rounded-lg border border-border bg-accent\"></div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero38 };\n"
+}

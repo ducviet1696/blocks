@@ -1,0 +1,43 @@
+{
+    "id": "hero179",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero179.jpg",
+    "thumbnail": "hero179-4x3.webp",
+    "description": "A component with a 2-column layout. The left column contains text layers, and the right has overlapping images with unique aspect ratios.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:34:05.350Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero179",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { AspectRatio } from \"@/components/ui/aspect-ratio\";\n\nconst Hero179 = () => {\n  return (\n    <section className=\"relative border-b border-muted bg-background\">\n      <div className=\"container pt-10\">\n        <div className=\"grid grid-cols-1 items-center gap-2 md:gap-4 lg:grid-cols-2\">\n          <div className=\"flex w-full max-w-[31.25rem] flex-col gap-9 lg:max-w-[37.5rem] lg:py-[20%] xl:py-[26%]\">\n            <p className=\"font-mono text-[clamp(0.875rem,0.875vw,1rem)] text-muted-foreground\">\n              Shared Inbox\n            </p>\n            <h1 className=\"font-bebas_neue text-[clamp(3.5rem,calc(6.5vw+2.3rem),9.5rem)] leading-[0.85] tracking-[-0.03em] text-foreground\">\n              Organize\n              <br />\n              Your Inbox\n            </h1>\n            <p className=\"text-[clamp(1.125rem,1.125vw,1.4rem)] leading-normal text-muted-foreground\">\n              Your email account doesn\u2019t have to feel like chaos. A shared inbox\n              unites all your email aliases, social messages, and teammates in\n              one space, ensuring everyone gets the answers they need.\n            </p>\n          </div>\n          <div>\n            <div className=\"relative ml-8 aspect-square w-full max-w-[56.25rem] overflow-hidden lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2\">\n              <div className=\"absolute right-0 bottom-0 w-[85%] overflow-hidden rounded-lg\">\n                <AspectRatio ratio={0.918918919 / 1}>\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                    alt=\"\"\n                    className=\"block size-full object-cover object-top-left\"\n                  />\n                </AspectRatio>\n              </div>\n              <div className=\"absolute right-0 bottom-0 w-[93%] overflow-hidden rounded-tl-lg shadow-md\">\n                <AspectRatio ratio={1.381308411 / 1}>\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                    alt=\"\"\n                    className=\"block size-full object-cover object-center\"\n                  />\n                </AspectRatio>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero179 };\n"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "hero243",
+    "access": "basic",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero243.jpg",
+    "thumbnail": "hero243-4x3.webp",
+    "description": "A component featuring a dynamic headline, a descriptive paragraph with a CTA button, and a 3-column summary with icons.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:44.995Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "container-text-flip.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/container-text-flip.json",
+            "docsUrl": "https://ui.aceternity.com/components/container-text-flip"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero243",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { TrendingUp, Users, Zap } from \"lucide-react\";\nimport React from \"react\";\n\nimport { ContainerTextFlip } from \"@/components/aceternity/container-text-flip\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero243 = () => {\n  return (\n    <section className=\"h-full w-screen overflow-hidden py-32\">\n      <div className=\"container border-b border-t border-dashed\">\n        <div className=\"relative flex w-full max-w-5xl flex-col justify-start border border-t-0 border-dashed px-5 py-12 md:items-center md:justify-center lg:mx-auto\">\n          <p className=\"text-muted-foreground flex items-center gap-2 gap-3 text-sm\">\n            <span className=\"inline-block size-2 rounded bg-green-500\" />\n            NEW BLOCKS IN 10 DAYS\n          </p>\n          <div className=\"mb-7 mt-3 w-full max-w-xl text-5xl font-medium font-semibold tracking-tighter md:mb-10 md:text-center md:text-6xl lg:relative lg:mb-0 lg:text-left lg:text-7xl\">\n            <h1 className=\"relative z-10 inline md:mr-3\">\n              A Smarter Way to <br className=\"block md:hidden\" /> Build New{\" \"}\n              <br className=\"block md:hidden\" />\n            </h1>\n            <ContainerTextFlip\n              className=\"absolute text-4xl font-medium font-semibold tracking-tighter md:bottom-4 md:left-1/2 md:-translate-x-1/2 md:text-5xl lg:-bottom-4 lg:left-auto lg:translate-x-0 lg:text-7xl\"\n              words={[\"Products\", \"Services\", \"Features\", \"Blocks\"]}\n            />\n          </div>\n        </div>\n        <div className=\"mx-auto flex w-full max-w-5xl flex-col items-center justify-center border border-b-0 border-t-0 border-dashed py-20\">\n          <div className=\"w-full max-w-2xl space-y-5 md:text-center\">\n            <p className=\"text-muted-foreground px-5 lg:text-lg\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n              enim ad minim veniam,{\" \"}\n            </p>\n            <Button className=\"mx-5 h-12 rounded-lg\">Get Started Now</Button>\n          </div>\n        </div>\n        <ul className=\"md:h-34 mx-auto grid h-44 w-full max-w-5xl grid-cols-1 border border-b-0 border-dashed md:grid-cols-2 lg:h-24 lg:grid-cols-3\">\n          <li className=\"flex h-full items-center justify-between gap-10 px-5 md:gap-3 lg:justify-center\">\n            <div className=\"bg-muted flex size-12 items-center justify-center rounded-lg\">\n              <Zap className=\"text-muted-foreground size-6\" />\n            </div>\n            <p className=\"text-muted-foreground text-lg\">\n              10x Faster Development\n            </p>\n          </li>\n          <li className=\"flex h-full items-center justify-between gap-10 border-l border-t border-dashed px-5 md:gap-3 lg:justify-center lg:border-t-0\">\n            <div className=\"bg-muted flex size-12 items-center justify-center rounded-lg\">\n              <Users className=\"text-muted-foreground size-6\" />\n            </div>\n            <p className=\"text-muted-foreground text-lg\">10,000+ Developers</p>\n          </li>\n          <li className=\"col-span-1 flex h-full items-center justify-between gap-10 border-l border-t border-dashed px-5 md:col-span-2 md:justify-center md:gap-3 lg:col-span-1 lg:border-t-0\">\n            <div className=\"bg-muted flex size-12 items-center justify-center rounded-lg\">\n              <TrendingUp className=\"text-muted-foreground size-6\" />\n            </div>\n            <p className=\"text-muted-foreground text-lg\">\n              25% Conversion Boost\n            </p>\n          </li>\n        </ul>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero243 };\n"
+}

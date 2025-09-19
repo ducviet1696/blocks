@@ -1,0 +1,55 @@
+{
+    "id": "feature120",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature120.jpg",
+    "thumbnail": "feature120-4x3.webp",
+    "description": "A component showcasing business tools with a 2-column layout, avatars, quotes, action button, and a 4-column stats grid.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.828Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature120",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Feature120 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid items-center gap-10 md:gap-20 lg:grid-cols-2\">\n          <div className=\"flex flex-col gap-2.5 py-8\">\n            <h1 className=\"text-4xl font-bold lg:text-5xl\">\n              Empower your business with the best tools\n            </h1>\n            <p className=\"text-muted-foreground\">\n              Explore our cutting-edge tools that help streamline processes and\n              maximize efficiency.\n            </p>\n            <div className=\"flex flex-col gap-6 py-10 sm:flex-row sm:gap-16\">\n              <div className=\"flex gap-4 leading-5\">\n                <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                  <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\" alt=\"avatar\" />\n                </Avatar>\n                <div className=\"text-sm\">\n                  <p className=\"font-medium\">Emily Watson</p>\n                  <p className=\"text-muted-foreground\">CEO, Visionary Tech</p>\n                </div>\n              </div>\n              <div className=\"flex gap-4 leading-5\">\n                <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                  <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\" alt=\"avatar\" />\n                </Avatar>\n                <div className=\"text-sm\">\n                  <p className=\"font-medium\">Michael Lee</p>\n                  <p className=\"text-muted-foreground\">CTO, Visionary Tech</p>\n                </div>\n              </div>\n            </div>\n            <Button className=\"w-fit\">Start your free trial</Button>\n          </div>\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder\"\n            className=\"h-full max-h-[420px] w-full rounded-xl object-cover\"\n          />\n        </div>\n        <Separator className=\"my-12\" />\n        <div className=\"grid gap-6 md:grid-cols-2 lg:grid-cols-4\">\n          <div>\n            <h2 className=\"mb-2 text-4xl font-semibold md:text-6xl\">20+</h2>\n            <p className=\"text-muted-foreground\">\n              Years of delivering excellence\n            </p>\n          </div>\n          <div>\n            <h2 className=\"mb-2 text-4xl font-semibold md:text-6xl\">100+</h2>\n            <p className=\"text-muted-foreground\">\n              Countries where our services are available\n            </p>\n          </div>\n          <div>\n            <h2 className=\"mb-2 text-4xl font-semibold md:text-6xl\">25</h2>\n            <p className=\"text-muted-foreground\">\n              Prestigious awards for innovation\n            </p>\n          </div>\n          <div>\n            <h2 className=\"mb-2 text-4xl font-semibold md:text-6xl\">&gt;30k</h2>\n            <p className=\"text-muted-foreground\">\n              Thriving businesses using our platform\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature120 };\n"
+}

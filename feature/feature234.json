@@ -1,0 +1,46 @@
+{
+    "id": "feature234",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature234.jpg",
+    "thumbnail": "feature234-4x3.webp",
+    "description": "This component features a headline, a row of cards with hover effects, and two buttons. Cards dynamically adjust visibility and overlap on different screen sizes.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.383Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature234",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature234 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container flex flex-col items-center\">\n        <h1 className=\"font-inter mx-auto max-w-4xl text-center text-[70px] leading-[65px] font-semibold tracking-tighter lg:text-[85px] lg:leading-[86px]\">\n          A place to display your masterpiece\n        </h1>\n        <CardsContainer />\n        <p className=\"font-inter mx-auto max-w-xl text-center text-lg font-medium text-black\">\n          Artists can finely craft components built with React, Tailwind, and\n          Shadcn UI. Developers can copy and paste them.\n        </p>\n        <div className=\"mt-10 flex items-center gap-2\">\n          <Button\n            asChild\n            variant=\"default\"\n            className=\"block h-fit w-fit rounded-full px-6 py-2 text-sm leading-loose\"\n          >\n            <a href=\"#\">Join for $9.99/m</a>\n          </Button>\n          <Button\n            asChild\n            variant=\"secondary\"\n            className=\"block h-fit w-fit rounded-full px-6 py-2 text-sm leading-loose\"\n          >\n            <a href=\"#\">View on Github</a>\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature234 };\n\nconst CardsContainer = () => {\n  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);\n\n  const cards = [\n    {\n      imageAlt: \"Card 1\",\n      rotate: -10.87,\n      isDark: false,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    },\n    {\n      imageAlt: \"Card 2\",\n      rotate: -7.95,\n      isDark: true,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-black-1.svg\",\n    },\n    {\n      imageAlt: \"Card 3\",\n      rotate: -4.5,\n      isDark: false,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    },\n    {\n      imageAlt: \"Card 4\",\n      rotate: 0,\n      isDark: false,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n    },\n    {\n      imageAlt: \"Card 5\",\n      rotate: 4.5,\n      isDark: false,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n    },\n    {\n      imageAlt: \"Card 6\",\n      rotate: 7.95,\n      isDark: false,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n    },\n    {\n      imageAlt: \"Card 7\",\n      rotate: 10.87,\n      isDark: true,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-black-1.svg\",\n    },\n  ];\n\n  return (\n    <div className=\"my-16 ml-[50px] flex items-center justify-center lg:ml-0\">\n      {cards.map((card, index) => {\n        const yOffset = Math.pow(Math.abs(index - 3), 1.2) * 12;\n        const isHovered = hoveredIndex === index;\n        const visibilityClasses =\n          // Hide 0,1,6,7 on small screens\n          (index === 0 || index === 1 || index === 5 || index === 6\n            ? \" hidden sm:hidden \"\n            : \"\") +\n          // Hide 0,7 on medium screens (but show others)\n          (index === 0 || index === 6 ? \"md:hidden \" : \"md:block \") +\n          // Show all on large screens\n          \"lg:block\";\n\n        return (\n          <motion.div\n            className={visibilityClasses}\n            key={index}\n            onMouseEnter={() => setHoveredIndex(index)}\n            onMouseLeave={() => setHoveredIndex(null)}\n            initial={{ y: yOffset }}\n            animate={{\n              y: isHovered ? yOffset - 20 : yOffset,\n              zIndex: isHovered ? 10 : 0,\n            }}\n            transition={{ duration: 0.3 }}\n          >\n            <div\n              className={`relative h-[176px] w-[177px] overflow-hidden rounded-3xl border ${\n                card.isDark\n                  ? \"mb-14 border-[#8b8b8b] bg-black shadow-2xl\"\n                  : \"border-[#cecece] bg-[#f5f5f5] shadow-lg\"\n              }`}\n              style={{\n                transform: `rotate(${card.rotate}deg)`,\n                marginLeft: index === 0 ? \"0px\" : \"-50px\",\n              }}\n            >\n              <img\n                src={card.image}\n                alt={card.imageAlt}\n                className=\"size-full object-cover object-center\"\n              />\n            </div>\n          </motion.div>\n        );\n      })}\n    </div>\n  );\n};\n"
+}

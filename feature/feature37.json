@@ -1,0 +1,34 @@
+{
+    "id": "feature37",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature37.jpg",
+    "thumbnail": "feature37-4x3.webp",
+    "description": "A component with a 5-column grid layout, featuring 4 blocks with images and text descriptions, 2 columns wide for the first and last, 3 for the middle two. Each has a rounded, accent-colored background.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.569Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature37",
+    "collection": "block",
+    "group": "feature",
+    "code": "const Feature37 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 gap-6 md:grid-cols-5\">\n          <div className=\"flex flex-col justify-between rounded-lg bg-accent md:col-span-2\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video h-full max-h-72 w-full\"\n            />\n            <div className=\"p-6\">\n              <p className=\"mb-3 text-lg font-semibold\">\n                Lorem ipsum dolor sit.\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n                laboriosam voluptatibus temporibus doloremque laudantium.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col justify-between rounded-lg bg-accent md:col-span-3\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video h-full max-h-72 w-full\"\n            />\n            <div className=\"p-6\">\n              <p className=\"mb-3 text-lg font-semibold\">\n                Lorem ipsum dolor sit.\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n                laboriosam voluptatibus temporibus doloremque laudantium.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col justify-between rounded-lg bg-accent md:col-span-3\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video h-full max-h-72 w-full\"\n            />\n            <div className=\"p-6\">\n              <p className=\"mb-3 text-lg font-semibold\">\n                Lorem ipsum dolor sit.\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n                laboriosam voluptatibus temporibus doloremque laudantium.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col justify-between rounded-lg bg-accent md:col-span-2\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video h-full max-h-72 w-full\"\n            />\n            <div className=\"p-6\">\n              <p className=\"mb-3 text-lg font-semibold\">\n                Lorem ipsum dolor sit.\n              </p>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi\n                laboriosam voluptatibus temporibus doloremque laudantium.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature37 };\n"
+}

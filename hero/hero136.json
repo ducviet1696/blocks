@@ -1,0 +1,45 @@
+{
+    "id": "hero136",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero136.jpg",
+    "thumbnail": "hero136-4x3.webp",
+    "description": "A component showcasing a large header, descriptive text, two buttons, logos of trusted companies, and a uniquely styled image display with an asymmetrical background design.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:13:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero136",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight, Sparkles } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero136 = () => {\n  return (\n    <section className=\"bg-background py-12 md:py-20\">\n      <div className=\"container max-w-[100rem]\">\n        <div className=\"flex flex-col items-center justify-center gap-5\">\n          <div className=\"mb-3 flex h-20 w-20 rounded-3xl bg-black shadow-[0_-16px_0_-8px_var(--color-gray-300),0_-30px_0_-14px_var(--color-gray-100)]\">\n            <Sparkles className=\"m-auto h-12 w-12 fill-white\" />\n          </div>\n          <div className=\"max-w-[25rem] md:max-w-[31.25rem] lg:max-w-[43.75rem]\">\n            <h1 className=\"text-foreground mb-6 text-center text-[2.75rem] font-semibold leading-tight md:text-[3.5rem] lg:text-[4.375rem]\">\n              Unveil great design from the real world.\n            </h1>\n            <p className=\"text-muted-foreground text-center text-xl\">\n              Showcasing more than 500,000 screens and 2,000 iOS, Android, and\n              Web apps \u2014 fresh content added every week.\n            </p>\n          </div>\n          <div>\n            <div className=\"mt-3 flex items-center justify-center gap-3\">\n              <Button\n                asChild\n                className=\"border-primary h-fit rounded-full border px-4 py-3 text-base font-semibold\"\n              >\n                <a href=\"#\">Join for free</a>\n              </Button>\n              <Button\n                asChild\n                variant=\"outline\"\n                className=\"flex h-fit items-center justify-center gap-2 rounded-full px-4 py-3 text-base font-semibold\"\n              >\n                <a href=\"#\">\n                  <div>See our plans</div>\n                  <span className=\"flex h-6 w-6 rounded-full bg-zinc-100\">\n                    <ArrowRight className=\"m-auto h-4 w-4\" />\n                  </span>\n                </a>\n              </Button>\n            </div>\n          </div>\n          <div>\n            <div className=\"py-10 md:py-16\">\n              <p className=\"text-muted-2-foreground text-center text-sm\">\n                Trusted by design teams at\n              </p>\n              <div className=\"mt-8 flex flex-wrap items-center justify-center gap-5 sm:flex-nowrap\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg\"\n                  alt=\"\"\n                  className=\"block h-3.5 w-auto opacity-50 md:h-5\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg\"\n                  alt=\"\"\n                  className=\"block h-3.5 w-auto opacity-50 md:h-5\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg\"\n                  alt=\"\"\n                  className=\"block h-3.5 w-auto opacity-50 md:h-5\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg\"\n                  alt=\"\"\n                  className=\"block h-3.5 w-auto opacity-50 md:h-5\"\n                />\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg\"\n                  alt=\"\"\n                  className=\"hidden h-3.5 w-auto opacity-50 md:block md:h-5\"\n                />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div className=\"w-full xl:px-8\">\n        <div className=\"relative mx-auto aspect-[1.259253731/1] w-full max-w-[96rem] overflow-hidden bg-zinc-950 xl:aspect-[1.896296296/1] xl:rounded-3xl\">\n          <div className=\"bg-background absolute -bottom-1 left-[56%] aspect-[1.151758794/-1] w-[100%] -translate-x-1/2 overflow-hidden rounded-tl-2xl xl:left-1/2 xl:aspect-[1.933988764/1] xl:w-[87.5%] xl:rounded-tr-2xl\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"\"\n              className=\"object-top-left w-full object-cover\"\n            />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero136 };\n"
+}

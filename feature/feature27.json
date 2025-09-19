@@ -1,0 +1,43 @@
+{
+    "id": "feature27",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature27.jpg",
+    "thumbnail": "feature27-4x3.webp",
+    "description": "A component featuring an \"Overview\" badge, centered title, and text, followed by two columns of images with captions, and a full-width image with a caption.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.563Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature27",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Badge } from \"@/components/ui/badge\";\n\nconst Feature27 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-3xl flex-col items-center gap-6\">\n          <Badge variant=\"outline\">Overview</Badge>\n          <h2 className=\"mb-2 text-center text-3xl font-semibold lg:text-4xl\">\n            Built awesome websites with our blocks\n          </h2>\n          <p className=\"text-center text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores\n            itaque modi quos hic placeat laudantium inventore reiciendis\n            cupiditate, facilis aliquam.\n          </p>\n        </div>\n        <div className=\"mt-20 grid gap-10 md:grid-cols-2\">\n          <div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placholder\"\n              className=\"rounded-lg border\"\n            />\n            <div className=\"px-4 pt-10\">\n              <h3 className=\"font-medium\">Fully responsive</h3>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores\n                itaque modi quos hic placeat laudantium inventore reiciendis\n                cupiditate, facilis aliquam.\n              </p>\n            </div>\n          </div>\n          <div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"placholder\"\n              className=\"rounded-lg border\"\n            />\n            <div className=\"px-4 pt-10\">\n              <h3 className=\"font-medium\">Beautiful</h3>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores\n                itaque modi quos hic placeat laudantium inventore reiciendis\n                cupiditate, facilis aliquam.\n              </p>\n            </div>\n          </div>\n          <div className=\"md:col-span-2\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg \"\n              alt=\"placholder\"\n              className=\"aspect-video max-h-[480px] w-full rounded-lg border bg-muted\"\n            />\n            <div className=\"px-4 pt-10\">\n              <h3 className=\"font-medium\">Fully customizable</h3>\n              <p className=\"text-muted-foreground\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores\n                itaque modi quos hic placeat laudantium inventore reiciendis\n                cupiditate, facilis aliquam.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature27 };\n"
+}

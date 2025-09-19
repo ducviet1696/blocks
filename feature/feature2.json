@@ -1,0 +1,43 @@
+{
+    "id": "feature2",
+    "access": "free",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature2.jpg",
+    "thumbnail": "feature2-4x3.webp",
+    "description": "A dual-column component with an image on one side, and text content with two buttons on the other. Features customizable title, description, image, and buttons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.559Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "free"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature2",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Button } from \"@/components/ui/button\";\n\ninterface Feature2Props {\n  title: string;\n  description?: string;\n  imageSrc: string;\n  imageAlt: string;\n  buttonPrimary: {\n    label: string;\n    href: string;\n  };\n  buttonSecondary: {\n    label: string;\n    href: string;\n  };\n}\n\nconst Feature2 = ({\n  title = \"Blocks built with Shadcn & Tailwind\",\n  description = \"Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.\",\n  imageSrc = \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  imageAlt = \"placeholder hero\",\n  buttonPrimary = {\n    label: \"Get Started\",\n    href: \"https://shadcnblocks.com\",\n  },\n  buttonSecondary = {\n    label: \"Learn More\",\n    href: \"https://shadcnblocks.com\",\n  },\n}: Feature2Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid items-center gap-8 md:gap-16 lg:grid-cols-2\">\n          <img\n            src={imageSrc}\n            alt={imageAlt}\n            className=\"max-h-96 w-full rounded-md object-cover\"\n          />\n          <div className=\"flex flex-col items-center text-center lg:items-start lg:text-left\">\n            <h1 className=\"my-6 mt-0 text-4xl font-semibold text-balance lg:text-5xl\">\n              {title}\n            </h1>\n            <p className=\"mb-8 max-w-xl text-muted-foreground lg:text-lg\">\n              {description}\n            </p>\n            <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start\">\n              <Button asChild>\n                <a href={buttonPrimary.href} target=\"_blank\">\n                  {buttonPrimary.label}\n                </a>\n              </Button>\n              <Button variant=\"outline\" asChild>\n                <a href={buttonSecondary.href} target=\"_blank\">\n                  {buttonSecondary.label}\n                </a>\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature2 };\n"
+}

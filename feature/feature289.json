@@ -1,0 +1,46 @@
+{
+    "id": "feature289",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature289.jpg",
+    "thumbnail": "feature289-4x3.webp",
+    "description": "A component featuring a large title and a tech stack list with clickable links, arranged in a 2-column layout with adjustable gap sizes.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:51:13.998Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "link-preview.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/link-preview.json",
+            "docsUrl": "https://ui.aceternity.com/components/link-preview"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature289",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRightIcon } from \"lucide-react\";\nimport React from \"react\";\n\nimport { LinkPreview } from \"@/components/aceternity/link-preview\";\n\nconst Feature289 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container relative z-20 flex w-full flex-col items-center justify-between gap-10 md:flex-row\">\n        <div>\n          <h1 className=\"justify-center text-5xl font-semibold tracking-tighter md:text-6xl lg:text-8xl\">\n            Explore <br /> ShadcnBlocks\n          </h1>\n\n          <div className=\"mt-18 max-w-md\">\n            <div className=\"bg-foreground mb-2 h-[1px] w-full\" />\n            <div className=\"flex items-center justify-between\">\n              <p className=\"text-foreground text-lg\">Learn More</p>\n              <ArrowRightIcon className=\"size-5 stroke-1\" />\n            </div>\n          </div>\n        </div>\n        <div className=\"flex gap-5 text-lg lg:gap-10\">\n          <p className=\"font-semibold\">[06] Tech Stack:</p>\n          <ul>\n            <li>\n              <LinkPreview\n                url=\"https://shadcnblocks.com\"\n                className=\"opacity-40 hover:opacity-100\"\n              >\n                ShadcnBlocks\n              </LinkPreview>\n            </li>\n            <li>\n              <LinkPreview\n                url=\"https://ui.shadcn.com\"\n                className=\"opacity-40 hover:opacity-100\"\n              >\n                ShadcnUI\n              </LinkPreview>\n            </li>\n            <li>\n              <LinkPreview\n                url=\"https://tailwindcss.com\"\n                className=\"opacity-40 hover:opacity-100\"\n              >\n                TailwindCSS\n              </LinkPreview>\n            </li>\n            <li>\n              <LinkPreview\n                url=\"https://www.framer.com/motion\"\n                className=\"opacity-40 hover:opacity-100\"\n              >\n                FramerMotion\n              </LinkPreview>\n            </li>\n            <li>\n              <LinkPreview\n                url=\"https://nextjs.org\"\n                className=\"opacity-40 hover:opacity-100\"\n              >\n                NextJS\n              </LinkPreview>\n            </li>\n            <li>\n              <LinkPreview\n                url=\"https://www.typescriptlang.org\"\n                className=\"opacity-40 hover:opacity-100\"\n              >\n                TypeScript\n              </LinkPreview>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature289 };\n"
+}

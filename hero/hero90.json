@@ -1,0 +1,43 @@
+{
+    "id": "hero90",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero90.jpg",
+    "thumbnail": "hero90-4x3.webp",
+    "description": "A component with a 2-column layout, showcasing text on the left and an interactive avatar feature on the right. The avatars overlay with testimonials.",
+    "createdAt": [
+        3,
+        "2024-12-16T04:45:05.356Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero90",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nconst Hero90 = () => {\n  return (\n    <section className=\"font-dm_sans bg-background py-12 md:py-20\">\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 gap-10 md:gap-20 xl:grid-cols-2\">\n          <div className=\"flex flex-col gap-6\">\n            <p className=\"text-foreground text-2xl font-medium\">Share Videos</p>\n            <h1 className=\"text-foreground max-w-[37.5rem] text-4xl font-semibold sm:text-5xl md:max-w-[51.25rem] md:text-7xl\">\n              Share Moments that Matter\n            </h1>\n            <p className=\"text-muted-foreground text-2xl font-medium\">\n              Highlight moments from your team\u2019s clips with shareable videos\n            </p>\n          </div>\n          <div>\n            <div className=\"relative mx-auto aspect-[1.723502304/1] max-w-[46.75rem]\">\n              <div className=\"bg-muted absolute left-0 top-0 z-30 flex aspect-square w-[42%] rounded-2xl sm:rounded-3xl md:rounded-[2.25rem]\">\n                <div className=\"m-auto flex w-[85%] flex-col gap-2 md:gap-4\">\n                  <div className=\"flex items-center justify-center gap-[2%]\">\n                    <Avatar className=\"size-[68%]\">\n                      <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\" />\n                      <AvatarFallback>AV</AvatarFallback>\n                    </Avatar>\n                  </div>\n                  <p className=\"text-muted-foreground line-clamp-2 text-center text-[clamp(0.5rem,2.5vw,1.125rem)] font-semibold\">\n                    From my experience, it was truly the people who made the\n                    difference in our success\n                  </p>\n                </div>\n              </div>\n              <div className=\"bg-muted absolute bottom-0 left-1/3 z-20 flex aspect-square w-[42%] rounded-2xl sm:rounded-3xl md:rounded-[2.25rem]\">\n                <div className=\"m-auto flex w-[85%] flex-col gap-2 md:gap-4\">\n                  <Avatar className=\"mx-auto size-[68%]\">\n                    <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\" />\n                    <AvatarFallback>AV</AvatarFallback>\n                  </Avatar>\n                  <p className=\"text-muted-foreground line-clamp-2 text-center text-[clamp(0.5rem,2.5vw,1.125rem)] font-semibold\">\n                    <span className=\"text-foreground\">\n                      People who are passionate\n                    </span>{\" \"}\n                    about creating meaningful connections and driving innovation\n                    forward\n                  </p>\n                </div>\n              </div>\n              <div className=\"bg-muted absolute bottom-[15%] right-0 z-10 flex aspect-square w-[42%] rounded-2xl sm:rounded-3xl md:rounded-[2.25rem]\">\n                <div className=\"m-auto w-[85%]\">\n                  <Avatar className=\"absolute bottom-[5%] right-[5%] z-20 size-[26%]\">\n                    <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\" />\n                    <AvatarFallback>AV</AvatarFallback>\n                  </Avatar>\n                  <p className=\"text-muted-2-foreground line-clamp-4 text-[clamp(0.5rem,2.5vw,1.25rem)] font-semibold\">\n                    Technology drives progress, enhances communication, solves\n                    problems, and opens new possibilities, shaping the future of\n                    how we work and connect with each other\n                  </p>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero90 };\n"
+}

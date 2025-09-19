@@ -1,0 +1,51 @@
+{
+    "id": "hero197",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero197.jpg",
+    "thumbnail": "hero197-4x3.webp",
+    "description": "A component featuring a dotted background, a badge with a sparkle icon, a large gradient text headline, a description, and two buttons side by side on smaller screens and stacked on larger screens.",
+    "createdAt": [
+        3,
+        "2025-02-24T03:01:53.436Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero197",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Sparkles } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero197 = () => {\n  return (\n    <section className=\"relative overflow-hidden py-32\">\n      <div className=\"container\">\n        {/* Background pattern with dots */}\n        <div className=\"absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(var(--primary)_1px,transparent_1px)] opacity-25 [background-size:20px_20px]\"></div>\n\n        <div className=\"flex flex-col gap-6 md:flex-row md:items-center md:justify-between\">\n          <div className=\"max-w-2xl\">\n            <Badge\n              variant=\"outline\"\n              className=\"bg-background mb-6 px-4 py-1.5 text-sm\"\n            >\n              Launching Soon <Sparkles className=\"ml-1 size-3.5\" />\n            </Badge>\n\n            <h1 className=\"bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-5xl font-bold text-transparent md:text-6xl lg:text-7xl\">\n              Accelerate your development workflow\n            </h1>\n\n            <p className=\"text-muted-foreground mt-6 max-w-xl text-xl\">\n              Our intelligent platform helps teams automate routine tasks,\n              streamline collaboration, and deliver higher quality code faster.\n            </p>\n\n            <div className=\"mt-8 flex flex-col gap-6 sm:flex-row sm:items-center\">\n              <Button size=\"lg\" className=\"w-full sm:w-auto\">\n                Get started for free\n              </Button>\n              <Button size=\"lg\" variant=\"outline\" className=\"w-full sm:w-auto\">\n                Book a demo\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero197 };\n"
+}

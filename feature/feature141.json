@@ -1,0 +1,43 @@
+{
+    "id": "feature141",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature141.jpg",
+    "thumbnail": "feature141-4x3.webp",
+    "description": "A component with a title, description, a 3x3 grid with a central image, a highlighted message, a badge, divider, testimonial, and attribution.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.658Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature141",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature141 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h2 className=\"text-center text-5xl\">Welcome to Our Website</h2>\n        <p className=\"mt-3 text-center text-2xl text-muted-foreground\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n          doloremque mollitia fugiat\n        </p>\n\n        <div className=\"mt-20 flex flex-col items-center justify-center gap-16 md:flex-row\">\n          <div className=\"grid w-full max-w-md grid-cols-[1fr_2fr_1fr] grid-rows-[1fr_2fr_1fr] rounded-lg bg-linear-to-br from-red-100 to-blue-100 md:max-w-xl\">\n            <div className=\"border-r-2 border-b-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-b-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-b-2 border-l-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-r-2 border-muted-foreground/30 p-4\" />\n            <div>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-[740px] w-full rounded-xl object-cover\"\n              />\n            </div>\n            <div className=\"border-l-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-t-2 border-r-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-t-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-t-2 border-l-2 border-muted-foreground/30 p-4\" />\n          </div>\n\n          <div className=\"w-full max-w-sm\">\n            <h6 className=\"text-3xl\">\n              Get your team on the same page, literally\n            </h6>\n            <Badge variant=\"outline\" className=\"mt-8 bg-muted px-3 py-2\">\n              Badge\n            </Badge>\n\n            <div className=\"mt-16 mb-4 h-px w-full bg-muted-foreground\" />\n\n            <p className=\"mb-10 text-lg text-muted-foreground\">\n              &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit.\n              Rerum alias unde et doloremque dignissimos error temporibus\n              quisquam porro ducimus esse quod, a officiis.&quot;\n            </p>\n\n            <p className=\"text-lg\">John Doe</p>\n            <p className=\"text-lg text-muted-foreground\">\n              CET, Company Example\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature141 };\n"
+}

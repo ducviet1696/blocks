@@ -1,0 +1,54 @@
+{
+    "id": "hero218",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero218.jpg",
+    "thumbnail": "hero218-4x3.webp",
+    "description": "A component featuring an animated, centralized headline with a supportive tagline above. Includes visually dynamic, particle background and a button with an icon that animates on hover. Uses 3D text animation for emphasis.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "particles",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/particles",
+            "docsUrl": "https://magicui.design/docs/components/particles"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero218",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Particles } from \"@/components/magicui/particles\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero218 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container flex flex-col items-center justify-center gap-4 overflow-hidden\">\n        <p className=\"text-muted-foreground\">\n          Bridging Developers, Building the Future\n        </p>\n        <h1 className=\"realtive z-15 max-w-3xl text-center text-6xl font-medium tracking-tighter md:text-7xl\">\n          <span\n            className=\"overflow-hidden\"\n            style={{\n              transformStyle: \"preserve-3d\",\n              perspective: \"600px\",\n            }}\n          >\n            {\"The only app you Need to Stay Productive\"\n              .split(\" \")\n              .map((word, i) => (\n                <motion.span\n                  className=\"relative inline-block px-[6px] leading-[none]\"\n                  key={i}\n                  initial={{\n                    opacity: 0,\n                    y: \"70%\",\n                    rotateX: \"-28deg\",\n                  }}\n                  animate={{\n                    opacity: 1,\n                    y: \"0%\",\n                    rotateX: \"0deg\",\n                  }}\n                  transition={{\n                    delay: i * 0.08 + 0.1,\n                    duration: 0.8,\n                    ease: [0.215, 0.61, 0.355, 1],\n                  }}\n                >\n                  {word === \"Productive\" ? (\n                    <span className=\"font-playfair italic\">{word}</span>\n                  ) : (\n                    word\n                  )}\n                </motion.span>\n              ))}\n          </span>\n        </h1>\n        <Particles\n          className=\"absolute inset-0 z-0\"\n          quantity={500}\n          ease={80}\n          color=\"#000000\"\n          refresh\n        />\n\n        <div className=\"h-92 -translate-y-15 relative w-full overflow-hidden\">\n          <div className=\"h-92 bg-background absolute z-10 w-full blur-xl\" />\n          <div className=\"z-13 h-92 -translate-y-62 bg-background absolute w-full blur-2xl\" />\n\n          <motion.div\n            initial={{ opacity: 0, y: -50 }}\n            animate={{ opacity: 1, y: 0 }}\n            transition={{ duration: 0.7, ease: \"easeOut\" }}\n            className=\"z-12 absolute w-full overflow-hidden\"\n          >\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/green-shape.svg\"\n              className=\"h-215 -translate-y-90 -rotate-76 w-full\"\n              alt=\"\"\n            />\n          </motion.div>\n        </div>\n        <Button\n          variant=\"secondary\"\n          className=\"text-md -mt-15 group flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n        >\n          Contact Us now\n          <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n        </Button>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero218 };\n"
+}

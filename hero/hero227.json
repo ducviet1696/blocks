@@ -1,0 +1,47 @@
+{
+    "id": "hero227",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero227.jpg",
+    "thumbnail": "hero227-4x3.webp",
+    "description": "A component featuring icons with text, a bold animated headline, a paragraph, dual buttons, and a phone mockup animation.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:40.833Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero227",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { Copy, Globe, ShieldCheck } from \"lucide-react\";\nimport React from \"react\";\n\nimport VerticalCutReveal from \"@/components/fancy/components/text/vertical-cut-reveal\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero227 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"border-b border-muted-foreground/40\">\n        <div className=\"container flex flex-col items-center justify-center gap-4 text-center\">\n          <div className=\"flex flex-wrap items-center justify-center gap-6\">\n            <div className=\"flex items-center justify-center gap-2 text-xs font-medium tracking-tight text-primary/40 md:text-lg\">\n              <Copy className=\"size-4\" />\n              Copy paste blocks\n            </div>\n            <div className=\"flex items-center justify-center gap-2 text-xs font-medium tracking-tight text-primary/40 md:text-lg\">\n              <ShieldCheck className=\"size-4\" />\n              Built by Experts\n            </div>\n            <div className=\"flex items-center justify-center gap-2 text-xs font-medium tracking-tight text-primary/40 md:text-lg\">\n              <Globe className=\"size-4 animate-spin\" />\n              Works Everywhere\n            </div>\n          </div>\n          <div className=\"relative\">\n            <h1 className=\"font-anton text-5xl tracking-tight text-foreground uppercase md:text-9xl\">\n              <VerticalCutReveal>New Shadcn Blocks</VerticalCutReveal>\n            </h1>\n            <Asterisk className=\"absolute -top-2 -right-6 size-5 md:size-10 lg:-right-14\" />\n          </div>\n          <p className=\"max-w-xl text-muted-foreground/80\">\n            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum\n            animi, ipsam provident optio delectus neque aliquid cumque. Beatae,\n            odio!\n          </p>\n          <div className=\"flex rounded-3xl bg-muted-foreground/10 p-1.5\">\n            <Button className=\"text-md flex h-full items-center justify-center rounded-2xl font-medium\">\n              Get Started\n            </Button>\n            <Button\n              variant=\"ghost\"\n              className=\"text-md flex h-full items-center justify-center rounded-2xl font-medium opacity-40\"\n            >\n              No Credit Card Required\n            </Button>\n          </div>\n\n          {/* Iphone mockup with content */}\n          <div className=\"relative h-[500px] w-full overflow-hidden\">\n            <motion.div\n              initial={{ opacity: 0, y: 200, scale: 0.8 }}\n              animate={{ opacity: 100, y: 0, scale: 1 }}\n              transition={{ ease: [0, 0.71, 0.2, 1.01], duration: 0.8 }}\n              className=\"relative mx-auto mt-6 flex h-[850px] w-[400px] items-center justify-center rounded-[75px] bg-black md:mt-12 md:h-[920px] md:w-[450px]\"\n            >\n              <img\n                className=\"absolute z-2 scale-105 object-cover\"\n                alt=\"Gold phone frame\"\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/mockups/phone-5.png\"\n              />\n              <div className=\"h-full w-full\">\n                <div className=\"mt-20 flex justify-between px-0\">\n                  <h1 className=\"flex items-end gap-2 px-12 text-5xl font-semibold tracking-tight text-background md:text-6xl\">\n                    Mon\n                    <div className=\"mb-2 size-3 rounded-full bg-red-500 md:size-5\" />\n                  </h1>\n                  <div className=\"mt-2 mr-8 flex flex-col items-end\">\n                    <p className=\"text-lg tracking-tight text-muted-foreground md:text-xl\">\n                      Feburary 9\n                    </p>\n                    <p className=\"-mt-1 text-xl font-semibold tracking-tighter text-muted-foreground/50 md:text-2xl\">\n                      2025\n                    </p>\n                  </div>\n                </div>\n                <img\n                  className=\"z-2 mx-auto mt-20 size-40 object-cover\"\n                  alt=\"Gold phone frame\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-white-1.svg\"\n                />\n              </div>\n            </motion.div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero227 };\n\nconst Asterisk = (props: React.ComponentProps<typeof motion.svg>) => {\n  return (\n    <motion.svg\n      initial={{ opacity: 0, rotate: -45, scale: 0.5 }}\n      animate={{ opacity: 1, rotate: 0, scale: 1 }}\n      transition={{ duration: 0.5, bounce: 0.4, type: \"spring\", delay: 0.6 }}\n      {...props}\n      viewBox=\"0 0 45 45\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        d=\"M16.6294 44.8574L18.9282 29.0791L6.44141 38.9536L0.380859 28.5044L14.6963 22.3916L0.380859 16.6968L6.44141 6.24756L18.876 15.5996L16.6294 0.34375H28.7505L26.9219 15.2861L38.9385 6.24756L44.999 16.6968L30.6313 22.3916L44.999 28.5044L38.9385 38.9536L26.8696 29.4448L28.7505 44.8574H16.6294Z\"\n        fill=\"#FF0000\"\n      />\n    </motion.svg>\n  );\n};\n"
+}

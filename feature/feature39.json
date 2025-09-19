@@ -1,0 +1,34 @@
+{
+    "id": "feature39",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature39.jpg",
+    "thumbnail": "feature39-4x3.webp",
+    "description": "A feature block with a heading and a 3-column layout, each containing an image, title, description, and link.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.570Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature39",
+    "collection": "block",
+    "group": "feature",
+    "code": "const Feature39 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h2 className=\"mb-9 text-3xl font-semibold lg:mb-14 lg:text-4xl\">\n          Awesome features to start with\n        </h2>\n        <div className=\"grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-6\">\n          <div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"feature\"\n              className=\"aspect-video max-h-96 w-full rounded-lg object-cover\"\n            />\n            <p className=\"mt-8 mb-2 text-lg font-semibold\">Integrations</p>\n            <p className=\"mb-4 text-muted-foreground\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse\n              eaque corrupti illum sapiente!\n            </p>\n            <a href=\"#\" className=\"font-medium underline\">\n              Learn more\n            </a>\n          </div>\n          <div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"feature\"\n              className=\"aspect-video max-h-96 w-full rounded-lg object-cover\"\n            />\n            <p className=\"mt-8 mb-2 text-lg font-semibold\">Analytics</p>\n            <p className=\"mb-4 text-muted-foreground\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse\n              eaque corrupti illum sapiente!\n            </p>\n            <a href=\"#\" className=\"font-medium underline\">\n              Learn more\n            </a>\n          </div>\n          <div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n              alt=\"feature\"\n              className=\"aspect-video max-h-96 w-full rounded-lg object-cover\"\n            />\n            <p className=\"mt-8 mb-2 text-lg font-semibold\">Search & Filter</p>\n            <p className=\"mb-4 text-muted-foreground\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse\n              eaque corrupti illum sapiente!\n            </p>\n            <a href=\"#\" className=\"font-medium underline\">\n              Learn more\n            </a>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature39 };\n"
+}

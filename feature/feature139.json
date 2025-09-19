@@ -1,0 +1,43 @@
+{
+    "id": "feature139",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature139.jpg",
+    "thumbnail": "feature139-4x3.webp",
+    "description": "A component featuring a badge, a heading, a paragraph, an image, and a 4-column grid of items with numbers, titles, and descriptions.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.656Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature139",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst items = [\n  {\n    title: \"Slack\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    number: 400,\n  },\n  {\n    title: \"Google Drive\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    number: 4000,\n  },\n  {\n    title: \"Dropbox\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    number: 7000,\n  },\n  {\n    title: \"Github\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    number: 850,\n  },\n];\n\nconst Feature139 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"rounded-lg border bg-card p-10 shadow-sm\">\n          <div className=\"flex w-full flex-col items-center justify-between gap-4 md:flex-row\">\n            <div className=\"w-full max-w-md\">\n              <Badge\n                variant=\"outline\"\n                className=\"px-3 py-2 text-muted-foreground\"\n              >\n                The badge\n              </Badge>\n              <h2 className=\"my-5 text-2xl font-medium lg:text-4xl\">\n                Build your own website with our UI blocks\n              </h2>\n              <p className=\"text-sm text-muted-foreground lg:text-base\">\n                Lorem ipsum dolor sit amet consectetur, adipisicing elit.\n                Pariatur modi et recusandae ducimus eligendi eveniet soluta\n                reprehenderit nostrum expedita omnis.\n              </p>\n            </div>\n            <div className=\"w-full max-w-lg\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-[420px] w-full rounded-lg object-cover\"\n              />\n            </div>\n          </div>\n\n          <div className=\"mt-24 grid grid-cols-1 justify-between gap-12 sm:grid-cols-2 md:grid-cols-4\">\n            {items.map((item) => (\n              <div key={item.title}>\n                <p className=\"text-4xl text-muted-foreground\">{item.number}+</p>\n                <h6 className=\"text-5 mt-5 mb-3 font-semibold\">{item.title}</h6>\n                <p className=\"text-sm text-muted-foreground\">\n                  {item.description}\n                </p>\n              </div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature139 };\n"
+}

@@ -1,0 +1,44 @@
+{
+    "id": "cta27",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta27.jpg",
+    "thumbnail": "cta27-4x3.webp",
+    "description": "A dual-column block featuring a bold headline, two sub-sections with large titles, buttons for actions, and layered images with a phone mockup.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:37:36.797Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta",
+            "download"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta27",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Cta27 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h2 className=\"text-5xl font-bold md:text-6xl\">Create better.</h2>\n        <div className=\"mt-14 grid gap-8 lg:grid-cols-2\">\n          <div className=\"rounded-xl bg-muted/50\">\n            <div className=\"mx-8 mt-6 mb-12 flex flex-col gap-5\">\n              <h3 className=\"text-4xl font-semibold md:text-5xl\">Design Kit</h3>\n              <div className=\"flex gap-3\">\n                <Button size=\"lg\">Start creating</Button>\n                <Button size=\"lg\" variant=\"outline\">\n                  View gallery\n                </Button>\n              </div>\n            </div>\n            <div className=\"relative max-h-96 overflow-hidden pl-32 sm:pl-32\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-96 w-full rounded-tl-xl border-t border-l border-border object-cover\"\n              />\n              <div className=\"absolute -bottom-16 left-10 isolate sm:left-10\">\n                <div className=\"h-full max-h-96 w-full\">\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/mockups/phone-1.png\"\n                    alt=\"phone frame\"\n                    className=\"max-h-[60vw] sm:max-h-96 lg:max-h-80 xl:max-h-96\"\n                  />\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg\"\n                    alt=\"placeholder\"\n                    className=\"absolute top-0 left-0 -z-10 h-full w-full rounded-4xl\"\n                  />\n                </div>\n              </div>\n            </div>\n          </div>\n          <div className=\"rounded-xl bg-muted/50\">\n            <div className=\"mx-8 mt-6 mb-12 flex flex-col gap-5\">\n              <h3 className=\"text-4xl font-semibold md:text-5xl\">\n                Brand Studio\n              </h3>\n              <div className=\"flex gap-3\">\n                <Button size=\"lg\">Start creating</Button>\n                <Button size=\"lg\" variant=\"outline\">\n                  View gallery\n                </Button>\n              </div>\n            </div>\n            <div className=\"relative max-h-96 overflow-hidden pl-32 sm:pl-32\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-96 w-full rounded-tl-xl border-t border-l border-border object-cover\"\n              />\n              <div className=\"absolute -bottom-16 left-10 isolate sm:left-10\">\n                <div className=\"h-full max-h-96 w-full\">\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/mockups/phone-1.png\"\n                    alt=\"phone frame\"\n                    className=\"max-h-[60vw] sm:max-h-96 lg:max-h-80 xl:max-h-96\"\n                  />\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg\"\n                    alt=\"placeholder\"\n                    className=\"absolute top-0 left-0 -z-10 h-full w-full rounded-4xl\"\n                  />\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta27 };\n"
+}

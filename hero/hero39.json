@@ -1,0 +1,45 @@
+{
+    "id": "hero39",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero39.jpg",
+    "thumbnail": "hero39-4x3.webp",
+    "description": "A component with a 2-column layout; one side presents text and a button, the other showcases a stylized, geometric arrangement of elements.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.620Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero39",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero39 = () => {\n  return (\n    <section>\n      <div className=\"container flex flex-col items-center\">\n        <div className=\"2xl:w-[calc(min(100vw-2*theme(container.padding),100%+8rem))] w-full overflow-clip rounded-lg bg-accent/50\">\n          <div className=\"grid items-center gap-8 lg:grid-cols-2\">\n            <div className=\"container flex flex-col items-center px-[4rem] py-16 text-center lg:mx-auto lg:items-start lg:px-[4rem] lg:py-32 lg:text-left\">\n              <p>New Release</p>\n              <h1 className=\"my-6 text-4xl font-bold text-pretty lg:text-6xl\">\n                Welcome to Our Website\n              </h1>\n              <p className=\"mb-8 max-w-xl text-muted-foreground lg:text-xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n                doloremque mollitia fugiat omnis! Porro facilis quo animi\n                consequatur. Explicabo.\n              </p>\n              <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start\">\n                <Button className=\"w-full sm:w-auto\">\n                  <ArrowRight className=\"mr-2 size-4\" />\n                  Primary\n                </Button>\n              </div>\n            </div>\n            <div className=\"flex flex-col items-center justify-center\">\n              <div className=\"relative aspect-7/8 h-full w-full\">\n                <div className=\"absolute top-[12%] right-[50%] flex aspect-square w-[24%] justify-center rounded-lg border border-border bg-accent\"></div>\n                <div className=\"absolute top-[36%] right-[50%] flex aspect-5/6 w-[40%] justify-center rounded-lg border border-border bg-accent\"></div>\n                <div className=\"absolute bottom-[36%] left-[54%] flex aspect-5/6 w-[40%] justify-center rounded-lg border border-border bg-accent\"></div>\n                <div className=\"absolute bottom-[12%] left-[54%] flex aspect-square w-[24%] justify-center rounded-lg border border-border bg-accent\"></div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero39 };\n"
+}

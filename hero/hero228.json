@@ -1,0 +1,47 @@
+{
+    "id": "hero228",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero228.jpg",
+    "thumbnail": "hero228-4x3.webp",
+    "description": "A component showcasing a carousel of testimonials with dynamic rotation effect and custom scrollbar animation. Displays names below images.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.833Z"
+    ],
+    "dependencies": [
+        "embla-carousel-autoplay",
+        "framer-motion",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero228",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport Autoplay from \"embla-carousel-autoplay\";\nimport { AnimatePresence, motion } from \"framer-motion\";\nimport React, { useMemo } from \"react\";\nimport { useCallback } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\nimport { useIsMobile } from \"@/hooks/use-mobile\";\n\nimport {\n  Carousel,\n  type CarouselApi,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst Hero228 = () => {\n  const [api, setApi] = React.useState<CarouselApi>();\n  const [current, setCurrent] = React.useState(0);\n\n  React.useEffect(() => {\n    if (!api) return;\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap());\n    });\n  }, [api]);\n\n  const isMobile = useIsMobile();\n\n  const testimonials = [\n    {\n      id: 1,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg\",\n      name: \"Joan Doe\",\n    },\n    {\n      id: 2,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg\",\n      name: \"Jane Smith\",\n    },\n    {\n      id: 3,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person3.jpeg\",\n      name: \"John Johnson\",\n    },\n    {\n      id: 4,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person4.jpeg\",\n      name: \"Sarah William\",\n    },\n    {\n      id: 5,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person5.jpeg\",\n      name: \"Michael Brown\",\n    },\n    {\n      id: 6,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw3.jpeg\",\n      name: \"Emily Davis\",\n    },\n    {\n      id: 7,\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw11.jpeg\",\n      name: \"Joson White\",\n    },\n  ];\n\n  const getRotation = useCallback(\n    (index: number) => {\n      if (index === current)\n        return \"md:-rotate-45 md:translate-x-40 md:scale-75 md:relative\";\n      if (index === current + 1) return \"md:rotate-0 md:z-10 md:relative\";\n      if (index === current + 2)\n        return \"md:rotate-45 md:-translate-x-40 md:scale-75 md:relative\";\n    },\n    [current],\n  );\n\n  const scrollbarBars = useMemo(\n    () =>\n      [...Array(40)].map((_, item) => (\n        <motion.div\n          key={item}\n          initial={{\n            opacity: item % 5 === 0 ? 0.2 : 0.2,\n            filter: \"blur(1px)\",\n          }}\n          animate={{\n            opacity: item % 5 === 0 ? 1 : 0.2,\n            filter: \"blur(0px)\",\n          }}\n          transition={{\n            duration: 0.2,\n            delay: item % 5 === 0 ? (item / 5) * 0.05 : 0,\n            ease: \"easeOut\",\n          }}\n          className={cn(\n            \"w-[1px] bg-black\",\n            item % 5 === 0 ? \"h-[15px]\" : \"h-[10px]\",\n          )}\n        />\n      )),\n    [],\n  );\n\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container flex flex-col items-center justify-center gap-4 text-center\">\n        <h1 className=\"max-w-3xl text-5xl font-medium tracking-tighter text-foreground md:px-9 md:text-6xl\">\n          <span className=\"font-playfair italic\">The only</span> App you'll ever\n          need to stay <span className=\"font-playfair italic\">inspired</span>\n        </h1>\n        <p className=\"mt-5 max-w-xl text-muted-foreground/80\">\n          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum animi,\n          ipsam provident optio delectus neque aliquid cumque. Beatae, odio!\n        </p>\n\n        <Carousel\n          className=\"max-w-5xl\"\n          plugins={[\n            Autoplay({\n              delay: 1000,\n              stopOnInteraction: true,\n            }),\n          ]}\n          setApi={setApi}\n        >\n          <CarouselContent>\n            {Array.from({\n              length: isMobile ? testimonials.length : testimonials.length + 2,\n            }).map((_, index) => (\n              <CarouselItem key={index} className=\"my-10 md:basis-1/3\">\n                <div\n                  className={`h-105 w-full transition-transform duration-500 ease-in-out ${getRotation(index)}`}\n                >\n                  <img\n                    src={\n                      index == testimonials.length\n                        ? testimonials[0].image\n                        : index == testimonials.length + 1\n                          ? testimonials[1].image\n                          : index == testimonials.length + 2\n                            ? testimonials[2].image\n                            : testimonials[index].image\n                    }\n                    className=\"h-full w-full object-cover\"\n                    alt=\"\"\n                  />\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n          <div className=\"absolute right-0 bottom-0 flex w-full translate-y-full flex-col items-center justify-center gap-2\">\n            <div className=\"flex gap-2\">{scrollbarBars}</div>\n            <AnimatePresence mode=\"popLayout\" initial={false}>\n              <motion.p\n                key={current}\n                className=\"w-full text-lg font-medium\"\n                initial={{ opacity: 0, y: 20, scale: 0.9, filter: \"blur(5px)\" }}\n                animate={{ opacity: 1, y: 0, scale: 1, filter: \"blur(0px)\" }}\n                exit={{ opacity: 0, y: -20, scale: 0.9, filter: \"blur(5px)\" }}\n                transition={{ duration: 0.5 }}\n              >\n                {testimonials[current]?.name}\n              </motion.p>\n            </AnimatePresence>\n            <div className=\"flex gap-2\">{scrollbarBars}</div>\n          </div>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero228 };\n"
+}

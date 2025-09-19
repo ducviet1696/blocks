@@ -1,0 +1,45 @@
+{
+    "id": "faq16",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "faq16.jpg",
+    "thumbnail": "faq16-4x3.webp",
+    "description": "An accordion-style FAQ block with a title and expandable question items, set in a centered layout with a max-width.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.369Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "accordion",
+            "registryId": "shadcn",
+            "registryItemUrl": "accordion",
+            "docsUrl": "https://ui.shadcn.com/docs/components/accordion"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "faq"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "faq16",
+    "collection": "block",
+    "group": "faq",
+    "code": "\"use client\";\n\nimport * as React from \"react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\n\nconst FAQ_QUESTIONS = [\n  {\n    question: \"What is a FAQ?\",\n    answer:\n      \"A FAQ is a list of frequently asked questions and answers on a particular topic.\",\n  },\n  {\n    question: \"What is the purpose of a FAQ?\",\n    answer:\n      \"The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.\",\n  },\n  {\n    question: \"How do I create a FAQ?\",\n    answer:\n      \"To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.\",\n  },\n  {\n    question: \"What are the benefits of a FAQ?\",\n    answer:\n      \"The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.\",\n  },\n  {\n    question: \"What is a FAQ?\",\n    answer:\n      \"A FAQ is a list of frequently asked questions and answers on a particular topic.\",\n  },\n  {\n    question: \"What is the purpose of a FAQ?\",\n    answer:\n      \"The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.\",\n  },\n  {\n    question: \"How do I create a FAQ?\",\n    answer:\n      \"To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.\",\n  },\n  {\n    question: \"What are the benefits of a FAQ?\",\n    answer:\n      \"The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.\",\n  },\n];\n\nconst Faq16 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <h1 className=\"text-foreground mb-10 text-center text-6xl font-bold tracking-tighter\">\n          FAQs\n        </h1>\n        <div className=\"border-border bg-background z-20 mx-auto max-w-2xl rounded-2xl border p-3\">\n          <Accordion\n            type=\"single\"\n            collapsible\n            className=\"flex w-full flex-col items-center justify-center gap-3\"\n          >\n            {FAQ_QUESTIONS.map((item, index) => (\n              <AccordionItem\n                value={index.toString()}\n                key={index}\n                className=\"bg-muted m-0 w-full rounded-xl px-4 py-2\"\n              >\n                <AccordionTrigger className=\"flex flex-1 justify-between text-left font-semibold transition-all hover:no-underline\">\n                  {item.question}\n                </AccordionTrigger>\n                <AccordionContent className=\"text-muted-foreground mt-2\">\n                  {item.answer}\n                </AccordionContent>\n              </AccordionItem>\n            ))}\n          </Accordion>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Faq16 };\n"
+}

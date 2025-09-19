@@ -1,0 +1,53 @@
+{
+    "id": "hero103",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero103.jpg",
+    "thumbnail": "hero103-4x3.webp",
+    "description": "A component with a split layout containing text and CTA buttons on one side, and a layered image gallery on the other, followed by a logo carousel.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:06:05.350Z"
+    ],
+    "dependencies": [
+        "embla-carousel-auto-scroll",
+        "embla-carousel-autoplay",
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero103",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\nimport AutoScroll from \"embla-carousel-auto-scroll\";\nimport Autoplay from \"embla-carousel-autoplay\";\nimport { ChevronRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst Hero103 = () => {\n  return (\n    <section className=\"bg-background dark bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/noise.png')] py-12 font-sans md:py-20\">\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 items-center justify-center gap-12 lg:grid-cols-[minmax(33.75rem,1fr)_1.5fr] lg:gap-8\">\n          <div>\n            <div className=\"flex flex-col gap-3\">\n              <h1 className=\"text-foreground text-4xl leading-tight md:text-5xl lg:text-[3.5rem]\">\n                Anticipate greater value from your billing\n              </h1>\n              <p className=\"text-foreground mb-5 text-lg\">\n                Our service is a usage-based billing platform designed to\n                accelerate your product launches. Effortlessly shape your\n                pricing today and refine it with confidence tomorrow.\n              </p>\n              <div>\n                <div className=\"flex flex-col items-center gap-4 lg:flex-row\">\n                  <div className=\"shrink-0\">\n                    <Button\n                      asChild\n                      className=\"block h-fit w-fit rounded-full px-6 py-3.5 font-mono text-[0.8125rem] font-medium uppercase leading-4 tracking-widest\"\n                    >\n                      <a href=\"#\">Get a Demo</a>\n                    </Button>\n                  </div>\n                  <Button\n                    variant=\"ghost\"\n                    asChild\n                    className=\"group flex h-fit items-center gap-2\"\n                  >\n                    <a href=\"#\">\n                      <p className=\"text-foreground font-mono text-sm font-medium uppercase\">\n                        GUIDE TO EMBRACING USAGE-BASED PRICING\n                      </p>\n                      <ChevronRight className=\"stroke-foreground h-4 w-4 shrink-0 transition-transform group-hover:translate-x-2\" />\n                    </a>\n                  </Button>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div>\n            <div className=\"relative ml-auto mr-auto aspect-[1.28581291/1] w-full max-w-[37.25rem] lg:ml-auto lg:mr-0\">\n              <div className=\"relative mx-auto aspect-[1.020365896/1] h-full w-[79.35%] max-w-[29.5625rem] overflow-hidden rounded-3xl\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"\"\n                  className=\"relative z-10 w-full object-cover\"\n                />\n              </div>\n              <div className=\"absolute -left-[-2%] top-[19.84%] z-30 aspect-[1.765043789/1] w-[30.49%] max-w-[11.875rem] overflow-hidden rounded-lg shadow-lg\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                  alt=\"\"\n                  className=\"size-full object-cover\"\n                />\n              </div>\n              <div className=\"absolute left-[0%] top-[55%] z-30 aspect-[1.776555024/1] w-[43.6%] max-w-[16.375rem] overflow-hidden rounded-lg shadow-lg\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                  alt=\"\"\n                  className=\"size-full object-cover\"\n                />\n              </div>\n              <div className=\"absolute right-[0%] top-[40%] z-30 aspect-[1.170212766/1] w-[26.48%] max-w-[10.3125rem] overflow-hidden rounded-lg shadow-lg\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                  alt=\"\"\n                  className=\"size-full object-cover\"\n                />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div className=\"flex flex-col items-center justify-center gap-8 pt-28\">\n        <p className=\"text-foreground px-5 text-center font-mono text-sm font-medium uppercase\">\n          Trusted by the FASTEST-GROWING STARTUPS AND ENTERPRISES\n        </p>\n        <Carousel\n          opts={{\n            loop: true,\n            align: \"center\",\n          }}\n          plugins={[\n            AutoScroll({\n              speed: 1,\n            }),\n            Autoplay({\n              playOnInit: true,\n              delay: 1000,\n            }),\n          ]}\n          className=\"max-w-(--breakpoint-2xl) relative w-full overflow-hidden\"\n        >\n          <CarouselContent className=\"items-center\">\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-8 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-8 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-8 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-6 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-6 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-8 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-8 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-8 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-6 w-full object-fill\"\n              />\n            </CarouselItem>\n            <CarouselItem className=\"w-fit basis-auto px-7\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg\"\n                alt=\"\"\n                className=\"h-6 w-full object-fill\"\n              />\n            </CarouselItem>\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero103 };\n"
+}

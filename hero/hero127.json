@@ -1,0 +1,57 @@
+{
+    "id": "hero127",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero127.jpg",
+    "thumbnail": "hero127-4x3.webp",
+    "description": "A component displaying a marketing degree promotion, featuring an interactive news badge, a bold title with highlighted keywords, two call-to-action buttons, and a section with user testimonials through avatars and stats on active users and episodes.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:05:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero127",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ChevronRight, Mail, MoveRight, Plus } from \"lucide-react\";\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\ntype avatar = {\n  avatar: string;\n  alt: string;\n  avatarFallback: string;\n};\n\ninterface AvatarsProps {\n  avatars?: Array<avatar>;\n}\n\nfunction Avatars({ avatars }: AvatarsProps) {\n  return (\n    <div className=\"flex items-center gap-2\">\n      {avatars &&\n        avatars.map(({ avatar, alt, avatarFallback }, i) => (\n          <Avatar\n            key={`avatar-hero-${i}`}\n            className=\"relative h-14 w-14 shrink-0 overflow-hidden rounded-full border before:absolute before:top-1/2 before:left-1/2 before:block before:h-[85%] before:w-[85%] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border-2 before:border-black before:bg-transparent before:content-['']\"\n          >\n            <AvatarImage\n              src={avatar}\n              alt={alt}\n              className=\"h-full w-full object-cover object-center\"\n            />\n            <AvatarFallback>{avatarFallback}</AvatarFallback>\n          </Avatar>\n        ))}\n      <div className=\"relative flex h-14 w-14 overflow-hidden rounded-full bg-primary before:absolute before:top-1/2 before:left-1/2 before:block before:h-[85%] before:w-[85%] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border-2 before:border-white before:bg-transparent before:content-['']\">\n        <Plus className=\"m-auto h-4 w-4 stroke-white\" />\n      </div>\n    </div>\n  );\n}\n\nconst Hero127 = () => {\n  const avatars: Array<avatar> = [\n    {\n      avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n      alt: \"\",\n      avatarFallback: \"\",\n    },\n    {\n      avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\",\n      alt: \"\",\n      avatarFallback: \"\",\n    },\n    {\n      avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\",\n      alt: \"\",\n      avatarFallback: \"\",\n    },\n    {\n      avatar: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\",\n      alt: \"\",\n      avatarFallback: \"\",\n    },\n  ];\n\n  return (\n    <section className=\"font-dm_sans py-12 md:py-20\">\n      <div className=\"container max-w-[56.25rem] xl:max-w-[66.875rem]\">\n        <div className=\"flex flex-col justify-between gap-12 xl:flex-row\">\n          <div className=\"flex w-full flex-col gap-12 xl:max-w-[37.5rem]\">\n            <Button\n              asChild\n              variant=\"ghost\"\n              className=\"flex w-fit gap-3 rounded-full border p-1 pr-3 hover:bg-transparent\"\n            >\n              <a href=\"#\">\n                <Badge className=\"hover:bg-bg-primary/10 flex items-center gap-[0.375rem] rounded-full bg-primary/10 px-3 py-1\">\n                  <Mail className=\"h-[0.875rem] w-[0.875rem] stroke-primary\" />\n                  <div className=\"text-sm leading-normal font-medium text-primary\">\n                    News\n                  </div>\n                </Badge>\n                <div className=\"flex items-center gap-3 text-sm leading-normal font-medium\">\n                  Check our new features\n                  <MoveRight className=\"h-4 w-4 stroke-muted-foreground\" />\n                </div>\n              </a>\n            </Button>\n            <h1 className=\"w-[80%] text-5xl leading-[1.2] font-bold text-black md:text-6xl xl:w-full xl:text-7xl\">\n              Introducing the{\" \"}\n              <span className=\"text-primary/50\">world's best</span>{\" \"}\n              <span className=\"text-primary\">marketing</span> degree.\n            </h1>\n            <div className=\"flex flex-col items-center gap-4 md:flex-row\">\n              <Button\n                asChild\n                className=\"flex h-fit w-full items-center justify-center gap-3 rounded-full border px-8 py-4 text-base font-medium md:w-fit\"\n              >\n                <a href=\"#\">\n                  <div>Get started now</div>\n                  <ChevronRight className=\"h-4 w-4 stroke-white\" />\n                </a>\n              </Button>\n              <Button\n                asChild\n                variant=\"outline\"\n                className=\"flex h-fit w-full items-center justify-center gap-3 rounded-full px-8 py-4 text-base font-medium hover:border-black/40 md:w-fit\"\n              >\n                <a href=\"#\">\n                  <Mail className=\"h-4 w-4\" />\n                  <div>Request Access</div>\n                </a>\n              </Button>\n            </div>\n          </div>\n          <div className=\"w-full xl:max-w-[20rem] xl:self-end\">\n            <div className=\"flex flex-col gap-12\">\n              <p className=\"max-w-[39rem] text-lg\">\n                Grow your audience with the top podcasting tool on the\n                market\u2014create, distribute, and monetize your show effortlessly.\n              </p>\n              <div className=\"flex flex-col justify-between gap-12 md:flex-row xl:flex-col xl:justify-normal\">\n                <div className=\"flex items-center gap-12\">\n                  <div>\n                    <p className=\"text-sm font-medium\">Active Users</p>\n                    <div className=\"text-3xl font-bold\">24 K+</div>\n                  </div>\n                  <div>\n                    <p className=\"text-sm font-medium\">Episodes</p>\n                    <div className=\"text-3xl font-bold\">43 K+</div>\n                  </div>\n                </div>\n                <Avatars avatars={avatars} />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero127 };\n"
+}

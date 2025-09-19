@@ -1,0 +1,34 @@
+{
+    "id": "hero185",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero185.jpg",
+    "thumbnail": "hero185-4x3.webp",
+    "description": "A component with two columns; one for a headline, subtext, and a large image, the other features two images and descriptive text emphasizing productivity and collaboration.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.614Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "hero185",
+    "collection": "block",
+    "group": "hero",
+    "code": "const Hero185 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"lg:border-y\">\n        <div className=\"container flex flex-col max-lg:divide-y lg:flex-row\">\n          <div className=\"flex-1 lg:border-l\">\n            <div className=\"lg:border-b lg:pr-8 lg:pb-5 lg:pl-2\">\n              <h1 className=\"mx-auto text-[2.5rem] leading-[1.2] tracking-[-1.6px] md:text-[4rem] md:leading-[1.15]! md:tracking-[-4.32px] lg:text-7xl\">\n                Empowering Productivity with Purpose\n              </h1>\n              <p className=\"mt-6 tracking-[-0.32px] text-muted-foreground\">\n                Our mission is to unlock potential by creating tools that\n                elevate productivity and foster seamless collaboration.\n              </p>\n            </div>\n            <div className=\"relative mt-10 aspect-[3/3.25] overflow-hidden md:mt-14 lg:mr-8 lg:mb-10 lg:ml-2\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"About hero image\"\n                className=\"object-cover\"\n              />\n            </div>\n          </div>\n\n          <div className=\"lg:border-x lg:px-8\">\n            <div className=\"flex justify-center gap-6 lg:gap-8\">\n              <div className=\"relative mt-20 aspect-[1/1.1] h-[200px] overflow-hidden lg:mt-32 lg:h-[296px]\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                  alt=\"Team meeting\"\n                  className=\"object-cover\"\n                />\n              </div>\n              <div className=\"relative mt-10 aspect-[1/1.1] h-[200px] overflow-hidden lg:mt-16 lg:h-[296px]\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                  alt=\"Team collaboration\"\n                  className=\"object-cover\"\n                />\n              </div>\n            </div>\n            <p className=\"mt-10 px-4 tracking-[-0.32px] text-muted-foreground md:mt-14\">\n              Our mission is to enable individuals and teams to achieve their\n              best work by delivering innovative tools that simplify workflows,\n              enhance collaboration, and drive impactful outcomes. We&apos;re\n              dedicated to creating a seamless productivity experience that\n              helps people thrive in their work and reach new heights.\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero185 };\n"
+}

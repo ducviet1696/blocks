@@ -1,0 +1,45 @@
+{
+    "id": "feature111",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature111.jpg",
+    "thumbnail": "feature111-4x3.webp",
+    "description": "A component showcasing features with 2 columns, badges, headings, descriptions, links, and images. Unique for its centered content and outlined badges.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.824Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature111",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature111 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-xl flex-col items-center gap-5 text-center\">\n          <Badge variant=\"outline\">High Standards</Badge>\n          <h2 className=\"text-3xl font-semibold md:text-5xl\">\n            Create, Motivate, and Succeed\n          </h2>\n          <p className=\"text-muted-foreground md:text-lg\">\n            Join the journey to build intricately crafted digital solutions.\n          </p>\n          <a\n            href=\"#\"\n            className=\"flex items-center gap-1 text-sm font-medium md:text-base\"\n          >\n            View all capabilities\n            <ChevronRight className=\"h-auto w-4\" />\n          </a>\n        </div>\n        <div className=\"mt-20 grid gap-10 md:grid-cols-2\">\n          <div className=\"-mx-7 rounded-lg bg-muted px-14 pt-7 md:mx-0\">\n            <div className=\"mx-auto flex flex-col items-center gap-2.5 text-center md:gap-5\">\n              <Badge variant=\"outline\" className=\"bg-background\">\n                Premium\n              </Badge>\n              <h2 className=\"text-lg font-semibold md:text-3xl\">\n                For Entrepreneurs\n              </h2>\n              <p className=\"text-muted-foreground md:text-lg\">\n                Discover the potential of innovative web design.\n              </p>\n              <a\n                href=\"#\"\n                className=\"flex items-center gap-1 text-sm font-medium md:text-base\"\n              >\n                Sign Up\n                <ChevronRight className=\"h-auto w-4\" />\n              </a>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"placeholder\"\n                className=\"mt-5 max-h-[400px] rounded-t-lg\"\n              />\n            </div>\n          </div>\n          <div className=\"-mx-7 rounded-lg bg-muted px-14 pt-7 md:mx-0\">\n            <div className=\"mx-auto flex flex-col items-center gap-2.5 text-center md:gap-5\">\n              <Badge variant=\"outline\" className=\"bg-background\">\n                Featured\n              </Badge>\n              <h2 className=\"text-lg font-semibold md:text-3xl\">\n                For Businesses\n              </h2>\n              <p className=\"text-muted-foreground md:text-lg\">\n                Build an exceptional digital presence today.\n              </p>\n              <a\n                href=\"#\"\n                className=\"flex items-center gap-1 text-sm font-medium md:text-base\"\n              >\n                Get Started\n                <ChevronRight className=\"h-auto w-4\" />\n              </a>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                alt=\"placeholder\"\n                className=\"mt-5 max-h-[400px] rounded-t-lg\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature111 };\n"
+}

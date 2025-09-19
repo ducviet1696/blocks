@@ -1,0 +1,54 @@
+{
+    "id": "hero223",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero223.jpg",
+    "thumbnail": "hero223-4x3.webp",
+    "description": "A component featuring a centered headline with shadow text effect, background animation, and two action buttons, all within a radial gradient mask.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "motion",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "line-shadow-text",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/line-shadow-text",
+            "docsUrl": "https://magicui.design/docs/components/line-shadow-text"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero223",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\nimport { ArrowRight } from \"lucide-react\";\nimport { motion } from \"motion/react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { LineShadowText } from \"@/components/magicui/line-shadow-text\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero223 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"h-150 container relative flex w-full flex-col items-center justify-center overflow-hidden\">\n        <div className=\"bg-background pointer-events-none absolute inset-0 z-20 h-full w-full [mask-image:radial-gradient(transparent,white)]\" />\n        <Boxes className=\"scale-150\" />\n\n        <h1 className=\"z-99 relative max-w-4xl text-center text-5xl font-medium tracking-tight md:text-7xl\">\n          <span className=\"text-muted-foreground/50 mr-3\">\n            The only app you Need to Stay\n          </span>\n          <LineShadowText> Productive </LineShadowText>\n          <span className=\"text-muted-foreground/50\"> ever</span>\n          <span>.</span>\n        </h1>\n        <p className=\"z-99 text-muted-foreground relative mt-4 max-w-xl text-center text-lg\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sapiente\n          quisquam debitis error vero possimus amet\n        </p>\n        <div className=\"realtive z-99 mt-10 flex items-center justify-center gap-4\">\n          <Button\n            variant=\"default\"\n            className=\"text-md group flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n          >\n            <span>See Pricing</span>\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n          </Button>\n          <Button\n            variant=\"secondary\"\n            className=\"text-md group flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n          >\n            <span>Try it for free</span>\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero223 };\n\n// Below is the modified component from Aceternity UI\n// Original source: npx shadcn@latest add https://ui.aceternity.com/registry/background-boxes.json\n// Modified to follow our coding standards and design system\n// We respect copyright and attribution to the original creators\n\nexport const BoxesCore = ({ className, ...rest }: { className?: string }) => {\n  const rows = new Array(150).fill(1);\n  const cols = new Array(100).fill(1);\n  const colors = [\n    \"#33A1FD\",\n    \"#2276FF\",\n    \"#FDCA41\",\n    \"#2EDCC3\",\n    \"#FF99CA\",\n    \"#E5D5C3\",\n    \"#343433\",\n  ];\n  const getRandomColor = () => {\n    return colors[Math.floor(Math.random() * colors.length)];\n  };\n\n  return (\n    <div\n      style={{\n        transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,\n      }}\n      className={cn(\n        \"absolute -top-1/4 left-1/4 z-0 flex h-full w-full -translate-x-1/2 -translate-y-1/2 p-4\",\n        className,\n      )}\n      {...rest}\n    >\n      {rows.map((_, i) => (\n        <motion.div\n          key={`row` + i}\n          className=\"border-muted-foreground/20 relative h-8 w-16 border-l\"\n        >\n          {cols.map((_, j) => (\n            <motion.div\n              whileHover={{\n                backgroundColor: `${getRandomColor()}`,\n                transition: { duration: 0 },\n              }}\n              animate={{\n                transition: { duration: 2 },\n              }}\n              key={`col` + j}\n              className=\"border-muted-foreground/20 relative h-8 w-16 border-r border-t\"\n            >\n              {j % 2 === 0 && i % 2 === 0 ? (\n                <svg\n                  xmlns=\"http://www.w3.org/2000/svg\"\n                  fill=\"none\"\n                  viewBox=\"0 0 24 24\"\n                  strokeWidth=\"1.5\"\n                  stroke=\"currentColor\"\n                  className=\"text-muted pointer-events-none absolute -left-[22px] -top-[14px] h-6 w-10 stroke-[1px]\"\n                >\n                  <path\n                    strokeLinecap=\"round\"\n                    strokeLinejoin=\"round\"\n                    d=\"M12 6v12m6-6H6\"\n                  />\n                </svg>\n              ) : null}\n            </motion.div>\n          ))}\n        </motion.div>\n      ))}\n    </div>\n  );\n};\n\nexport const Boxes = React.memo(BoxesCore);\n"
+}

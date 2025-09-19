@@ -1,0 +1,63 @@
+{
+    "id": "casestudy1",
+    "access": "basic",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "casestudy1.jpg",
+    "thumbnail": "casestudy1-4x3.webp",
+    "description": "A component presenting a case study with navigation breadcrumbs, a main section featuring a title, introduction, image, metrics in a 4-column layout, detailed text with an alert and a table, alongside a sticky sidebar with company logo, summary, sector, and action buttons.",
+    "createdAt": [
+        3,
+        "2025-01-26T04:31:17.422Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "alert",
+            "registryId": "shadcn",
+            "registryItemUrl": "alert",
+            "docsUrl": "https://ui.shadcn.com/docs/components/alert"
+        },
+        {
+            "name": "breadcrumb",
+            "registryId": "shadcn",
+            "registryItemUrl": "breadcrumb",
+            "docsUrl": "https://ui.shadcn.com/docs/components/breadcrumb"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "casestudy"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "casestudy1",
+    "collection": "block",
+    "group": "casestudy",
+    "code": "import { GitBranch, Lightbulb } from \"lucide-react\";\n\nimport { Alert, AlertDescription, AlertTitle } from \"@/components/ui/alert\";\nimport {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/components/ui/breadcrumb\";\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Casestudy1 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-7xl\">\n          <Breadcrumb className=\"mb-6 lg:mb-10\">\n            <BreadcrumbList>\n              <BreadcrumbItem>\n                <BreadcrumbLink href=\"/\">Home</BreadcrumbLink>\n              </BreadcrumbItem>\n              <BreadcrumbSeparator>/</BreadcrumbSeparator>\n              <BreadcrumbItem>\n                <BreadcrumbPage>Components</BreadcrumbPage>\n              </BreadcrumbItem>\n            </BreadcrumbList>\n          </Breadcrumb>\n          <div className=\"relative flex-col gap-10 lg:flex lg:flex-row lg:justify-between\">\n            <div className=\"lg:max-w-[692px]\">\n              <div className=\"max lg:col-span-2\">\n                <div>\n                  <h1 className=\"text-pretty text-3xl font-extrabold\">\n                    Boosting System Reliability by 125% with AI Monitoring\n                  </h1>\n                  <p className=\"text-muted-foreground mt-2 text-lg\">\n                    In a kingdom far away, where laughter once flowed freely, a\n                    peculiar tale unfolded about a king who decided to tax the\n                    very essence of joy itself - jokes and jest.\n                  </p>\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                    alt=\"placeholder\"\n                    className=\"my-8 aspect-video w-full rounded-lg object-cover\"\n                  />\n                  <div className=\"mb-8 grid grid-cols-2 gap-5 lg:grid-cols-4\">\n                    <div className=\"flex flex-col gap-2\">\n                      <p className=\"text-4xl font-semibold sm:text-5xl\">19%</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        increase in user engagement rate\n                      </p>\n                    </div>\n                    <div className=\"flex flex-col gap-2\">\n                      <p className=\"text-4xl font-semibold sm:text-5xl\">28%</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        growth in customer retention rate\n                      </p>\n                    </div>\n                    <div className=\"flex flex-col gap-2\">\n                      <p className=\"text-4xl font-semibold sm:text-5xl\">72%</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        satisfaction rate among users and customers\n                      </p>\n                    </div>\n                    <div className=\"flex flex-col gap-2\">\n                      <p className=\"text-4xl font-semibold sm:text-5xl\">\n                        &gt;85%\n                      </p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        positive feedback received from users\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div className=\"prose dark:prose-invert mb-8 max-w-full lg:max-w-prose\">\n                  <h2>How the Tax System Works</h2>\n                  <p>\n                    The king, seeing how much happier his subjects were,\n                    realized the error of his ways and repealed the joke tax.\n                    Jokester was declared a hero, and the kingdom lived happily\n                    ever after.\n                  </p>\n                  <Alert>\n                    <Lightbulb className=\"h-4 w-4\" />\n                    <AlertTitle>Royal Decree!</AlertTitle>\n                    <AlertDescription>\n                      Remember, all jokes must be registered at the Royal Jest\n                      Office before telling them\n                    </AlertDescription>\n                  </Alert>\n\n                  <h2>The People&apos;s Rebellion</h2>\n                  <p>\n                    The people of the kingdom, feeling uplifted by the laughter,\n                    started to tell jokes and puns again, and soon the entire\n                    kingdom was in on the joke.\n                  </p>\n                  <div>\n                    <table>\n                      <thead>\n                        <tr>\n                          <th>King&apos;s Treasury</th>\n                          <th>People&apos;s happiness</th>\n                        </tr>\n                      </thead>\n                      <tbody>\n                        <tr>\n                          <td>Empty</td>\n                          <td>Overflowing</td>\n                        </tr>\n                        <tr className=\"even:bg-muted m-0 border-t p-0\">\n                          <td>Modest</td>\n                          <td>Satisfied</td>\n                        </tr>\n                        <tr className=\"even:bg-muted m-0 border-t p-0\">\n                          <td>Full</td>\n                          <td>Ecstatic</td>\n                        </tr>\n                      </tbody>\n                    </table>\n                  </div>\n                  <p>\n                    The king, seeing how much happier his subjects were,\n                    realized the error of his ways and repealed the joke tax.\n                    Jokester was declared a hero, and the kingdom lived happily\n                    ever after.\n                  </p>\n\n                  <h2>The King&apos;s Plan</h2>\n                  <p>\n                    The king thought long and hard, and finally came up with{\" \"}\n                    <a href=\"#\">a brilliant plan</a>: he would tax the jokes in\n                    the kingdom.\n                  </p>\n                  <blockquote>\n                    &ldquo;After all,&rdquo; he said, &ldquo;everyone enjoys a\n                    good joke, so it&apos;s only fair that they should pay for\n                    the privilege.&rdquo;\n                  </blockquote>\n                  <p>\n                    The king&apos;s subjects were not amused. They grumbled and\n                    complained, but the king was firm:\n                  </p>\n                  <ul>\n                    <li>1st level of puns: 5 gold coins</li>\n                    <li>2nd level of jokes: 10 gold coins</li>\n                    <li>3rd level of one-liners : 20 gold coins</li>\n                  </ul>\n                  <p>\n                    As a result, people stopped telling jokes, and the kingdom\n                    fell into a gloom. But there was one person who refused to\n                    let the king&apos;s foolishness get him down: a court jester\n                    named Jokester.\n                  </p>\n                </div>\n              </div>\n            </div>\n            <div className=\"h-fit lg:sticky lg:top-8 lg:max-w-80\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg\"\n                alt=\"logo\"\n                className=\"mb-8 w-36\"\n              />\n              <p className=\"mb-1.5 text-sm font-semibold\">Overview</p>\n              <p className=\"text-muted-foreground mb-5 text-sm\">\n                Our client implemented our solution to transform their business\n                operations, resulting in improved efficiency, enhanced customer\n                experience, and significant cost savings across their entire\n                organization.\n              </p>\n              <p className=\"mb-1.5 text-sm font-semibold\">Sector</p>\n              <p className=\"text-muted-foreground mb-5 text-sm\">Technology</p>\n              <p className=\"mb-1.5 text-sm font-semibold\">Solution</p>\n              <Button size=\"sm\" variant=\"outline\">\n                <GitBranch className=\"opacity-60\" />\n                Enterprise\n              </Button>\n              <Separator className=\"my-5\" />\n              <p className=\"mb-3 text-sm font-semibold\">Want to learn more?</p>\n              <Button size=\"sm\">Contact us</Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Casestudy1 };\n"
+}

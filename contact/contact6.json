@@ -1,0 +1,82 @@
+{
+    "id": "contact6",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "contact6.jpg",
+    "thumbnail": "contact6-4x3.webp",
+    "description": "A contact form component with two columns: one for direct contact info using icons and one for a submission form.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.806Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "checkbox",
+            "registryId": "shadcn",
+            "registryItemUrl": "checkbox",
+            "docsUrl": "https://ui.shadcn.com/docs/components/checkbox"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        },
+        {
+            "name": "textarea",
+            "registryId": "shadcn",
+            "registryItemUrl": "textarea",
+            "docsUrl": "https://ui.shadcn.com/docs/components/textarea"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "contact"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "contact6",
+    "collection": "block",
+    "group": "contact",
+    "code": "\"use client\";\n\nimport {\n  AlertCircle,\n  CheckCircle,\n  Mail,\n  MapPin,\n  MessagesSquare,\n  Phone,\n} from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport { Separator } from \"@/components/ui/separator\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\ninterface ContactInfo {\n  icon: React.ReactNode;\n  title: string;\n  description: string;\n  value: string;\n  href: string;\n  badge?: string;\n}\n\nconst contactInfo: ContactInfo[] = [\n  {\n    icon: <Mail className=\"size-6\" />,\n    title: \"Email\",\n    description: \"Get a response within 24 hours\",\n    value: \"hello@company.com\",\n    href: \"mailto:hello@company.com\",\n    badge: \"Recommended\",\n  },\n  {\n    icon: <MessagesSquare className=\"size-6\" />,\n    title: \"Live Chat\",\n    description: \"Instant support available now\",\n    value: \"Start chatting\",\n    href: \"#\",\n    badge: \"Online\",\n  },\n  {\n    icon: <Phone className=\"size-6\" />,\n    title: \"Phone\",\n    description: \"Mon-Fri, 9AM-6PM EST\",\n    value: \"+1 (555) 123-4567\",\n    href: \"tel:+15551234567\",\n  },\n  {\n    icon: <MapPin className=\"size-6\" />,\n    title: \"Office\",\n    description: \"Schedule an in-person meeting\",\n    value: \"123 Innovation St, Tech City\",\n    href: \"#\",\n  },\n];\n\nconst Contact6 = () => {\n  const [formData, setFormData] = useState({\n    firstName: \"\",\n    lastName: \"\",\n    email: \"\",\n    company: \"\",\n    message: \"\",\n    agreeToTerms: false,\n  });\n  const [isSubmitting, setIsSubmitting] = useState(false);\n  const [submitStatus, setSubmitStatus] = useState<\n    \"idle\" | \"success\" | \"error\"\n  >(\"idle\");\n\n  const handleInputChange = (field: string, value: string | boolean) => {\n    setFormData((prev) => ({ ...prev, [field]: value }));\n  };\n\n  const handleSubmit = async (e: React.FormEvent) => {\n    e.preventDefault();\n    setIsSubmitting(true);\n\n    // Simulate API call\n    await new Promise((resolve) => setTimeout(resolve, 2000));\n\n    // Simulate success/error\n    const success = Math.random() > 0.3;\n    setSubmitStatus(success ? \"success\" : \"error\");\n    setIsSubmitting(false);\n\n    if (success) {\n      setFormData({\n        firstName: \"\",\n        lastName: \"\",\n        email: \"\",\n        company: \"\",\n        message: \"\",\n        agreeToTerms: false,\n      });\n    }\n  };\n\n  return (\n    <section className=\"bg-background py-24\">\n      <div className=\"container px-4 md:px-6\">\n        <div className=\"mx-auto max-w-4xl\">\n          {/* Header */}\n          <div className=\"mb-16 text-center\">\n            <h1 className=\"mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl\">\n              Contact Us\n            </h1>\n            <p className=\"text-muted-foreground mx-auto max-w-2xl text-lg\">\n              Ready to start your next project? Our team is here to help you\n              succeed. Reach out and let's discuss how we can bring your ideas\n              to life.\n            </p>\n          </div>\n\n          <div className=\"grid gap-12 lg:grid-cols-2\">\n            {/* Contact Information */}\n            <div className=\"space-y-6\">\n              <div className=\"space-y-4\">\n                {contactInfo.map((info, index) => (\n                  <Card key={index} className=\"bg-muted border-0 shadow-none\">\n                    <CardContent>\n                      <div className=\"flex items-start gap-4\">\n                        <div className=\"bg-muted flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg\">\n                          {info.icon}\n                        </div>\n                        <div className=\"min-w-0 flex-1\">\n                          <div className=\"mb-1 flex items-center gap-2\">\n                            <h3 className=\"font-semibold\">{info.title}</h3>\n                          </div>\n                          <p className=\"text-muted-foreground mb-2 text-sm\">\n                            {info.description}\n                          </p>\n                          <a\n                            href={info.href}\n                            className=\"text-sm font-medium transition-colors hover:underline\"\n                          >\n                            {info.value}\n                          </a>\n                        </div>\n                      </div>\n                    </CardContent>\n                  </Card>\n                ))}\n              </div>\n            </div>\n\n            {/* Contact Form */}\n            <Card className=\"border-0 shadow-none\">\n              <CardHeader>\n                <CardTitle>Send us a message</CardTitle>\n                <p className=\"text-muted-foreground text-sm\">\n                  Fill out the form below and we'll get back to you within 24\n                  hours.\n                </p>\n              </CardHeader>\n              <CardContent>\n                <form onSubmit={handleSubmit} className=\"space-y-6\">\n                  <div className=\"grid grid-cols-2 gap-4\">\n                    <div className=\"space-y-2\">\n                      <Label\n                        htmlFor=\"firstName\"\n                        className=\"text-sm font-medium\"\n                      >\n                        First Name *\n                      </Label>\n                      <Input\n                        id=\"firstName\"\n                        value={formData.firstName}\n                        onChange={(e) =>\n                          handleInputChange(\"firstName\", e.target.value)\n                        }\n                        placeholder=\"John\"\n                        required\n                      />\n                    </div>\n                    <div className=\"space-y-2\">\n                      <Label htmlFor=\"lastName\" className=\"text-sm font-medium\">\n                        Last Name *\n                      </Label>\n                      <Input\n                        id=\"lastName\"\n                        value={formData.lastName}\n                        onChange={(e) =>\n                          handleInputChange(\"lastName\", e.target.value)\n                        }\n                        placeholder=\"Doe\"\n                        required\n                      />\n                    </div>\n                  </div>\n\n                  <div className=\"space-y-2\">\n                    <Label htmlFor=\"email\" className=\"text-sm font-medium\">\n                      Email Address *\n                    </Label>\n                    <Input\n                      id=\"email\"\n                      type=\"email\"\n                      value={formData.email}\n                      onChange={(e) =>\n                        handleInputChange(\"email\", e.target.value)\n                      }\n                      placeholder=\"john@company.com\"\n                      required\n                    />\n                  </div>\n\n                  <div className=\"space-y-2\">\n                    <Label htmlFor=\"company\" className=\"text-sm font-medium\">\n                      Company\n                    </Label>\n                    <Input\n                      id=\"company\"\n                      value={formData.company}\n                      onChange={(e) =>\n                        handleInputChange(\"company\", e.target.value)\n                      }\n                      placeholder=\"Your Company\"\n                    />\n                  </div>\n\n                  <div className=\"space-y-2\">\n                    <Label htmlFor=\"message\" className=\"text-sm font-medium\">\n                      Message *\n                    </Label>\n                    <Textarea\n                      id=\"message\"\n                      value={formData.message}\n                      onChange={(e) =>\n                        handleInputChange(\"message\", e.target.value)\n                      }\n                      placeholder=\"Tell us about your project, goals, or how we can help...\"\n                      rows={4}\n                      required\n                      className=\"resize-none\"\n                    />\n                  </div>\n\n                  <div className=\"flex items-start space-x-3\">\n                    <Checkbox\n                      id=\"agreeToTerms\"\n                      checked={formData.agreeToTerms}\n                      onCheckedChange={(checked) =>\n                        handleInputChange(\"agreeToTerms\", checked as boolean)\n                      }\n                      required\n                    />\n                    <Label\n                      htmlFor=\"agreeToTerms\"\n                      className=\"text-muted-foreground text-sm leading-relaxed\"\n                    >\n                      I agree to the{\" \"}\n                      <a\n                        href=\"#\"\n                        className=\"text-foreground font-medium hover:underline\"\n                      >\n                        Terms of Service\n                      </a>{\" \"}\n                      and{\" \"}\n                      <a\n                        href=\"#\"\n                        className=\"text-foreground font-medium hover:underline\"\n                      >\n                        Privacy Policy\n                      </a>\n                    </Label>\n                  </div>\n\n                  {submitStatus === \"success\" && (\n                    <div className=\"flex items-center gap-2 rounded-lg border border-green-200 bg-green-50 p-3 dark:border-green-800 dark:bg-green-950\">\n                      <CheckCircle className=\"size-6 text-green-600 dark:text-green-400\" />\n                      <span className=\"text-sm font-medium text-green-800 dark:text-green-200\">\n                        Message sent successfully!\n                      </span>\n                    </div>\n                  )}\n\n                  {submitStatus === \"error\" && (\n                    <div className=\"flex items-center gap-2 rounded-lg border border-red-200 bg-red-50 p-3 dark:border-red-800 dark:bg-red-950\">\n                      <AlertCircle className=\"size-6 text-red-600 dark:text-red-400\" />\n                      <span className=\"text-sm font-medium text-red-800 dark:text-red-200\">\n                        Something went wrong. Please try again.\n                      </span>\n                    </div>\n                  )}\n\n                  <Button\n                    type=\"submit\"\n                    disabled={isSubmitting || !formData.agreeToTerms}\n                    className=\"w-full\"\n                  >\n                    {isSubmitting ? (\n                      <div className=\"flex items-center gap-2\">\n                        <div className=\"size-6 animate-spin rounded-full border-2 border-current border-t-transparent\" />\n                        Sending...\n                      </div>\n                    ) : (\n                      <div className=\"flex items-center gap-2\">Submit</div>\n                    )}\n                  </Button>\n                </form>\n              </CardContent>\n            </Card>\n          </div>\n\n          {/* Office Hours - Full Width */}\n          <div className=\"mt-12\">\n            <Separator className=\"mb-8\" />\n            <Card className=\"bg-muted border-0 shadow-none\">\n              <CardContent className=\"p-6\">\n                <div className=\"grid gap-8 md:grid-cols-2\">\n                  <div className=\"space-y-4\">\n                    <h3 className=\"text-lg font-semibold\">Office Hours</h3>\n                    <div className=\"text-muted-foreground space-y-2 text-sm\">\n                      <div className=\"flex justify-between\">\n                        <span>Monday - Friday</span>\n                        <span>9:00 AM - 6:00 PM EST</span>\n                      </div>\n                      <div className=\"flex justify-between\">\n                        <span>Saturday</span>\n                        <span>10:00 AM - 4:00 PM EST</span>\n                      </div>\n                      <div className=\"flex justify-between\">\n                        <span>Sunday</span>\n                        <span>Closed</span>\n                      </div>\n                    </div>\n                  </div>\n                  <div className=\"space-y-4\">\n                    <h3 className=\"text-lg font-semibold\">\n                      Contact Information\n                    </h3>\n                    <div className=\"text-muted-foreground space-y-2 text-sm\">\n                      <div className=\"flex justify-between\">\n                        <span>Email</span>\n                        <span>hello@company.com</span>\n                      </div>\n                      <div className=\"flex justify-between\">\n                        <span>Phone</span>\n                        <span>+1 (555) 123-4567</span>\n                      </div>\n                      <div className=\"flex justify-between\">\n                        <span>Address</span>\n                        <span>123 Innovation St, Tech City</span>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </CardContent>\n            </Card>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Contact6 };\n"
+}

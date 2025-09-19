@@ -1,0 +1,59 @@
+{
+    "id": "hero20",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero20.jpg",
+    "thumbnail": "hero20-4x3.webp",
+    "description": "A carousel-linked accordion block with a 2-column layout: icons & FAQs on the left, images rotating in sync on the right. Unique features include timed content transition and interactive FAQ accordion.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.610Z"
+    ],
+    "dependencies": [
+        "embla-carousel-fade",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "accordion",
+            "registryId": "shadcn",
+            "registryItemUrl": "accordion",
+            "docsUrl": "https://ui.shadcn.com/docs/components/accordion"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero20",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport Fade from \"embla-carousel-fade\";\nimport { CopyCheck, DollarSign, MessagesSquare } from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\nimport { Badge } from \"@/components/ui/badge\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst DURATION = 8000;\n\nconst accordions = [\n  {\n    id: \"1\",\n    question: \"Can I use this for commercial projects?\",\n    icon: <CopyCheck className=\"w-5\" />,\n    answer: \"Yes, All blocks are yours to use.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n  },\n  {\n    id: \"2\",\n    question: \"Are there any hidden fees?\",\n    icon: <DollarSign className=\"w-5\" />,\n    answer: \"No, there are no hidden fees.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    id: \"3\",\n    question: \"Do you provide support?\",\n    icon: <MessagesSquare className=\"w-5\" />,\n    answer: \"Yes, we provide support via email.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n  },\n];\n\nconst Hero20 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [currentAccordion, setCurrentAccordion] = useState(\"1\");\n\n  useEffect(() => {\n    api?.scrollTo(+currentAccordion - 1);\n    const interval = setInterval(() => {\n      setCurrentAccordion((prev) => {\n        const next = parseInt(prev) + 1;\n        return next > 3 ? \"1\" : next.toString();\n      });\n    }, DURATION);\n\n    return () => clearInterval(interval);\n  }, [api, currentAccordion]);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto grid max-w-5xl gap-20 lg:grid-cols-2\">\n          <div>\n            <Badge variant=\"outline\" className=\"mb-4\">\n              Platform\n            </Badge>\n            <h1 className=\"mb-8 text-3xl font-medium lg:text-5xl\">\n              Build your own platform\n            </h1>\n            <Accordion\n              type=\"single\"\n              value={currentAccordion}\n              onValueChange={(value) => {\n                setCurrentAccordion(value);\n                console.log(value);\n                api?.scrollTo(+value - 1);\n              }}\n            >\n              {accordions.map((accordion) => (\n                <AccordionItem\n                  key={accordion.id}\n                  value={accordion.id}\n                  className=\"border-b-0\"\n                >\n                  <AccordionTrigger className=\"text-left data-[state=closed]:text-muted-foreground\">\n                    <div className=\"flex items-center justify-between gap-2\">\n                      <span className=\"flex size-9 items-center justify-center rounded-lg bg-muted\">\n                        {accordion.icon}\n                      </span>\n                      <span className=\"font-medium lg:text-lg\">\n                        {accordion.question}\n                      </span>\n                    </div>\n                  </AccordionTrigger>\n                  <AccordionContent className=\"text-muted-foreground lg:text-base\">\n                    {accordion.answer}\n                    <div className=\"mt-8 h-px bg-muted\">\n                      <div\n                        className=\"h-px animate-progress bg-primary\"\n                        style={{\n                          animationDuration: `${DURATION}ms`,\n                        }}\n                      ></div>\n                    </div>\n                  </AccordionContent>\n                </AccordionItem>\n              ))}\n            </Accordion>\n          </div>\n          <div>\n            <Carousel\n              opts={{\n                duration: 50,\n              }}\n              setApi={setApi}\n              plugins={[Fade()]}\n            >\n              <CarouselContent>\n                {accordions.map((accordion) => (\n                  <CarouselItem key={accordion.id}>\n                    <div>\n                      <img\n                        src={accordion.image}\n                        alt=\"placeholder\"\n                        className=\"max-h-96 w-full object-cover lg:max-h-none\"\n                      />\n                    </div>\n                  </CarouselItem>\n                ))}\n              </CarouselContent>\n            </Carousel>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero20 };\n"
+}

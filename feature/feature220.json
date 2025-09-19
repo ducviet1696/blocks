@@ -1,0 +1,51 @@
+{
+    "id": "feature220",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature220.jpg",
+    "thumbnail": "feature220-4x3.webp",
+    "description": "A component showcasing user stats, a customer testimonial with avatar, and an autoplaying video in a 2-column layout. It includes styled text and a button.",
+    "createdAt": [
+        3,
+        "2025-04-30T03:08:16.834Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature220",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\n\nconst stats = [\n  {\n    number: \"52%\",\n    text: \"boost in user retention\",\n  },\n  {\n    number: \"40%\",\n    text: \"decrease in development time\",\n  },\n  {\n    number: \"2.5x\",\n    text: \"increase in feature adoption\",\n  },\n];\n\nconst Feature220 = () => {\n  return (\n    <section className=\"bg-muted bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/dot-pattern-2.svg')] bg-[length:3.125rem_3.125rem] bg-repeat py-20\">\n      <div className=\"container flex flex-wrap-reverse gap-12 lg:grid lg:grid-cols-[1fr_1.5fr] lg:gap-[7.5rem]\">\n        <div className=\"flex flex-col justify-between gap-20\">\n          <div className=\"mt-10 flex flex-col gap-5\">\n            <h2 className=\"text-4xl font-semibold leading-none tracking-tight md:text-5xl\">\n              Build Stunning Interfaces Faster Than Ever Before\n            </h2>\n            <p className=\"text-muted-foreground text-lg font-medium leading-[1.4] md:text-xl\">\n              Drag, drop, and customize ready-made components to speed up your\n              workflow and create polished UIs in no time.\n            </p>\n            <div>\n              <Button size=\"lg\" className=\"px-8 py-6 text-lg\">\n                Start Building\n                <ArrowRight />\n              </Button>\n            </div>\n          </div>\n          <div>\n            <div className=\"bg-background group flex w-full max-w-[30rem] flex-col gap-10 rounded-[.5rem] p-5 transition-shadow hover:shadow-[0_0_2px_theme('colors.gray.300')]\">\n              <div className=\"flex w-full flex-col gap-8 sm:flex-row\">\n                {stats.map((item, i) => (\n                  <div\n                    className=\"flex flex-col gap-1\"\n                    key={`stats-use-case-${i}`}\n                  >\n                    <div className=\"text-xl font-semibold\">{item.number}</div>\n                    <div className=\"text-muted-foreground text-sm font-medium\">\n                      {item.text}\n                    </div>\n                  </div>\n                ))}\n              </div>\n            </div>\n          </div>\n        </div>\n        <div className=\"w-full max-w-[46.5rem]\">\n          <AspectRatio\n            ratio={0.873239437}\n            className=\"overflow-hidden rounded-2xl\"\n          >\n            <video\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-8.mp4\"\n              className=\"block size-full object-cover object-center\"\n              loop\n              autoPlay\n              muted\n              controls={false}\n            />\n          </AspectRatio>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature220 };\n"
+}

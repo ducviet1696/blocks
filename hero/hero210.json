@@ -1,0 +1,48 @@
+{
+    "id": "hero210",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero210.jpg",
+    "thumbnail": "hero210-4x3.webp",
+    "description": "A carousel component with animated image display, customizable autoplay, and unique coverflow effect. It features dynamic opacity transitions, includes a headline, subtext, and a button with hover scaling.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "react",
+        "swiper"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero",
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero210",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport React, { useEffect, useState } from \"react\";\nimport { Autoplay, EffectCoverflow } from \"swiper/modules\";\nimport { Swiper, SwiperSlide } from \"swiper/react\";\nimport \"swiper/css/effect-coverflow\";\nimport \"swiper/css/pagination\";\nimport \"swiper/css/navigation\";\nimport \"swiper/css\";\nimport \"swiper/css/effect-cards\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero210 = () => {\n  const [domLoaded, setDomLoaded] = useState(false);\n\n  useEffect(() => {\n    setDomLoaded(true);\n  }, []);\n\n  const images = [\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n      alt: \"Portrait of Joanna Doe in urban setting\",\n      name: \"Joanna Doe\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n      alt: \"Portrait of Joan Doe in natural lighting\",\n      name: \"Joan Doe\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n      alt: \"Portrait of Sarah Chen in studio setting\",\n      name: \"Sarah Chen\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n      alt: \"Portrait of Joanna Doe in urban setting\",\n      name: \"Joanna Doe\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n      alt: \"Portrait of Joan Doe in natural lighting\",\n      name: \"Joan Doe\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n      alt: \"Portrait of Sarah Chen in studio setting\",\n      name: \"Sarah Chen\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n      alt: \"Portrait of Joanna Doe in urban setting\",\n      name: \"Joanna Doe\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n      alt: \"Portrait of Joan Doe in natural lighting\",\n      name: \"Joan Doe\",\n    },\n    {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n      alt: \"Portrait of Sarah Chen in studio setting\",\n      name: \"Sarah Chen\",\n    },\n  ];\n\n  const css = `\n  .mySwiperHero210 {\n    width: 100%;\n    height: 420px;\n    padding-bottom: 50px;\n  }\n  \n  .mySwiperHero210 .swiper-slide {\n    background-position: center;\n    background-size: cover;\n    width: 300px;\n  }\n  \n  .mySwiperHero210 .swiper-slide img {\n    display: block;\n    width: 100%;\n  }\n  \n  .swiper-3d .swiper-slide-shadow-left {\n    background-image: none;\n  }\n    \n  .swiper-3d .swiper-slide-shadow-right{\n    background: none;\n  }\n  `;\n  return (\n    <section className=\"py-32\">\n      <style>{css}</style>\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-2xl flex-col items-center justify-center gap-4\">\n          <h1 className=\"text-center font-calSans text-5xl lg:text-7xl\">\n            Boost your Professional Career\n          </h1>\n          <p className=\"text-center text-muted-foreground lg:text-lg\">\n            Lorem, ipsum dolor sit amet consectetur adipisicing elit.\n            Necessitatibus odit eius tenetur quaerat, aperiam, iste ea ex\n          </p>\n        </div>\n\n        <div className=\"relative mt-12 h-[420px] w-full lg:px-20\">\n          <div className=\"lg:110 absolute left-0 z-10 h-full w-12 bg-gradient-to-r from-background via-white to-transparent md:w-58 lg:left-16\" />\n          <div className=\"absolute right-0 z-10 h-full w-12 bg-gradient-to-l from-background via-white to-transparent md:w-58 lg:right-16\" />\n\n          {domLoaded && (\n            <motion.div\n              initial={{ opacity: 0 }}\n              animate={{ opacity: 1 }}\n              transition={{ duration: 0.3 }}\n              className=\"w-full\"\n            >\n              <Swiper\n                autoplay={{\n                  delay: 1500,\n                  disableOnInteraction: false,\n                }}\n                effect=\"coverflow\"\n                grabCursor={true}\n                slidesPerView=\"auto\"\n                centeredSlides={true}\n                loop={true}\n                coverflowEffect={{\n                  rotate: 50,\n                  stretch: 0,\n                  depth: 100,\n                  modifier: 1,\n                  slideShadows: true,\n                }}\n                className=\"mySwiperHero210\"\n                modules={[EffectCoverflow, Autoplay]}\n              >\n                {images.map((image, index) => (\n                  <SwiperSlide key={index}>\n                    <img\n                      className=\"h-full w-full overflow-hidden rounded-3xl object-cover shadow-lg\"\n                      src={image.src}\n                      alt={image.alt}\n                    />\n                  </SwiperSlide>\n                ))}\n              </Swiper>\n            </motion.div>\n          )}\n        </div>\n\n        <div className=\"relative mx-auto mt-4 flex w-fit justify-center\">\n          <Button className=\"rounded-full px-4 py-2 active:scale-105\">\n            Get Started\n          </Button>\n          <motion.div\n            initial={{ opacity: 0, translateY: 20 }}\n            animate={{ opacity: 1, translateY: 0 }}\n            transition={{ duration: 0.3, delay: 1 }}\n            className=\"absolute top-3 -right-30 h-1\"\n          >\n            <p className=\"font-caveat text-xl tracking-tight\">\n              Try free tier now\n            </p>\n            <svg\n              width=\"82\"\n              className=\"-translate-x-1/2 pr-4\"\n              height=\"45\"\n              viewBox=\"0 0 82 45\"\n              fill=\"none\"\n              xmlns=\"http://www.w3.org/2000/svg\"\n            >\n              <motion.path\n                initial={{ pathLength: 0 }}\n                animate={{ pathLength: 1 }}\n                transition={{ duration: 1, delay: 1.2 }}\n                d=\"M80.2759 1.95576C67.8687 20.6075 49.1102 55.0246 21.9767 39.1283C15.3299 35.2342 12.7124 29.0489 9.38472 22.4634C9.24096 22.1789 6.96955 15.0574 7.91833 15.4904C10.4589 16.65 25.535 23.253 15.8013 18.8782C14.7716 18.4154 8.31018 14.0924 7.25323 14.6265C4.37354 16.0816 2.6512 30.2469 1.58546 33.4898\"\n                stroke=\"#1C1C1C\"\n                strokeWidth=\"2.40332\"\n                strokeLinecap=\"round\"\n              />\n            </svg>\n          </motion.div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero210 };\n"
+}

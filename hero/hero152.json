@@ -1,0 +1,45 @@
+{
+    "id": "hero152",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero152.jpg",
+    "thumbnail": "hero152-4x3.webp",
+    "description": "This component features a centered column with a trusted badge, a bold heading, a descriptive paragraph, and two buttons. It also includes an angled 3-image composition.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:32:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero152",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { MoveUpRight, Star } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero152 = () => {\n  return (\n    <section className=\"bg-muted pt-12 font-sans md:pt-20\">\n      <div className=\"mx-auto max-w-[99rem] px-0 sm:px-8\">\n        <div className=\"container px-4\">\n          <div className=\"mx-auto flex max-w-[25rem] flex-col items-center gap-6 sm:max-w-[31.25rem] lg:max-w-[40rem]\">\n            <div className=\"flex items-center justify-center gap-2\">\n              <Star className=\"size-5 fill-black stroke-black\" />\n              <p className=\"text-nowrap text-sm\">\n                Trusted by over 7,000 customers\n              </p>\n            </div>\n            <div className=\"mb-2\">\n              <h1 className=\"text-center text-[2.8125rem] font-bold leading-none sm:text-[3.9375rem] lg:text-[5.3125rem]\">\n                Design system that delivers\n              </h1>\n            </div>\n            <p className=\"text-muted-foreground text-balance text-center text-base leading-snug sm:text-2xl\">\n              Create, prototype, and personalize any design\u2014clean and\n              effortless, in just minutes.\n            </p>\n            <div className=\"flex w-full flex-wrap items-center gap-4 md:w-fit\">\n              <Button\n                variant=\"secondary\"\n                asChild\n                className=\"group flex h-fit min-w-[11.25rem] flex-1 items-center justify-center gap-1 rounded-[5rem] border-2 border-black px-4 py-3 text-base font-semibold md:min-w-fit md:flex-none\"\n              >\n                <a href=\"#\">\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-icon.svg\"\n                    alt=\"\"\n                    className=\"block size-6 shrink-0\"\n                  />\n                  <p className=\"group-hover:text-primary text-nowrap transition-all duration-300 ease-in-out\">\n                    Preview\n                  </p>\n                  <MoveUpRight className=\"group-hover:stroke-primary size-6 shrink-0 stroke-black transition-all duration-300 ease-in-out\" />\n                </a>\n              </Button>\n              <Button\n                asChild\n                variant=\"default\"\n                className=\"border-primary bg-primary group flex h-fit min-w-[11.25rem] flex-1 items-center justify-center gap-1 text-nowrap rounded-[5rem] border-2 px-4 py-3 text-base font-semibold text-white md:min-w-fit md:flex-none\"\n              >\n                <a href=\"#\">Get Module</a>\n              </Button>\n            </div>\n          </div>\n        </div>\n        <div className=\"relative mt-16 aspect-[1.2/1] overflow-hidden sm:-right-[10%] sm:right-auto sm:mt-28 sm:aspect-[2.788990826/1]\">\n          <div className=\"absolute left-[8%] top-[11%] z-10 aspect-[0.7/1] w-[80%] sm:left-[4%] sm:w-[45%]\">\n            <div className=\"size-full [transform:rotateY(-30deg)_rotateX(-18deg)_rotate(-4deg)]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"\"\n                className=\"block size-full object-cover object-center\"\n              />\n            </div>\n          </div>\n          <div className=\"absolute left-[70%] top-0 z-20 aspect-[0.7/1] w-[73%] -translate-x-1/2 sm:left-1/2 sm:w-[38%]\">\n            <div className=\"size-full shadow-[-25px_0px_20px_0px_rgba(0,0,0,.04)] [transform:rotateY(-30deg)_rotateX(-18deg)_rotate(-4deg)]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                alt=\"\"\n                className=\"block size-full object-cover object-center\"\n              />\n            </div>\n          </div>\n          <div className=\"absolute -right-[45%] top-[3%] z-30 aspect-[0.7/1] w-[85%] sm:-right-[2%] sm:w-[50%]\">\n            <div className=\"size-full shadow-[-25px_0px_20px_0px_rgba(0,0,0,.04)] [transform:rotateY(-30deg)_rotateX(-18deg)_rotate(-4deg)]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\"\n                alt=\"\"\n                className=\"block size-full object-cover object-center\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero152 };\n"
+}

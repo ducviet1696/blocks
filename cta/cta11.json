@@ -1,0 +1,34 @@
+{
+    "id": "cta11",
+    "access": "free",
+    "weight": 33,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta11.jpg",
+    "thumbnail": "cta11-4x3.webp",
+    "description": "A component with heading, description, and up to two buttons, arranged vertically with emphasis styling.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.545Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "free"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "cta11",
+    "collection": "block",
+    "group": "cta",
+    "code": "interface Cta11Props {\n  heading?: string;\n  description?: string;\n  imageSrc?: string;\n  imageAlt?: string;\n  buttonText?: string;\n  buttonHref?: string;\n}\n\nconst Cta11 = ({\n  heading = \"Call to Action\",\n  description = \"Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.\",\n  imageSrc = \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n  imageAlt = \"Call to action image\",\n}: Cta11Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"bg-accent flex w-full flex-col gap-16 overflow-hidden rounded-lg p-8 md:rounded-xl lg:flex-row lg:items-center lg:p-12\">\n          <div className=\"flex-1\">\n            <h3 className=\"mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n              {heading}\n            </h3>\n            <p className=\"text-muted-foreground max-w-xl lg:text-lg\">\n              {description}\n            </p>\n          </div>\n          <div className=\"shrink-0\">\n            <div className=\"flex flex-col justify-center gap-4 sm:flex-row sm:items-center\">\n              <div className=\"relative h-32 w-32 overflow-hidden rounded-lg sm:h-40 sm:w-40\">\n                <img src={imageSrc} alt={imageAlt} className=\"object-cover\" />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta11 };\n"
+}

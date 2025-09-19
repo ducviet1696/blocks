@@ -1,0 +1,45 @@
+{
+    "id": "hero5",
+    "access": "pro",
+    "weight": 10,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero5.jpg",
+    "thumbnail": "hero5-4x3.webp",
+    "description": "A component with a dual-column layout featuring a text block and an image. It includes a heading, paragraph, and a button with an icon. Uses a flexible structure for alignment.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.621Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero5",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Download } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero5 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-between gap-20 lg:flex-row\">\n          <div className=\"flex flex-col items-center gap-6 text-center lg:items-start lg:text-left\">\n            <h1 className=\"text-4xl font-bold text-pretty lg:max-w-md lg:text-7xl\">\n              Bold Features demand attention\n            </h1>\n            <p className=\"max-w-xl text-xl font-medium lg:text-2xl\">\n              Lorem ipsum dolor sit amet consectetur.\n            </p>\n            <div className=\"flex w-full justify-center lg:justify-start\">\n              <Button className=\"w-full sm:w-auto\" size=\"lg\">\n                <Download className=\"mr-2 size-5\" />\n                Primary Button\n              </Button>\n            </div>\n          </div>\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-aspect-video-1.svg\"\n            alt=\"placeholder hero\"\n            className=\"aspect-video rounded-md object-cover\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero5 };\n"
+}

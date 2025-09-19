@@ -1,0 +1,45 @@
+{
+    "id": "feature257",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature257.jpg",
+    "thumbnail": "feature257-4x3.webp",
+    "description": "A component displays tools in cards with categories, logos, names. Columns adjust from 1 to 3 based on the display size. Unique hover effects.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:38:00.126Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "card-spotlight.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/card-spotlight.json",
+            "docsUrl": "https://ui.aceternity.com/components/card-spotlight"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature",
+            "logos",
+            "integration"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": false,
+    "slug": "feature257",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { CardSpotlight } from \"@/components/aceternity/card-spotlight\";\n\ninterface Feature257Props {\n  category: string;\n  name: string;\n  logo: string;\n}\n\nconst TOOLS: Feature257Props[] = [\n  {\n    category: \"STATIC SITE GENERATOR\",\n    name: \"Astro\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg\",\n  },\n  {\n    category: \"STATIC SITE GENERATOR\",\n    name: \"Gatsby\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon-black.svg\",\n  },\n  {\n    category: \"VERSION CONTROL\",\n    name: \"GitHub\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon-black.svg\",\n  },\n  {\n    category: \"REACT FRAMEWORK\",\n    name: \"Next.js\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-icon.svg\",\n  },\n  {\n    category: \"UI DESIGN\",\n    name: \"Figma\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma.svg\",\n  },\n  {\n    category: \"REACT FRAMEWORK\",\n    name: \"Remix\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/remix-icon-black.svg\",\n  },\n  {\n    category: \"DEPLOYMENT\",\n    name: \"Vercel\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-icon.svg\",\n  },\n  {\n    category: \"CSS FRAMEWORK\",\n    name: \"Tailwind CSS\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon-black.svg\",\n  },\n];\n\nconst Feature257 = () => {\n  return (\n    <section className=\"bg-muted py-16 sm:py-32\">\n      <div className=\"container\">\n        <div className=\"grid grid-cols-1 gap-4 md:grid-cols-2\">\n          {TOOLS.slice(0, 2).map((tool, index) => (\n            <CardSpotlight\n              key={index}\n              className=\"bg-background border-border group flex h-96 flex-col items-start justify-between rounded-md border p-2 transition-all duration-300 hover:bg-black hover:text-white md:p-4\"\n            >\n              <div className=\"border-border z-10 rounded-md border px-2 py-1 text-xs font-medium transition-colors duration-300 group-hover:border-white md:px-4 md:py-2 md:text-sm\">\n                {tool.category}\n              </div>\n              <img\n                src={tool.logo}\n                alt={tool.name}\n                className=\"mx-auto mb-4 h-24 object-contain transition-all duration-300 [filter:brightness(0)] group-hover:[filter:brightness(1)_invert(1)] dark:invert\"\n              />\n              <h2 className=\"z-10 text-xl font-normal transition-colors duration-300 lg:text-3xl\">\n                {tool.name}\n              </h2>\n            </CardSpotlight>\n          ))}\n        </div>\n        <div className=\"mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3\">\n          {TOOLS.slice(2, 9).map((tool, index) => (\n            <CardSpotlight\n              key={index}\n              className=\"bg-background border-border group flex h-96 flex-col items-start justify-between rounded-md border p-2 transition-all duration-300 hover:bg-black hover:text-white md:p-4\"\n            >\n              <div className=\"border-border z-10 rounded-md border px-2 py-1 text-xs font-medium transition-colors duration-300 group-hover:border-white md:px-4 md:py-2 md:text-sm\">\n                {tool.category}\n              </div>\n              <img\n                src={tool.logo}\n                alt={tool.name}\n                className=\"mx-auto mb-4 h-24 object-contain transition-all duration-300 [filter:brightness(0)] group-hover:[filter:brightness(1)_invert(1)] dark:invert\"\n              />\n              <h2 className=\"z-10 text-xl font-normal transition-colors duration-300 lg:text-3xl\">\n                {tool.name}\n              </h2>\n            </CardSpotlight>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature257 };\n"
+}

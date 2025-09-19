@@ -1,0 +1,45 @@
+{
+    "id": "feature107",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature107.jpg",
+    "thumbnail": "feature107-4x3.webp",
+    "description": "A component featuring a badge and six linked blocks showcasing tools, each with an image, title, description, and a \"Visit Website\" call-to-action.",
+    "createdAt": [
+        3,
+        "2024-09-09T00:41:29.015Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature107",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight, GitCompare } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature107 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"gap grid gap-4 md:grid-cols-2 lg:grid-cols-4\">\n          <div className=\"mx-auto flex flex-col gap-4 md:col-span-2\">\n            <Badge\n              variant=\"outline\"\n              className=\"flex w-fit gap-1 px-2.5 py-1.5 text-sm\"\n            >\n              <GitCompare className=\"h-auto w-4\" />\n              Integrations\n            </Badge>\n            <h2 className=\"text-3xl font-semibold lg:text-4xl\">\n              Unlock Synergy, Seamless Integrations with SAP\n            </h2>\n            <p className=\"text-muted-foreground\">\n              Explore SAP seamless integrations with other tools and platforms,\n              enhancing productivity and workflow efficiency.\n            </p>\n          </div>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 transition-colors duration-300 hover:bg-muted/60\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"grid size-12 shrink-0 place-content-center rounded-md border\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-auto w-7\"\n                />\n              </span>\n              <span className=\"flex items-center gap-1 rounded-full border px-3 py-2.5 text-sm\">\n                Visit Website\n                <ArrowRight className=\"h-auto w-4 shrink-0 transition-all\" />\n              </span>\n            </div>\n            <div>\n              <h3 className=\"font-medium md:text-lg\">Mail Link</h3>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Quick connect your mail to preferred platform.\n              </p>\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 transition-colors duration-300 hover:bg-muted/60\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"grid size-12 shrink-0 place-content-center rounded-md border\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-auto w-7\"\n                />\n              </span>\n              <span className=\"flex items-center gap-1 rounded-full border px-3 py-2.5 text-sm\">\n                Visit Website\n                <ArrowRight className=\"h-auto w-4 shrink-0 transition-all\" />\n              </span>\n            </div>\n            <div>\n              <h3 className=\"font-medium md:text-lg\">Work Hub</h3>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Sync work details with preferred platform\n              </p>\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 transition-colors duration-300 hover:bg-muted/60\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"grid size-12 shrink-0 place-content-center rounded-md border\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-auto w-7\"\n                />\n              </span>\n              <span className=\"flex items-center gap-1 rounded-full border px-3 py-2.5 text-sm\">\n                Visit Website\n                <ArrowRight className=\"h-auto w-4 shrink-0 transition-all\" />\n              </span>\n            </div>\n            <div>\n              <h3 className=\"font-medium md:text-lg\">Task Tracker</h3>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Keep tabs on all your tasks effortlessly.\n              </p>\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 transition-colors duration-300 hover:bg-muted/60\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"grid size-12 shrink-0 place-content-center rounded-md border\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-auto w-7\"\n                />\n              </span>\n              <span className=\"flex items-center gap-1 rounded-full border px-3 py-2.5 text-sm\">\n                Visit Website\n                <ArrowRight className=\"h-auto w-4 shrink-0 transition-all\" />\n              </span>\n            </div>\n            <div>\n              <h3 className=\"font-medium md:text-lg\">Team Chat</h3>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Message teams with the click of a button.\n              </p>\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 transition-colors duration-300 hover:bg-muted/60\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"grid size-12 shrink-0 place-content-center rounded-md border\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-auto w-7\"\n                />\n              </span>\n              <span className=\"flex items-center gap-1 rounded-full border px-3 py-2.5 text-sm\">\n                Visit Website\n                <ArrowRight className=\"h-auto w-4 shrink-0 transition-all\" />\n              </span>\n            </div>\n            <div>\n              <h3 className=\"font-medium md:text-lg\">Project Planner</h3>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Plan projects from milestones to completion.\n              </p>\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 transition-colors duration-300 hover:bg-muted/60\"\n          >\n            <div className=\"flex items-center justify-between\">\n              <span className=\"grid size-12 shrink-0 place-content-center rounded-md border\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-auto w-7\"\n                />\n              </span>\n              <span className=\"flex items-center gap-1 rounded-full border px-3 py-2.5 text-sm\">\n                Visit Website\n                <ArrowRight className=\"h-auto w-4 shrink-0 transition-all\" />\n              </span>\n            </div>\n            <div>\n              <h3 className=\"font-medium md:text-lg\">Board View</h3>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                View tasks in a board for easy tracking.\n              </p>\n            </div>\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature107 };\n"
+}

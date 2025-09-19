@@ -1,0 +1,52 @@
+{
+    "id": "hero202",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero202.jpg",
+    "thumbnail": "hero202-4x3.webp",
+    "description": "A component featuring a 2-column layout with dynamic text and image, highlighting a bold headline with a gradient effect, and interactive buttons including a rotating action on hover.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.404Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero202",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRightIcon } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\n\nconst Hero202 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <Card className=\"group relative w-full overflow-hidden rounded-4xl border border-none bg-muted shadow-none\">\n          <CardContent className=\"py-12 lg:px-18 lg:py-24\">\n            <div className=\"grid grid-cols-1 gap-8 md:grid-cols-2\">\n              <div className=\"flex flex-col justify-center space-y-6\">\n                <p className=\"flex items-center gap-2 text-xl font-medium tracking-tight text-foreground\">\n                  <img\n                    className=\"size-6\"\n                    alt=\"Copy paste icon\"\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n                  />\n                  Copy Paste Blocks\n                </p>\n\n                <h1 className=\"mt-3 text-8xl font-bold tracking-tighter text-foreground\">\n                  Let's Create Something\n                  <span className=\"bg-linear-to-b from-background to-foreground bg-clip-text text-transparent\">\n                    {\" \"}\n                    Amazing!\n                  </span>\n                </h1>\n\n                <div className=\"mt-4 flex gap-2\">\n                  <Button className=\"h-13 w-fit rounded-full px-8 text-lg\">\n                    Let's Talk\n                  </Button>\n                  <Button\n                    variant=\"outline\"\n                    className=\"size-13 -rotate-45 rounded-full transition-all ease-in-out hover:rotate-0\"\n                  >\n                    <ArrowRightIcon />\n                  </Button>\n                </div>\n              </div>\n              <div className=\"absolute -right-70 -bottom-70 -rotate-45 transition-all ease-in-out group-hover:-rotate-0\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-solar-system-around-a-smiley.svg\"\n                  className=\"size-150 md:size-220\"\n                  alt=\"\"\n                />\n              </div>\n            </div>\n          </CardContent>\n        </Card>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero202 };\n"
+}

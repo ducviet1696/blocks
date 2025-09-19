@@ -1,0 +1,46 @@
+{
+    "id": "hero14",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero14.jpg",
+    "thumbnail": "hero14-4x3.webp",
+    "description": "A carousel component showing tech logos with commands. Includes auto-cycle, fade transitions, and manual selection. Displays 3-6 items per view.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.608Z"
+    ],
+    "dependencies": [
+        "embla-carousel-autoplay",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero14",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport Autoplay from \"embla-carousel-autoplay\";\nimport { useEffect, useRef, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst technologies = [\n  {\n    name: \"Next\",\n    command: \"npx create-next-app my-app\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-icon.svg\",\n  },\n  {\n    name: \"Vite\",\n    command: \"npm create vite@latest\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vite-icon.svg\",\n  },\n  {\n    name: \"Remix\",\n    command: \"npx create-remix@latest my-app\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/remix-icon.svg\",\n  },\n  {\n    name: \"Gatsby\",\n    command: \"npm init gatsby\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg\",\n  },\n  {\n    name: \"Astro\",\n    command: \"npm create astro@latest\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg\",\n  },\n\n  {\n    name: \"Laravel\",\n    command: \"laravel new my-app \",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/laravel-icon.svg\",\n  },\n  {\n    name: \"React\",\n    command: \"npx create-react-app my-app\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon.svg\",\n  },\n];\n\nconst Hero14 = () => {\n  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n  const [fadeIn, setFadeIn] = useState(true);\n\n  useEffect(() => {\n    if (!api) return;\n\n    // Set initial selection\n    setCurrent(api.selectedScrollSnap());\n\n    // Create a reusable update function\n    const updateCurrent = () => {\n      // Trigger fade out and then update with fade in\n      setFadeIn(false);\n      setTimeout(() => {\n        setCurrent(api.selectedScrollSnap());\n        setFadeIn(true);\n      }, 200); // Short delay for the fade effect\n    };\n\n    // Add event listeners for both 'select' and 'settle'\n    api.on(\"select\", updateCurrent);\n    api.on(\"settle\", updateCurrent);\n\n    // Clean up event listeners when component unmounts\n    return () => {\n      api.off(\"select\", updateCurrent);\n      api.off(\"settle\", updateCurrent);\n    };\n  }, [api]);\n\n  // Function to manually select a technology\n  const selectTechnology = (index: number) => {\n    if (api) {\n      api.scrollTo(index);\n    }\n  };\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col justify-center\">\n          <h1 className=\"mx-auto mb-4 max-w-2xl text-center text-4xl font-bold md:text-6xl\">\n            Install with one Command\n          </h1>\n          <p className=\"mx-auto mt-4 max-w-xl text-center text-lg text-muted-foreground\">\n            Our library is compatible with all popular frameworks, download our\n            SDK and get started in minutes.\n          </p>\n          <div className=\"mx-auto mt-8 mb-12 flex h-[60px] w-fit items-center gap-2 rounded-md bg-muted px-4 py-2 text-center\">\n            <div\n              className={cn(\n                \"flex items-center gap-2 transition-opacity duration-300\",\n                fadeIn ? \"opacity-100\" : \"opacity-0\",\n              )}\n            >\n              <img\n                src={technologies[current]?.image}\n                alt={technologies[current]?.name}\n                className=\"h-4 md:h-7\"\n              />\n\n              <p className=\"border-l px-2 font-mono text-sm\">\n                {technologies[current]?.command}\n              </p>\n            </div>\n          </div>\n        </div>\n        <Carousel\n          setApi={setApi}\n          plugins={[plugin.current]}\n          opts={{\n            loop: true,\n          }}\n          className=\"relative mx-auto w-full max-w-3xl before:absolute before:top-0 before:bottom-0 before:left-0 before:z-10 before:w-36 before:bg-linear-to-r before:from-background before:to-transparent after:absolute after:top-0 after:right-0 after:bottom-0 after:z-10 after:w-36 after:bg-linear-to-l after:from-background after:to-transparent\"\n          onMouseEnter={plugin.current.stop}\n          onMouseLeave={plugin.current.reset}\n        >\n          <CarouselContent>\n            {technologies.map((technology, idx) => (\n              <CarouselItem\n                key={idx}\n                className=\"basis-1/3 select-none sm:basis-1/4 md:basis-1/6\"\n              >\n                <div\n                  className={cn(\n                    \"flex cursor-pointer items-center justify-center gap-2 rounded-md border p-6\",\n                    idx === current ? \"border-input\" : \"border-transparent\",\n                  )}\n                  onClick={() => selectTechnology(idx)}\n                >\n                  <img\n                    className=\"h-4 shrink-0 md:h-7\"\n                    src={technology.image}\n                    alt={technology.name}\n                  />\n                  <p>{technology.name}</p>\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero14 };\n"
+}

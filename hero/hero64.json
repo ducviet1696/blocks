@@ -1,0 +1,51 @@
+{
+    "id": "hero64",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero64.jpg",
+    "thumbnail": "hero64-4x3.webp",
+    "description": "A testimonial display component with a title, descriptions, a call-to-action button, customer ratings, and profile images in a two-column layout.",
+    "createdAt": [
+        3,
+        "2024-12-16T04:58:04.086Z"
+    ],
+    "dependencies": [
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero64",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { FaStar } from \"react-icons/fa\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\ninterface TestimonialCardProps {\n  name: string;\n  title: string;\n  imageSrc: string;\n  className?: string;\n  style?: React.CSSProperties;\n}\n\ninterface RatingDisplayProps {\n  rating?: number;\n  userCount?: number;\n  className?: string;\n  style?: React.CSSProperties;\n  showAvatars?: boolean;\n}\n\nfunction TestimonialCard({\n  name = \"Jane Doe\",\n  title = \"Job Title\",\n  imageSrc = \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n  className,\n  style,\n}: TestimonialCardProps) {\n  return (\n    <div\n      className={cn(\n        \"bg-card flex w-[320px] flex-col gap-4 rounded-lg p-6 shadow-sm\",\n        className,\n      )}\n      style={style}\n    >\n      <img\n        src={imageSrc}\n        alt={name}\n        className=\"h-24 w-24 rounded-md object-cover\"\n      />\n      <div className=\"flex gap-0.5\">\n        {Array(5)\n          .fill(null)\n          .map((_, i) => (\n            <FaStar key={i} className=\"h-5 w-5 fill-yellow-400\" />\n          ))}\n      </div>\n      <div className=\"space-y-2\">\n        <div className=\"bg-muted h-2 w-[80%] rounded\"></div>\n        <div className=\"bg-muted h-2 w-[90%] rounded\"></div>\n        <div className=\"bg-muted h-2 w-[60%] rounded\"></div>\n      </div>\n      <div className=\"space-y-1\">\n        <p className=\"text-foreground font-semibold\">{name}</p>\n        <p className=\"text-muted-foreground text-sm\">{title}</p>\n      </div>\n    </div>\n  );\n}\n\nfunction RatingDisplay({\n  rating = 4.9,\n  userCount = 500,\n  className,\n  style,\n}: RatingDisplayProps) {\n  return (\n    <div className={cn(\"space-y-0.5\", className)} style={style}>\n      <div className=\"flex items-center gap-3\">\n        <div className=\"flex -space-x-[14px]\">\n          {[1, 2, 3, 4, 5].map((i) => (\n            <Avatar key={i} className=\"size-12\">\n              <AvatarImage src={`/images/block/avatar-${i}.webp`} />\n              <AvatarFallback>JD</AvatarFallback>\n            </Avatar>\n          ))}\n        </div>\n        <div>\n          <div className=\"flex items-end gap-1.5\">\n            <div className=\"flex gap-1\">\n              {Array(5)\n                .fill(null)\n                .map((_, i) => (\n                  <FaStar key={i} className=\"h-5 w-5 fill-yellow-400\" />\n                ))}\n            </div>\n            <p className=\"text-foreground text-base font-semibold leading-4\">\n              {rating}\n            </p>\n          </div>\n          <p className=\"text-muted-foreground whitespace-nowrap text-sm font-medium\">\n            Join {userCount}+ happy users\n          </p>\n        </div>\n      </div>\n    </div>\n  );\n}\n\nconst Hero64 = () => {\n  return (\n    <section className=\"py-12 md:py-20\">\n      <div className=\"container px-4 md:px-6\">\n        <div className=\"flex flex-col gap-8 md:flex-row\">\n          <div className=\"mx-auto flex items-start md:mx-0 md:w-1/2 md:items-center\">\n            <div className=\"text-center md:text-left\">\n              <h1 className=\"text-foreground text-4xl font-bold tracking-tight sm:text-5xl/tight md:text-6xl/tight\">\n                Leverage the{\" \"}\n                <span className=\"bg-linear-to-tr from-gray-600 to-gray-500 bg-clip-text text-transparent\">\n                  influence of testimonials\n                </span>{\" \"}\n                to boost your sales.\n              </h1>\n              <p className=\"text-muted-foreground mx-auto mt-3 max-w-md text-base sm:text-lg md:mt-5 md:max-w-3xl md:text-xl\">\n                Gather and display testimonials from happy customers to build\n                trust and boost your conversion rate.\n              </p>\n              <div className=\"mt-6 flex justify-center md:hidden\">\n                <RatingDisplay />\n              </div>\n              <div className=\"mx-auto mt-8 w-fit md:ml-0\">\n                <Button size=\"lg\" className=\"px-6\">\n                  Start now \u2013 completely free!\n                </Button>\n              </div>\n            </div>\n          </div>\n          <div className=\"relative mx-auto h-[400px] w-full max-w-xl md:h-[540px] md:w-1/2\">\n            <div className=\"relative h-full\">\n              <TestimonialCard\n                name=\"Sarah Johnson\"\n                title=\"Marketing Director\"\n                imageSrc=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/fabian-centeno-njeVb6E3XB8-unsplash.jpg\"\n                className=\"absolute hidden rounded-lg border md:flex\"\n                style={{\n                  left: \"0\",\n                  top: \"40%\",\n                  width: \"50%\",\n                  height: \"auto\",\n                }}\n              />\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"\"\n                className=\"absolute hidden rounded-lg md:block\"\n                style={{\n                  right: \"0\",\n                  top: \"0\",\n                  width: \"45%\",\n                  height: \"42%\",\n                  objectFit: \"cover\",\n                }}\n              />\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                alt=\"\"\n                className=\"absolute rounded-lg shadow-md\"\n                style={{\n                  left: \"50%\",\n                  top: \"50%\",\n                  transform: \"translate(-50%, -50%)\",\n                  width: \"min(100%, 235.625px)\",\n                  height: \"min(90%, 355.945px)\",\n                  objectFit: \"cover\",\n                }}\n              />\n              <RatingDisplay className=\"bg-background absolute bottom-4 left-1/2 hidden w-[90%] -translate-x-1/2 rounded-md border px-3 py-2 shadow-lg md:bottom-auto md:left-auto md:right-0 md:top-[54%] md:flex md:w-auto md:translate-x-0\" />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero64 };\n"
+}

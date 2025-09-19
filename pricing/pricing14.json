@@ -1,0 +1,57 @@
+{
+    "id": "pricing14",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing14.jpg",
+    "thumbnail": "pricing14-4x3.webp",
+    "description": "A pricing plan component displays plan details, a discount badge, and features with checkmarks, laid out in 2-column format. Includes \"Book a demo\" and \"Learn more\" buttons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.634Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing14",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { Check } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Pricing14 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-5xl rounded-lg bg-muted p-6 md:p-10\">\n          <div className=\"mb-12 flex items-center gap-3\">\n            <span className=\"text-2xl font-bold\">Standard Plan</span>\n            <Badge\n              variant=\"outline\"\n              className=\"border-green-200 bg-green-100 text-green-600\"\n            >\n              20% off\n            </Badge>\n          </div>\n          <div className=\"flex flex-col justify-between gap-6 md:flex-row\">\n            <h2 className=\"max-w-xl text-3xl font-bold md:text-4xl\">\n              Launch your idea in minutes with this plan\n            </h2>\n            <div className=\"md:text-right\">\n              <span className=\"text-3xl font-bold md:text-5xl\">$1999</span>\n              <p className=\"text-muted-foreground\">\n                Starting price per project\n              </p>\n            </div>\n          </div>\n          <Separator className=\"my-8\" />\n          <div>\n            <p className=\"mb-5 text-muted-foreground\">\n              Launch your project with the following features:\n            </p>\n            <div className=\"flex flex-col justify-between gap-10 md:flex-row md:gap-20\">\n              <ul className=\"grid gap-x-20 gap-y-4 font-medium md:grid-cols-2\">\n                <li className=\"flex items-center gap-2\">\n                  <Check className=\"w-4\" />\n                  Unlimited projects\n                </li>\n                <li className=\"flex items-center gap-2\">\n                  <Check className=\"w-4\" />\n                  Live chat support\n                </li>\n                <li className=\"flex items-center gap-2\">\n                  <Check className=\"w-4\" />\n                  Live Collaboration\n                </li>\n                <li className=\"flex items-center gap-2\">\n                  <Check className=\"w-4\" />\n                  Custom domain\n                </li>\n                <li className=\"flex items-center gap-2\">\n                  <Check className=\"w-4\" />\n                  Unlimited users\n                </li>\n                <li className=\"flex items-center gap-2\">\n                  <Check className=\"w-4\" />\n                  Unlimited storage\n                </li>\n              </ul>\n              <div className=\"flex flex-col gap-4\">\n                <Button size=\"lg\">Book a demo</Button>\n                <Button variant=\"outline\" size=\"lg\">\n                  Learn more\n                </Button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing14 };\n"
+}

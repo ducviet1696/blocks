@@ -1,0 +1,58 @@
+{
+    "id": "pricing22",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing22.jpg",
+    "thumbnail": "pricing22-4x3.webp",
+    "description": "A component displaying 3 pricing plans with features, adjustable to annual or monthly billing, highlighting the \"Startup\" option uniquely.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.632Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "switch",
+            "registryId": "shadcn",
+            "registryItemUrl": "switch",
+            "docsUrl": "https://ui.shadcn.com/docs/components/switch"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "pricing22",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { Check } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst plans = [\n  {\n    name: \"Free\",\n    monthlyPrice: \"$0\",\n    yearlyPrice: \"$0\",\n    description: \"Free for everyone\",\n    features: [\n      \"Unlimited members\",\n      \"2 teams\",\n      \"500 issues\",\n      \"Slack and Github integrations\",\n    ],\n  },\n  {\n    name: \"Startup\",\n    monthlyPrice: \"$8\",\n    yearlyPrice: \"$6\",\n    features: [\n      \"All free plan features and...\",\n      \"Mainline AI\",\n      \"Unlimited teams\",\n      \"Unlimited issues and file uploads\",\n      \"Mainline Insights\",\n      \"Admin roles\",\n    ],\n  },\n  {\n    name: \"Enterprise\",\n    monthlyPrice: \"$8\",\n    yearlyPrice: \"$6\",\n    features: [\n      \"All free plan features and...\",\n      \"Mainline AI\",\n      \"Supermainline AGI\",\n      \"Free daily catered lunch\",\n      \"random HIPPA audits\",\n    ],\n  },\n];\n\nconst Pricing22 = () => {\n  const [isAnnual, setIsAnnual] = useState(false);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"space-y-4 text-center\">\n          <h2 className=\"text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl\">\n            Pricing\n          </h2>\n          <p className=\"mx-auto max-w-xl leading-snug font-medium text-balance text-muted-foreground\">\n            Use Mainline for free with your whole team. Upgrade to enable\n            unlimited issues, enhanced security controls, and additional\n            features.\n          </p>\n        </div>\n\n        <div className=\"mt-8 grid gap-6 text-start md:mt-12 lg:mt-20 lg:grid-cols-3\">\n          {plans.map((plan) => (\n            <Card\n              key={plan.name}\n              className={`${\n                plan.name === \"Startup\"\n                  ? \"border-4 border-primary lg:h-[110%]\"\n                  : \"\"\n              }`}\n            >\n              <CardContent className=\"flex h-full flex-col justify-between gap-2 p-6\">\n                <div className=\"space-y-2\">\n                  <h3 className=\"font-semibold text-primary\">{plan.name}</h3>\n                  <div className=\"space-y-1\">\n                    <div className=\"text-lg font-medium text-muted-foreground\">\n                      {isAnnual ? plan.yearlyPrice : plan.monthlyPrice}{\" \"}\n                      {plan.name !== \"Free\" && (\n                        <span className=\"text-muted-foreground\">\n                          per user/\n                          {isAnnual ? \"year\" : \"month\"}\n                        </span>\n                      )}\n                    </div>\n                  </div>\n                </div>\n\n                {plan.name !== \"Free\" ? (\n                  <div className=\"mt-4 flex items-center gap-2\">\n                    <Switch\n                      checked={isAnnual}\n                      onCheckedChange={() => setIsAnnual(!isAnnual)}\n                    />\n                    <span className=\"text-sm font-medium\">Billed annually</span>\n                  </div>\n                ) : (\n                  <span className=\"text-sm text-muted-foreground\">\n                    {plan.description}\n                  </span>\n                )}\n\n                <div className=\"mt-8 space-y-4\">\n                  {plan.features.map((feature) => (\n                    <div\n                      key={feature}\n                      className=\"flex items-center gap-1.5 text-muted-foreground\"\n                    >\n                      <Check className=\"size-5 shrink-0\" />\n                      <span className=\"text-sm\">{feature}</span>\n                    </div>\n                  ))}\n                </div>\n\n                <Button\n                  className=\"w-fit\"\n                  variant={plan.name === \"Startup\" ? \"default\" : \"outline\"}\n                >\n                  Get started\n                </Button>\n              </CardContent>\n            </Card>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing22 };\n"
+}

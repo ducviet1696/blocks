@@ -1,0 +1,45 @@
+{
+    "id": "feature103",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature103.jpg",
+    "thumbnail": "feature103-4x3.webp",
+    "description": "A component showcasing core capabilities with a badge, a heading, and links in a 2-column layout expanding to 3 columns. Features interactive elements and an arrow icon.",
+    "createdAt": [
+        3,
+        "2024-09-09T00:41:29.014Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature103",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature103 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col gap-3\">\n          <Badge variant=\"outline\" className=\"w-fit\">\n            CORE CAPABILITIES\n          </Badge>\n          <h2 className=\"text-2xl md:text-4xl\">Discover our advanced tools</h2>\n        </div>\n        <div className=\"mt-10 grid gap-6 md:grid-cols-2\">\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 hover:border-primary\"\n          >\n            <div className=\"flex items-center justify-between gap-4\">\n              <h3 className=\"text-lg font-medium\">\n                Seamless Updates & Reversions\n              </h3>\n              <span className=\"flex size-8 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4\" />\n              </span>\n            </div>\n            <p className=\"text-muted-foreground\">\n              Gain complete insight into your deployment configurations and live\n              performance.\n            </p>\n          </a>\n          <a\n            href=\"#\"\n            className=\"flex flex-col gap-4 rounded-xl border p-6 hover:border-primary\"\n          >\n            <div className=\"flex items-center justify-between gap-4\">\n              <h3 className=\"text-lg font-medium\">Effortless Rollbacks</h3>\n              <span className=\"flex size-8 shrink-0 items-center justify-center rounded-full border\">\n                <ArrowRight className=\"h-auto w-4\" />\n              </span>\n            </div>\n            <p className=\"text-muted-foreground\">\n              Quickly revert to previous versions for smooth recovery.\n            </p>\n          </a>\n          <div className=\"grid gap-6 md:col-span-2 md:grid-cols-3\">\n            <a\n              href=\"#\"\n              className=\"flex flex-col gap-4 rounded-xl border p-6 hover:border-primary\"\n            >\n              <div className=\"flex items-center justify-between gap-4\">\n                <h3 className=\"text-lg font-medium\">Configuration Insights</h3>\n                <span className=\"flex size-8 shrink-0 items-center justify-center rounded-full border\">\n                  <ArrowRight className=\"h-auto w-4\" />\n                </span>\n              </div>\n              <p className=\"text-muted-foreground\">\n                Monitor and evaluate your system settings for optimal\n                performance.\n              </p>\n            </a>\n            <a\n              href=\"#\"\n              className=\"flex flex-col gap-4 rounded-xl border p-6 hover:border-primary\"\n            >\n              <div className=\"flex items-center justify-between gap-4\">\n                <h3 className=\"text-lg font-medium\">Automated Monitoring</h3>\n                <span className=\"flex size-8 shrink-0 items-center justify-center rounded-full border\">\n                  <ArrowRight className=\"h-auto w-4\" />\n                </span>\n              </div>\n              <p className=\"text-muted-foreground\">\n                Leverage automated tracking to detect issues instantly.\n              </p>\n            </a>\n            <a\n              href=\"#\"\n              className=\"flex flex-col gap-4 rounded-xl border p-6 hover:border-primary\"\n            >\n              <div className=\"flex items-center justify-between gap-4\">\n                <h3 className=\"text-lg font-medium\">Performance Metrics</h3>\n                <span className=\"flex size-8 shrink-0 items-center justify-center rounded-full border\">\n                  <ArrowRight className=\"h-auto w-4\" />\n                </span>\n              </div>\n              <p className=\"text-muted-foreground\">\n                Analyze detailed metrics to fine-tune your application\u2019s\n                efficiency.\n              </p>\n            </a>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature103 };\n"
+}

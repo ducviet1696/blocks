@@ -1,0 +1,51 @@
+{
+    "id": "hero26",
+    "access": "pro",
+    "weight": 9,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero26.jpg",
+    "thumbnail": "hero26-4x3.webp",
+    "description": "A component featuring a promotional message with an introductory badge link, a large headline, a detailed description integrating icons, and two large buttons for actions.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.612Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero26",
+    "collection": "block",
+    "group": "hero",
+    "code": "import {\n  ArrowRight,\n  Blocks,\n  MessagesSquare,\n  MoveRight,\n  Users,\n} from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero26 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"text-center\">\n          <a\n            href=\"#\"\n            className=\"mx-auto mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm\"\n          >\n            <Badge className=\"rounded-full\">NEW</Badge>\n            Introducing Collaboration 2.0\n            <span className=\"flex size-7 items-center justify-center rounded-full bg-muted\">\n              <ArrowRight className=\"w-4\" />\n            </span>\n          </a>\n          <h1 className=\"mx-auto mt-4 mb-3 max-w-3xl text-4xl font-semibold text-balance lg:mb-7 lg:text-7xl\">\n            Unlock the power of collaboration\n          </h1>\n          <p className=\"m mx-auto max-w-3xl text-muted-foreground lg:text-xl\">\n            Collaboration 2.0 is the ultimate platform for\n            <span className=\"relative top-[5px] mx-2 inline-flex font-medium text-primary md:top-[3px]\">\n              <Users className=\"mr-1 w-4 md:w-5\" />\n              Teams\n            </span>\n            to\n            <span className=\"relative top-[5px] mx-2 inline-flex font-medium text-primary md:top-[3px]\">\n              <Blocks className=\"mr-1 w-5\" />\n              Collaborate,\n            </span>\n            <span className=\"relative top-[5px] mx-2 inline-flex font-medium text-primary md:top-[3px]\">\n              <MessagesSquare className=\"mr-1 w-5\" />\n              Communicate,\n            </span>\n            and achieve their goals. Get a head start with our free plan. No\n            credit card required.\n          </p>\n          <div className=\"mt-8 flex flex-col justify-center gap-4 sm:flex-row\">\n            <Button size=\"lg\">\n              Get started for free\n              <MoveRight className=\"ml-2\" strokeWidth={1} />\n            </Button>\n            <Button size=\"lg\" variant=\"ghost\">\n              Learn more\n              <MoveRight className=\"ml-2\" strokeWidth={1} />\n            </Button>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero26 };\n"
+}

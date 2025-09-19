@@ -1,0 +1,51 @@
+{
+    "id": "hero53",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero53.jpg",
+    "thumbnail": "hero53-4x3.webp",
+    "description": "A component with a large title, description, an overlapping button for early access, and overlapping avatars indicating community trust.",
+    "createdAt": [
+        3,
+        "2024-10-09T05:37:59.243Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero53",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Globe } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero53 = () => {\n  return (\n    <section className=\"relative py-32\">\n      <div className=\"container px-4 sm:px-6 md:px-8\">\n        <div className=\"absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] [background-size:14px_14px] opacity-35\"></div>\n        <h1 className=\"text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl\">\n          Simplifying maintenance for efficient code management.\n        </h1>\n        <div className=\"mt-10 flex flex-col-reverse gap-8 md:mt-12 md:flex-row md:items-center md:gap-10 lg:mt-14\">\n          <div className=\"flex flex-col gap-6\">\n            <Button className=\"px-6 py-5 sm:w-fit\">\n              Request early access <Globe className=\"size-4\" />\n            </Button>\n            <div className=\"flex items-center gap-3\">\n              <span className=\"inline-flex items-center -space-x-1.5\">\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n              </span>\n              <p className=\"text-sm text-muted-foreground\">\n                Trusted by 2000+ developers worldwide\n              </p>\n            </div>\n          </div>\n          <p className=\"max-w-lg text-xl leading-relaxed text-muted-foreground\">\n            Our platform streamlines development by automating issue tracking,\n            documentation, and knowledge management.\n          </p>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero53 };\n"
+}

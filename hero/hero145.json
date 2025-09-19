@@ -1,0 +1,45 @@
+{
+    "id": "hero145",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero145.jpg",
+    "thumbnail": "hero145-4x3.webp",
+    "description": "This component displays a full-width background with a dynamic, animated heading that changes text over time and includes a description with buttons for user actions.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:10:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero145",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowDown } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero145 = () => {\n  return (\n    <section className=\"dark relative h-svh max-h-[1400px] w-full bg-[url(https://deifkwefumgah.cloudfront.net/shadcnblocks/block/full-width-backgrounds/andrew-kliatskyi-uBg4k82xnI4-unsplash.jpg)] bg-cover bg-[100%] bg-no-repeat before:absolute before:left-0 before:top-0 before:size-full before:bg-[radial-gradient(circle_at_100%_-100%,transparent_40%,rgba(0,0,0,.75)_85%)] before:content-['']\">\n      <div className=\"container relative z-10 flex size-full max-w-[103.125rem] flex-col justify-between pb-14 pt-24 md:justify-end\">\n        <div className=\"flex h-full flex-col justify-between gap-6 md:justify-end\">\n          <h1 className=\"text-foreground lg:leading-[3rem]! xl:leading-[5.5rem]! text-4xl font-bold leading-[2.25rem] lg:text-5xl xl:text-7xl\">\n            <div className=\"mb-2\">We help you to hire top</div>\n            <div className=\"relative h-[calc(2.25rem*3)] md:h-[2.25rem] lg:h-[3rem] xl:h-[5.5rem]\">\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_0s] will-change-[opacity]\">\n                Cybersecurity sales reps\n              </div>\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_2s] opacity-0 will-change-[opacity]\">\n                Pen testers\n              </div>\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_4s] opacity-0 will-change-[opacity]\">\n                Sales engineers\n              </div>\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_6s] opacity-0 will-change-[opacity]\">\n                IAM architects\n              </div>\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_8s] opacity-0 will-change-[opacity]\">\n                Chief Information Security Officers\n              </div>\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_10s] opacity-0 will-change-[opacity]\">\n                Cloud security engineers\n              </div>\n              <div className=\"absolute left-0 top-0 animate-[show-text_14s_ease-in-out_infinite_12s] opacity-0 will-change-[opacity]\">\n                Application Security Engineers\n              </div>\n            </div>\n          </h1>\n          <div className=\"flex flex-col gap-8\">\n            <p className=\"text-foreground text-lg lg:text-2xl\">\n              Discover exceptional talent, fast.\n            </p>\n            <div className=\"flex flex-wrap items-center justify-between gap-5\">\n              <div className=\"flex flex-wrap items-center gap-5\">\n                <Button\n                  asChild\n                  className=\"h-fit w-fit text-nowrap rounded-full px-7 py-3.5 text-xs font-semibold uppercase lg:px-9 lg:py-5 lg:text-base\"\n                >\n                  <a href=\"#\">Join our network</a>\n                </Button>\n                <Button\n                  asChild\n                  variant=\"outline\"\n                  className=\"hover:bg-background/15 h-fit w-fit text-nowrap rounded-full border-white bg-transparent px-7 py-3.5 text-xs font-semibold uppercase text-white lg:px-9 lg:py-5 lg:text-base\"\n                >\n                  <a href=\"#\">Hire top talent</a>\n                </Button>\n              </div>\n              <Button\n                variant=\"link\"\n                className=\"flex h-fit w-fit items-center gap-2 text-nowrap text-xs font-semibold uppercase hover:no-underline lg:text-base\"\n              >\n                <div>Scroll to explore</div>\n                <ArrowDown className=\"size-3! lg:size-4! stroke-white\" />\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero145 };\n"
+}

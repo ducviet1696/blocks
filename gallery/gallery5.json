@@ -1,0 +1,58 @@
+{
+    "id": "gallery5",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery5.jpg",
+    "thumbnail": "gallery5-4x3.webp",
+    "description": "A feature gallery component with a carousel layout, toggles for selecting features, and next/prev buttons. It displays items in two columns, with icons, text, and images.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.604Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        },
+        {
+            "name": "toggle-group",
+            "registryId": "shadcn",
+            "registryItemUrl": "toggle-group",
+            "docsUrl": "https://ui.shadcn.com/docs/components/toggle-group"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery5",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport {\n  ArrowLeft,\n  ArrowRight,\n  CheckSquare,\n  Clock,\n  Focus,\n  Target,\n  Users,\n} from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\n\nconst data = [\n  {\n    id: \"item-1\",\n    title: \"Task Management\",\n    icon: CheckSquare,\n    description:\n      \"Organize your tasks with our intuitive interface. Create, prioritize, and track your progress with ease. Set deadlines, add labels, and never miss an important deadline again.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    id: \"item-2\",\n    title: \"Time Tracking\",\n    icon: Clock,\n    description:\n      \"Monitor how you spend your time with detailed analytics. Identify productivity patterns, eliminate time-wasting activities, and optimize your daily schedule for maximum efficiency.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    id: \"item-3\",\n    title: \"Team Collaboration\",\n    icon: Users,\n    description:\n      \"Work seamlessly with your team in real-time. Share tasks, communicate through integrated chat, and keep everyone aligned with shared goals and milestones.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  },\n  {\n    id: \"item-4\",\n    title: \"Goal Tracking & Habits\",\n    icon: Target,\n    description:\n      \"Turn your aspirations into achievable goals with our habit-building system. Track your progress, maintain streaks, and visualize your journey toward lasting behavioral change.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n  },\n  {\n    id: \"item-5\",\n    title: \"Focus Sessions\",\n    icon: Focus,\n    description:\n      \"Boost your concentration with our Pomodoro-inspired focus timer. Block distractions, maintain deep work states, and balance productivity with necessary breaks.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n  },\n];\n\nconst Gallery5 = () => {\n  const [carouselApi, setCarouselApi] = useState<CarouselApi>();\n  const [canScrollPrev, setCanScrollPrev] = useState(false);\n  const [canScrollNext, setCanScrollNext] = useState(false);\n  const [selection, setSelection] = useState(0);\n  useEffect(() => {\n    if (!carouselApi) {\n      return;\n    }\n    carouselApi.scrollTo(selection);\n  }, [carouselApi, selection]);\n  useEffect(() => {\n    if (!carouselApi) {\n      return;\n    }\n    const updateSelection = () => {\n      setCanScrollPrev(carouselApi.canScrollPrev());\n      setCanScrollNext(carouselApi.canScrollNext());\n      setSelection(carouselApi.selectedScrollSnap());\n    };\n    updateSelection();\n    carouselApi.on(\"select\", updateSelection);\n    return () => {\n      carouselApi.off(\"select\", updateSelection);\n    };\n  }, [carouselApi]);\n  return (\n    <section className=\"py-32\">\n      <div className=\"container mb-14 flex flex-col gap-16 lg:mb-16 lg:px-16\">\n        <div className=\"lg:max-w-lg\">\n          <h2 className=\"mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n            Supercharge Your Productivity\n          </h2>\n          <p className=\"text-muted-foreground lg:text-lg\">\n            Our productivity suite helps you accomplish more in less time. From\n            task management to habit building, we provide the tools you need to\n            optimize your workflow and achieve your goals.\n          </p>\n        </div>\n        <div className=\"flex shrink-0 gap-2 md:hidden\">\n          <Button\n            size=\"icon\"\n            variant=\"ghost\"\n            onClick={() => {\n              carouselApi?.scrollPrev();\n            }}\n            disabled={!canScrollPrev}\n            className=\"disabled:pointer-events-auto\"\n          >\n            <ArrowLeft className=\"size-5\" />\n          </Button>\n          <Button\n            size=\"icon\"\n            variant=\"ghost\"\n            onClick={() => {\n              carouselApi?.scrollNext();\n            }}\n            disabled={!canScrollNext}\n            className=\"disabled:pointer-events-auto\"\n          >\n            <ArrowRight className=\"size-5\" />\n          </Button>\n        </div>\n        <div className=\"hidden space-y-4 space-x-4 text-center md:flex md:flex-wrap\">\n          <ToggleGroup\n            type=\"single\"\n            variant=\"outline\"\n            size=\"lg\"\n            className=\"flex-wrap\"\n            value={data[selection].id}\n            onValueChange={(newValue) => {\n              if (newValue) {\n                setSelection(data.findIndex((item) => item.id === newValue));\n              }\n            }}\n          >\n            {data.map((item) => {\n              const Icon = item.icon;\n              return (\n                <ToggleGroupItem\n                  key={item.id}\n                  value={item.id}\n                  className=\"flex flex-col items-center p-4 text-center\"\n                >\n                  <Icon className=\"size-4\" />\n                </ToggleGroupItem>\n              );\n            })}\n          </ToggleGroup>\n        </div>\n      </div>\n      <div className=\"w-full\">\n        <Carousel\n          setApi={setCarouselApi}\n          opts={{\n            breakpoints: {\n              \"(max-width: 768px)\": {\n                dragFree: true,\n              },\n            },\n          }}\n        >\n          <CarouselContent className=\"ml-[calc(theme(container.padding)-40px)] mr-[calc(theme(container.padding))] lg:mr-[200px] lg:ml-[calc(200px-40px)] 2xl:mr-[calc(50vw-700px+200px)] 2xl:ml-[calc(50vw-700px+200px-40px)]\">\n            {data.map((item) => (\n              <CarouselItem key={item.id} className=\"pl-[40px]\">\n                <a href={item.href} className=\"group rounded-xl\">\n                  <div className=\"flex flex-col overflow-clip rounded-xl border border-border md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8\">\n                    <div className=\"md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]\">\n                      <img\n                        src={item.image}\n                        alt={item.title}\n                        className=\"aspect-16/9 h-full w-full object-cover object-center\"\n                      />\n                    </div>\n                    <div className=\"flex flex-col justify-center px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12\">\n                      {(() => {\n                        const Icon = item.icon;\n                        return <Icon className=\"mb-4 size-6\" />;\n                      })()}\n                      <h3 className=\"mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6\">\n                        {item.title}\n                      </h3>\n                      <p className=\"text-muted-foreground lg:text-lg\">\n                        {item.description}\n                      </p>\n                    </div>\n                  </div>\n                </a>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery5 };\n"
+}

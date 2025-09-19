@@ -1,0 +1,43 @@
+{
+    "id": "hero32",
+    "access": "pro",
+    "weight": 4,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero32.jpg",
+    "thumbnail": "hero32-4x3.webp",
+    "description": "A component with a background layer, a left section displaying a heading, description, and button, and a right section with rows of integration icons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.616Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero32",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\ninterface Integration {\n  id: string;\n  icon: string;\n}\n\ninterface Hero32Props {\n  heading?: string;\n  description?: string;\n  button?: {\n    text: string;\n    url: string;\n  };\n  integrations?: Integration[][];\n}\n\nconst Hero32 = ({\n  heading = \"Blocks Built With Shadcn & Tailwind\",\n  description = \"Fully decomposable components, all the images and background patterns are individual images or svgs that can be replaced.\",\n  button = {\n    text: \"Discover all components\",\n    url: \"https://www.shadcnblocks.com\",\n  },\n  integrations = [\n    [\n      {\n        id: \"integration-1\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n      },\n      {\n        id: \"integration-2\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n      },\n      {\n        id: \"integration-3\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n      },\n      {\n        id: \"integration-4\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n      },\n      {\n        id: \"integration-5\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\",\n      },\n    ],\n    [\n      {\n        id: \"integration-6\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg\",\n      },\n      {\n        id: \"integration-7\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n      },\n      {\n        id: \"integration-8\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n      },\n      {\n        id: \"integration-9\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n      },\n      {\n        id: \"integration-10\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n      },\n    ],\n    [\n      {\n        id: \"integration-11\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\",\n      },\n      {\n        id: \"integration-12\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg\",\n      },\n      {\n        id: \"integration-13\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n      },\n      {\n        id: \"integration-14\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n      },\n      {\n        id: \"integration-15\",\n        icon: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n      },\n    ],\n  ],\n}: Hero32Props) => {\n  return (\n    <section className=\"relative overflow-hidden\">\n      <div className=\"absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100\">\n        <img\n          alt=\"background\"\n          src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/square-alt-grid.svg\"\n          className=\"opacity-90 [mask-image:radial-gradient(75%_75%_at_center,white,transparent)]\"\n        />\n      </div>\n      <div className=\"relative\">\n        <div className=\"md:-space-x-26 container relative flex flex-col items-start md:flex-row md:items-center\">\n          <div className=\"bg-background z-20 w-full shrink-0 pt-32 md:-mx-4 md:w-1/2 md:bg-transparent md:px-4 md:pb-32\">\n            <div className=\"flex flex-col items-start text-left\">\n              <div className=\"max-w-sm\">\n                <h1 className=\"my-6 text-pretty text-4xl font-bold lg:text-6xl\">\n                  {heading}\n                </h1>\n                <p className=\"text-muted-foreground\">{description}</p>\n                <Button asChild size=\"lg\" className=\"mt-10\">\n                  <a href={button.url}>{button.text}</a>\n                </Button>\n              </div>\n            </div>\n          </div>\n          <div>\n            <div className=\"flex -translate-x-10 flex-col gap-8 pb-8 pt-12 sm:-translate-x-0 md:gap-16 md:py-32\">\n              {integrations.map((line, i) => (\n                <div key={i} className=\"gap-x-22 even:translate-x-22 flex\">\n                  {line.map((integration) => (\n                    <div\n                      key={integration.id}\n                      className=\"size-22 border-background bg-background rounded-xl border shadow-xl\"\n                    >\n                      <div className=\"bg-muted/20 h-full w-full p-4\">\n                        <img\n                          alt=\"Integration\"\n                          src={integration.icon}\n                          className=\"size-full dark:invert\"\n                        />\n                      </div>\n                    </div>\n                  ))}\n                </div>\n              ))}\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero32 };\n"
+}

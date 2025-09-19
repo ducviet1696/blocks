@@ -1,0 +1,49 @@
+{
+    "id": "hero166",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero166.jpg",
+    "thumbnail": "hero166-4x3.webp",
+    "description": "A 2-column layout block with animated images on one side and text elements, including a headline, paragraph, and button on the other.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:26:05.350Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero166",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero166 = () => {\n  return (\n    <section className=\"bg-background py-12 md:py-20\">\n      <div className=\"container max-w-[111rem]\">\n        <div className=\"grid w-full grid-cols-1 items-center justify-between gap-14 lg:grid-cols-2\">\n          <div className=\"flex w-full max-w-[31.25rem] flex-col gap-8 md:gap-14 lg:max-w-full\">\n            <h1 className=\"font-serif text-5xl text-foreground md:text-6xl lg:text-7xl xl:text-[5rem]\">\n              Revolutionize your business operations\n            </h1>\n            <p className=\"font-montserrat text-2xl leading-snug text-foreground lg:text-3xl xl:text-4xl\">\n              The ultimate platform to unlock your agency\u2019s capabilities.\n            </p>\n            <Button\n              asChild\n              className=\"block h-fit w-fit rounded-lg px-7 py-3.5 text-lg font-medium transition-all duration-300 hover:-translate-y-1\"\n            >\n              <a href=\"#\">Book a Demo</a>\n            </Button>\n          </div>\n          <div className=\"mx-auto w-full max-w-[52.875rem] lg:mx-0\">\n            <AspectRatio ratio={1.049627792 / 1}>\n              <div className=\"grid w-full grid-cols-2 items-center justify-center gap-4\">\n                <div className=\"flex flex-col items-end justify-center gap-4\">\n                  <div className=\"relative animate-[transform1_15s_ease-in-out_infinite] overflow-hidden rounded-lg\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image1_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image2_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                  </div>\n                  <div className=\"relative animate-[transform2_15s_ease-in-out_infinite] overflow-hidden rounded-lg\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image1_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image2_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image3_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                  </div>\n                </div>\n                <div className=\"flex flex-col items-start justify-center gap-4\">\n                  <div className=\"relative animate-[transform4_15s_ease-in-out_infinite] overflow-hidden rounded-lg\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image3_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                  </div>\n                  <div className=\"relative animate-[transform3_15s_ease-in-out_infinite] overflow-hidden rounded-lg\">\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image1_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image2_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                    <img\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\"\n                      alt=\"\"\n                      className=\"absolute block h-full w-full animate-[image3_15s_ease-in-out_infinite] object-cover object-center\"\n                    />\n                  </div>\n                </div>\n              </div>\n            </AspectRatio>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero166 };\n"
+}

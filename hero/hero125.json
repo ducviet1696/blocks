@@ -1,0 +1,51 @@
+{
+    "id": "hero125",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero125.jpg",
+    "thumbnail": "hero125-4x3.webp",
+    "description": "Component features a 2-column layout with a focus on returns management. Includes icons, a big title, a paragraph, and a button. The right column showcases an image with exchange options.",
+    "createdAt": [
+        3,
+        "2024-12-16T06:00:05.326Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero125",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Banknote, Repeat, ShoppingBag, ShoppingCart } from \"lucide-react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero125 = () => {\n  return (\n    <section className=\"relative overflow-hidden py-20 font-sans after:absolute after:bottom-0 after:left-0 after:block after:h-20 after:w-full after:bg-[linear-gradient(var(--color-transparent),var(--color-white))] after:content-[''] md:py-40\">\n      <div className=\"container relative\">\n        <img\n          src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/circles.svg\"\n          alt=\"\"\n          className=\"absolute right-[-86.25rem] top-[-68.75rem] z-[-1] block aspect-square h-auto w-[181.25rem] max-w-none\"\n        />\n        <div className=\"grid grid-cols-1 items-center justify-center gap-16 lg:grid-cols-2\">\n          <div className=\"flex flex-col gap-6\">\n            <div className=\"flex items-center gap-2\">\n              <ShoppingCart className=\"fill-primary stroke-primary h-6 w-6\" />\n              <p className=\"text-lg font-semibold\">Returns</p>\n            </div>\n            <h1 className=\"leading-tight! text-5xl font-semibold xl:text-6xl\">\n              Go beyond managing returns, take control and perfect them.\n            </h1>\n            <p className=\"text-muted-foreground text-2xl leading-snug\">\n              Create tailored return policies that boost retention and keep your\n              customers thrilled.\n            </p>\n            <Button\n              asChild\n              variant=\"default\"\n              className=\"block h-fit w-fit rounded-full px-6 py-2 text-base font-semibold leading-loose\"\n            >\n              <a href=\"#\">Book a demo</a>\n            </Button>\n          </div>\n          <div className=\"justify-self-center lg:justify-self-end\">\n            <div className=\"bg-background flex aspect-[0.955145119/1] flex-col rounded-xl border p-3 shadow-xl sm:w-[22.625rem]\">\n              <AspectRatio\n                ratio={1.110367893 / 1}\n                className=\"bg-muted w-full overflow-hidden rounded-lg\"\n              >\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"\"\n                  className=\"block h-full w-full object-cover object-center\"\n                />\n              </AspectRatio>\n              <div className=\"m-auto flex w-full items-center justify-between\">\n                <div className=\"flex items-center gap-1 rounded-md bg-black/5 px-2 py-1\">\n                  <Repeat className=\"h-4\" />\n                  <p className=\"text-xs font-semibold sm:text-sm\">Exchange</p>\n                </div>\n                <div className=\"bg-background flex items-center gap-1 rounded-md px-2 py-1\">\n                  <ShoppingBag className=\"h-4 stroke-black/40\" />\n                  <p className=\"text-xs font-semibold text-black/40 sm:text-sm\">\n                    Shop Now\n                  </p>\n                </div>\n                <div className=\"bg-background flex items-center gap-1 rounded-md px-2 py-1\">\n                  <Banknote className=\"h-4 stroke-black/40\" />\n                  <p className=\"text-xs font-semibold text-black/40 sm:text-sm\">\n                    Refund\n                  </p>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero125 };\n"
+}

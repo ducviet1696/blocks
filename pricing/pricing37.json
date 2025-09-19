@@ -1,0 +1,53 @@
+{
+    "id": "pricing37",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing37.jpg",
+    "thumbnail": "pricing37-4x3.webp",
+    "description": "A premium plan showcase block with a title, subtitle, price, and features list followed by a button. Uses iconography for feature representation.",
+    "createdAt": [
+        3,
+        "2025-08-28T04:52:58.722Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card-spotlight.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/card-spotlight.json",
+            "docsUrl": "https://ui.aceternity.com/components/card-spotlight"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing37",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { BadgeCheck, Clock, Handshake, Snowflake, Star } from \"lucide-react\";\nimport React from \"react\";\n\nimport { CardSpotlight } from \"@/components/aceternity/card-spotlight\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Pricing37 = () => {\n  const PremiumPlan = {\n    price: 125,\n    features: [\n      { icon: Snowflake, label: \" All Premium components\" },\n      { icon: Handshake, label: \"Early access\" },\n      { icon: Star, label: \"Component Request\" },\n      { icon: Clock, label: \"Free Lifetime updates\" },\n      { icon: BadgeCheck, label: \"Shadcnblocks support\" },\n    ],\n  };\n\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container flex w-full flex-col items-center justify-center px-4\">\n        <p className=\"bg-muted rounded-full px-2 py-1 text-xs uppercase\">\n          PRICING\n        </p>\n        <h2 className=\"relative py-2 text-center font-sans text-5xl font-semibold tracking-tighter lg:text-6xl\">\n          The Ultimate Block Toolkit\n        </h2>\n        <p className=\"text-md text-muted-foreground mx-auto max-w-xl px-5 text-center lg:text-lg\">\n          Perfectly balanced between performance and customization.\n        </p>\n\n        <CardSpotlight className=\"text-background relative mt-14 w-full max-w-md overflow-hidden rounded-3xl\">\n          <div className=\"relative z-10 flex h-full flex-col justify-between\">\n            <div>\n              <p className=\"text-md font-semibold\"> Super Premium </p>\n              <h3 className=\"mt-[11px] text-4xl font-semibold tracking-tight\">\n                ${PremiumPlan.price}\n              </h3>\n              <ul className=\"mt-[30px] space-y-[10px]\">\n                {PremiumPlan.features.map((item, i) => (\n                  <li key={i} className=\"flex items-center gap-2\">\n                    <item.icon className=\"size-4\" />\n                    <p className=\"text-[15px] font-medium tracking-tight opacity-50\">\n                      {item.label}\n                    </p>\n                  </li>\n                ))}\n              </ul>\n            </div>\n            <Button\n              className=\"mt-20 w-full rounded-xl font-semibold\"\n              variant=\"secondary\"\n            >\n              Get Instant Access\n            </Button>\n          </div>\n        </CardSpotlight>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing37 };\n"
+}

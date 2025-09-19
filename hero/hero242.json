@@ -1,0 +1,60 @@
+{
+    "id": "hero242",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero242.jpg",
+    "thumbnail": "hero242-4x3.webp",
+    "description": "A split-layout component featuring a text area with a heading, paragraphs, buttons, and a list of features on one side, and a bar chart displaying data on the other.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:43.352Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react",
+        "recharts"
+    ],
+    "registryDependencies": [
+        {
+            "name": "cover.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/cover.json",
+            "docsUrl": "https://ui.aceternity.com/components/cover"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "chart",
+            "registryId": "shadcn",
+            "registryItemUrl": "chart",
+            "docsUrl": "https://ui.shadcn.com/docs/components/chart"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero242",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { Check } from \"lucide-react\";\nimport React from \"react\";\nimport { Bar, BarChart, CartesianGrid, XAxis } from \"recharts\";\n\nimport { Cover } from \"@/components/aceternity/cover\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  ChartConfig,\n  ChartContainer,\n  ChartTooltip,\n  ChartTooltipContent,\n} from \"@/components/ui/chart\";\n\nconst Hero242 = () => {\n  const features = [\n    {\n      title: \"10x Faster Development\",\n      description: \"Build and ship features 10x faster with our components.\",\n    },\n    {\n      title: \"95% Time Savings\",\n      description: \"Skip design phase and focus on business growth.\",\n    },\n    {\n      title: \"700+ Ready Components\",\n      description: \"Access 700+ production-ready blocks for any use case.\",\n    },\n    {\n      title: \"24/7 Growth Support\",\n      description: \"Get instant access to components that scale.\",\n    },\n    {\n      title: \"Proven Conversion Rates\",\n      description: \"Components designed to convert visitors into customers.\",\n    },\n  ];\n\n  const chartData = [\n    { date: \"2024-04-01\", views: 372 },\n    { date: \"2024-04-02\", views: 277 },\n    { date: \"2024-04-03\", views: 287 },\n    { date: \"2024-04-04\", views: 502 },\n    { date: \"2024-04-05\", views: 663 },\n    { date: \"2024-04-06\", views: 641 },\n    { date: \"2024-04-07\", views: 425 },\n    { date: \"2024-04-08\", views: 729 },\n    { date: \"2024-04-09\", views: 169 },\n    { date: \"2024-04-10\", views: 451 },\n    { date: \"2024-04-11\", views: 677 },\n    { date: \"2024-04-12\", views: 502 },\n    { date: \"2024-04-13\", views: 722 },\n    { date: \"2024-04-14\", views: 357 },\n    { date: \"2024-04-15\", views: 290 },\n    { date: \"2024-04-16\", views: 328 },\n    { date: \"2024-04-17\", views: 806 },\n    { date: \"2024-04-18\", views: 774 },\n    { date: \"2024-04-19\", views: 423 },\n    { date: \"2024-04-20\", views: 239 },\n    { date: \"2024-04-21\", views: 337 },\n    { date: \"2024-04-22\", views: 394 },\n    { date: \"2024-04-23\", views: 368 },\n    { date: \"2024-04-24\", views: 677 },\n    { date: \"2024-04-25\", views: 465 },\n    { date: \"2024-04-26\", views: 205 },\n    { date: \"2024-04-27\", views: 803 },\n    { date: \"2024-04-28\", views: 302 },\n    { date: \"2024-04-29\", views: 555 },\n    { date: \"2024-04-30\", views: 834 },\n    { date: \"2024-05-01\", views: 385 },\n    { date: \"2024-05-02\", views: 603 },\n    { date: \"2024-05-03\", views: 437 },\n    { date: \"2024-05-04\", views: 805 },\n    { date: \"2024-05-05\", views: 871 },\n    { date: \"2024-05-06\", views: 1018 },\n    { date: \"2024-05-07\", views: 688 },\n    { date: \"2024-05-08\", views: 359 },\n    { date: \"2024-05-09\", views: 407 },\n  ];\n\n  const chartConfig = {\n    views: {\n      label: \"Page Views\",\n      color: \"var(--chart-2)\",\n    },\n  } satisfies ChartConfig;\n\n  return (\n    <section className=\"h-full w-screen overflow-hidden py-32\">\n      <div className=\"container grid grid-cols-1 gap-8 lg:grid-cols-2\">\n        <div className=\"w-full space-y-5\">\n          <h1 className=\"mt-3 w-full max-w-2xl text-5xl font-medium font-semibold tracking-tighter lg:text-6xl\">\n            A Subscription build to fuel your <Cover>Growth</Cover>\n          </h1>\n\n          <p className=\"text-muted-foreground max-w-xl\">\n            Join 10,000+ developers who've accelerated their growth with our\n            components. Average 40% faster time-to-market and 25% increase in\n            conversion rates.\n          </p>\n\n          <div className=\"mb-29 mt-10 flex gap-2\">\n            <Button className=\"h-10 rounded-2xl\">Get Started</Button>\n            <Button variant=\"secondary\" className=\"h-10 rounded-2xl\">\n              View on Github\n            </Button>\n          </div>\n          <ul className=\"space-y-4\">\n            <li className=\"mb-3\">\n              <p className=\"font-semibold tracking-tight opacity-50\">\n                How we help you grow\n              </p>\n            </li>\n            {features.map((feature) => (\n              <li key={feature.title} className=\"flex gap-4 lg:items-center\">\n                <Check className=\"size-4\" />\n                <p className=\"font-medium tracking-tight\">\n                  {feature.title}\n                  <span className=\"pl-2 opacity-30\">{feature.description}</span>\n                </p>\n              </li>\n            ))}\n          </ul>\n        </div>\n        <div className=\"bg-muted h-full w-full rounded-2xl p-6\">\n          <ChartContainer config={chartConfig} className=\"h-full w-full\">\n            <BarChart\n              accessibilityLayer\n              data={chartData}\n              margin={{\n                left: 12,\n                right: 12,\n              }}\n            >\n              <CartesianGrid vertical={false} />\n              <XAxis\n                dataKey=\"date\"\n                tickLine={false}\n                axisLine={false}\n                tickMargin={8}\n                minTickGap={32}\n                tickFormatter={(value) => {\n                  const date = new Date(value);\n                  return date.toLocaleDateString(\"en-US\", {\n                    month: \"short\",\n                    day: \"numeric\",\n                  });\n                }}\n              />\n              <ChartTooltip\n                content={\n                  <ChartTooltipContent\n                    className=\"w-[150px]\"\n                    nameKey=\"views\"\n                    labelFormatter={(value) => {\n                      return new Date(value).toLocaleDateString(\"en-US\", {\n                        month: \"short\",\n                        day: \"numeric\",\n                        year: \"numeric\",\n                      });\n                    }}\n                  />\n                }\n              />\n              <Bar dataKey=\"views\" fill=\"var(--chart-1)\" />\n            </BarChart>\n          </ChartContainer>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero242 };\n"
+}

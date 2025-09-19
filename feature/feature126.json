@@ -1,0 +1,52 @@
+{
+    "id": "feature126",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature126.jpg",
+    "thumbnail": "feature126-4x3.webp",
+    "description": "An accordion-style component displays key features with titles, descriptions, and images. Allows toggling between sections to reveal content and images.",
+    "createdAt": [
+        3,
+        "2024-10-17T05:25:53.970Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "accordion",
+            "registryId": "shadcn",
+            "registryItemUrl": "accordion",
+            "docsUrl": "https://ui.shadcn.com/docs/components/accordion"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature126",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { MoveRight } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\nimport { Button } from \"@/components/ui/button\";\n\ninterface ITabData {\n  id: number;\n  title: string;\n  imageSrc: string;\n  description: string;\n}\n\nconst tabsData: ITabData[] = [\n  {\n    id: 1,\n    title: \"Performance\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 2,\n    title: \"Innovation\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 3,\n    title: \"Quality\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 4,\n    title: \"Accessibility\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 5,\n    title: \"Affordability\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n  {\n    id: 6,\n    title: \"Customer Support\",\n    imageSrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n    description:\n      \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!\",\n  },\n];\n\nconst Feature126 = () => {\n  const [activeTabId, setActiveTabId] = useState<number | null>(null);\n  const [activeImage, setActiveImage] = useState<string>(tabsData[0].imageSrc);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <span className=\"text-sm text-muted-foreground uppercase\">\n          Build with blocks\n        </span>\n        <h2 className=\"mt-4 mb-5 text-3xl font-extrabold\">Our Core Features</h2>\n        <div className=\"mb-20 flex flex-col items-start gap-1 md:flex-row md:items-center md:gap-8\">\n          <a\n            href=\"#\"\n            className=\"group flex items-center gap-2 text-muted-foreground hover:cursor-pointer\"\n          >\n            All blocks examples\n            <span className=\"transform transition-transform duration-300 group-hover:translate-x-2\">\n              <MoveRight className=\"size-4\" />\n            </span>\n          </a>\n          <a\n            href=\"#\"\n            className=\"group flex items-center gap-2 text-muted-foreground hover:cursor-pointer\"\n          >\n            All features examples\n            <span className=\"transform transition-transform duration-300 group-hover:translate-x-2\">\n              <MoveRight className=\"size-4\" />\n            </span>\n          </a>\n        </div>\n\n        <div className=\"mb-12 flex w-full items-center justify-between gap-28\">\n          <div className=\"w-full md:max-w-[400px]\">\n            <Accordion type=\"single\" className=\"w-full\" defaultValue=\"item-1\">\n              {tabsData.map((tab) => (\n                <AccordionItem\n                  key={tab.id}\n                  value={`item-${tab.id}`}\n                  className={`border-t-2 border-b-0 px-2 transition hover:bg-accent ${tab.id === activeTabId && \"border-foreground\"}`}\n                >\n                  <AccordionTrigger\n                    onClick={() => {\n                      setActiveImage(tab.imageSrc);\n                      setActiveTabId(tab.id);\n                    }}\n                    className=\"cursor-pointer py-5 no-underline! transition\"\n                  >\n                    <h6\n                      className={`text-xl font-semibold text-muted-foreground ${tab.id === activeTabId ? \"text-black\" : \"text-muted-foreground\"}`}\n                    >\n                      {tab.title}\n                    </h6>\n                  </AccordionTrigger>\n                  <AccordionContent>\n                    <p className=\"mt-3 text-muted-foreground\">\n                      {tab.description}\n                    </p>\n                    <div className=\"mt-4 md:hidden\">\n                      <img\n                        src={tab.imageSrc}\n                        alt=\"placeholder\"\n                        className=\"h-full max-h-80 w-full rounded-md object-cover\"\n                      />\n                    </div>\n                  </AccordionContent>\n                </AccordionItem>\n              ))}\n            </Accordion>\n          </div>\n          <div className=\"relative m-auto hidden w-[calc(100%-100px)] max-w-[1266px] overflow-hidden md:block\">\n            <div className=\"absolute right-0 bottom-0 left-0 z-2 h-[100px] bg-[linear-gradient(to_top,white_0%,rgba(255,255,255,0)_100%)]\"></div>\n            <img\n              src={activeImage}\n              alt=\"placeholder\"\n              className=\"max-h-[490px] w-full rounded-md object-cover transition-opacity duration-300\"\n            />\n          </div>\n        </div>\n\n        <Button variant=\"outline\">View all</Button>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature126 };\n"
+}

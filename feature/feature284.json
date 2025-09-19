@@ -1,0 +1,47 @@
+{
+    "id": "feature284",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature284.jpg",
+    "thumbnail": "feature284-4x3.webp",
+    "description": "A grid component displaying features with images, titles, descriptions, and badges. Incorporates a glowing effect on hover. GridLayout varies from 1-4 columns.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:51:03.495Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "glowing-effect.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/glowing-effect.json",
+            "docsUrl": "https://ui.aceternity.com/components/glowing-effect"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature",
+            "bento"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature284",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { HelpCircleIcon } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { GlowingEffect } from \"@/components/aceternity/glowing-effect\";\n\nconst featureData = [\n  {\n    desc: \"Lorem ipsum dolor sit amet consec adipisicing elit. Quisquam, quos.\",\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img1.jpeg\",\n    title: \"Quality\",\n    badgeTitle: \"#1 Block\",\n    gridClass: \"md:col-span-1\",\n  },\n  {\n    desc: \"Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consec adipisicing elit.\",\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\",\n    title: \"Innovation\",\n    badgeTitle: \"#2 Block\",\n    gridClass: \"lg:col-span-2\",\n  },\n  {\n    desc: \"Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.\",\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img11.jpeg\",\n    title: \"Performance\",\n    badgeTitle: \"#3 Block\",\n    gridClass: \"md:col-span-1 lg:row-span-2  \",\n  },\n  {\n    desc: \"Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consec adipisicing elit.\",\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img2.jpeg\",\n    title: \"Innovation\",\n    badgeTitle: \"#2 Block\",\n    gridClass: \"lg:col-span-2\",\n  },\n  {\n    desc: \"Duis aute irure dolor in reprehenderit in voluptate velit esse.\",\n    img: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img4.jpeg\",\n    title: \"Reliability\",\n    badgeTitle: \"#4 Block\",\n    gridClass: \"md:col-span-1\",\n  },\n];\n\nconst Feature284 = () => {\n  return (\n    <section className=\"h-full overflow-hidden py-32\">\n      <div className=\"container flex h-full w-full items-center justify-center\">\n        <div className=\"grid w-full max-w-6xl grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 lg:h-[800px] lg:grid-cols-4\">\n          {featureData.map((feature, index) => (\n            <div\n              key={index}\n              className={cn(\n                \"relative flex flex-col gap-2 rounded-3xl border p-4\",\n                feature.gridClass,\n              )}\n            >\n              <GlowingEffect\n                spread={40}\n                glow={true}\n                disabled={false}\n                proximity={64}\n                inactiveZone={0.01}\n              />\n              <div className=\"flex w-full items-center justify-between\">\n                <p className=\"text-muted-foreground\">{feature.badgeTitle}</p>\n                <HelpCircleIcon className=\"text-muted-foreground size-4\" />\n              </div>\n              <div\n                className={cn(\n                  \"bg-muted w-full flex-1 overflow-hidden rounded-3xl\",\n                )}\n              >\n                <img\n                  src={feature.img}\n                  alt={feature.title}\n                  className=\"pointer-events-none h-full w-full object-cover\"\n                />\n              </div>\n              <h3 className=\"mt-4 text-2xl font-semibold tracking-tight\">\n                {feature.title}\n              </h3>\n              <p className=\"text-muted-foreground\">{feature.desc}</p>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature284 };\n"
+}

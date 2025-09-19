@@ -1,0 +1,57 @@
+{
+    "id": "feature109",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature109.jpg",
+    "thumbnail": "feature109-4x3.webp",
+    "description": "A two-column layout block, featuring an outlined badge, large headings, descriptive text, and a button with an icon in the first column. The second column showcases an image with overlay text, including an avatar badge and a link.",
+    "createdAt": [
+        3,
+        "2024-09-09T00:41:29.016Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature109",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ChevronRight, Menu } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature109 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid place-items-center gap-10 lg:grid-cols-2\">\n          <div className=\"flex flex-col gap-5\">\n            <Badge variant=\"outline\" className=\"w-fit bg-background\">\n              Modern Tactics\n            </Badge>\n            <h3 className=\"text-3xl font-semibold lg:text-5xl\">\n              Make your site a true standout.\n            </h3>\n            <p className=\"text-muted-foreground lg:text-lg\">\n              Discover new web trends that help you craft sleek, highly\n              functional sites that drive traffic and convert leads into\n              customers.\n            </p>\n            <Button className=\"mt-2.5 w-fit gap-2\" size=\"lg\">\n              View Features\n              <Menu className=\"h-auto w-4\" />\n            </Button>\n          </div>\n          <div className=\"relative rounded-xl\">\n            <img\n              src=\"https://images.unsplash.com/photo-1567320743368-9db24e12ebf0?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n              alt=\"placeholder\"\n              className=\"rounded-xl object-cover md:aspect-video lg:aspect-auto\"\n            />\n            <div className=\"absolute top-0 right-0 bottom-0 left-0 rounded-xl bg-linear-to-t from-primary via-transparent to-transparent\"></div>\n            <div className=\"absolute top-0 flex h-full w-full flex-col justify-between p-7\">\n              <span className=\"ml-auto flex w-fit items-center gap-2 rounded-full bg-background/30 px-4 py-2.5 text-sm font-semibold backdrop-blur-sm\">\n                <Avatar className=\"size-7 rounded-full\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                Tailored for experts\n              </span>\n              <div className=\"flex flex-col gap-5 text-background\">\n                <h4 className=\"text-lg font-semibold lg:text-3xl\">\n                  Elevate your platform to the next level.\n                </h4>\n                <a href=\"#\" className=\"flex items-center gap-1 font-medium\">\n                  Explore all features\n                  <ChevronRight className=\"h-auto w-4\" />\n                </a>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature109 };\n"
+}

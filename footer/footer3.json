@@ -1,0 +1,64 @@
+{
+    "id": "footer3",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "footer3.jpg",
+    "thumbnail": "footer3-4x3.webp",
+    "description": "A footer component with a logo, navigation links in 2-5 columns, social icons, newsletter subscription form, and legal links.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.600Z"
+    ],
+    "dependencies": [
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "logo",
+            "registryId": "shadcnblocks",
+            "registryItemUrl": "https://shadcnblocks.com/r/logo",
+            "docsUrl": "https://shadcnblocks.com/block/logo"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "footer"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcnblocks",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "footer3",
+    "collection": "block",
+    "group": "footer",
+    "code": "import {\n  FaDiscord,\n  FaLinkedin,\n  FaRedditAlien,\n  FaTelegramPlane,\n  FaTwitter,\n} from \"react-icons/fa\";\n\nimport { Logo, LogoImage, LogoText } from \"@/components/shadcnblocks/logo\";\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\nconst sections = [\n  {\n    title: \"Product\",\n    links: [\n      { name: \"Overview\", href: \"#\" },\n      { name: \"Pricing\", href: \"#\" },\n      { name: \"Marketplace\", href: \"#\" },\n      { name: \"Features\", href: \"#\" },\n      { name: \"Integrations\", href: \"#\" },\n      { name: \"Pricing\", href: \"#\" },\n    ],\n  },\n  {\n    title: \"Company\",\n    links: [\n      { name: \"About\", href: \"#\" },\n      { name: \"Team\", href: \"#\" },\n      { name: \"Blog\", href: \"#\" },\n      { name: \"Careers\", href: \"#\" },\n      { name: \"Contact\", href: \"#\" },\n      { name: \"Privacy\", href: \"#\" },\n    ],\n  },\n  {\n    title: \"Resources\",\n    links: [\n      { name: \"Help\", href: \"#\" },\n      { name: \"Sales\", href: \"#\" },\n      { name: \"Advertise\", href: \"#\" },\n    ],\n  },\n];\n\ninterface Footer3Props {\n  logo?: {\n    url: string;\n    src: string;\n    alt: string;\n    title: string;\n  };\n}\nconst Footer3 = ({\n  logo = {\n    url: \"https://www.shadcnblocks.com\",\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg\",\n    alt: \"logo\",\n    title: \"Shadcnblocks.com\",\n  },\n}: Footer3Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <footer>\n          <Logo url=\"https://shadcnblocks.com\">\n            <LogoImage\n              src={logo.src}\n              alt={logo.alt}\n              title={logo.title}\n              className=\"h-10\"\n            />\n            <LogoText className=\"text-xl\">{logo.title}</LogoText>\n          </Logo>\n          <div className=\"mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-4\">\n            {sections.map((section, sectionIdx) => (\n              <div key={sectionIdx}>\n                <h3 className=\"mb-4 font-bold\">{section.title}</h3>\n                <ul className=\"text-muted-foreground space-y-4\">\n                  {section.links.map((link, linkIdx) => (\n                    <li\n                      key={linkIdx}\n                      className=\"hover:text-primary font-medium\"\n                    >\n                      <a href={link.href}>{link.name}</a>\n                    </li>\n                  ))}\n                </ul>\n              </div>\n            ))}\n            <div className=\"lg:col-span-2 xl:col-span-1\">\n              <ul className=\"text-muted-foreground mb-10 flex items-center gap-2\">\n                <li className=\"font-medium\">\n                  <a href=\"#\">\n                    <span className=\"bg-muted hover:text-primary flex size-12 items-center justify-center rounded-full transition-colors\">\n                      <FaDiscord className=\"size-6\" />\n                    </span>\n                  </a>\n                </li>\n                <li className=\"font-medium\">\n                  <a href=\"#\">\n                    <span className=\"bg-muted hover:text-primary flex size-12 items-center justify-center rounded-full transition-colors\">\n                      <FaRedditAlien className=\"size-6\" />\n                    </span>\n                  </a>\n                </li>\n                <li className=\"font-medium\">\n                  <a href=\"#\">\n                    <span className=\"bg-muted hover:text-primary flex size-12 items-center justify-center rounded-full transition-colors\">\n                      <FaTwitter className=\"size-6\" />\n                    </span>\n                  </a>\n                </li>\n                <li className=\"font-medium\">\n                  <a href=\"#\">\n                    <span className=\"bg-muted hover:text-primary flex size-12 items-center justify-center rounded-full transition-colors\">\n                      <FaTelegramPlane className=\"size-6\" />\n                    </span>\n                  </a>\n                </li>\n                <li className=\"font-medium\">\n                  <a href=\"#\">\n                    <span className=\"bg-muted hover:text-primary flex size-12 items-center justify-center rounded-full transition-colors\">\n                      <FaLinkedin className=\"size-6\" />\n                    </span>\n                  </a>\n                </li>\n              </ul>\n              <div className=\"grid w-full max-w-sm items-center gap-1.5\">\n                <Label htmlFor=\"email\">Subscribe to our newsletter</Label>\n                <div className=\"flex w-full max-w-sm items-center space-x-2\">\n                  <Input type=\"email\" placeholder=\"Email\" />\n                  <Button type=\"submit\">Subscribe</Button>\n                </div>\n                <p className=\"text-muted-foreground mt-1 text-xs\">\n                  By submitting, you agree to our\n                  <a href=\"#\" className=\"text-primary ml-1 hover:underline\">\n                    Privacy Policy\n                  </a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div className=\"text-muted-foreground mt-24 flex flex-col flex-wrap justify-between gap-4 border-t pt-8 text-sm font-medium md:flex-row md:items-center\">\n            <p>\u00a9 2024 Shadcnblocks.com. All rights reserved.</p>\n            <ul className=\"flex gap-4\">\n              <li className=\"hover:text-primary whitespace-nowrap underline\">\n                <a href=\"#\">Terms and Conditions</a>\n              </li>\n              <li className=\"hover:text-primary whitespace-nowrap underline\">\n                <a href=\"#\">Privacy Policy</a>\n              </li>\n            </ul>\n          </div>\n        </footer>\n      </div>\n    </section>\n  );\n};\n\nexport { Footer3 };\n"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "hero239",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero239.jpg",
+    "thumbnail": "hero239-4x3.webp",
+    "description": "A component featuring a marquee with images, centered text, and two buttons. It includes a heading, a subtext, and a unique 3D marquee at the bottom.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:37.918Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "3d-marquee.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/3d-marquee.json",
+            "docsUrl": "https://ui.aceternity.com/components/3d-marquee"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero239",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { ThreeDMarquee } from \"@/components/aceternity/3d-marquee\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero239 = () => {\n  const images = [\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img1.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img2.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img3.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img4.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img5.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img6.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img8.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img9.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img10.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img11.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img12.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img13.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img14.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img15.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img16.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img17.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img18.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img19.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img20.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img21.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img22.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img23.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img24.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img25.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img26.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img27.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img1.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img2.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img3.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img4.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img5.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img6.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img8.jpeg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img9.jpeg\",\n  ];\n\n  return (\n    <section className=\"relative py-32\">\n      <div className=\"container flex flex-col items-center justify-center gap-5 text-center\">\n        <p className=\"bg-muted w-fit rounded-full px-4 py-1 text-sm uppercase\">\n          shadcnblocks\n        </p>\n        <h1 className=\"mt-3 max-w-xl text-5xl font-medium font-semibold tracking-tighter lg:max-w-3xl lg:text-6xl\">\n          Unlock the Premium Blocks Just one time payment\n        </h1>\n        <p className=\"text-muted-foreground max-w-xl\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad\n        </p>\n        <div className=\"flex items-center gap-4\">\n          <Button>Get Started</Button>\n          <Button variant=\"ghost\">\n            Explore Benefits <ArrowRight />\n          </Button>\n        </div>\n\n        <div className=\"mt-15 flex h-full w-full items-center justify-center\">\n          <ThreeDMarquee className=\"rounded-none\" images={images} />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero239 };\n"
+}

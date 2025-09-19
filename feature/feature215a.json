@@ -1,0 +1,52 @@
+{
+    "id": "feature215a",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature215a.jpg",
+    "thumbnail": "feature215a-4x3.webp",
+    "description": "A component showcasing a grid of cards with videos, icons, and texts. Features hover-to-play videos and links.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:37:48.027Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature215a",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport {\n  AudioLines,\n  Eye,\n  Languages,\n  ListMinus,\n  LucideIcon,\n  ScanFace,\n  TextQuote,\n} from \"lucide-react\";\nimport { useRef } from \"react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardTitle,\n} from \"@/components/ui/card\";\n\ninterface card {\n  video: string;\n  Icon: LucideIcon;\n  title: string;\n  link: string;\n  summary: string;\n}\n\nconst List: Array<card> = [\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4\",\n    Icon: Eye,\n    title: \"Visual Design System\",\n    link: \"#\",\n    summary:\n      \"Consistent, beautiful components built with a cohesive design language that scales across your entire application.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-2.mp4\",\n    Icon: Languages,\n    title: \"Framework Agnostic\",\n    link: \"#\",\n    summary:\n      \"Use with React, Vue, Angular, or vanilla JavaScript. One library that works everywhere you need it.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-3.mp4\",\n    Icon: AudioLines,\n    title: \"Interactive Components\",\n    link: \"#\",\n    summary:\n      \"Rich interactions and smooth animations built-in. From subtle hover effects to complex state transitions.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-4.mp4\",\n    Icon: ListMinus,\n    title: \"Minimal Setup\",\n    link: \"#\",\n    summary:\n      \"Get started in minutes with zero configuration. Clean, semantic code that doesn't bloat your bundle size.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4\",\n    Icon: ScanFace,\n    title: \"Accessibility First\",\n    link: \"#\",\n    summary:\n      \"WCAG compliant components with full keyboard navigation, screen reader support, and focus management.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4\",\n    Icon: TextQuote,\n    title: \"Complete Documentation\",\n    link: \"#\",\n    summary:\n      \"Comprehensive guides, live examples, and API references. Everything you need to build with confidence.\",\n  },\n];\n\nconst GridCard = ({ video, Icon, title, link, summary }: card) => {\n  const videoRef = useRef<HTMLVideoElement | null>(null);\n\n  return (\n    <a\n      href={link}\n      className=\"group block\"\n      onMouseEnter={() => {\n        if (videoRef.current) {\n          videoRef.current.play();\n        }\n      }}\n      onMouseLeave={() => {\n        if (videoRef.current) {\n          videoRef.current.pause();\n          videoRef.current.currentTime = 0;\n        }\n      }}\n    >\n      <Card className=\"bg-muted h-full transition-all duration-200 hover:shadow-lg\">\n        <CardContent className=\"\">\n          <div className=\"relative mb-4\">\n            <AspectRatio ratio={16 / 9} className=\"overflow-hidden rounded-md\">\n              <video\n                src={video}\n                className=\"block size-full object-cover object-center\"\n                ref={videoRef}\n                controls={false}\n                muted={true}\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"flex flex-col gap-2\">\n            <CardTitle className=\"text-foreground flex gap-2 text-lg font-medium\">\n              <Icon className=\"stroke-primary-foreground bg-primary size-6 rounded-sm p-1\" />\n              {title}\n            </CardTitle>\n            <CardDescription className=\"text-sm leading-relaxed\">\n              {summary}\n            </CardDescription>\n          </div>\n        </CardContent>\n      </Card>\n    </a>\n  );\n};\n\nconst Feature215a = () => {\n  return (\n    <section className=\"py-24\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-16 flex max-w-[47.5rem] flex-col gap-4 text-center\">\n          <h2 className=\"text-3xl font-bold xl:text-5xl\">\n            Fully Editable Components\n          </h2>\n          <p className=\"text-muted-foreground text-lg\">\n            Built for developers who value quality, performance, and developer\n            experience. Every component is crafted with care and tested in\n            production.\n          </p>\n        </div>\n        <div className=\"grid gap-6 md:grid-cols-2 lg:grid-cols-3\">\n          {List.map((item, index) => (\n            <GridCard key={index} {...item} />\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature215a };\n"
+}

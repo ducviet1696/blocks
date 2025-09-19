@@ -1,0 +1,49 @@
+{
+    "id": "feature115",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature115.jpg",
+    "thumbnail": "feature115-4x3.webp",
+    "description": "A block showcasing 6 key features with badges, headings, descriptions, and images. Laid out in up to 3 columns, it includes customizable cards for each feature.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.826Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature115",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Badge } from \"@/components/ui/badge\";\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\n\nconst Feature115 = () => {\n  // Define features data for mapping\n  const features = [\n    {\n      title: \"Interface\",\n      category: \"Category\",\n      image: {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n        alt: \"User-Friendly Interface\",\n      },\n    },\n    {\n      title: \"Analytics\",\n      category: \"Category\",\n      image: {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\",\n        alt: \"Advanced Analytics\",\n      },\n    },\n    {\n      title: \"Integration\",\n      category: \"Category\",\n      image: {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n        alt: \"Seamless Integration\",\n      },\n    },\n    {\n      title: \"Customizable\",\n      category: \"Category\",\n      image: {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\",\n        alt: \"Customizable Features\",\n      },\n    },\n    {\n      title: \"Support\",\n      category: \"Category\",\n      image: {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\",\n        alt: \"Reliable Support\",\n      },\n    },\n    {\n      title: \"Security\",\n      category: \"Category\",\n      image: {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\",\n        alt: \"Secure Data Management\",\n      },\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-center gap-4 text-center\">\n          <Badge variant=\"outline\">Exceptional Software</Badge>\n          <h1 className=\"text-3xl font-semibold md:text-5xl\">Key Features</h1>\n          <p className=\"max-w-2xl text-muted-foreground md:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat\n            odit sunt eaque ex, natus vel maxime tenetur odio? Nemo.\n          </p>\n        </div>\n        <div className=\"mx-auto mt-20 grid max-w-7xl gap-7 md:grid-cols-2 lg:grid-cols-3\">\n          {features.map((feature, index) => (\n            <Card key={index} className=\"border-none bg-muted/60\">\n              <CardHeader className=\"text-center\">\n                <CardTitle className=\"text-lg font-semibold md:text-2xl\">\n                  {feature.title}\n                </CardTitle>\n                <CardDescription className=\"text-muted-foreground md:text-lg\">\n                  {feature.category}\n                </CardDescription>\n              </CardHeader>\n              <CardContent className=\"px-7 pb-7\">\n                <img\n                  src={feature.image.src}\n                  alt={feature.image.alt}\n                  className=\"w-full rounded-xl object-cover\"\n                />\n              </CardContent>\n            </Card>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature115 };\n"
+}

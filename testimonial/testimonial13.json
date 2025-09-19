@@ -1,0 +1,43 @@
+{
+    "id": "testimonial13",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial13.jpg",
+    "thumbnail": "testimonial13-4x3.webp",
+    "description": "A component featuring a testimonial with overlapping avatars and a quote, showcased on a single-column layout with centered text.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.653Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "testimonial13",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nconst Testimonial13 = () => {\n  return (\n    <section className=\"bg-accent py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center text-center\">\n          <div className=\"mb-8 flex items-center rounded-full bg-background p-1 shadow-md\">\n            <Avatar className=\"size-10\">\n              <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\" />\n              <AvatarFallback>SB</AvatarFallback>\n            </Avatar>\n            <Avatar className=\"-ml-3 size-10\">\n              <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\" />\n              <AvatarFallback>RA</AvatarFallback>\n            </Avatar>\n            <Avatar className=\"-ml-3 size-10\">\n              <AvatarImage src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\" />\n              <AvatarFallback>JS</AvatarFallback>\n            </Avatar>\n            <div className=\"mx-2 text-xs font-medium\">\n              Trusted by visionary designers\n            </div>\n          </div>\n          <p className=\"max-w-4xl text-xl font-medium lg:text-2xl\">\n            &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n            doloremque mollitia fugiat omnis! Porro facilis quo animi\n            consequatur. Explicabo.&rdquo;\n          </p>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial13 };\n"
+}

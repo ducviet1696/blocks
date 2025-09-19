@@ -1,0 +1,45 @@
+{
+    "id": "stats2",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "stats2.jpg",
+    "thumbnail": "stats2-4x3.webp",
+    "description": "A 3-column block displaying platform insights with arrows and icons denoting trends and values, includes descriptive texts.",
+    "createdAt": [
+        3,
+        "2024-11-15T06:07:35.866Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "stats"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "stats2",
+    "collection": "block",
+    "group": "stats",
+    "code": "import { ArrowDown, ArrowUp, Infinity as InfinityIcon } from \"lucide-react\";\n\nimport { Card } from \"@/components/ui/card\";\n\nconst Stats2 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h1 className=\"text-center text-4xl font-semibold lg:text-6xl\">\n          Platform Performance Insights\n        </h1>\n        <div className=\"grid gap-6 pt-9 text-center md:grid-cols-3 lg:pt-20\">\n          <Card className=\"border-none bg-accent p-8 lg:p-10\">\n            <p className=\"mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl\">\n              <ArrowUp className=\"mr-1 h-8 text-green-400\" />\n              20,000\n            </p>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </Card>\n          <Card className=\"border-none bg-accent p-8 lg:p-10\">\n            <p className=\"mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl\">\n              <ArrowUp className=\"mr-1 h-8 text-green-400\" />\n              20+\n            </p>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </Card>\n          <Card className=\"border-none bg-accent p-8 lg:p-10\">\n            <p className=\"mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl\">\n              <ArrowDown className=\"mr-1 h-8 text-red-400\" />\n              50%\n            </p>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </Card>\n          <Card className=\"border-none bg-accent p-8 lg:p-10\">\n            <p className=\"mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl\">\n              <ArrowUp className=\"mr-1 h-8 text-green-400\" />\n              100+\n            </p>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </Card>\n          <Card className=\"border-none bg-accent p-8 lg:p-10\">\n            <p className=\"mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl\">\n              <ArrowUp className=\"mr-1 h-8 text-green-400\" />\n              100%\n            </p>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </Card>\n          <Card className=\"border-none bg-accent p-8 lg:p-10\">\n            <p className=\"mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl\">\n              <InfinityIcon className=\"mr-1 h-8\" />\n              Forever\n            </p>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </Card>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Stats2 };\n"
+}

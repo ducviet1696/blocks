@@ -1,0 +1,37 @@
+{
+    "id": "casestudies3",
+    "access": "basic",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "casestudies3.jpg",
+    "thumbnail": "casestudies3-4x3.webp",
+    "description": "A component displaying featured and other casestudies with visuals, titles, and links, formatted in a grid with hover effects.",
+    "createdAt": [
+        3,
+        "2025-04-29T03:45:21.255Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "casestudies"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "casestudies3",
+    "collection": "block",
+    "group": "casestudies",
+    "code": "import { MoveRight } from \"lucide-react\";\nimport React from \"react\";\n\ninterface CasestudyItem {\n  logo: string;\n  company: string;\n  tags: string;\n  title: string;\n  subtitle: string;\n  image: string;\n  link?: string;\n}\n\ninterface Casestudies3Props {\n  featuredCasestudy: CasestudyItem;\n  casestudies: CasestudyItem[];\n}\n\nconst defaultFeaturedCasestudy: CasestudyItem = {\n  logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  company: \"Acme\",\n  tags: \"ARTIFICIAL INTELLIGENCE / ENTERPRISE SOLUTIONS\",\n  title: \"Workflow Automation for the Digital Age.\",\n  subtitle: \"How to automate your workflow with AI.\",\n  image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  link: \"https://shadcnblocks.com\",\n};\n\nconst defaultCasestudies: CasestudyItem[] = [\n  {\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n    company: \"Super\",\n    tags: \"DATA MIGRATION / SOFTWARE SOLUTIONS\",\n    title: \"Enhance data migration with AI.\",\n    subtitle: \"A data migration platform toward a data-driven future.\",\n    image: \"\",\n    link: \"https://shadcnblocks.com\",\n  },\n  {\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n    company: \"Advent\",\n    tags: \"ARTIFICIAL INTELLIGENCE / DATA SOLUTIONS\",\n    title: \"Strategic AI for a future-proof business.\",\n    subtitle: \"Mastering AI for more efficient operations.\",\n    image: \"\",\n    link: \"https://shadcnblocks.com\",\n  },\n];\n\nconst Casestudies3 = ({\n  featuredCasestudy = defaultFeaturedCasestudy,\n  casestudies = defaultCasestudies,\n}: Casestudies3Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"border-border border\">\n          <a\n            href={featuredCasestudy.link || \"#\"}\n            className=\"hover:bg-muted/40 group grid gap-4 overflow-hidden px-6 transition-colors duration-500 ease-out lg:grid-cols-2 xl:px-28\"\n          >\n            <div className=\"flex flex-col justify-between gap-4 pt-8 md:pt-16 lg:pb-16\">\n              <div className=\"flex items-center gap-2 text-2xl font-medium\">\n                <img src={featuredCasestudy.logo} alt=\"logo\" className=\"h-9\" />\n                {featuredCasestudy.company}\n              </div>\n              <div>\n                <span className=\"text-muted-foreground text-xs sm:text-sm\">\n                  {featuredCasestudy.tags}\n                </span>\n                <h2 className=\"mb-5 mt-4 text-balance text-2xl font-semibold sm:text-3xl sm:leading-10\">\n                  {featuredCasestudy.title}\n                  <span className=\"text-primary/50 group-hover:text-primary/70 font-medium transition-colors duration-500 ease-out\">\n                    {\" \"}\n                    {featuredCasestudy.subtitle}\n                  </span>\n                </h2>\n                <div className=\"flex items-center gap-2 font-medium\">\n                  Read case study\n                  <MoveRight className=\"h-4 w-4 transition-transform duration-500 ease-out group-hover:translate-x-1\" />\n                </div>\n              </div>\n            </div>\n            <div className=\"relative isolate py-16\">\n              <div className=\"border-border bg-background relative isolate h-full border p-2\">\n                <div className=\"h-full overflow-hidden\">\n                  <img\n                    src={featuredCasestudy.image}\n                    alt=\"placeholder\"\n                    className=\"aspect-14/9 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105\"\n                  />\n                </div>\n              </div>\n            </div>\n          </a>\n          <div className=\"border-border flex border-t\">\n            <div className=\"hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] opacity-15 [background-size:10px_10px] xl:block\"></div>\n            <div className=\"grid lg:grid-cols-2\">\n              {casestudies.map((item, idx) => (\n                <a\n                  key={item.company}\n                  href={item.link || \"#\"}\n                  className={`border-border bg-background hover:bg-muted/40 group flex flex-col justify-between gap-12 px-6 py-8 transition-colors duration-500 ease-out md:py-16 lg:pb-16 xl:gap-16 ${\n                    idx === 0\n                      ? \"xl:border-l xl:pl-8\"\n                      : \"border-t lg:border-l lg:border-t-0 xl:border-r xl:pl-8\"\n                  }`}\n                >\n                  <div className=\"flex items-center gap-2 text-2xl font-medium\">\n                    <img src={item.logo} alt=\"logo\" className=\"h-9\" />\n                    {item.company}\n                  </div>\n                  <div>\n                    <span className=\"text-muted-foreground text-xs sm:text-sm\">\n                      {item.tags}\n                    </span>\n                    <h2 className=\"mb-5 mt-4 text-balance text-2xl font-semibold sm:text-3xl sm:leading-10\">\n                      {item.title}\n                      <span className=\"text-primary/50 group-hover:text-primary/70 font-medium transition-colors duration-500 ease-out\">\n                        {\" \"}\n                        {item.subtitle}\n                      </span>\n                    </h2>\n                    <div className=\"flex items-center gap-2 font-medium\">\n                      Read case study\n                      <MoveRight className=\"h-4 w-4 transition-transform duration-500 ease-out group-hover:translate-x-1\" />\n                    </div>\n                  </div>\n                </a>\n              ))}\n            </div>\n            <div className=\"hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] opacity-15 [background-size:10px_10px] xl:block\"></div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Casestudies3 };\n"
+}

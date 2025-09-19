@@ -1,0 +1,46 @@
+{
+    "id": "hero174",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero174.jpg",
+    "thumbnail": "hero174-4x3.webp",
+    "description": "A hero block showcasing a central message with a background image, featuring a title, a descriptive paragraph, and a button. Below is a bar with location details and an arrow button.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:45:05.339Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero174",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowDown } from \"lucide-react\";\nimport { Fragment } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero174 = () => {\n  return (\n    <Fragment>\n      <section className=\"font-dm_sans dark relative h-svh max-h-[1400px] min-h-[600px] w-full bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/full-width-backgrounds/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg')] bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:block after:size-full after:bg-zinc-950/50 after:content-['']\">\n        <div className=\"relative z-10 mx-auto flex size-full max-w-[125rem] px-4 py-9\">\n          <div className=\"flex w-full flex-col justify-between gap-10\">\n            <div className=\"mx-auto flex max-w-[31.25rem] flex-1 flex-col items-center justify-center gap-7 sm:max-w-[37.5rem] md:max-w-[50rem]\">\n              <h1 className=\"text-foreground text-center text-4xl font-medium leading-tight sm:text-5xl md:text-6xl\">\n                Transform Your Vision Into Digital Reality\n              </h1>\n              <p className=\"text-foreground text-balance text-center text-lg md:text-2xl\">\n                We craft exceptional digital solutions that help brands stand\n                out and make a lasting impact in the digital landscape.\n              </p>\n              <div className=\"mt-8 flex flex-wrap items-center justify-center gap-4\">\n                <Button\n                  asChild\n                  className=\"block h-fit w-fit text-nowrap rounded-sm px-6 py-3.5 text-sm font-semibold uppercase tracking-wider\"\n                >\n                  <a href=\"#\">Explore Projects</a>\n                </Button>\n              </div>\n            </div>\n            <div className=\"flex items-center justify-between gap-4 rounded-lg bg-black/20 px-6 py-4 backdrop-blur-sm\">\n              <div className=\"flex items-center gap-3\">\n                <div className=\"bg-primary h-8 w-1\"></div>\n                <div className=\"text-muted-foreground text-sm font-medium\">\n                  <p className=\"text-primary\">Global Headquarters</p>\n                  <p>San Francisco, California</p>\n                </div>\n              </div>\n              <Button\n                variant=\"outline\"\n                size=\"icon\"\n                className=\"border-primary hover:bg-primary/20 flex size-10 rounded-full border-2 transition-colors\"\n              >\n                <ArrowDown className=\"size-5! stroke-primary m-auto\" />\n              </Button>\n            </div>\n          </div>\n        </div>\n      </section>\n    </Fragment>\n  );\n};\n\nexport { Hero174 };\n"
+}

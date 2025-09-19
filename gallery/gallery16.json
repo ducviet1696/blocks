@@ -1,0 +1,51 @@
+{
+    "id": "gallery16",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery16.jpg",
+    "thumbnail": "gallery16-4x3.webp",
+    "description": "A component displaying a carousel and tabs for navigating items, which comprise an image, title, description, and note. Features include dynamic tab indicators and previous/next buttons.",
+    "createdAt": [
+        3,
+        "2025-04-23T05:25:33.387Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery16",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { useEffect, useRef, useState } from \"react\";\n\nimport {\n  Carousel,\n  CarouselApi,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst items = [\n  {\n    title: (\n      <>\n        <span className=\"bg-gradient-to-b from-foreground/20 to-muted-foreground bg-clip-text text-transparent\">\n          Explore Our\n        </span>\n        <br />\n        Core Features\n      </>\n    ),\n    description: (\n      <>\n        Dive deep into the robust functionalities designed to streamline your\n        workflow. Benefit from intuitive design, seamless integration, and\n        powerful customization options.\n        <br />\n        <br />\n        Explore how our platform adapts to your evolving needs, ensuring\n        long-term value and efficiency.\n      </>\n    ),\n    note: \"Comprehensive documentation and dedicated support channels are available to assist you.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    category: \"Features\",\n  },\n  {\n    title: (\n      <>\n        <span className=\"bg-gradient-to-b from-foreground/20 to-muted-foreground bg-clip-text text-transparent\">\n          Solutions for\n        </span>\n        <br />\n        Every Scenario\n      </>\n    ),\n    description: (\n      <>\n        <p>\n          Discover how our platform addresses diverse challenges across various\n          domains:\n        </p>\n        <ul className=\"my-4 ml-6 list-disc\">\n          <li>Enhancing team collaboration efficiency.</li>\n          <li>Optimizing critical resource allocation.</li>\n          <li>Streamlining complex data analysis.</li>\n        </ul>\n        <p>We provide adaptable tools for your unique context.</p>\n      </>\n    ),\n    note: \"Leverage our expertise in integration and custom development for specific needs.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    category: \"Solutions\",\n  },\n  {\n    title: (\n      <>\n        <span className=\"bg-gradient-to-b from-foreground/20 to-muted-foreground bg-clip-text text-transparent\">\n          Building the\n        </span>\n        <br />\n        Future Together\n      </>\n    ),\n    description: (\n      <>\n        <p>\n          Get a glimpse into our ongoing commitment to innovation and\n          improvement:\n        </p>\n        <ul className=\"my-4 ml-6 list-disc\">\n          <li>Next-generation user interface design.</li>\n          <li>Advanced analytics capabilities rollout.</li>\n          <li>Expanded third-party integration ecosystem.</li>\n        </ul>\n        <p>\n          We're constantly evolving based on user feedback and industry trends.\n        </p>\n      </>\n    ),\n    note: \"Our dedicated R&D team is focused on delivering cutting-edge solutions.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    category: \"Roadmap\",\n  },\n];\n\nconst Gallery16 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(items[0].category);\n  const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);\n  const [indicatorStyle, setIndicatorStyle] = useState({\n    width: 0,\n    left: 0,\n  });\n\n  useEffect(() => {\n    const currentIndex = items.findIndex((item) => item.category === current);\n    const activeTab = tabRefs.current[currentIndex];\n\n    if (activeTab) {\n      const { offsetWidth, offsetLeft } = activeTab;\n      setIndicatorStyle({\n        width: offsetWidth,\n        left: offsetLeft,\n      });\n    }\n  }, [current]);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    const currentIndex = items.findIndex((item) => item.category === current);\n    api.scrollTo(currentIndex);\n\n    const onSelect = () => {\n      const idx = api.selectedScrollSnap();\n      setCurrent(items[idx].category);\n    };\n    api.on(\"select\", onSelect);\n\n    return () => {\n      api.off(\"select\", onSelect);\n    };\n  }, [api, current]);\n\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container\">\n        <Carousel\n          setApi={setApi}\n          className=\"[&>div[data-slot=carousel-content]]:overflow-visible\"\n        >\n          <div className=\"flex items-center justify-between\">\n            <Tabs\n              value={current}\n              onValueChange={setCurrent}\n              className=\"mb-8 flex justify-center\"\n            >\n              <TabsList className=\"relative h-auto gap-6 bg-background\">\n                {items.map((item, idx) => (\n                  <TabsTrigger\n                    key={idx}\n                    ref={(el) => {\n                      tabRefs.current[idx] = el;\n                    }}\n                    value={item.category}\n                    className=\"text-base transition-all duration-700 ease-out [&[data-state=active]]:shadow-none\"\n                  >\n                    {item.category}\n                  </TabsTrigger>\n                ))}\n                <div\n                  className=\"absolute bottom-0 h-0.5 bg-primary transition-all duration-700 ease-out\"\n                  style={{\n                    width: `${indicatorStyle.width}px`,\n                    left: `${indicatorStyle.left}px`,\n                  }}\n                />\n              </TabsList>\n            </Tabs>\n            <div className=\"hidden items-center gap-4 sm:flex\">\n              <CarouselPrevious className=\"static size-10 translate-0\" />\n              <CarouselNext className=\"static size-10 translate-0\" />\n            </div>\n          </div>\n          <CarouselContent className=\"max-w-4xl\">\n            {items.map((item, idx) => (\n              <CarouselItem key={idx} className=\"w-fit max-w-4xl\">\n                <div className=\"grid h-full max-w-4xl gap-10 rounded-xl border border-border p-6 shadow-sm select-none sm:p-10 md:max-h-[450px] md:grid-cols-2 lg:gap-20\">\n                  <div className=\"flex flex-col justify-between gap-4\">\n                    <div>\n                      <h2 className=\"text-2xl font-medium sm:text-4xl\">\n                        {item.title}\n                      </h2>\n                      <div className=\"mt-4 text-sm text-muted-foreground sm:mt-6\">\n                        {item.description}\n                      </div>\n                    </div>\n                    <p className=\"mt-4 text-xs text-muted-foreground sm:mt-6\">\n                      {item.note}\n                    </p>\n                  </div>\n                  <div className=\"rounded-xl border border-border p-2\">\n                    <img\n                      src={item.image}\n                      alt=\"placeholder\"\n                      className=\"h-full w-full rounded-xl object-cover\"\n                    />\n                  </div>\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery16 };\n"
+}

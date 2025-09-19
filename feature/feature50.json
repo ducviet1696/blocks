@@ -1,0 +1,45 @@
+{
+    "id": "feature50",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature50.jpg",
+    "thumbnail": "feature50-4x3.webp",
+    "description": "A component with a central message and a button, followed by a grid of 3 visual blocks, each with text and \"Learn more\" buttons. One spans full-width, others take half.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.573Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature50",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature50 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-3xl flex-col items-center gap-6\">\n          <h2 className=\"mb-2 text-center text-3xl font-semibold text-balance lg:text-5xl\">\n            Built your dream project with our blocks\n          </h2>\n          <p className=\"text-center text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat\n            odit sunt eaque ex, natus vel maxime tenetur odio? Nemo.\n          </p>\n          <Button variant=\"outline\" className=\"mt-6\">\n            Get started for free\n            <ChevronRight className=\"ml-1 h-4\" />\n          </Button>\n        </div>\n        <div className=\"mx-auto mt-20 flex max-w-5xl grid-cols-1 flex-col gap-6 lg:grid lg:grid-cols-7\">\n          <a\n            href=\"#\"\n            className=\"col-span-7 grid overflow-hidden rounded-lg bg-muted sm:grid-cols-2\"\n          >\n            <div className=\"flex flex-col justify-between p-8 lg:p-12\">\n              <div>\n                <div className=\"mb-4 text-xs text-muted-foreground\">\n                  COPY AND PASTE\n                </div>\n                <h3 className=\"mb-2 text-xl font-medium lg:text-2xl\">\n                  Ready to use blocks for your project\n                </h3>\n                <p className=\"text-sm text-muted-foreground lg:text-base\">\n                  Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                  Corrupti molestiae similique atque laboriosam a illum ad sit.\n                  Natus, iste voluptatem!\n                </p>\n              </div>\n              <div className=\"mt-6 sm:mt-8\">\n                <Button variant=\"outline\">\n                  Learn more\n                  <ChevronRight className=\"ml-1 h-4\" />\n                </Button>\n              </div>\n            </div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n              alt=\"placeholder\"\n              className=\"order-first aspect-video h-full max-h-96 w-full border-b object-cover sm:order-last sm:aspect-auto lg:max-h-none lg:border-b-0 lg:border-l\"\n            />\n          </a>\n          <a\n            href=\"#\"\n            className=\"group relative overflow-hidden rounded-lg bg-muted lg:col-span-3\"\n          >\n            <Button\n              variant=\"outline\"\n              size=\"sm\"\n              className=\"absolute top-7 right-10 transition-all duration-200 group-hover:opacity-100 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0\"\n            >\n              <ChevronRight className=\"h-4\" />\n            </Button>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n              alt=\"placeholder\"\n              className=\"max-h-72 w-full border-b object-cover\"\n            />\n            <div className=\"p-8 lg:p-12\">\n              <div className=\"mb-4 text-xs text-muted-foreground\">\n                EASY TO USE\n              </div>\n              <h3 className=\"mb-2 text-xl font-medium lg:text-2xl\">\n                Customize and build your project\n              </h3>\n            </div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"grid overflow-hidden rounded-lg bg-muted sm:grid-cols-2 lg:col-span-4\"\n          >\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\"\n              alt=\"placeholder\"\n              className=\"aspect-video h-full max-h-96 w-full border-b object-cover sm:aspect-auto lg:max-h-none lg:border-r lg:border-b-0\"\n            />\n            <div className=\"flex flex-col justify-between p-8 lg:p-12\">\n              <div>\n                <div className=\"mb-4 text-xs text-muted-foreground\">\n                  A BLOCK FOR EVERYTHING\n                </div>\n                <h3 className=\"mb-2 text-xl font-medium lg:text-2xl\">\n                  Blocks for every project\n                </h3>\n              </div>\n              <div className=\"mt-6 sm:mt-8\">\n                <Button variant=\"outline\">\n                  Learn more\n                  <ChevronRight className=\"ml-1 h-4\" />\n                </Button>\n              </div>\n            </div>\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature50 };\n"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "hero58",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero58.jpg",
+    "thumbnail": "hero58-4x3.webp",
+    "description": "This component displays a 2-column layout with a large title, subtitle, and button on one side, and an image on the other. It features a unique background pattern behind the image.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.887Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero58",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nconst Hero58 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"grid items-center gap-10 lg:grid-cols-2\">\n          <div className=\"flex flex-col gap-8 lg:gap-12\">\n            <h1 className=\"text-5xl font-semibold lg:text-7xl\">\n              Your workspace <br />\n              <span className=\"mx-1 inline-block whitespace-nowrap\">\n                anywhere.\n              </span>\n            </h1>\n            <p className=\"text-muted-foreground lg:text-lg\">\n              Set up your environment with everything you need and share it\n              effortlessly. Stay productive throughout your workflow, no matter\n              where you are.\n            </p>\n            <Button size=\"lg\" className=\"w-fit\">\n              Get Started\n              <ArrowRight className=\"size-4\" />\n            </Button>\n          </div>\n          <div className=\"relative\">\n            <div className=\"absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,var(--muted)_1px,transparent_1px),linear-gradient(to_bottom,var(--muted)_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_50%_100%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:64px_64px]\"></div>\n            {/* illustrations available from https://icons8.com/illustrations/style--tokyo */}\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-selecting-the-elements-of-the-horizontal-graph-chart.svg\"\n              alt=\"placeholder\"\n              className=\"mx-auto max-h-[600px]\"\n            />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero58 };\n"
+}

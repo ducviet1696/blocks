@@ -1,0 +1,45 @@
+{
+    "id": "pricing36",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing36.jpg",
+    "thumbnail": "pricing36-4x3.webp",
+    "description": "Two-column pricing component, showcasing starter and enterprise plans with features, prices, and call-to-action buttons.",
+    "createdAt": [
+        3,
+        "2025-08-28T04:52:56.160Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "pricing36",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { ArrowRight, Check } from \"lucide-react\";\n\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Pricing36 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto grid max-w-4xl gap-6 md:grid-cols-2\">\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"rounded-4xl flex h-full flex-col bg-gradient-to-r from-blue-500 to-purple-500 p-px\">\n              <div className=\"bg-background h-full rounded-[31px] p-8\">\n                <div className=\"flex items-center justify-between\">\n                  <p className=\"text-xl font-semibold\">Starter Plan</p>\n                </div>\n                <div className=\"mt-6 flex flex-col gap-2\">\n                  <p className=\"text-6xl font-bold\">\n                    $19\n                    <span className=\"text-muted-foreground text-base font-semibold\">\n                      /month\n                    </span>\n                  </p>\n                  <p className=\"text-muted-foreground text-sm\">\n                    Complete Solution For Your Team Productivity\n                  </p>\n                </div>\n                <Separator className=\"my-6\" />\n                <ul className=\"space-y-6\">\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Team collaboration tools</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Enable seamless collaboration with shared workspaces\n                      </p>\n                    </div>\n                  </li>\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Advanced project tracking</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Monitor project progress with detailed analytics and\n                        reports\n                      </p>\n                    </div>\n                  </li>\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Automated task management</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Streamline workflows with intelligent task automation\n                      </p>\n                    </div>\n                  </li>\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Priority customer support</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Get expert assistance with priority support channels and\n                        quick response times.\n                      </p>\n                    </div>\n                  </li>\n                </ul>\n              </div>\n              <a\n                href=\"#\"\n                className=\"text-background group flex items-center justify-center gap-1.5 py-3 text-center font-medium\"\n              >\n                Subscribe\n                <ArrowRight className=\"size-5 transition-transform group-hover:translate-x-1\" />\n              </a>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"rounded-4xl bg-primary flex h-full flex-col p-px\">\n              <div className=\"bg-background h-full rounded-[31px] p-8\">\n                <p className=\"text-xl font-semibold\">Enterprise Plan</p>\n                <div className=\"mt-6 flex flex-col gap-2\">\n                  <p className=\"text-6xl font-bold\">\n                    $49\n                    <span className=\"text-muted-foreground text-base font-semibold\">\n                      /month\n                    </span>\n                  </p>\n                  <p className=\"text-muted-foreground text-sm\">\n                    Complete solution for your Enterprise Workflows\n                  </p>\n                </div>\n                <Separator className=\"my-6\" />\n                <ul className=\"space-y-6\">\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Unlimited team members</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Scale without limits with unlimited user access and\n                        collaboration tools.\n                      </p>\n                    </div>\n                  </li>\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">\n                        Advanced analytics dashboard\n                      </p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Get deep insights with comprehensive reporting tools\n                      </p>\n                    </div>\n                  </li>\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Custom workflow automation</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Create tailored workflows to optimize team efficiency\n                      </p>\n                    </div>\n                  </li>\n                  <li className=\"flex gap-2\">\n                    <Check className=\"mt-1 size-4 shrink-0 text-green-500\" />\n                    <div>\n                      <p className=\"font-medium\">Dedicated success manager</p>\n                      <p className=\"text-muted-foreground text-sm\">\n                        Receive personalized guidance from dedicated specialists\n                      </p>\n                    </div>\n                  </li>\n                </ul>\n              </div>\n              <a\n                href=\"#\"\n                className=\"text-background group flex items-center justify-center gap-1.5 py-3 text-center font-medium\"\n              >\n                Contact Us\n                <ArrowRight className=\"size-5 transition-transform group-hover:translate-x-1\" />\n              </a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing36 };\n"
+}

@@ -1,0 +1,46 @@
+{
+    "id": "feature274",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature274.jpg",
+    "thumbnail": "feature274-4x3.webp",
+    "description": "A component displaying a title, a text paragraph, and a grid of 4 animated cards that reveal information on hover.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:50:45.696Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "canvas-reveal-effect.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/canvas-reveal-effect.json",
+            "docsUrl": "https://ui.aceternity.com/components/canvas-reveal-effect"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature274",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { AnimatePresence, motion } from \"framer-motion\";\nimport React from \"react\";\n\nimport { CanvasRevealEffect } from \"@/components/aceternity/canvas-reveal-effect\";\n\nconst Feature274 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container flex w-full flex-col items-center justify-center px-4\">\n        <h2 className=\"relative z-20 py-2 text-center font-sans text-5xl font-semibold tracking-tighter md:py-7 lg:text-7xl\">\n          Numbers That Build Trust\n        </h2>\n        <p className=\"text-md text-muted-foreground mx-auto max-w-xl text-center lg:text-lg\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n          eiusmod tempor incididunt ut labore et dolore magna aliqua.\n        </p>\n\n        <div className=\"mt-10 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4\">\n          <Card\n            defaultText=\"99%\"\n            revealText=\"Success Rate\"\n            animationSpeed={5.1}\n            containerClassName=\"bg-emerald-900\"\n          />\n          <Card\n            defaultText=\"50+\"\n            revealText=\"Active users\"\n            animationSpeed={3}\n            colors={[\n              [236, 72, 153],\n              [232, 121, 249],\n            ]}\n            dotSize={2}\n          />\n          <Card\n            defaultText=\"100+\"\n            revealText=\"Downloads\"\n            animationSpeed={3}\n            containerClassName=\"bg-sky-600\"\n            colors={[[125, 211, 252]]}\n          />\n          <Card\n            defaultText=\"$1.2M\"\n            revealText=\"Total raised\"\n            animationSpeed={4}\n            containerClassName=\"bg-orange-600\"\n            colors={[[249, 115, 22]]}\n            dotSize={3}\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature274 };\n\nconst Card = ({\n  defaultText,\n  revealText,\n  animationSpeed = 3,\n  containerClassName = \"bg-primary\",\n  colors = [[255, 255, 255]],\n  dotSize = 1,\n  hasRadialGradient = false,\n}: {\n  defaultText: string;\n  revealText: string;\n  animationSpeed?: number;\n  containerClassName?: string;\n  colors?: number[][];\n  dotSize?: number;\n  hasRadialGradient?: boolean;\n}) => {\n  const [hovered, setHovered] = React.useState(false);\n  return (\n    <div\n      onMouseEnter={() => setHovered(true)}\n      onMouseLeave={() => setHovered(false)}\n      className=\"group/canvas-card border-border relative mx-auto flex h-[25rem] w-full max-w-sm items-center justify-center border p-4\"\n    >\n      <BorderIllustration className=\"text-foreground absolute -left-3 -top-3 h-6 w-6\" />\n      <BorderIllustration className=\"text-foreground absolute -bottom-3 -left-3 h-6 w-6\" />\n      <BorderIllustration className=\"text-foreground absolute -right-3 -top-3 h-6 w-6\" />\n      <BorderIllustration className=\"text-foreground absolute -bottom-3 -right-3 h-6 w-6\" />\n\n      <AnimatePresence>\n        {hovered && (\n          <motion.div\n            initial={{ opacity: 0 }}\n            animate={{ opacity: 1 }}\n            className=\"absolute inset-0 h-full w-full\"\n          >\n            <CanvasRevealEffect\n              animationSpeed={animationSpeed}\n              containerClassName={containerClassName}\n              colors={colors}\n              dotSize={dotSize}\n            />\n            {hasRadialGradient && (\n              <div className=\"bg-muted/50 absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)]\" />\n            )}\n          </motion.div>\n        )}\n      </AnimatePresence>\n\n      <div className=\"relative z-20\">\n        <div className=\"absolute mx-auto flex w-full items-center justify-center text-center text-6xl font-semibold tracking-tight transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0\">\n          {defaultText}\n        </div>\n        <div className=\"text-foreground absolute relative z-10 mt-4 text-center text-2xl font-bold tracking-tight opacity-0 transition duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100\">\n          {defaultText}\n          <br />\n          {revealText}\n        </div>\n      </div>\n    </div>\n  );\n};\n\nexport const BorderIllustration = ({\n  className,\n  ...rest\n}: React.SVGProps<SVGSVGElement>) => {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      fill=\"none\"\n      viewBox=\"0 0 24 24\"\n      strokeWidth=\"1.5\"\n      stroke=\"currentColor\"\n      className={className}\n      {...rest}\n    >\n      <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M12 6v12m6-6H6\" />\n    </svg>\n  );\n};\n"
+}

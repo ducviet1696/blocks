@@ -1,0 +1,45 @@
+{
+    "id": "feature93",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature93.jpg",
+    "thumbnail": "feature93-4x3.webp",
+    "description": "A component featuring staggered avatars and a 3-column layout with icons, highlighting customer care themes, and focusing on support, solutions, and feedback.",
+    "createdAt": [
+        3,
+        "2024-10-09T05:37:59.202Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature93",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Infinity as InfinityIcon, MessagesSquare, Target } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\n\nconst Feature93 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"text-center\">\n          <span className=\"flex items-end justify-center -space-x-4\">\n            <Avatar className=\"size-16 border\">\n              <AvatarImage\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                alt=\"placeholder\"\n              />\n            </Avatar>\n            <Avatar className=\"size-24 border\">\n              <AvatarImage\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\"\n                alt=\"placeholder\"\n              />\n            </Avatar>\n            <Avatar className=\"size-16 border\">\n              <AvatarImage\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\"\n                alt=\"placeholder\"\n              />\n            </Avatar>\n          </span>\n          <h2 className=\"mt-12 text-4xl font-bold lg:text-5xl\">\n            Outstanding customer care\n          </h2>\n          <div className=\"mt-20 grid justify-center gap-16 lg:grid-cols-3\">\n            <div className=\"max-w-md\">\n              <MessagesSquare\n                className=\"mx-auto mb-6 size-12\"\n                strokeWidth={1.5}\n              />\n              <h3 className=\"mb-4 text-2xl font-medium lg:text-2xl\">\n                Dedicated support for your team\n              </h3>\n              <p className=\"text-muted-foreground\">\n                Our team consists of experts who ensure that your questions are\n                answered promptly and accurately.\n              </p>\n            </div>\n            <div className=\"max-w-md\">\n              <Target className=\"mx-auto mb-6 size-12\" strokeWidth={1.5} />\n              <h3 className=\"mb-4 text-2xl font-medium lg:text-2xl\">\n                Quick and precise solutions to your problems\n              </h3>\n              <p className=\"text-muted-foreground\">\n                We know the importance of timely answers, which is why we\n                prioritize fast, reliable responses.\n              </p>\n            </div>\n            <div className=\"max-w-md\">\n              <InfinityIcon\n                className=\"mx-auto mb-6 size-12\"\n                strokeWidth={1.5}\n              />\n              <h3 className=\"mb-4 text-2xl font-medium lg:text-2xl\">\n                Continuous improvement through feedback\n              </h3>\n              <p className=\"text-muted-foreground\">\n                Your input helps us grow. We regularly update and enhance our\n                services based on what matters to you.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature93 };\n"
+}

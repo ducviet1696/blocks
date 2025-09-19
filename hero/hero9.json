@@ -1,0 +1,51 @@
+{
+    "id": "hero9",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero9.jpg",
+    "thumbnail": "hero9-4x3.webp",
+    "description": "A component featuring a gradient background, badge, headline, paragraph, two buttons, and a shadowed code block next to an image area.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.622Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero9",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nconst codeSample = `\ncurl 'https://api.example.com/v1/endpoint' \\\\\n    -X POST \\\\\n    -u username:password \\\\\n    -d param_1=1001 \\\\\n    -d param_3=true \\\\\n    -d param_2=\"Donec quis lorem ligula.\"\n`.trim();\n\nconst Hero9 = () => {\n  return (\n    <section className=\"relative py-32\">\n      {/* Background gradient */}\n      <div className=\"pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_60%_60%_at_65%_50%,hsl(var(--accent))_0%,transparent_80%)]\"></div>\n      {/* Background pattern */}\n      <div className=\"pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.1)_1px,transparent_1px)] [background-size:8px_8px] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_0%,transparent_80%)]\"></div>\n      {/* Content */}\n      <div className=\"container relative\">\n        <div className=\"flex flex-col items-start text-left\">\n          <Badge variant=\"outline\">New Release</Badge>\n          <h1 className=\"my-6 text-pretty text-4xl font-bold lg:text-6xl\">\n            Welcome to Our Website\n          </h1>\n          <p className=\"text-muted-foreground mb-8 max-w-3xl lg:text-xl\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n            doloremque mollitia fugiat omnis! Porro facilis quo animi\n            consequatur. Explicabo.\n          </p>\n          <div className=\"flex w-full flex-col justify-start gap-2 sm:flex-row\">\n            <Button className=\"w-full sm:w-auto\">\n              Primary\n              <ChevronRight className=\"ml-2 size-4\" />\n            </Button>\n            <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n              Secondary\n            </Button>\n          </div>\n        </div>\n        <div className=\"relative mt-12 grid grid-cols-12 md:gap-12\">\n          <div className=\"col-span-12 md:col-span-10\">\n            <div className=\"border-border bg-background aspect-video overflow-clip rounded-lg border shadow-md\">\n              {/* Hero Image */}\n            </div>\n          </div>\n          <div className=\"absolute inset-0\">\n            <div className=\"grid h-full grid-cols-12 md:gap-12\">\n              <div className=\"col-span-10 col-start-2 -mt-6 grid translate-y-0 items-start justify-center sm:translate-y-0 sm:items-center md:col-span-6 md:col-end-12 lg:-mt-12 lg:items-start\">\n                <div className=\"bg-primary absolute h-[140px] w-full rounded-lg p-4 shadow-lg\">\n                  <pre className=\"text-accent font-mono text-xs leading-normal [mask-image:linear-gradient(to_right,#000_80%,transparent_100%)]\">\n                    <code>{codeSample}</code>\n                  </pre>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero9 };\n"
+}

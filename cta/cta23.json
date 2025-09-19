@@ -1,0 +1,57 @@
+{
+    "id": "cta23",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta23.jpg",
+    "thumbnail": "cta23-4x3.webp",
+    "description": "A component with a newsletter subscription form, badge, heading, description, and features list, styled with icons and varying text sizes.",
+    "createdAt": [
+        3,
+        "2025-01-26T04:31:17.425Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta23",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { ArrowRight, CheckCircle, Mail } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\n\nconst Cta23 = () => {\n  return (\n    <section className=\"bg-muted py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-start md:items-center\">\n          {/* Badge */}\n          <Badge>\n            <Mail className=\"mr-2 h-4 w-4\" />\n            Stay Informed\n          </Badge>\n\n          {/* Heading */}\n          <h4 className=\"mt-4 text-2xl font-semibold tracking-tight md:text-center md:text-3xl xl:text-4xl\">\n            Subscribe to our newsletter\n          </h4>\n\n          {/* Description */}\n          <p className=\"text-muted-foreground mt-2 text-lg font-medium md:text-center xl:text-xl\">\n            Get the <span className=\"text-primary\">latest updates</span>,{\" \"}\n            <span className=\"text-primary\">tips</span>, and{\" \"}\n            <span className=\"text-primary\">exclusive</span> offers from AlignUI.\n          </p>\n\n          {/* Form */}\n          <form className=\"mt-5 flex w-full flex-col gap-2 md:w-auto xl:mt-8 xl:gap-3\">\n            <div className=\"group relative flex w-full items-center gap-2 rounded-lg px-3 md:w-[416px]\">\n              <Input\n                type=\"email\"\n                required\n                placeholder=\"Enter your email...\"\n                className=\"bg-background\"\n              />\n              <Button type=\"submit\" aria-label=\"Submit form\">\n                <ArrowRight className=\"h-3 w-3\" />\n              </Button>\n            </div>\n          </form>\n\n          {/* Features */}\n          <div className=\"mt-5 flex flex-wrap gap-4 md:justify-center xl:mt-8 xl:gap-7\">\n            <div className=\"flex items-center gap-2 text-sm xl:text-base\">\n              <CheckCircle className=\"h-4 w-4 text-green-500\" />\n              Weekly updates\n            </div>\n            <div className=\"flex items-center gap-2 text-sm xl:text-base\">\n              <CheckCircle className=\"h-4 w-4 text-green-500\" />\n              Exclusive content\n            </div>\n            <div className=\"flex items-center gap-2 text-sm xl:text-base\">\n              <CheckCircle className=\"h-4 w-4 text-green-500\" />\n              Early access for features\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta23 };\n"
+}

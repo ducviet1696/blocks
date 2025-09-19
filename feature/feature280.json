@@ -1,0 +1,46 @@
+{
+    "id": "feature280",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature280.jpg",
+    "thumbnail": "feature280-4x3.webp",
+    "description": "A layout showcasing user testimonials and a feature list with a title, separated into two columns, including checkboxes for features.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:50:55.686Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card-stack.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/card-stack.json",
+            "docsUrl": "https://ui.aceternity.com/components/card-stack"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature280",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { BadgeCheck } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { CardStack } from \"@/components/aceternity/card-stack\";\n\nconst Feature280 = () => {\n  const features = [\n    \"Instant Implementation\",\n    \"One-Time Payment\",\n    \"Developer Friendly\",\n    \"Fully Responsive\",\n    \"Production Ready\",\n    \"Premium Support\",\n    \"Regular Updates\",\n    \"Customizable Design\",\n    \"Performance Optimized\",\n    \"Accessibility Compliant\",\n    \"Cross-Browser \",\n    \"Documentation Included\",\n  ];\n\n  return (\n    <section className=\"h-full w-screen overflow-hidden py-32\">\n      <div className=\"container flex w-full max-w-6xl flex-col items-center justify-between lg:flex-row\">\n        <div className=\"gap-15 relative flex h-full flex-col items-center justify-center text-center lg:items-start lg:text-left\">\n          <h1 className=\"w-full max-w-md text-5xl font-medium font-semibold tracking-tighter lg:text-6xl\">\n            What our Users say Proudly\n          </h1>\n\n          <div className=\"flex w-full max-w-lg items-center gap-4 px-5\">\n            <span className=\"bg-muted-foreground/20 h-px w-full\" />\n            <p className=\"text-muted-foreground/50 text-sm\">FEATURES</p>\n            <span className=\"bg-muted-foreground/20 h-px w-full\" />\n          </div>\n          <ul className=\"grid grid-cols-2 gap-3\">\n            {features.map((feature) => (\n              <li key={feature} className=\"flex gap-2 lg:items-center\">\n                <BadgeCheck className=\"text-muted-foreground/80 size-4\" />\n                <p className=\"text-muted-foreground/80 tracking-tight\">\n                  {feature}\n                </p>\n              </li>\n            ))}\n          </ul>\n        </div>\n        <div className=\"mt-24 flex items-center justify-center lg:mt-0\">\n          <CardStack items={CARDS} />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature280 };\n\nexport const Highlight = ({\n  children,\n  className,\n}: {\n  children: React.ReactNode;\n  className?: string;\n}) => {\n  return (\n    <span\n      className={cn(\n        \"bg-emerald-100 px-1 py-0.5 font-bold text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500\",\n        className,\n      )}\n    >\n      {children}\n    </span>\n  );\n};\n\nconst CARDS = [\n  {\n    id: 0,\n    name: \"Sarah Chen\",\n    designation: \"Product Manager\",\n    content: (\n      <p>\n        The implementation was incredibly smooth.{\" \"}\n        <Highlight>We deployed in under 2 hours</Highlight> and the team loves\n        how intuitive the interface is. The responsive design works perfectly\n        across all devices.\n      </p>\n    ),\n  },\n  {\n    id: 1,\n    name: \"Marcus Rodriguez\",\n    designation: \"Frontend Developer\",\n    content: (\n      <p>\n        As a developer, I appreciate the clean code structure.{\" \"}\n        <Highlight>Easy to customize</Highlight> and the documentation is\n        comprehensive. The performance optimizations are noticeable in\n        production.\n      </p>\n    ),\n  },\n  {\n    id: 2,\n    name: \"Emily Watson\",\n    designation: \"UX Designer\",\n    content: (\n      <p>\n        The accessibility features are outstanding.{\" \"}\n        <Highlight>WCAG compliant out of the box</Highlight> and the design\n        system is consistent. Our users with disabilities have given us\n        excellent feedback.\n      </p>\n    ),\n  },\n];\n"
+}

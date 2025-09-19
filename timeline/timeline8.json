@@ -1,0 +1,57 @@
+{
+    "id": "timeline8",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "timeline8.jpg",
+    "thumbnail": "timeline8-4x3.webp",
+    "description": "A vertical timeline block, showcasing events with dates, displayed in a centered max-width container with decorative separators.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.426Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "timeline"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "timeline8",
+    "collection": "block",
+    "group": "timeline",
+    "code": "import * as React from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport { Separator } from \"@/components/ui/separator\";\n\ntype TimelineEntry = {\n  date: string;\n  items: {\n    content: string;\n    highlights?: { text: string; position: number }[];\n  }[];\n};\n\nconst timelineData: TimelineEntry[] = [\n  {\n    date: \"March 21, 2025\",\n    items: [\n      {\n        content:\n          \"Launched <strong>AI-powered code generation</strong> in our IDE, allowing developers to generate boilerplate code with natural language prompts.\",\n      },\n      {\n        content:\n          \"Introduced <em>contextual code suggestions</em> that understand project structure and coding patterns for more accurate completions.\",\n      },\n      {\n        content:\n          \"Added <u>automated code refactoring</u> capabilities that suggest and apply improvements to existing codebases.\",\n      },\n    ],\n  },\n  {\n    date: \"March 19, 2025\",\n    items: [\n      {\n        content:\n          \"Released <strong>AI-driven debugging assistant</strong> that identifies potential issues and suggests fixes before runtime.\",\n      },\n      {\n        content:\n          \"Implemented <em>smart documentation generation</em> that automatically creates comprehensive docs from code comments and structure.\",\n      },\n      {\n        content:\n          \"Enhanced <u>code review automation</u> with AI-powered analysis of code quality and best practices.\",\n      },\n    ],\n  },\n  {\n    date: \"March 17, 2025\",\n    items: [\n      {\n        content:\n          \"Announced <strong>AI pair programming</strong> feature that provides real-time coding assistance and explanations.\",\n      },\n      {\n        content:\n          \"Launched <em>intelligent dependency management</em> that suggests optimal package versions and identifies potential conflicts.\",\n      },\n      {\n        content:\n          \"Introduced <u>automated test generation</u> that creates comprehensive test suites based on code functionality.\",\n      },\n    ],\n  },\n];\n\nconst Timeline8 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <h1 className=\"text-foreground mb-10 text-center text-3xl font-bold tracking-tighter lg:text-6xl\">\n          Timeline\n        </h1>\n        <div className=\"relative mx-auto max-w-4xl\">\n          <Separator\n            orientation=\"vertical\"\n            className=\"bg-muted absolute left-2 top-4\"\n          />\n          {timelineData.map((entry, index) => (\n            <div key={index} className=\"relative mb-10 pl-8\">\n              <div className=\"bg-foreground absolute left-0 top-2 flex size-5 items-center justify-center rounded-full\">\n                <div className=\"bg-background size-3 rounded-full\" />\n              </div>\n              <Badge\n                variant=\"secondary\"\n                className=\"mb-4 rounded-xl px-3 py-2 text-sm\"\n              >\n                {entry.date}\n              </Badge>\n\n              <Card className=\"my-5 border-none shadow-none\">\n                <CardContent className=\"px-2\">\n                  <ul className=\"flex flex-col gap-1\">\n                    {entry.items.map((item, itemIndex) => (\n                      <li key={itemIndex} className=\"flex gap-3\">\n                        <span className=\"bg-foreground mt-2 h-2 w-2 flex-none rounded-full\" />\n                        <span\n                          className=\"text-md text-foreground leading-relaxed\"\n                          dangerouslySetInnerHTML={{ __html: item.content }}\n                        />\n                      </li>\n                    ))}\n                  </ul>\n                </CardContent>\n              </Card>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Timeline8 };\n"
+}

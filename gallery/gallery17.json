@@ -1,0 +1,45 @@
+{
+    "id": "gallery17",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery17.jpg",
+    "thumbnail": "gallery17-4x3.webp",
+    "description": "A carousel component featuring an image gallery with navigation arrows and pagination dots. Each image scales and adjusts opacity on selection.",
+    "createdAt": [
+        3,
+        "2025-04-30T03:08:16.850Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery17",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\nimport { type CarouselApi } from \"@/components/ui/carousel\";\n\nconst IMAGES = [\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg\", alt: \"\" },\n  { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg\", alt: \"\" },\n];\n\nconst Gallery17 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n  const [count, setCount] = useState(0);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    setCount(api.scrollSnapList().length);\n    setCurrent(api.selectedScrollSnap() + 1);\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap() + 1);\n    });\n  }, [api]);\n\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container md:px-45\">\n        <Carousel\n          className=\"mx-auto w-full max-w-[50rem] [&>div:nth-child(1)]:md:overflow-visible\"\n          setApi={setApi}\n          opts={{\n            startIndex: 1,\n          }}\n        >\n          <CarouselContent>\n            {IMAGES.map((img, index) => (\n              <CarouselItem key={`carousel-img-${index}`}>\n                <div\n                  className={`aspect-[1.333333333] max-w-[50rem] overflow-hidden rounded-[0.75rem] transition-all duration-300 ${\n                    current === index + 1\n                      ? \"scale-100 opacity-100\"\n                      : \"scale-70 opacity-40\"\n                  }`}\n                >\n                  <img\n                    className=\"block size-full object-cover object-center\"\n                    src={img.src}\n                    alt={img.alt}\n                  />\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n          <div className=\"mt-4 hidden md:block\">\n            <CarouselPrevious\n              className=\"size-10 max-[767px]:static max-[767px]:translate-y-0 md:left-[-6.25rem] md:size-14 lg:left-[-9.9375rem] lg:size-14 [&>svg]:!size-6\"\n              variant=\"default\"\n            />\n            <CarouselNext\n              className=\"size-10 max-[767px]:static max-[767px]:translate-y-0 md:right-[-6.25rem] md:size-14 lg:right-[-9.9375rem] lg:size-14 [&>svg]:!size-6\"\n              variant=\"default\"\n            />\n          </div>\n        </Carousel>\n        <div className=\"mx-auto mt-10 flex w-full max-w-[33.9375rem] items-center justify-center\">\n          {Array.from({ length: count }).map((_, index) => (\n            <button\n              aria-label={`Go to slide ${index + 1}`}\n              key={`carousel-dot-btn-${index}`}\n              className=\"p-2\"\n              onClick={() => {\n                api?.scrollTo(index);\n              }}\n            >\n              <div\n                className={`size-3 rounded-full ${current === index + 1 ? \"bg-black\" : \"bg-black/10\"}`}\n              ></div>\n            </button>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery17 };\n"
+}

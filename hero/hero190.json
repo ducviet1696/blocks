@@ -1,0 +1,45 @@
+{
+    "id": "hero190",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero190.jpg",
+    "thumbnail": "hero190-4x3.webp",
+    "description": "A component with text, a button, and decorative patterns, flanked by bordered sections. It features a prominent heading, subtext, and a styled button with an icon.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:24:40.625Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero190",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero190 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"flex border-t\">\n        <BorderedSection>\n          <DiagonalPattern />\n        </BorderedSection>\n        <div className=\"container mx-auto pt-16 pb-12 text-center md:pt-20 lg:pt-28\">\n          <h1 className=\"mx-auto max-w-[500px] text-[2.5rem] leading-[1.2] tracking-[-1.6px] text-balance md:text-[4rem] md:leading-[1.15]! md:tracking-[-4.32px] lg:text-7xl\">\n            Say Goodbye to Task Overload\n          </h1>\n          <p className=\"mx-auto mt-5 max-w-[500px] leading-[1.5] tracking-[-0.32px] text-muted-foreground md:mt-6\">\n            Prioritize, automate, and stay ahead\u2014AI simplifies your tasks so you\n            can focus on what matters most.\n          </p>\n          <Button asChild className=\"mt-6 gap-1 md:mt-8 lg:mt-10\">\n            <a href=\"/dashboard\">\n              Get started\n              <ChevronRight className=\"size-4\" />\n            </a>\n          </Button>\n        </div>\n        <BorderedSection className=\"border-r-0 border-l\">\n          <DiagonalPattern />\n        </BorderedSection>\n      </div>\n      <div className=\"flex h-8 gap-1 max-lg:hidden\">\n        <div className=\"flex-1 border\" />\n        <DiagonalPattern className=\"w-52\" />\n        <div className=\"w-24 border\" />\n        <DiagonalPattern className=\"w-52\" />\n        <div className=\"w-24 border\" />\n        <DiagonalPattern className=\"w-52\" />\n        <div className=\"flex-1 border\" />\n      </div>\n      <div className=\"flex\">\n        <BorderedSection />\n        <div className=\"container pt-0! lg:p-1.5!\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-aspect-video-1.svg\"\n            alt=\"Hero\"\n            className=\"rounded-xl border object-contain p-1\"\n            style={{\n              boxShadow:\n                \"0px 8px 8px 0px rgba(0, 0, 0, 0.06), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.06)\",\n            }}\n          />\n        </div>\n        <BorderedSection className=\"border-r-0 border-l\" />\n      </div>\n      <div className=\"flex max-lg:hidden\">\n        <div className=\"h-8 flex-1 border\" />\n        <div className=\"h-[96px] w-[min(753px,55vw)] -translate-y-1.5\">\n          <DiagonalPattern />\n        </div>\n        <div className=\"h-8 flex-1 border\" />\n      </div>\n    </section>\n  );\n};\n\nexport { Hero190 };\n\nconst BorderedSection = ({\n  children,\n  className = \"\",\n}: {\n  children?: React.ReactNode;\n  className?: string;\n}) => (\n  <div\n    className={cn(\"relative w-[159px] border-r p-1 max-lg:hidden\", className)}\n  >\n    {children}\n  </div>\n);\n\nconst DiagonalPattern = ({\n  className,\n  patternColor = \"hsl(var(--foreground))\",\n  patternOpacity = 0.15,\n}: {\n  className?: string;\n  patternColor?: string;\n  patternOpacity?: number;\n}) => {\n  const svgPattern = `url(\"data:image/svg+xml,%3Csvg width='7' height='7' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23${patternColor}' fill-opacity='${patternOpacity}' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E\")`;\n\n  return (\n    <div\n      className={cn(\"h-full w-full border-2 border-dashed\", className)}\n      style={{\n        backgroundImage: svgPattern,\n      }}\n    />\n  );\n};\n"
+}

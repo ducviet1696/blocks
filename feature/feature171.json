@@ -1,0 +1,45 @@
+{
+    "id": "feature171",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature171.jpg",
+    "thumbnail": "feature171-4x3.webp",
+    "description": "A modern layout featuring a top slogan, a section for team habits, and 3 image-based feature cards, linked by dashed lines.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.588Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature171",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowDownRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Card, CardContent } from \"@/components/ui/card\";\n\nconst items = [\n  {\n    title: \"Data driven design\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    title: \"Manage projects end-to-end\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    title: \"Build momentum and healthy habits\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  },\n];\n\nconst Feature171 = () => {\n  return (\n    <section className=\"bg-secondary py-32\">\n      <div className=\"container\">\n        {/* Top dashed line with text */}\n        <div className=\"relative flex items-center justify-center\">\n          <DashedLine className=\"text-muted-foreground\" />\n          <span className=\"absolute bg-secondary px-3 font-mono text-sm font-medium tracking-wide text-muted-foreground max-lg:hidden\">\n            MEASURE TWICE. CUT ONCE.\n          </span>\n        </div>\n\n        {/* Content */}\n        <div className=\"mx-auto mt-10 grid max-w-5xl gap-3 lg:mt-24 lg:grid-cols-2\">\n          <h2 className=\"text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl\">\n            Made for modern product teams\n          </h2>\n          <p className=\"leading-snug font-medium text-muted-foreground\">\n            Mainline is built on the habits that make the best product teams\n            successful: staying focused, moving quickly, and always aiming for\n            high-quality work.\n          </p>\n        </div>\n\n        {/* Features Card */}\n        <Card className=\"mt-8 overflow-hidden rounded-2xl md:mt-12 lg:mt-20\">\n          <CardContent className=\"flex p-0 max-lg:flex-col\">\n            {items.map((item, i) => (\n              <div key={i} className=\"flex flex-1 max-lg:flex-col\">\n                <div className=\"ps-6 pt-6 lg:ps-8 lg:pt-8\">\n                  <div className=\"relative ps-4\">\n                    <img\n                      src={item.image}\n                      alt={`${item.title} interface`}\n                      className=\"aspect-[1.28/1] overflow-hidden rounded-tl-xl object-cover\"\n                    />\n                    <div className=\"absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent\" />\n                  </div>\n                  <a\n                    href=\"#\"\n                    className=\"group flex items-center justify-between gap-4 p-6 ps-0! lg:p-8\"\n                  >\n                    <h3 className=\"text-xl leading-tight font-semibold tracking-tight\">\n                      {item.title}\n                    </h3>\n                    <ArrowDownRight className=\"size-6\" />\n                  </a>\n                </div>\n                {i < items.length - 1 && (\n                  <div className=\"relative hidden lg:block\">\n                    <DashedLine orientation=\"vertical\" />\n                  </div>\n                )}\n                {i < items.length - 1 && (\n                  <div className=\"relative block lg:hidden\">\n                    <DashedLine orientation=\"horizontal\" />\n                  </div>\n                )}\n              </div>\n            ))}\n          </CardContent>\n        </Card>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature171 };\n\ninterface DashedLineProps {\n  orientation?: \"horizontal\" | \"vertical\";\n  className?: string;\n}\n\nconst DashedLine = ({\n  orientation = \"horizontal\",\n  className,\n}: DashedLineProps) => {\n  const isHorizontal = orientation === \"horizontal\";\n\n  return (\n    <div\n      className={cn(\n        \"relative text-muted-foreground\",\n        isHorizontal ? \"h-px w-full\" : \"h-full w-px\",\n        className,\n      )}\n    >\n      <div\n        className={cn(\n          isHorizontal\n            ? [\n                \"h-px w-full\",\n                \"bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]\",\n                \"[mask-image:linear-gradient(90deg,transparent,black_25%,black_45%,transparent)]\",\n              ]\n            : [\n                \"h-full w-px\",\n                \"bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]\",\n                \"[mask-image:linear-gradient(180deg,transparent,black_25%,black_45%,transparent)]\",\n              ],\n        )}\n      />\n    </div>\n  );\n};\n"
+}

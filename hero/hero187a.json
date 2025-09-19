@@ -1,0 +1,53 @@
+{
+    "id": "hero187a",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero187a.jpg",
+    "thumbnail": "hero187a-4x3.webp",
+    "description": "A component featuring a carousel with auto-play functionality, a section with text content, and a grid layout displaying four features with icons. Includes navigation buttons.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:38:14.598Z"
+    ],
+    "dependencies": [
+        "embla-carousel-autoplay",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero187a",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\nimport Autoplay from \"embla-carousel-autoplay\";\nimport {\n  ArrowRight,\n  Blend,\n  ChartNoAxesColumn,\n  CircleDot,\n  Diamond,\n} from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst features = [\n  {\n    title: \"Tailored workflows\",\n    description: \"Track progress across custom issue flows for your team.\",\n    icon: CircleDot,\n  },\n  {\n    title: \"Milestones\",\n    description: \"Break projects down into concrete phases.\",\n    icon: Diamond,\n  },\n  {\n    title: \"Cross-team projects\",\n    description: \"Collaborate across teams and departments.\",\n    icon: Blend,\n  },\n  {\n    title: \"Progress insights\",\n    description: \"Track scope, velocity, and progress over time.\",\n    icon: ChartNoAxesColumn,\n  },\n];\n\nconst SLIDES = [\n  { image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\", label: \"Kanban\" },\n  { image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\", label: \"Issues\" },\n  { image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\", label: \"Add Issues\" },\n];\n\nconst Hero187a = () => {\n  const [currentSlide, setCurrentSlide] = useState(0);\n  const [api, setApi] = useState<CarouselApi>();\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    api.on(\"select\", () => {\n      setCurrentSlide(api.selectedScrollSnap());\n    });\n  }, [api]);\n\n  return (\n    <section className=\"relative overflow-hidden\">\n      <div className=\"container\">\n        {/* Carousel Section */}\n        <div className=\"relative mb-16\">\n          <Carousel\n            className=\"mx-auto max-w-4xl\"\n            setApi={setApi}\n            opts={{\n              loop: true,\n            }}\n            plugins={[Autoplay({ delay: 4000, stopOnInteraction: true })]}\n          >\n            <CarouselContent>\n              {SLIDES.map((slide, index) => (\n                <CarouselItem key={index}>\n                  <img\n                    src={slide.image}\n                    alt={`Streamline product interface showing ${slide.label}`}\n                    className=\"h-[400px] w-full rounded-2xl object-cover sm:h-[500px] lg:h-[600px]\"\n                  />\n                </CarouselItem>\n              ))}\n            </CarouselContent>\n          </Carousel>\n\n          <SlideIndicator\n            currentSlide={currentSlide}\n            slides={SLIDES}\n            className=\"mt-8\"\n            api={api}\n          />\n        </div>\n\n        {/* Content Section */}\n        <div className=\"space-y-12 text-center\">\n          <div className=\"mx-auto max-w-4xl\">\n            <h1 className=\"text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl\">\n              Shadcnblocks components for your next project\n            </h1>\n\n            <p className=\"text-muted-foreground mt-6 text-xl font-medium lg:text-2xl\">\n              Streamline is the fit-for-purpose tool for planning and building\n              modern software products.\n            </p>\n          </div>\n\n          {/* Features */}\n          <div className=\"mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4\">\n            {features.map((feature) => {\n              const Icon = feature.icon;\n              return (\n                <div key={feature.title} className=\"space-y-4 text-center\">\n                  <div className=\"flex justify-center\">\n                    <Icon className=\"text-primary size-8\" />\n                  </div>\n                  <div>\n                    <h2 className=\"text-lg font-semibold\">{feature.title}</h2>\n                    <p className=\"text-muted-foreground mt-2 text-sm\">\n                      {feature.description}\n                    </p>\n                  </div>\n                </div>\n              );\n            })}\n          </div>\n\n          <div className=\"flex flex-wrap items-center justify-center gap-4\">\n            <Button size=\"lg\" aria-label=\"Get started\">\n              Get started\n            </Button>\n            <a href=\"#\">\n              <Button aria-label=\"Documentation\" variant=\"outline\" size=\"lg\">\n                <span className=\"flex items-center gap-2\">\n                  Documentation\n                  <ArrowRight className=\"size-4\" />\n                </span>\n              </Button>\n            </a>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\ninterface SlideIndicatorProps {\n  currentSlide: number;\n  slides: Array<{ label: string }>;\n  className?: string;\n  api: CarouselApi | null;\n}\n\nconst SlideIndicator = ({\n  currentSlide,\n  slides,\n  className,\n  api,\n}: SlideIndicatorProps) => {\n  return (\n    <div\n      className={cn(\"flex flex-col items-center gap-2 font-medium\", className)}\n    >\n      <div className=\"\">\n        <span className=\"text-foreground-700\">{currentSlide + 1} of 3 \u2014 </span>\n        <span className=\"text-primary\">{slides[currentSlide].label}</span>\n      </div>\n      <div className=\"flex gap-2\">\n        {slides.map((_, index) => (\n          <button\n            key={index}\n            onClick={() => api?.scrollTo(index)}\n            aria-label={`Go to slide ${index + 1}`}\n            className={cn(\n              \"h-0.5 w-6 rounded-full transition-colors\",\n              index === currentSlide\n                ? \"bg-primary\"\n                : \"bg-primary/20 hover:bg-primary/40\",\n            )}\n          />\n        ))}\n      </div>\n    </div>\n  );\n};\n\nexport { Hero187a };\n"
+}

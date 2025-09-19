@@ -1,0 +1,36 @@
+{
+    "id": "feature217b",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature217b.jpg",
+    "thumbnail": "feature217b-4x3.webp",
+    "description": "This component showcases three accessibility features with icons in a 3-column layout, including titles and summaries, against a dynamic background.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:37:52.457Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "feature217b",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Eye, Keyboard, LucideIcon, Volume2 } from \"lucide-react\";\n\ninterface Item {\n  title: string;\n  summary: string;\n  icon: LucideIcon;\n}\n\nconst FEATURES: Array<Item> = [\n  {\n    title: \"Keyboard Navigation\",\n    summary:\n      \"Ensure all interactive elements are accessible via keyboard alone, allowing users with motor impairments to navigate easily and efficiently without a mouse.\",\n    icon: Keyboard,\n  },\n  {\n    title: \"Screen Reader Friendly\",\n    summary:\n      \"Use semantic HTML and proper ARIA labels to help screen readers convey structure and meaning clearly to users with visual impairments.\",\n    icon: Volume2,\n  },\n  {\n    title: \"Color Contrast Check\",\n    summary:\n      \"Maintain strong color contrast between text and background to support users with low vision and improve readability across different lighting conditions.\",\n    icon: Eye,\n  },\n];\n\nconst FeatureItem = ({ title, summary, icon: Icon }: Item) => {\n  return (\n    <div className=\"flex flex-col items-center justify-center gap-4\">\n      <Icon className=\"stroke-muted-foreground size-8\" />\n      <div className=\"max-w-sm text-center text-xl font-semibold\">{title}</div>\n      <div className=\"text-muted-foreground max-w-sm text-center text-base\">\n        {summary}\n      </div>\n    </div>\n  );\n};\n\nconst Feature217b = () => {\n  return (\n    <section className=\"\">\n      <div\n        className=\"relative bg-cover bg-center bg-no-repeat py-20 after:absolute after:inset-0 after:z-10 after:block after:size-full after:bg-black/50 after:content-[''] md:py-24 xl:py-32\"\n        style={{\n          backgroundImage:\n            \"url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/futuristic-device-design-qcufu.png')\",\n        }}\n      >\n        <div className=\"container relative z-20\">\n          <div className=\"flex flex-col gap-16\">\n            <div className=\"mx-auto max-w-4xl text-center\">\n              <h2 className=\"mb-6 text-2xl tracking-tight text-white md:text-7xl\">\n                Incredible AI-powered video editing\n              </h2>\n              <div className=\"text-lg font-medium tracking-tight text-white\">\n                Accessibility ensures digital content is usable by all,\n                including people with disabilities, by following inclusive\n                design practices and meeting standards like WCAG for equal user\n                experience.\n              </div>\n            </div>\n\n            <div className=\"grid items-stretch gap-8 lg:grid-cols-3\">\n              {FEATURES.map((item) => (\n                <div\n                  key={item.title}\n                  className=\"flex h-full flex-col items-center justify-center gap-4 rounded-xl border border-white/20 bg-white/10 p-6 backdrop-blur-sm\"\n                >\n                  <item.icon className=\"size-8 stroke-white\" />\n                  <div className=\"max-w-sm text-center text-xl font-medium text-white\">\n                    {item.title}\n                  </div>\n                  <div className=\"max-w-sm text-center text-sm text-white/70\">\n                    {item.summary}\n                  </div>\n                </div>\n              ))}\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature217b };\n"
+}

@@ -1,0 +1,58 @@
+{
+    "id": "feature216",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature216.jpg",
+    "thumbnail": "feature216-4x3.webp",
+    "description": "A navigational component with colored icon tabs for different features, summary texts, and changing images on tab selection, plus next/prev buttons.",
+    "createdAt": [
+        3,
+        "2025-04-30T03:08:16.834Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature216",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport {\n  ArrowLeft,\n  ArrowRight,\n  Brain,\n  Circle,\n  ClipboardList,\n  LucideIcon,\n  MessageSquare,\n  Rocket,\n  Share2,\n  Users,\n} from \"lucide-react\";\nimport { useEffect, useRef, useState } from \"react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst TAB_TRIGGERS = [\n  {\n    name: \"Team Sync\",\n    icon: Users,\n    value: \"team_sync\",\n    color: \"#2563EB\",\n  },\n  {\n    name: \"Discussions\",\n    icon: MessageSquare,\n    value: \"discussions\",\n    color: \"#F97316\",\n  },\n  {\n    name: \"Knowledge Share\",\n    icon: Share2,\n    value: \"knowledge_share\",\n    color: \"#A855F7\",\n  },\n  {\n    name: \"Brainstorming\",\n    icon: Brain,\n    value: \"brainstorming\",\n    color: \"#10B981\",\n  },\n  {\n    name: \"Task Tracking\",\n    icon: ClipboardList,\n    value: \"task_tracking\",\n    color: \"#EF4444\",\n  },\n  {\n    name: \"Launch Prep\",\n    icon: Rocket,\n    value: \"launch_prep\",\n    color: \"#EAB308\",\n  },\n];\n\nconst TABS = [\n  {\n    value: TAB_TRIGGERS[0].value,\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/redd-f-5U_28ojjgms-unsplash.jpg\",\n      alt: \"\",\n    },\n    summary: \"Stay aligned with regular team standups and updates.\",\n    link: \"#\",\n  },\n  {\n    value: TAB_TRIGGERS[1].value,\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-hCb3lIB8L8E-unsplash.jpg\",\n      alt: \"\",\n    },\n    summary: \"Collaborate through chats, threads, and decision logs.\",\n    link: \"#\",\n  },\n  {\n    value: TAB_TRIGGERS[2].value,\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-MChSQHxGZrQ-unsplash.jpg\",\n      alt: \"\",\n    },\n    summary: \"Exchange insights, tips, and documentation openly.\",\n    link: \"#\",\n  },\n  {\n    value: TAB_TRIGGERS[3].value,\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/dylan-gillis-KdeqA3aTnBY-unsplash.jpg\",\n      alt: \"\",\n    },\n    summary: \"Generate new ideas and solve problems together.\",\n    link: \"#\",\n  },\n  {\n    value: TAB_TRIGGERS[4].value,\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/studio-republic-fotKKqWNMQ4-unsplash.jpg\",\n      alt: \"\",\n    },\n    summary: \"Monitor tasks, deadlines, and team progress efficiently.\",\n    link: \"#\",\n  },\n  {\n    value: TAB_TRIGGERS[5].value,\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-vGgn0xLdy8s-unsplash.jpg\",\n      alt: \"\",\n    },\n    summary: \"Coordinate teams for smooth feature releases.\",\n    link: \"#\",\n  },\n];\n\ninterface TabLabelProps {\n  value: string;\n}\n\nconst TabLabel = ({ value }: TabLabelProps) => {\n  const [label, setLabel] = useState<{\n    name: string;\n    icon: LucideIcon;\n    color: string;\n  }>({\n    name: \"\",\n    icon: Circle,\n    color: \"\",\n  });\n\n  useEffect(() => {\n    const tab = TAB_TRIGGERS.filter((trigger) => trigger.value === value);\n    setLabel({\n      name: tab[0].name,\n      icon: tab[0].icon,\n      color: tab[0].color,\n    });\n  }, [value]);\n\n  return (\n    <div className=\"mb-8 flex items-center justify-center gap-6 xl:hidden\">\n      <div\n        className=\"flex size-8 rounded-md\"\n        style={{ backgroundColor: label.color }}\n      >\n        {label.icon && <label.icon className=\"m-auto stroke-white\" />}\n      </div>\n      <div className=\"text-lg\">{label.name}</div>\n    </div>\n  );\n};\n\nconst Feature216 = () => {\n  const [buttonPosition, setButtonPosition] = useState<number>(0);\n  const [tabValue, setTabValue] = useState(TABS[0].value);\n  const triggerRefs = useRef<HTMLButtonElement[]>([]);\n  const imageRef = useRef<HTMLDivElement | null>(null);\n\n  const updateBottom = () => {\n    if (imageRef.current) {\n      setButtonPosition(imageRef.current?.getBoundingClientRect().height / 2);\n    }\n  };\n\n  useEffect(() => {\n    updateBottom();\n    window.addEventListener(\"resize\", updateBottom);\n    return () => {\n      window.removeEventListener(\"resize\", updateBottom);\n    };\n  }, []);\n\n  const getCurrentTabIndex = () => {\n    return TAB_TRIGGERS.findIndex((elem) => elem.value === tabValue);\n  };\n\n  const handleTabNavigation = (direction: \"next\" | \"prev\") => {\n    triggerRefs.current.forEach((ref) => {\n      ref.classList.add(\"grayscale-[1]\", \"opacity-[0.2]\");\n    });\n\n    const currentIndex = getCurrentTabIndex();\n    if (currentIndex === -1) return;\n\n    const nextIndex =\n      direction === \"next\" ? currentIndex + 1 : currentIndex - 1;\n\n    const isInBounds = nextIndex >= 0 && nextIndex < TAB_TRIGGERS.length;\n\n    if (isInBounds) {\n      setTabValue(TAB_TRIGGERS[nextIndex].value);\n    }\n  };\n\n  const onValueChange = (value: string) => {\n    setTabValue(value);\n  };\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"px-5 sm:px-6 2xl:px-16\">\n        <div className=\"w-full rounded-2xl bg-muted pt-10 pb-20 sm:pt-12 sm:pb-24\">\n          <div className=\"container\">\n            <Tabs\n              value={tabValue}\n              onValueChange={onValueChange}\n              className=\"w-full\"\n            >\n              <TabsList className=\"hidden h-fit w-full items-end gap-12 bg-transparent pt-12 pb-16 xl:flex\">\n                {TAB_TRIGGERS.map((trigger, index) => (\n                  <TabsTrigger\n                    ref={(el) => {\n                      if (el) {\n                        triggerRefs.current[index] = el;\n                      } else {\n                        delete triggerRefs.current[index];\n                      }\n                    }}\n                    className=\"flex flex-col items-center gap-5 p-0 opacity-[0.2] grayscale-[1] hover:opacity-[0.5] hover:grayscale-[0] data-[state=active]:bg-transparent data-[state=active]:opacity-100 data-[state=active]:shadow-none data-[state=active]:grayscale-0\"\n                    key={`tab-trigger-${trigger.value}`}\n                    value={trigger.value}\n                    data-index={index}\n                  >\n                    <div\n                      className=\"flex size-8 rounded-md\"\n                      style={{ backgroundColor: trigger.color }}\n                    >\n                      <trigger.icon className=\"m-auto stroke-white\" />\n                    </div>\n                    <div className=\"text-xl font-normal text-black\">\n                      {trigger.name}\n                    </div>\n                  </TabsTrigger>\n                ))}\n              </TabsList>\n              <div className=\"relative\">\n                {TABS.map((tab) => (\n                  <TabsContent\n                    key={`tab-content-${tab.value}`}\n                    value={tab.value}\n                    className=\"animate-in duration-300 ease-in-out fade-in\"\n                  >\n                    <TabLabel value={tab.value} />\n                    <div className=\"flex w-full flex-col items-center xl:flex-row xl:justify-between\">\n                      <div className=\"flex-1\">\n                        <div className=\"mx-auto min-h-12 max-w-[22.5rem] text-center text-base font-medium text-muted-2-foreground\">\n                          {tab.summary}\n                        </div>\n                      </div>\n                    </div>\n                    <div\n                      className=\"sm:px-8k mt-10 w-full sm:mt-14 xl:mt-20\"\n                      ref={imageRef}\n                    >\n                      <AspectRatio\n                        ratio={1.847058824}\n                        className=\"w-full overflow-hidden rounded-lg border shadow-xl\"\n                      >\n                        <img\n                          src={tab.image.src}\n                          alt={tab.image.alt}\n                          className=\"block size-full object-cover object-center\"\n                        />\n                      </AspectRatio>\n                    </div>\n                  </TabsContent>\n                ))}\n                <div\n                  className=\"absolute left-0 translate-y-1/2\"\n                  style={{ bottom: buttonPosition }}\n                >\n                  <Button\n                    variant=\"secondary\"\n                    disabled={getCurrentTabIndex() === 0}\n                    onClick={() => handleTabNavigation(\"prev\")}\n                    size=\"lg\"\n                    className=\"size-12 -translate-x-1/2 rounded-full border shadow-lg\"\n                  >\n                    <ArrowLeft />\n                  </Button>\n                </div>\n                <div\n                  className=\"absolute right-0 translate-y-1/2\"\n                  style={{ bottom: buttonPosition }}\n                >\n                  <Button\n                    variant=\"secondary\"\n                    disabled={getCurrentTabIndex() === TAB_TRIGGERS.length - 1}\n                    onClick={() => handleTabNavigation(\"next\")}\n                    size=\"lg\"\n                    className=\"size-12 translate-x-1/2 rounded-full border shadow-lg\"\n                  >\n                    <ArrowRight />\n                  </Button>\n                </div>\n              </div>\n            </Tabs>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature216 };\n"
+}

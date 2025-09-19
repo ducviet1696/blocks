@@ -1,0 +1,64 @@
+{
+    "id": "pricing10",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing10.jpg",
+    "thumbnail": "pricing10-4x3.webp",
+    "description": "A pricing component displays 4 plans in columns, detailing features, price, and an annual billing switch. Includes badges for discounts and a \"Recommended\" tag.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.630Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "switch",
+            "registryId": "shadcn",
+            "registryItemUrl": "switch",
+            "docsUrl": "https://ui.shadcn.com/docs/components/switch"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing10",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { Check, X } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Label } from \"@/components/ui/label\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst plans = [\n  {\n    title: \"Free\",\n    description: \"For open source projects\",\n    price: { monthly: \"$9\", annually: \"$9\" },\n    href: \"#\",\n    recommended: false,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n    featureGroups: [\n      {\n        title: \"Overview\",\n        features: [\n          {\n            title: \"3 users\",\n            icon: Check,\n          },\n        ],\n      },\n      {\n        title: \"Highlights\",\n        features: [\n          {\n            title: \"Included feature\",\n            icon: Check,\n          },\n          {\n            title: \"Not included feature\",\n            icon: X,\n          },\n        ],\n      },\n    ],\n  },\n  {\n    title: \"Basic\",\n    description: \"For open source projects\",\n    price: {\n      monthly: \"$50\",\n      annually: (\n        <span className=\"flex items-center\">\n          $45<Badge className=\"ml-1\">-10%</Badge>\n        </span>\n      ),\n    },\n    href: \"#\",\n    recommended: false,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n    featureGroups: [\n      {\n        title: \"Overview\",\n        features: [\n          {\n            title: \"10 users\",\n            icon: Check,\n          },\n        ],\n      },\n      {\n        title: \"Highlights\",\n        features: [\n          {\n            title: \"Included feature\",\n            icon: Check,\n          },\n          {\n            title: \"Not included feature\",\n            icon: X,\n          },\n        ],\n      },\n    ],\n  },\n  {\n    title: \"Team\",\n    description: \"For open source projects\",\n    price: {\n      monthly: \"$100\",\n      annually: (\n        <span className=\"flex items-center\">\n          $90<Badge className=\"ml-1\">-10%</Badge>\n        </span>\n      ),\n    },\n    href: \"#\",\n    recommended: true,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n    featureGroups: [\n      {\n        title: \"Overview\",\n        features: [\n          {\n            title: \"50 users\",\n            icon: Check,\n          },\n        ],\n      },\n      {\n        title: \"Highlights\",\n        features: [\n          {\n            title: \"Included feature\",\n            icon: Check,\n          },\n          {\n            title: \"Not included feature\",\n            icon: X,\n          },\n        ],\n      },\n    ],\n  },\n  {\n    title: \"Enterprise\",\n    description: \"For open source projects\",\n    price: {\n      monthly: \"$200\",\n      annually: (\n        <span className=\"flex items-center\">\n          $160<Badge className=\"ml-1\">-20%</Badge>\n        </span>\n      ),\n    },\n    href: \"#\",\n    recommended: false,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n    featureGroups: [\n      {\n        title: \"Overview\",\n        features: [\n          {\n            title: \"Unlimited users\",\n            icon: Check,\n          },\n        ],\n      },\n      {\n        title: \"Highlights\",\n        features: [\n          {\n            title: \"Included feature\",\n            icon: Check,\n          },\n          {\n            title: \"Not included feature\",\n            icon: X,\n          },\n        ],\n      },\n    ],\n  },\n];\n\nconst Pricing10 = () => {\n  const [annualBilling, setAnnualBilling] = useState(false);\n  return (\n    <section className=\"py-32\">\n      <div className=\"container mb-8 lg:mb-0\">\n        <div className=\"flex flex-col gap-y-12 md:gap-y-16\">\n          <div className=\"flex flex-col\">\n            <h1 className=\"my-6 text-3xl font-bold text-pretty md:text-4xl xl:text-5xl\">\n              Pricing Plans\n            </h1>\n            <p className=\"text-muted-foreground lg:text-xl\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit.\n            </p>\n          </div>\n          <div className=\"lg:mb-8\">\n            <div className=\"flex h-full flex-col justify-end\">\n              <div className=\"flex items-center space-x-2\">\n                <Switch\n                  id=\"annual-billing\"\n                  checked={annualBilling}\n                  onCheckedChange={setAnnualBilling}\n                />\n                <Label htmlFor=\"annual-billing\">Annual billing</Label>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div className=\"container flex flex-col gap-6 gap-y-8 xl:grid xl:grid-cols-4\">\n        {plans.map((plan) => (\n          <article\n            key={plan.title}\n            className={`rounded-xl border ${plan.recommended ? \"border-primary\" : \"border-border lg:mt-7\"} overflow-clip`}\n          >\n            {plan.recommended && (\n              <div className=\"flex h-7 items-center justify-center bg-primary text-center text-xs font-semibold text-primary-foreground\">\n                Recommended\n              </div>\n            )}\n            <header className=\"p-4 sm:p-6 xl:pt-12\">\n              <div className=\"mb-6 md:flex md:items-center xl:block\">\n                <div className=\"mb-1 flex md:flex-1 md:flex-row-reverse md:items-center xl:mb-6 xl:flex-col-reverse xl:items-start xl:gap-y-4\">\n                  <div className=\"flex-1 md:ml-6 xl:ml-0\">\n                    <p className=\"mb-1 text-xl font-medium sm:text-2xl\">\n                      {plan.title}\n                    </p>\n                    <p className=\"text-xs text-muted-foreground sm:text-sm 2xl:min-h-10\">\n                      {plan.description}\n                    </p>\n                  </div>\n                  <img\n                    src={plan.image}\n                    alt={plan.title}\n                    className=\"size-16 sm:size-20\"\n                  />\n                </div>\n                <div>\n                  <h2 className=\"mb-1 flex items-start text-2xl font-medium md:text-3xl 2xl:text-4xl\">\n                    {annualBilling ? plan.price.annually : plan.price.monthly}\n                  </h2>\n                  <p className=\"text-xs font-medium text-muted-foreground\">\n                    / monthly\n                  </p>\n                </div>\n              </div>\n              <div>\n                <Button\n                  variant={plan.recommended ? \"default\" : \"outline\"}\n                  className=\"w-full\"\n                >\n                  Get started for free\n                </Button>\n              </div>\n            </header>\n            <main className=\"space-y-6 border-t border-border p-4 sm:p-6 md:grid md:grid-cols-2 md:space-y-0 xl:block xl:space-y-6\">\n              {plan.featureGroups.map((group) => (\n                <div key={group.title}>\n                  <h2 className=\"mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase\">\n                    {group.title}\n                  </h2>\n                  <ul className=\"space-y-3\">\n                    {group.features.map((feature) => (\n                      <li\n                        key={feature.title}\n                        className=\"flex items-center gap-x-2 text-xs font-medium text-muted-foreground\"\n                      >\n                        <feature.icon className=\"size-4\" />\n                        {feature.title}\n                      </li>\n                    ))}\n                  </ul>\n                </div>\n              ))}\n            </main>\n          </article>\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing10 };\n"
+}

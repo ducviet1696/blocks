@@ -1,0 +1,51 @@
+{
+    "id": "pricing6",
+    "access": "free",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing6.jpg",
+    "thumbnail": "pricing6-4x3.webp",
+    "description": "A pricing component with a heading, description, price, features list, and a call-to-action button. Features 3 groups of listed perks.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.638Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "free"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing6",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { Check } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\ninterface Pricing6Props {\n  heading: string;\n  description?: string;\n  price?: string | number;\n  priceSuffix?: string;\n  features?: string[][];\n  buttonText?: string;\n}\n\nconst defaultFeatures = [\n  [\"Unlimited\", \"Integrations\", \"24/7 support\"],\n  [\"Live collaborations\", \"Unlimited storage\", \"30-day money back\"],\n  [\"Unlimited members\", \"Customization\", \"Unlimited users\"],\n];\n\nconst Pricing6 = ({\n  heading = \"Pricing\",\n  description = \"Simple pricing with a free 7 day trial.\",\n  price = 29,\n  priceSuffix = \"/mo\",\n  features = defaultFeatures,\n  buttonText = \"Start free trial\",\n}: Pricing6Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-5xl flex-col items-center gap-6 text-center\">\n          <h2 className=\"text-4xl font-semibold text-pretty lg:text-6xl\">\n            {heading}\n          </h2>\n          <p className=\"max-w-md text-muted-foreground lg:text-xl\">\n            {description}\n          </p>\n          <div className=\"mx-auto flex w-full flex-col rounded-lg border p-6 sm:w-fit sm:min-w-80\">\n            <div className=\"flex justify-center\">\n              <span className=\"text-lg font-semibold\">$</span>\n              <span className=\"text-6xl font-semibold\">{price}</span>\n              <span className=\"self-end text-muted-foreground\">\n                {priceSuffix}\n              </span>\n            </div>\n            <div className=\"my-6\">\n              {features.map((featureGroup, idx) => (\n                <div key={idx}>\n                  <ul className=\"flex flex-col gap-3\">\n                    {featureGroup.map((feature, i) => (\n                      <li\n                        key={i}\n                        className=\"flex items-center justify-between gap-2 text-sm font-medium\"\n                      >\n                        {feature} <Check className=\"inline size-4 shrink-0\" />\n                      </li>\n                    ))}\n                  </ul>\n                  {idx < features.length - 1 && <Separator className=\"my-6\" />}\n                </div>\n              ))}\n            </div>\n            <Button>{buttonText}</Button>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing6 };\n"
+}

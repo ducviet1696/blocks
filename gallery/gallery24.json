@@ -1,0 +1,47 @@
+{
+    "id": "gallery24",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery24.jpg",
+    "thumbnail": "gallery24-4x3.webp",
+    "description": "An interactive gallery block that showcases images with dynamic resizing and details on hover or click, including an \"Add to Cart\" button.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.818Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery24",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { AnimatePresence, motion } from \"framer-motion\";\nimport { ArrowRight, ShoppingCart } from \"lucide-react\";\nimport React, { useState } from \"react\";\n\nimport { useIsMobile } from \"@/hooks/use-mobile\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst images = [\n  {\n    id: 1,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random5.jpeg\",\n    title: \"Summer Collection\",\n    code: \"#0031\",\n  },\n  {\n    id: 2,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg\",\n    title: \"The Music Festival\",\n    code: \"#0030\",\n  },\n  {\n    id: 3,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random13.jpeg\",\n    title: \"Winter Special\",\n    code: \"#0032\",\n  },\n  {\n    id: 4,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n  {\n    id: 5,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n  {\n    id: 6,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random8.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n  {\n    id: 7,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random9.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n  {\n    id: 8,\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random10.jpeg\",\n    title: \"Spring Edition\",\n    code: \"#0033\",\n  },\n];\n\nconst Gallery24 = () => {\n  const [activeImage, setActiveImage] = useState<number | null>(1);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"relative container overflow-x-clip\">\n        <div className=\"flex flex-col items-center justify-center\">\n          <h1 className=\"max-w-xl text-center font-playfair text-5xl tracking-tighter italic md:text-6xl\">\n            We don&apos;t Believe in talk\n          </h1>\n          <p className=\"text-md my-10 max-w-lg text-center opacity-50\">\n            we deliver Results Lorem ipsum dolor sit amet, consectetur\n            adipiscing elit, sed do eiusmod tempor incididunt.\n          </p>\n\n          <div className=\"flex w-full items-center justify-center gap-1\">\n            {images\n              .slice(0, useIsMobile() ? 4 : images.length)\n              .map((image, index) => (\n                <motion.div\n                  key={image.id}\n                  className=\"relative cursor-pointer overflow-hidden rounded-3xl border\"\n                  initial={{ width: \"2.5rem\", height: \"20rem\" }}\n                  animate={{\n                    width: activeImage === index ? \"24rem\" : \"5rem\",\n                    height: activeImage === index ? \"24rem\" : \"24rem\",\n                  }}\n                  transition={{ duration: 0.3, ease: \"easeInOut\" }}\n                  onClick={() => setActiveImage(index)}\n                  onHoverStart={() => setActiveImage(index)}\n                >\n                  <AnimatePresence>\n                    {activeImage === index && (\n                      <motion.div\n                        initial={{ opacity: 0 }}\n                        animate={{ opacity: 1 }}\n                        exit={{ opacity: 0 }}\n                        className=\"absolute h-full w-full bg-gradient-to-t from-black/80 to-transparent\"\n                      />\n                    )}\n                  </AnimatePresence>\n                  <AnimatePresence>\n                    {activeImage === index && (\n                      <motion.div\n                        initial={{ opacity: 0 }}\n                        animate={{ opacity: 1 }}\n                        exit={{ opacity: 0 }}\n                        className=\"absolute flex h-full w-full flex-col items-end justify-end px-4 pb-10\"\n                      >\n                        <p className=\"text-left text-xs text-white/50\">\n                          {image.code}\n                        </p>\n                        <h3 className=\"w-42 text-right text-3xl font-bold text-white lg:w-fit lg:whitespace-nowrap\">\n                          {image.title.split(\" \")[0]}\n                          <span className=\"font-playfair italic\">\n                            {\" \"}\n                            {image.title.split(\" \")[1]}{\" \"}\n                          </span>\n                        </h3>\n                        <button className=\"mt-2 flex w-32 items-center justify-center gap-2 rounded-full bg-background px-4 py-2 text-xs whitespace-nowrap\">\n                          Add to Cart <ShoppingCart size={14} />\n                        </button>\n                      </motion.div>\n                    )}\n                  </AnimatePresence>\n                  <img\n                    src={image.src}\n                    className=\"size-full object-cover\"\n                    alt={image.title}\n                  />\n                </motion.div>\n              ))}\n          </div>\n          <Button className=\"group mt-10 flex w-fit items-center justify-center gap-2 rounded-full tracking-tight\">\n            Contact Us\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:rotate-0\" />\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery24 };\n"
+}

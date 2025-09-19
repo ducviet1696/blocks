@@ -1,0 +1,46 @@
+{
+    "id": "hero201",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero201.jpg",
+    "thumbnail": "hero201-4x3.webp",
+    "description": "A component featuring centered titles, description, and buttons over a background with two animated spinning images on opposite ends.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.404Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero201",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ChevronRightIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero201 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container relative overflow-hidden md:py-32\">\n        <div className=\"mb-4 flex items-center justify-center gap-4\">\n          <img\n            className=\"size-6 dark:invert\"\n            alt=\"Copy paste icon\"\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n          />\n          <h2 className=\"text-foreground text-center text-lg font-semibold tracking-tight\">\n            Just Copy Paste\n          </h2>\n        </div>\n\n        <h1 className=\"font-inter text-foreground mx-auto max-w-4xl text-center text-[70px] font-semibold leading-[65px] tracking-tighter md:text-[105px] md:leading-[96px]\">\n          Amazing components\n        </h1>\n\n        <p className=\"text-muted-foreground mx-auto mt-6 max-w-3xl text-center text-xl\">\n          Discover our collection of beautifully designed, ready-to-use\n          components that you can easily integrate into your projects.\n        </p>\n\n        <div className=\"relative mt-8 flex flex-col items-center justify-center\">\n          <Button className=\"w-75 rounded-2xl px-2 py-6 shadow-[0px_1px_3px_#0000001a,inset_0px_2px_0px_#ffffff40]\">\n            Sign up for free\n          </Button>\n          <a\n            href=\"#\"\n            className=\"z-12 w-75 text-muted-foreground group relative flex items-center justify-center rounded-2xl py-6 hover:bg-none\"\n          >\n            Book a demo\n            <ChevronRightIcon className=\"ml-1 h-4 w-4 transition-all ease-in-out group-hover:ml-4\" />\n          </a>\n        </div>\n        <motion.div\n          initial={{ opacity: 0, y: -250, scale: 0.6 }}\n          animate={{ opacity: 100, y: 0, scale: 1 }}\n          transition={{ ease: \"easeInOut\", duration: 0.6 }}\n          className=\"w-240 absolute -right-80 -top-80 -z-10 hidden h-full items-center justify-center md:flex\"\n        >\n          <img\n            className=\"infinite absolute w-full rotate-12 animate-[spin_15s_linear_infinite] dark:invert\"\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-solar-system-around-a-smiley.svg\"\n            alt=\"\"\n          />\n        </motion.div>\n        <motion.div\n          initial={{ opacity: 0, y: 250, scale: 0.6 }}\n          animate={{ opacity: 100, y: 0, scale: 1 }}\n          transition={{ ease: \"easeInOut\", duration: 0.6 }}\n          className=\"md:w-240 -bottom-80 -left-80 -z-10 -mb-24 mt-32 flex h-full w-full items-center justify-center md:absolute\"\n        >\n          <img\n            className=\"infinite absolute w-full rotate-12 animate-[spin_15s_linear_infinite] dark:invert\"\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-solar-system-around-a-smiley.svg\"\n            alt=\"\"\n          />\n        </motion.div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero201 };\n"
+}

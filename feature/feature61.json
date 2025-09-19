@@ -1,0 +1,34 @@
+{
+    "id": "feature61",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature61.jpg",
+    "thumbnail": "feature61-4x3.webp",
+    "description": "A two-column layout component with an image on the left and descriptive text on the right, featuring large padding and text emphasis adjustments at different sizes.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.581Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature61",
+    "collection": "block",
+    "group": "feature",
+    "code": "const Feature61 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex-row-reverse lg:flex\">\n          <div className=\"lg:w-1/2\">\n            <div className=\"mb-6 md:mb-8 lg:mb-0\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder hero\"\n                className=\"aspect-4/3 w-full rounded-md border border-border object-cover\"\n              />\n            </div>\n          </div>\n          <div className=\"lg:flex lg:w-1/2 lg:items-center lg:pr-24 2xl:pr-32\">\n            <div>\n              <h3 className=\"mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n                Feature name\n              </h3>\n              <p className=\"text-muted-foreground lg:text-lg\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n                doloremque mollitia fugiat omnis! Porro facilis quo animi\n                consequatur. Explicabo.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature61 };\n"
+}

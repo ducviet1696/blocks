@@ -1,0 +1,43 @@
+{
+    "id": "hero28",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero28.jpg",
+    "thumbnail": "hero28-4x3.webp",
+    "description": "A component featuring a background pattern, centered title, subtitle, and button, with decorative icons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.613Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero28",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero28 = () => {\n  return (\n    <section className=\"relative py-32\">\n      {/* Background pattern */}\n      <div className=\"container absolute inset-x-0 top-0 hidden h-full overflow-hidden lg:block\">\n        <div className=\"flex flex-col items-center justify-center\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1400 520\">\n            <defs>\n              <radialGradient id=\"text-backgroud\" cx=\"50%\" cy=\"50%\" r={0.6}>\n                <stop stopColor=\"black\" offset={0.4} />\n                <stop stopColor=\"black\" offset={1} stopOpacity={0} />\n              </radialGradient>\n              <linearGradient id=\"icon-backgroud\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n                <stop stopColor=\"var(--color-accent)\" offset={0} />\n                <stop stopColor=\"var(--color-background)\" offset={1} />\n              </linearGradient>\n              <mask id=\"mask\">\n                <rect\n                  x=\"0\"\n                  y=\"0\"\n                  width=\"100%\"\n                  height=\"100%\"\n                  stroke=\"none\"\n                  fill=\"black\"\n                />\n                <rect\n                  x=\"80\"\n                  y=\"40\"\n                  width=\"1260\"\n                  height=\"380\"\n                  rx=\"140\"\n                  stroke=\"none\"\n                  filter=\"url(#blur)\"\n                  fill=\"white\"\n                />\n                <rect\n                  x=\"40\"\n                  y=\"-120\"\n                  width=\"1320\"\n                  height=\"600\"\n                  stroke=\"none\"\n                  fill=\"url(#text-backgroud)\"\n                />\n              </mask>\n              <filter id=\"blur\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n                <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"40\" />\n              </filter>\n            </defs>\n            <path\n              stroke=\"var(--border)\"\n              strokeWidth={1}\n              d=\"M0,40H1400M0,120H1400M0,200H1400M0,280H1400M0,360H1400M0,440H1400M60,0V520M140,0V520M220,0V520M300,0V520M380,0V520M460,0V520M540,0V520M620,0V520M700,0V520M780,0V520M860,0V520M940,0V520M1020,0V520M1100,0V520M1180,0V520M1260,0V520M1340,0V520\"\n              mask=\"url(#mask)\"\n            />\n            <rect\n              x={140}\n              y={120}\n              width={80}\n              height={80}\n              stroke=\"var(--border)\"\n              fill=\"url(#icon-backgroud)\"\n            />\n            <image\n              href=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n              x={160}\n              y={140}\n              width={40}\n              height={40}\n            />\n            <rect\n              x={60}\n              y={280}\n              width={80}\n              height={80}\n              stroke=\"var(--border)\"\n              fill=\"url(#icon-backgroud)\"\n            />\n            <image\n              href=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\"\n              x={80}\n              y={300}\n              width={40}\n              height={40}\n            />\n            <rect\n              x={300}\n              y={360}\n              width={80}\n              height={80}\n              stroke=\"var(--border)\"\n              fill=\"url(#icon-backgroud)\"\n            />\n            <image\n              href=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\"\n              x={320}\n              y={380}\n              width={40}\n              height={40}\n            />\n            <rect\n              x={1180}\n              y={40}\n              width={80}\n              height={80}\n              stroke=\"var(--border)\"\n              fill=\"url(#icon-backgroud)\"\n            />\n            <image\n              href=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\"\n              x={1200}\n              y={60}\n              width={40}\n              height={40}\n            />\n            <rect\n              x={1260}\n              y={280}\n              width={80}\n              height={80}\n              stroke=\"var(--border)\"\n              fill=\"url(#icon-backgroud)\"\n            />\n            <image\n              href=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\"\n              x={1280}\n              y={300}\n              width={40}\n              height={40}\n            />\n          </svg>\n        </div>\n      </div>\n      <div className=\"container relative flex flex-col items-center text-center\">\n        <h1 className=\"my-6 text-pretty text-4xl font-bold lg:text-6xl\">\n          Welcome to Our Website\n        </h1>\n        <p className=\"text-muted-foreground mb-8 max-w-3xl lg:text-xl\">\n          Elig doloremque mollitia fugiat omnis! Porro facilis quo animi\n          consequatur.\n        </p>\n        <div>\n          <Button>Primary</Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero28 };\n"
+}

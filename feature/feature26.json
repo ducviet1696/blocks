@@ -1,0 +1,51 @@
+{
+    "id": "feature26",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature26.jpg",
+    "thumbnail": "feature26-4x3.webp",
+    "description": "A component displaying 6 features with icons, titles, and descriptions in a grid of up to 3 columns.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.563Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature26",
+    "collection": "block",
+    "group": "feature",
+    "code": "import {\n  Code,\n  Infinity as InfinityIcon,\n  Lock,\n  MessageCircle,\n  Text,\n  Upload,\n} from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst features = [\n  {\n    title: \"100% Secure\",\n    description:\n      \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, numquam possimus necessitatibus voluptatem eius.\",\n    icon: <Lock className=\"h-5\" />,\n  },\n  {\n    title: \"24/7 Support\",\n    description:\n      \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, numquam possimus necessitatibus voluptatem eius.\",\n    icon: <MessageCircle className=\"h-5\" />,\n  },\n  {\n    title: \"Unlimited Access\",\n    description:\n      \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, numquam possimus necessitatibus voluptatem eius.\",\n    icon: <InfinityIcon className=\"h-5\" />,\n  },\n  {\n    title: \"Easy to Use\",\n    description:\n      \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, numquam possimus necessitatibus voluptatem eius.\",\n    icon: <Text className=\"h-5\" />,\n  },\n  {\n    title: \"Built for Developers\",\n    description:\n      \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, numquam possimus necessitatibus voluptatem eius.\",\n    icon: <Code className=\"h-5\" />,\n  },\n  {\n    title: \"Always Up to Date\",\n    description:\n      \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, numquam possimus necessitatibus voluptatem eius.\",\n    icon: <Upload className=\"h-5\" />,\n  },\n];\n\nconst Feature26 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <Badge className=\"mb-6\" variant=\"outline\">\n          Features\n        </Badge>\n        <h2 className=\"text-3xl font-medium\">\n          Lorem ipsum dolor sit amet consectetur.\n        </h2>\n        <Separator className=\"my-16\" />\n        <div className=\"grid gap-6 md:grid-cols-2 lg:grid-cols-3\">\n          {features.map((feature, idx) => (\n            <div key={idx} className=\"flex gap-3\">\n              <span className=\"flex size-11 shrink-0 items-center justify-center rounded-full bg-accent\">\n                {feature.icon}\n              </span>\n              <div>\n                <h3 className=\"text-lg font-medium\">{feature.title}</h3>\n                <p className=\"leading-7 text-muted-foreground\">\n                  {feature.description}\n                </p>\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature26 };\n"
+}

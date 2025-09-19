@@ -1,0 +1,57 @@
+{
+    "id": "hero183",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero183.jpg",
+    "thumbnail": "hero183-4x3.webp",
+    "description": "A component featuring a premium badge, a bold title with descriptive text, buttons for actions, and a grid of images with decorative lines transitioning into a carousel for smaller views.",
+    "createdAt": [
+        3,
+        "2025-02-20T23:47:50.803Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero183",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst Hero183 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    setCurrent(api.selectedScrollSnap() + 1);\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap() + 1);\n    });\n  }, [api]);\n\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-5xl text-center\">\n          <Badge variant=\"outline\">Premium</Badge>\n          <h1 className=\"mt-6 text-4xl font-bold md:text-6xl\">\n            Your Ultimate Business Solution.\n          </h1>\n          <p className=\"mt-5 text-lg text-muted-foreground md:text-xl lg:px-32\">\n            Transform your business operations with our cutting-edge solutions\n            designed to streamline workflows and boost team efficiency.\n          </p>\n          <div className=\"mt-8 flex justify-center gap-2\">\n            <Button size=\"lg\">Get started</Button>\n            <Button variant=\"outline\" size=\"lg\">\n              Learn more\n            </Button>\n          </div>\n        </div>\n        <div className=\"relative mx-10 mt-16 hidden md:block\">\n          <div className=\"absolute top-0 -right-20 -left-20 z-10 h-px bg-[linear-gradient(to_right,transparent,hsl(var(--border))_4%,hsl(var(--border))_96%,transparent)]\"></div>\n          <div className=\"absolute -right-20 bottom-0 -left-20 z-10 h-px bg-[linear-gradient(to_right,transparent,hsl(var(--border))_4%,hsl(var(--border))_96%,transparent)]\"></div>\n          <div className=\"relative grid grid-cols-7 grid-rows-11 gap-4 lg:gap-6\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"placeholder\"\n              className=\"col-span-2 row-span-4 row-start-2 aspect-video h-full rounded-lg border border-border object-cover\"\n            />\n            <div className=\"col-span-3 col-start-3 row-span-full m-px rounded-lg bg-muted p-2.5\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"placeholder\"\n                className=\"aspect-video h-full rounded-lg border border-border object-cover\"\n              />\n            </div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n              alt=\"placeholder\"\n              className=\"col-span-2 row-span-5 row-start-2 aspect-video h-full rounded-lg border border-border object-cover\"\n            />\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n              alt=\"placeholder\"\n              className=\"col-span-2 row-span-5 aspect-video h-full rounded-lg border border-border object-cover\"\n            />\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n              alt=\"placeholder\"\n              className=\"col-span-2 row-span-4 aspect-video h-full rounded-lg border border-border object-cover\"\n            />\n            <div className=\"absolute -top-[10%] -bottom-[10%] col-start-3 row-span-full row-start-1 w-px bg-[linear-gradient(to_bottom,transparent,hsl(var(--border))_5%,hsl(var(--border))_95%,transparent)]\"></div>\n            <div className=\"absolute -top-[10%] -bottom-[10%] -left-[17px] col-start-6 row-span-full row-start-1 w-px bg-[linear-gradient(to_bottom,transparent,hsl(var(--border))_5%,hsl(var(--border))_95%,transparent)] lg:-left-[25px]\"></div>\n          </div>\n          <div className=\"absolute -top-full -bottom-1/2 -left-6 w-px bg-linear-to-b from-transparent via-border via-60% to-transparent\"></div>\n          <div className=\"absolute -top-full -right-6 -bottom-1/2 w-px bg-linear-to-b from-transparent via-border via-60% to-transparent\"></div>\n        </div>\n        <div className=\"mt-16 md:hidden\">\n          <Carousel setApi={setApi} className=\"mx-auto max-w-md\">\n            <CarouselContent className=\"max-h-full\">\n              <CarouselItem>\n                <div className=\"flex flex-col gap-3\">\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                    alt=\"placeholder\"\n                    className=\"aspect-video rounded-lg border border-border object-cover\"\n                  />\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                    alt=\"placeholder\"\n                    className=\"aspect-4/3 rounded-lg border border-border object-cover\"\n                  />\n                </div>\n              </CarouselItem>\n              <CarouselItem>\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                  alt=\"placeholder\"\n                  className=\"h-full rounded-lg border border-border object-cover\"\n                />\n              </CarouselItem>\n              <CarouselItem>\n                <div className=\"flex flex-col gap-3\">\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                    alt=\"placeholder\"\n                    className=\"aspect-4/3 rounded-lg border border-border object-cover\"\n                  />\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n                    alt=\"placeholder\"\n                    className=\"aspect-video rounded-lg border border-border object-cover\"\n                  />\n                </div>\n              </CarouselItem>\n            </CarouselContent>\n            <div className=\"mt-6 flex justify-center\">\n              {Array.from({ length: 3 }).map((_, index) => (\n                <span\n                  key={index}\n                  className={cn(\n                    \"mx-1.5 inline-block size-2 cursor-pointer rounded-full bg-muted-foreground/20 transition-colors duration-300\",\n                    index + 1 === current && \"bg-muted-foreground/60\",\n                  )}\n                  onClick={() => api && api.scrollTo(index)}\n                />\n              ))}\n            </div>\n          </Carousel>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero183 };\n"
+}

@@ -1,0 +1,43 @@
+{
+    "id": "feature55",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature55.jpg",
+    "thumbnail": "feature55-4x3.webp",
+    "description": "A centered feature block with a title, description, and button. Uses a single-column layout with adjustable text sizes.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.575Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature55",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Feature55 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center text-center\">\n          <h3 className=\"my-6 text-3xl font-semibold text-pretty md:text-4xl lg:max-w-3xl lg:text-5xl\">\n            This is a feature\n          </h3>\n          <p className=\"mb-8 text-muted-foreground lg:max-w-3xl lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n            doloremque mollitia fugiat omnis! Porro facilis quo animi\n            consequatur. Explicabo.\n          </p>\n          <Button variant=\"outline\">Learn More</Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature55 };\n"
+}

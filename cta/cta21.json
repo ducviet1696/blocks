@@ -1,0 +1,45 @@
+{
+    "id": "cta21",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta21.jpg",
+    "thumbnail": "cta21-4x3.webp",
+    "description": "A component with a large background image, overlayed by centered text and a large button, featuring an arrow icon.",
+    "createdAt": [
+        3,
+        "2024-12-27T07:51:28.628Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta21",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Cta21 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"relative h-[300px] overflow-hidden rounded-xl md:h-[500px]\">\n          <img\n            src=\"https://images.unsplash.com/photo-1507623457503-9743b35aea95?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            alt=\"placeholder\"\n            className=\"h-full w-full bg-bottom object-cover\"\n          />\n          <div className=\"absolute inset-0 z-10 flex flex-col items-center justify-center gap-8 p-6\">\n            <h2 className=\"text-center text-2xl font-semibold md:text-4xl\">\n              Innovation. Control. Success.\n            </h2>\n            <Button size=\"lg\">\n              Get Started Now\n              <ArrowRight className=\"ml-2\" />\n            </Button>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta21 };\n"
+}

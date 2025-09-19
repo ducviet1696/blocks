@@ -1,0 +1,46 @@
+{
+    "id": "feature243",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature243.jpg",
+    "thumbnail": "feature243-4x3.webp",
+    "description": "A component displaying a vertical timeline layout of steps, each with an icon, title, and description. It uses cards for step details.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.384Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature243",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Cog, Gem, Landmark, LocateFixed } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Card, CardContent } from \"@/components/ui/card\";\n\ntype Step = {\n  title: string;\n  description: string;\n  icon: React.ReactNode;\n};\n\nconst Feature243 = () => {\n  const steps: Step[] = [\n    {\n      title: \"Initialization\",\n      description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n      icon: (\n        <LocateFixed className=\"size-10 stroke-white transition-all ease-in-out group-hover:rotate-90\" />\n      ),\n    },\n    {\n      title: \"Optimization\",\n      description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n      icon: (\n        <Cog className=\"size-10 stroke-white transition-all ease-in-out group-hover:rotate-90\" />\n      ),\n    },\n    {\n      title: \"Efficiency\",\n      description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n      icon: (\n        <Gem className=\"size-10 stroke-white transition-all ease-in-out group-hover:size-12\" />\n      ),\n    },\n    {\n      title: \"Finalization\",\n      description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n      icon: (\n        <Landmark className=\"size-10 stroke-white transition-all ease-in-out group-hover:size-12\" />\n      ),\n    },\n  ];\n\n  return (\n    <section className=\"bg-background\">\n      <div className=\"container py-32\">\n        <header className=\"bg-background relative z-10 flex flex-col items-center justify-center gap-6 text-center\">\n          <h1 className=\"text-foreground text-5xl font-bold tracking-tighter lg:text-6xl\">\n            From Input to Outcome\n          </h1>\n\n          <p className=\"text-muted-foreground mb-4 mt-2 max-w-xl text-lg md:text-xl\">\n            Lorem ipsum dolor sit amet consectetur adipiasicing elit.Lorem ipsum\n            dolor sit amet consectetur\n          </p>\n        </header>\n\n        <div className=\"gap-18 sm:mt-68 mt-24 flex flex-wrap items-center justify-center sm:gap-6\">\n          <div className=\"h-55 bg-muted lg:h-58 absolute left-1/2 top-40 w-0.5 rounded-full\" />\n          {steps.map((step, index) => (\n            <div\n              key={index}\n              className=\"relative flex w-fit flex-col items-center\"\n            >\n              <div\n                className={cn(\n                  \"bg-muted absolute -top-[174px] left-1/2 h-0.5 w-[109%] rounded-full\",\n                  index == 3 ? \"hidden\" : \"\",\n                  index == 2 ? \"hidden 2xl:block\" : \"\",\n                  index == 1 ? \"hidden lg:block\" : \"\",\n                  index == 0 ? \"hidden sm:block\" : \"\",\n                )}\n              />\n              <div className=\"bg-muted absolute -top-[174px] left-1/2 h-full w-0.5 rounded-full\" />\n              <div className=\"bg-background relative z-10 flex h-8 w-5 items-center justify-center rounded-full p-1 pb-5\">\n                <div className=\"bg-foreground relative z-10 size-3 rounded-full\" />\n              </div>\n\n              <Card className=\"rounded-4xl bg-muted group relative z-10 h-full w-full overflow-hidden border-none shadow-none sm:w-64 md:w-72\">\n                <CardContent className=\"flex h-full flex-col items-center gap-5 p-0 pb-5 pt-10\">\n                  <div className=\"bg-foreground flex size-20 items-center justify-center rounded-3xl\">\n                    {step.icon}\n                  </div>\n\n                  <div className=\"flex w-full flex-col items-center gap-4 px-4 pb-3 pt-5\">\n                    <h3 className=\"text-foreground w-full text-center text-3xl font-semibold tracking-tighter\">\n                      {step.title}\n                    </h3>\n\n                    <p className=\"text-muted-foreground/70 w-full max-w-sm text-center font-medium\">\n                      {step.description}\n                    </p>\n                  </div>\n                </CardContent>\n              </Card>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature243 };\n"
+}

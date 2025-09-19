@@ -1,0 +1,43 @@
+{
+    "id": "hero162",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero162.jpg",
+    "thumbnail": "hero162-4x3.webp",
+    "description": "A component featuring a 2-column layout with a prominent headline, subtext, and button on one side, and a grid of images and testimonials on the other.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:42:05.335Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero162",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero162 = () => {\n  return (\n    <section className=\"bg-background dark relative font-sans lg:h-[62.5rem]\">\n      <div className=\"container flex h-full w-full items-center py-20 lg:py-0\">\n        <div className=\"mx-auto grid h-full w-full max-w-[87.5rem] grid-cols-1 items-center gap-20 lg:grid-cols-2\">\n          <div>\n            <h1 className=\"text-foreground mb-4 text-6xl font-medium leading-tight\">\n              Setting New Industry Standards Through Excellence\n            </h1>\n            <p className=\"text-foreground text-2xl\">\n              Professional Support for Mental Wellness. Personalized Care for\n              Emotional Balance.\n            </p>\n            <div className=\"mt-10\">\n              <Button\n                asChild\n                variant=\"outline\"\n                className=\"hover:bg-background block h-fit w-fit rounded-lg border-2 border-white bg-transparent px-8 py-5 text-lg font-medium leading-tight text-white transition duration-500 hover:scale-105 hover:text-black\"\n              >\n                <a href=\"#\">Our services</a>\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div className=\"bottom-0 left-auto right-0 top-0 m-5 ml-0 w-full px-8 pb-5 lg:absolute lg:max-w-[50%] lg:px-0\">\n        <div className=\"grid h-full w-full grid-cols-1 grid-rows-[18.75rem_13.125rem_10rem] gap-5 md:grid-cols-[3fr_2fr] md:grid-rows-[80%_minmax(20%,9.375rem)]\">\n          <div className=\"row-[1/2] overflow-hidden md:col-[1/3]\">\n            <div className=\"bg-muted h-full w-full overflow-hidden rounded-3xl\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"\"\n                className=\"h-full w-full object-cover object-center\"\n              />\n            </div>\n          </div>\n          <div className=\"col-[1/2] row-[2/3]\">\n            <div className=\"bg-muted flex h-full flex-col gap-3 overflow-hidden rounded-3xl p-5 px-5 md:flex-row md:items-center md:gap-7 md:py-8\">\n              <div className=\"h-20 w-20 shrink-0 overflow-hidden rounded-xl md:h-[7.5rem] md:w-[7.5rem]\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                  alt=\"\"\n                  className=\"h-full w-full object-cover object-center\"\n                />\n              </div>\n              <div className=\"flex h-full w-full flex-col justify-between gap-2\">\n                <p className=\"text-foreground text-lg font-medium\">\n                  &quot;Since beginning therapy here, I feel more grounded and\n                  at ease.&quot;\n                </p>\n                <p className=\"text-foreground\">John Doe</p>\n              </div>\n            </div>\n          </div>\n          <div className=\"row-[3/4] md:col-[2/3] md:row-[2/3]\">\n            <div className=\"bg-muted h-full w-full overflow-hidden rounded-3xl\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"\"\n                className=\"h-full w-full object-cover object-center\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero162 };\n"
+}

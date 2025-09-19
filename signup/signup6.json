@@ -1,0 +1,55 @@
+{
+    "id": "signup6",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "signup6.jpg",
+    "thumbnail": "signup6-4x3.webp",
+    "description": "A signup component featuring email/password fields, Google signup, and a login redirect. Layout includes a centered form in a 400px column.",
+    "createdAt": [
+        3,
+        "2025-02-21T02:40:51.807Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "signup"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "signup6",
+    "collection": "block",
+    "group": "signup",
+    "code": "import { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\ninterface Signup6Props {\n  logo: {\n    url: string;\n    src: string;\n    alt: string;\n    title?: string;\n  };\n  buttonText?: string;\n  googleText?: string;\n  signupText?: string;\n  signupUrl?: string;\n}\n\nconst Signup6 = ({\n  logo = {\n    url: \"https://www.shadcnblocks.com\",\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblocks-logo-word.svg\",\n    alt: \"logo\",\n    title: \"shadcnblocks.com\",\n  },\n  buttonText = \"Create Account\",\n  googleText = \"Signup with Google\",\n  signupText = \"Already a user?\",\n  signupUrl = \"https://shadcnblocks.com\",\n}: Signup6Props) => {\n  return (\n    <section className=\"bg-background h-screen\">\n      <div className=\"flex h-full items-center justify-center\">\n        <div className=\"flex flex-col items-center gap-6 lg:justify-start\">\n          {/* Logo */}\n          <a href={logo.url}>\n            <img\n              src={logo.src}\n              alt={logo.alt}\n              title={logo.title}\n              className=\"h-10 dark:invert\"\n            />\n          </a>\n          <div className=\"min-w-sm flex w-full max-w-sm flex-col items-center gap-y-4 rounded-lg border px-6 py-12\">\n            <Button className=\"w-full\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg\"\n                className=\"mr-2 size-4\"\n                alt=\"Google\"\n              />\n              {googleText}\n            </Button>\n\n            <div className=\"relative flex w-full items-center justify-center py-6\">\n              <div className=\"border-border absolute h-[1px] w-full border-t\"></div>\n            </div>\n\n            <div className=\"flex w-full flex-col gap-2\">\n              <Label>Email</Label>\n              <Input\n                type=\"email\"\n                placeholder=\"Email\"\n                className=\"bg-background text-sm\"\n                required\n              />\n            </div>\n            <div className=\"flex w-full flex-col gap-2\">\n              <Label>Password</Label>\n              <Input\n                type=\"password\"\n                placeholder=\"Password\"\n                className=\"bg-background text-sm\"\n                required\n              />\n            </div>\n            <div className=\"flex w-full flex-col gap-2\">\n              <Label>Confirm Password</Label>\n              <Input\n                type=\"password\"\n                placeholder=\"Password\"\n                className=\"bg-background text-sm\"\n                required\n              />\n            </div>\n            <Button type=\"submit\" className=\"w-full\" variant=\"secondary\">\n              {buttonText}\n            </Button>\n          </div>\n          <div className=\"text-muted-foreground flex justify-center gap-1 text-sm\">\n            <p>{signupText}</p>\n            <a\n              href={signupUrl}\n              className=\"text-primary font-medium hover:underline\"\n            >\n              Login\n            </a>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Signup6 };\n"
+}

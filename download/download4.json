@@ -1,0 +1,57 @@
+{
+    "id": "download4",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "download4.jpg",
+    "thumbnail": "download4-4x3.webp",
+    "description": "A component showcasing a professional suite download with features, version details, and download options in a two-column layout within a main card.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:37:44.191Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "download"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "download4",
+    "collection": "block",
+    "group": "download",
+    "code": "import { Download, Monitor, Shield, Users, Zap } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Card } from \"@/components/ui/card\";\n\ninterface Download4Props {\n  heading?: string;\n  description?: string;\n  version?: string;\n  fileSize?: string;\n  features?: string[];\n  downloadButton?: {\n    text: string;\n    url: string;\n  };\n  learnMoreButton?: {\n    text: string;\n    url: string;\n  };\n}\n\nconst Download4 = ({\n  heading = \"Professional Desktop Suite\",\n  description = \"Download our complete desktop application with enterprise-grade features and unlimited access.\",\n  version = \"v3.2.1\",\n  fileSize = \"230 MB\",\n  features = [\n    \"Advanced analytics and reporting\",\n    \"Enterprise security and encryption\",\n    \"Unlimited project management\",\n    \"24/7 priority support access\",\n  ],\n  downloadButton = {\n    text: \"Free Download\",\n    url: \"#\",\n  },\n  learnMoreButton = {\n    text: \"Documentation\",\n    url: \"#\",\n  },\n}: Download4Props) => {\n  return (\n    <section className=\"bg-muted/30 py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-4xl\">\n          {/* Header */}\n          <div className=\"mb-12 text-center\">\n            <Badge variant=\"secondary\" className=\"mb-4\">\n              Latest Release\n            </Badge>\n            <h2 className=\"mb-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl\">\n              {heading}\n            </h2>\n            <p className=\"text-muted-foreground mx-auto max-w-2xl text-lg\">\n              {description}\n            </p>\n          </div>\n\n          {/* Main Download Card */}\n          <Card className=\"bg-background border p-0 shadow-lg\">\n            <div className=\"grid gap-8 p-8 lg:grid-cols-2 lg:items-center\">\n              {/* Left Side - App Info */}\n              <div>\n                <div className=\"mb-6 flex items-center gap-4\">\n                  <div>\n                    <h3 className=\"text-2xl font-bold\">Desktop Application</h3>\n                    <p className=\"text-muted-foreground\">\n                      Windows \u2022 macOS \u2022 Linux\n                    </p>\n                  </div>\n                </div>\n\n                {/* Features */}\n                <div className=\"space-y-3\">\n                  {features.map((feature, index) => {\n                    const icons = [Shield, Zap, Users, Monitor];\n                    const Icon = icons[index % icons.length];\n                    return (\n                      <div key={index} className=\"flex items-center gap-3\">\n                        <div className=\"bg-muted flex h-8 w-8 items-center justify-center rounded-lg\">\n                          <Icon className=\"text-foreground h-4 w-4\" />\n                        </div>\n                        <span className=\"text-sm font-medium\">{feature}</span>\n                      </div>\n                    );\n                  })}\n                </div>\n              </div>\n\n              {/* Right Side - Download */}\n              <div className=\"lg:pl-8\">\n                <div className=\"bg-muted/50 rounded-2xl border p-6\">\n                  <div className=\"mb-6 text-center\">\n                    <div className=\"mb-2 flex items-center justify-center gap-4\">\n                      <span className=\"text-2xl font-bold\">{version}</span>\n                      <span className=\"text-muted-foreground\">\u2022</span>\n                      <span className=\"text-muted-foreground font-medium\">\n                        {fileSize}\n                      </span>\n                    </div>\n                    <p className=\"text-muted-foreground text-sm\">\n                      Latest stable release\n                    </p>\n                  </div>\n\n                  <div className=\"space-y-3\">\n                    <Button size=\"lg\" className=\"w-full\" asChild>\n                      <a href={downloadButton.url}>\n                        <Download className=\"mr-2 h-5 w-5\" />\n                        {downloadButton.text}\n                      </a>\n                    </Button>\n\n                    <Button\n                      variant=\"outline\"\n                      size=\"lg\"\n                      className=\"w-full\"\n                      asChild\n                    >\n                      <a href={learnMoreButton.url}>{learnMoreButton.text}</a>\n                    </Button>\n                  </div>\n\n                  <div className=\"mt-4 text-center\">\n                    <p className=\"text-muted-foreground text-xs\">\n                      No signup required \u2022 Instant download \u2022 30-day trial\n                    </p>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </Card>\n\n          {/* Footer Info */}\n          <div className=\"mt-8 text-center\">\n            <p className=\"text-muted-foreground text-sm\">\n              Join 100,000+ teams already using our desktop application\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Download4 };\n"
+}

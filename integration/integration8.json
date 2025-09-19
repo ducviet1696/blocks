@@ -1,0 +1,46 @@
+{
+    "id": "integration8",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "integration8.jpg",
+    "thumbnail": "integration8-4x3.webp",
+    "description": "A component featuring dual-direction marquee rows of logos, highlighted with fade edges.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.842Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "marquee",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/marquee",
+            "docsUrl": "https://magicui.design/docs/components/marquee"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "integration",
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui"
+        ]
+    },
+    "figma": true,
+    "slug": "integration8",
+    "collection": "block",
+    "group": "integration",
+    "code": "\"use client\";\n\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Marquee } from \"@/components/magicui/marquee\";\n\nconst Integration8 = () => {\n  const logos = [\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg\",\n      name: \"Slack\",\n      className: \" \",\n    },\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/notion-icon.svg\",\n      name: \"Notion\",\n      className: \" \",\n    },\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg\",\n      name: \"Github\",\n      className: \" \",\n    },\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg\",\n      name: \"Google\",\n      className: \" \",\n    },\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nike-icon.svg\",\n      name: \"Nike\",\n      className: \" \",\n    },\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-icon.svg\",\n      name: \"Sketch\",\n      className: \" \",\n    },\n    {\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg\",\n      name: \"Figma\",\n      className: \" \",\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container pt-32\">\n        <h1 className=\"text-center text-5xl font-medium tracking-tight md:text-7xl\">\n          Integrated with fav Apps\n        </h1>\n        <p className=\"mx-auto mt-4 max-w-xl text-center tracking-tight text-muted-foreground/80 md:text-lg\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n          eiusmod tempor incididunt Lorem ipsum dolor sit amet.\n        </p>\n\n        <div className=\"relative mt-12\">\n          <Marquee pauseOnHover className=\"[--duration:20s]\">\n            {logos.map((logo, index) => (\n              <div\n                key={index}\n                className=\"flex items-center justify-center gap-4 rounded-full bg-muted px-5 py-2\"\n              >\n                <img\n                  src={logo.image}\n                  alt={logo.name}\n                  className={cn(\"size-5\", logo?.className)}\n                />\n                <p className=\"text-lg\">{logo.name}</p>\n              </div>\n            ))}\n          </Marquee>\n          <Marquee pauseOnHover reverse className=\"[--duration:20s]\">\n            {logos.map((logo, index) => (\n              <div\n                key={index}\n                className=\"flex items-center justify-center gap-4 rounded-full bg-muted px-5 py-2\"\n              >\n                <img\n                  src={logo.image}\n                  alt={logo.name}\n                  className={cn(\"size-5\", logo?.className)}\n                />\n                <p className=\"text-lg\">{logo.name}</p>\n              </div>\n            ))}\n          </Marquee>\n          <Marquee pauseOnHover className=\"[--duration:20s]\">\n            {[...logos].reverse().map((logo, index) => (\n              <div\n                key={index}\n                className=\"flex items-center justify-center gap-4 rounded-full bg-muted px-5 py-2\"\n              >\n                <img\n                  src={logo.image}\n                  alt={logo.name}\n                  className={cn(\"size-5\", logo?.className)}\n                />\n                <p className=\"text-lg\">{logo.name}</p>\n              </div>\n            ))}\n          </Marquee>\n          <Marquee pauseOnHover reverse className=\"[--duration:20s]\">\n            {[...logos].reverse().map((logo, index) => (\n              <div\n                key={index}\n                className=\"flex items-center justify-center gap-4 rounded-full bg-muted px-5 py-2\"\n              >\n                <img\n                  src={logo.image}\n                  alt={logo.name}\n                  className={cn(\"size-5\", logo?.className)}\n                />\n                <p className=\"text-lg\">{logo.name}</p>\n              </div>\n            ))}\n          </Marquee>\n          <div className=\"pointer-events-none absolute inset-y-0 left-0 w-36 bg-gradient-to-r from-background\"></div>\n          <div className=\"pointer-events-none absolute inset-y-0 right-0 w-36 bg-gradient-to-l from-background\"></div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Integration8 };\n"
+}

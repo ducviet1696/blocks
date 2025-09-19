@@ -1,0 +1,45 @@
+{
+    "id": "feature104",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature104.jpg",
+    "thumbnail": "feature104-4x3.webp",
+    "description": "A component featuring a header with an outlined badge, a title, a paragraph, a placeholder image, and six sections with icons and texts in a 3-column layout.",
+    "createdAt": [
+        3,
+        "2024-09-09T00:41:29.014Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature104",
+    "collection": "block",
+    "group": "feature",
+    "code": "import {\n  ChartArea,\n  ChartNoAxesCombined,\n  Layout,\n  Medal,\n  Monitor,\n  Target,\n  TrendingUp,\n} from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Feature104 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-3xl flex-col items-center gap-4\">\n          <Badge\n            variant=\"outline\"\n            className=\"flex items-center gap-1 px-2.5 py-1.5 text-sm\"\n          >\n            <Medal className=\"h-auto w-4\" />\n            Highlights\n          </Badge>\n          <h2 className=\"text-center text-3xl font-semibold lg:text-4xl\">\n            Unlock Your Workflow Potential\n          </h2>\n          <p className=\"text-center text-muted-foreground lg:text-lg\">\n            Experience the benefits of streamlined processes, designed to\n            enhance productivity and success.\n          </p>\n        </div>\n        <div className=\"gap mt-14 grid gap-2.5 lg:grid-cols-3\">\n          <div className=\"flex flex-col gap-2.5\">\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex items-center gap-2.5\">\n                <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                  <Target className=\"h-auto w-6\" />\n                </span>\n                <h3 className=\"font-medium\">Targeted Solutions</h3>\n              </div>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Tailored features designed to tackle specific project challenges\n                with precision.\n              </p>\n            </div>\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex items-center gap-2.5\">\n                <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                  <Layout className=\"h-auto w-6\" />\n                </span>\n                <h3 className=\"font-medium\">Seamless Integration</h3>\n              </div>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Effortlessly merge new technologies into existing systems to\n                maintain continuity and performance.\n              </p>\n            </div>\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex items-center gap-2.5\">\n                <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                  <ChartArea className=\"h-auto w-6\" />\n                </span>\n                <h3 className=\"font-medium\">Real-Time Data Insights</h3>\n              </div>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Monitor data in real-time for better decision-making and faster\n                adjustments.\n              </p>\n            </div>\n          </div>\n\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder\"\n            className=\"hidden h-full rounded-lg object-cover lg:block\"\n          />\n          <div className=\"flex flex-col gap-2.5\">\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex items-center gap-2.5\">\n                <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                  <TrendingUp className=\"h-auto w-6\" />\n                </span>\n                <h3 className=\"font-medium\">Strategic Growth</h3>\n              </div>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Leverage strategic tools to scale your business and meet\n                evolving market demands.\n              </p>\n            </div>\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex items-center gap-2.5\">\n                <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                  <ChartNoAxesCombined className=\"h-auto w-6\" />\n                </span>\n                <h3 className=\"font-medium\">Advanced Analytics</h3>\n              </div>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Gain deeper insights through advanced analytics to stay ahead in\n                decision-making.\n              </p>\n            </div>\n            <div className=\"gap flex flex-col gap-3 rounded-lg border p-6\">\n              <div className=\"flex items-center gap-2.5\">\n                <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                  <Monitor className=\"h-auto w-6\" />\n                </span>\n                <h3 className=\"font-medium\">Unified Control</h3>\n              </div>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Centralize management and control all aspects of your workflow\n                from one platform.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature104 };\n"
+}

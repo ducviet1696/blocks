@@ -1,0 +1,54 @@
+{
+    "id": "hero221",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero221.jpg",
+    "thumbnail": "hero221-4x3.webp",
+    "description": "A component featuring animated text over a video, with a centered tagline below. Includes a button with an animated arrow icon.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "video-text",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/video-text",
+            "docsUrl": "https://magicui.design/docs/components/video-text"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero221",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { VideoText } from \"@/components/magicui/video-text\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero221 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-center gap-4\">\n          <motion.div\n            initial={{ opacity: 0, scale: 1.1 }}\n            animate={{ opacity: 1, scale: 1 }}\n            transition={{ duration: 0.3 }}\n            className=\"relative mt-32 flex h-[250px] w-full items-center\"\n          >\n            <VideoText\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ocean1080.mov\"\n              className=\"font-playfair text-[15rem] font-bold tracking-tighter\"\n              fontFamily=\"Cal Sans\"\n            >\n              Blocks\n            </VideoText>\n          </motion.div>\n          <p className=\"text-muted-foreground -mt-10 max-w-xl text-center text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sapiente\n            quisquam debitis error vero possimus amet\n          </p>\n        </div>\n        <Button\n          variant=\"secondary\"\n          className=\"text-md group mx-auto mt-24 flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n        >\n          <span>Get Started</span>\n          <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n        </Button>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero221 };\n"
+}

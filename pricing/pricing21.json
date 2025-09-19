@@ -1,0 +1,52 @@
+{
+    "id": "pricing21",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing21.jpg",
+    "thumbnail": "pricing21-4x3.webp",
+    "description": "A pricing component with toggleable monthly/yearly plans, integrating icons, buttons, and badges for a structured display of various subscription tiers and feature comparisons across columns.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.632Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "pricing21",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { BadgeCheck, BadgeDollarSign, Briefcase, Building } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\ninterface FeatureSection {\n  category: string;\n  features: {\n    name: string;\n    basic: string | boolean;\n    business: string | boolean;\n    enterprise: string | boolean;\n  }[];\n}\n\nconst pricingPlans = [\n  {\n    icon: \"Rocket\",\n    name: \"Basic plan\",\n    price: {\n      monthly: 19,\n      yearly: 199,\n    },\n    features: [\n      \"Basic task management tools\",\n      \"Calendar sync with limited integrations\",\n      \"Access to 1 dashboard for tracking tasks\",\n      \"Limited AI suggestions and insights\",\n      \"Basic support and community access\",\n    ],\n  },\n  {\n    icon: Briefcase,\n    name: \"Business plan\",\n    price: {\n      monthly: 29,\n      yearly: 299,\n    },\n    features: [\n      \"All Free Plan features, plus:\",\n      \"Unlimited task lists\",\n      \"Advanced calendar sync\",\n      \"AI-driven insights\",\n      \"Access to custom dashboards\",\n      \"Priority email support\",\n    ],\n  },\n  {\n    icon: Building,\n    name: \"Enterprise plan\",\n    price: {\n      monthly: 49,\n      yearly: 499,\n    },\n    features: [\n      \"All Pro Plan features, plus:\",\n      \"Dedicated account manager\",\n      \"Custom integrations\",\n      \"Real-time collaboration\",\n      \"Role-based permissions\",\n      \"24/7 priority support\",\n    ],\n  },\n];\n\nconst comparisonFeatures: FeatureSection[] = [\n  {\n    category: \"Core Tools\",\n    features: [\n      {\n        name: \"Task Management\",\n        basic: \"10\",\n        business: \"25\",\n        enterprise: \"Unlimited\",\n      },\n      {\n        name: \"Calendar Sync\",\n        basic: true,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Reminders\",\n        basic: true,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Collaboration\",\n        basic: false,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Notifications\",\n        basic: false,\n        business: false,\n        enterprise: true,\n      },\n    ],\n  },\n  {\n    category: \"Productivity Insights\",\n    features: [\n      {\n        name: \"Analytics\",\n        basic: \"10 25 Unlimited\",\n        business: \"10 25 Unlimited\",\n        enterprise: \"10 25 Unlimited\",\n      },\n      {\n        name: \"Reports\",\n        basic: true,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Time Tracking\",\n        basic: true,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Goal Tracking\",\n        basic: false,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Trends\",\n        basic: false,\n        business: false,\n        enterprise: true,\n      },\n    ],\n  },\n  {\n    category: \"Workflow Automation\",\n    features: [\n      {\n        name: \"Task Automation\",\n        basic: \"10\",\n        business: \"25\",\n        enterprise: \"Unlimited\",\n      },\n      {\n        name: \"Recurring Tasks\",\n        basic: true,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Integrations\",\n        basic: true,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"API Access\",\n        basic: false,\n        business: true,\n        enterprise: true,\n      },\n      {\n        name: \"Workflow Templates\",\n        basic: false,\n        business: false,\n        enterprise: true,\n      },\n    ],\n  },\n];\n\nconst Pricing21 = () => {\n  const [isMonthly, setIsMonthly] = useState(true);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"border-y\">\n        <div className=\"container flex flex-col gap-6 border-x py-4 max-lg:border-x lg:py-8\">\n          <Badge\n            variant=\"outline\"\n            className=\"w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm\"\n          >\n            <BadgeDollarSign className=\"size-4\" />\n            <span>Spenders Lounge</span>\n          </Badge>\n          <h2 className=\"text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl\">\n            Pricing for everyone\n          </h2>\n          <p className=\"max-w-[600px] tracking-[-0.32px] text-muted-foreground\">\n            Choose the Plan that Fits Your Productivity Need\n          </p>\n        </div>\n      </div>\n\n      <div className=\"container\">\n        <section className=\"py-14 md:py-20 lg:py-24\">\n          <div className=\"flex justify-center\">\n            <div className=\"inline-flex gap-[2px] rounded-md border p-[2px]\">\n              <Button\n                variant={isMonthly ? \"default\" : \"outline\"}\n                onClick={() => setIsMonthly(true)}\n                className=\"transition-colors\"\n              >\n                Monthly\n              </Button>\n              <Button\n                variant={!isMonthly ? \"default\" : \"outline\"}\n                onClick={() => setIsMonthly(false)}\n                className=\"transition-colors\"\n              >\n                Yearly\n              </Button>\n            </div>\n          </div>\n          <div className=\"mt-12 overflow-x-auto\">\n            <PlanHeaders isMonthly={isMonthly} />\n            <FeatureSections />\n          </div>\n        </section>\n      </div>\n\n      <div className=\"mt-12 h-8 w-full border-y md:h-12 lg:h-[112px]\">\n        <div className=\"container h-full w-full border-x\"></div>\n      </div>\n    </section>\n  );\n};\n\nconst PlanHeaders = ({ isMonthly }: { isMonthly: boolean }) => (\n  <div className=\"grid grid-cols-4\">\n    <div className=\"col-span-1 max-lg:hidden max-lg:border\"></div>\n    <div className=\"col-span-4 grid gap-4 border-t max-lg:divide-y max-lg:border lg:col-span-3 lg:grid-cols-3 lg:divide-x\">\n      {pricingPlans.map((plan, index) => (\n        <div key={index} className=\"flex flex-col p-6\">\n          <div className=\"space-y-2 pb-6\">\n            <div className=\"flex items-center gap-2.5 text-muted-foreground\">\n              <plan.icon className=\"size-4\" />\n              <h3 className=\"text-xl tracking-[-0.8px]\">{plan.name}</h3>\n            </div>\n            <>\n              <div className=\"flex items-baseline font-medium\">\n                <span className=\"text-[3.5rem] leading-[120%] tracking-[-3.92px]\">\n                  ${isMonthly ? plan.price.monthly : plan.price.yearly}\n                </span>\n                <span className=\"text-muted-foreground-subtle text-2xl tracking-[-0.96px]\">\n                  {isMonthly ? \"/mo\" : \"/yr\"}\n                </span>\n              </div>\n              <p className=\"text-muted-foreground\">\n                {isMonthly\n                  ? `or $${plan.price.yearly} yearly`\n                  : `or $${plan.price.monthly}/mo monthly`}\n              </p>\n            </>\n          </div>\n          <Button className=\"mt-auto\">Get started</Button>\n        </div>\n      ))}\n    </div>\n  </div>\n);\n\nconst FeatureSections = () => (\n  <>\n    {comparisonFeatures.map((section, sectionIndex) => (\n      <div\n        key={sectionIndex}\n        className={`border-b first:border-t ${sectionIndex === 0 ? \"border-t\" : \"\"}`}\n      >\n        <div className=\"py-4\">\n          <h3 className=\"text-lg tracking-[-0.36px]\">{section.category}</h3>\n        </div>\n        {section.features.map((feature, featureIndex) => (\n          <div\n            key={featureIndex}\n            className=\"grid border-t tracking-[-0.32px] text-muted-foreground max-lg:grid-rows-[auto_1fr] lg:grid-cols-4\"\n          >\n            <span className=\"inline-flex items-center py-4\">\n              {feature.name}\n            </span>\n            <div className=\"col-span-3 grid grid-cols-3 divide-x text-center max-lg:border-t\">\n              {[feature.basic, feature.business, feature.enterprise].map(\n                (value, i) => (\n                  <div\n                    key={i}\n                    className=\"flex items-center justify-center py-4\"\n                  >\n                    {typeof value === \"boolean\" ? (\n                      value ? (\n                        <BadgeCheck className=\"mx-auto size-5 text-muted-foreground\" />\n                      ) : null\n                    ) : (\n                      <span className=\"text-muted-foreground-subtle font-semibold\">\n                        {value}\n                      </span>\n                    )}\n                  </div>\n                ),\n              )}\n            </div>\n          </div>\n        ))}\n      </div>\n    ))}\n  </>\n);\n\nexport { Pricing21 };\n"
+}

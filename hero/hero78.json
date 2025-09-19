@@ -1,0 +1,43 @@
+{
+    "id": "hero78",
+    "access": "basic",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero78.jpg",
+    "thumbnail": "hero78-4x3.webp",
+    "description": "A component featuring a full-width background image with a dark overlay, includes a title, text, and button centered in a single column layout, and an additional noise effect overlay.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:09:05.350Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero78",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero78 = () => {\n  return (\n    <section className=\"dark relative flex h-svh max-h-[1400px] w-svw overflow-hidden bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/full-width-backgrounds/pawel-czerwinski-IbHFznCKnqA-unsplash.jpg')] bg-cover bg-center bg-no-repeat font-sans after:absolute after:left-0 after:top-0 after:z-10 after:h-full after:w-full after:bg-black/20 after:content-[''] md:h-svh\">\n      <div className=\"relative z-30 m-auto flex max-w-[46.25rem] flex-col items-center justify-center gap-6 px-5\">\n        <h1 className=\"text-foreground text-center font-serif text-4xl leading-tight md:text-6xl xl:text-[4.4rem]\">\n          Explore the wonders of science.\n        </h1>\n        <p className=\"text-foreground text-center text-base\">\n          From stunning skyscrapers to intricate bridges and innovative\n          architectural marvels, each photo invites you to explore the\n          artificial wonders of the world.\n        </p>\n        <Button className=\"h-fit w-fit rounded-full px-7 py-4 text-sm font-medium leading-tight\">\n          See all photos\n        </Button>\n      </div>\n      <div className=\"pointer-events-none absolute inset-0 z-20 h-full w-full bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/noise.png')] bg-repeat opacity-15\" />\n    </section>\n  );\n};\n\nexport { Hero78 };\n"
+}

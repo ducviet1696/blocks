@@ -1,0 +1,45 @@
+{
+    "id": "feature135",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature135.jpg",
+    "thumbnail": "feature135-4x3.webp",
+    "description": "A component showcasing core features and highlights with icons, titles, and descriptions in a two-column layout.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.830Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature135",
+    "collection": "block",
+    "group": "feature",
+    "code": "import type { LucideIcon } from \"lucide-react\";\nimport {\n  Calendar,\n  Check,\n  Infinity as InfinityIcon,\n  ListChecks,\n  MessagesSquare,\n  Star,\n  Users,\n} from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\ninterface Highlight {\n  icon: LucideIcon;\n  text: string;\n}\n\ninterface Feature {\n  icon: LucideIcon;\n  title: string;\n  description: string;\n}\n\nconst Feature135 = () => {\n  const highlights: Highlight[] = [\n    {\n      icon: Check,\n      text: \"User-Friendly Interface for Easy Navigation\",\n    },\n    {\n      icon: Check,\n      text: \"Real-time Collaboration for Smooth Teamwork\",\n    },\n    {\n      icon: Check,\n      text: \"Powerful Insights for Informed Decisions\",\n    },\n    {\n      icon: Check,\n      text: \"Strong Data Protection for Secure Operations\",\n    },\n  ];\n\n  const features: Feature[] = [\n    {\n      icon: Calendar,\n      title: \"Task Management Simplified\",\n      description:\n        \"Keep track of tasks, assign priorities, and monitor progress easily to stay organized and on schedule.\",\n    },\n    {\n      icon: MessagesSquare,\n      title: \"Unified Messaging System\",\n      description:\n        \"Communicate efficiently with an intuitive messaging system that supports teams of all sizes and locations.\",\n    },\n    {\n      icon: InfinityIcon,\n      title: \"Effortless Data Sync\",\n      description:\n        \"Synchronize data across multiple devices and platforms for a smooth workflow experience for all users.\",\n    },\n    {\n      icon: Users,\n      title: \"Team Member Management\",\n      description:\n        \"Add and manage team members with ease, ensuring smooth onboarding and collaboration processes.\",\n    },\n    {\n      icon: ListChecks,\n      title: \"Stay on Track with Deadlines\",\n      description:\n        \"Set reminders and deadlines to keep your team aligned and focused on key goals and objectives.\",\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"relative grid gap-10 lg:grid-cols-2\">\n          <div className=\"top-10 mx-auto flex h-fit max-w-3xl flex-col items-center gap-4 lg:sticky lg:items-start\">\n            <Badge\n              variant=\"outline\"\n              className=\"flex items-center gap-1 px-2.5 py-1.5 text-sm\"\n            >\n              <Star className=\"h-auto w-4\" />\n              Key Highlights\n            </Badge>\n            <h2 className=\"text-center text-3xl font-semibold lg:text-left lg:text-4xl\">\n              Empower Your Workflow with Core Features\n            </h2>\n            <p className=\"text-center text-muted-foreground lg:text-left lg:text-lg\">\n              Maximize your productivity with essential features designed for\n              seamless operations.\n            </p>\n            <div className=\"mt-6 flex flex-col gap-4\">\n              {highlights.map((highlight, index) => {\n                return (\n                  <div\n                    key={`highlight-${index}`}\n                    className=\"flex items-center gap-2\"\n                  >\n                    <Check className=\"h-auto w-4\" />\n                    <span className=\"text-muted-foreground\">\n                      {highlight.text}\n                    </span>\n                  </div>\n                );\n              })}\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-4\">\n            {features.map((feature, index) => {\n              const Icon = feature.icon;\n              return (\n                <div\n                  key={`feature-${index}`}\n                  className=\"gap flex flex-col gap-3 rounded-lg border p-7\"\n                >\n                  <div className=\"flex flex-col items-center gap-2.5 lg:flex-row\">\n                    <span className=\"flex size-12 items-center justify-center rounded-md bg-muted\">\n                      <Icon className=\"h-auto w-6\" />\n                    </span>\n                    <h3 className=\"text-lg font-medium\">{feature.title}</h3>\n                  </div>\n                  <p className=\"text-center text-sm text-muted-foreground md:text-base lg:text-left\">\n                    {feature.description}\n                  </p>\n                </div>\n              );\n            })}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature135 };\n"
+}

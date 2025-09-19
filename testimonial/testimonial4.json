@@ -1,0 +1,49 @@
+{
+    "id": "testimonial4",
+    "access": "basic",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial4.jpg",
+    "thumbnail": "testimonial4-4x3.webp",
+    "description": "A testimonial component with 1 large image & text block plus 3 smaller text cards, each featuring an avatar.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.656Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "testimonial4",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "import { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Card, CardContent, CardFooter } from \"@/components/ui/card\";\n\nconst Testimonial4 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col gap-6\">\n          <div className=\"grid grid-cols-1 items-stretch gap-x-0 gap-y-4 lg:grid-cols-3 lg:gap-4\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placeholder\"\n              className=\"h-72 w-full rounded-md object-cover lg:h-auto\"\n            />\n            <Card className=\"col-span-2 flex items-center justify-center p-6\">\n              <div className=\"flex flex-col gap-4\">\n                <q className=\"text-xl font-medium lg:text-3xl\">\n                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque\n                  eveniet suscipit corporis sequi usdam alias fugiat iusto\n                  perspiciatis.\n                </q>\n                <div className=\"flex flex-col items-start\">\n                  <p>John Doe</p>\n                  <p className=\"text-muted-foreground\">CEO, Company Name</p>\n                </div>\n              </div>\n            </Card>\n          </div>\n          <div className=\"grid grid-cols-1 gap-4 lg:grid-cols-3\">\n            <Card>\n              <CardContent className=\"px-6 pt-6 leading-7 text-foreground/70\">\n                <q>\n                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n                  Ipsa, eveniet inventore! Omnis incidunt vel iste.\n                </q>\n              </CardContent>\n              <CardFooter>\n                <div className=\"flex gap-4 leading-5\">\n                  <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                    <AvatarImage\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                      alt=\"placeholder\"\n                    />\n                  </Avatar>\n                  <div className=\"text-sm\">\n                    <p className=\"font-medium\">John Doe</p>\n                    <p className=\"text-muted-foreground\">CEO, Company Name</p>\n                  </div>\n                </div>\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardContent className=\"px-6 pt-6 leading-7 text-foreground/70\">\n                <q>\n                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n                  Ipsa, eveniet inventore! Omnis incidunt vel iste.\n                </q>\n              </CardContent>\n              <CardFooter>\n                <div className=\"flex gap-4 leading-5\">\n                  <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                    <AvatarImage\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                      alt=\"placeholder\"\n                    />\n                  </Avatar>\n                  <div className=\"text-sm\">\n                    <p className=\"font-medium\">John Doe</p>\n                    <p className=\"text-muted-foreground\">CEO, Company Name</p>\n                  </div>\n                </div>\n              </CardFooter>\n            </Card>\n            <Card>\n              <CardContent className=\"px-6 pt-6 leading-7 text-foreground/70\">\n                <q>\n                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n                  Ipsa, eveniet inventore! Omnis incidunt vel iste.\n                </q>\n              </CardContent>\n              <CardFooter>\n                <div className=\"flex gap-4 leading-5\">\n                  <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                    <AvatarImage\n                      src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                      alt=\"placeholder\"\n                    />\n                  </Avatar>\n                  <div className=\"text-sm\">\n                    <p className=\"font-medium\">John Doe</p>\n                    <p className=\"text-muted-foreground\">CEO, Company Name</p>\n                  </div>\n                </div>\n              </CardFooter>\n            </Card>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial4 };\n"
+}

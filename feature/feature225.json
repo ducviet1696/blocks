@@ -1,0 +1,52 @@
+{
+    "id": "feature225",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature225.jpg",
+    "thumbnail": "feature225-4x3.webp",
+    "description": "A component displaying AI features with interactive tabs; includes title, description, icons, and images across a 1-to-4 column grid.",
+    "createdAt": [
+        3,
+        "2025-02-01T03:18:09.628Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature225",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport {\n  Eye,\n  FileText,\n  Languages,\n  Mic,\n  MonitorSmartphone,\n  Scissors,\n  Subtitles,\n  XCircle,\n} from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\ninterface FeatureItem {\n  id: string;\n  title: string;\n  description: string;\n  icon: React.ReactNode;\n  image?: string;\n}\n\nconst FEATURES: FeatureItem[] = [\n  {\n    id: \"clips\",\n    title: \"Clips\",\n    description:\n      \"Let AI find the clips most likely to go viral, then use your creativity and Descript's easy editing to make them pop.\",\n    icon: <Scissors className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    id: \"translation\",\n    title: \"Translation\",\n    description:\n      \"Take your content to new markets with blazing-fast AI translation.\",\n    icon: <Languages className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    id: \"eye-contact\",\n    title: \"Eye Contact\",\n    description:\n      \"Go ahead, read your script. AI will make it seem like you were looking at the camera the whole time.\",\n    icon: <Eye className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  },\n  {\n    id: \"studio-sound\",\n    title: \"Studio Sound\",\n    description:\n      \"Use regenerative AI to remove noise and enhance voices. No pricey mics or soundproofing required.\",\n    icon: <Mic className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n  },\n  {\n    id: \"remove-filler\",\n    title: \"Remove filler words\",\n    description:\n      'Instantly cut all your \"ums,\" \"uhs\" and other filler words. You\\'ll save hours.',\n    icon: <XCircle className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n  },\n  {\n    id: \"green-screen\",\n    title: \"Green Screen\",\n    description:\n      \"Don't bother straightening up. Descript's AI will scrub out your background. You pick a new one.\",\n    icon: <MonitorSmartphone className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n  },\n  {\n    id: \"transcription\",\n    title: \"Transcription\",\n    description:\n      \"Drag in an audio or video file; AI will transcribe it in moments. Now the magic starts.\",\n    icon: <FileText className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    id: \"captions\",\n    title: \"Captions\",\n    description:\n      \"Add captions \u2014 and accessibility, and views, and pizazz \u2014 in a couple clicks.\",\n    icon: <Subtitles className=\"h-5 w-5\" />,\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n];\n\nconst Feature225 = () => {\n  const [activeTab, setActiveTab] = useState<string>(FEATURES[0].id);\n\n  return (\n    <section className=\"w-full bg-background py-12 md:py-24 lg:py-32\">\n      <div className=\"container px-4 md:px-6\">\n        <div className=\"flex flex-col items-center justify-center space-y-4 text-center\">\n          <h2 className=\"text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl\">\n            AI superpowers at every step\n          </h2>\n          <p className=\"max-w-[700px] text-muted-foreground md:text-xl/relaxed\">\n            Descript's AI editorial assistant tackles the tedium and leaves the\n            creative stuff to you.\n          </p>\n        </div>\n\n        <div className=\"mt-16\">\n          <Tabs\n            defaultValue={FEATURES[0].id}\n            value={activeTab}\n            onValueChange={setActiveTab}\n            className=\"w-full\"\n          >\n            <div className=\"grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4\">\n              {FEATURES.map((feature) => (\n                <Card\n                  key={feature.id}\n                  className={cn(\n                    \"cursor-pointer overflow-hidden transition-all hover:shadow-md\",\n                    activeTab === feature.id ? \"ring-2 ring-primary\" : \"\",\n                  )}\n                  onClick={() => setActiveTab(feature.id)}\n                >\n                  <CardContent className=\"p-6\">\n                    <div className=\"flex flex-col items-start space-y-2\">\n                      <div className=\"flex items-center space-x-2\">\n                        <div className=\"flex h-10 w-10 items-center justify-center rounded-full bg-primary/10\">\n                          {feature.icon}\n                        </div>\n                        <h3 className=\"text-lg font-semibold\">\n                          {feature.title}\n                        </h3>\n                      </div>\n                      <p className=\"text-left text-sm text-muted-foreground\">\n                        {feature.description}\n                      </p>\n                    </div>\n                  </CardContent>\n                </Card>\n              ))}\n            </div>\n\n            {/* Hidden TabsList with TabsTriggers for accessibility */}\n            <div className=\"sr-only\">\n              <TabsList>\n                {FEATURES.map((feature) => (\n                  <TabsTrigger key={feature.id} value={feature.id}>\n                    {feature.title}\n                  </TabsTrigger>\n                ))}\n              </TabsList>\n            </div>\n\n            <div className=\"mt-8\">\n              {FEATURES.map((feature) => (\n                <TabsContent\n                  key={feature.id}\n                  value={feature.id}\n                  className=\"mt-0 rounded-lg border bg-card p-0 shadow-sm\"\n                >\n                  <div className=\"aspect-video w-full overflow-hidden rounded-t-lg\">\n                    {feature.image ? (\n                      <img\n                        src={feature.image}\n                        alt={feature.title}\n                        className=\"h-full w-full object-cover\"\n                      />\n                    ) : (\n                      <div className=\"flex h-full w-full items-center justify-center bg-muted\">\n                        <p className=\"text-muted-foreground\">\n                          Image placeholder\n                        </p>\n                      </div>\n                    )}\n                  </div>\n                </TabsContent>\n              ))}\n            </div>\n          </Tabs>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature225 };\n"
+}

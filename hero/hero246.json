@@ -1,0 +1,52 @@
+{
+    "id": "hero246",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero246.jpg",
+    "thumbnail": "hero246-4x3.webp",
+    "description": "Data visualization block featuring a chart with trends over time, surrounded by a title, a summary, interactive buttons, and unique background patterns.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:49.644Z"
+    ],
+    "dependencies": [
+        "react",
+        "recharts"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "chart",
+            "registryId": "shadcn",
+            "registryItemUrl": "chart",
+            "docsUrl": "https://ui.shadcn.com/docs/components/chart"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero246",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport React from \"react\";\nimport { Bar, BarChart, CartesianGrid, XAxis } from \"recharts\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n  ChartConfig,\n  ChartContainer,\n  ChartTooltip,\n  ChartTooltipContent,\n} from \"@/components/ui/chart\";\n\nconst bgPattern = {\n  backgroundImage:\n    \"linear-gradient(135deg, var(--muted) 25%, transparent 25.5%, transparent 50%, var(--muted) 50.5%, var(--muted) 75%, transparent 75.5%, transparent)\",\n  backgroundSize: \"10px 10px\",\n};\n\nconst Hero246 = () => {\n  const chartData = [\n    { date: \"2024-04-01\", views: 372 },\n    { date: \"2024-04-02\", views: 277 },\n    { date: \"2024-04-03\", views: 287 },\n    { date: \"2024-04-04\", views: 502 },\n    { date: \"2024-04-05\", views: 663 },\n    { date: \"2024-04-06\", views: 641 },\n    { date: \"2024-04-07\", views: 425 },\n    { date: \"2024-04-08\", views: 729 },\n    { date: \"2024-04-09\", views: 169 },\n    { date: \"2024-04-10\", views: 451 },\n    { date: \"2024-04-11\", views: 677 },\n    { date: \"2024-04-12\", views: 502 },\n    { date: \"2024-04-13\", views: 722 },\n    { date: \"2024-04-14\", views: 357 },\n    { date: \"2024-04-15\", views: 290 },\n    { date: \"2024-04-16\", views: 328 },\n    { date: \"2024-04-17\", views: 806 },\n    { date: \"2024-04-18\", views: 774 },\n    { date: \"2024-04-19\", views: 423 },\n    { date: \"2024-04-20\", views: 239 },\n    { date: \"2024-04-21\", views: 337 },\n    { date: \"2024-04-22\", views: 394 },\n    { date: \"2024-04-23\", views: 368 },\n    { date: \"2024-04-24\", views: 677 },\n    { date: \"2024-04-25\", views: 465 },\n    { date: \"2024-04-26\", views: 205 },\n    { date: \"2024-04-27\", views: 803 },\n    { date: \"2024-04-28\", views: 302 },\n    { date: \"2024-04-29\", views: 555 },\n    { date: \"2024-04-30\", views: 834 },\n    { date: \"2024-05-01\", views: 385 },\n    { date: \"2024-05-02\", views: 603 },\n    { date: \"2024-05-03\", views: 437 },\n    { date: \"2024-05-04\", views: 805 },\n    { date: \"2024-05-05\", views: 871 },\n    { date: \"2024-05-06\", views: 1018 },\n    { date: \"2024-05-07\", views: 688 },\n    { date: \"2024-05-08\", views: 359 },\n    { date: \"2024-05-09\", views: 407 },\n  ];\n\n  const chartConfig = {\n    views: {\n      label: \"Page Views\",\n      color: \"var(--chart-2)\",\n    },\n  } satisfies ChartConfig;\n\n  return (\n    <section className=\"relative grid w-screen overflow-hidden py-32\">\n      <div className=\"container relative z-10 h-full grid-cols-1 items-center justify-center gap-6\">\n        <div className=\"flex flex-col items-center justify-center text-center\">\n          <div className=\"text-muted-foreground flex items-center justify-center gap-3 text-sm font-medium tracking-tight\">\n            <span className=\"inline-block size-2 rounded-full bg-green-500\" />\n            <span className=\"uppercase\">new Block in 10 days</span>\n          </div>\n          <h1 className=\"mt-4 max-w-lg text-5xl font-semibold tracking-tighter lg:max-w-2xl lg:text-6xl\">\n            A Subscription build to fuel your Growth\n          </h1>\n          <p className=\"text-muted-foreground mt-7 max-w-lg\">\n            Lorem, ipsum dolor sit amet consectetur adipisicing elit.\n          </p>\n        </div>\n        <div className=\"mt-15 relative flex h-20 w-full items-center justify-center border border-x-0\">\n          <Button className=\"h-12 rounded-none !px-8\">Get Your Now</Button>\n          <Button\n            variant=\"ghost\"\n            className=\"flex h-12 items-center gap-3 rounded-none !px-8\"\n          >\n            <PlayIcon />\n            How it works\n          </Button>\n          <BgPattern />\n        </div>\n        <div className=\"h-fit w-full rounded-2xl p-6 lg:h-[50vh]\">\n          <ChartContainer config={chartConfig} className=\"h-full w-full\">\n            <BarChart\n              accessibilityLayer\n              data={chartData}\n              margin={{\n                left: 12,\n                right: 12,\n              }}\n            >\n              <CartesianGrid vertical={false} />\n              <XAxis\n                dataKey=\"date\"\n                tickLine={false}\n                axisLine={false}\n                tickMargin={8}\n                minTickGap={32}\n                tickFormatter={(value) => {\n                  const date = new Date(value);\n                  return date.toLocaleDateString(\"en-US\", {\n                    month: \"short\",\n                    day: \"numeric\",\n                  });\n                }}\n              />\n              <ChartTooltip\n                content={\n                  <ChartTooltipContent\n                    className=\"w-[150px]\"\n                    nameKey=\"views\"\n                    labelFormatter={(value) => {\n                      return new Date(value).toLocaleDateString(\"en-US\", {\n                        month: \"short\",\n                        day: \"numeric\",\n                        year: \"numeric\",\n                      });\n                    }}\n                  />\n                }\n              />\n              <Bar dataKey=\"views\" fill=\"#2B7FFF\" />\n            </BarChart>\n          </ChartContainer>\n        </div>\n        <div className=\"relative h-20 border\">\n          <BgPattern sideLines={false} />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero246 };\n\nconst PlayIcon = ({ className }: { className?: string }) => {\n  return (\n    <svg\n      width=\"15\"\n      height=\"18\"\n      viewBox=\"0 0 15 18\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      className={className}\n    >\n      <path\n        d=\"M1.11523 3.94458C1.11523 2.36225 2.86573 1.40657 4.19675 2.26222L12.4982 7.59889C13.7229 8.38617 13.7229 10.1763 12.4982 10.9636L4.19675 16.3003C2.86573 17.1559 1.11523 16.2003 1.11523 14.6179V3.94458Z\"\n        fill=\"black\"\n        stroke=\"black\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n      />\n    </svg>\n  );\n};\n\nconst BgPattern = ({ sideLines = true }: { sideLines?: boolean }) => {\n  return (\n    <>\n      {/* bg pattern left */}\n      <div\n        className=\"absolute left-0 top-1/2 z-20 size-20 -translate-x-full -translate-y-1/2 border border-r-0\"\n        style={bgPattern}\n      >\n        <span className=\"bg-foreground absolute -right-1 -top-1 z-20 size-2\" />\n        <span className=\"bg-foreground absolute -bottom-1 -right-1 z-20 size-2\" />\n        <span className=\"bg-foreground absolute -bottom-1 -left-1 z-20 size-2\" />\n        <span className=\"bg-foreground absolute -left-1 -top-1 z-20 size-2\" />\n      </div>\n\n      {/* bg pattern right */}\n      <div\n        className=\"absolute right-0 top-1/2 z-20 size-20 -translate-y-1/2 translate-x-full border border-l-0\"\n        style={bgPattern}\n      >\n        <span className=\"bg-foreground absolute -right-1 -top-1 z-20 size-2\" />\n        <span className=\"bg-foreground absolute -bottom-1 -right-1 z-20 size-2\" />\n        <span className=\"bg-foreground absolute -bottom-1 -left-1 z-20 size-2\" />\n        <span className=\"bg-foreground absolute -left-1 -top-1 z-20 size-2\" />\n      </div>\n\n      {/* bg Lines left */}\n      {sideLines && (\n        <div className=\"absolute left-0 z-10 h-[200vh] w-px border-l\" />\n      )}\n      {sideLines && (\n        <div className=\"absolute -left-20 z-10 h-[200vh] w-px border-l\" />\n      )}\n\n      {/* bg Lines right */}\n      {sideLines && (\n        <div className=\"absolute right-0 z-10 h-[200vh] w-px border-l\" />\n      )}\n      {sideLines && (\n        <div className=\"absolute -right-20 z-10 h-[200vh] w-px border-l\" />\n      )}\n    </>\n  );\n};\n"
+}

@@ -1,0 +1,46 @@
+{
+    "id": "hero237",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero237.jpg",
+    "thumbnail": "hero237-4x3.webp",
+    "description": "A component featuring a split layout with a \"Why Us?\" pitch, key stats, and orbiting tech logos on one side, and dynamic circular orbit animations on the other.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:33.941Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "orbiting-circles",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/orbiting-circles",
+            "docsUrl": "https://magicui.design/docs/components/orbiting-circles"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "magicui"
+        ]
+    },
+    "figma": true,
+    "slug": "hero237",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Shield, Users, Zap } from \"lucide-react\";\nimport React from \"react\";\n\nimport { OrbitingCircles } from \"@/components/magicui/orbiting-circles\";\n\nconst Hero237 = () => {\n  const circle1Images = [\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vue-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vite-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg\",\n  ];\n\n  const circle2Images = [\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/typescript-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-icon.svg\",\n  ];\n\n  const circle3Images = [\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/notion-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/laravel-icon.svg\",\n  ];\n\n  const circle4Images = [\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/dropbox-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/brave-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vscode-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-icon.svg\",\n    \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg\",\n  ];\n\n  const stats = [\n    {\n      icon: <Users className=\"size-6 stroke-1 opacity-20 md:size-10\" />,\n      title: \"+100k\",\n      description: \"Daily Users\",\n    },\n    {\n      icon: <Zap className=\"size-6 stroke-1 opacity-20 md:size-10\" />,\n      title: \"99.9%\",\n      description: \"Uptime \",\n    },\n    {\n      icon: <Shield className=\"size-6 stroke-1 opacity-20 md:size-10\" />,\n      title: \"24/7\",\n      description: \" Support\",\n    },\n  ];\n\n  return (\n    <section className=\"relative border border-b w-screen overflow-hidden py-32\">\n      <div className=\"container relative flex flex-col lg:flex-row\">\n        <div className=\"mt-10 space-y-12 lg:w-1/2\">\n          <p className=\"bg-muted w-fit rounded-full px-4 py-1 text-sm uppercase\">\n            Why Us?\n          </p>\n          <h1 className=\"font-calSans mt-3 max-w-lg text-6xl font-medium lg:text-7xl\">\n            <span className=\"opacity-30\">The Only blocks</span> you need\n          </h1>\n          <p className=\"text-muted-foreground max-w-lg text-lg\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n            eiusmod tempor incididunt ut labore et dolore magna aliqua.\n          </p>\n\n          <ul className=\"mt-18 flex flex-wrap gap-9\">\n            {stats.map((stat, index) => (\n              <li key={stat.title} className=\"flex items-center gap-4\">\n                <div className=\"md:size-18 flex size-12 items-center justify-center rounded-2xl border\">\n                  {stat.icon}\n                </div>\n                <div>\n                  <h2 className=\"font-calSans text-2xl font-medium md:text-3xl\">\n                    {stat.title}\n                  </h2>\n                  <p className=\"text-sm md:text-base\">{stat.description}</p>\n                </div>\n                {index !== stats.length - 1 && (\n                  <div className=\"via-border ml-4 h-full w-px bg-gradient-to-t from-black to-transparent\" />\n                )}\n              </li>\n            ))}\n          </ul>\n        </div>\n        <div className=\"h-112 relative lg:w-1/2\">\n          <div className=\"relative -left-35 lg:left-0 flex h-[1100px] w-[1500px] flex-col items-center justify-center lg:absolute\">\n            <OrbitingCircles iconSize={40} radius={310} speed={2}>\n              {circle1Images.map((src, index) => (\n                <div key={index} className=\"size-12\">\n                  <img src={src} className=\"size-full object-contain\" alt=\"\" />\n                </div>\n              ))}\n            </OrbitingCircles>\n            <OrbitingCircles iconSize={40} radius={390} reverse speed={2}>\n              {circle2Images.map((src, index) => (\n                <div key={index} className=\"size-12\">\n                  <img src={src} className=\"size-full object-contain\" alt=\"\" />\n                </div>\n              ))}\n            </OrbitingCircles>\n            <OrbitingCircles iconSize={40} radius={470} speed={2}>\n              {circle3Images.map((src, index) => (\n                <div key={index} className=\"size-12\">\n                  <img src={src} className=\"size-full object-contain\" alt=\"\" />\n                </div>\n              ))}\n            </OrbitingCircles>\n            <OrbitingCircles iconSize={40} radius={550} reverse speed={1}>\n              {circle4Images.map((src, index) => (\n                <div key={index} className=\"size-12\">\n                  <img src={src} className=\"size-full object-contain\" alt=\"\" />\n                </div>\n              ))}\n            </OrbitingCircles>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero237 };\n"
+}

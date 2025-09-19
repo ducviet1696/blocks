@@ -1,0 +1,43 @@
+{
+    "id": "feature207",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature207.jpg",
+    "thumbnail": "feature207-4x3.webp",
+    "description": "A component showcasing a 3-step workflow with titles, descriptions, and separators, styled in 2 columns for larger screens.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.793Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature207",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Separator } from \"@/components/ui/separator\";\n\nconst Feature207 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <p className=\"text-sm font-light\">WORKFLOW</p>\n        <h2 className=\"mt-2 text-3xl font-medium md:text-5xl\">\n          Capturing Perfect Moments\n        </h2>\n        <div className=\"mt-14\">\n          <Separator />\n          <div className=\"py-8\">\n            <div className=\"flex gap-4 md:items-center\">\n              <span className=\"mt-0.5 font-mono text-muted-foreground md:mt-0\">\n                01\n              </span>\n              <div className=\"grid items-center gap-3 md:grid-cols-2 md:gap-8\">\n                <h3 className=\"text-2xl\">Vision & Preparation</h3>\n                <p className=\"text-muted-foreground\">\n                  We discuss your photographic goals, scout locations, and\n                  develop a detailed shot list to ensure we capture your perfect\n                  moments.\n                </p>\n              </div>\n            </div>\n          </div>\n          <Separator />\n          <div className=\"py-8\">\n            <div className=\"flex gap-4 md:items-center\">\n              <span className=\"mt-0.5 font-mono text-muted-foreground md:mt-0\">\n                02\n              </span>\n              <div className=\"grid items-center gap-3 md:grid-cols-2 md:gap-8\">\n                <h3 className=\"text-2xl\">Shooting & Direction</h3>\n                <p className=\"text-muted-foreground\">\n                  Our skilled photographers utilize professional equipment,\n                  creative composition techniques, and expert lighting to create\n                  stunning imagery.\n                </p>\n              </div>\n            </div>\n          </div>\n          <Separator />\n          <div className=\"py-8\">\n            <div className=\"flex gap-4 md:items-center\">\n              <span className=\"mt-0.5 font-mono text-muted-foreground md:mt-0\">\n                03\n              </span>\n              <div className=\"grid items-center gap-3 md:grid-cols-2 md:gap-8\">\n                <h3 className=\"text-2xl\">Editing & Delivery</h3>\n                <p className=\"text-muted-foreground\">\n                  We meticulously process each image with professional\n                  retouching techniques to deliver a polished collection that\n                  exceeds your expectations.\n                </p>\n              </div>\n            </div>\n          </div>\n          <Separator />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature207 };\n"
+}

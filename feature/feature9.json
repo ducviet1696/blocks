@@ -1,0 +1,57 @@
+{
+    "id": "feature9",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature9.jpg",
+    "thumbnail": "feature9-4x3.webp",
+    "description": "A component featuring a central title, description, badges, two textual cards, and an image in a three-column layout; includes \"Read more\" buttons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.598Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature9",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Card,\n  CardContent,\n  CardFooter,\n  CardHeader,\n} from \"@/components/ui/card\";\n\nconst Feature9 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-6\">\n          <Badge variant=\"outline\">Badge</Badge>\n          <h2 className=\"mb-2 text-center text-3xl font-semibold lg:text-5xl\">\n            This is where your feature goes\n          </h2>\n          <p className=\"text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur.\n          </p>\n          <div className=\"mt-6 flex flex-col gap-6 lg:flex-row\">\n            <Card className=\"flex flex-col justify-between gap-5 lg:w-1/3\">\n              <CardHeader className=\"items-start\">\n                <Badge variant=\"outline\">Badge</Badge>\n              </CardHeader>\n              <CardContent className=\"text-lg lg:text-2xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,\n                nostrum ullam. Voluptatibus.\n              </CardContent>\n              <CardFooter>\n                <Button variant=\"outline\">\n                  Read more\n                  <ChevronRight className=\"ml-2 h-4 w-4\" />\n                </Button>\n              </CardFooter>\n            </Card>\n            <div className=\"lg:w-1/3\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"\"\n                className=\"h-full max-h-96 w-full rounded-md object-cover\"\n              />\n            </div>\n            <Card className=\"flex flex-col justify-between gap-5 lg:w-1/3\">\n              <CardHeader className=\"items-start\">\n                <Badge variant=\"outline\">Badge</Badge>\n              </CardHeader>\n              <CardContent className=\"text-lg lg:text-2xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,\n                nostrum ullam. Voluptatibus.\n              </CardContent>\n              <CardFooter>\n                <Button variant=\"outline\">\n                  Read more\n                  <ChevronRight className=\"ml-2 h-4 w-4\" />\n                </Button>\n              </CardFooter>\n            </Card>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature9 };\n"
+}

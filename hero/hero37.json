@@ -1,0 +1,45 @@
+{
+    "id": "hero37",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero37.jpg",
+    "thumbnail": "hero37-4x3.webp",
+    "description": "A component featuring a center-aligned text block with a \"New Release\" announcement, headline, and descriptive text, followed by primary and secondary buttons. Includes a decorative background of spiraled dots and three angled, overlapping blocks beneath.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.618Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero37",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero37 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container flex flex-col items-center text-center\">\n        <p className=\"text-xs uppercase\">New Release</p>\n        <h1 className=\"my-3 text-2xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-5xl\">\n          Welcome to Our Website\n        </h1>\n        <p className=\"mb-6 max-w-xl text-muted-foreground md:mb-12 lg:text-xl\">\n          Elig doloremque mollitia fugiat omnis! Porro facilis quo animi\n          consequatur.\n        </p>\n        <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row\">\n          <Button className=\"w-full sm:w-auto\">\n            <ArrowRight className=\"mr-2 size-4\" />\n            Primary\n          </Button>\n          <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n            Secondary\n          </Button>\n        </div>\n      </div>\n      <div className=\"mt-16 flex flex-col items-center justify-center lg:mt-32\">\n        <div className=\"b relative mx-auto aspect-square w-[95%] max-w-[31.25rem] sm:w-full\">\n          <div className=\"absolute inset-x-1/2 top-full z-0 flex w-[120rem] -translate-x-1/2 -translate-y-[4rem] md:-translate-y-[2rem]\">\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              version=\"1.1\"\n              viewBox=\"0 0 800 800\"\n              className=\"h-full w-full text-muted-foreground opacity-20\"\n            >\n              {Array.from(Array(4000).keys()).map((dot, index, array) => {\n                const angle = 0.2 * index;\n                const scalar = 300 + index * (100 / array.length);\n                const x = Math.round(Math.cos(angle) * scalar);\n                const y = Math.round(Math.sin(angle) * scalar);\n                return (\n                  <circle\n                    key={index}\n                    r={1}\n                    cx={400 + x}\n                    cy={400 + y}\n                    fill=\"currentColor\"\n                    opacity={(array.length - index) / array.length}\n                  />\n                );\n              })}\n            </svg>\n          </div>\n          <div className=\"absolute inset-0 z-5 m-auto flex aspect-29/36 w-4/5 max-w-[16rem] translate-x-[-75%] translate-y-[10%] scale-[0.85] rotate-[-15deg] justify-center rounded-lg border border-border bg-accent opacity-60 md:w-[21.25rem] md:max-w-[21.25rem]\"></div>\n          <div className=\"absolute inset-0 z-10 m-auto flex aspect-29/36 w-4/5 max-w-[16rem] justify-center rounded-lg border border-border bg-accent md:w-[21.25rem] md:max-w-[21.25rem]\"></div>\n          <div className=\"absolute inset-0 z-5 m-auto flex aspect-29/36 w-4/5 max-w-[16rem] translate-x-[75%] translate-y-[10%] scale-[0.85] rotate-[15deg] justify-center rounded-lg border border-border bg-accent opacity-60 md:w-[21.25rem] md:max-w-[21.25rem]\"></div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero37 };\n"
+}

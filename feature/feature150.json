@@ -1,0 +1,45 @@
+{
+    "id": "feature150",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature150.jpg",
+    "thumbnail": "feature150-4x3.webp",
+    "description": "A component showcasing 2 CRM solutions with hover effects, images, and a \"Learn More\" or \"Get Started\" button.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.663Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature150",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ArrowUpRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst integrations = [\n  {\n    title: \"CRM Solutions for Your Business\",\n    description:\n      \"Streamline your customer relationships and boost productivity with our powerful CRM software.\",\n    image:\n      \"https://images.unsplash.com/photo-1647715360138-33fb6fe68539?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    buttonTitle: \"Learn More\",\n  },\n  {\n    title: \"Empowering Customer Engagement\",\n    description:\n      \"Engage with your customers like never before and drive sales with our intuitive CRM tools.\",\n    image:\n      \"https://images.unsplash.com/photo-1563952532949-3d1a874ad614?q=80&w=1951&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    buttonTitle: \"Get Started\",\n  },\n];\n\nconst Feature150 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"grid min-h-[400px] grid-cols-1 gap-1 lg:grid-cols-2\">\n        {integrations.map((item, index) => (\n          <a\n            key={index}\n            className={`relative flex ${index === 0 ? \"lg:justify-center\" : \"lg:justify-start\"} group cursor-pointer items-center justify-start bg-muted-foreground/10 p-10`}\n          >\n            <img\n              src={item.image}\n              alt={item.title}\n              className=\"absolute top-0 left-0 z-[-1] h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100\"\n            />\n\n            <div className=\"flex max-w-sm flex-col items-start justify-center gap-10\">\n              <div className=\"flex flex-col gap-3\">\n                <h1 className=\"text-3xl text-black duration-500 group-hover:text-white\">\n                  {item.title}\n                </h1>\n                <p className=\"text-lg text-black duration-500 group-hover:text-white\">\n                  {item.description}\n                </p>\n              </div>\n              <Button\n                variant=\"outline\"\n                className=\"rounded-full transition-all duration-300 outline-none group-hover:bg-transparent group-hover:text-white\"\n              >\n                {item.buttonTitle} <ArrowUpRight strokeWidth=\"1\" />\n              </Button>\n            </div>\n          </a>\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Feature150 };\n"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "hero24",
+    "access": "pro",
+    "weight": 7,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero24.jpg",
+    "thumbnail": "hero24-4x3.webp",
+    "description": "A marketing block with an image, title, button, and 4 columns highlighting features with icons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.611Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero24",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Expand, Globe, MoveRight, Rocket, Wrench } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero24 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"text-center\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n            alt=\"placeholder\"\n            className=\"mx-auto mb-5 w-16 md:mb-6 md:w-24 lg:mb-7 lg:w-28\"\n          />\n          <span className=\"mb-3 text-sm tracking-widest text-muted-foreground md:text-base\">\n            PLATFORM\n          </span>\n          <h1 className=\"mt-4 text-4xl font-semibold text-balance lg:text-6xl\">\n            Develop, launch, and grow your service with our platform\n          </h1>\n          <Button className=\"mt-8\" size=\"lg\">\n            Start now for free\n            <MoveRight className=\"ml-2\" strokeWidth={1} />\n          </Button>\n        </div>\n        <div className=\"mt-16 grid gap-px overflow-hidden rounded-lg border bg-input md:grid-cols-2 lg:grid-cols-4\">\n          <div className=\"flex flex-col gap-3 bg-background p-5 md:gap-6\">\n            <Globe className=\"size-6 shrink-0\" />\n            <div>\n              <h2 className=\"text-sm font-semibold md:text-base\">\n                Robust Infrastructure\n              </h2>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Reliable and scalable infrastructure, easy to manage.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-3 bg-background p-5 md:gap-6\">\n            <Rocket className=\"size-6 shrink-0\" />\n            <div>\n              <h2 className=\"text-sm font-semibold md:text-base\">Easy Setup</h2>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Quick and simple configuration for any use case.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-3 bg-background p-5 md:gap-6\">\n            <Expand className=\"size-6 shrink-0\" />\n            <div>\n              <h2 className=\"text-sm font-semibold md:text-base\">\n                Effortless Scaling\n              </h2>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Built to handle increased demand with ease.\n              </p>\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-3 bg-background p-5 md:gap-6\">\n            <Wrench className=\"size-6 shrink-0\" />\n            <div>\n              <h2 className=\"text-sm font-semibold md:text-base\">\n                Low Maintenance\n              </h2>\n              <p className=\"text-sm text-muted-foreground md:text-base\">\n                Focus on building, not on maintenance tasks.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero24 };\n"
+}

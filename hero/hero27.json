@@ -1,0 +1,43 @@
+{
+    "id": "hero27",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero27.jpg",
+    "thumbnail": "hero27-4x3.webp",
+    "description": "A component with a decorative background, a large, interactive 3-column heading, a subheading, descriptive text, and a button. Features hover effects on headings and button.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.612Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero27",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero27 = () => {\n  return (\n    <section className=\"relative overflow-hidden py-32\">\n      {/* Decorative background element */}\n      <div className=\"absolute inset-0 -z-10 bg-linear-to-br from-background to-background/80\" />\n      <div className=\"absolute top-1/2 right-0 h-96 w-96 translate-x-1/3 -translate-y-1/2 rounded-full bg-primary/10 blur-3xl\" />\n\n      <div className=\"relative container\">\n        <div className=\"mx-auto flex max-w-6xl flex-col items-start justify-between gap-10 md:gap-20 lg:flex-row lg:items-end\">\n          <h1 className=\"relative text-6xl font-bold tracking-tighter md:text-[8vw] lg:w-3/5 2xl:text-9xl\">\n            <span className=\"relative inline-block transition-transform duration-300 hover:translate-x-1\">\n              High\n            </span>\n            <br />\n            <span className=\"relative inline-block transition-transform duration-300 hover:translate-x-1\">\n              Scale\n            </span>\n            <br />\n            <span className=\"relative inline-block transition-transform duration-300 hover:translate-x-1\">\n              Heading.\n            </span>\n          </h1>\n          <div className=\"lg:max-w-auto max-w-lg space-y-5 lg:mb-4 lg:w-2/5\">\n            <p className=\"text-xl font-bold md:text-4xl\">\n              Small\n              <br />\n              Subheading\n              <br />\n            </p>\n            <p className=\"text-lg text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,\n              optio quis? Veniam accusamus quaerat illum dolorem eos atque\n              reiciendis numquam. Veniam accusamus quaerat illum\n            </p>\n            <Button className=\"group relative mt-8 overflow-hidden\" size=\"lg\">\n              <span className=\"relative z-10\">Get Started</span>\n              <span className=\"absolute inset-0 translate-y-full bg-primary/10 transition-transform duration-300 group-hover:translate-y-0\" />\n            </Button>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero27 };\n"
+}

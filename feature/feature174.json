@@ -1,0 +1,43 @@
+{
+    "id": "feature174",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature174.jpg",
+    "thumbnail": "feature174-4x3.webp",
+    "description": "A component showcasing features across a grid layout with dynamic fading effects; includes titles, descriptions, and images.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:56:18.588Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature174",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { cn } from \"@/lib/utils\";\n\nimport { Card, CardContent, CardHeader } from \"@/components/ui/card\";\n\ntype FadeDirection = \"right\" | \"bottom\" | \"top\";\n\ntype ItemType = {\n  title: string;\n  description: string;\n  image: { src: string; alt: string; className: string };\n  fade: FadeDirection[];\n  containerClassName?: string;\n};\n\nconst ITEMS: ItemType[] = [\n  {\n    title: \"Reusable templates.\",\n    description:\n      \"Draft lightning-fast documents with our Smart Instructions and Templates.\",\n    containerClassName: \"flex-1\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n      alt: \"Cycle 37 graph showing Scope, Started, and Completed metrics\",\n      className:\n        \"lg:translate-x-20 translate-x-6 md:translate-x-10 rounded-b-none\",\n    },\n    fade: [\"right\"],\n  },\n  {\n    title: \"Simplify your stack.\",\n    description: \"No more Confluence, SharePoint, or Microsoft Word.\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n      alt: \"Triage interface showing issue management options\",\n      className: \"lg:translate-x-20 translate-x-6 md:translate-x-10\",\n    },\n    fade: [\"right\", \"bottom\"],\n  },\n  {\n    title: \"Access controls.\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.\",\n    containerClassName: \"mb-10 translate-x-6 md:translate-x-10\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n      alt: \"Access controls interface showing People, Compliance, and Security options\",\n      className: \"\",\n    },\n    fade: [\"right\", \"top\"],\n  },\n  {\n    title: \"Task chat.\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.\",\n    containerClassName: \"mx-10 my-6 aspect-280/83 \",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n      alt: \"Task chat interface showing a conversation\",\n      className: \"\",\n    },\n    fade: [],\n  },\n  {\n    title: \"Cycle analysis.\",\n    description:\n      \"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.\",\n    containerClassName: \"mb-10 mx-10 lg:mx-20 aspect-230/124\",\n    image: {\n      src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n      alt: \"Cycle analysis showing backlog priorities and statistics\",\n      className: \"\",\n    },\n    fade: [],\n  },\n];\n\nconst Feature174 = () => {\n  return (\n    <section className=\"bg-muted py-32\">\n      <div className=\"container\">\n        <h2 className=\"text-center text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl\">\n          Streamline your resource allocation and execution\n        </h2>\n\n        <div className=\"mt-8 grid grid-cols-1 gap-4 md:mt-12 md:max-h-[800px] md:grid-cols-6 md:grid-rows-5 lg:mt-20\">\n          {ITEMS.map((item, i) => {\n            const gridClasses = {\n              0: \"md:col-span-3 md:row-span-3\",\n              1: \"md:col-span-3 md:row-span-3 md:col-start-4\",\n              2: \"md:col-span-2 md:row-span-2 md:row-start-4\",\n              3: \"md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-4\",\n              4: \"md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-4\",\n            }[i];\n            return <Item key={i} {...item} className={gridClasses} />;\n          })}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nconst Item = ({\n  title,\n  description,\n  image,\n  fade = [],\n  className,\n  containerClassName,\n}: ItemType & { className?: string }) => {\n  return (\n    <Card\n      className={cn(\n        \"relative flex max-h-[400px] flex-col overflow-hidden border-none px-0 text-lg shadow-none md:max-h-none\",\n        className,\n      )}\n    >\n      <CardHeader className=\"mb-2\">\n        <h3 className=\"inline leading-tight font-semibold text-balance\">\n          {title}{\" \"}\n          <span className=\"font-medium text-muted-foreground\">\n            {description}\n          </span>\n        </h3>\n      </CardHeader>\n\n      <CardContent\n        className={cn(\"relative flex overflow-hidden p-0\", containerClassName)}\n      >\n        {fade.includes(\"right\") && (\n          <div className=\"absolute inset-0 z-10 bg-linear-to-r from-transparent via-transparent to-background\" />\n        )}\n        {fade.includes(\"bottom\") && (\n          <div className=\"absolute inset-0 z-10 bg-linear-to-b from-transparent via-transparent to-background\" />\n        )}\n        {fade.includes(\"top\") && (\n          <div className=\"absolute inset-0 z-10 bg-linear-to-t from-transparent via-transparent to-background\" />\n        )}\n        <img\n          src={image.src}\n          alt={image.alt}\n          className={cn(\n            \"flex-1 rounded-xl border object-cover\",\n            image.className,\n          )}\n        />\n      </CardContent>\n    </Card>\n  );\n};\n\nexport { Feature174 };\n"
+}

@@ -1,0 +1,64 @@
+{
+    "id": "pricing16",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing16.jpg",
+    "thumbnail": "pricing16-4x3.webp",
+    "description": "A pricing component with a toggle for monthly/yearly billing, displaying 3 tiers, discounts for yearly plans, and key features.",
+    "createdAt": [
+        3,
+        "2024-12-27T07:51:28.663Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "pricing16",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { CheckCircle2, Zap } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst Pricing16 = () => {\n  const [isMonthly, setIsMonthly] = useState(true);\n\n  return (\n    <section className=\"bg-muted/50 py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-6\">\n          <Badge variant=\"outline\">Pricing</Badge>\n          <h1 className=\"text-center text-4xl font-semibold text-balance sm:text-5xl lg:text-7xl\">\n            Simple pricing for everyone, start for free today\n          </h1>\n          <Tabs\n            value={isMonthly ? \"monthly\" : \"yearly\"}\n            onValueChange={(value) => setIsMonthly(value === \"monthly\")}\n            className=\"w-80\"\n          >\n            <TabsList className=\"grid w-full grid-cols-2\">\n              <TabsTrigger value=\"monthly\">Billed Monthly</TabsTrigger>\n              <TabsTrigger value=\"yearly\">Billed Yearly</TabsTrigger>\n            </TabsList>\n          </Tabs>\n          <div className=\"mx-auto mt-4 grid w-full max-w-5xl gap-6 lg:grid-cols-3\">\n            <div className=\"w-full rounded-lg border bg-background p-8 shadow-sm lg:max-w-96\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"text-xl font-semibold\">Free</h3>\n                <p className=\"text-sm text-muted-foreground\">Free forever</p>\n              </div>\n              <Separator className=\"my-6\" />\n              <div className=\"flex items-start font-semibold\">\n                <p className=\"text-xl\">$</p>\n                <p className=\"text-5xl leading-none\">0</p>\n              </div>\n              <p className=\"text-sm text-muted-foreground\">\n                per user/month, billed {isMonthly ? \"monthly\" : \"yearly\"}\n              </p>\n              <Button variant=\"outline\" className=\"mt-4 mb-2 w-full\">\n                Start for free\n              </Button>\n              <p className=\"text-center text-sm text-muted-foreground\">\n                No credit card required\n              </p>\n              <Separator className=\"my-6\" />\n              <div>\n                <p className=\"mb-3 text-sm font-semibold\">Key features: </p>\n                <ul className=\"flex flex-col gap-2\">\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Up to 5 projects</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Up to 5 users</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Up to 50 tasks</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Task management</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Analytics & reports</p>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div className=\"w-full rounded-lg border bg-background p-8 shadow-sm lg:max-w-96\">\n              <div className=\"flex flex-col gap-1\">\n                <div className=\"flex items-center gap-2\">\n                  <h3 className=\"text-xl font-semibold\">Starter</h3>\n                  <Badge className=\"flex items-center gap-1\">\n                    <Zap className=\"size-3\" />\n                    Popular\n                  </Badge>\n                </div>\n                <p className=\"text-sm text-muted-foreground\">\n                  For small teams and startups\n                </p>\n              </div>\n              <Separator className=\"my-6\" />\n              <div className=\"flex items-center gap-2\">\n                <div className=\"flex items-start font-semibold\">\n                  <p className=\"text-xl\">$</p>\n                  <p className=\"text-5xl leading-none\">\n                    {isMonthly ? \"20\" : \"15\"}\n                  </p>\n                </div>\n                {!isMonthly && (\n                  <div className=\"flex flex-col text-sm\">\n                    <p className=\"font-semibold text-destructive\">25% off</p>\n                    <p className=\"text-muted-foreground line-through\">$20</p>\n                  </div>\n                )}\n              </div>\n              <p className=\"text-sm text-muted-foreground\">\n                per user/month, billed {isMonthly ? \"monthly\" : \"yearly\"}\n              </p>\n              <Button className=\"mt-4 mb-2 w-full\">Try for 14 days</Button>\n              <p className=\"text-center text-sm text-muted-foreground\">\n                No credit card required\n              </p>\n              <Separator className=\"my-6\" />\n              <div>\n                <p className=\"mb-3 text-sm font-semibold\">Key features: </p>\n                <ul className=\"flex flex-col gap-2\">\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Unlimited projects</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Unlimited users</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Unlimited tasks</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>File storage</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Customizable workflows</p>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div className=\"w-full rounded-lg border bg-background p-8 shadow-sm lg:max-w-96\">\n              <div className=\"flex flex-col gap-1\">\n                <h3 className=\"text-xl font-semibold\">Enterprise</h3>\n                <p className=\"text-sm text-muted-foreground\">\n                  For large teams and enterprises\n                </p>\n              </div>\n              <Separator className=\"my-6\" />\n              <div className=\"flex items-center gap-2\">\n                <div className=\"flex items-start font-semibold\">\n                  <p className=\"text-xl\">$</p>\n                  <p className=\"text-5xl leading-none\">\n                    {isMonthly ? \"40\" : \"30\"}\n                  </p>\n                </div>\n                {!isMonthly && (\n                  <div className=\"flex flex-col text-sm\">\n                    <p className=\"font-semibold text-destructive\">25% off</p>\n                    <p className=\"text-muted-foreground line-through\">$40</p>\n                  </div>\n                )}\n              </div>\n              <p className=\"text-sm text-muted-foreground\">\n                per user/month, billed {isMonthly ? \"monthly\" : \"yearly\"}\n              </p>\n              <Button variant=\"outline\" className=\"mt-4 mb-2 w-full\">\n                Try for 14 days\n              </Button>\n              <p className=\"text-center text-sm text-muted-foreground\">\n                No credit card required\n              </p>\n              <Separator className=\"my-6\" />\n              <div>\n                <p className=\"mb-3 text-sm font-semibold\">Key features: </p>\n                <ul className=\"flex flex-col gap-2\">\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Unlimited integrations</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Webhooks</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>API access</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>SAML authentication</p>\n                  </li>\n                  <li className=\"flex items-center gap-2\">\n                    <CheckCircle2 className=\"h-4 w-4 shrink-0 text-emerald-700\" />\n                    <p>Dedicated support</p>\n                  </li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing16 };\n"
+}

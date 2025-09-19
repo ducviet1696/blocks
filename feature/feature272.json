@@ -1,0 +1,46 @@
+{
+    "id": "feature272",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature272.jpg",
+    "thumbnail": "feature272-4x3.webp",
+    "description": "A 3-step guide block with a centered title, intro text, and a grid of 3 columns each detailing a step. Features arrows pointing between steps.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:50:43.807Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "background-beams.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/background-beams.json",
+            "docsUrl": "https://ui.aceternity.com/components/background-beams"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature272",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { BackgroundBeams } from \"@/components/aceternity/background-beams\";\n\nconst Feature272 = () => {\n  return (\n    <section className=\"bg-background text-foreground dark h-full w-screen overflow-hidden py-32\">\n      <div className=\"container relative z-20 flex h-full flex-col items-center justify-center gap-10\">\n        <p>HOW TO IMPLEMENT</p>\n        <h1 className=\"text-center text-5xl font-medium font-semibold tracking-tighter lg:text-7xl\">\n          Just 3 Steps to get Started\n        </h1>\n        <p className=\"text-muted-foreground max-w-3xl text-center\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad\n          minim veniam,\n        </p>\n        <div className=\"relative grid grid-cols-1 md:grid-cols-3\">\n          <div className=\"relative space-y-5 border p-10\">\n            <h3 className=\"text-xl font-medium font-semibold tracking-tighter\">\n              Copy the Shadcn CLI\n            </h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n              enim\n            </p>\n            <div className=\"bg-background absolute -bottom-5 right-1/2 z-10 flex size-10 translate-x-1/2 rotate-90 items-center justify-center gap-2 rounded-full border md:-right-5 md:top-1/2 md:-translate-y-1/2 md:translate-x-0 md:rotate-0\">\n              <ArrowRight className=\"size-6\" />\n            </div>\n          </div>\n          <div className=\"relative space-y-5 border p-10\">\n            <h3 className=\"text-xl font-medium font-semibold tracking-tighter\">\n              Paste CLI to your project\n            </h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n              enim\n            </p>\n            <div className=\"bg-background absolute -bottom-5 right-1/2 z-10 flex size-10 translate-x-1/2 rotate-90 items-center justify-center gap-2 rounded-full border md:-right-5 md:top-1/2 md:-translate-y-1/2 md:translate-x-0 md:rotate-0\">\n              <ArrowRight className=\"size-6\" />\n            </div>\n          </div>\n\n          <div className=\"space-y-5 border p-10\">\n            <h3 className=\"text-xl font-medium font-semibold tracking-tighter\">\n              Edit as you want\n            </h3>\n            <p className=\"text-muted-foreground\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n              enim\n            </p>\n          </div>\n          <div className=\"from-background z-99 from-background absolute left-0 h-full w-10 bg-gradient-to-r to-transparent\" />\n          <div className=\"from-background z-99 from-background absolute right-0 h-full w-10 bg-gradient-to-l to-transparent\" />\n        </div>\n      </div>\n      <BackgroundBeams className=\"bg-background text-foreground dark\" />\n    </section>\n  );\n};\n\nexport { Feature272 };\n"
+}

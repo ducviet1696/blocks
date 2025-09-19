@@ -1,0 +1,52 @@
+{
+    "id": "banner6",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "banner6.jpg",
+    "thumbnail": "banner6-4x3.webp",
+    "description": "A dismissible banner featuring overlapping avatars, a text description, and a close button.",
+    "createdAt": [
+        3,
+        "2025-01-05T03:59:55.495Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "banner"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "banner6",
+    "collection": "block",
+    "group": "banner",
+    "code": "\"use client\";\n\nimport { X } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\ninterface Banner6Props {\n  count?: string;\n  description?: string;\n  buttonText?: string;\n  buttonUrl?: string;\n  avatars?: Array<{\n    src: string;\n    fallback: string;\n  }>;\n  defaultVisible?: boolean;\n}\n\nconst Banner6 = ({\n  description = \"Used by over 2K+ customers worldwide\",\n  avatars = [\n    { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\", fallback: \"User\" },\n    { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\", fallback: \"User\" },\n    { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\", fallback: \"User\" },\n    { src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\", fallback: \"User\" },\n  ],\n  defaultVisible = true,\n}: Banner6Props) => {\n  const [isVisible, setIsVisible] = useState(defaultVisible);\n\n  const handleClose = () => {\n    setIsVisible(false);\n  };\n\n  if (!isVisible) return null;\n\n  return (\n    <section className=\"animate-in fade-in slide-in-from-top-2 absolute left-0 right-0 top-4 z-50 mx-auto max-w-2xl\">\n      <div className=\"mx-4\">\n        <div className=\"bg-background w-full rounded-full border p-4 shadow-md\">\n          <div className=\"relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between\">\n            <div className=\"flex items-center gap-4\">\n              <div className=\"flex -space-x-2\">\n                {avatars.map((avatar, i) => (\n                  <Avatar key={i} className=\"ring-2 ring-white\">\n                    <AvatarImage src={avatar.src} alt={`User ${i + 1}`} />\n                    <AvatarFallback>{avatar.fallback}</AvatarFallback>\n                  </Avatar>\n                ))}\n              </div>\n              <p className=\"text-sm font-semibold\">{description}</p>\n            </div>\n\n            <div className=\"flex items-center gap-2\">\n              <Button\n                variant=\"ghost\"\n                size=\"icon\"\n                className=\"h-8 w-8 rounded-full\"\n                onClick={handleClose}\n              >\n                <X className=\"h-4 w-4\" />\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Banner6 };\n"
+}

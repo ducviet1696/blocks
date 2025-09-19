@@ -1,0 +1,34 @@
+{
+    "id": "feature13",
+    "access": "free",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature13.jpg",
+    "thumbnail": "feature13-4x3.webp",
+    "description": "A component showcases a heading and 2-column layout of features with title, subtitle, description, and image. Unique for using images as visual endpoints in each feature card.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.555Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "free"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "feature13",
+    "collection": "block",
+    "group": "feature",
+    "code": "interface Feature {\n  id: string;\n  title: string;\n  subtitle: string;\n  description: string;\n  image: string;\n}\n\ninterface Feature13Props {\n  heading?: string;\n  features?: Feature[];\n}\n\nconst Feature13 = ({\n  heading = \"A better way to build websites\",\n  features = [\n    {\n      id: \"feature-1\",\n      title: \"Built for artists and designers\",\n      subtitle: \"FOR DESIGNERS\",\n      description:\n        \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    },\n    {\n      id: \"feature-2\",\n      title: \"Built for coders and developers\",\n      subtitle: \"FOR DEVELOPERS\",\n      description:\n        \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n    },\n  ],\n}: Feature13Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container max-w-7xl\">\n        <h2 className=\"text-3xl font-medium lg:text-4xl\">{heading}</h2>\n        <div className=\"mt-20 grid gap-9 lg:grid-cols-2\">\n          {features.map((feature) => (\n            <div\n              key={feature.id}\n              className=\"flex flex-col justify-between rounded-lg bg-accent\"\n            >\n              <div className=\"flex justify-between gap-10 border-b\">\n                <div className=\"flex flex-col justify-between gap-14 py-6 pl-4 md:py-10 md:pl-8 lg:justify-normal\">\n                  <p className=\"text-xs text-muted-foreground\">\n                    {feature.subtitle}\n                  </p>\n                  <h3 className=\"text-2xl md:text-4xl\">{feature.title}</h3>\n                </div>\n                <div className=\"md:1/3 w-2/5 shrink-0 rounded-r-lg border-l\">\n                  <img\n                    src={feature.image}\n                    alt={feature.title}\n                    className=\"h-full w-full object-cover\"\n                  />\n                </div>\n              </div>\n              <div className=\"p-4 text-muted-foreground md:p-8\">\n                {feature.description}\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature13 };\n"
+}

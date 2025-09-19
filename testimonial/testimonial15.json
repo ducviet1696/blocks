@@ -1,0 +1,49 @@
+{
+    "id": "testimonial15",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial15.jpg",
+    "thumbnail": "testimonial15-4x3.webp",
+    "description": "A component with a 2-column layout, showcasing a headline, description, button, company logos, and 4 personalized testimonials with avatars.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.654Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "testimonial15",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "import { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Testimonial15 = () => {\n  return (\n    <section className=\"mb-32 bg-muted pt-32\">\n      <div className=\"container\">\n        <div className=\"grid gap-20 lg:grid-cols-2 lg:gap-32\">\n          <div className=\"text-center lg:text-left\">\n            <h1 className=\"mb-4 text-3xl font-bold text-balance lg:text-4xl\">\n              Explore the Innovators Community Today\n            </h1>\n            <p className=\"mb-8 text-muted-foreground\">\n              Join a global network of thought leaders, product developers, and\n              innovators to exchange ideas, learn from each other, and\n              participate in unique events and discussions.\n            </p>\n            <Button className=\"mb-10 lg:mb-20\">Become a Member</Button>\n            <p className=\"mb-7 text-xs text-muted-foreground uppercase\">\n              Used by leading companies\n            </p>\n            <div className=\"flex flex-wrap items-center justify-center gap-10 lg:justify-start\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg\"\n                alt=\"logo\"\n                className=\"h-6 sm:h-8\"\n              />\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-wordmark.svg\"\n                alt=\"logo\"\n                className=\"h-8 sm:h-11\"\n              />\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg\"\n                alt=\"logo\"\n                className=\"h-4 sm:h-5\"\n              />\n            </div>\n          </div>\n          <div className=\"flex flex-col gap-5\">\n            <div className=\"flex gap-5 rounded-xl bg-background p-6\">\n              <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <div>\n                <p className=\"mb-1 text-sm font-medium\">Emily Johnson</p>\n                <p className=\"text-xs text-muted-foreground\">\n                  Joining the Innovators Community has completely transformed my\n                  approach to product development. The discussions are\n                  insightful, and the community events have been fantastic for\n                  networking with industry peers.\n                </p>\n              </div>\n            </div>\n            <div className=\"flex gap-5 rounded-xl border p-6\">\n              <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <div>\n                <p className=\"mb-1 text-sm font-medium\">Alex Smith</p>\n                <p className=\"text-xs text-muted-foreground\">\n                  Being part of this community has helped me stay up-to-date\n                  with the latest trends in innovation. The exclusive workshops\n                  are incredibly valuable for anyone looking to expand their\n                  knowledge.\n                </p>\n              </div>\n            </div>\n            <div className=\"flex gap-5 rounded-xl bg-background p-6\">\n              <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <div>\n                <p className=\"mb-1 text-sm font-medium\">Sarah Parker</p>\n                <p className=\"text-xs text-muted-foreground\">\n                  The Innovators Community has been instrumental in connecting\n                  me with like-minded professionals. I\u2019ve gained valuable\n                  insights and developed partnerships that have benefited my\n                  career.\n                </p>\n              </div>\n            </div>\n            <div className=\"flex gap-5 rounded-t-xl border-x border-t px-5 pt-6 pb-1\">\n              <Avatar className=\"size-9 rounded-full ring-1 ring-input\">\n                <AvatarImage\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\"\n                  alt=\"placeholder\"\n                />\n              </Avatar>\n              <div>\n                <p className=\"mb-1 text-sm font-medium\">Michael Lee</p>\n                <p className=\"text-xs text-muted-foreground\">\n                  I\u2019ve attended several virtual events through the Innovators\n                  Community, and they\u2019ve been incredibly helpful. The\n                  opportunity to learn from leaders in the field has\n                  significantly impacted my professional growth.\n                </p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial15 };\n"
+}

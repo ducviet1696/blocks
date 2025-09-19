@@ -1,0 +1,52 @@
+{
+    "id": "feature209",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature209.jpg",
+    "thumbnail": "feature209-4x3.webp",
+    "description": "A gallery component with a text and button panel on left and image carousel on right, including image thumbnails for selection and a patterned background overlay.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.793Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature209",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ChevronRight } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\nconst images = [\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-uR__S5GX8Io-unsplash.jpg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-fyEcdETa5mc-unsplash.jpg\",\n  \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg\",\n];\n\nconst Feature209 = () => {\n  const [selectedImage, setSelectedImage] = useState(images[0]);\n\n  return (\n    <section className=\"border-border py-32\">\n      <div className=\"border-y\">\n        <div className=\"relative container overflow-hidden\">\n          <div className=\"border-x border-border\">\n            <div className=\"flex h-full flex-col-reverse xl:flex-row\">\n              <div className=\"flex items-center bg-background p-8 xl:w-1/2\">\n                <div className=\"flex h-fit flex-col gap-6 py-16 pr-16\">\n                  <h2 className=\"text-4xl font-medium tracking-tight text-balance\">\n                    Explore our Featured Collection\n                  </h2>\n                  <div className=\"flex gap-4\">\n                    {images.map((image, index) => (\n                      <button\n                        key={index}\n                        className={cn(\n                          \"max-h-24 max-w-32 rounded-md border border-transparent p-1 shadow-sm transition-all duration-150\",\n                          selectedImage === image &&\n                            \"border border-foreground/10 shadow-md\",\n                        )}\n                        onClick={() => setSelectedImage(image)}\n                      >\n                        <img\n                          src={image}\n                          alt=\"placeholder\"\n                          className=\"size-full rounded-md object-cover\"\n                        />\n                      </button>\n                    ))}\n                  </div>\n                  <p className=\"font-medium text-muted-foreground\">\n                    The featured collection provides a sleek gallery-focused\n                    experience with customizable album layouts, client\n                    testimonials section, and intuitive image organization for\n                    professionals.\n                  </p>\n                  <div className=\"flex gap-4 font-medium\">\n                    <Button variant=\"outline\" asChild>\n                      <a href=\"#\" className=\"group flex items-center gap-1\">\n                        View Collection\n                        <ChevronRight className=\"mt-0.5 size-4 transition-all duration-150 group-hover:translate-x-0.5\" />\n                      </a>\n                    </Button>\n                  </div>\n                </div>\n              </div>\n              <Separator\n                orientation=\"vertical\"\n                className=\"hidden self-stretch data-[orientation=vertical]:h-auto xl:block\"\n              />\n              <div className=\"relative size-full p-8 md:p-16\">\n                <div className=\"relative h-[300px] sm:h-[540px]\">\n                  {images.map((image, index) => (\n                    <img\n                      key={index}\n                      src={image}\n                      alt=\"placeholder\"\n                      className={cn(\n                        \"absolute inset-0 h-[300px] w-full origin-center scale-[1.05] rounded-lg object-cover opacity-0 shadow-lg transition-none sm:h-[540px]\",\n                        selectedImage === image &&\n                          \"scale-100 opacity-100 transition-all duration-500 ease-out\",\n                      )}\n                    />\n                  ))}\n                </div>\n                <div className=\"pointer-events-none absolute inset-0 -z-10 h-full w-full bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/tiny-checkers.svg')] [background-size:4px_4px] bg-repeat opacity-10\"></div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature209 };\n"
+}

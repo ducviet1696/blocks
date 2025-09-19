@@ -1,0 +1,52 @@
+{
+    "id": "hero7",
+    "access": "free",
+    "weight": 2,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero7.jpg",
+    "thumbnail": "hero7-4x3.webp",
+    "description": "A component featuring a title, description, button, and review section with user avatars and star ratings. It&#x27;s structured in a central column.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.622Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "free"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero7",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Star } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\ninterface Hero7Props {\n  heading?: string;\n  description?: string;\n  button?: {\n    text: string;\n    url: string;\n  };\n  reviews?: {\n    count: number;\n    rating?: number;\n    avatars: {\n      src: string;\n      alt: string;\n    }[];\n  };\n}\n\nconst Hero7 = ({\n  heading = \"A Collection of Components Built With Shadcn & Tailwind\",\n  description = \"Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.\",\n  button = {\n    text: \"Discover all components\",\n    url: \"https://www.shadcnblocks.com\",\n  },\n  reviews = {\n    count: 200,\n    rating: 5.0,\n    avatars: [\n      {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n        alt: \"Avatar 1\",\n      },\n      {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\",\n        alt: \"Avatar 2\",\n      },\n      {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\",\n        alt: \"Avatar 3\",\n      },\n      {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\",\n        alt: \"Avatar 4\",\n      },\n      {\n        src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp\",\n        alt: \"Avatar 5\",\n      },\n    ],\n  },\n}: Hero7Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container text-center\">\n        <div className=\"mx-auto flex max-w-5xl flex-col gap-6\">\n          <h1 className=\"text-3xl font-extrabold lg:text-6xl\">{heading}</h1>\n          <p className=\"text-muted-foreground text-balance lg:text-lg\">\n            {description}\n          </p>\n        </div>\n        <Button asChild size=\"lg\" className=\"mt-10\">\n          <a href={button.url}>{button.text}</a>\n        </Button>\n        <div className=\"mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row\">\n          <span className=\"mx-4 inline-flex items-center -space-x-4\">\n            {reviews.avatars.map((avatar, index) => (\n              <Avatar key={index} className=\"size-14 border\">\n                <AvatarImage src={avatar.src} alt={avatar.alt} />\n              </Avatar>\n            ))}\n          </span>\n          <div>\n            <div className=\"flex items-center gap-1\">\n              {[...Array(5)].map((_, index) => (\n                <Star\n                  key={index}\n                  className=\"size-5 fill-yellow-400 text-yellow-400\"\n                />\n              ))}\n              <span className=\"mr-1 font-semibold\">\n                {reviews.rating?.toFixed(1)}\n              </span>\n            </div>\n            <p className=\"text-muted-foreground text-left font-medium\">\n              from {reviews.count}+ reviews\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero7 };\n"
+}

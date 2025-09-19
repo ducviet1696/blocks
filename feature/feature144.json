@@ -1,0 +1,49 @@
+{
+    "id": "feature144",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature144.jpg",
+    "thumbnail": "feature144-4x3.webp",
+    "description": "A component featuring a central heading, a description, and three Cards, each with an image, a title, and a Badge. The Cards display in a single column for mobile and in rows for larger screens.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.659Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature144",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Card } from \"@/components/ui/card\";\n\nconst Feature144 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <h2 className=\"text-center text-4xl\">\n          Build your website with UI blocks\n        </h2>\n        <p className=\"mx-auto mt-3 max-w-3xl text-center text-2xl text-muted-foreground\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n          doloremque mollitia fugiat\n        </p>\n\n        <Card className=\"mt-20 flex flex-col gap-6 p-6 md:flex-row md:gap-8 md:p-8\">\n          <div className=\"flex w-full flex-col justify-between\">\n            <h6 className=\"text-xl md:text-3xl\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit\n            </h6>\n            <Badge\n              variant=\"outline\"\n              className=\"mt-4 w-fit bg-muted px-4 py-3 md:text-base\"\n            >\n              Build website with UI blocks\n            </Badge>\n          </div>\n          <div className=\"w-full\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placeholder\"\n              className=\"max-h-80 w-full rounded-lg object-cover\"\n            />\n          </div>\n        </Card>\n\n        <div className=\"mt-6 flex flex-col gap-6 md:mt-8 md:flex-row md:gap-8\">\n          <Card className=\"flex w-full flex-col gap-6 p-6 md:gap-8 md:p-8\">\n            <div className=\"w-full\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-80 w-full rounded-lg object-cover\"\n              />\n            </div>\n\n            <div className=\"flex w-full flex-col justify-between\">\n              <h6 className=\"text-xl md:text-3xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit\n              </h6>\n              <Badge\n                variant=\"outline\"\n                className=\"mt-10 w-fit bg-muted px-4 py-3 md:text-base\"\n              >\n                Build website with UI blocks\n              </Badge>\n            </div>\n          </Card>\n          <Card className=\"flex w-full flex-col gap-6 p-6 md:gap-8 md:p-8\">\n            <div className=\"w-full\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-80 w-full rounded-lg object-cover\"\n              />\n            </div>\n\n            <div className=\"flex w-full flex-col justify-between\">\n              <h6 className=\"text-xl md:text-3xl\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit\n              </h6>\n              <Badge\n                variant=\"outline\"\n                className=\"mt-10 w-fit bg-muted px-4 py-3 md:text-base\"\n              >\n                Build website with UI blocks\n              </Badge>\n            </div>\n          </Card>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature144 };\n"
+}

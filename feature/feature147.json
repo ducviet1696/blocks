@@ -1,0 +1,43 @@
+{
+    "id": "feature147",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature147.jpg",
+    "thumbnail": "feature147-4x3.webp",
+    "description": "A component showcasing integrations in a grid layout; features a heading, subheading, and 3-column grid of cards with images, titles, and descriptions.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.660Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature147",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Card } from \"@/components/ui/card\";\n\nconst integrations = [\n  {\n    title: \"Outreach\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  },\n  {\n    title: \"Typeform\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n  },\n  {\n    title: \"Slack\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n  },\n  {\n    title: \"Mailchimp\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n  },\n  {\n    title: \"Mixmax\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\",\n  },\n  {\n    title: \"Webhooks\",\n    description:\n      \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg\",\n  },\n];\n\nconst Feature147 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mb-24 flex flex-col items-center justify-between gap-6 lg:flex-row lg:gap-x-12\">\n          <div className=\"w-full text-center text-3xl font-medium lg:w-1/2 lg:text-left lg:text-5xl\">\n            <span className=\"text-muted-foreground\">Built</span> with the latest\n            technology stack\n          </div>\n          <div className=\"w-full text-center text-lg font-medium lg:w-1/2 lg:text-left lg:text-xl\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\n            fuga error voluptates ut sint.\n          </div>\n        </div>\n        <ul className=\"mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3\">\n          {integrations.map((integration, index) => (\n            <li key={index}>\n              <Card className=\"p-6\">\n                <img\n                  src={integration.image}\n                  alt={integration.title}\n                  className=\"w-14\"\n                />\n                <h3 className=\"mt-4 mb-1 text-lg font-medium\">\n                  {integration.title}\n                </h3>\n                <p className=\"text-sm text-muted-foreground\">\n                  {integration.description}\n                </p>\n              </Card>\n            </li>\n          ))}\n        </ul>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature147 };\n"
+}

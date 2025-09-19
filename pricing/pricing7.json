@@ -1,0 +1,64 @@
+{
+    "id": "pricing7",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing7.jpg",
+    "thumbnail": "pricing7-4x3.webp",
+    "description": "A component displaying pricing options with a billing cycle toggle (monthly/annually), supporting discount display. Includes a 2-column layout for plan comparisons, featuring dynamic pricing, plan benefits, and \"Start a free trial\" buttons.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.639Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "radio-group",
+            "registryId": "shadcn",
+            "registryItemUrl": "radio-group",
+            "docsUrl": "https://ui.shadcn.com/docs/components/radio-group"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing7",
+    "collection": "block",
+    "group": "pricing",
+    "code": "\"use client\";\n\nimport { Check } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Label } from \"@/components/ui/label\";\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\n\nconst Pricing7 = () => {\n  const [isAnnually, setIsAnnually] = useState(false);\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-20 max-w-3xl text-center\">\n          <h2 className=\"mb-4 text-4xl font-semibold lg:text-5xl\">Pricing</h2>\n          <p className=\"text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia\n            dignissimos aliquam delectus, quasi earum veniam?\n          </p>\n        </div>\n        <div className=\"flex flex-col items-center gap-2\">\n          <span className=\"text-muted-foreground\">Billing cycle</span>\n          <div className=\"bg-muted flex h-12 items-center rounded-md p-1 text-lg\">\n            <RadioGroup\n              defaultValue=\"monthly\"\n              className=\"h-full grid-cols-2\"\n              onValueChange={(value) => {\n                setIsAnnually(value === \"annually\");\n              }}\n            >\n              <div className='has-[button[data-state=\"checked\"]]:bg-background h-full rounded-md transition-all'>\n                <RadioGroupItem\n                  value=\"monthly\"\n                  id=\"monthly\"\n                  className=\"peer sr-only\"\n                />\n                <Label\n                  htmlFor=\"monthly\"\n                  className=\"text-muted-foreground peer-data-[state=checked]:text-primary flex h-full cursor-pointer items-center justify-center px-7 font-semibold\"\n                >\n                  Monthly\n                </Label>\n              </div>\n              <div className='has-[button[data-state=\"checked\"]]:bg-background h-full rounded-md transition-all'>\n                <RadioGroupItem\n                  value=\"annually\"\n                  id=\"annually\"\n                  className=\"peer sr-only\"\n                />\n                <Label\n                  htmlFor=\"annually\"\n                  className=\"text-muted-foreground peer-data-[state=checked]:text-primary flex h-full cursor-pointer items-center justify-center gap-1 px-7 font-semibold\"\n                >\n                  Yearly\n                  <Badge\n                    variant=\"outline\"\n                    className=\"border-green-200 bg-green-100 px-1.5 text-green-600\"\n                  >\n                    -20%\n                  </Badge>\n                </Label>\n              </div>\n            </RadioGroup>\n          </div>\n          <div className=\"mt-10 grid max-w-3xl gap-6 md:grid-cols-2\">\n            <div className=\"rounded-lg border p-6\">\n              <div className=\"flex h-full flex-col justify-between gap-5\">\n                <div>\n                  <h3 className=\"mb-4 text-xl font-semibold\">Basic Plan</h3>\n                  <span className=\"text-5xl font-semibold\">\n                    {isAnnually ? \"$63\" : \"$79\"}\n                  </span>\n                  <span className=\"mb-4 block font-semibold\">per month</span>\n                  <p className=\"text-muted-foreground\">\n                    Good for small teams, or small businesses just starting out.\n                  </p>\n                  <p className=\"mb-3 mt-6 font-semibold\">Includes</p>\n                  <ul className=\"flex flex-col gap-3\">\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />5 projects limit\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      5GB storage\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      Up to 3 users\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      Support by email only\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      No time tracking feature\n                    </li>\n                  </ul>\n                </div>\n                <Button>Start a free trial</Button>\n              </div>\n            </div>\n            <div className=\"rounded-lg border p-6\">\n              <div className=\"flex h-full flex-col justify-between gap-5\">\n                <div>\n                  <h3 className=\"mb-4 text-xl font-semibold\">Pro Plan</h3>\n                  <span className=\"text-5xl font-semibold\">\n                    {isAnnually ? \"$239\" : \"$299\"}\n                  </span>\n                  <span className=\"mb-4 block font-semibold\">per month</span>\n                  <p className=\"text-muted-foreground\">\n                    Good for medium to large businesses. Get all the features\n                    you need.\n                  </p>\n                  <p className=\"mb-3 mt-6 font-semibold\">\n                    Everything in Basic, plus\n                  </p>\n                  <ul className=\"flex flex-col gap-3\">\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      Unlimited projects\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      50GB storage\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      Unlimited users\n                    </li>\n                    <li className=\"flex gap-2\">\n                      <Check className=\"mt-1 size-4 shrink-0\" />\n                      Priority support\n                    </li>\n                  </ul>\n                </div>\n                <Button>Start a free trial</Button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing7 };\n"
+}

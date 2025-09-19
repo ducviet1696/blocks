@@ -1,0 +1,45 @@
+{
+    "id": "hero60",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero60.jpg",
+    "thumbnail": "hero60-4x3.webp",
+    "description": "A hero component with a gradient background, featuring a bold title, a descriptive paragraph, and a large call-to-action button with an icon.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.888Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero60",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero60 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"relative max-w-5xl\">\n          <div className=\"absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,hsl(var(--muted))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--muted))_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_50%_100%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:64px_64px]\"></div>\n          <h1 className=\"text-5xl leading-tight font-extrabold lg:text-8xl lg:leading-snug\">\n            Less complexity. <span className=\"mr-6\">More</span>\n            <span className=\"relative inline-block before:absolute before:top-0 before:-right-2 before:-bottom-2 before:-left-4 before:-z-10 before:rounded-lg before:bg-muted-foreground/15\">\n              efficiency.\n            </span>\n          </h1>\n          <p className=\"mt-7 text-xl font-light lg:text-3xl\">\n            A powerful tool to streamline workflows, manage tasks, and deliver\n            results efficiently.\n          </p>\n          <div className=\"mt-12 flex w-fit flex-col gap-2.5 text-center\">\n            <Button size=\"lg\">\n              Start Now for free\n              <ChevronRight className=\"ml-2 h-auto w-4\" />\n            </Button>\n            <p className=\"text-sm text-muted-foreground\">\n              No credit card required.\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero60 };\n"
+}

@@ -1,0 +1,54 @@
+{
+    "id": "hero233",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero233.jpg",
+    "thumbnail": "hero233-4x3.webp",
+    "description": "A hero component with a text banner, animated background lines, and buttons, featuring a central title with special text effects and call-to-action buttons.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.833Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "line-shadow-text",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/line-shadow-text",
+            "docsUrl": "https://magicui.design/docs/components/line-shadow-text"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero233",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { useIsMobile } from \"@/hooks/use-mobile\";\n\nimport { LineShadowText } from \"@/components/magicui/line-shadow-text\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero233 = () => {\n  const isMobile = useIsMobile();\n\n  return (\n    <section className=\"relative h-screen w-screen overflow-hidden bg-background py-32\">\n      <div className=\"relative z-20 container flex flex-col items-center justify-center gap-4 py-10 text-center md:mt-22\">\n        <div className=\"absolute -z-1 size-full max-w-3xl bg-background blur-xl\" />\n        <Button\n          variant=\"secondary\"\n          className=\"group text-md my-16 flex w-fit items-center justify-center gap-3 rounded-full bg-muted/60 px-5 py-1 tracking-tight md:my-5\"\n        >\n          <span className=\"size-2 rounded-full bg-foreground\" />\n          <span>Flexible Plan customized for you</span>\n        </Button>\n        <div className=\"relative flex max-w-4xl items-center justify-center text-center text-5xl font-medium tracking-tight md:text-7xl\">\n          <h1 className=\"relative z-10\">\n            <span className=\"mr-3 text-muted-foreground/50\">\n              The only app you Need to Stay\n            </span>\n            <LineShadowText> Productive </LineShadowText>\n            <span className=\"text-muted-foreground/50\"> ever</span>\n            <span>.</span>\n          </h1>\n        </div>\n\n        <p className=\"mt-5 max-w-xl bg-background text-muted-foreground/80\">\n          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum animi,\n          ipsam provident optio delectus neque aliquid cumque. Beatae, odio!\n        </p>\n        <div className=\"my-5 flex gap-4\">\n          <Button\n            variant=\"secondary\"\n            className=\"group text-md flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n          >\n            <span>Documentation</span>\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n          </Button>\n          <Button\n            variant=\"default\"\n            className=\"group text-md flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight\"\n          >\n            <span>Get Started</span>\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0\" />\n          </Button>\n        </div>\n      </div>\n\n      <div className=\"absolute top-0 flex size-full justify-center\">\n        {Array.from({ length: isMobile ? 7 : 18 }).map((_, i) => (\n          <motion.div\n            key={i}\n            initial={{ opacity: 0, height: 0 }}\n            animate={{ opacity: 1, height: \"100%\" }}\n            transition={{\n              duration: 0.8,\n              delay: i * 0.05,\n              ease: \"easeOut\",\n            }}\n            className=\"w-24 border-l bg-gradient-to-b to-transparent transition-all ease-in-out hover:scale-110 hover:from-black/2\"\n          />\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Hero233 };\n"
+}

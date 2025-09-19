@@ -1,0 +1,45 @@
+{
+    "id": "feature143",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature143.jpg",
+    "thumbnail": "feature143-4x3.webp",
+    "description": "A component showcasing features with a badge & a grid layout. Utilizes a 3x3 grid for visuals, lists features with icons, and emphasizes modern design.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.659Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature143",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst items: string[] = [\n  \"Responsive Design and Layout\",\n  \"Clean and Modern Design\",\n  \"Easy to Customize\",\n  \"Cross Browser Compatible\",\n];\n\nconst Feature143 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mt-20 flex flex-col items-center justify-center gap-16 md:flex-row\">\n          <div className=\"w-full max-w-sm\">\n            <h6 className=\"text-3xl\">\n              Build any kind of Website with our Blocks\n            </h6>\n            <Badge variant=\"outline\" className=\"mt-8 bg-muted px-3 py-2\">\n              Badge\n            </Badge>\n\n            <div className=\"mt-16 mb-4 h-px w-full bg-muted-foreground\" />\n\n            <ul className=\"flex flex-col gap-2\">\n              {items.map((item) => (\n                <li className=\"flex items-center gap-2 text-lg\" key={item}>\n                  <ArrowRight className=\"size-5\" /> {item}\n                </li>\n              ))}\n            </ul>\n          </div>\n\n          <div className=\"grid w-full max-w-md grid-cols-[1fr_4fr_1fr] grid-rows-[1fr_4fr_1fr] rounded-lg bg-linear-to-br from-red-100 to-blue-100 md:max-w-xl\">\n            <div className=\"border-r-2 border-b-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-b-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-b-2 border-l-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-r-2 border-muted-foreground/30 p-4\" />\n            <div>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"placeholder\"\n                className=\"max-h-[740px] w-full rounded-xl object-cover\"\n              />\n            </div>\n            <div className=\"border-l-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-t-2 border-r-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-t-2 border-muted-foreground/30 p-4\" />\n            <div className=\"border-t-2 border-l-2 border-muted-foreground/30 p-4\" />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature143 };\n"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "feature156",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature156.jpg",
+    "thumbnail": "feature156-4x3.webp",
+    "description": "A component displaying tabs with 3 columns, featuring dynamic visual content for software development themes upon tab selection.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.665Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature156",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst integrations = [\n  {\n    id: \"1\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n    title: \"Modern Development Workflow\",\n    description:\n      \"Streamline your development process with integrated tools for code review, continuous integration, and automated testing. Built for modern engineering teams.\",\n  },\n  {\n    id: \"2\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n    title: \"Component-Driven Architecture\",\n    description:\n      \"Build scalable applications with reusable components. Our component system helps maintain consistency while reducing development time and technical debt.\",\n  },\n  {\n    id: \"3\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n    title: \"Real-Time Collaboration\",\n    description:\n      \"Work together seamlessly with built-in version control, live previews, and collaborative editing features. Perfect for distributed teams and pair programming.\",\n  },\n];\n\nconst Feature156 = () => {\n  const [cardNumber, setCardNumber] = useState(0);\n\n  return (\n    <section className=\"relative overflow-hidden py-24 lg:py-32\">\n      {/* Grid Pattern with Radial Mask */}\n      <div className=\"absolute inset-0 -z-10\">\n        <div className=\"absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:2rem_2rem]\" />\n        <div className=\"absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,transparent,white)]\" />\n      </div>\n\n      <div className=\"container relative\">\n        <div className=\"mb-16 flex flex-col items-center gap-8\">\n          <h1 className=\"max-w-3xl text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl\">\n            Build better software with shadcn/ui blocks\n          </h1>\n        </div>\n        <Tabs defaultValue={cardNumber.toString()} className=\"space-y-16\">\n          <div className=\"bg-muted relative flex h-[480px] items-center justify-center overflow-hidden rounded-2xl backdrop-blur-sm\">\n            {integrations.map((item, index) => (\n              <TabsContent\n                value={index.toString()}\n                key={index}\n                className=\"absolute inset-0 h-full w-full\"\n              >\n                <div className=\"flex h-full w-full items-center justify-center p-8\">\n                  <img\n                    src={item.image}\n                    alt={`${item.title} visualization`}\n                    className=\"h-auto max-h-full w-auto max-w-full object-contain\"\n                  />\n                </div>\n              </TabsContent>\n            ))}\n          </div>\n          <TabsList className=\"grid h-full w-full grid-cols-1 gap-8 bg-transparent p-0 lg:grid-cols-3 lg:gap-14\">\n            {integrations.map((item, index) => (\n              <TabsTrigger\n                value={index.toString()}\n                key={index}\n                className=\"border-muted hover:bg-muted/50 data-[state=active]:border-primary/20 data-[state=active]:bg-muted/50 bg-background/50 group flex flex-col items-start rounded-xl border p-8 shadow-sm transition-all hover:shadow-md data-[state=active]:shadow-md\"\n                onClick={() => setCardNumber(index)}\n              >\n                <div className=\"bg-primary/10 text-primary group-hover:bg-primary/20 group-data-[state=active]:bg-primary/20 mb-4 flex h-10 w-10 items-center justify-center rounded-full font-mono\">\n                  {index + 1}\n                </div>\n                <h3 className=\"text-foreground/90 group-hover:text-foreground group-data-[state=active]:text-foreground mb-3 text-xl font-semibold tracking-tight\">\n                  {item.title}\n                </h3>\n                <p className=\"text-muted-foreground/80 group-hover:text-muted-foreground group-data-[state=active]:text-muted-foreground text-pretty text-start text-sm\">\n                  {item.description}\n                </p>\n              </TabsTrigger>\n            ))}\n          </TabsList>\n        </Tabs>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature156 };\n"
+}

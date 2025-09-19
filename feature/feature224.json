@@ -1,0 +1,53 @@
+{
+    "id": "feature224",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature224.jpg",
+    "thumbnail": "feature224-4x3.webp",
+    "description": "A component showcasing AI features in nature via a carousel, each slide displaying a title, icon, and description with a vibrant background.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.794Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature",
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature224",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport type { LucideIcon } from \"lucide-react\";\nimport {\n  Globe,\n  Lock,\n  ShieldCheck,\n  SlidersHorizontal,\n  Sparkles,\n  Workflow,\n} from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\ninterface feature {\n  title: string;\n  label: string;\n  icon: LucideIcon;\n  description: string;\n  background: string;\n}\n\nconst FEATURES: Array<feature> = [\n  {\n    title: \"AI-Driven Analysis of Natural Patterns\",\n    label: \"Patterns Identified\",\n    icon: Workflow,\n    description:\n      \"Utilize AI to seamlessly identify and analyze natural patterns across various ecosystems, enhancing our understanding of environmental dynamics.\",\n    background: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jeremy-bishop-iEjCQtcsVPY-unsplash.jpg\",\n  },\n  {\n    title: \"AI-Powered Security in Natural Environments\",\n    label: \"Security Enhanced\",\n    icon: Lock,\n    description:\n      \"AI technology ensures the protection of sensitive ecological data, preventing unauthorized access and maintaining the integrity of environmental research.\",\n    background: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg\",\n  },\n  {\n    title: \"Enterprise-Grade AI Safeguards for Ecology\",\n    label: \"Safeguards Activated\",\n    icon: ShieldCheck,\n    description:\n      \"Advanced AI safeguards ensure the accuracy and relevance of ecological data, preventing misinformation and supporting sustainable practices.\",\n    background: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/sam-wermut-FiUuNWxnb3k-unsplash.jpg\",\n  },\n  {\n    title: \"AI Interpretation of Natural Communication\",\n    label: \"Structure Analyzed\",\n    icon: SlidersHorizontal,\n    description:\n      \"AI systems adapt to various natural communication styles, ensuring accurate interpretation and analysis of ecological interactions.\",\n    background: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-Kj2tYAl4HZg-unsplash.jpg\",\n  },\n  {\n    title: \"Multilingual AI for Global Ecology Studies\",\n    label: \"Languages Supported\",\n    icon: Globe,\n    description:\n      \"AI facilitates global ecological studies through automatic language detection and real-time translation, supporting research in diverse regions.\",\n    background:\n      \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/vasilis-karkalas-LadCWrSL7X8-unsplash.jpg\",\n  },\n];\n\nconst Feature224 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    setCurrent(api.selectedScrollSnap() + 1);\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap() + 1);\n    });\n  }, [api]);\n\n  const goToSlide = (index: number) => {\n    if (api) {\n      api.scrollTo(index);\n    }\n  };\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex w-full flex-col items-center justify-center gap-4\">\n          <h2 className=\"mx-auto max-w-[21.875rem] text-center text-4xl font-medium leading-none md:max-w-[28.125rem] md:text-5xl lg:max-w-[35rem] lg:text-6xl\">\n            Harness the power of AI in nature\n          </h2>\n        </div>\n        <Carousel\n          opts={{\n            align: \"start\",\n          }}\n          className=\"w-full\"\n          setApi={setApi}\n        >\n          <CarouselContent className=\"-ml-8 pt-16\">\n            {FEATURES.map((card, index) => (\n              <CarouselItem\n                key={index}\n                className=\"pl-8 md:basis-1/2 lg:basis-1/3\"\n              >\n                <div className=\"p-1\">\n                  <Card className=\"border-0 shadow-none\">\n                    <CardContent className=\"flex flex-col p-0\">\n                      <div\n                        style={{ backgroundImage: `url(\"${card.background}\")` }}\n                        className=\"relative flex aspect-[0.935802469] w-full flex-col items-center justify-between overflow-hidden rounded-2xl bg-cover bg-center bg-no-repeat p-7\"\n                      >\n                        <div className=\"flex size-full flex-1\"></div>\n                        <div className=\"h-12 w-full\">\n                          <div className=\"bg-primary mx-auto mb-8 flex w-full max-w-[15rem] items-center gap-4 rounded-full px-3 py-2.5 shadow-xl\">\n                            <div className=\"shrink-0\">\n                              <div className=\"flex -space-x-2\">\n                                <div className=\"bg-background flex size-7 rounded-full border border-black\">\n                                  <Sparkles className=\"m-auto size-4\" />\n                                </div>\n                                <div className=\"bg-background flex size-7 rounded-full border border-black\">\n                                  <card.icon className=\"m-auto size-4\" />\n                                </div>\n                              </div>\n                            </div>\n                            <div className=\"text-sm font-medium text-white\">\n                              {card.label}\n                            </div>\n                          </div>\n                        </div>\n                      </div>\n                      <div className=\"flex w-full flex-col gap-1 pt-6\">\n                        <h3 className=\"text-foreground text-xl font-medium\">\n                          {card.title}\n                        </h3>\n                        <p className=\"text-sm\">{card.description}</p>\n                      </div>\n                    </CardContent>\n                  </Card>\n                </div>\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n          <div className=\"mt-8 hidden items-center justify-center gap-4 md:flex\">\n            <CarouselPrevious className=\"static size-12 translate-y-0\" />\n            <CarouselNext className=\"static size-12 translate-y-0\" />\n          </div>\n          <div className=\"mt-6 flex w-full items-center gap-2 md:hidden\">\n            {Array.from({ length: FEATURES.length }).map((_, i) => (\n              <button\n                onClick={() => goToSlide(i % FEATURES.length)}\n                key={`carousel-btn-${i}`}\n                className=\"h-4 w-full\"\n              >\n                <div\n                  className={` ${current == i + 1 ? \"bg-primary\" : \"bg-muted\"} my-auto h-1 w-full rounded-full`}\n                ></div>\n              </button>\n            ))}\n          </div>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature224 };\n"
+}

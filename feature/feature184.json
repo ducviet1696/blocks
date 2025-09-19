@@ -1,0 +1,52 @@
+{
+    "id": "feature184",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature184.jpg",
+    "thumbnail": "feature184-4x3.webp",
+    "description": "A component displaying features with interactive tabs and images. Uses a 2-column layout, including a dynamic image and detailed tabs for each feature. Includes buttons.",
+    "createdAt": [
+        3,
+        "2025-01-26T04:31:17.436Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature184",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport { ChevronUp, Flag, Pyramid, Users, Workflow, Zap } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst FEATURES = [\n  {\n    title: \"Tailored workflows\",\n    description: \"Custom issue flows\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    icon: <Workflow />,\n  },\n  {\n    title: \"Cross-team projects\",\n    description: \"Team collaboration\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    icon: <Users />,\n  },\n  {\n    title: \"Milestones\",\n    description: \"Concrete phases\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    icon: <Flag />,\n  },\n];\n\nconst Feature184 = () => {\n  const [activeTab, setActiveTab] = useState(FEATURES[0].title);\n\n  return (\n    <section className=\"py-20 md:py-32\">\n      <div className=\"container mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8\">\n        {/* Center the heading */}\n        <div className=\"mb-12 max-w-3xl text-center\">\n          <h2 className=\"text-2xl font-semibold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl\">\n            Explore our features\n          </h2>\n        </div>\n\n        {/* Content Section */}\n        <div className=\"grid gap-8 lg:grid-cols-2\">\n          <div className=\"relative h-[300px] overflow-hidden rounded-xl sm:h-[420px]\">\n            <img\n              src={FEATURES.find((f) => f.title === activeTab)?.image}\n              alt={activeTab}\n              className=\"h-full w-full object-cover\"\n            />\n          </div>\n\n          <div className=\"relative flex flex-col justify-between\">\n            <Tabs\n              defaultValue={FEATURES[0].title}\n              onValueChange={(value) => setActiveTab(value)}\n              className=\"h-full w-full\"\n            >\n              <TabsList className=\"flex h-full flex-col gap-4 rounded-xl border-none bg-transparent p-0\">\n                {FEATURES.map((feature) => (\n                  <TabsTrigger\n                    key={feature.title}\n                    value={feature.title}\n                    className={cn(\n                      \"group flex h-full w-full flex-col items-start rounded-xl p-6 text-left transition-all\",\n                      \"border-border/50 bg-card hover:border-primary/50 border\",\n                      \"data-[state=active]:border-primary data-[state=active]:bg-primary/95 data-[state=active]:shadow-lg\",\n                      \"relative\",\n                      \"data-[state=active]:scale-[1.02]\",\n                      \"data-[state=active]:z-20\",\n                    )}\n                  >\n                    <div className=\"flex w-full items-center justify-between\">\n                      <div className=\"flex items-center gap-6\">\n                        <div\n                          className={cn(\n                            \"bg-muted rounded-lg p-4 transition-colors\",\n                            \"group-data-[state=active]:bg-background\",\n                          )}\n                        >\n                          {feature.icon}\n                        </div>\n                        <div className=\"flex flex-col gap-2\">\n                          <h3\n                            className={cn(\n                              \"text-xl font-medium\",\n                              \"group-data-[state=active]:text-primary-foreground\",\n                            )}\n                          >\n                            {feature.title}\n                          </h3>\n                          <span\n                            className={cn(\n                              \"text-muted-foreground text-sm transition-colors\",\n                              \"group-data-[state=active]:text-primary-foreground/90\",\n                            )}\n                          >\n                            {feature.description}\n                          </span>\n                        </div>\n                      </div>\n                      <div className=\"pl-8\">\n                        <ChevronUp\n                          className={cn(\n                            \"text-muted-foreground size-5 transition-all duration-300\",\n                            \"group-data-[state=active]:text-primary-foreground group-data-[state=active]:rotate-180\",\n                          )}\n                        />\n                      </div>\n                    </div>\n                  </TabsTrigger>\n                ))}\n              </TabsList>\n            </Tabs>\n          </div>\n        </div>\n\n        {/* Buttons row */}\n        <div className=\"mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row\">\n          <Button className=\"w-full sm:w-auto\">\n            <Zap className=\"mr-2 size-4\" /> Get Started\n          </Button>\n          <Button variant=\"outline\" className=\"w-full sm:w-auto\">\n            <Pyramid className=\"mr-2 size-4\" /> Register Now\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature184 };\n"
+}

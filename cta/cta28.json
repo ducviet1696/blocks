@@ -1,0 +1,45 @@
+{
+    "id": "cta28",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta28.jpg",
+    "thumbnail": "cta28-4x3.webp",
+    "description": "A component featuring a dual-column layout with text, a list, and a button in one column, and layered images in the other. It highlights enterprise solutions.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.776Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta28",
+    "collection": "block",
+    "group": "cta",
+    "code": "import {\n  ArrowRight,\n  Clock,\n  FileText,\n  Lock,\n  MessageSquare,\n  Paperclip,\n  Presentation,\n  Shield,\n  Users,\n} from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst list = [\n  {\n    icon: Lock,\n    text: \"Enterprise-grade SSO integration\",\n  },\n  {\n    icon: FileText,\n    text: \"Flexible billing and invoicing\",\n  },\n  {\n    icon: Shield,\n    text: \"Comprehensive security assessment\",\n  },\n  {\n    icon: Paperclip,\n    text: \"Custom service-level agreement\",\n  },\n  {\n    icon: Users,\n    text: \"Personalized account management\",\n  },\n  {\n    icon: Presentation,\n    text: \"Hands-on onboarding sessions\",\n  },\n  {\n    icon: Clock,\n    text: \"SLA-backed priority assistance\",\n  },\n  {\n    icon: MessageSquare,\n    text: \"Real-time chat with support team\",\n  },\n];\n\nconst List = () => {\n  return (\n    <ul className=\"grid max-w-[36.25rem] grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2\">\n      {list.map((item, i) => (\n        <li key={`cta-item-${i}`} className=\"flex items-center gap-3\">\n          <item.icon className=\"size-5 stroke-white\" />\n          <div className=\"text-sm text-white\">{item.text}</div>\n        </li>\n      ))}\n    </ul>\n  );\n};\n\nconst Cta28 = () => {\n  return (\n    <section className=\"bg-background text-foreground dark py-32\">\n      <div className=\"container\">\n        <div className=\"xl:px-15.5 xl:pb-15.5 relative grid grid-cols-1 overflow-hidden rounded-[0.75rem] px-8 pb-12 pt-10 xl:grid-cols-2\">\n          <div className=\"flex flex-col gap-6 md:gap-9\">\n            <p className=\"font-serif text-4xl md:text-6xl lg:text-7xl\">\n              <span className=\"block\">Enterprise:</span>A solution for all\n            </p>\n            <p className=\"text-lg md:text-xl lg:text-2xl\">\n              Empower every teammate \u2014 and produce more videos!\n            </p>\n            <List />\n            <div>\n              <Button size=\"lg\" className=\"w-full md:w-fit\">\n                Get in touch to discover more!\n                <ArrowRight />\n              </Button>\n            </div>\n          </div>\n          <div className=\"hidden xl:block\">\n            <div className=\"absolute right-0 top-0 h-[40.9375rem] w-[36.875rem]\">\n              <div className=\"absolute right-0 top-0 aspect-[1.15] w-[14.375rem] opacity-60\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/fabian-centeno-njeVb6E3XB8-unsplash.jpg\"\n                  alt=\"\"\n                  className=\"size-full object-cover object-center\"\n                />\n              </div>\n              <div className=\"top-50 absolute right-0 z-10 aspect-[0.709248555] w-[17.5rem] overflow-hidden rounded-tl-md\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jason-goodman-ZJlfUi5rTDU-unsplash.jpg\"\n                  alt=\"\"\n                  className=\"size-full object-cover object-center\"\n                />\n              </div>\n              <div className=\"absolute right-0 top-60 aspect-[1.353211009] w-[36.875rem] overflow-hidden rounded-tl-2xl opacity-25\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/redd-f-5U_28ojjgms-unsplash.jpg\"\n                  alt=\"\"\n                  className=\"size-full object-cover object-center\"\n                />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta28 };\n"
+}

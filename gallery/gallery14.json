@@ -1,0 +1,45 @@
+{
+    "id": "gallery14",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery14.jpg",
+    "thumbnail": "gallery14-4x3.webp",
+    "description": "A gallery component with a carousel of items, featuring dynamic navigation dots that expand with titles on the active item. Layout includes a headline, description, and 2-column design with imagery.",
+    "createdAt": [
+        3,
+        "2025-03-30T02:38:45.814Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "gallery14",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\nconst carouselItems = [\n  {\n    image:\n      \"https://images.unsplash.com/photo-1589100787575-fad1dcaa9d17?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    title: \"Responsive\",\n    description:\n      \"Our templates are built with a mobile-first approach, ensuring your website looks stunning on all devices and screen sizes.\",\n  },\n  {\n    image:\n      \"https://images.unsplash.com/photo-1698516923130-8845104b6224?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    title: \"Clean Code\",\n    description:\n      \"Each template is crafted with clean, well-structured code following best practices to make customization and maintenance simple.\",\n  },\n  {\n    image:\n      \"https://images.unsplash.com/photo-1647517649508-855580038bfd?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    title: \"Copy & Paste\",\n    description:\n      \"Our templates are designed for easy copy and paste functionality, allowing you to quickly implement components and features into your projects.\",\n  },\n  {\n    image:\n      \"https://images.unsplash.com/photo-1586869871566-d8e41dd50318?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    title: \"Easy Updates\",\n    description:\n      \"Regular updates and maintenance ensure your template stays current with the latest web standards and security practices.\",\n  },\n  {\n    image:\n      \"https://images.unsplash.com/photo-1588065394015-68bf7e40738d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    title: \"Modern Stack\",\n    description:\n      \"Built with the latest technologies including React, Tailwind CSS and shadcn/ui for a modern development experience.\",\n  },\n];\n\nconst Gallery14 = () => {\n  const [api, setApi] = useState<CarouselApi>();\n  const [current, setCurrent] = useState(0);\n\n  useEffect(() => {\n    if (!api) {\n      return;\n    }\n\n    setCurrent(api.selectedScrollSnap() + 1);\n\n    api.on(\"select\", () => {\n      setCurrent(api.selectedScrollSnap() + 1);\n    });\n  }, [api]);\n\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container\">\n        <Carousel setApi={setApi}>\n          <div className=\"grid gap-8 md:gap-4 lg:grid-cols-2 [&>div[data-slot=carousel-content]]:overflow-visible [&>div[data-slot=carousel-content]]:[clip-path:inset(-100vw_-100vw_-100vw_0)]\">\n            <div>\n              <h2 className=\"text-4xl font-semibold md:text-6xl\">\n                Code less. <br />{\" \"}\n                <span className=\"text-primary/40\">Build faster.</span>\n              </h2>\n              <p className=\"mt-8 text-xl text-primary\">\n                Start with our templates, customize to your needs.\n              </p>\n              <div className=\"mt-8 hidden items-center gap-4 md:flex\">\n                <CarouselPrevious className=\"static size-12 translate-x-0 translate-y-0\" />\n                <CarouselNext className=\"static size-12 translate-x-0 translate-y-0\" />\n              </div>\n            </div>\n\n            <CarouselContent className=\"max-w-[400px] select-none\">\n              {carouselItems.map((item, idx) => (\n                <CarouselItem className=\"w-fit\" key={idx}>\n                  <div className=\"relative aspect-4/5 max-h-[500px] rounded-2xl\">\n                    <div className=\"absolute inset-0 rounded-2xl bg-linear-to-b from-primary to-transparent to-40%\" />\n                    <img\n                      src={item.image}\n                      alt={item.title}\n                      className=\"size-full rounded-2xl bg-cover\"\n                    />\n                    <div className=\"absolute inset-0 p-8\">\n                      <p className=\"text-sm font-semibold text-background/50\">\n                        <span className=\"mr-1 text-background\">\n                          {item.title}.\n                        </span>\n                        {item.description}\n                      </p>\n                    </div>\n                  </div>\n                </CarouselItem>\n              ))}\n            </CarouselContent>\n          </div>\n        </Carousel>\n        <div className=\"mt-8 flex items-center lg:ml-[50%]\">\n          {Array.from({ length: carouselItems.length }).map((_, index) => (\n            <span\n              key={index}\n              className={cn(\n                \"flex h-8 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-muted-foreground/15 text-xs font-semibold whitespace-nowrap transition-all duration-300\",\n                index + 1 === current ? \"w-32\" : \"m-4 size-4\",\n              )}\n              onClick={() => api && api.scrollTo(index)}\n            >\n              <span\n                className={cn(\n                  \"inline-block transition-all duration-300\",\n                  index + 1 === current\n                    ? \"translate-x-0 opacity-100\"\n                    : \"translate-x-6 opacity-0\",\n                )}\n              >\n                {carouselItems[index].title}\n              </span>\n            </span>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery14 };\n"
+}

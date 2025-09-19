@@ -1,0 +1,45 @@
+{
+    "id": "gallery31",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery31.jpg",
+    "thumbnail": "gallery31-4x3.webp",
+    "description": "A product showcase block with a dynamic grid layout of 1-4 columns, displaying items with hover effects, titles, and prices.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:23.562Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "direction-aware-hover.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/direction-aware-hover.json",
+            "docsUrl": "https://ui.aceternity.com/components/direction-aware-hover"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery31",
+    "collection": "block",
+    "group": "gallery",
+    "code": "import React from \"react\";\n\nimport { DirectionAwareHover } from \"@/components/aceternity/direction-aware-hover\";\n\nconst featureData = [\n  {\n    imgClass: \"md:h-70 !w-full rounded-3xl\",\n    imgsrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\",\n    ptitle: \"Gaming Controller\",\n    pdes: \"$199\",\n  },\n  {\n    imgClass: \"md:h-70 !w-full rounded-3xl lg:col-span-2\",\n    imgsrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img6.jpeg\",\n    ptitle: \"Wireless Headphones\",\n    pdes: \"$189\",\n  },\n  {\n    imgClass: \"md:h-70 col-span-1 !h-full !w-full rounded-3xl lg:row-span-2\",\n    imgsrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img11.jpeg\",\n    ptitle: \"Smart Watch\",\n    pdes: \"$249\",\n  },\n  {\n    imgClass: \"md:h-70 !w-full rounded-3xl lg:col-span-2\",\n    imgsrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img14.jpeg\",\n    ptitle: \"Bluetooth Speaker\",\n    pdes: \"$179\",\n  },\n  {\n    imgClass: \"md:h-70 !w-full rounded-3xl\",\n    imgsrc: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img13.jpeg\",\n    ptitle: \"Mechanical Keyboard\",\n    pdes: \"$219\",\n  },\n];\n\nconst Gallery31 = () => {\n  return (\n    <section className=\"relative h-full w-screen overflow-hidden py-32\">\n      <div className=\"container relative flex h-full w-full flex-col items-center justify-center\">\n        <div className=\"relative z-10 flex flex-col items-center justify-center gap-5\">\n          <p className=\"bg-muted rounded-full px-2 py-1 text-xs uppercase\">\n            CATALOG\n          </p>\n          <h1 className=\"font-calSans text-center text-6xl font-medium\">\n            Exclusive shadcnblocks\n          </h1>\n          <p className=\"text-muted-foreground text-center\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,\n          </p>\n        </div>\n        <div className=\"relative mt-[34px] grid w-full max-w-5xl grid-cols-1 justify-center gap-[10px] md:grid-cols-2 lg:grid-cols-4\">\n          {featureData.map((item, index) => (\n            <DirectionAwareHover\n              key={index}\n              className={item.imgClass}\n              imageUrl={item.imgsrc}\n            >\n              <p className=\"text-xl font-bold\">{item.ptitle}</p>\n              <p className=\"text-sm font-normal\">{item.pdes}</p>\n            </DirectionAwareHover>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery31 };\n"
+}

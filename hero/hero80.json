@@ -1,0 +1,51 @@
+{
+    "id": "hero80",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero80.jpg",
+    "thumbnail": "hero80-4x3.webp",
+    "description": "A two-column block with a gradient background, featuring text, links, buttons, avatars with stars, and images. The left column has promotional content and user ratings; the right displays images.",
+    "createdAt": [
+        3,
+        "2025-01-20T22:48:37.041Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero80",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { Star } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero80 = () => {\n  return (\n    <section className=\"relative overflow-hidden py-32\">\n      {/* Background gradients */}\n      <div className=\"pointer-events-none absolute inset-x-0 -top-20 -bottom-20 bg-[radial-gradient(ellipse_35%_15%_at_40%_55%,hsl(var(--accent))_0%,transparent_100%)] lg:bg-[radial-gradient(ellipse_12%_20%_at_60%_45%,hsl(var(--accent))_0%,transparent_100%)]\"></div>\n      <div className=\"pointer-events-none absolute inset-x-0 -top-20 -bottom-20 bg-[radial-gradient(ellipse_35%_20%_at_70%_75%,hsl(var(--accent))_0%,transparent_80%)] lg:bg-[radial-gradient(ellipse_15%_30%_at_70%_65%,hsl(var(--accent))_0%,transparent_80%)]\"></div>\n\n      {/* Background pattern */}\n      <div className=\"pointer-events-none absolute inset-x-0 -top-20 -bottom-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.1)_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_0%,transparent_80%)] [background-size:8px_8px]\"></div>\n\n      <div className=\"relative z-10 container mx-auto px-4\">\n        <div className=\"grid items-center gap-8 lg:grid-cols-2\">\n          {/* Left Column */}\n          <div className=\"flex flex-col items-center text-center lg:items-start lg:text-left\">\n            <a\n              href=\"https://www.shadcnblocks.com\"\n              className=\"my-6 text-xs font-bold tracking-[0.3em] text-muted-foreground uppercase hover:underline\"\n            >\n              shadcnblocks.com\n            </a>\n\n            {/* Heading */}\n            <h1 className=\"text-4xl font-semibold sm:text-5xl\">\n              Beautiful UI\n              <br />\n              <span className=\"text-muted-foreground\">Made Simple</span>\n            </h1>\n\n            {/* Description */}\n            <p className=\"my-8 max-w-xl text-muted-foreground lg:text-lg\">\n              Build stunning web applications faster with our premium collection\n              of ready-to-use UI components. Perfect for developers and\n              designers.\n            </p>\n\n            {/* Buttons */}\n            <div className=\"flex w-full flex-col justify-center gap-3 sm:flex-row lg:justify-start\">\n              <Button size=\"lg\" className=\"w-full sm:w-auto\">\n                Browse Components\n              </Button>\n              <Button size=\"lg\" variant=\"outline\" className=\"w-full sm:w-auto\">\n                View Demo\n              </Button>\n            </div>\n\n            {/* Avatar Stack and Stars */}\n            <div className=\"mt-8 flex flex-col items-center gap-4 sm:flex-row sm:items-center\">\n              {/* Avatars */}\n              <div className=\"flex -space-x-4\">\n                {[1, 2, 3, 4, 5].map((num) => (\n                  <Avatar\n                    key={num}\n                    className=\"size-14 border-2 border-background shadow-sm ring-1 ring-border\"\n                  >\n                    <AvatarImage\n                      src={`/images/block/avatar-${num}.webp`}\n                      alt={`Avatar ${num}`}\n                    />\n                  </Avatar>\n                ))}\n              </div>\n\n              {/* Stars */}\n              <div className=\"flex flex-col items-center sm:items-start\">\n                <div className=\"flex items-center gap-1\">\n                  {[...Array(5)].map((_, i) => (\n                    <Star key={i} className=\"size-5 fill-primary\" />\n                  ))}\n                  <span className=\"font-semibold\">5.0</span>\n                </div>\n                <p className=\"text-sm font-medium text-muted-foreground\">\n                  1000+ happy developers\n                </p>\n              </div>\n            </div>\n          </div>\n\n          {/* Right Column - Images */}\n          <div className=\"relative grid gap-4 lg:grid-cols-2\">\n            {/* Main Image */}\n            <div className=\"relative aspect-3/4 w-full overflow-hidden rounded-lg bg-muted\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"UI Components Preview\"\n                className=\"h-full w-full object-cover transition-transform duration-300 hover:scale-105\"\n              />\n            </div>\n\n            {/* Secondary Image */}\n            <div className=\"relative aspect-3/4 w-full overflow-hidden rounded-lg bg-muted lg:mt-8\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"Component Examples\"\n                className=\"h-full w-full object-cover transition-transform duration-300 hover:scale-105\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero80 };\n"
+}

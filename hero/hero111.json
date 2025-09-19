@@ -1,0 +1,66 @@
+{
+    "id": "hero111",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero111.jpg",
+    "thumbnail": "hero111-4x3.webp",
+    "description": "A component showcases an email form, heading, description, features like \"No Credit Card Required,\" 3 placeholder images with different aspect ratios, and a grid of fictional company logos.",
+    "createdAt": [
+        3,
+        "2024-12-16T04:58:05.350Z"
+    ],
+    "dependencies": [
+        "\"@hookform/resolvers\"",
+        "lucide-react",
+        "react-hook-form",
+        "zod"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "form",
+            "registryId": "shadcn",
+            "registryItemUrl": "form",
+            "docsUrl": "https://ui.shadcn.com/docs/components/form"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero111",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\nimport { zodResolver } from \"@hookform/resolvers/zod\";\nimport { CircleCheck } from \"lucide-react\";\nimport { useForm } from \"react-hook-form\";\nimport { z } from \"zod\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Form,\n  FormControl,\n  FormField,\n  FormItem,\n  FormMessage,\n} from \"@/components/ui/form\";\nimport { Input } from \"@/components/ui/input\";\n\nconst formSchema = z\n  .object({\n    email: z.string().email({ message: \"Invalid email address\" }),\n  })\n  .required({ email: true });\n\nfunction HeroFrom() {\n  const form = useForm<z.infer<typeof formSchema>>({\n    resolver: zodResolver(formSchema),\n    defaultValues: {\n      email: \"\",\n    },\n  });\n\n  function onSubmit(values: z.infer<typeof formSchema>) {\n    console.log(values);\n  }\n\n  return (\n    <Form {...form}>\n      <form onSubmit={form.handleSubmit(onSubmit)} className=\"w-full\">\n        <div className=\"flex flex-col justify-center gap-3 md:flex-row\">\n          <div className=\"w-full\">\n            <FormField\n              control={form.control}\n              name=\"email\"\n              render={({ field }) => (\n                <FormItem>\n                  <FormControl>\n                    <Input\n                      {...field}\n                      type=\"email\"\n                      id=\"emailInput\"\n                      placeholder=\"Enter your mail\"\n                      className=\"block h-fit w-full rounded-full px-6 py-3 placeholder:text-black/60 focus:outline-none sm:py-5\"\n                    />\n                  </FormControl>\n                  <FormMessage />\n                </FormItem>\n              )}\n            />\n          </div>\n          <div className=\"shrink-0\">\n            <Button\n              type=\"submit\"\n              className=\"h-fit w-full rounded-full px-6 py-3 text-base font-semibold sm:py-5 md:w-fit\"\n            >\n              Get Started Free\n            </Button>\n          </div>\n        </div>\n      </form>\n    </Form>\n  );\n}\n\nconst Hero111 = () => {\n  return (\n    <section className=\"bg-muted py-12 font-sans md:py-20\">\n      <div className=\"container max-w-[80.5rem]\">\n        <div className=\"mx-auto flex max-w-[24.375rem] flex-col items-center justify-center gap-8 sm:max-w-[31.25rem] md:max-w-[37.5rem] xl:max-w-[43.125rem]\">\n          <div className=\"flex flex-col items-center justify-center gap-5\">\n            <h1 className=\"font-outfit text-center text-3xl leading-tight font-medium text-primary sm:text-4xl md:text-5xl xl:text-6xl\">\n              HR Management with advanced Hiring process\n            </h1>\n            <p className=\"text-center text-lg text-primary/80\">\n              Simplify HR tasks and empower your team with our solution. Easily\n              manage employee data and more\u2014all from a single, centralized\n              platform.\n            </p>\n          </div>\n          <div className=\"w-full max-w-[32.5rem]\">\n            <HeroFrom />\n          </div>\n          <div className=\"flex w-full flex-wrap items-center justify-center gap-6\">\n            <div className=\"flex items-center gap-3\">\n              <div className=\"relative h-6 w-6 shrink-0\">\n                <CircleCheck className=\"absolute top-1/2 left-1/2 m-auto h-[108%] w-[108%] -translate-x-1/2 -translate-y-1/2 stroke-primary\" />\n              </div>\n              <p className=\"text-base text-muted-foreground\">\n                No Credit Card Required\n              </p>\n            </div>\n            <div className=\"flex items-center gap-3\">\n              <div className=\"relative h-6 w-6 shrink-0\">\n                <CircleCheck className=\"absolute top-1/2 left-1/2 m-auto h-[108%] w-[108%] -translate-x-1/2 -translate-y-1/2 stroke-primary\" />\n              </div>\n              <p className=\"text-base text-muted-foreground\">Cancel Anytime</p>\n            </div>\n          </div>\n        </div>\n        <div className=\"mt-20 mb-20 flex w-full items-start justify-between md:mt-28\">\n          <div className=\"border-muted2 w-[41.4%] overflow-hidden rounded-lg\">\n            <AspectRatio ratio={1.28627451 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"\"\n                className=\"h-full w-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"border-muted2 w-[23.98%] overflow-hidden rounded-lg\">\n            <AspectRatio ratio={0.745098039 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                alt=\"\"\n                className=\"h-full w-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"border-muted2 w-[32.82%] overflow-hidden rounded-lg\">\n            <AspectRatio ratio={1.019607843 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\"\n                alt=\"\"\n                className=\"h-full w-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n        </div>\n        <div className=\"flex flex-col items-center justify-center gap-10\">\n          <p className=\"text-center text-lg text-muted-foreground\">\n            Trusted by 7+ million people at companies like\n          </p>\n          <div className=\"grid grid-cols-3 grid-rows-2 flex-wrap justify-between gap-8 md:grid-cols-6 md:grid-rows-1\">\n            {Array(6)\n              .fill(null)\n              .map((_, i) => (\n                <div className=\"h-9\" key={`logos-${i}`}>\n                  <img\n                    src={`/images/block/logos/company/fictional-company-logo-${++i}.svg`}\n                    alt=\"\"\n                    className=\"h-full w-full object-contain object-center\"\n                  />\n                </div>\n              ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero111 };\n"
+}

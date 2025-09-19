@@ -1,0 +1,58 @@
+{
+    "id": "feature215",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature215.jpg",
+    "thumbnail": "feature215-4x3.webp",
+    "description": "A carousel component showcasing AI editing features with video previews, titles, and summaries. Each carousel card plays its video on hover.",
+    "createdAt": [
+        3,
+        "2025-04-30T03:08:16.833Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature215",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\nimport {\n  AudioLines,\n  Captions,\n  Eye,\n  Languages,\n  ListMinus,\n  LucideIcon,\n  ScanFace,\n  TextQuote,\n} from \"lucide-react\";\nimport { useRef } from \"react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardTitle,\n} from \"@/components/ui/card\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\";\n\ninterface card {\n  video: string;\n  Icon: LucideIcon;\n  title: string;\n  link: string;\n  summary: string;\n}\n\nconst List: Array<card> = [\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4\",\n    Icon: Eye,\n    title: \"Visual Design System\",\n    link: \"#\",\n    summary:\n      \"Consistent, beautiful components built with a cohesive design language that scales across your entire application.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-2.mp4\",\n    Icon: Languages,\n    title: \"Framework Agnostic\",\n    link: \"#\",\n    summary:\n      \"Use with React, Vue, Angular, or vanilla JavaScript. One library that works everywhere you need it.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-3.mp4\",\n    Icon: AudioLines,\n    title: \"Interactive Components\",\n    link: \"#\",\n    summary:\n      \"Rich interactions and smooth animations built-in. From subtle hover effects to complex state transitions.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-4.mp4\",\n    Icon: ListMinus,\n    title: \"Minimal Setup\",\n    link: \"#\",\n    summary:\n      \"Get started in minutes with zero configuration. Clean, semantic code that doesn't bloat your bundle size.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4\",\n    Icon: ScanFace,\n    title: \"Accessibility First\",\n    link: \"#\",\n    summary:\n      \"WCAG compliant components with full keyboard navigation, screen reader support, and focus management.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4\",\n    Icon: TextQuote,\n    title: \"Complete Documentation\",\n    link: \"#\",\n    summary:\n      \"Comprehensive guides, live examples, and API references. Everything you need to build with confidence.\",\n  },\n  {\n    video: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4\",\n    Icon: Captions,\n    title: \"TypeScript Native\",\n    link: \"#\",\n    summary:\n      \"Built with TypeScript from the ground up. Full type safety, autocomplete, and IntelliSense support.\",\n  },\n];\n\nconst CarouselCard = ({ video, Icon, title, link, summary }: card) => {\n  const videoRef = useRef<HTMLVideoElement | null>(null);\n  return (\n    <a\n      href={link}\n      className=\"group block h-full\"\n      onMouseEnter={() => {\n        if (videoRef.current) {\n          videoRef.current.play();\n        }\n      }}\n      onMouseLeave={() => {\n        if (videoRef.current) {\n          videoRef.current.pause();\n          videoRef.current.currentTime = 0;\n        }\n      }}\n    >\n      <Card className=\"bg-muted h-full min-h-[24rem] p-8 shadow-none transition-all group-hover:shadow-md\">\n        <CardContent className=\"p-0\">\n          <div className=\"relative\">\n            <AspectRatio\n              ratio={16 / 9}\n              className=\"overflow-hidden rounded-[0.5rem]\"\n            >\n              <video\n                src={video}\n                className=\"block size-full object-cover object-center\"\n                ref={videoRef}\n                controls={false}\n                muted={true}\n              />\n            </AspectRatio>\n            <div className=\"bg-primary absolute -left-2 -top-3 flex size-9 rounded-[0.5rem]\">\n              <Icon className=\"stroke-primary-foreground m-auto size-4\" />\n            </div>\n          </div>\n          <div className=\"mt-8 flex flex-col gap-2\">\n            <CardTitle className=\"text-foreground text-xl font-normal leading-[130%] tracking-[-0.48px]\">\n              {title}\n            </CardTitle>\n            <CardDescription className=\"text-sm leading-[150%] tracking-[-0.36px]\">\n              {summary}\n            </CardDescription>\n          </div>\n        </CardContent>\n      </Card>\n    </a>\n  );\n};\nconst Feature215 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-16 flex max-w-[47.5rem] flex-col gap-6\">\n          <h2 className=\"text-center text-4xl font-semibold xl:text-6xl\">\n            Fully Editable Components\n          </h2>\n          <p className=\"text-muted-foreground text-center text-xl\">\n            A comprehensive component library designed for modern web\n            development. Ship beautiful, accessible interfaces in record time\n            with our battle-tested components.\n          </p>\n        </div>\n        <Carousel\n          opts={{\n            align: \"start\",\n          }}\n          className=\"w-full\"\n        >\n          <CarouselContent className=\"py-4\">\n            {List.map((item, index) => (\n              <CarouselItem\n                key={index}\n                className=\"basis-full md:basis-1/2 lg:basis-1/3\"\n              >\n                <CarouselCard {...item} />\n              </CarouselItem>\n            ))}\n          </CarouselContent>\n          <div className=\"mt-8 flex w-full justify-center gap-4\">\n            <CarouselPrevious className=\"static size-12\" />\n            <CarouselNext className=\"static size-12\" />\n          </div>\n        </Carousel>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature215 };\n"
+}

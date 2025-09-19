@@ -1,0 +1,36 @@
+{
+    "id": "footer10",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "footer10.jpg",
+    "thumbnail": "footer10-4x3.webp",
+    "description": "A time-updating footer with 3 columns, displaying a copyright date, current London time, and an email. Features an auto-updating clock functionality.",
+    "createdAt": [
+        3,
+        "2024-11-15T01:10:23.711Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "footer"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Dec 2024"
+        ],
+        "registryIds": []
+    },
+    "figma": true,
+    "slug": "footer10",
+    "collection": "block",
+    "group": "footer",
+    "code": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nconst Footer10 = () => {\n  const [time, setTime] = useState(\"\");\n\n  useEffect(() => {\n    const updateLondonTime = () => {\n      const options: Intl.DateTimeFormatOptions = {\n        timeZone: \"Europe/London\",\n        hour: \"2-digit\" as const,\n        minute: \"2-digit\" as const,\n        second: \"2-digit\" as const,\n      };\n      const londonTime = new Intl.DateTimeFormat(\"en-GB\", options).format(\n        new Date(),\n      );\n      setTime(londonTime);\n    };\n\n    updateLondonTime();\n    const intervalId = setInterval(updateLondonTime, 1000);\n\n    return () => clearInterval(intervalId);\n  }, []);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <footer>\n          <div>\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/shadcnblocks-giant-black-text.svg\"\n              alt=\"footer\"\n              className=\"aspect-[13.7] w-full object-cover\"\n            />\n          </div>\n          <div className=\"flex flex-col items-center justify-between py-12 text-muted-foreground md:flex-row\">\n            <div>\u00a9 Shadcnblocks.com 2024</div>\n            <div>Time \u2192 {time}</div>\n            <div>example@shadcnblocks.com</div>\n          </div>\n        </footer>\n      </div>\n    </section>\n  );\n};\n\nexport { Footer10 };\n"
+}

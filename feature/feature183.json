@@ -1,0 +1,51 @@
+{
+    "id": "feature183",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature183.jpg",
+    "thumbnail": "feature183-4x3.webp",
+    "description": "A component featuring a trendy hero area with an overlaid phone image, SVG patterning, and two info cards, plus a row of three stat cards below.",
+    "createdAt": [
+        3,
+        "2025-01-26T04:31:17.436Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "select",
+            "registryId": "shadcn",
+            "registryItemUrl": "select",
+            "docsUrl": "https://ui.shadcn.com/docs/components/select"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature183",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Plus } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport {\n  Select,\n  SelectContent,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@/components/ui/select\";\n\ninterface DataItem {\n  title: string;\n  value: string;\n  description: string;\n}\n\nconst DATA: DataItem[] = [\n  {\n    title: \"Projects Delivered\",\n    value: \"150\",\n    description: \"Total projects successfully delivered to clients\",\n  },\n  {\n    title: \"Revenue Generated\",\n    value: \"20M\",\n    description: \"Total revenue generated from all projects\",\n  },\n  {\n    title: \"Client Satisfaction\",\n    value: \"95\",\n    description: \"Overall client satisfaction rate\",\n  },\n];\n\ninterface StatCardProps {\n  title: string;\n  value: string | number;\n  description: string;\n}\n\nconst StatCard = ({ title, value, description }: StatCardProps) => {\n  return (\n    <div className=\"flex max-w-52 flex-col gap-4\">\n      <span className=\"font-medium\">{title}</span>\n      <div className=\"text-7xl font-bold\">\n        {value}\n        <span className=\"text-muted-foreground\">+</span>\n      </div>\n      <p className=\"text-muted-foreground\">{description}</p>\n    </div>\n  );\n};\n\nconst Feature183 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"w-full shrink-0\">\n          <div className=\"relative mx-auto h-[24rem] w-full rounded-3xl bg-muted bg-cover bg-center bg-no-repeat sm:h-[24rem]\">\n            {/* SVG pattern */}\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              width=\"100%\"\n              height=\"100%\"\n              viewBox=\"0 0 4200 1080\"\n              fill=\"none\"\n              className=\"absolute top-0 right-0 bottom-0 left-0 z-0 [mask-image:linear-gradient(to_bottom,transparent,white,transparent,transparent)] opacity-50\"\n            >\n              <g clipPath=\"url(#clip0_4_5)\">\n                <rect width=\"100%\" height=\"1080\" fill=\"none\" />\n                {/* Horizontal lines */}\n                {Array.from({ length: 5 }).map((_, index) => (\n                  <line\n                    key={`horizontal-${index}`}\n                    y1={(index + 1) * 200 - 0.5}\n                    x2=\"100%\" // Extend to full width\n                    y2={(index + 1) * 200 - 0.5}\n                    className=\"stroke-muted-foreground\"\n                    strokeWidth=\"1\"\n                  />\n                ))}\n                {/* Vertical lines */}\n                {Array.from({ length: 4000 }).map((_, index) => (\n                  <line\n                    key={`vertical-${index}`}\n                    x1={(index + 1) * 200 - 0.5}\n                    y1=\"0\"\n                    x2={(index + 1) * 200 - 0.5}\n                    y2=\"1080\"\n                    className=\"stroke-muted-foreground\"\n                    strokeWidth=\"1\"\n                  />\n                ))}\n              </g>\n              <defs>\n                <clipPath id=\"clip0_4_5\">\n                  <rect width=\"100%\" height=\"1080\" fill=\"white\" />\n                </clipPath>\n              </defs>\n            </svg>\n\n            {/* Phone container aligned to the bottom */}\n            <div className=\"absolute -top-32 bottom-0 left-1/2 z-10 mt-12 w-[12.5rem] -translate-x-1/2 transform overflow-hidden sm:w-[18.75rem]\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/hero108/iphone.png\"\n                alt=\"\"\n                className=\"absolute top-0 z-20 block w-full\"\n              />\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg\"\n                alt=\"\"\n                className=\"absolute top-0 block w-full rounded-[50px]\"\n              />\n            </div>\n\n            {/* Left card */}\n            <div className=\"absolute top-12 left-1/4 z-20 hidden w-60 transform rounded-2xl border bg-background p-4 shadow-md md:rotate-12 lg:block\">\n              <div className=\"flex flex-row\">\n                <h3 className=\"text-lg font-semibold\">Top Product</h3>\n                <Badge variant=\"secondary\" className=\"ml-auto rounded-sm\">\n                  Product\n                </Badge>\n              </div>\n              <div className=\"mt-4\">\n                <p className=\"text-sm text-muted-foreground\">\n                  EcoSmart Water Bottle made from 100% recycled materials.\n                  Durable, eco-friendly, and available in multiple colors and\n                  sizes.\n                </p>\n              </div>\n            </div>\n\n            {/* Right card */}\n            <div className=\"absolute top-12 right-1/4 z-20 hidden w-60 transform rounded-lg border bg-background p-4 shadow-md lg:block\">\n              <div className=\"flex flex-row border-b pb-4\">\n                <h3 className=\"text-lg font-semibold\">Add Product</h3>\n                <div className=\"relative ml-auto\">\n                  <Badge variant=\"secondary\" className=\"rounded-sm px-1\">\n                    <Plus className=\"size-4\" />\n                  </Badge>\n                </div>\n              </div>\n              <div className=\"mt-4 flex flex-col gap-4\">\n                <Select>\n                  <SelectTrigger className=\"w-full\">\n                    <SelectValue placeholder=\"Select a category\" />\n                  </SelectTrigger>\n                  <SelectContent>\n                    <SelectItem value=\"category1\">Category 1</SelectItem>\n                    <SelectItem value=\"category2\">Category 2</SelectItem>\n                    <SelectItem value=\"category3\">Category 3</SelectItem>\n                  </SelectContent>\n                </Select>\n                <div className=\"flex flex-col gap-2\">\n                  <Select>\n                    <SelectTrigger className=\"w-full\">\n                      <SelectValue placeholder=\"Size\" />\n                    </SelectTrigger>\n                    <SelectContent>\n                      <SelectItem value=\"category1\">Size SM</SelectItem>\n                      <SelectItem value=\"category2\">Size MD</SelectItem>\n                      <SelectItem value=\"category3\">Size XL</SelectItem>\n                    </SelectContent>\n                  </Select>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        {/* Static cards */}\n        <div className=\"mt-14 flex flex-col items-center justify-center gap-x-24 gap-y-8 lg:flex-row\">\n          {DATA.map((item, index) => (\n            <StatCard key={index} {...item} />\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature183 };\n"
+}

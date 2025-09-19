@@ -1,0 +1,51 @@
+{
+    "id": "feature266",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature266.jpg",
+    "thumbnail": "feature266-4x3.webp",
+    "description": "A component showcasing a \"FRAGMENTS OF LIGHT & STILLNESS\" collection with a three-column grid of cards featuring image tooltips, staggered animations, and a hover effect enhancing visual context.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:38:05.883Z"
+    ],
+    "dependencies": [
+        "framer-motion"
+    ],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "tooltip",
+            "registryId": "shadcn",
+            "registryItemUrl": "tooltip",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tooltip"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature266",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { motion, Variants } from \"framer-motion\";\n\nimport { Card } from \"@/components/ui/card\";\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipProvider,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nconst services = [\n  {\n    id: \"01\",\n    title: \"MOTION & SILHOUETTE\",\n    description:\n      \"Shadows in motion. A glance caught between frames, forever paused.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw1.jpeg?height=200&width=150\",\n  },\n  {\n    id: \"02\",\n    title: \"STILL STREETS\",\n    description:\n      \"Steps echo down quiet halls. Light wraps around the unseen moment.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw3.jpeg?height=200&width=150\",\n  },\n  {\n    id: \"03\",\n    title: \"FOCUSED CHAOS\",\n    description:\n      \"Stillness before the leap. Motion drawn in grayscale whispers.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw11.jpeg?height=200&width=150\",\n  },\n  {\n    id: \"04\",\n    title: \"BLURRED FIGURES\",\n    description:\n      \"Blurred edges and silent focus. A portrait of almost-seen things.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw5.jpeg?height=200&width=150\",\n  },\n  {\n    id: \"05\",\n    title: \"AFTERLIGHT TRAILS\",\n    description:\n      \"Headlights trail into the distance. Stories unfold in fragments.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg?height=200&width=150\",\n  },\n  {\n    id: \"06\",\n    title: \"WEIGHTLESS ASCENT\",\n    description:\n      \"Upward glance. A quiet climb. Clouds drift through open frames.\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person5.jpeg?height=200&width=150\",\n  },\n];\n\nconst containerVariants = {\n  hidden: { opacity: 0 },\n  visible: {\n    opacity: 1,\n    transition: { staggerChildren: 0.1 },\n  },\n};\n\nconst cardVariants: Variants = {\n  hidden: { opacity: 0, y: 30 },\n  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: \"easeOut\" } },\n};\n\nconst Feature266 = () => {\n  return (\n    <TooltipProvider delayDuration={0}>\n      <section className=\"py-32\">\n        <div className=\"container\">\n          <motion.div\n            className=\"mb-16 text-center\"\n            initial={{ opacity: 0, y: -20 }}\n            animate={{ opacity: 1, y: 0 }}\n            transition={{ duration: 0.8, ease: \"easeOut\" }}\n          >\n            <p className=\"text-muted-foreground mb-4 text-sm tracking-widest\">\n              COLLECTION\n            </p>\n            <h1 className=\"text-4xl font-light tracking-wide md:text-6xl\">\n              FRAGMENTS OF\n              <br />\n              LIGHT & STILLNESS\n            </h1>\n          </motion.div>\n\n          <motion.div\n            className=\"grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3\"\n            variants={containerVariants}\n            initial=\"hidden\"\n            animate=\"visible\"\n          >\n            {services.map((service) => (\n              <motion.div\n                key={service.id}\n                variants={cardVariants}\n                className=\"group cursor-pointer\"\n              >\n                <Card className=\"bg-card/5 border-border/20 hover:bg-card/10 p-8 backdrop-blur-sm transition-colors duration-300\">\n                  <p className=\"text-muted-foreground mb-8 text-xs tracking-widest\">\n                    {service.id}\n                  </p>\n\n                  <div className=\"relative mb-8 flex h-40 items-center justify-center\">\n                    <Tooltip>\n                      <TooltipTrigger asChild>\n                        <div className=\"border-border/30 from-primary/30 to-secondary/30 h-32 w-24 overflow-hidden rounded-lg border bg-gradient-to-br shadow-lg\">\n                          <img\n                            src={service.image}\n                            alt={`${service.title} preview`}\n                            className=\"h-full w-full object-cover\"\n                          />\n                        </div>\n                      </TooltipTrigger>\n                      <TooltipContent side=\"top\" align=\"center\" className=\"p-2\">\n                        <img\n                          src={service.image}\n                          alt={`${service.title} preview big`}\n                          className=\"h-[240px] w-[160px] rounded-md object-cover\"\n                        />\n                      </TooltipContent>\n                    </Tooltip>\n                  </div>\n\n                  <h3 className=\"group-hover:text-primary mb-2 text-center text-lg font-light tracking-wide transition-colors duration-300\">\n                    {service.title}\n                  </h3>\n                  <p className=\"text-muted-foreground group-hover:text-foreground/80 text-center text-sm transition-colors duration-300\">\n                    {service.description}\n                  </p>\n                </Card>\n              </motion.div>\n            ))}\n          </motion.div>\n        </div>\n      </section>\n    </TooltipProvider>\n  );\n};\n\nexport { Feature266 };\n"
+}

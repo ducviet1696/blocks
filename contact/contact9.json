@@ -1,0 +1,76 @@
+{
+    "id": "contact9",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "contact9.jpg",
+    "thumbnail": "contact9-4x3.webp",
+    "description": "A component with a contact form and methods listed in columns, featuring input fields, checkboxes, and buttons for submissions alongside icons for email, phone, and office directions.",
+    "createdAt": [
+        3,
+        "2025-01-23T06:52:35.528Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "checkbox",
+            "registryId": "shadcn",
+            "registryItemUrl": "checkbox",
+            "docsUrl": "https://ui.shadcn.com/docs/components/checkbox"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        },
+        {
+            "name": "label",
+            "registryId": "shadcn",
+            "registryItemUrl": "label",
+            "docsUrl": "https://ui.shadcn.com/docs/components/label"
+        },
+        {
+            "name": "textarea",
+            "registryId": "shadcn",
+            "registryItemUrl": "textarea",
+            "docsUrl": "https://ui.shadcn.com/docs/components/textarea"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "contact"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "contact9",
+    "collection": "block",
+    "group": "contact",
+    "code": "import { Building, ChevronRight, Mail, Phone } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nconst contactMethods = [\n  {\n    icon: Mail,\n    title: \"Email\",\n    description:\n      \"Have a question or need help? Drop us an email, and we'll respond within 24 hours.\",\n    contact: \"hello@relative.io\",\n  },\n  {\n    icon: Phone,\n    title: \"Phone\",\n    description:\n      \"Prefer to chat? Give us a call Monday\u2013Friday, 9 AM\u20135 PM (PST).\",\n    contact: \"+1 (123) 456-7890\",\n  },\n  {\n    icon: Building,\n    title: \"Office\",\n    description:\n      \"Stop by our office @ 123 Productivity Ave, San Francisco, CA 94105\",\n    contact: (\n      <a\n        href=\"#\"\n        className=\"inline-flex items-center gap-1 text-sm font-medium text-foreground hover:underline\"\n      >\n        Get Directions\n        <ChevronRight className=\"size-4\" />\n      </a>\n    ),\n  },\n];\n\nconst formFields = [\n  {\n    id: \"name\",\n    label: \"Name\",\n    type: \"text\",\n    component: Input,\n    required: true,\n  },\n  {\n    id: \"email\",\n    label: \"Email\",\n    type: \"email\",\n    component: Input,\n    required: true,\n  },\n  {\n    id: \"message\",\n    label: \"Message\",\n    component: Textarea,\n    required: true,\n\n    props: {\n      placeholder: \"Type Your Message...\",\n      rows: 4,\n    },\n  },\n];\nconst Contact9 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col gap-6 py-4 lg:py-8\">\n          <Badge\n            variant=\"outline\"\n            className=\"w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm\"\n          >\n            <Mail className=\"size-4\" />\n            <span>Reach Out</span>\n          </Badge>\n          <h2 className=\"text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl\">\n            Get in Touch\n          </h2>\n          <p className=\"max-w-[600px] tracking-[-0.32px] text-muted-foreground\">\n            We're here to help\u2014reach out with any questions or feedback.\n          </p>\n        </div>\n\n        <div className=\"flex justify-between gap-10 py-12 max-md:flex-col\">\n          <form className=\"flex flex-1 flex-col gap-6\">\n            {formFields.map((field) => (\n              <div key={field.id} className=\"space-y-2\">\n                <Label className=\"text-sm font-normal\" htmlFor={field.id}>\n                  {field.label}\n                </Label>\n                <field.component\n                  id={field.id}\n                  type={field.type}\n                  required={field.required}\n                  className=\"border-border bg-card\"\n                  {...field.props}\n                />\n              </div>\n            ))}\n\n            <div className=\"flex items-center space-x-2\">\n              <Checkbox id=\"terms\" required />\n              <div className=\"grid gap-1.5 leading-none\">\n                <Label\n                  htmlFor=\"terms\"\n                  className=\"text-sm font-normal peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"\n                >\n                  I accept the{\" \"}\n                  <a href=\"/terms\" className=\"underline\">\n                    Terms\n                  </a>\n                </Label>\n              </div>\n            </div>\n\n            <Button type=\"submit\">Submit</Button>\n          </form>\n\n          <div className=\"grid flex-1 gap-6 self-start lg:grid-cols-2\">\n            {contactMethods.map((method, index) => (\n              <div key={index} className=\"space-y-2\">\n                <div className=\"flex items-center gap-2\">\n                  <method.icon className=\"size-5\" />\n                  <h3 className=\"text-2xl tracking-[-0.96px]\">\n                    {method.title}\n                  </h3>\n                </div>\n                <div className=\"space-y-2 tracking-[-0.32px]\">\n                  <p className=\"text-sm text-muted-foreground\">\n                    {method.description}\n                  </p>\n                  <div className=\"text-sm text-muted-foreground\">\n                    {method.contact}\n                  </div>\n                </div>\n              </div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Contact9 };\n"
+}

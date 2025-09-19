@@ -1,0 +1,43 @@
+{
+    "id": "cta14",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta14.jpg",
+    "thumbnail": "cta14-4x3.webp",
+    "description": "A component featuring a full-width background image with a dark overlay, centered text, and two buttons. It includes a bold title, a description, and offers a free trial.",
+    "createdAt": [
+        3,
+        "2025-02-20T23:47:50.774Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Mar 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta14",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Cta14 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex h-[620px] items-center justify-center overflow-hidden rounded-2xl bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/pawel-czerwinski-O4fAgtXLRwI-unsplash.jpg')] bg-cover bg-center\">\n          <div className=\"flex flex-col gap-8 p-4 text-center\">\n            <h2 className=\"text-primary-foreground text-5xl font-bold\">\n              Start your free trial today.\n            </h2>\n            <p className=\"text-primary-foreground text-lg\">\n              Start with a 14-day free trial. No credit card required. No setup\n              fees. Cancel anytime.\n            </p>\n            <div className=\"flex flex-col justify-center gap-2 sm:flex-row\">\n              <Button size=\"lg\" variant=\"default\">\n                Get Started\n              </Button>\n              <Button size=\"lg\" variant=\"secondary\">\n                Learn More\n              </Button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta14 };\n"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "feature217a",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature217a.jpg",
+    "thumbnail": "feature217a-4x3.webp",
+    "description": "A component displaying 3 columns of features, each with an icon, title, and summary focused on accessibility. It includes a header with a title, paragraph, and an image within an aspect ratio block against a dynamic background.",
+    "createdAt": [
+        3,
+        "2025-07-01T03:37:51.223Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature217a",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Eye, Keyboard, LucideIcon, Volume2 } from \"lucide-react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\n\ninterface Item {\n  title: string;\n  summary: string;\n  icon: LucideIcon;\n}\n\nconst FEATURES: Array<Item> = [\n  {\n    title: \"Keyboard Navigation\",\n    summary:\n      \"Ensure all interactive elements are accessible via keyboard alone, allowing users with motor impairments to navigate easily and efficiently without a mouse.\",\n    icon: Keyboard,\n  },\n  {\n    title: \"Screen Reader Friendly\",\n    summary:\n      \"Use semantic HTML and proper ARIA labels to help screen readers convey structure and meaning clearly to users with visual impairments.\",\n    icon: Volume2,\n  },\n  {\n    title: \"Color Contrast Check\",\n    summary:\n      \"Maintain strong color contrast between text and background to support users with low vision and improve readability across different lighting conditions.\",\n    icon: Eye,\n  },\n];\n\nconst FeatureItem = ({ title, summary, icon: Icon }: Item) => {\n  return (\n    <div className=\"flex flex-col items-center justify-center gap-4\">\n      <Icon className=\"stroke-muted-foreground size-7\" />\n      <div className=\"max-w-xs text-center text-xl font-semibold\">{title}</div>\n      <div className=\"text-muted-foreground max-w-lg text-center text-base\">\n        {summary}\n      </div>\n    </div>\n  );\n};\n\nconst Feature217a = () => {\n  return (\n    <section className=\"\">\n      <div\n        className=\"relative bg-cover bg-center bg-no-repeat py-10 after:absolute after:inset-0 after:z-10 after:block after:size-full after:bg-black/40 after:content-[''] md:py-16 xl:px-6 xl:py-28\"\n        style={{\n          backgroundImage:\n            \"url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/futuristic-device-design-qcufu.png')\",\n        }}\n      >\n        <div className=\"container relative z-20\">\n          <div className=\"flex flex-col items-center justify-center gap-12 text-center\">\n            <div className=\"flex max-w-4xl flex-col gap-5\">\n              <h2 className=\"text-2xl tracking-tight text-white md:text-7xl\">\n                Incredible AI-powered video editing\n              </h2>\n              <div className=\"text-lg font-medium tracking-tight text-white\">\n                Accessibility ensures digital content is usable by all,\n                including people with disabilities, by following inclusive\n                design practices and meeting standards like WCAG for equal user\n                experience.\n              </div>\n            </div>\n            <div className=\"max-w-xl\">\n              <AspectRatio\n                ratio={0.80239521}\n                className=\"w-full overflow-hidden rounded-xl shadow-xl\"\n              >\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                  alt=\"\"\n                  className=\"block size-full object-cover object-center\"\n                />\n              </AspectRatio>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div className=\"container\">\n        <div className=\"grid items-start gap-8 py-20 lg:grid-cols-3\">\n          {FEATURES.map((item) => (\n            <FeatureItem key={item.title} {...item} />\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature217a };\n"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "feature288",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature288.jpg",
+    "thumbnail": "feature288-4x3.webp",
+    "description": "A component featuring a central text block with embedded clickable previews, housed within a single column layout, emphasizing the ease of integration and customization.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:51:12.505Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "link-preview.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/link-preview.json",
+            "docsUrl": "https://ui.aceternity.com/components/link-preview"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity"
+        ]
+    },
+    "figma": true,
+    "slug": "feature288",
+    "collection": "block",
+    "group": "feature",
+    "code": "import React from \"react\";\n\nimport { LinkPreview } from \"@/components/aceternity/link-preview\";\n\nconst Feature288 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container w-full\">\n        <h1 className=\"text-muted-foreground/40 mt-10 text-center text-3xl font-semibold tracking-tight md:text-4xl\">\n          Build faster with\n          <LinkPreview url=\"https://shadcnblocks.com\" className=\"px-1\">\n            Shadcnblocks\n          </LinkPreview>{\" \"}\n          designed for real-world apps. Whether you're using{\" \"}\n          <LinkPreview url=\"https://tailwindcss.com\" className=\"px-1\">\n            TailwindCSS\n          </LinkPreview>\n          ,{\" \"}\n          <LinkPreview url=\"https://www.typescriptlang.org\" className=\"px-1\">\n            TypeScript\n          </LinkPreview>\n          , or integrating{\" \"}\n          <LinkPreview url=\"https://www.framer.com/motion\" className=\"px-1\">\n            Framer Motion\n          </LinkPreview>\n          <br />\n          <br />\n          Every block is customizable, responsive, and optimized for frameworks\n          like{\" \"}\n          <LinkPreview url=\"https://nextjs.org\" className=\"px-1\">\n            Next.js\n          </LinkPreview>{\" \"}\n          and{\" \"}\n          <LinkPreview url=\"https://ui.shadcn.com\" className=\"px-1\">\n            shadcn/ui\n          </LinkPreview>{\" \"}\n          \u2014 giving you a powerful UI toolkit that scales with your project.\n        </h1>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature288 };\n"
+}

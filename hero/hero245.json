@@ -1,0 +1,54 @@
+{
+    "id": "hero245",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero245.jpg",
+    "thumbnail": "hero245-4x3.webp",
+    "description": "A component with a hiring banner, central slogan, supporting text, download buttons, and dynamic background.antal panels fadeIn based on device.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:47.956Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "pointer-highlight.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/pointer-highlight.json",
+            "docsUrl": "https://ui.aceternity.com/components/pointer-highlight"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero245",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { useIsMobile } from \"@/hooks/use-mobile\";\n\nimport { PointerHighlight } from \"@/components/aceternity/pointer-highlight\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero245 = () => {\n  const isMobile = useIsMobile();\n\n  return (\n    <section className=\"relative grid w-screen overflow-hidden py-32\">\n      <div className=\"container relative z-10 h-full grid-cols-1 items-center justify-center gap-6\">\n        <div className=\"flex flex-col items-center justify-center text-center\">\n          <div className=\"bg-muted-foreground/5 text-muted-foreground mb-10 flex items-center justify-center gap-3 rounded-full p-1 pr-4 text-sm font-medium tracking-tight\">\n            <div className=\"bg-muted-foreground/10 flex items-center gap-3 rounded-full px-4 py-1.5\">\n              <span className=\"inline-block size-2 rounded-full bg-blue-500\" />\n              <span>We're Hiring</span>\n            </div>\n            <div className=\"flex items-center gap-2\">\n              Join Our Team <ArrowRight className=\"size-4\" />\n            </div>\n          </div>\n          <h1 className=\"max-w-2xl text-5xl font-semibold tracking-tighter lg:text-6xl\">\n            Elevate Your Next Project With,\n            <PointerHighlight containerClassName=\"inline-block\">\n              <span>Production-Ready</span>\n            </PointerHighlight>\n            Shadcnblocks\n          </h1>\n          <p className=\"text-muted-foreground mt-10 max-w-lg\">\n            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis\n            atque perferendis fugit molestiae quae ad molestias eveniet alias\n          </p>\n\n          <div className=\"mt-10 flex w-full flex-col items-center justify-center gap-2\">\n            <Button className=\"text-background rounded-2xl px-6 py-6 shadow-[0px_1px_3px_#0000001a,inset_0px_2px_0px_#ffffff40] md:rounded-3xl md:px-7 md:py-7 md:text-base\">\n              <p className=\"text-background mr-1 text-xl md:mr-3 md:text-2xl\">\n                \uf8ff\n              </p>{\" \"}\n              Download for Mac\n            </Button>\n            <Button className=\"text-muted-foreground text-sm\" variant=\"link\">\n              Download for Windows\n            </Button>\n          </div>\n        </div>\n        <div className=\"rounded-4xl relative mt-10 flex h-[80vh] w-full items-center justify-center overflow-hidden border\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\"\n            alt=\"hero\"\n            className=\"size-full object-cover\"\n          />\n        </div>\n      </div>\n      <div className=\"absolute inset-0 flex h-full w-full items-center justify-between\">\n        {Array.from({ length: isMobile ? 8 : 18 }).map((_, index) => (\n          <motion.div\n            initial={{ opacity: 0 }}\n            whileInView={{ opacity: 1 }}\n            transition={{ duration: 0.5, delay: index * 0.05 }}\n            key={index}\n            className=\"to-muted/50 h-full w-10 bg-gradient-to-l from-transparent\"\n          ></motion.div>\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Hero245 };\n"
+}

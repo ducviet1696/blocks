@@ -1,0 +1,51 @@
+{
+    "id": "feature38",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature38.jpg",
+    "thumbnail": "feature38-4x3.webp",
+    "description": "A component showcasing a heading, text, a button, and a list with icons next to headings. Features a large image beside the text content.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.570Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature38",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Globe, Hash, NotebookText } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Feature38 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col-reverse items-center justify-between gap-10 lg:flex-row\">\n          <div className=\"lg:max-w-md\">\n            <span className=\"flex size-14 items-center justify-center rounded-full bg-accent\">\n              <NotebookText className=\"size-6 text-primary\" />\n            </span>\n            <h1 className=\"mt-8 mb-2 text-2xl font-bold text-pretty lg:text-4xl\">\n              Build your perfect website in a minute\n            </h1>\n            <p className=\"mb-5 text-muted-foreground\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat\n              quam autem quo nam, eligendi commodi, atque at animi consectetur\n              deserunt quis aperiam hic aliquam officia. Nam modi quo ipsa\n              vitae!\n            </p>\n            <Button>Start for free</Button>\n            <Separator className=\"my-7\" />\n            <ul className=\"space-y-4\">\n              <li className=\"flex items-center gap-3\">\n                <NotebookText className=\"size-5\" />\n                <p className=\"font-bold\">Lorem ipsum dolor sit.</p>\n              </li>\n              <li className=\"flex items-center gap-3\">\n                <Globe className=\"size-5\" />\n                <p className=\"font-bold\">Lorem ipsum dolor sit amet.</p>\n              </li>\n              <li className=\"flex items-center gap-3\">\n                <Hash className=\"size-5\" />\n                <p className=\"font-bold\">Lorem ipsum dolor sit.</p>\n              </li>\n            </ul>\n          </div>\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder\"\n            className=\"max-h-96 w-full rounded-md object-cover lg:max-h-none lg:w-1/2\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature38 };\n"
+}

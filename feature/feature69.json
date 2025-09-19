@@ -1,0 +1,46 @@
+{
+    "id": "feature69",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature69.jpg",
+    "thumbnail": "feature69-4x3.webp",
+    "description": "A carousel component with an image slider and a side list detailing features. It evolves around dynamically updating content based on user interaction.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.589Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "carousel",
+            "registryId": "shadcn",
+            "registryItemUrl": "carousel",
+            "docsUrl": "https://ui.shadcn.com/docs/components/carousel"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature69",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { ArrowRight, ChevronDown } from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nimport type { CarouselApi } from \"@/components/ui/carousel\";\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n} from \"@/components/ui/carousel\";\n\nconst features = [\n  {\n    id: \"feature-1\",\n    title: \"Feature 1\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n  },\n  {\n    id: \"feature-2\",\n    title: \"Feature 2\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n  },\n  {\n    id: \"feature-3\",\n    title: \"Feature 3\",\n    description:\n      \"Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.\",\n    href: \"#\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n  },\n];\n\nconst Feature69 = () => {\n  const [selection, setSelection] = useState(0);\n  const [carouselApi, setCarouselApi] = useState<CarouselApi>();\n  useEffect(() => {\n    if (!carouselApi) {\n      return;\n    }\n    carouselApi.scrollTo(selection);\n  }, [carouselApi, selection]);\n  useEffect(() => {\n    if (!carouselApi) {\n      return;\n    }\n    const updateSelection = () => {\n      setSelection(carouselApi.selectedScrollSnap());\n    };\n    carouselApi.on(\"select\", updateSelection);\n    return () => {\n      carouselApi.off(\"select\", updateSelection);\n    };\n  }, [carouselApi]);\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col gap-8 md:flex-row-reverse\">\n          <div className=\"aspect-5/6 overflow-clip rounded-3xl bg-accent\">\n            <Carousel\n              setApi={setCarouselApi}\n              className=\"h-full w-full [&>div]:h-full\"\n            >\n              <CarouselContent className=\"mx-0 h-full w-full\">\n                {features.map((feature) => (\n                  <CarouselItem key={feature.id} className=\"px-0\">\n                    <img\n                      src={feature.image}\n                      alt={feature.title}\n                      className=\"h-full w-full object-cover object-center\"\n                    />\n                  </CarouselItem>\n                ))}\n              </CarouselContent>\n            </Carousel>\n          </div>\n          <div className=\"flex shrink-0 flex-col md:w-1/2 md:pr-8 lg:pr-24 lg:text-left 2xl:pr-32\">\n            <h2 className=\"mb-6 text-3xl font-bold text-pretty lg:text-5xl\">\n              Features\n            </h2>\n            <p className=\"mb-16 text-muted-foreground lg:text-xl\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n              doloremque mollitia fugiat omnis! Porro facilis quo animi\n              consequatur. Explicabo.\n            </p>\n            <ul className=\"space-y-2\">\n              {features.map((feature, i) => (\n                <li\n                  key={feature.id}\n                  className=\"group relative w-full cursor-pointer px-6 py-3 transition data-open:bg-accent\"\n                  data-open={selection === i ? \"true\" : undefined}\n                  onClick={() => setSelection(i)}\n                >\n                  <div className=\"flex items-center justify-between gap-x-2\">\n                    <div className=\"text-sm font-semibold text-accent-foreground\">\n                      {feature.title}\n                    </div>\n                    <div className=\"flex size-8 items-center justify-center rounded-full bg-accent text-accent-foreground group-hover:bg-primary group-hover:text-primary-foreground group-data-open:bg-primary group-data-open:text-primary-foreground\">\n                      <ChevronDown className=\"size-4 shrink-0 transition-transform duration-200 group-data-open:rotate-180\" />\n                    </div>\n                  </div>\n                  <div className=\"hidden text-sm font-medium group-data-open:block\">\n                    <p className=\"my-4 text-muted-foreground lg:my-6\">\n                      {feature.description}\n                    </p>\n                    <a\n                      href=\"#\"\n                      className=\"group/link flex items-center pb-3 text-sm text-accent-foreground\"\n                    >\n                      Learn more{\" \"}\n                      <ArrowRight className=\"ml-2 size-4 transition-transform group-hover/link:translate-x-1\" />\n                    </a>\n                  </div>\n                </li>\n              ))}\n            </ul>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature69 };\n"
+}

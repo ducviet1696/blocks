@@ -1,0 +1,47 @@
+{
+    "id": "gallery20",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "gallery20.jpg",
+    "thumbnail": "gallery20-4x3.webp",
+    "description": "A gallery component displaying overlapping, draggable images with dynamic animation. Includes textual content and a button, all within a single column layout.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.818Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "gallery"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "gallery20",
+    "collection": "block",
+    "group": "gallery",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\n\ninterface GalleryImage {\n  src: string;\n  rotation: number;\n  translateY?: number;\n  translateX?: number;\n  zIndex?: number;\n}\n\nconst galleryImages: GalleryImage[] = [\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape2.jpeg\",\n    rotation: -19,\n    translateX: -200,\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape1.jpeg\",\n    rotation: -19,\n    translateY: 2,\n    translateX: -104,\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape3.jpeg\",\n    rotation: 0,\n    translateY: -32,\n    zIndex: 10,\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape5.jpeg\",\n    rotation: 12,\n    translateX: 104,\n    translateY: 2,\n  },\n  {\n    src: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape4.jpeg\",\n    rotation: 12,\n    translateX: 200,\n  },\n];\n\nconst Gallery20 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container overflow-x-clip\">\n        <motion.div\n          initial={{ opacity: 0, translateY: 100 }}\n          animate={{ opacity: 1, translateY: 0 }}\n          transition={{\n            duration: 0.7,\n            type: \"spring\",\n            bounce: 0.3,\n          }}\n          className=\"relative flex h-42 items-center justify-center\"\n        >\n          {galleryImages.map((image, index) => (\n            <motion.div\n              initial={{\n                rotate: image.rotation,\n                translateY: image.translateY || 0,\n                translateX: 0,\n                zIndex: image.zIndex || \"auto\",\n              }}\n              animate={{\n                rotate: image.rotation,\n                translateY: image.translateY || 0,\n                translateX: image.translateX || 0,\n                zIndex: image.zIndex || \"auto\",\n              }}\n              drag\n              dragSnapToOrigin\n              whileHover={{\n                scale: 1.15,\n                rotate: 0,\n                zIndex: 999,\n                translateY: -20,\n              }}\n              transition={{\n                duration: 0.7,\n                bounce: 0.3,\n                type: \"spring\",\n                delay: 0.5,\n                translateY: { duration: 0.2 },\n                rotate: { duration: 0.2 },\n                scale: { duration: 0.2 },\n                zIndex: { duration: 0.2 },\n              }}\n              key={index}\n              className=\"absolute size-42 cursor-pointer overflow-hidden rounded-3xl shadow-xl transition-all ease-out\"\n            >\n              <img\n                src={image.src}\n                className=\"pointer-events-none size-full object-cover\"\n                alt={`Gallery 20 - Image ${index + 1}`}\n              />\n            </motion.div>\n          ))}\n        </motion.div>\n        <motion.div\n          initial={{ opacity: 0, translateY: -20 }}\n          animate={{ opacity: 1, translateY: 0 }}\n          transition={{\n            duration: 0.3,\n            delay: 0.5,\n          }}\n          className=\"mt-10 flex flex-col items-center justify-center\"\n        >\n          <h3 className=\"max-w-md text-center text-2xl font-medium tracking-tight\">\n            Explore new places and share the memories you make.\n          </h3>\n          <Button className=\"group mt-10 flex items-center justify-center gap-2 rounded-full border px-4 py-1 tracking-tight\">\n            Explore the world\n            <ArrowRight className=\"size-4 -rotate-45 transition-all ease-out group-hover:rotate-0\" />\n          </Button>\n        </motion.div>\n      </div>\n    </section>\n  );\n};\n\nexport { Gallery20 };\n"
+}

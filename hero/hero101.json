@@ -1,0 +1,58 @@
+{
+    "id": "hero101",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero101.jpg",
+    "thumbnail": "hero101-4x3.webp",
+    "description": "A component with a promotional header, featuring a title, description, start button, and demo video button that triggers a modal with a video player. It also displays partner logos below.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:39:05.321Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "dialog",
+            "registryId": "shadcn",
+            "registryItemUrl": "dialog",
+            "docsUrl": "https://ui.shadcn.com/docs/components/dialog"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero101",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { PlayIcon } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Dialog,\n  DialogContent,\n  DialogHeader,\n  DialogTitle,\n} from \"@/components/ui/dialog\";\n\nconst Hero101 = () => {\n  const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);\n  return (\n    <>\n      <section className=\"relative overflow-hidden border border-b pb-10 pt-40 font-sans shadow-[inset_0_-4px_10px_var(--color-primary)] before:absolute before:-top-[88%] before:left-1/2 before:block before:h-[200%] before:w-[200%] before:-translate-x-1/2 before:bg-[radial-gradient(var(--color-violet-100)_15%,var(--color-transparent)_20%,var(--color-yellow-50)_30%,var(--color-transparent)_50%,var(--color-cyan-50)_60%)] before:bg-cover before:bg-no-repeat before:opacity-55 before:content-['']\">\n        <div className=\"container relative z-20 max-w-[84rem]\">\n          <div className=\"mx-auto flex max-w-[54.375rem] flex-col items-center gap-4\">\n            <h1 className=\"text-center text-4xl font-bold leading-none text-black sm:text-5xl md:text-[4rem]\">\n              The ultimate all-in-one User Management Platform\n            </h1>\n            <p className=\"text-muted-foreground text-center text-base md:text-lg\">\n              We offers a full suite of embeddable UIs, versatile APIs, and\n              admin dashboards to authenticate and manage your users\n              effortlessly.\n            </p>\n            <div className=\"flex flex-col items-center gap-3 pt-4 md:flex-row\">\n              <Button\n                asChild\n                variant=\"default\"\n                className=\"border px-3 py-1.5 text-sm font-medium\"\n              >\n                <a href=\"#\">Start for Free</a>\n              </Button>\n              <Button\n                asChild\n                variant=\"ghost\"\n                onClick={() => setIsVideoOpen(true)}\n                className=\"flex w-fit items-center gap-3 hover:bg-transparent\"\n              >\n                <a href=\"#\">\n                  <div className=\"before:bg-linear-to-r before:from-primary relative h-7 w-7 rounded-full p-[3px] before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:animate-[spin_5s_ease-in-out_infinite] before:rounded-full before:to-transparent before:content-['']\">\n                    <div className=\"bg-background relative z-20 flex h-full w-full rounded-full\">\n                      <PlayIcon className=\"h-3! w-3! fill-primary stroke-primary m-auto\" />\n                    </div>\n                  </div>\n                  <p className=\"text-primary text-sm/5 font-medium\">\n                    Watch Demo{\" \"}\n                    <span className=\"text-muted-foreground ml-1 text-xs\">\n                      2 min\n                    </span>\n                  </p>\n                </a>\n              </Button>\n            </div>\n          </div>\n          <div className=\"mx-auto mt-20 max-w-[60rem] lg:max-w-full\">\n            <div className=\"flex w-full flex-col items-center justify-between gap-6 md:flex-row\">\n              <div className=\"flex flex-1 flex-wrap items-center justify-center gap-x-6 gap-y-2\">\n                {Array(7)\n                  .fill(null)\n                  .map((_, i) => (\n                    <img\n                      key={`hero101-${i}`}\n                      src={`/images/block/logos/company/fictional-company-logo-${++i}.svg`}\n                      alt=\"\"\n                      className=\"h-6 w-28 object-contain object-center\"\n                    />\n                  ))}\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>\n        <DialogContent className=\"sm:max-w-[50rem]\">\n          <DialogHeader>\n            <DialogTitle>Presentation Video</DialogTitle>\n          </DialogHeader>\n          <AspectRatio ratio={16 / 9}>\n            <iframe\n              className=\"h-full w-full\"\n              src=\"https://www.youtube.com/embed/your-video-id\"\n              title=\"Presentation Video\"\n              allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n              allowFullScreen\n            ></iframe>\n          </AspectRatio>\n        </DialogContent>\n      </Dialog>\n    </>\n  );\n};\n\nexport { Hero101 };\n"
+}

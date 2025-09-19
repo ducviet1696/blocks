@@ -1,0 +1,43 @@
+{
+    "id": "feature33",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature33.jpg",
+    "thumbnail": "feature33-4x3.webp",
+    "description": "This component displays a main title, a subtitle, an image, and a three-column layout of cards, each containing a title, text, and link.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.567Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature33",
+    "collection": "block",
+    "group": "feature",
+    "code": "import {\n  Card,\n  CardContent,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\n\nconst Feature33 = () => {\n  const features = [\n    {\n      title: \"One Click Copy Paste from the Block Library\",\n      description:\n        \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.\",\n      linkText: \"Try Blocks Now\",\n      linkHref: \"#\",\n    },\n    {\n      title: \"Build Your Website in Minutes with Blocks\",\n      description:\n        \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.\",\n      linkText: \"Try Blocks Now\",\n      linkHref: \"#\",\n    },\n    {\n      title: \"Get Started with Blocks Today and Save Time\",\n      description:\n        \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.\",\n      linkText: \"Try Blocks Now\",\n      linkHref: \"#\",\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-14 max-w-2xl text-center\">\n          <h2 className=\"mb-8 text-4xl font-semibold lg:mb-12 lg:text-6xl\">\n            Get Started With Blocks Today\n          </h2>\n          <p className=\"font-medium text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum\n            sint eos voluptatem, commodi hic ab ad maxime adipisci.\n          </p>\n        </div>\n        <div className=\"mx-auto max-w-7xl rounded-lg bg-muted pt-10 pr-10 lg:pt-28 lg:pr-32\">\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n            alt=\"placeholder\"\n            className=\"h-full max-h-[600px] w-full rounded-tr-lg rounded-bl-lg object-cover\"\n          />\n        </div>\n        <div className=\"mx-auto mt-14 grid max-w-7xl gap-11 md:grid-cols-2 lg:grid-cols-3 lg:gap-20\">\n          {features.map((feature, index) => (\n            <Card key={index} className=\"border-0 py-3 shadow-none\">\n              <CardHeader className=\"px-0\">\n                <CardTitle className=\"text-2xl font-medium\">\n                  {feature.title}\n                </CardTitle>\n              </CardHeader>\n              <CardContent className=\"px-0\">\n                <p className=\"text-muted-foreground\">{feature.description}</p>\n              </CardContent>\n              <CardFooter className=\"px-0\">\n                <a\n                  href={feature.linkHref}\n                  className=\"font-semibold hover:underline\"\n                >\n                  {feature.linkText}\n                </a>\n              </CardFooter>\n            </Card>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature33 };\n"
+}

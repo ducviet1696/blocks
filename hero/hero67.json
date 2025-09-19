@@ -1,0 +1,51 @@
+{
+    "id": "hero67",
+    "access": "basic",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero67.jpg",
+    "thumbnail": "hero67-4x3.webp",
+    "description": "A component featuring a logo, engaging headline, paragraph, a button with an icon, and overlapping avatars indicating endorsements. It ends with a large, rounded-top image.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.889Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero67",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Calendar } from \"lucide-react\";\n\nimport { Avatar, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero67 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"z-10 mx-auto flex max-w-4xl flex-col items-center gap-14 text-center\">\n          <img src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\" alt=\"logo\" className=\"h-14\" />\n          <div>\n            <h1 className=\"mb-4 text-3xl font-medium text-pretty lg:text-6xl\">\n              Build Exceptional Online Experiences\n            </h1>\n            <p className=\"mx-auto max-w-xl text-muted-foreground\">\n              Create a website that captures attention, drives engagement, and\n              aligns with your goals, all in a matter of days.\n            </p>\n          </div>\n          <div className=\"flex w-full flex-col items-center justify-center gap-6 lg:flex-row\">\n            <Button size=\"lg\" className=\"w-full sm:w-fit\">\n              <Calendar className=\"mr-2 h-4\" />\n              Get Started Today\n            </Button>\n            <div className=\"flex flex-col items-center gap-2 lg:items-start\">\n              <span className=\"inline-flex items-center -space-x-1\">\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n                <Avatar className=\"size-7 border\">\n                  <AvatarImage\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\"\n                    alt=\"placeholder\"\n                  />\n                </Avatar>\n              </span>\n              <p className=\"text-xs text-muted-foreground\">\n                Trusted by industry leaders\n              </p>\n            </div>\n          </div>\n        </div>\n        <img\n          src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n          alt=\"placeholder\"\n          className=\"mx-auto mt-24 aspect-video max-h-[700px] w-full max-w-7xl rounded-t-lg object-cover shadow-md\"\n        />\n      </div>\n    </section>\n  );\n};\n\nexport { Hero67 };\n"
+}

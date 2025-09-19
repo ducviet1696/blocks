@@ -1,0 +1,49 @@
+{
+    "id": "hero84",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero84.jpg",
+    "thumbnail": "hero84-4x3.webp",
+    "description": "A component featuring a badge and text block on top, with a layered, overlapping image gallery below, arranged asymmetrically.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:46:05.355Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero84",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Badge } from \"@/components/ui/badge\";\n\nconst Hero84 = () => {\n  return (\n    <section className=\"h-svg bg-background dark overflow-hidden pt-12 font-sans md:pt-20\">\n      <div className=\"container\">\n        <div className=\"mb-24 flex flex-col items-center gap-8\">\n          <Badge className=\"text-foreground w-fit rounded-full border border-white bg-transparent px-8 py-2.5 text-center text-sm font-semibold hover:bg-transparent\">\n            Uniqueness\n          </Badge>\n          <div>\n            <h1 className=\"text-foreground mb-5 text-center text-5xl font-bold\">\n              Unify everything in one space\n            </h1>\n            <p className=\"text-foreground max-w-[820px] text-center text-xl font-medium\">\n              An all-in-one platform for seamless collaboration, our app merges\n              client-facing portals with internal project management tools to\n              streamline every phase of client projects.\n            </p>\n          </div>\n        </div>\n        <div className=\"relative mx-auto aspect-[2.488709677/1] max-w-[87.5rem]\">\n          <div className=\"absolute bottom-0 right-0 z-10 w-[27%] overflow-hidden\">\n            <AspectRatio ratio={0.924193548 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n                alt=\"\"\n                className=\"object-top-left block size-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"absolute bottom-0 right-[14%] z-20 w-[32%] overflow-hidden shadow-xl\">\n            <AspectRatio ratio={0.924193548 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n                alt=\"\"\n                className=\"object-top-left block size-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"absolute bottom-0 left-1/2 z-30 w-[37%] -translate-x-1/2 overflow-hidden shadow-xl\">\n            <AspectRatio ratio={0.924193548 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n                alt=\"\"\n                className=\"object-top-left block size-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"absolute bottom-0 left-[14%] z-20 w-[32%] overflow-hidden shadow-xl\">\n            <AspectRatio ratio={0.924193548 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\"\n                alt=\"\"\n                className=\"object-top-left block size-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n          <div className=\"absolute bottom-0 left-0 z-10 w-[27%] overflow-hidden\">\n            <AspectRatio ratio={0.924193548 / 1}>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\"\n                alt=\"\"\n                className=\"object-top-left block size-full object-cover\"\n              />\n            </AspectRatio>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero84 };\n"
+}

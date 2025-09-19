@@ -1,0 +1,46 @@
+{
+    "id": "hero203",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero203.jpg",
+    "thumbnail": "hero203-4x3.webp",
+    "description": "A component showcasing a title, description, sign-up button, and two visual content blocks with hover effects, dates, titles, and a \"See All\" link.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.404Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero203",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ChevronUp } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero203 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"px-0! container relative flex flex-col items-center\">\n        <div className=\"container flex w-full flex-col justify-between px-10 lg:flex-row\">\n          <div className=\"flex w-full flex-col gap-8\">\n            <a href=\"#\" className=\"text-2xl font-semibold tracking-tighter\">\n              Shadcn Blocks\n            </a>\n            <h1 className=\"bg-re relative z-20 text-6xl font-semibold tracking-tighter md:text-8xl\">\n              The Blocks Built With Shadcn &amp; Tailwind.\n            </h1>\n            <p className=\"text-muted-foreground max-w-2xl tracking-tight md:text-xl\">\n              Finely crafted components built with React, Tailwind and Shadcn\n              UI. Developers can copy and paste these blocks directly into their\n              project.\n            </p>\n          </div>\n          <div className=\"md:mt-18 lg:w-5/9 mt-8 flex flex-col items-start lg:items-center\">\n            <Button className=\"text-background rounded-2xl px-6 py-6 shadow-[0px_1px_3px_#0000001a,inset_0px_2px_0px_#ffffff40] md:rounded-3xl md:px-12 md:py-8 md:text-lg\">\n              <p className=\"text-background mr-1 text-xl md:mr-3 md:text-2xl\">\n                \uf8ff\n              </p>{\" \"}\n              Sign up for free\n            </Button>\n          </div>\n        </div>\n        <div className=\"flex w-full flex-col justify-between pr-10 md:mt-10 md:flex-row\">\n          <DottedDiv className=\"h-160 w-120 group p-4\">\n            <div className=\"bg-muted/50 group-hover:bg-muted relative h-full w-full p-4 transition-all ease-in-out\">\n              {/* Bg Image div */}\n              <div className=\"relative h-full w-full overflow-hidden rounded-3xl\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg\"\n                  alt=\"aiImage\"\n                  className=\"h-full w-full object-cover\"\n                />\n                <div className=\"bg-linear-to-t absolute inset-0 from-black/70 to-transparent\"></div>\n              </div>\n              <div className=\"absolute top-4 -ml-4 flex h-full w-full flex-col items-center justify-between p-10\">\n                <p className=\"text-background flex w-full items-center text-xl tracking-tighter\">\n                  2025 <span className=\"bg-background mx-2 h-2.5 w-[1px]\" />\n                  March\n                </p>\n                <div className=\"flex flex-col items-center justify-center\">\n                  <h2 className=\"text-background text-center text-6xl font-semibold tracking-tight\">\n                    Shadcn <br />\n                    Carousal\n                  </h2>\n                  <div className=\"bg-background mt-2 h-1 w-6 rounded-full\" />\n                  <p className=\"text-background/80 mt-10 max-w-sm px-2 text-center text-lg font-light leading-5 tracking-tighter\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                    Iure debitis.\n                  </p>\n                </div>\n                <a\n                  href=\"#\"\n                  className=\"text-background group mb-6 flex cursor-pointer flex-col items-center justify-center\"\n                >\n                  <ChevronUp\n                    size={30}\n                    className=\"transition-all ease-in-out group-hover:-translate-y-2\"\n                  />\n                  <p className=\"text-background text-xl tracking-tight\">\n                    See All\n                  </p>\n                </a>\n              </div>\n            </div>\n          </DottedDiv>\n          <DottedDiv className=\"h-160 w-120 group p-4 lg:-mt-60\">\n            <div className=\"bg-muted/50 group-hover:bg-muted relative h-full w-full p-4 transition-all ease-in-out\">\n              {/* Bg Image div */}\n              <div className=\"relative h-full w-full overflow-hidden rounded-3xl\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-majMgWtrF48-unsplash.jpg\"\n                  alt=\"aiImage\"\n                  className=\"h-full w-full object-cover\"\n                />\n                <div className=\"bg-linear-to-t absolute inset-0 from-black/70 to-transparent\"></div>\n              </div>\n              <div className=\"absolute top-4 -ml-4 flex h-full w-full flex-col items-center justify-between p-10\">\n                <p className=\"text-background flex w-full items-center text-xl tracking-tighter\">\n                  2025 <span className=\"bg-background mx-2 h-2.5 w-[1px]\" />\n                  March\n                </p>\n                <div className=\"flex flex-col items-center justify-center\">\n                  <h2 className=\"text-background text-center text-6xl font-semibold tracking-tight\">\n                    Shadcn <br />\n                    Carousal\n                  </h2>\n                  <div className=\"bg-background mt-2 h-1 w-6 rounded-full\" />\n                  <p className=\"text-background/80 mt-10 max-w-sm px-2 text-center text-lg font-light leading-5 tracking-tighter\">\n                    Lorem ipsum dolor sit amet consectetur adipisicing elit.\n                    Iure debitis.\n                  </p>\n                </div>\n                <a\n                  href=\"#\"\n                  className=\"text-background group mb-6 flex cursor-pointer flex-col items-center justify-center\"\n                >\n                  <ChevronUp\n                    size={30}\n                    className=\"transition-all ease-in-out group-hover:-translate-y-2\"\n                  />\n                  <p className=\"text-background text-xl tracking-tight\">\n                    See All\n                  </p>\n                </a>\n              </div>\n            </div>\n          </DottedDiv>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero203 };\n\nconst DottedDiv = ({\n  children,\n  className,\n}: {\n  children: React.ReactNode;\n  className?: string;\n}) => (\n  <div className={cn(\"relative\", className)}>\n    <div className=\"-left-25 bg-muted absolute top-4 h-[1.5px] w-[115%]\" />\n    <div className=\"-left-25 bg-muted absolute bottom-4 h-[1.5px] w-[115%]\" />\n    <div className=\"-top-25 bg-muted absolute left-4 h-[130%] w-[1.5px]\" />\n    <div className=\"-top-25 bg-muted absolute right-4 h-[130%] w-[1.5px]\" />\n    <div className=\"bg-foreground absolute left-[12.5px] top-[12.5px] z-10 size-2 rounded-full\" />\n    <div className=\"bg-foreground absolute right-[12.5px] top-[12.5px] z-10 size-2 rounded-full\" />\n    <div className=\"bg-foreground absolute bottom-[12.5px] left-[12.5px] z-10 size-2 rounded-full\" />\n    <div className=\"bg-foreground absolute bottom-[12.5px] right-[12.5px] z-10 size-2 rounded-full\" />\n    {children}\n  </div>\n);\n"
+}

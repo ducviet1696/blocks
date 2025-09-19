@@ -1,0 +1,49 @@
+{
+    "id": "feature190",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature190.jpg",
+    "thumbnail": "feature190-4x3.webp",
+    "description": "A component displaying a grid of features with images, titles, and descriptions. It includes a title, introductory text, and a button. Grid scales from 1 to 3 columns.",
+    "createdAt": [
+        3,
+        "2025-01-23T07:21:57.733Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Feb 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature190",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Button } from \"@/components/ui/button\";\nimport { Card } from \"@/components/ui/card\";\n\ninterface Feature {\n  id: string;\n  title: string;\n  description: string;\n  imageUrl: string;\n}\n\nconst DATA: Feature[] = [\n  {\n    id: \"analytics-dashboard\",\n    title: \"Analytics\",\n    description: \"Real-time data insights.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  },\n  {\n    id: \"team-collaboration\",\n    title: \"Collaboration\",\n    description: \"Shared workspaces for teams.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg\",\n  },\n  {\n    id: \"third-party-integrations\",\n    title: \"Integrations\",\n    description: \"Connect with popular tools.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n  },\n  {\n    id: \"customizable-templates\",\n    title: \"Templates\",\n    description: \"Pre-built for your workflow.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n  },\n  {\n    id: \"automated-workflows\",\n    title: \"Automation\",\n    description: \"Streamline repetitive tasks.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg\",\n  },\n  {\n    id: \"data-security\",\n    title: \"Security\",\n    description: \"Advanced encryption & compliance.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg\",\n  },\n  {\n    id: \"customer-support\",\n    title: \"Support\",\n    description: \"24/7 dedicated assistance.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg\",\n  },\n  {\n    id: \"mobile-app\",\n    title: \"Mobile\",\n    description: \"Stay connected on the go.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\",\n  },\n  {\n    id: \"scalable-infrastructure\",\n    title: \"Scalability\",\n    description: \"Grow with your business.\",\n    imageUrl: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg\",\n  },\n];\n\nconst Feature190 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center text-center\">\n          <h2 className=\"mb-4 text-4xl font-semibold tracking-tight sm:text-5xl\">\n            Features at a glance\n          </h2>\n          <p className=\"mb-8 max-w-3xl text-lg text-muted-foreground sm:text-xl\">\n            Discover our comprehensive suite of features designed to streamline\n            your workflow, boost productivity, and scale your business\n            operations seamlessly.\n          </p>\n        </div>\n\n        <div className=\"grid md:grid-cols-2 lg:grid-cols-3\">\n          {DATA.map((feature) => (\n            <Card\n              key={feature.id}\n              className=\"mt-6 flex items-center rounded-none border-0 border-b border-muted pb-6 shadow-none\"\n            >\n              <a href=\"#\" className=\"hover:opacity-70\">\n                <img\n                  src={feature.imageUrl}\n                  alt={feature.title}\n                  className=\"mr-4 h-16 w-16 rounded-md bg-muted object-contain p-2\"\n                />\n              </a>\n              <div className=\"min-w-0 grow\">\n                <h3 className=\"text-md font-semibold\">{feature.title}</h3>\n                <p className=\"mt-1 text-xs text-muted-foreground\">\n                  {feature.description}\n                </p>\n              </div>\n            </Card>\n          ))}\n        </div>\n\n        <div className=\"mt-12 text-center\">\n          <Button variant=\"secondary\" size=\"lg\">\n            Explore all features\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature190 };\n"
+}

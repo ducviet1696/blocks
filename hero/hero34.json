@@ -1,0 +1,45 @@
+{
+    "id": "hero34",
+    "access": "basic",
+    "weight": 6,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero34.jpg",
+    "thumbnail": "hero34-4x3.webp",
+    "description": "A component featuring a 2-column layout, with a text section including a title, paragraph, and buttons on one side, and a full-width image on the other.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.617Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero34",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero34 = () => {\n  return (\n    <section>\n      <div className=\"container\">\n        <div className=\"bg-muted grid items-center gap-8 lg:grid-cols-2\">\n          <div className=\"flex flex-col items-center p-16 text-center lg:items-start lg:text-left\">\n            <p>New Release</p>\n            <h1 className=\"my-6 text-pretty text-4xl font-bold lg:text-6xl\">\n              Welcome to Our Website\n            </h1>\n            <p className=\"text-muted-foreground mb-8 max-w-xl lg:text-xl\">\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig\n              doloremque mollitia fugiat omnis! Porro facilis quo animi\n              consequatur. Explicabo.\n            </p>\n            <div className=\"flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start\">\n              <Button>\n                Primary\n                <ArrowRight className=\"size-4\" />\n              </Button>\n              <Button variant=\"outline\">Secondary</Button>\n            </div>\n          </div>\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"placeholder hero\"\n            className=\"h-full w-full object-cover\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero34 };\n"
+}

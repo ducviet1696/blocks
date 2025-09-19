@@ -1,0 +1,45 @@
+{
+    "id": "feature204",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature204.jpg",
+    "thumbnail": "feature204-4x3.webp",
+    "description": "A split layout component with an image on one side and text areas alongside features on the other, including a call-to-action button and icons.",
+    "createdAt": [
+        3,
+        "2025-04-23T05:25:33.366Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "May 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature204",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Combine, Gauge, Zap } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature204 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-10 md:gap-24 lg:flex-row lg:items-stretch\">\n          <div className=\"grid w-full max-w-lg place-items-center rounded-2xl bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg')] bg-cover bg-center bg-no-repeat px-8 py-10 sm:px-16 sm:py-20\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"placeholder\"\n              className=\"rounded-2xl\"\n            />\n          </div>\n          <div className=\"flex max-w-2xl flex-col justify-between gap-10\">\n            <div className=\"text-center lg:text-left\">\n              <h2 className=\"text-5xl font-medium text-balance lg:text-6xl\">\n                Unlock Your Potential with Our Platform.\n              </h2>\n              <p className=\"mt-6 text-lg text-muted-foreground\">\n                Discover powerful tools and resources designed to elevate your\n                projects and streamline your workflow effectively.\n              </p>\n              <Button size=\"lg\" className=\"mt-8\">\n                Explore Now <Zap />\n              </Button>\n            </div>\n            <div className=\"grid gap-7 sm:grid-cols-2\">\n              <div className=\"text-center lg:text-left\">\n                <Combine className=\"mx-auto size-8 lg:mx-0\" />\n                <h3 className=\"mt-4 mb-2 text-lg font-semibold\">\n                  Seamless Integration\n                </h3>\n                <p className=\"text-muted-foreground\">\n                  Integrate effortlessly with your existing tools and systems.\n                </p>\n              </div>\n              <div className=\"text-center lg:text-left\">\n                <Gauge className=\"mx-auto size-8 lg:mx-0\" />\n                <h3 className=\"mt-4 mb-2 text-lg font-semibold\">\n                  Reliable Performance\n                </h3>\n                <p className=\"text-muted-foreground\">\n                  Experience consistent speed and stability for all your needs.\n                </p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature204 };\n"
+}

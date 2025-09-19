@@ -1,0 +1,63 @@
+{
+    "id": "pricing5",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing5.jpg",
+    "thumbnail": "pricing5-4x3.webp",
+    "description": "A pricing component with two plans, offering comparison across features in a table and emphasized call-to-actions. Provides a clear visual differentiation between plans.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.638Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        },
+        {
+            "name": "table",
+            "registryId": "shadcn",
+            "registryItemUrl": "table",
+            "docsUrl": "https://ui.shadcn.com/docs/components/table"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing5",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { Check, Minus } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Card,\n  CardContent,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\nimport { Separator } from \"@/components/ui/separator\";\nimport {\n  Table,\n  TableBody,\n  TableCell,\n  TableHead,\n  TableHeader,\n  TableRow,\n} from \"@/components/ui/table\";\n\ntype PlanFeature = {\n  feature: string;\n  pro: string | boolean;\n  entreprise: string | boolean;\n};\n\nconst planData: PlanFeature[] = [\n  {\n    feature: \"Projects\",\n    pro: \"Unlimited\",\n    entreprise: \"Unlimited\",\n  },\n  {\n    feature: \"Integrations\",\n    pro: \"Unlimited\",\n    entreprise: \"Unlimited\",\n  },\n  { feature: \"Live Collaboration\", pro: true, entreprise: true },\n  {\n    feature: \"Custom permissions\",\n    pro: true,\n    entreprise: true,\n  },\n  {\n    feature: \"Team members\",\n    pro: \"$5/month per member\",\n    entreprise: \"$5/month per member\",\n  },\n  {\n    feature: \"Basic reports\",\n    pro: true,\n    entreprise: true,\n  },\n  { feature: \"Advanced reports\", pro: false, entreprise: true },\n  { feature: \"Export data\", pro: false, entreprise: true },\n];\nconst Pricing5 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container max-w-5xl\">\n        <div className=\"flex flex-col items-center gap-4 text-center\">\n          <h2 className=\"mb-2 text-3xl font-semibold lg:text-5xl\">Pricing</h2>\n          <p className=\"text-muted-foreground lg:text-lg\">\n            Lorem ipsum dolor sit amet consectetur adipisicing.\n          </p>\n        </div>\n        <div className=\"mt-10 flex flex-col gap-6 lg:flex-row lg:gap-0\">\n          <Card className=\"flex w-full flex-col justify-between gap-8 text-center lg:rounded-r-none lg:border-r-0\">\n            <CardHeader>\n              <CardTitle>Pro</CardTitle>\n              <p className=\"text-muted-foreground\">Lorem ipsum dolor sit.</p>\n            </CardHeader>\n            <CardContent>\n              <span className=\"text-5xl font-bold\">$10</span>\n              <p className=\"mt-3 text-muted-foreground\">per user per month</p>\n            </CardContent>\n            <CardFooter>\n              <Button className=\"w-full\">Get Started</Button>\n            </CardFooter>\n          </Card>\n          <Separator\n            orientation=\"vertical\"\n            className=\"hidden h-auto lg:block\"\n          />\n          <Card className=\"flex w-full flex-col justify-between gap-8 rounded-l-none border-l-0 text-center\">\n            <CardHeader>\n              <CardTitle>Entreprise</CardTitle>\n              <p className=\"text-muted-foreground\">Lorem ipsum dolor sit.</p>\n            </CardHeader>\n            <CardContent>\n              <span className=\"text-4xl font-bold\">Contact us</span>\n              <p className=\"mt-3 text-muted-foreground\">Get in touch with us</p>\n            </CardContent>\n            <CardFooter>\n              <Button className=\"w-full\" variant=\"outline\">\n                Get Started\n              </Button>\n            </CardFooter>\n          </Card>\n        </div>\n        <Table className=\"mt-10 min-w-[420px]\">\n          <TableHeader>\n            <TableRow className=\"hover:bg-background\">\n              <TableHead></TableHead>\n              <TableHead className=\"font-bold text-primary\">Pro</TableHead>\n              <TableHead className=\"font-bold text-primary\">\n                Entreprise\n              </TableHead>\n            </TableRow>\n          </TableHeader>\n          <TableBody>\n            {planData.map((item) => (\n              <TableRow key={item.feature} className=\"hover:bg-background\">\n                <TableCell>{item.feature}</TableCell>\n                <TableCell>\n                  {typeof item.pro === \"boolean\" ? (\n                    item.pro ? (\n                      <Check className=\"size-6\" />\n                    ) : (\n                      <Minus className=\"size-6\" />\n                    )\n                  ) : (\n                    item.pro\n                  )}\n                </TableCell>\n                <TableCell>\n                  {typeof item.entreprise === \"boolean\" ? (\n                    item.entreprise ? (\n                      <Check className=\"size-6\" />\n                    ) : (\n                      <Minus className=\"size-6\" />\n                    )\n                  ) : (\n                    item.entreprise\n                  )}\n                </TableCell>\n              </TableRow>\n            ))}\n          </TableBody>\n        </Table>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing5 };\n"
+}

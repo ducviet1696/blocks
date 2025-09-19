@@ -1,0 +1,45 @@
+{
+    "id": "feature51",
+    "access": "basic",
+    "weight": 11,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature51.jpg",
+    "thumbnail": "feature51-4x3.webp",
+    "description": "A tabbed component with 3 options featuring icons. Toggles content display with images.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.573Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "basic"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature51",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Lightbulb, ListChecks, MessageCircleMore } from \"lucide-react\";\n\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst Feature51 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container max-w-5xl\">\n        <Tabs defaultValue=\"feature-1\">\n          <TabsList className=\"flex h-auto w-full flex-col gap-2 bg-background md:flex-row\">\n            <TabsTrigger\n              value=\"feature-1\"\n              className=\"flex w-full flex-col items-start justify-start gap-1 rounded-md border p-4 text-left whitespace-normal text-primary hover:border-primary/40 data-[state=active]:border-primary\"\n            >\n              <div className=\"flex items-center gap-2 md:flex-col md:items-start lg:gap-4\">\n                <span className=\"flex size-8 items-center justify-center rounded-full bg-accent lg:size-10\">\n                  <MessageCircleMore className=\"size-4 text-primary\" />\n                </span>\n                <p className=\"text-lg font-semibold md:text-2xl lg:text-xl\">\n                  Get Started\n                </p>\n              </div>\n              <p className=\"font-normal text-muted-foreground md:block\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit.\n              </p>\n            </TabsTrigger>\n            <TabsTrigger\n              value=\"feature-2\"\n              className=\"flex w-full flex-col items-start justify-start gap-1 rounded-md border p-4 text-left whitespace-normal text-primary hover:border-primary/40 data-[state=active]:border-primary\"\n            >\n              <div className=\"flex items-center gap-2 md:flex-col md:items-start lg:gap-4\">\n                <span className=\"flex size-8 items-center justify-center rounded-full bg-accent lg:size-10\">\n                  <Lightbulb className=\"size-4 text-primary\" />\n                </span>\n                <p className=\"text-lg font-semibold md:text-2xl lg:text-xl\">\n                  Get Ideas\n                </p>\n              </div>\n              <p className=\"font-normal text-muted-foreground md:block\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit.\n              </p>\n            </TabsTrigger>\n            <TabsTrigger\n              value=\"feature-3\"\n              className=\"flex w-full flex-col items-start justify-start gap-1 rounded-md border p-4 text-left whitespace-normal text-primary hover:border-primary/40 data-[state=active]:border-primary\"\n            >\n              <div className=\"flex items-center gap-2 md:flex-col md:items-start lg:gap-4\">\n                <span className=\"flex size-8 items-center justify-center rounded-full bg-accent lg:size-10\">\n                  <ListChecks className=\"size-4 text-primary\" />\n                </span>\n                <p className=\"text-lg font-semibold md:text-2xl lg:text-xl\">\n                  Build\n                </p>\n              </div>\n              <p className=\"font-normal text-muted-foreground md:block\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit.\n              </p>\n            </TabsTrigger>\n          </TabsList>\n          <TabsContent value=\"feature-1\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n              alt=\"\"\n              className=\"aspect-video rounded-md object-cover\"\n            />\n          </TabsContent>\n          <TabsContent value=\"feature-2\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\"\n              alt=\"\"\n              className=\"aspect-video rounded-md object-cover\"\n            />\n          </TabsContent>\n          <TabsContent value=\"feature-3\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\"\n              alt=\"\"\n              className=\"aspect-video rounded-md object-cover\"\n            />\n          </TabsContent>\n        </Tabs>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature51 };\n"
+}

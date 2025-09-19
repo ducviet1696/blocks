@@ -1,0 +1,53 @@
+{
+    "id": "feature253",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature253.jpg",
+    "thumbnail": "feature253-4x3.webp",
+    "description": "A component featuring a title, text, and button on the left with a globe animation on the right in a two-column layout with a unique rotating arrow icon on the button hover.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.805Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "globe",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/globe",
+            "docsUrl": "https://magicui.design/docs/components/globe"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature253",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Globe } from \"@/components/magicui/globe\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature253 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"relative flex h-92 w-full flex-col justify-between overflow-hidden rounded-4xl border bg-muted p-8 md:flex-row\">\n          <div className=\"flex h-full max-w-lg flex-col justify-center gap-4\">\n            <h1 className=\"text-4xl font-medium tracking-tighter md:text-6xl\">\n              Your Ultimate Solution\n            </h1>\n            <p className=\"text-muted-foreground/70\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n              eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur\n            </p>\n            <Button\n              variant=\"default\"\n              className=\"group relative z-99 w-fit !rounded-full border border-none bg-background px-10 tracking-tighter text-foreground !shadow-none hover:bg-background\"\n            >\n              Join Today\n              <ArrowRight className=\"ml-2 -rotate-45 rounded-full bg-foreground p-px text-background transition-all ease-in-out group-hover:rotate-0\" />\n            </Button>\n          </div>\n          <div className=\"relative size-full\">\n            <Globe className=\"absolute top-0 md:top-10 md:-right-100 md:scale-150\" />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature253 };\n"
+}

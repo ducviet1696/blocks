@@ -1,0 +1,51 @@
+{
+    "id": "feature98",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature98.jpg",
+    "thumbnail": "feature98-4x3.webp",
+    "description": "A component featuring a 5-column layout that consolidates investment solutions, including text and buttons, followed by a 3-item visual grid, each with a title, text, and icon overlay on images.",
+    "createdAt": [
+        3,
+        "2024-10-09T05:37:59.205Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature98",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Feature98 = () => {\n  return (\n    <section className=\"py-32\">\n      <div>\n        <div className=\"container\">\n          <div className=\"grid gap-8 lg:grid-cols-5 lg:gap-20\">\n            <div className=\"lg:col-span-3\">\n              <p className=\"text-lg text-muted-foreground\">\n                Comprehensive Investment Solutions\n              </p>\n              <h2 className=\"mt-6 text-4xl lg:text-7xl\">\n                Your all-in-one VC partner\n              </h2>\n            </div>\n            <div className=\"lg:col-span-2\">\n              <p className=\"text-lg text-muted-foreground\">\n                Every step covered\u2014simplify your investments. We manage fund\n                setup, compliance, taxes, and everything in between.\n              </p>\n              <div className=\"mt-10 flex gap-2\">\n                <Button size=\"lg\">Contact an Advisor</Button>\n                <Button size=\"lg\" variant=\"secondary\">\n                  Explore Plans\n                </Button>\n              </div>\n            </div>\n          </div>\n        </div>\n        <Separator className=\"mt-24 mb-6\" />\n        <div className=\"container grid gap-8 lg:grid-cols-3\">\n          <a\n            href=\"#\"\n            className=\"group relative grid overflow-hidden sm:grid-cols-2 lg:grid-cols-1\"\n          >\n            <div className=\"absolute top-0 left-0 z-20 flex w-full justify-between gap-2 p-6 text-background sm:bottom-0 sm:left-1/2 sm:w-1/2 sm:flex-col lg:bottom-auto lg:left-0 lg:w-full lg:flex-row lg:items-center\">\n              <div>\n                <h3 className=\"text-lg font-medium\">Startup Funds</h3>\n                <p>Effortlessly manage early-stage capital</p>\n              </div>\n              <span className=\"flex size-12 shrink-0 items-center justify-center rounded-full bg-background text-primary sm:self-end lg:size-14 lg:self-auto\">\n                <ArrowRight />\n              </span>\n            </div>\n            <img\n              src=\"https://images.unsplash.com/photo-1698516923132-b0236bc8f3ef?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n              alt=\"placeholder\"\n              className=\"scale-105 transition-all duration-500 group-hover:scale-[1.1]\"\n            />\n            <div className=\"z-10 bg-primary\"></div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"group relative grid overflow-hidden sm:grid-cols-2 lg:grid-cols-1\"\n          >\n            <div className=\"absolute top-0 left-0 z-20 flex w-full justify-between gap-2 p-6 text-background sm:bottom-0 sm:left-1/2 sm:w-1/2 sm:flex-col lg:bottom-auto lg:left-0 lg:w-full lg:flex-row lg:items-center\">\n              <div>\n                <h3 className=\"text-lg font-medium\">Flexible Funds</h3>\n                <p>Adapt your funding strategy</p>\n              </div>\n              <span className=\"flex size-12 shrink-0 items-center justify-center rounded-full bg-background text-primary sm:self-end lg:size-14 lg:self-auto\">\n                <ArrowRight />\n              </span>\n            </div>\n            <img\n              src=\"https://images.unsplash.com/photo-1698402167275-7fbceb30989b?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n              alt=\"placeholder\"\n              className=\"scale-105 transition-all duration-500 group-hover:scale-[1.1]\"\n            />\n            <div className=\"z-10 bg-primary\"></div>\n          </a>\n          <a\n            href=\"#\"\n            className=\"group relative grid overflow-hidden sm:grid-cols-2 lg:grid-cols-1\"\n          >\n            <div className=\"absolute top-0 left-0 z-20 flex w-full justify-between gap-2 p-6 text-background sm:bottom-0 sm:left-1/2 sm:w-1/2 sm:flex-col lg:bottom-auto lg:left-0 lg:w-full lg:flex-row lg:items-center\">\n              <div>\n                <h3 className=\"text-lg font-medium\">Capital Syndication</h3>\n                <p>Raise investment with ease</p>\n              </div>\n              <span className=\"flex size-12 shrink-0 items-center justify-center rounded-full bg-background text-primary sm:self-end lg:size-14 lg:self-auto\">\n                <ArrowRight />\n              </span>\n            </div>\n            <img\n              src=\"https://images.unsplash.com/photo-1698402178229-863420a8ecf6?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n              alt=\"placeholder\"\n              className=\"scale-105 transition-all duration-500 group-hover:scale-[1.1]\"\n            />\n            <div className=\"z-10 bg-primary\"></div>\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature98 };\n"
+}

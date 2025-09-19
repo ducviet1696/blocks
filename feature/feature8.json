@@ -1,0 +1,57 @@
+{
+    "id": "feature8",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature8.jpg",
+    "thumbnail": "feature8-4x3.webp",
+    "description": "A component featuring a title and two cards for showcasing features, each with \"Learn more\" links and logos.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.596Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature8",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { ChevronRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { buttonVariants } from \"@/components/ui/button\";\nimport { Card } from \"@/components/ui/card\";\n\nconst Feature8 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container max-w-6xl\">\n        <div className=\"flex flex-col items-center gap-4 md:gap-6\">\n          <Badge variant=\"outline\">Studies</Badge>\n          <h1 className=\"max-w-2xl text-center text-3xl font-light md:text-5xl\">\n            Welcome to our innovative training platform\n          </h1>\n        </div>\n        <div className=\"mt-16 flex flex-col justify-between gap-6 md:flex-row lg:mt-20 lg:gap-10\">\n          <Card className=\"group p-6\">\n            <a\n              href=\"#\"\n              className={cn(\n                buttonVariants({ variant: \"outline\" }),\n                \"ml-auto hidden w-fit cursor-pointer transition-all duration-200 group-hover:opacity-100 md:flex lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0\",\n              )}\n            >\n              Learn more\n              <ChevronRight className=\"ml-1 h-4\" />\n            </a>\n            <div className=\"mt-6 flex gap-4\">\n              <p className=\"text-lg font-light lg:text-2xl\">\n                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,\n                deserunt.\n              </p>\n              <a\n                href=\"#\"\n                className={cn(\n                  buttonVariants({\n                    variant: \"outline\",\n                    size: \"icon\",\n                  }),\n                  \"shrink-0 cursor-pointer md:hidden\",\n                )}\n              >\n                <ChevronRight className=\"h-4\" />\n              </a>\n            </div>\n            <div className=\"mt-10 flex items-center justify-between\">\n              <p className=\"text-sm font-light lg:text-base\">Built with</p>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg\"\n                alt=\"shadcn\"\n                className=\"h-7\"\n              />\n            </div>\n          </Card>\n          <Card className=\"group p-6\">\n            <a\n              href=\"#\"\n              className={cn(\n                buttonVariants({ variant: \"outline\" }),\n                \"ml-auto hidden w-fit cursor-pointer transition-all duration-200 group-hover:opacity-100 md:flex lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0\",\n              )}\n            >\n              Learn more\n              <ChevronRight className=\"ml-1 h-4\" />\n            </a>\n            <div className=\"mt-6 flex gap-4\">\n              <p className=\"text-lg font-light lg:text-2xl\">\n                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,\n                deserunt.\n              </p>\n              <a\n                href=\"#\"\n                className={cn(\n                  buttonVariants({\n                    variant: \"outline\",\n                    size: \"icon\",\n                  }),\n                  \"shrink-0 cursor-pointer md:hidden\",\n                )}\n              >\n                <ChevronRight className=\"h-4\" />\n              </a>\n            </div>\n            <div className=\"mt-10 flex items-center justify-between\">\n              <p className=\"text-sm font-light lg:text-base\">Styled with</p>\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg\"\n                alt=\"shadcn\"\n                className=\"h-4\"\n              />\n            </div>\n          </Card>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature8 };\n"
+}

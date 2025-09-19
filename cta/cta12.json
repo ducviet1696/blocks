@@ -1,0 +1,43 @@
+{
+    "id": "cta12",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta12.jpg",
+    "thumbnail": "cta12-4x3.webp",
+    "description": "A call-to-action block featuring a heading, description, email input field, and a subscribe button arranged in a column, centered.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.546Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta12",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { Button } from \"@/components/ui/button\";\n\ninterface Cta12Props {\n  heading: string;\n  description: string;\n  buttons?: {\n    primary?: {\n      text: string;\n      url: string;\n    };\n    secondary?: {\n      text: string;\n      url: string;\n    };\n  };\n}\n\nconst Cta12 = ({\n  heading = \"Call to Action\",\n  description = \"Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.\",\n  buttons = {\n    primary: {\n      text: \"Buy Now\",\n      url: \"https://www.shadcnblocks.com\",\n    },\n    secondary: {\n      text: \"Contact Us\",\n      url: \"https://www.shadcnblocks.com\",\n    },\n  },\n}: Cta12Props) => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"bg-accent rounded-lg p-8 md:rounded-xl lg:p-12\">\n          <div className=\"mx-auto max-w-4xl text-center\">\n            <h3 className=\"mb-4 text-3xl font-semibold md:text-5xl lg:mb-6 lg:text-6xl\">\n              {heading}\n            </h3>\n            <p className=\"text-muted-foreground mb-8 text-lg font-medium lg:text-xl\">\n              {description}\n            </p>\n            <div className=\"flex flex-col justify-center gap-3 sm:flex-row sm:gap-4\">\n              {buttons.primary && (\n                <Button size=\"lg\" className=\"w-full sm:w-auto\" asChild>\n                  <a href={buttons.primary.url}>{buttons.primary.text}</a>\n                </Button>\n              )}\n              {buttons.secondary && (\n                <Button\n                  variant=\"outline\"\n                  size=\"lg\"\n                  className=\"w-full sm:w-auto\"\n                  asChild\n                >\n                  <a href={buttons.secondary.url}>{buttons.secondary.text}</a>\n                </Button>\n              )}\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta12 };\n"
+}

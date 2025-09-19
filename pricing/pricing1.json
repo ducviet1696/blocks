@@ -1,0 +1,45 @@
+{
+    "id": "pricing1",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "pricing1.jpg",
+    "thumbnail": "pricing1-4x3.webp",
+    "description": "A pricing component showcasing 4 tiers with varying features, descriptions, and call-to-action buttons, displayed in a columnar layout with a heading section mentioning options and custom plan availability.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.629Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "pricing"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "pricing1",
+    "collection": "block",
+    "group": "pricing",
+    "code": "import { Check } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\n// Features for each pricing tier\nconst freeFeatures = [\n  \"Live Collaboration\",\n  \"1 GB Storage\",\n  \"2 Projects\",\n  \"Basic Support\",\n  \"Limited Customization\",\n  \"Limited Integration\",\n  \"Limited API Access\",\n];\n\nconst proFeatures = [\n  \"2 Team Members\",\n  \"10 GB Storage\",\n  \"10 Projects\",\n  \"Priority Support\",\n  \"Full Customization\",\n  \"Full Integration\",\n  \"Full API Access\",\n];\n\nconst premiumFeatures = [\n  \"5 Team Members\",\n  \"50 GB Storage\",\n  \"50 Projects\",\n  \"Dedicated Support\",\n  \"Advanced Customization\",\n  \"Analytics\",\n  \"Reports\",\n];\n\nconst entrepriseFeatures = [\n  \"10+ Team Members\",\n  \"100+ GB Storage\",\n  \"100+ Projects\",\n  \"Dedicated Account Manager\",\n  \"Custom Features\",\n  \"Custom Support\",\n  \"Custom Integration\",\n];\n\n// Pricing tier type definition\ntype PricingTier = {\n  name: string;\n  description: string;\n  price: string;\n  bgClass: string;\n  interval: string;\n  buttonText: string;\n  buttonVariant:\n    | \"default\"\n    | \"outline\"\n    | \"secondary\"\n    | \"destructive\"\n    | \"ghost\"\n    | \"link\";\n  features: string[];\n  comparison: string;\n  hasPurchaseOption: boolean;\n};\n\n// Pricing tier data\nconst pricingTiers: PricingTier[] = [\n  {\n    name: \"Free\",\n    description: \"For personal use only with limited features and support\",\n    price: \"0\",\n    bgClass: \"\",\n    interval: \"Includes 1 user.\",\n    buttonText: \"Get Started\",\n    buttonVariant: \"outline\",\n    features: freeFeatures,\n    comparison: \"Features\",\n    hasPurchaseOption: false,\n  },\n  {\n    name: \"Pro\",\n    description: \"For small businesses with all the features and support\",\n    price: \"29\",\n    bgClass: \"bg-muted\",\n    interval: \"Per user, per month.\",\n    buttonText: \"Purchase\",\n    buttonVariant: \"default\",\n    features: proFeatures,\n    comparison: \"Everything in Free, and:\",\n    hasPurchaseOption: true,\n  },\n  {\n    name: \"Premium\",\n    description:\n      \"For teams and organizations with advanced features and support\",\n    price: \"59\",\n    bgClass: \"\",\n    interval: \"Per user, per month.\",\n    buttonText: \"Purchase\",\n    buttonVariant: \"outline\",\n    features: premiumFeatures,\n    comparison: \"Everything in Pro, and:\",\n    hasPurchaseOption: true,\n  },\n  {\n    name: \"Entreprise\",\n    description:\n      \"For large companies with custom features and support and a dedicated account manager\",\n    price: \"\",\n    bgClass: \"\",\n    interval: \"\",\n    buttonText: \"Contact sales\",\n    buttonVariant: \"outline\",\n    features: entrepriseFeatures,\n    comparison: \"Everything in Premium, and:\",\n    hasPurchaseOption: false,\n  },\n];\n\nconst PricingCard = ({ tier }: { tier: PricingTier }) => {\n  return (\n    <div className={`flex h-full flex-col ${tier.bgClass}`}>\n      {/* Card top part with fixed height */}\n      <div className=\"h-[360px] flex-none\">\n        <div className=\"flex h-full flex-col\">\n          {/* Header */}\n          <div className=\"px-8 pt-8 pb-3\">\n            <h3 className=\"text-3xl font-semibold\">{tier.name}</h3>\n          </div>\n\n          {/* Description */}\n          <div className=\"px-8 pb-6\">\n            <p className=\"line-clamp-2 text-balance text-muted-foreground\">\n              {tier.description}\n            </p>\n          </div>\n\n          {/* Price */}\n          <div className=\"flex grow flex-col justify-start px-8 pb-6\">\n            {tier.price && (\n              <div className=\"mb-4 flex items-start justify-center\">\n                <div className=\"text-center\">\n                  <div className=\"flex items-start justify-center\">\n                    <span className=\"mt-2 text-lg font-semibold\">$</span>\n                    <span className=\"text-6xl font-semibold\">{tier.price}</span>\n                  </div>\n                  {tier.interval && (\n                    <p className=\"mt-2 text-sm text-muted-foreground\">\n                      {tier.interval}\n                    </p>\n                  )}\n                </div>\n              </div>\n            )}\n          </div>\n\n          {/* CTA Button */}\n          <div className=\"mt-auto px-8 pb-8\">\n            <Button variant={tier.buttonVariant} className=\"w-full py-6\">\n              {tier.buttonText}\n            </Button>\n          </div>\n        </div>\n      </div>\n\n      {/* Features */}\n      <div className=\"grow border-t p-8 text-left\">\n        <p className=\"mb-4 text-lg font-semibold\">{tier.comparison}</p>\n        <ul className=\"space-y-4\">\n          {tier.features.map((feature, featureIndex) => (\n            <li key={featureIndex} className=\"flex items-center gap-3\">\n              <Check className=\"size-5 text-primary\" />\n              <span>{feature}</span>\n            </li>\n          ))}\n        </ul>\n      </div>\n    </div>\n  );\n};\n\nconst Pricing1 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto mb-20 max-w-5xl text-center\">\n          <h2 className=\"mb-3 text-4xl font-bold text-pretty lg:text-6xl\">\n            Pricing\n          </h2>\n          <p className=\"text-muted-foreground lg:text-xl\">\n            Check out our affordable pricing plans below and choose the one that\n            suits you best. If you need a custom plan, please contact us.\n          </p>\n        </div>\n\n        {/* Grid layout for pricing tiers */}\n        <div className=\"mx-auto grid max-w-xl rounded-md border lg:max-w-none lg:grid-cols-4 lg:divide-x\">\n          {pricingTiers.map((tier) => (\n            <div key={tier.name} className={`${tier.bgClass} h-full`}>\n              <PricingCard tier={tier} />\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Pricing1 };\n"
+}

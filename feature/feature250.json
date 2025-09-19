@@ -1,0 +1,46 @@
+{
+    "id": "feature250",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature250.jpg",
+    "thumbnail": "feature250-4x3.webp",
+    "description": "A component displaying a title, subtitle, and an animated, interactive illustration with networked CPUs and dynamic beams connecting them, laid out in a flexible column or row arrangement depending on screen size.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.805Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "animated-beam",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/animated-beam",
+            "docsUrl": "https://magicui.design/docs/components/animated-beam"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui"
+        ]
+    },
+    "figma": true,
+    "slug": "feature250",
+    "collection": "block",
+    "group": "feature",
+    "code": "\"use client\";\n\nimport { Cpu, Zap } from \"lucide-react\";\nimport React, { useRef } from \"react\";\n\nimport { AnimatedBeam } from \"@/components/magicui/animated-beam\";\n\nconst Feature250 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <p className=\"text-muted-foreground mx-auto mb-4 max-w-sm text-center md:text-xl\">\n          Bridging Developers, Building the Future\n        </p>\n        <h1 className=\"mx-auto -mb-12 max-w-3xl text-center text-4xl font-medium tracking-tighter md:text-6xl lg:mb-5 lg:text-7xl\">\n          Connecting Developers Worldwide\n        </h1>\n        <AnimatedBeamIllustration />\n      </div>\n    </section>\n  );\n};\n\nexport { Feature250 };\n\nconst REVERSE = false;\n\nfunction AnimatedBeamIllustration() {\n  const containerRef = useRef<HTMLDivElement>(null);\n  const div1Ref = useRef<HTMLDivElement>(null);\n  const div2Ref = useRef<HTMLDivElement>(null);\n  const div3Ref = useRef<HTMLDivElement>(null);\n  const div4Ref = useRef<HTMLDivElement>(null);\n  const div5Ref = useRef<HTMLDivElement>(null);\n  const div6Ref = useRef<HTMLDivElement>(null);\n  const div7Ref = useRef<HTMLDivElement>(null);\n  return (\n    <div\n      className=\"relative flex w-full items-center justify-center overflow-hidden p-10\"\n      ref={containerRef}\n    >\n      <div className=\"flex w-full flex-col items-center justify-between gap-10 lg:flex-row\">\n        <div className=\"h-100 relative z-10 flex w-full items-center justify-center rounded-3xl lg:w-0\">\n          <div\n            ref={div1Ref}\n            className=\"size-18 bg-background absolute left-0 top-40 z-10 flex -translate-y-1/2 items-center justify-center rounded-full p-1 lg:left-0 lg:top-1/2\"\n          >\n            <div className=\"border-border bg-background flex size-10 items-center justify-center rounded-lg border p-[5px]\">\n              <div className=\"border-border bg-muted flex size-full items-center justify-center rounded-md border\">\n                <Cpu size={16} />\n              </div>\n            </div>\n          </div>\n          <div\n            ref={div2Ref}\n            className=\"size-18 bg-background absolute right-0 top-40 z-10 flex -translate-y-1/2 items-center justify-center rounded-full p-1 lg:left-20 lg:top-20\"\n          >\n            <div className=\"border-border bg-background flex size-10 items-center justify-center rounded-lg border p-[5px]\">\n              <div className=\"border-border bg-muted flex size-full items-center justify-center rounded-md border\">\n                <Cpu size={16} />\n              </div>\n            </div>\n          </div>\n          <div\n            ref={div3Ref}\n            className=\"size-18 bg-background absolute bottom-0 left-6 z-10 flex -translate-y-1/2 items-center justify-center rounded-full p-1 lg:bottom-2 lg:left-20\"\n          >\n            <div className=\"border-border bg-background flex size-10 items-center justify-center rounded-lg border p-[5px]\">\n              <div className=\"border-border bg-muted flex size-full items-center justify-center rounded-md border\">\n                <Cpu size={16} />\n              </div>\n            </div>\n          </div>\n          <div\n            ref={div4Ref}\n            className=\"size-18 bg-background lg:left-50 absolute bottom-0 right-6 z-10 flex -translate-y-1/2 items-center justify-center rounded-full p-1 lg:top-0\"\n          >\n            <div className=\"border-border bg-background flex size-10 items-center justify-center rounded-lg border p-[5px]\">\n              <div className=\"border-border bg-muted flex size-full items-center justify-center rounded-md border\">\n                <Cpu size={16} />\n              </div>\n            </div>\n          </div>\n          <div\n            ref={div5Ref}\n            className=\"size-18 bg-background lg:top-100 lg:left-50 absolute top-20 z-10 flex -translate-y-1/2 items-center justify-center rounded-full p-1\"\n          >\n            <div className=\"border-border bg-background flex size-10 items-center justify-center rounded-lg border p-[5px]\">\n              <div className=\"border-border bg-muted flex size-full items-center justify-center rounded-md border\">\n                <Cpu size={16} />\n              </div>\n            </div>\n          </div>\n        </div>\n        <div\n          ref={div6Ref}\n          className=\"bg-muted lg:size-42 z-10 flex size-32 items-center justify-center rounded-3xl border\"\n        >\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n            className=\"lg:size-18 size-14 dark:invert\"\n            alt=\"\"\n          />\n        </div>\n        <div\n          ref={div7Ref}\n          className=\"size-15 bg-muted z-10 mt-40 flex items-center justify-center rounded-xl border lg:mt-0\"\n        >\n          <Zap fill=\"currentColor\" />\n        </div>\n      </div>\n\n      <div className=\"block lg:hidden\">\n        <AnimatedBeam\n          duration={3}\n          endYOffset={-60}\n          endXOffset={-10}\n          curvature={10}\n          reverse={REVERSE}\n          containerRef={containerRef}\n          fromRef={div1Ref}\n          toRef={div6Ref}\n        />\n        <AnimatedBeam\n          duration={3}\n          endYOffset={-60}\n          endXOffset={10}\n          curvature={10}\n          containerRef={containerRef}\n          fromRef={div2Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          duration={3}\n          containerRef={containerRef}\n          fromRef={div3Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          duration={3}\n          containerRef={containerRef}\n          fromRef={div4Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n\n        <AnimatedBeam\n          duration={3}\n          containerRef={containerRef}\n          fromRef={div5Ref}\n          toRef={div7Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          duration={3}\n          containerRef={containerRef}\n          fromRef={div6Ref}\n          toRef={div7Ref}\n          reverse={REVERSE}\n        />\n      </div>\n\n      <div className=\"hidden lg:block\">\n        <AnimatedBeam\n          duration={3}\n          containerRef={containerRef}\n          fromRef={div1Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          endYOffset={-30}\n          endXOffset={60}\n          duration={3}\n          curvature={-140}\n          containerRef={containerRef}\n          fromRef={div2Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          duration={3}\n          endYOffset={30}\n          curvature={140}\n          containerRef={containerRef}\n          fromRef={div3Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          duration={3}\n          endYOffset={-30}\n          endXOffset={-60}\n          curvature={-180}\n          containerRef={containerRef}\n          fromRef={div4Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n\n        <AnimatedBeam\n          duration={3}\n          endXOffset={-60}\n          endYOffset={30}\n          curvature={180}\n          containerRef={containerRef}\n          fromRef={div5Ref}\n          toRef={div6Ref}\n          reverse={REVERSE}\n        />\n        <AnimatedBeam\n          duration={3}\n          containerRef={containerRef}\n          fromRef={div6Ref}\n          toRef={div7Ref}\n          reverse={REVERSE}\n        />\n      </div>\n    </div>\n  );\n}\n"
+}

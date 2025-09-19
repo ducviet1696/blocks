@@ -1,0 +1,63 @@
+{
+    "id": "contact14",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "contact14.jpg",
+    "thumbnail": "contact14-4x3.webp",
+    "description": "A two-column contact component with avatar, contact details, and form fields for name & phone, plus a button.",
+    "createdAt": [
+        3,
+        "2025-03-16T01:37:40.365Z"
+    ],
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "avatar",
+            "registryId": "shadcn",
+            "registryItemUrl": "avatar",
+            "docsUrl": "https://ui.shadcn.com/docs/components/avatar"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "card",
+            "registryId": "shadcn",
+            "registryItemUrl": "card",
+            "docsUrl": "https://ui.shadcn.com/docs/components/card"
+        },
+        {
+            "name": "input",
+            "registryId": "shadcn",
+            "registryItemUrl": "input",
+            "docsUrl": "https://ui.shadcn.com/docs/components/input"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "contact"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Apr 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "contact14",
+    "collection": "block",
+    "group": "contact",
+    "code": "import React from \"react\";\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport { Input } from \"@/components/ui/input\";\n\nconst Contact14 = () => {\n  return (\n    <section className=\"bg-background py-32\">\n      <div className=\"container\">\n        <Card className=\"rounded-4xl bg-muted w-full border-none\">\n          <CardContent className=\"lg:px-18 relative overflow-hidden py-12 lg:py-24\">\n            <div className=\"grid grid-cols-1 items-end gap-8 md:grid-cols-2\">\n              <div className=\"flex flex-col justify-center space-y-6\">\n                <p className=\"text-muted-foreground text-sm font-semibold tracking-tight\">\n                  SHADCNBLOCKS.COM\n                </p>\n                <div className=\"size-30 bg-foreground relative flex items-center justify-center rounded-3xl p-2.5 shadow-xl\">\n                  <div className=\"bg-background flex size-full items-center justify-center rounded-2xl p-4\">\n                    <Avatar className=\"size-full\">\n                      <AvatarImage\n                        src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\"\n                        alt=\"avatar\"\n                        className=\"object-cover\"\n                      />\n                      <AvatarFallback>Shadcn</AvatarFallback>\n                    </Avatar>\n                  </div>\n                </div>\n                <h1 className=\"text-foreground text-5xl font-bold tracking-tighter\">\n                  Contact Us\n                </h1>\n\n                <ul className=\"max-w-lg space-y-2 tracking-tight\">\n                  <li className=\"flex items-center\">\n                    <span className=\"mr-2 font-bold\">Email:</span>{\" \"}\n                    <span className=\"text-foreground/80 underline\">\n                      example@shadcnblocks.com\n                    </span>\n                  </li>\n                  <li className=\"flex items-center\">\n                    <span className=\"mr-2 font-bold\">Phone:</span>{\" \"}\n                    <span className=\"text-foreground/80\">\n                      +1 (555) 123-4567\n                    </span>\n                  </li>\n                  <li className=\"flex items-center\">\n                    <span className=\"mr-2 font-bold\">Address:</span>\n                    <span className=\"text-foreground/80\">\n                      123 Design Street, UI City\n                    </span>\n                  </li>\n                  <li className=\"flex items-center\">\n                    <span className=\"mr-2 font-bold\">Hours:</span>{\" \"}\n                    <span className=\"text-foreground/80\">\n                      Mon-Fri, 9am-5pm EST\n                    </span>\n                  </li>\n                </ul>\n              </div>\n              <div className=\"mt-6 flex h-auto flex-col gap-2 space-y-3 md:pl-3\">\n                <Input placeholder=\"Name\" className=\"bg-background p-6\" />\n                <Input placeholder=\"Phone\" className=\"bg-background p-6\" />\n\n                <Button className=\"h-10 w-fit\">Contact Us</Button>\n              </div>\n            </div>\n          </CardContent>\n        </Card>\n      </div>\n    </section>\n  );\n};\n\nexport { Contact14 };\n"
+}

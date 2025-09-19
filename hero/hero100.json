@@ -1,0 +1,43 @@
+{
+    "id": "hero100",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero100.jpg",
+    "thumbnail": "hero100-4x3.webp",
+    "description": "A component featuring a 2-column layout, with text and a call-to-action button on one side and an image on the other. Unique for its visual layering effect.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:28:05.350Z"
+    ],
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero100",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero100 = () => {\n  return (\n    <section className=\"overflow-hidden font-sans\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-between gap-10 md:flex-row\">\n          <div className=\"basis-2/4\">\n            <div className=\"mt-10 flex flex-col gap-2\">\n              <p className=\"text-base font-semibold text-muted-foreground\">\n                Client Relationship Management Software\n              </p>\n              <h1 className=\"mb-2 text-4xl leading-snug! font-medium text-black lg:text-5xl\">\n                Your contact management, all streamlined in a single platform\n              </h1>\n              <p className=\"mb-2 text-lg text-black/80\">\n                Providing a comprehensive view of everything you know about the\n                people, companies, and organizations you work with.\n              </p>\n              <Button\n                asChild\n                variant=\"default\"\n                className=\"block h-fit w-fit rounded-full px-7 py-3 text-base font-semibold transition-transform hover:scale-105\"\n              >\n                <a href=\"#\">Try Free</a>\n              </Button>\n            </div>\n          </div>\n          <div className=\"relative basis-[42%] py-9 md:py-16\">\n            <div className=\"aspect-square w-full overflow-hidden\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                alt=\"\"\n                className=\"relative z-20 h-full w-full object-cover object-center\"\n              />\n              <div className=\"absolute top-0 left-[6.25rem] z-10 aspect-[1.378254211/1] h-full w-[56.25rem] bg-muted\" />\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero100 };\n"
+}

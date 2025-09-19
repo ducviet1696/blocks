@@ -1,0 +1,51 @@
+{
+    "id": "hero107",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero107.jpg",
+    "thumbnail": "hero107-4x3.webp",
+    "description": "A component with a dual-column layout, featuring an attention-grabbing headline, a decorative button with unique animation, and a side image embellished with a \"Hire Me\" call-to-action button.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:21:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero107",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { MoonStar, Sparkles } from \"lucide-react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero107 = () => {\n  return (\n    <section className=\"bg-muted bg-cover bg-center py-12 md:py-20\">\n      <div className=\"container\">\n        <div className=\"flex flex-col justify-between gap-12 lg:flex-row lg:gap-8\">\n          <div className=\"mx-auto flex max-w-[43.75rem] flex-col gap-8 lg:mx-0\">\n            <div className=\"flex flex-col gap-6\">\n              <div className=\"m-auto flex w-fit flex-nowrap items-center gap-2 rounded-3xl border px-4 py-2 lg:m-0\">\n                <Sparkles className=\"size-5\" />\n                <div className=\"text-base font-light\">\n                  Free Portfolio Template\n                </div>\n              </div>\n              <h1 className=\"to-muted2 inline-block bg-linear-to-br from-foreground bg-clip-text text-center font-serif text-4xl text-transparent md:text-6xl md:leading-snug lg:text-left\">\n                Your Trusted Collaborator for Digital Services\n              </h1>\n            </div>\n            <div>\n              <div className=\"mx-auto w-fit lg:mx-0\">\n                <Button\n                  asChild\n                  className=\"group relative grid h-fit overflow-hidden rounded-full px-7 py-5 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset]\"\n                >\n                  <a href=\"#\">\n                    <span className=\"spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip-btn overflow-hidden rounded-full [mask:linear-gradient(white,transparent_50%)] before:absolute before:[inset:0_auto_auto_50%] before:aspect-square before:w-[200%] before:[translate:-50%_-15%] before:rotate-[-90deg] before:animate-rotate-btn before:bg-[conic-gradient(from_0deg,transparent_0_340deg,var(--color-muted)_360deg)] before:content-['']\" />\n                    <span className=\"backdrop absolute inset-[2.5px] rounded-full bg-black transition-colors duration-200 group-hover:bg-slate-900\" />\n                    <span className=\"text z-10 text-center font-medium text-white\">\n                      Click Here\n                    </span>\n                  </a>\n                </Button>\n              </div>\n              <div\n                className=\"my-9 h-[1px] w-full bg-black\"\n                style={{\n                  background:\n                    \"linear-gradient(270deg, rgba(234, 232, 225, .2) 0%, rgba(17, 16, 17, .2) 50%, rgba(17, 16, 17, 0) 100%)\",\n                }}\n              />\n              <p className=\"mx-auto w-full max-w-[30rem] text-center text-lg font-light text-foreground lg:mx-0 lg:text-left\">\n                Assisting startups and brands in creating impactful and engaging\n                solutions for their software requirements.\n              </p>\n            </div>\n          </div>\n          <div className=\"mx-auto w-full max-w-[31.25rem]\">\n            <div className=\"relative mx-auto w-full max-w-full lg:mx-0\">\n              <div className=\"w-full overflow-hidden rounded-3xl\">\n                <AspectRatio ratio={1}>\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                    alt=\"Responsive square image\"\n                    className=\"size-full object-cover\"\n                  />\n                </AspectRatio>\n              </div>\n              <div className=\"absolute right-0 bottom-0\">\n                <Button\n                  asChild\n                  variant=\"secondary\"\n                  className=\"m-4 flex h-fit items-center gap-2 rounded-xl px-5 py-4 text-xl font-semibold shadow-md\"\n                >\n                  <a href=\"#\">\n                    <MoonStar className=\"size-6!\" />\n                    <div>Hire Me</div>\n                  </a>\n                </Button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero107 };\n"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "hero244",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero244.jpg",
+    "thumbnail": "hero244-4x3.webp",
+    "description": "A component featuring a two-column layout: one for promotional content including a header, text, and buttons; the other showcases draggable cards with images and titles.",
+    "createdAt": [
+        3,
+        "2025-08-28T06:52:46.510Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "draggable-card.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/draggable-card.json",
+            "docsUrl": "https://ui.aceternity.com/components/draggable-card"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero244",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport {\n  DraggableCardBody,\n  DraggableCardContainer,\n} from \"@/components/aceternity/draggable-card\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero244 = () => {\n  const items = [\n    {\n      title: \"Controller Set\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img12.jpeg\",\n      className: \"absolute top-10 left-[20%] rotate-[-5deg]\",\n    },\n    {\n      title: \"June Collection\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img6.jpeg\",\n      className: \"absolute top-40 left-[25%] rotate-[-7deg]\",\n    },\n    {\n      title: \"Summer Vibes\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img8.jpeg\",\n      className: \"absolute top-5 left-[40%] rotate-[8deg]\",\n    },\n    {\n      title: \"Urban Style\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img9.jpeg\",\n      className: \"absolute top-32 left-[55%] rotate-[10deg]\",\n    },\n    {\n      title: \"Classic Edition\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img3.jpeg\",\n      className: \"absolute top-20  lg:right-[35%] rotate-[2deg]\",\n    },\n    {\n      title: \"Premium Series\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img13.jpeg\",\n      className: \"absolute top-24 left-[45%] rotate-[-7deg]\",\n    },\n    {\n      title: \"Limited Edition\",\n      image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/guri3/img7.jpeg\",\n      className: \"absolute top-8 left-[30%] rotate-[4deg]\",\n    },\n  ];\n\n  return (\n    <section className=\"relative grid w-screen overflow-hidden border py-32 lg:min-h-screen\">\n      <div className=\"container relative z-10 h-full grid-cols-1 items-center justify-center gap-10 lg:grid lg:grid-cols-2\">\n        <div className=\"flex flex-col items-center justify-center text-center lg:items-start lg:text-left\">\n          <h1 className=\"font-calSans max-w-lg text-7xl\">\n            Take control of your Saas\n          </h1>\n          <p className=\"text-muted-foreground mt-10 max-w-md\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,\n          </p>\n\n          <div className=\"mt-10 flex gap-5\">\n            <Button className=\"h-11 rounded-xl\">\n              Get Unlimited Access <ArrowRight className=\"-rotate-45\" />\n            </Button>\n            <Button className=\"h-11 rounded-xl\" variant=\"secondary\">\n              Learn More <ArrowRight className=\"-rotate-45\" />\n            </Button>\n          </div>\n        </div>\n        <DraggableCardContainer className=\"relative flex h-[80vh] w-full items-center justify-center lg:h-full\">\n          <p className=\"font-calSans text-muted-foreground absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-4xl\">\n            Join the Exclusive Shadcn Blocks\n          </p>\n          {items.map((item) => (\n            <DraggableCardBody\n              key={item.title}\n              className={cn(\n                item.className,\n                \"-translate-x-20 scale-75 rounded-2xl p-3 lg:translate-x-0 lg:scale-100\",\n              )}\n            >\n              <img\n                src={item.image}\n                alt={item.title}\n                className=\"h-82 pointer-events-none relative z-10 w-80 rounded-2xl object-cover\"\n              />\n              <h3 className=\"mt-4 text-center text-xl tracking-tighter\">\n                {item.title}\n              </h3>\n            </DraggableCardBody>\n          ))}\n        </DraggableCardContainer>\n      </div>\n      <div className=\"absolute inset-0 flex h-full w-full items-center justify-between\">\n        {Array.from({ length: 7 }).map((_, index) => (\n          <div key={index} className=\"bg-border h-full w-px\"></div>\n        ))}\n      </div>\n    </section>\n  );\n};\n\nexport { Hero244 };\n"
+}

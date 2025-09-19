@@ -1,0 +1,57 @@
+{
+    "id": "hero160",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero160.jpg",
+    "thumbnail": "hero160-4x3.webp",
+    "description": "This component displays an overlay text and buttons on an image backdrop with an aspect-ratio image below. Features a badge with an award, a gradient headline, a subtext, and action buttons. Also includes a small text with icons.",
+    "createdAt": [
+        3,
+        "2024-12-16T05:12:05.350Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "aspect-ratio",
+            "registryId": "shadcn",
+            "registryItemUrl": "aspect-ratio",
+            "docsUrl": "https://ui.shadcn.com/docs/components/aspect-ratio"
+        },
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "hero1"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero160",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Circle, Trophy } from \"lucide-react\";\n\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero160 = () => {\n  return (\n    <section className=\"dark relative overflow-hidden bg-background py-12 font-sans md:py-28\">\n      <img\n        src=\"https://images.unsplash.com/photo-1637946175559-22c4fe13fc54?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n        alt=\"\"\n        className=\"absolute top-0 left-0 z-10 aspect-2/1 w-full\"\n      />\n      <div className=\"absolute inset-0 z-20 bg-linear-to-b from-transparent to-black\" />\n      <div className=\"relative z-20 container\">\n        <div className=\"flex flex-col items-center gap-5\">\n          <Badge className=\"mb-2 flex w-fit items-center gap-2 rounded-full border border-muted-foreground bg-background px-4 py-2 hover:bg-background\">\n            <Trophy className=\"h-4 w-4 stroke-muted-foreground\" />\n            <p className=\"text-sm leading-normal font-light text-muted-foreground\">\n              Awarded as the best startup in 2023\n            </p>\n          </Badge>\n          <h1 className=\"bg-[linear-gradient(135deg,theme(colors.muted2.DEFAULT)_25%,theme(colors.muted2.foreground))] w-full max-w-[37.5rem] bg-clip-text py-2 text-center text-4xl leading-tight font-normal text-transparent md:max-w-[50rem] md:text-5xl xl:max-w-[62.5rem] xl:text-[3.6rem]\">\n            Skyrocket your profits in no time. Streamline payments, amplify\n            sales.\n          </h1>\n          <p className=\"w-full max-w-[51.875rem] text-center text-xl text-muted-foreground\">\n            Establish a robust business workflow and achieve massive growth in\n            just 50 days.\n          </p>\n          <div className=\"mt-4 flex flex-col items-center gap-4 md:flex-row\">\n            <Button asChild>\n              <a href=\"#\">Start 30 Days Free Trial</a>\n            </Button>\n            <Button variant=\"secondary\">\n              <a href=\"#\">Request Free Demo</a>\n            </Button>\n          </div>\n          <div className=\"flex flex-wrap items-center gap-3 md:flex-row\">\n            <p className=\"text-sm text-muted-foreground\">\n              No Credit Card Required\n            </p>\n            <Circle className=\"h-1 w-1 fill-muted-foreground\" />\n            <p className=\"text-sm text-muted-foreground\">Cancel Anytime</p>\n          </div>\n        </div>\n      </div>\n      <div className=\"relative z-20 mx-auto max-w-[86.5rem] px-8 py-20 md:py-32\">\n        <AspectRatio\n          ratio={1.562130178 / 1}\n          className=\"overflow-hidden rounded-2xl border border-white/15\"\n        >\n          <img\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\"\n            alt=\"\"\n            className=\"h-full w-full object-cover object-center\"\n          />\n        </AspectRatio>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero160 };\n"
+}

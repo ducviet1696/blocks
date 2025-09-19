@@ -1,0 +1,57 @@
+{
+    "id": "feature113",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature113.jpg",
+    "thumbnail": "feature113-4x3.webp",
+    "description": "A tabbed component with 3 options, integrating text, badges, buttons, and images, showcasing different features. Each tab has a 2-column layout for content and visuals.",
+    "createdAt": [
+        3,
+        "2024-10-16T10:18:02.825Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Nov 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature113",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { CreditCard, Layout, Menu, Pointer, Zap } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst Feature113 = () => {\n  return (\n    <section className=\"py-32\">\n      <div>\n        <div className=\"container flex flex-col items-center gap-4 text-center\">\n          <Badge variant=\"outline\">Top-notch Craft</Badge>\n          <h2 className=\"text-3xl font-semibold md:text-4xl\">Shape tomorrow</h2>\n          <p className=\"text-muted-foreground\">\n            Join us to build flawless web solutions.\n          </p>\n        </div>\n        <div>\n          <Tabs defaultValue=\"tab-1\" className=\"mt-14\">\n            <div className=\"container flex justify-center\">\n              <TabsList>\n                <TabsTrigger value=\"tab-1\" className=\"flex items-center gap-2\">\n                  <Zap className=\"hidden h-auto w-4 shrink-0 sm:block\" />\n                  Speed\n                </TabsTrigger>\n                <TabsTrigger value=\"tab-2\" className=\"flex items-center gap-2\">\n                  <Pointer className=\"hidden h-auto w-4 shrink-0 sm:block\" />\n                  Flexible\n                </TabsTrigger>\n                <TabsTrigger value=\"tab-3\" className=\"flex items-center gap-2\">\n                  <Layout className=\"hidden h-auto w-4 shrink-0 sm:block\" />\n                  Advanced\n                </TabsTrigger>\n              </TabsList>\n            </div>\n            <div className=\"container mt-10 max-w-7xl rounded-2xl bg-muted/70 p-8 md:mt-14 lg:p-16\">\n              <TabsContent\n                value=\"tab-1\"\n                className=\"mt-0 grid place-items-center gap-20 lg:grid-cols-2 lg:gap-10\"\n              >\n                <div className=\"flex flex-col gap-5\">\n                  <Badge variant=\"outline\" className=\"w-fit bg-background\">\n                    Modern Tactics\n                  </Badge>\n                  <h3 className=\"text-3xl font-semibold lg:text-5xl\">\n                    Make your site a true standout.\n                  </h3>\n                  <p className=\"text-muted-foreground lg:text-lg\">\n                    Discover new web trends that help you craft sleek, highly\n                    functional sites that drive traffic and convert leads into\n                    customers.\n                  </p>\n                  <Button className=\"mt-2.5 w-fit gap-2\" size=\"lg\">\n                    See Plans\n                    <CreditCard className=\"h-auto w-4\" />\n                  </Button>\n                </div>\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg\"\n                  alt=\"placeholder\"\n                  className=\"max-h-96 rounded-xl\"\n                />\n              </TabsContent>\n              <TabsContent\n                value=\"tab-2\"\n                className=\"mt-0 grid place-items-center gap-20 lg:grid-cols-2 lg:gap-10\"\n              >\n                <div className=\"flex flex-col gap-5\">\n                  <Badge variant=\"outline\" className=\"w-fit bg-background\">\n                    Expert Features\n                  </Badge>\n                  <h3 className=\"text-3xl font-semibold lg:text-5xl\">\n                    Boost your site with top-tier design.\n                  </h3>\n                  <p className=\"text-muted-foreground lg:text-lg\">\n                    Use stellar design to easily engage users and strengthen\n                    their loyalty. Create a seamless experience that keeps them\n                    coming back for more.\n                  </p>\n                  <Button className=\"mt-2.5 w-fit gap-2\" size=\"lg\">\n                    See Tools\n                    <Menu className=\"h-auto w-4\" />\n                  </Button>\n                </div>\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg\"\n                  alt=\"placeholder\"\n                  className=\"max-h-96 rounded-xl\"\n                />\n              </TabsContent>\n              <TabsContent\n                value=\"tab-3\"\n                className=\"mt-0 grid place-items-center gap-20 lg:grid-cols-2 lg:gap-10\"\n              >\n                <div className=\"flex flex-col gap-5\">\n                  <Badge variant=\"outline\" className=\"w-fit bg-background\">\n                    Elite Solutions\n                  </Badge>\n                  <h3 className=\"text-3xl font-semibold lg:text-5xl\">\n                    Build an advanced web experience.\n                  </h3>\n                  <p className=\"text-muted-foreground lg:text-lg\">\n                    Lift your brand with modern tech that grabs attention and\n                    drives action. Create a digital experience that stands out\n                    from the crowd.\n                  </p>\n                  <Button className=\"mt-2.5 w-fit gap-2\" size=\"lg\">\n                    See Options\n                    <Zap className=\"h-auto w-4\" />\n                  </Button>\n                </div>\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg\"\n                  alt=\"placeholder\"\n                  className=\"max-h-96 rounded-xl\"\n                />\n              </TabsContent>\n            </div>\n          </Tabs>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature113 };\n"
+}

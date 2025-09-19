@@ -1,0 +1,46 @@
+{
+    "id": "hero15",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero15.jpg",
+    "thumbnail": "hero15-4x3.webp",
+    "description": "A component featuring a central slogan, description, singular primary action, and icons displaying ratings from various platforms.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.608Z"
+    ],
+    "dependencies": [
+        "lucide-react",
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "hero15",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport { BiLogoPlayStore } from \"react-icons/bi\";\nimport { FaApple } from \"react-icons/fa\";\nimport { SiTrustpilot } from \"react-icons/si\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Hero15 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <a\n          href=\"#\"\n          className=\"group mx-auto mb-4 flex w-fit items-center rounded-full bg-muted px-4 py-2 text-sm transition-colors hover:bg-muted/80\"\n        >\n          <span className=\"mr-1 font-semibold\">What&apos;s new</span>\n          <div className=\"mx-2 h-3.5 w-px bg-muted-foreground/70\"></div>\n          Read more\n          <ArrowRight className=\"ml-2 inline size-4 transition-transform group-hover:translate-x-0.5\" />\n        </a>\n        <h1 className=\"mx-auto my-4 mb-6 max-w-3xl text-center text-3xl font-bold lg:text-5xl\">\n          Efficient tools that simplify your workflow.\n        </h1>\n        <p className=\"mx-auto mb-8 max-w-2xl text-center text-muted-foreground lg:text-xl\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor\n          assumenda voluptatem nemo magni a maiores aspernatur.\n        </p>\n        <div className=\"flex justify-center\">\n          <Button\n            size=\"lg\"\n            className=\"w-full shadow-sm transition-shadow hover:shadow-md sm:w-auto lg:mt-10\"\n          >\n            Get started for free\n          </Button>\n        </div>\n        <div className=\"mt-8 lg:mt-12\">\n          <ul className=\"flex flex-wrap justify-center gap-6 text-sm lg:text-base\">\n            <li className=\"flex items-center gap-2 whitespace-nowrap\">\n              <BiLogoPlayStore className=\"size-5\" />\n              4.7 rating on Play Store\n            </li>\n            <li className=\"flex items-center gap-2 whitespace-nowrap\">\n              <FaApple className=\"size-5\" />\n              4.8 rating on App Store\n            </li>\n            <li className=\"flex items-center gap-2 whitespace-nowrap\">\n              <SiTrustpilot className=\"size-5\" />\n              4.9 rating on Trustpilot\n            </li>\n          </ul>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero15 };\n"
+}

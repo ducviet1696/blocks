@@ -1,0 +1,46 @@
+{
+    "id": "hero220",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero220.jpg",
+    "thumbnail": "hero220-4x3.webp",
+    "description": "A component displaying fullscreen video-text inside a semi-transparent image background, with animated text scaling effect.",
+    "createdAt": [
+        3,
+        "2025-05-04T23:59:42.832Z"
+    ],
+    "dependencies": [
+        "framer-motion",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "video-text",
+            "registryId": "magicui",
+            "registryItemUrl": "https://magicui.design/r/video-text",
+            "docsUrl": "https://magicui.design/docs/components/video-text"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jun 2025"
+        ],
+        "registryIds": [
+            "magicui"
+        ]
+    },
+    "figma": true,
+    "slug": "hero220",
+    "collection": "block",
+    "group": "hero",
+    "code": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport React from \"react\";\n\nimport { VideoText } from \"@/components/magicui/video-text\";\n\nconst Hero220 = () => {\n  return (\n    <section className=\"relative flex min-h-screen flex-col items-center justify-center overflow-hidden py-32\">\n      <div className=\"container\">\n        <div className=\"absolute left-0 top-0 h-screen w-full overflow-hidden bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape6.jpeg')] bg-cover bg-top bg-no-repeat opacity-20\" />\n        <div className=\"flex flex-col items-center justify-center gap-4\">\n          <motion.div\n            initial={{ opacity: 0, scale: 1.1 }}\n            animate={{ opacity: 1, scale: 1 }}\n            transition={{ duration: 0.3 }}\n            className=\"relative flex h-[250px] w-full items-center\"\n          >\n            <VideoText\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/landscape.mp4\"\n              className=\"font-playfair text-[15rem] font-bold tracking-tighter\"\n              fontFamily=\"Playfair Display\"\n            >\n              Blocks\n            </VideoText>\n          </motion.div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero220 };\n"
+}

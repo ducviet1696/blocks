@@ -1,0 +1,45 @@
+{
+    "id": "feature97",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature97.jpg",
+    "thumbnail": "feature97-4x3.webp",
+    "description": "A component showcasing platform highlights in a two-column grid with icons, titles, and texts for each feature. Includes a title, description, and buttons above the grid.",
+    "createdAt": [
+        3,
+        "2024-10-09T05:37:59.205Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Oct 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature97",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { BarChart, Heart, Monitor, Plus, TrendingUp } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Feature97 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto flex max-w-xl flex-col gap-6 text-center\">\n          <h2 className=\"text-4xl font-semibold\">Platform Highlights</h2>\n          <p className=\"text-lg\">\n            Built with cutting-edge insights, offering a complete perspective on\n            the connection between lifestyle, behavior, and health. Our platform\n            delivers an all-encompassing health overview.\n          </p>\n          <div className=\"flex flex-col justify-center gap-2 sm:flex-row\">\n            <Button variant=\"outline\">View All Features</Button>\n            <Button>\n              <Plus className=\"mr-2 h-auto w-4\" />\n              Schedule Consultation\n            </Button>\n          </div>\n        </div>\n        <div className=\"mx-auto mt-20 grid max-w-5xl gap-20 md:grid-cols-2\">\n          <div className=\"text-center\">\n            <Heart className=\"mx-auto h-auto w-7\" />\n            <h3 className=\"mt-4 mb-2 text-xl font-semibold\">Health Overview</h3>\n            <p>\n              Discover key health insights tailored to your lifestyle, delivered\n              in a clear and actionable format.\n            </p>\n          </div>\n          <div className=\"text-center\">\n            <BarChart className=\"mx-auto h-auto w-7\" />\n            <h3 className=\"mt-4 mb-2 text-xl font-semibold\">\n              Personalized Insights\n            </h3>\n            <p>\n              Gain tailored health insights based on your unique data, helping\n              you make informed decisions.\n            </p>\n          </div>\n          <div className=\"text-center\">\n            <TrendingUp className=\"mx-auto h-auto w-7\" />\n            <h3 className=\"mt-4 mb-2 text-xl font-semibold\">\n              Comprehensive Analytics\n            </h3>\n            <p>\n              Deep dive into your health data with comprehensive analytics\n              designed to offer actionable outcomes.\n            </p>\n          </div>\n          <div className=\"text-center\">\n            <Monitor className=\"mx-auto h-auto w-7\" />\n            <h3 className=\"mt-4 mb-2 text-xl font-semibold\">\n              Continuous Monitoring\n            </h3>\n            <p>\n              Stay updated on your health with continuous monitoring that tracks\n              progress in real-time.\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature97 };\n"
+}

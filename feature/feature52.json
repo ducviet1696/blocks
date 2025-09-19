@@ -1,0 +1,45 @@
+{
+    "id": "feature52",
+    "access": "pro",
+    "weight": 100,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature52.jpg",
+    "thumbnail": "feature52-4x3.webp",
+    "description": "A component featuring tabbed navigation with icons and titles, transitioning to different content images on selection.",
+    "createdAt": [
+        3,
+        "2024-08-05T05:21:46.574Z"
+    ],
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Aug 2024"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": true,
+    "slug": "feature52",
+    "collection": "block",
+    "group": "feature",
+    "code": "import {\n  Blocks,\n  Fingerprint,\n  LayoutPanelTop,\n  MessageCircleMore,\n  Users,\n  Workflow,\n} from \"lucide-react\";\n\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nconst tabs = [\n  {\n    title: \"Communication\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg\",\n    icon: (\n      <MessageCircleMore\n        className=\"text-primary size-6 lg:size-8\"\n        strokeWidth={1.5}\n      />\n    ),\n  },\n  {\n    title: \"Integrations\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg\",\n    icon: (\n      <Blocks className=\"text-primary size-6 lg:size-8\" strokeWidth={1.5} />\n    ),\n  },\n  {\n    title: \"Collaboration\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg\",\n    icon: <Users className=\"text-primary size-6 lg:size-8\" strokeWidth={1.5} />,\n  },\n  {\n    title: \"Automation\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg\",\n    icon: (\n      <Workflow className=\"text-primary size-6 lg:size-8\" strokeWidth={1.5} />\n    ),\n  },\n  {\n    title: \"Customization\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg\",\n    icon: (\n      <LayoutPanelTop\n        className=\"text-primary size-6 lg:size-8\"\n        strokeWidth={1.5}\n      />\n    ),\n  },\n  {\n    title: \"Security\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg\",\n    icon: (\n      <Fingerprint\n        className=\"text-primary size-6 lg:size-8\"\n        strokeWidth={1.5}\n      />\n    ),\n  },\n];\n\nconst Feature52 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <Tabs defaultValue=\"feature-1\">\n          <TabsList className=\"bg-background flex h-full w-full flex-wrap justify-between gap-2 p-0\">\n            {tabs.map((tab, index) => (\n              <TabsTrigger\n                key={index}\n                value={`feature-${index + 1}`}\n                className=\"border-muted-2 bg-muted text-primary hover:border-primary/40 hover:ring-input data-[state=active]:border-primary/60 data-[state=active]:bg-background flex flex-1 flex-col items-start justify-start gap-2 whitespace-normal rounded-md border px-2 py-4 text-left hover:ring-1 data-[state=active]:border lg:py-6\"\n              >\n                <div className=\"flex w-full flex-col items-center gap-4\">\n                  {tab.icon}\n                  <p className=\"text-sm font-semibold lg:text-base\">\n                    {tab.title}\n                  </p>\n                </div>\n              </TabsTrigger>\n            ))}\n          </TabsList>\n          {tabs.map((tab, index) => (\n            <TabsContent key={index} value={`feature-${index + 1}`}>\n              <img\n                src={tab.image}\n                alt=\"\"\n                className=\"aspect-video w-full rounded-md object-cover\"\n              />\n            </TabsContent>\n          ))}\n        </Tabs>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature52 };\n"
+}
