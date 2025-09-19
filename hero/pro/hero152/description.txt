@@ -1,0 +1,1 @@
+This component features a centered column with a trusted badge, a bold heading, a descriptive paragraph, and two buttons. It also includes an angled 3-image composition.

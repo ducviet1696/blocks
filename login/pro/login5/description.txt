@@ -1,0 +1,1 @@
+A login component featuring a 2-column layout with one column for form inputs including email and password fields, a checkbox for "Remember me", and buttons for submitting the form or logging in with Google. The second column displays an image.

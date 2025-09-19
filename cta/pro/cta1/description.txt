@@ -1,0 +1,1 @@
+A component features a card split into text and image sections, with a call-to-action button and decorative icons.

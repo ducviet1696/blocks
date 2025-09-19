@@ -1,0 +1,1 @@
+A footer component with a logo and tagline, 1-4 columns of menu items, and a bottom row for copyright and policy links.

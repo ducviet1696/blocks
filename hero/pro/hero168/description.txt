@@ -1,0 +1,1 @@
+This component displays a hero section with a headline, introductory text, and a &#x27;Get Started&#x27; button. It features an arrangement of images on one side, within a layout that spans across columns.

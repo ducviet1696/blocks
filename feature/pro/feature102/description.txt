@@ -1,0 +1,1 @@
+A component displaying a title, a brief description, and 3 features with images. Each feature includes a number indicator, title, and description.

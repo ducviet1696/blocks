@@ -1,0 +1,1 @@
+A centered feature block with a title, description, and button. Uses a single-column layout with adjustable text sizes.

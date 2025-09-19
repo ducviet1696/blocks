@@ -1,0 +1,1 @@
+A feature block highlighting workflow tools with a header, 3 columns of benefits/stats, and a contact prompt. Uses icons and a placeholder image.

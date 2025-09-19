@@ -1,0 +1,1 @@
+A component with an image on one side, and descriptive text with a bulleted list on the other. Includes a headline, paragraph, and a button.

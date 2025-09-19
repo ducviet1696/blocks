@@ -1,0 +1,1 @@
+A component showcasing a feature group with a tagline, title, and description. Includes a 4-column grid with clickable images and "Read more" links.

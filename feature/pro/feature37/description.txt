@@ -1,0 +1,1 @@
+A component with a 5-column grid layout, featuring 4 blocks with images and text descriptions, 2 columns wide for the first and last, 3 for the middle two. Each has a rounded, accent-colored background.

@@ -1,0 +1,1 @@
+A pricing display component with a billing cycle toggle, savings info, and plan cards for different service tiers, highlighting a "most popular" option.

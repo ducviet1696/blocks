@@ -1,0 +1,1 @@
+A navigation bar with logo, collapsible menus, and a login button. Layout adapts for mobile with a popover menu.

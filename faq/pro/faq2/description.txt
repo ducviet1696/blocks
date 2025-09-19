@@ -1,0 +1,1 @@
+A FAQ component displaying questions and answers in a column, with a customizable heading and dynamic content.

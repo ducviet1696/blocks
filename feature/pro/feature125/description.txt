@@ -1,0 +1,1 @@
+A component with a dual-column layout, highlighting features and an illustrative image, includes a list with checkmarks and a button.

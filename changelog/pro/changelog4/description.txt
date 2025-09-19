@@ -1,0 +1,1 @@
+A changelog component with social links, a scroll progress indicator, and two updates sections featuring avatars, dates, large text headers, and detailed lists.

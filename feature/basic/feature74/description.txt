@@ -1,0 +1,1 @@
+A component with a title, description, and 2-column grid each hosting an image and text describing different features, with a "Book a demo" link.

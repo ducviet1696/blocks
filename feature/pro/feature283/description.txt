@@ -1,0 +1,1 @@
+A component with an interactive image gallery, headline, text, and button. Features draggable, animate-on-scroll images with hover effects.

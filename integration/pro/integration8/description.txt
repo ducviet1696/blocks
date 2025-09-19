@@ -1,0 +1,1 @@
+A component featuring dual-direction marquee rows of logos, highlighted with fade edges.

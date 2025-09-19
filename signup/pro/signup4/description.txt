@@ -1,0 +1,1 @@
+A signup component featuring a logo, headings, email/password inputs, and social media signup options (Google, Facebook, Apple). Includes a &#x27;login&#x27; link.

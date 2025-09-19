@@ -1,0 +1,1 @@
+This component displays a title, subtitle, and a grid of images (3 columns, 2 rows) with hover effects and call-to-action links.

@@ -1,0 +1,1 @@
+A footer component with a logo, description, social icons, link sections, and legal info spread over two rows. Includes 3 columns of navigational links.

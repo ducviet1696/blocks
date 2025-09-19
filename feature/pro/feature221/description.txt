@@ -1,0 +1,1 @@
+A component showcasing 4 unique features in a 2-column layout with gradient badges, detailed descriptions, and a "Learn More" button. It includes a prominent title and subtitle.

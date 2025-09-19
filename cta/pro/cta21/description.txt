@@ -1,0 +1,1 @@
+A component with a large background image, overlayed by centered text and a large button, featuring an arrow icon.

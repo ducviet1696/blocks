@@ -1,0 +1,1 @@
+A 2-column block featuring a large title, descriptive text, and bullet points with icons on one side, and an image with overlaid gradients on the other.

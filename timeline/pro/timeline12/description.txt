@@ -1,0 +1,1 @@
+An interactive timeline component with four tabs. Each tab reveals content on a different phase, including dates, descriptions, animated images, and a download button.

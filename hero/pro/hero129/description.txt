@@ -1,0 +1,1 @@
+This component features a two-column layout with a bold headline, text content, buttons including one with an icon, overlapping avatars, and a unique phone image showcase with a 3D effect.

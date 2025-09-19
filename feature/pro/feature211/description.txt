@@ -1,0 +1,1 @@
+A component showcasing features with tabs. Includes icons, titles, summaries, and different image layouts per tab.

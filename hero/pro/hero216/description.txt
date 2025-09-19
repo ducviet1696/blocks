@@ -1,0 +1,1 @@
+This component displays a centered message and button with animated meteors and a large globe graphic. Column layout, uses shifting arrow button animation.

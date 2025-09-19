@@ -1,0 +1,1 @@
+A component displaying a vertical timeline layout of steps, each with an icon, title, and description. It uses cards for step details.

@@ -1,0 +1,1 @@
+A component with heading, description, and up to two buttons, arranged vertically with emphasis styling.

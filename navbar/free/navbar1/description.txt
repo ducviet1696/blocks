@@ -1,0 +1,1 @@
+A navigational component with dynamic menus, offering desktop and mobile layouts, incorporating icons and accordion features for sub-menus.

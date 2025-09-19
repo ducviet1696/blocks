@@ -1,0 +1,1 @@
+A component with a breadcrumb navigation, heading, subtext, buttons, a sidebar with topics, and a main content area divided into a 5-column layout, including images, texts, a table, an alert, and dynamic on-page navigation highlighting visible sections.

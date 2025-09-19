@@ -1,0 +1,1 @@
+A signup component featuring email/password fields, Google signup, and a login redirect. Layout includes a centered form in a 400px column.

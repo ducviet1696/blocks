@@ -1,0 +1,1 @@
+A component featuring three sections, each with an image and text side-by-side, headers, and a "Learn more" link. Alternates image/text order between sections.

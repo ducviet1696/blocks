@@ -1,0 +1,1 @@
+A 4-column grid feature block with interactive cards displaying titles, descriptions, icons, and "Read More" buttons. Cards reveal a colored background on hover.

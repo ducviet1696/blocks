@@ -1,0 +1,1 @@
+A component featuring a background pattern, centered title, subtitle, and button, with decorative icons.

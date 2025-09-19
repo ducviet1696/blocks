@@ -1,0 +1,1 @@
+A blog component showcasing posts in a grid layout with image, label, title, summary, and author info. Includes a header with a title and optional button.

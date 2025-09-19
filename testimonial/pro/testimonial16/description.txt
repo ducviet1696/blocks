@@ -1,0 +1,1 @@
+A component showcasing user testimonials in a grid with 2 columns, expandable content, and avatars.

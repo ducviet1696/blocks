@@ -1,0 +1,1 @@
+A carousel component displaying blog posts with navigation arrows, tags, and a "View All Articles" button.

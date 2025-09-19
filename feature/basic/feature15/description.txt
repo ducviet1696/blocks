@@ -1,0 +1,1 @@
+A component with a title/description header and a 2-column grid of features, each with icons, titles, and text.

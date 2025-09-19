@@ -1,0 +1,1 @@
+A component featuring a headline, a subtext, buttons for app download and GitHub star, integration options with icons, and a video preview with decorative dots.

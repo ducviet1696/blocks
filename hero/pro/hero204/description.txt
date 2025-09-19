@@ -1,0 +1,1 @@
+This component displays a hero section with centered text, an email sign-up form, and two animated phone mockups. It includes headings, a paragraph, and input/button for sign-up.

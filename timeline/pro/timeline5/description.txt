@@ -1,0 +1,1 @@
+A 2-column layout component featuring static content on the left and scrollable cards on the right, each with an icon, title, and description.

@@ -1,0 +1,1 @@
+A component displaying a grid of features with images, titles, and descriptions. It includes a title, introductory text, and a button. Grid scales from 1 to 3 columns.

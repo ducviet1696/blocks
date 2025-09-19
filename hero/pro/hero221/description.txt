@@ -1,0 +1,1 @@
+A component featuring animated text over a video, with a centered tagline below. Includes a button with an animated arrow icon.

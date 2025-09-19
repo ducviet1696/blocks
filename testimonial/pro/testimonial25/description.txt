@@ -1,0 +1,1 @@
+Testimonial carousel with navigation buttons, cards displaying quotes, authors, roles, companies, and images.

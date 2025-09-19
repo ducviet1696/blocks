@@ -1,0 +1,1 @@
+A dynamic job listing component with a filter for departments, displaying job categories and openings in grids up to 3 columns wide.

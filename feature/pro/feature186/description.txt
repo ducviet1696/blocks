@@ -1,0 +1,1 @@
+A tabbed component displaying features with icons, descriptions, and images. It toggles between three key features, each with its visual and text content.

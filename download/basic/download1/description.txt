@@ -1,0 +1,1 @@
+A component with a heading and description, containing three cards for different platforms (desktop, iOS, android) each with titles, subtitles, descriptions, and download options.

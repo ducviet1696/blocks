@@ -1,0 +1,1 @@
+A component with a stepper UI to guide through a process, featuring dynamic progress indication, navigational buttons, and transition animations.

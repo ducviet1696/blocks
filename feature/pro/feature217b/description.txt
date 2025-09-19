@@ -1,0 +1,1 @@
+This component showcases three accessibility features with icons in a 3-column layout, including titles and summaries, against a dynamic background.

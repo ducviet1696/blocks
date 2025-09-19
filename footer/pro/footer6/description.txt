@@ -1,0 +1,1 @@
+A footer component with a logo, description, navigation links across two columns, a newsletter sign-up form, and copyright/terms section.

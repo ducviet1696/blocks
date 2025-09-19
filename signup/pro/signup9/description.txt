@@ -1,0 +1,1 @@
+A signup component with Google signup option, email input, and a carousel of logos at the bottom.

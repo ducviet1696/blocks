@@ -1,0 +1,1 @@
+This block showcases utilities with dynamic grid visuals and descriptive cards, detailing features through icons, titles, and texts alongside faded image backgrounds.

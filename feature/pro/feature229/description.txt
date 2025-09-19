@@ -1,0 +1,1 @@
+A component with 3 columns, listing features under "Security," "Integration & APIs," and "Support" categories, each with their icons and items marked by check icons.

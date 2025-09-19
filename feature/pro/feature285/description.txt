@@ -1,0 +1,1 @@
+A component with a 2-column layout featuring a brand logo, title, text, and button on one side and dual vertical marquees with interactive images on the other. Unique for image blur on hover.

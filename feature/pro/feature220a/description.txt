@@ -1,0 +1,1 @@
+A component featuring badges, headings, text, a large button, and a video. It includes stats in a 3-column layout, a dotted background pattern, and primary color highlights.

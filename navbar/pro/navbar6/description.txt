@@ -1,0 +1,1 @@
+A navigation component with a logo, desktop and mobile menus, dropdowns for complex items, and auth buttons. Features a toggled mobile menu.

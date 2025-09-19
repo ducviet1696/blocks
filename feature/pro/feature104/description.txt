@@ -1,0 +1,1 @@
+A component featuring a header with an outlined badge, a title, a paragraph, a placeholder image, and six sections with icons and texts in a 3-column layout.

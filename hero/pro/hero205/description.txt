@@ -1,0 +1,1 @@
+This component showcases a hero section with a large headline, professional information, CTA buttons, and an animated card. It utilizes icons and a custom animation for visual appeal.

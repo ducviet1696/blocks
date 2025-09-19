@@ -1,0 +1,1 @@
+An interactive gallery block with coverflow effect, auto-slide feature, and social media links. Displays images in a carousel, each paired with name and role. Includes left/right navigation buttons.

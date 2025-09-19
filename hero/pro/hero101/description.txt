@@ -1,0 +1,1 @@
+A component with a promotional header, featuring a title, description, start button, and demo video button that triggers a modal with a video player. It also displays partner logos below.

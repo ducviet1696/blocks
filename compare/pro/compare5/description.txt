@@ -1,0 +1,1 @@
+A component displays two options with images, text, and buttons, split across two columns, and features an "OR" marker centrally between columns.

@@ -1,0 +1,1 @@
+A pricing block with a yearly billing switch, featuring 3 columns for Basic, Standard, and Premium plans. Includes feature lists and pricing details.

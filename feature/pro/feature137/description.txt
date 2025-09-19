@@ -1,0 +1,1 @@
+A component displays values/principles in 2 sections: 4 with images, 4 with icons, in a mix of single and dual-column layouts.

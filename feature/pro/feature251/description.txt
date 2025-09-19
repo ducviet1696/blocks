@@ -1,0 +1,1 @@
+A component featuring four cards with animations, icons, and text for showcasing features such as workflows, task tracking, and integrations.

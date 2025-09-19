@@ -1,0 +1,1 @@
+A component showcasing features with a heading, description, demo link, and a grid of feature cards, including images and texts, structured in up to 2 columns.

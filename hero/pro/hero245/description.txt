@@ -1,0 +1,1 @@
+A component with a hiring banner, central slogan, supporting text, download buttons, and dynamic background.antal panels fadeIn based on device.

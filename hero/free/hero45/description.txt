@@ -1,0 +1,1 @@
+A component with a badge, heading, image, and three columns of features, each with an icon, title, and description.

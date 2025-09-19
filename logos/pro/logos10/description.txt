@@ -1,0 +1,1 @@
+A carousel component showcasing company logos with automatic scrolling feature. Includes a header and user prompt button. Each logo is numbered and arranged in a responsive grid.

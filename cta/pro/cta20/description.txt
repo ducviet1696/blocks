@@ -1,0 +1,1 @@
+A call-to-action block with centered text, a large button labeled "Get Started," flanked by separators, within a single-column layout.

@@ -1,0 +1,1 @@
+A component with a title, description, and a grid of links to social platforms, each with an icon, a unique color background, headings, and descriptions.

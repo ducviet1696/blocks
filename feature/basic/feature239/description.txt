@@ -1,0 +1,1 @@
+A component showcasing a dual-column layout with interactive badges, buttons, and a promotional section with a dynamic background image, aimed at highlighting copy-paste UI blocks.

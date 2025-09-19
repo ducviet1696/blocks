@@ -1,0 +1,1 @@
+A dual-section component with a gradient border. Features text block, 4 distinct features with icons, two buttons, and a carousel with auto-play and slide indication.

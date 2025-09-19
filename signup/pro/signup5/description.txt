@@ -1,0 +1,1 @@
+A signup component with 2 columns; one for form inputs including name, email, password, and Google sign-up, and another for an image. Includes a text link for existing accounts.

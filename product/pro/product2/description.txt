@@ -1,0 +1,1 @@
+An accordion-based component displaying customizable service packages. Features expandable sections for details, with a 3-column layout for content within each package.

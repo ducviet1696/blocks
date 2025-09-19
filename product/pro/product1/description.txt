@@ -1,0 +1,1 @@
+A component showcasing a product description with a narrative, features, reviewer avatar, social share buttons, and a download button in a 2-column layout.

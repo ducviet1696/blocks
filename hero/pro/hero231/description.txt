@@ -1,0 +1,1 @@
+A component with dual content sections: text/buttons on the left and a rotating carousel of images/logos on the right. Includes customizable buttons and dynamic image presentation.

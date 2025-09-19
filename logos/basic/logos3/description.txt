@@ -1,0 +1,1 @@
+A component displaying logos in a carousel with auto-scroll feature. Logos are shown in columns that adjust layout based on screen size.

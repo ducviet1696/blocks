@@ -1,0 +1,1 @@
+A component showcasing a collection of utilities (like Integrations, Apps, etc.) with a header section that includes a title and a "Learn more" link. It features a two-column texts layout and a grid of cards (1, 2, or 3 columns based on screen size) that display the utility title, description, and image.

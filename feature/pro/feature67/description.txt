@@ -1,0 +1,1 @@
+A component displaying a group title and a 2-column grid of 6 feature cards, each with an icon, title, and description.

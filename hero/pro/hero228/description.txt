@@ -1,0 +1,1 @@
+A component showcasing a carousel of testimonials with dynamic rotation effect and custom scrollbar animation. Displays names below images.

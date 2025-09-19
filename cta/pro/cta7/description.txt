@@ -1,0 +1,1 @@
+A two-column call-to-action component featuring bullet points with checkmarks and a "Get Started" button, decorated with a geometric background.

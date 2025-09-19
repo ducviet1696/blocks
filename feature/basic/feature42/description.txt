@@ -1,0 +1,1 @@
+A component showcasing core values in a 3-column layout, with a large header spanning two rows and 4 smaller sections for individual values.

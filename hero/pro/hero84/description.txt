@@ -1,0 +1,1 @@
+A component featuring a badge and text block on top, with a layered, overlapping image gallery below, arranged asymmetrically.

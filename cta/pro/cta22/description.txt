@@ -1,0 +1,1 @@
+A component features a 3-column layout, with the first two columns merged to showcase an app download CTA and mockups, and the third column for email subscriptions.

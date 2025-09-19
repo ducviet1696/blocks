@@ -1,0 +1,1 @@
+A component showcasing three feature cards with images, titles, descriptions, and icons, plus a section with two action buttons and a descriptive heading.

@@ -1,0 +1,1 @@
+A testimonial component with a quote, image logo, and author attribution centered in a bordered block with adjustable padding.

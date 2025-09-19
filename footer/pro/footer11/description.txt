@@ -1,0 +1,1 @@
+A component with a logo, menu links across 3 columns, social media icons, and a large image. Offers product, company, and legal info sections.

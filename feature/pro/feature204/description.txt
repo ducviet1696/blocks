@@ -1,0 +1,1 @@
+A split layout component with an image on one side and text areas alongside features on the other, including a call-to-action button and icons.

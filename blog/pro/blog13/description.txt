@@ -1,0 +1,1 @@
+A component showcasing a collection of articles with an introductory badge, title, description, and a link to view all. Features a 3-column layout of articles with images, badges, titles, publish dates, and read more links.

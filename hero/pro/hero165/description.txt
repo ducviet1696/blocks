@@ -1,0 +1,1 @@
+A two-column layout with dynamic image composition on one side and compelling headings on the other, featuring customized aspect ratios and image placements.

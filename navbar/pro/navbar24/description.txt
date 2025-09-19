@@ -1,0 +1,1 @@
+A dynamic navbar component featuring an animated dock with interactive icons for navigation linked to different sections.

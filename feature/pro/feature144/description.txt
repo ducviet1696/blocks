@@ -1,0 +1,1 @@
+A component featuring a central heading, a description, and three Cards, each with an image, a title, and a Badge. The Cards display in a single column for mobile and in rows for larger screens.

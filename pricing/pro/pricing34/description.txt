@@ -1,0 +1,1 @@
+A pricing component with a toggle for monthly/yearly billing, three plan options, and includes feature lists, using cards.

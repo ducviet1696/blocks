@@ -1,0 +1,1 @@
+A component showcasing platform highlights in a two-column grid with icons, titles, and texts for each feature. Includes a title, description, and buttons above the grid.

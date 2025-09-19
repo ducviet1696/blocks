@@ -1,0 +1,1 @@
+A dual-section block featuring a text column with a heading, description, checklist, and button, alongside an image column with a decorative background pattern and gradient overlays.

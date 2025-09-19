@@ -1,0 +1,1 @@
+A component featuring dual-column layout with avatars, a heading, stats, and vertically auto-scrolling carousels showcasing features.

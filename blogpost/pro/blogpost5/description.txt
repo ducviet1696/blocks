@@ -1,0 +1,1 @@
+A blog post component with dynamic navigation highlighting active sections, breadcrumbs, author info, and social share buttons. Layout includes an 8:3 column split for content and sidebar.

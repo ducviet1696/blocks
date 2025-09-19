@@ -1,0 +1,1 @@
+A component with a promotional message, featuring a central title, a subtitle, buttons for action calls (trial/demo), and a 3-column footer highlighting service benefits with icons.

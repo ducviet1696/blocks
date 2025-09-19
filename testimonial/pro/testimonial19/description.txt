@@ -1,0 +1,1 @@
+A carousel showcasing client testimonials with a 5-star rating system, client roles, and avatars. Features auto-scroll and multi-column layout.

@@ -1,0 +1,1 @@
+A component displaying a carousel and tabs for navigating items, which comprise an image, title, description, and note. Features include dynamic tab indicators and previous/next buttons.

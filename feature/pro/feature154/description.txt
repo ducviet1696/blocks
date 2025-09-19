@@ -1,0 +1,1 @@
+A component featuring dual infinite sliders with badges for features like Integrations, Automation, etc., inside a styled section with a gradient and wave overlay.

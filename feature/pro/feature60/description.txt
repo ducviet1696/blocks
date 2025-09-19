@@ -1,0 +1,1 @@
+A component with a two-column layout featuring an image on one side and text content on the other, including a large header and detailed description.

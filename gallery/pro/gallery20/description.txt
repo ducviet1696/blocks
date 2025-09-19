@@ -1,0 +1,1 @@
+A gallery component displaying overlapping, draggable images with dynamic animation. Includes textual content and a button, all within a single column layout.

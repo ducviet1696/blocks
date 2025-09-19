@@ -1,0 +1,1 @@
+A carousel component featuring an image gallery with navigation arrows and pagination dots. Each image scales and adjusts opacity on selection.

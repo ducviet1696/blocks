@@ -1,0 +1,1 @@
+A centered text reveal component with a dark background, featuring a motivational message, adaptable to large screens up to 86rem wide.

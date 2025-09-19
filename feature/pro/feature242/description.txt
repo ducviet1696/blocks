@@ -1,0 +1,1 @@
+A carousel block with testimonials, navigation arrows, and a current indicator, featuring interactive elements and overlaid text on images.

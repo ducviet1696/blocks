@@ -1,0 +1,1 @@
+A dual-layout navigation block with dynamic accordion submenus for mobile and horizontal list for desktop, featuring authentication links and a slide-in menu.

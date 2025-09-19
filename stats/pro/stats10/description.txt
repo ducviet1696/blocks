@@ -1,0 +1,1 @@
+A component with 3 cards each showcasing metrics like conversion stoppage, time-saving, and growth. Each card has an avatar, logo, large text for the metric, and a description.

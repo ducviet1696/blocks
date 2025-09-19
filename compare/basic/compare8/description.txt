@@ -1,0 +1,1 @@
+A comparison component showcasing features with icons, descriptions, and status indicators for two frameworks, including tooltips for certain features.

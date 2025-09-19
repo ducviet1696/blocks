@@ -1,0 +1,1 @@
+A footer component with three sections for navigation links, social media, and legal text. Includes an image with external link indicators for social media.

@@ -1,0 +1,1 @@
+A component displaying tabs with 3 columns, featuring dynamic visual content for software development themes upon tab selection.

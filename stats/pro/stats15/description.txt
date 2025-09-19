@@ -1,0 +1,1 @@
+Dynamic stats display component with animated numbers, toggling year buttons, and an animated link illustration that changes based on the selected year. Features 4 columns of data.

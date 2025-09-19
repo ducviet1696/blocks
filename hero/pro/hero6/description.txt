@@ -1,0 +1,1 @@
+A component featuring a central title and text, two action buttons, a split image display with an additional button, and a row of logos underneath.

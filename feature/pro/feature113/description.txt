@@ -1,0 +1,1 @@
+A tabbed component with 3 options, integrating text, badges, buttons, and images, showcasing different features. Each tab has a 2-column layout for content and visuals.

@@ -1,0 +1,1 @@
+A 3-step guide block with a centered title, intro text, and a grid of 3 columns each detailing a step. Features arrows pointing between steps.

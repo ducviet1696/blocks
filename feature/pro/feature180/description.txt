@@ -1,0 +1,1 @@
+A component contrasting two scenarios with/without a product through icons and text in a 2-column layout, highlighting benefits and downfalls.

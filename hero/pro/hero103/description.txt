@@ -1,0 +1,1 @@
+A component with a split layout containing text and CTA buttons on one side, and a layered image gallery on the other, followed by a logo carousel.

@@ -1,0 +1,1 @@
+This component displays a 2-column layout with a large title, subtitle, and button on one side, and an image on the other. It features a unique background pattern behind the image.

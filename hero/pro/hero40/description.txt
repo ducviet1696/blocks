@@ -1,0 +1,1 @@
+A component with a decorative background and a two-column layout. The first column features a welcome message and action buttons. The second showcases integration options with icons and descriptions.

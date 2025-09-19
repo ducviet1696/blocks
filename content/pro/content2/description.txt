@@ -1,0 +1,1 @@
+A component showcasing a content management system&#x27;s features, types, and instructions on adding or managing content, with 2-column layout for content types and alert features.

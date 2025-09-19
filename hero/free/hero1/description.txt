@@ -1,0 +1,1 @@
+A promotional component with an option for a badge, a heading, a description, two buttons, and an image. Features a 2-column layout, customizable elements, and icons for links.

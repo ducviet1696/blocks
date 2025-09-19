@@ -1,0 +1,1 @@
+A component featuring a 3-column layout with a title, lists of features, and 3 showcases including images and descriptions of block functionalities.

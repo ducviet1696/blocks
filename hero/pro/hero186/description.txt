@@ -1,0 +1,1 @@
+A component with two columns: Main content on left with title, description, and buttons; Features list on right with icons. Includes an image below.

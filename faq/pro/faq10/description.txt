@@ -1,0 +1,1 @@
+An FAQ component with a title, intro text, and accordion-style questions. It includes a badge icon and a bordered layout.

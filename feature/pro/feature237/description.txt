@@ -1,0 +1,1 @@
+This component displays a grid of cards detailing system features, each with metrics, status, and deployment info. Two-column layout on medium screens.

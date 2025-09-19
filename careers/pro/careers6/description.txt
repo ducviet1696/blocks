@@ -1,0 +1,1 @@
+A dual-column block showcasing job openings with badges for categories and icons for job types and locations.

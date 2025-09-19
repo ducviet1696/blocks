@@ -1,0 +1,1 @@
+A FAQ component with a badge, heading, and description at the top, followed by a list of questions and answers presented in a single-column layout. Each item features a numeric label.

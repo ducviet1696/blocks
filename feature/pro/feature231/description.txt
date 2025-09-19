@@ -1,0 +1,1 @@
+A component showcasing 4 features and a call-to-action, split into 2 columns on larger screens. Each feature is numbered and detailed.

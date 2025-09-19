@@ -1,0 +1,1 @@
+A 2-column component; left has text and buttons, right displays geometric art and shapes.

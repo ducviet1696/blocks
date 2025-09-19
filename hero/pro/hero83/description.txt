@@ -1,0 +1,1 @@
+A component featuring a badge with a star icon, a title, a paragraph, two buttons, and a row of three varying-width images below.

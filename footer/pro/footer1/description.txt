@@ -1,0 +1,1 @@
+A component showcasing a footer layout with logos, navigation links across 4 columns, download buttons, and social icons.

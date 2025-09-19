@@ -1,0 +1,1 @@
+A component displaying a grid of integration options with images and descriptions, adaptable from 1 to 3 columns.

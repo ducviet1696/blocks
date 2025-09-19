@@ -1,0 +1,1 @@
+A component displaying a setup guide with a heading, introductory section, and a 3-column layout for steps, each having a title and description.

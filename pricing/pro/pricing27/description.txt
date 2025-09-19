@@ -1,0 +1,1 @@
+A pricing component with a 3-column layout on XL screens, featuring a highlighted main card spanning 2 columns and a secondary card. Each card lists services, prices, and includes call-to-action buttons.

@@ -1,0 +1,1 @@
+A hero component with a text banner, animated background lines, and buttons, featuring a central title with special text effects and call-to-action buttons.

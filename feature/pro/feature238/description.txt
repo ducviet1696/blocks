@@ -1,0 +1,1 @@
+A component showcasing a title, description, buttons for sign-up and demo, and three animated, overlapping cards with hover effects.

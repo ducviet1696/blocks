@@ -1,0 +1,1 @@
+This component displays a main title, a subtitle, an image, and a three-column layout of cards, each containing a title, text, and link.

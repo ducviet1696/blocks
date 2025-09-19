@@ -1,0 +1,1 @@
+A component displaying testimonials in a masonry layout, with items structured in up to 3 columns adjusting to breakpoints. It includes a badge, a title, and a subtitle.

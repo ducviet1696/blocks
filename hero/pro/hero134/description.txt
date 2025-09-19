@@ -1,0 +1,1 @@
+Marketing component with a video popup, call-to-action buttons, and brand logos. Features a headline, description, and image.

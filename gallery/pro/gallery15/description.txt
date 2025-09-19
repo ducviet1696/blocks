@@ -1,0 +1,1 @@
+A gallery component showcasing services with carousel functionality, navigation buttons, and a progress indicator.

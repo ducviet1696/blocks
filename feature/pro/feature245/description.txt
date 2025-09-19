@@ -1,0 +1,1 @@
+A component showcasing eight feature highlights with animated text and decorative slashes, centered around a single card image, structured in a dual-column layout.

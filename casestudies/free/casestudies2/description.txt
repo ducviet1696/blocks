@@ -1,0 +1,1 @@
+A component showcasing customer satisfaction metrics and testimonials, featuring a 3-column layout with images, quotes, and statistical data.

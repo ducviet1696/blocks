@@ -1,0 +1,1 @@
+A component featuring centered text and buttons within a full-screen background, complemented by animated SVG illustrations on sides.

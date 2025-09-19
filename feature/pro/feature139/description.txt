@@ -1,0 +1,1 @@
+A component featuring a badge, a heading, a paragraph, an image, and a 4-column grid of items with numbers, titles, and descriptions.

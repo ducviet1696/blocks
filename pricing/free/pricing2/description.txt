@@ -1,0 +1,1 @@
+A dual-column pricing component with a toggle for monthly/yearly plans, including plan features and purchase links.

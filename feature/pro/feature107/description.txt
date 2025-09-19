@@ -1,0 +1,1 @@
+A component featuring a badge and six linked blocks showcasing tools, each with an image, title, description, and a "Visit Website" call-to-action.

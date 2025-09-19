@@ -1,0 +1,1 @@
+A two-column testimonial block with dashed borders, featuring quotes, avatars, and names. Decorated with sparkle icons at its corners.

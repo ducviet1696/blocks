@@ -1,0 +1,1 @@
+A component with an email form, announcement badge, headline, descriptive text, and a tabbed interface showcasing features through icons and images.

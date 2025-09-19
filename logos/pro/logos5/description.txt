@@ -1,0 +1,1 @@
+A dual-row logo showcase component, featuring 4 logos on the top row and 5 on the bottom, with hover effects and external links.

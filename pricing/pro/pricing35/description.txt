@@ -1,0 +1,1 @@
+A component displays 2 pricing plans with features like custom/standard pricing, toggle for billing frequency, and CTA buttons. Each card offers a descriptive text and chooses between a yearly or quarterly plan.

@@ -1,0 +1,1 @@
+A component featuring a hiring tag, a large title with dynamic highlighting, a brief description, and an email signup form alongside a full-cover image in a two-column layout.

@@ -1,0 +1,1 @@
+A component showcasing a centered introductory text with a button and a dynamic phone mockup animation, structured in a single-column layout.

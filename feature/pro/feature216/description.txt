@@ -1,0 +1,1 @@
+A navigational component with colored icon tabs for different features, summary texts, and changing images on tab selection, plus next/prev buttons.

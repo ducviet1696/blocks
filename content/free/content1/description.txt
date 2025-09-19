@@ -1,0 +1,1 @@
+A storytelling component featuring an interactive sidebar that highlights active content sections as a user scrolls. It spans 3 columns, with narrative content and illustrations dominating 2/3 of the layout.

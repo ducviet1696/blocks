@@ -1,0 +1,1 @@
+A component showcasing a scrollable gallery with navigation buttons and indicators, featuring images, titles, and descriptions for each item.

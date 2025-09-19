@@ -1,0 +1,1 @@
+A dual-column component showcasing testimonials with a dynamic carousel of images and text animations. Features navigable user feedback paired with logos and a 9-grid image layout.

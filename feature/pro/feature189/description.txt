@@ -1,0 +1,1 @@
+This component showcases a 2-column layout: overlapping images on the left and a content section with a headline, feature list, and button on the right.

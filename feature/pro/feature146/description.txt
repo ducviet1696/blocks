@@ -1,0 +1,1 @@
+A component featuring title sections, text descriptions, and images across two rows with unique dashed border decorations.

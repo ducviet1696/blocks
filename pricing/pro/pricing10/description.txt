@@ -1,0 +1,1 @@
+A pricing component displays 4 plans in columns, detailing features, price, and an annual billing switch. Includes badges for discounts and a "Recommended" tag.

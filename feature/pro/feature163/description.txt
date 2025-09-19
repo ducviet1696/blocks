@@ -1,0 +1,1 @@
+A component with a 5-column grid layout, featuring 4 blocks each with text, images, and varying column spans. Unique rounded image integration.

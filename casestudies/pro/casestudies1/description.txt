@@ -1,0 +1,1 @@
+A component with a grid layout of promotional blocks, featuring 2 large and 5 smaller items across 2 columns, showcasing images, logos, and headings.

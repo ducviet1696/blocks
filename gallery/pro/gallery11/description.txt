@@ -1,0 +1,1 @@
+A travel destination gallery with 4 items in a carousel, each item featuring an image, title, and description. Has a heading and "Explore All" button.

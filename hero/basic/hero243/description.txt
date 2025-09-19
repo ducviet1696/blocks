@@ -1,0 +1,1 @@
+A component featuring a dynamic headline, a descriptive paragraph with a CTA button, and a 3-column summary with icons.

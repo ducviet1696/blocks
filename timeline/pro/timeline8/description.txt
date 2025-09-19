@@ -1,0 +1,1 @@
+A vertical timeline block, showcasing events with dates, displayed in a centered max-width container with decorative separators.

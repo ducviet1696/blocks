@@ -1,0 +1,1 @@
+A component featuring an intro, 3 cards with glowing stars, pricing, and a "View All" button. Each card has "Add to cart" functionality and displays collection names and prices.

@@ -1,0 +1,1 @@
+A component displaying a testimonial section with a rating block, supporting multiple columns, and dynamic testimonial visibility based on screen size.

@@ -1,0 +1,1 @@
+A two-column layout block, featuring an outlined badge, large headings, descriptive text, and a button with an icon in the first column. The second column showcases an image with overlay text, including an avatar badge and a link.

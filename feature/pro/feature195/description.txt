@@ -1,0 +1,1 @@
+A component featuring a 2-column layout with pricing details, benefits, and CTA buttons. Includes subtle background patterns and hover effects on buttons.

@@ -1,0 +1,1 @@
+A dynamic component featuring a header with a title, description, and buttons, below which tabs display images with an animated border effect.

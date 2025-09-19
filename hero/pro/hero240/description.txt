@@ -1,0 +1,1 @@
+A component featuring a 3D marquee of images, an email subscription form, and a section with a custom logo and descriptive text.

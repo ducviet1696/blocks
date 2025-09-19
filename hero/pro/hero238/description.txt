@@ -1,0 +1,1 @@
+A visually engaging component displaying premium benefits with animation. Includes heading, two buttons, and a list with icons. Two-column layout on large screens, single-column on smaller. Unique fading animated note card on the right.

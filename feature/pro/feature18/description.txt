@@ -1,0 +1,1 @@
+A grid of customizable UI feature cards, each with an icon, title, description, and a "Learn more" link, arranged in up to 3 columns.

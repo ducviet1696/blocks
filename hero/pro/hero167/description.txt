@@ -1,0 +1,1 @@
+A dual-column component with text and buttons in one and dynamic images in the other, featuring outlined buttons that change on hover, and images within aspect ratios.

@@ -1,0 +1,1 @@
+A component featuring a full-width background image with a dark overlay, includes a title, text, and button centered in a single column layout, and an additional noise effect overlay.

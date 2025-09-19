@@ -1,0 +1,1 @@
+A component showcasing utility features with icons, badges, and cards in a two-column layout, incorporating headings, paragraphs, and images.

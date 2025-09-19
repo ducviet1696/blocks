@@ -1,0 +1,1 @@
+A component featuring a title and two cards for showcasing features, each with "Learn more" links and logos.

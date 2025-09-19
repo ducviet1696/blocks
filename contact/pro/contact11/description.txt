@@ -1,0 +1,1 @@
+A component featuring a contact form with fields for personal and company details, alongside sections for corporate information, email contacts, and social media links.

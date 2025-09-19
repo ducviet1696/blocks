@@ -1,0 +1,1 @@
+A component featuring a main article with text and an image, paired with a detailed sidebar containing company information. Layout switches from column to row on larger screens.

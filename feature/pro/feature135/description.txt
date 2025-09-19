@@ -1,0 +1,1 @@
+A component showcasing core features and highlights with icons, titles, and descriptions in a two-column layout.

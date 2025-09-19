@@ -1,0 +1,1 @@
+A component with a two-column layout featuring a bold headline, paragraph, animated button, and a grid of 3 images with varying sizes and rounded corners.

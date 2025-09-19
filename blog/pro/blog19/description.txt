@@ -1,0 +1,1 @@
+This component displays a block titled "Related articles" with a button to see all articles. It features a 1 to 4 column grid layout of article summaries.

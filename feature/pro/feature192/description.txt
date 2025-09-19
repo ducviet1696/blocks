@@ -1,0 +1,1 @@
+An accordion component presenting features with selectable items on one side and corresponding images on the other. It includes dynamic image display based on selection.

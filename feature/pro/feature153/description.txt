@@ -1,0 +1,1 @@
+A carousel component displaying key features of various platforms, allowing users to navigate through items with previous and next buttons. Each item presents an image, title, description, and a list of detailed info.

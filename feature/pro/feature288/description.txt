@@ -1,0 +1,1 @@
+A component featuring a central text block with embedded clickable previews, housed within a single column layout, emphasizing the ease of integration and customization.

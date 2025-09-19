@@ -1,0 +1,1 @@
+An accordion-style component displays key features with titles, descriptions, and images. Allows toggling between sections to reveal content and images.

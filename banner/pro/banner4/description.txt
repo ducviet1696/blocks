@@ -1,0 +1,1 @@
+An informational banner component with a title, description, and link button. Includes an icon and close function.

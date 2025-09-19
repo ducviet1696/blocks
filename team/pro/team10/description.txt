@@ -1,0 +1,1 @@
+A block displaying a team with a title, introduction, and button, followed by a multi-column layout of team members&#x27; avatars and roles.

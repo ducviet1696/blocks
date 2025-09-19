@@ -1,0 +1,1 @@
+A component showcasing animated bars comparing values, with tooltips and percentage indicators for enhanced visual analysis. Includes a candy-striped background.

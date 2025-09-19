@@ -1,0 +1,1 @@
+A component featuring a call to action with gradient background, text, and buttons on one side, and an image with a subtle overlay effect on the other. Designed in a two-column layout that adjusts to single column on smaller screens.

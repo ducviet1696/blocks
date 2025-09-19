@@ -1,0 +1,1 @@
+A component featuring a breadcrumb navigation, headline, contributor highlight, main content divided into an aside with overview info and sharing icons, and a detailed body with sections that change active state on scroll.

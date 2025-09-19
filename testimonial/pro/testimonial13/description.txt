@@ -1,0 +1,1 @@
+A component featuring a testimonial with overlapping avatars and a quote, showcased on a single-column layout with centered text.

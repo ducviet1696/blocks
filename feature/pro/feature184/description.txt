@@ -1,0 +1,1 @@
+A component displaying features with interactive tabs and images. Uses a 2-column layout, including a dynamic image and detailed tabs for each feature. Includes buttons.

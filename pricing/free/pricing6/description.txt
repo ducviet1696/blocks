@@ -1,0 +1,1 @@
+A pricing component with a heading, description, price, features list, and a call-to-action button. Features 3 groups of listed perks.

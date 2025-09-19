@@ -1,0 +1,1 @@
+A navigation component with dynamic indicator for active links and a mobile menu with an animated icon for toggling.

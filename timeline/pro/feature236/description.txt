@@ -1,0 +1,1 @@
+This component displays a centralized promotional message for a website builder with interactive elements, including animated buttons and dynamic borders, spanning multiple text sizes and has animated ping effects.

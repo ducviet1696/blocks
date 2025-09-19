@@ -1,0 +1,1 @@
+A team carousel featuring images, names, and roles with navigation buttons, looping functionality. Displays items 2 on medium screens, 1/4 on large.

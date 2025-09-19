@@ -1,0 +1,1 @@
+A gallery block with animated blur vignettes around images, arranged in a 5-column grid. Features image reveal animations on scroll.

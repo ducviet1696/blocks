@@ -1,0 +1,1 @@
+This component displays statistics and four feature cards in a 2-column layout, highlighting benefits and key metrics.

@@ -1,0 +1,1 @@
+A component with a 2-column layout. The left column contains text layers, and the right has overlapping images with unique aspect ratios.

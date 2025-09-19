@@ -1,0 +1,1 @@
+A component featuring a trendy hero area with an overlaid phone image, SVG patterning, and two info cards, plus a row of three stat cards below.

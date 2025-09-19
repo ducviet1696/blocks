@@ -1,0 +1,1 @@
+A component showcasing a heading, text, a button, and a list with icons next to headings. Features a large image beside the text content.

@@ -1,0 +1,1 @@
+A component with a split layout, 50% width text block and 45% width image block with an aspect ratio. Features a heading, text, button, and decorative arrow SVG.

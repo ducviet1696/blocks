@@ -1,0 +1,1 @@
+A carousel showcasing AI-powered features with autoplaying video cards on hover, including icons and brief descriptions.

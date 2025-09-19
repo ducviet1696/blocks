@@ -1,0 +1,1 @@
+A dual-column block featuring an animated 3D marquee with images, a subscription input form, and dynamic text sections, highlighted by an icon.

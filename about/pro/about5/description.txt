@@ -1,0 +1,1 @@
+A component showcasing an about section with a 2-column layout featuring a title, description, an image, statistics, and logos, aimed at illustrating workflow simplification by a developer-centric platform.

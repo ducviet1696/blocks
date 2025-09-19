@@ -1,0 +1,1 @@
+A component featuring a central slogan, description, singular primary action, and icons displaying ratings from various platforms.

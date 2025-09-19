@@ -1,0 +1,1 @@
+A component displaying an article with breadcrumbs, author details, and sections with dynamic navigation. It features sticky social share icons and a "Back to top" button.

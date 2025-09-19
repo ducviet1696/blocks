@@ -1,0 +1,1 @@
+A component with a central message and a button, followed by a grid of 3 visual blocks, each with text and "Learn more" buttons. One spans full-width, others take half.

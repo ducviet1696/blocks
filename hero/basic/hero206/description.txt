@@ -1,0 +1,1 @@
+This component features a title, subtitle, avatars with a badge indicating trust from 10k+ users, and a browser mockup to showcase URLs.

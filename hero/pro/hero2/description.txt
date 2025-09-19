@@ -1,0 +1,1 @@
+A component with a 2-column layout, featuring an image on one side and a mix of badge, headline, paragraph, and buttons on the other. It includes styled buttons and a badge with an icon.

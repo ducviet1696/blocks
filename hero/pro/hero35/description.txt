@@ -1,0 +1,1 @@
+A 2-column block with a text section including a title, paragraph, and buttons, and a geometric patterned section with unique border details.

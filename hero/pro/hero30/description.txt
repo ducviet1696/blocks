@@ -1,0 +1,1 @@
+A hero block with 2 columns; left has text and buttons, right features a main image with a mesh background. Unique mesh and layered image presentation.

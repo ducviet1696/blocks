@@ -1,0 +1,1 @@
+A component featuring a central title, description, badges, two textual cards, and an image in a three-column layout; includes "Read more" buttons.

@@ -1,0 +1,1 @@
+A component displays an image alongside a list of 3 features, each with an icon, title, and description, laid out in a 2-column grid.

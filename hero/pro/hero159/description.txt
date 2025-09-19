@@ -1,0 +1,1 @@
+A 2-column component with an emphasis on financial services. Features a bold headline, descriptive text, interactive button with hover effect, and complementary images.

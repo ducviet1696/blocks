@@ -1,0 +1,1 @@
+A two-column component featuring image placeholders, badges, and "learn more" links with right-pointing chevrons.

@@ -1,0 +1,1 @@
+A 2-column component featuring a call-to-action with buttons and two card links for documentation and getting started guides, adorned with icons.

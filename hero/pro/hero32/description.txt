@@ -1,0 +1,1 @@
+A component with a background layer, a left section displaying a heading, description, and button, and a right section with rows of integration icons.

@@ -1,0 +1,1 @@
+A pricing component showcasing 4 tiers with varying features, descriptions, and call-to-action buttons, displayed in a columnar layout with a heading section mentioning options and custom plan availability.

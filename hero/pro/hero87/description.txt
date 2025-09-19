@@ -1,0 +1,1 @@
+A component with a title, text explanation, button, and image; features a 2-column layout with a decorative background in one column.

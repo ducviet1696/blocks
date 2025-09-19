@@ -1,0 +1,1 @@
+This component displays pricing packages with toggle for monthly/annual billing, features tooltip, and a "Popular" badge for a highlighted plan, all in a 4-column layout.

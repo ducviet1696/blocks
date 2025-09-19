@@ -1,0 +1,1 @@
+A component featuring a main title, a motivational subtitle, dynamic meteors animation, an interactive 3D globe with configurable arcs connecting points, and a CTA button with an animated icon.

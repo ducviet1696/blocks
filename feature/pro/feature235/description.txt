@@ -1,0 +1,1 @@
+A component displays UI blocks with flickering image animations and a stylized border effect. It includes descriptive text and buttons, within a dual-column layout.

@@ -1,0 +1,1 @@
+A component displaying analytical data through cards, badges, progress bars, and charts, organized in a two-column grid. Features include performance evaluations, skill badges, data metrics, and interactive elements.

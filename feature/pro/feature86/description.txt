@@ -1,0 +1,1 @@
+A 3-column layout component with a semi-transparent overlay, featuring a badge, texts, a separator, and a video demo link on the left, and a video placeholder image spanning 2 columns on the right.

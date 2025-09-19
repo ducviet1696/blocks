@@ -1,0 +1,1 @@
+A carousel component showcasing services with images, titles, and descriptions. Items reveal further details on hover. Navigation arrows are provided.

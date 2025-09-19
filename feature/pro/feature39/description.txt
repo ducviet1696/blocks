@@ -1,0 +1,1 @@
+A feature block with a heading and a 3-column layout, each containing an image, title, description, and link.

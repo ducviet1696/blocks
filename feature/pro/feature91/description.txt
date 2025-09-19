@@ -1,0 +1,1 @@
+Two-column feature block, contrasting "Team Leads" and "Developers" with icons, links, and bordered list items.

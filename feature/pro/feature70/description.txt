@@ -1,0 +1,1 @@
+A carousel-based component showcasing features with descriptions, navigable by interactive list items. Layout includes an image carousel and a detailed description list on two columns.

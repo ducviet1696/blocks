@@ -1,0 +1,1 @@
+This component displays a full-width background with a dynamic, animated heading that changes text over time and includes a description with buttons for user actions.

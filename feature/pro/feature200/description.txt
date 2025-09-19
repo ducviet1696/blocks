@@ -1,0 +1,1 @@
+A component displaying 3 columns of features, each with icons, titles, and lists, distinguished by unique background gradients.

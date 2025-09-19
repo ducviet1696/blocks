@@ -1,0 +1,1 @@
+A component featuring a full-width background image with a dark overlay, centered text, and two buttons. It includes a bold title, a description, and offers a free trial.

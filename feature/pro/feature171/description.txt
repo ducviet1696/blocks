@@ -1,0 +1,1 @@
+A modern layout featuring a top slogan, a section for team habits, and 3 image-based feature cards, linked by dashed lines.

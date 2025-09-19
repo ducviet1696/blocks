@@ -1,0 +1,1 @@
+A testimonial carousel component with text content, navigation buttons, and progress indicator. It has a dual-column layout with quotes and images.

@@ -1,0 +1,1 @@
+A component displaying a changelog with entries including version info, date, and details. Features badges, buttons, and conditional rendering of lists and images.

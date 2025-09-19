@@ -1,0 +1,1 @@
+A component displaying 3 pricing plans with features, highlighting the "most popular" choice. Each plan card lists price, benefits, and a CTA button.

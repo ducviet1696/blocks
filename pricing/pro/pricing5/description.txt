@@ -1,0 +1,1 @@
+A pricing component with two plans, offering comparison across features in a table and emphasized call-to-actions. Provides a clear visual differentiation between plans.

@@ -1,0 +1,1 @@
+A component features platform integration with a list of 5 permissions. Includes two logo comparisons, title, description, and buttons for actions.

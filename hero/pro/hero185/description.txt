@@ -1,0 +1,1 @@
+A component with two columns; one for a headline, subtext, and a large image, the other features two images and descriptive text emphasizing productivity and collaboration.

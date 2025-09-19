@@ -1,0 +1,1 @@
+A component with a section for customer stories and a video. It has a 2-column layout with text-badges, headlines, paragraphs, and a play button overlaying a looped video. A dialog for fullscreen video playback is included.

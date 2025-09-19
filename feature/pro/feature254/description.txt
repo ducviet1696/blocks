@@ -1,0 +1,1 @@
+Interactive block with layered orbiting circles of images, a central message "Connecting Devs," and a call-to-action button.

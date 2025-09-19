@@ -1,0 +1,1 @@
+A component showcasing a list of integrations with titles, descriptions, and "Connect" buttons, arranged in a single column with a minimalist design.

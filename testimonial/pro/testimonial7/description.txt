@@ -1,0 +1,1 @@
+A component showcasing two auto-scrolling carousels of client testimonials, with avatars, names, roles, and quotes, plus a section header.

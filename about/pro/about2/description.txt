@@ -1,0 +1,1 @@
+A multi-section component featuring a title, a descriptive paragraph, a 3-image grid, a series of stat blocks, client logos, and benefits with images and text. Layout varies responsively, with image and text grids adjusting for mobile. Unique features include a testimonials section and a stats showcase.

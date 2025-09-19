@@ -1,0 +1,1 @@
+A component featuring a split layout with a "Why Us?" pitch, key stats, and orbiting tech logos on one side, and dynamic circular orbit animations on the other.

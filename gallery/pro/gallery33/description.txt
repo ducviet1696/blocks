@@ -1,0 +1,1 @@
+A gallery component showcasing items in a grid that adjusts from 1 to 3 columns based on screen size. Features hover effects and links to more details.

@@ -1,0 +1,1 @@
+A blog display component with a headline, intro text, and a grid of posts (up to 3 columns). It features images, badges, authors&#x27; avatars, and pagination.

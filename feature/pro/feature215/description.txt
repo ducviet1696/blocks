@@ -1,0 +1,1 @@
+A carousel component showcasing AI editing features with video previews, titles, and summaries. Each carousel card plays its video on hover.

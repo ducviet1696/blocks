@@ -1,0 +1,1 @@
+A component showcases an email form, heading, description, features like "No Credit Card Required," 3 placeholder images with different aspect ratios, and a grid of fictional company logos.

@@ -1,0 +1,1 @@
+A component showcasing team members with tabbed categorization and search functionality, displaying member details within a grid layout of up to 4 columns.

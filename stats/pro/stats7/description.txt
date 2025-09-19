@@ -1,0 +1,1 @@
+A component displaying weekly stats in a bordered block with 3 metrics (work completed, progress metric, error rate), each with percentages, arrows indicating trend, and progress bars.

@@ -1,0 +1,1 @@
+A component featuring a 2-column layout, with text and a call-to-action button on one side and an image on the other. Unique for its visual layering effect.

@@ -1,0 +1,1 @@
+A component showcasing an FAQ section with expandable answers, highlighted by badges and separators, and includes a support contact link.

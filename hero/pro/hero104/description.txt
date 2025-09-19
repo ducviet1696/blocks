@@ -1,0 +1,1 @@
+A component showcasing an interactive layout with a catchy headline, description, action buttons, benefits list, and a creative grid of images and data visualization with a video popup feature.

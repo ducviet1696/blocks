@@ -1,0 +1,1 @@
+A carousel showcasing testimonials with navigational controls, featuring a title, user quotes, and their avatars. Each slide shows 1-3 testimonials based on size.

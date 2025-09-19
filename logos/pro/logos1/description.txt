@@ -1,0 +1,1 @@
+A component displaying a title and a row of partner logos with adjustable gaps, featuring grayscale and partial opacity effects.

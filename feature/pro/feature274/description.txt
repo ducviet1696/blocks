@@ -1,0 +1,1 @@
+A component displaying a title, a text paragraph, and a grid of 4 animated cards that reveal information on hover.

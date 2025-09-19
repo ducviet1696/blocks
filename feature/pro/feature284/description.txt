@@ -1,0 +1,1 @@
+A grid component displaying features with images, titles, descriptions, and badges. Incorporates a glowing effect on hover. GridLayout varies from 1-4 columns.

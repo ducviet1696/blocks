@@ -1,0 +1,1 @@
+A component showcasing a grid of cards with videos, icons, and texts. Features hover-to-play videos and links.

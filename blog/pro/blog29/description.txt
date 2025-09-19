@@ -1,0 +1,1 @@
+A component displaying blog posts with dates, titles, content snippets, tags, and a link icon. Each post is separated by a line.

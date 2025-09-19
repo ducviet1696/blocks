@@ -1,0 +1,1 @@
+An about component with a two-column header, a three-column main section for images and text, a logo section, and an achievements showcase. Includes dynamic content and stylized backgrounds.

@@ -1,0 +1,1 @@
+A contact form block with a title, description, fields for name, email, phone, and message, a privacy policy checkbox, and a submit button.

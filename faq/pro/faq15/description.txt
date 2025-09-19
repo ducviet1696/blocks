@@ -1,0 +1,1 @@
+An FAQ component with a title and a 2-column layout of items, each featuring an icon, heading, and description.

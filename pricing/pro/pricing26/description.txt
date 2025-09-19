@@ -1,0 +1,1 @@
+A component displaying 3 marketing plan options, highlighting one. Features badges, descriptions, and a call-to-action button for each plan.

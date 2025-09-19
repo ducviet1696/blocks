@@ -1,0 +1,1 @@
+A component displaying a grid of cards with images, titles, stats, and a "Read Story" button. Cards are dynamically populated from a list.

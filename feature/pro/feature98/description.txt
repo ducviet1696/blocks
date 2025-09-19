@@ -1,0 +1,1 @@
+A component featuring a 5-column layout that consolidates investment solutions, including text and buttons, followed by a 3-item visual grid, each with a title, text, and icon overlay on images.

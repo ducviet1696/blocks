@@ -1,0 +1,1 @@
+A component with a centered title, text, two buttons, and a main image, flanked by decorative icons in a symmetric layout.

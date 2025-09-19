@@ -1,0 +1,1 @@
+A component with a title and a 3-column layout for testimonials, one large featured testimonial spans two columns and rows.

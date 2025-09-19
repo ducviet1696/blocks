@@ -1,0 +1,1 @@
+A carousel component showing tech logos with commands. Includes auto-cycle, fade transitions, and manual selection. Displays 3-6 items per view.

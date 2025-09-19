@@ -1,0 +1,1 @@
+A carousel component displaying resources in 3 columns, featuring navigation, separators, and dynamic link icons.

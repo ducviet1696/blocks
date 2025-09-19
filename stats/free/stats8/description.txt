@@ -1,0 +1,1 @@
+A stats display component with a heading, description, and link, followed by a 4-column layout for statistics.

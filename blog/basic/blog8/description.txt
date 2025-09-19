@@ -1,0 +1,1 @@
+A component displaying blog posts in a grid with images, summaries, tags, and author details. Features include text hover effects and a read-more link.

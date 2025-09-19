@@ -1,0 +1,1 @@
+A component presenting a main feature with a large description and image, followed by three smaller feature blocks with descriptions and images, organized in a 2-column layout.

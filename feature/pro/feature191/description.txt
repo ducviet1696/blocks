@@ -1,0 +1,1 @@
+A component featuring a highlighted message and a 3-column layout of cards, each card displaying a sequence badge, a title, description, and image.

@@ -1,0 +1,1 @@
+A component featuring a large title and paragraph, alongside a &#x27;Contact Us&#x27; button and right-aligned image. Unique for its overlaid text and button on a full viewport height background.

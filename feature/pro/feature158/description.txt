@@ -1,0 +1,1 @@
+A component displaying three key features with images & descriptions, centered titles, and a "View More" button. Each feature is in a column within a row for desktops.

@@ -1,0 +1,1 @@
+A component showcasing a "FRAGMENTS OF LIGHT & STILLNESS" collection with a three-column grid of cards featuring image tooltips, staggered animations, and a hover effect enhancing visual context.

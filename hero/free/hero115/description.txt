@@ -1,0 +1,1 @@
+A component featuring a centered section with an icon, heading, description, button with an icon, optional trust text, and a large image. Includes a decorative, layered circular backdrop.

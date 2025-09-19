@@ -1,0 +1,1 @@
+A 3-column component showcasing features with images, hover effects, icons, and links for exploring more.

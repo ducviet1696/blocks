@@ -1,0 +1,1 @@
+A component featuring an animated, centralized headline with a supportive tagline above. Includes visually dynamic, particle background and a button with an icon that animates on hover. Uses 3D text animation for emphasis.

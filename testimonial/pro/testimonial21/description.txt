@@ -1,0 +1,1 @@
+A component showcasing expert testimonials with a header, badges, and a 3-column layout of cards containing logos, quotes, and author info.

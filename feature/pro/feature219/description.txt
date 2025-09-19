@@ -1,0 +1,1 @@
+A component displays a 3-column grid of stylized cards, each with a title, summary, and unique image layout variant. Icons are optionally included.

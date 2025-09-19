@@ -1,0 +1,1 @@
+A component showcasing a collection of integration options with app icons, titles, and descriptions, arranged in up to two columns.

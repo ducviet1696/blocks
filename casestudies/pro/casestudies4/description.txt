@@ -1,0 +1,1 @@
+A component displaying a case study summary with an author section, 3 statistics, and a call-to-action button. It features a two-column layout with images.

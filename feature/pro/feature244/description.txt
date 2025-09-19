@@ -1,0 +1,1 @@
+A component showcasing a carousel of feature cards with images, titles, and descriptions. Each card is within a dotted container.

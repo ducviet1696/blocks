@@ -1,0 +1,1 @@
+A component showcasing UI components with a title, description, and placeholder image. Includes a "Learn more" link and icons. Two-column layout for text.

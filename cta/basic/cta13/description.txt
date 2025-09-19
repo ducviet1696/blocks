@@ -1,0 +1,1 @@
+A component with a call-to-action, a title, text, email input, and a subscription button. Features a privacy policy link. Layout adjusts across sizes.

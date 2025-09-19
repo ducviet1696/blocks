@@ -1,0 +1,1 @@
+A gallery block showcasing 3 case studies with dynamic resizing; includes images, logos, text, and interactive effects on mouse hover.

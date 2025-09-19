@@ -1,0 +1,1 @@
+A component showcasing a 3-column layout of cards, each featuring an icon, title, text, and image, adaptable to 1 or 2 columns on smaller screens.

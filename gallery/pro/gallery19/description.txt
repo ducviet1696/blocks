@@ -1,0 +1,1 @@
+Component displays a carousel of images with overlay text & a "Know More" link. Offers animated entrances and card effects.

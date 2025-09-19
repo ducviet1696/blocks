@@ -1,0 +1,1 @@
+A component showcasing user stats, a customer testimonial with avatar, and an autoplaying video in a 2-column layout. It includes styled text and a button.

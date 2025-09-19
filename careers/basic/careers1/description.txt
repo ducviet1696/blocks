@@ -1,0 +1,1 @@
+A component displaying career opportunities by department, with clickable roles that reveal more via an arrow icon animation.

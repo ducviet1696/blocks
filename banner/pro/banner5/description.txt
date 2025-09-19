@@ -1,0 +1,1 @@
+A dismissible banner component with an icon, title, description, and external link button. Features a close button, adapts layout from column to row on wider screens.

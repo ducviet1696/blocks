@@ -1,0 +1,1 @@
+A component with tabs for features like scheduling and analytics, each with an icon, title, description, and image. Includes decorative accessories.

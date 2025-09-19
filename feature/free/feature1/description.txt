@@ -1,0 +1,1 @@
+A block with a 2-column layout featuring a title, description, two buttons, and an image.

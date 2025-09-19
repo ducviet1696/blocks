@@ -1,0 +1,1 @@
+A component featuring a dual-column layout with text, a list, and a button in one column, and layered images in the other. It highlights enterprise solutions.

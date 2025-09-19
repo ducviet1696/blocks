@@ -1,0 +1,1 @@
+A two-column layout component with an image on the left and descriptive text on the right, featuring large padding and text emphasis adjustments at different sizes.

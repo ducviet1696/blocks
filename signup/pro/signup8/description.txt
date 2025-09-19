@@ -1,0 +1,1 @@
+A signup component with a 2-column layout featuring a promotional badge, headings, text, and sign-up buttons on the left, and an illustrative card simulating a browser window on the right.

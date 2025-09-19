@@ -1,0 +1,1 @@
+A component featuring a title, subtitle, a marquee of logos linking to various resources, and a discovery button.

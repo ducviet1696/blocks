@@ -1,0 +1,1 @@
+A 4-column timeline component showcasing phases with icons, dates, titles, and descriptions. Features an animated progress indicator.

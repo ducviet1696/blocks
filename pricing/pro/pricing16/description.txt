@@ -1,0 +1,1 @@
+A pricing component with a toggle for monthly/yearly billing, displaying 3 tiers, discounts for yearly plans, and key features.

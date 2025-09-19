@@ -1,0 +1,1 @@
+A component showcasing AI features in nature via a carousel, each slide displaying a title, icon, and description with a vibrant background.

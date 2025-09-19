@@ -1,0 +1,1 @@
+A component featuring a central column with a bold heading, a text block, and two buttons, above an image with a gradient mask.

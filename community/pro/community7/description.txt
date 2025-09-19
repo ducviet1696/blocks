@@ -1,0 +1,1 @@
+A component showcasing social media platforms in a 3-column layout, with icons, links, online status, and follower counts.

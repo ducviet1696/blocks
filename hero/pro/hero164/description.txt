@@ -1,0 +1,1 @@
+A component showcasing a dual-column layout with a pitch and a playable video teaser. The left column has text and sign-up, while the right shows an image. Features a popup for video.

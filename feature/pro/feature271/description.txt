@@ -1,0 +1,1 @@
+A component showcasing features with an animated background, a central title, a labeled introduction, and a two-column list, each with an icon and a description.

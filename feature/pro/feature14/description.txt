@@ -1,0 +1,1 @@
+A two-column component featuring secure payments and automated invoicing, with text descriptions and check-marked features, complemented by numbered image placeholders.

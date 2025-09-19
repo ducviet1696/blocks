@@ -1,0 +1,1 @@
+A component with three content sections and a headline area, using 4-column layout for items, and checkmarks for list-style.

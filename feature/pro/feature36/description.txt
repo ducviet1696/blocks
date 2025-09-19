@@ -1,0 +1,1 @@
+A component with a 3-column layout for case studies, featuring one larger highlighted card and five smaller ones, each with a title, badge for the larger card, and a "Continue reading" link.

@@ -1,0 +1,1 @@
+A block featuring a promo link, a bold title with a highlight, a descriptive paragraph, and buttons for action and demo with icons. Includes a semi-transparent overlay.

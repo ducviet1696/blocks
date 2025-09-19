@@ -1,0 +1,1 @@
+A component displaying performance stats in 3 columns, highlighted by large numbers and explanatory texts, centered around platform efficiency gains.

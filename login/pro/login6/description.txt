@@ -1,0 +1,1 @@
+A login form component with email and password fields, sign-in and Google sign-up buttons, links for account creation and password recovery.

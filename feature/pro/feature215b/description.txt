@@ -1,0 +1,1 @@
+A component featuring a collection of horizontal cards, each with a video, icon, title, summary, and link. Cards activate video on hover.

@@ -1,0 +1,1 @@
+A component displaying a primary feature block followed by a 3-column layout, each containing a feature description and image.

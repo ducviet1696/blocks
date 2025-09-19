@@ -1,0 +1,1 @@
+A carousel block displaying items with titles, descriptions, and images in a flex layout, includes previous and next controls. Each item combines text and a full-width image.

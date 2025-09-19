@@ -1,0 +1,1 @@
+A component displaying 3 pricing tiers with features and CTA buttons, highlighted by design variations for the middle tier.

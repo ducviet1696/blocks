@@ -1,0 +1,1 @@
+A component featuring a title, a subtext, and a 2-3 column layout of items, each with an icon and a description.

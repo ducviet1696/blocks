@@ -1,0 +1,1 @@
+A component displaying updates with sections for dates, tags (e.g., &#x27;Maintenance&#x27;), and content including images. Uses a two-column layout on desktop.

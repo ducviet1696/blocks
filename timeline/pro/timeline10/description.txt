@@ -1,0 +1,1 @@
+A timeline component with 4 columns, highlighting project phases with dates, titles, and descriptions, using animation to show current progress.

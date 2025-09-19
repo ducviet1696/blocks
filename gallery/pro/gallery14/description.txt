@@ -1,0 +1,1 @@
+A gallery component with a carousel of items, featuring dynamic navigation dots that expand with titles on the active item. Layout includes a headline, description, and 2-column design with imagery.

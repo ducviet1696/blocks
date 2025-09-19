@@ -1,0 +1,1 @@
+A component displaying add-on options in two sections: "featured" in a grid layout and "other" in a list layout, with prices and descriptions.

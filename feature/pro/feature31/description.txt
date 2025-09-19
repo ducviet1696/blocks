@@ -1,0 +1,1 @@
+A component featuring a central message with 2 columns below, mixing images and text. Includes headings, paragraphs, and links. Unique for its text-image alternating layout.

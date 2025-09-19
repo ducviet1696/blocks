@@ -1,0 +1,1 @@
+A component displaying an image next to descriptive text, links with icons, and overlapping avatars, arranged in a flex layout with a 2-column format for widescreens.

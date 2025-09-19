@@ -1,0 +1,1 @@
+A component showcasing AI-powered proposal creation with engaging features, including decorative icons and dashed banners emphasizing speed, security, and professionalism. Center-aligns its title and description within a single column layout, accentuated by a subtle background pattern and a call-to-action button.

@@ -1,0 +1,1 @@
+A carousel-linked accordion block with a 2-column layout: icons & FAQs on the left, images rotating in sync on the right. Unique features include timed content transition and interactive FAQ accordion.

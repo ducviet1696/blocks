@@ -1,0 +1,1 @@
+A 2-column component with a full-width image and a text block featuring an icon, a bold title, descriptive text, and a list with checkmarks.

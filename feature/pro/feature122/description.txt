@@ -1,0 +1,1 @@
+A component with a grid layout of feature blocks, including a prominent highlighted block with a call-to-action button and an image. It uses icons and hover effects.

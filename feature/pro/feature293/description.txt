@@ -1,0 +1,1 @@
+A subscription component with a headline, description, email input, button, and animated background. It spans the full screen, contains two columns in the input area, and features dynamic sparkles.

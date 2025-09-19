@@ -1,0 +1,1 @@
+A blog post component with dynamic breadcrumb navigation, author bio, social sharing, and interactive chapter selection.

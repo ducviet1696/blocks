@@ -1,0 +1,1 @@
+A component displaying a main heading, description, and four features in a 3:2 column layout, each with a title, description, and image.

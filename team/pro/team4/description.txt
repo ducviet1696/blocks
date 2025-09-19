@@ -1,0 +1,1 @@
+A component showcasing a team with 4 profile cards, including images, roles, bios, and social links. Each row adapts to screen size, displaying up to 4 columns.

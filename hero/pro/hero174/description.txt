@@ -1,0 +1,1 @@
+A hero block showcasing a central message with a background image, featuring a title, a descriptive paragraph, and a button. Below is a bar with location details and an arrow button.

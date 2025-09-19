@@ -1,0 +1,1 @@
+A component featuring a centered headline with shadow text effect, background animation, and two action buttons, all within a radial gradient mask.

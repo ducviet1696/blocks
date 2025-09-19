@@ -1,0 +1,1 @@
+A hero component with a center-aligned title, description, and button above a full-width image placeholder. Features a logo and uses a single-column layout.

@@ -1,0 +1,1 @@
+A carousel component with animated image display, customizable autoplay, and unique coverflow effect. It features dynamic opacity transitions, includes a headline, subtext, and a button with hover scaling.

@@ -1,0 +1,1 @@
+A call-to-action block with a title, description, button, and list of features. Uses a 2-column layout within a larger container.

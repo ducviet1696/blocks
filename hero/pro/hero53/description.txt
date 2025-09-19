@@ -1,0 +1,1 @@
+A component with a large title, description, an overlapping button for early access, and overlapping avatars indicating community trust.

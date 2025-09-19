@@ -1,0 +1,1 @@
+A component showcasing resources & whitepapers with a featured article, latest developments, and updates section. Utilizes tabs for category filtering, avatars for author representation, and badges for feature highlights.

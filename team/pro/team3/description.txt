@@ -1,0 +1,1 @@
+A component displaying a team section with a hiring call, team intro, and dynamic grid of team members (up to 8), including avatar, name, role, and social links. Grid adapts from 1 to 4 columns.

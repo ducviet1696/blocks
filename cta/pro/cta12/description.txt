@@ -1,0 +1,1 @@
+A call-to-action block featuring a heading, description, email input field, and a subscribe button arranged in a column, centered.

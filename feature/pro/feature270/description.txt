@@ -1,0 +1,1 @@
+A component displaying customizable feature blocks with images, titles, and descriptions in a grid of 2 or 3 columns, depending on screen size.

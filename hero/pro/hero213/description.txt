@@ -1,0 +1,1 @@
+An image carousel with auto-transition, text content, and icon links. Features a unique SVG mask and animated image transitions.

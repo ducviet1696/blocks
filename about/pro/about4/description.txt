@@ -1,0 +1,1 @@
+An "About Us" component with a centered title, description, a grid of 6 images, and detailed vision and creators sections, followed by a call-to-action button.

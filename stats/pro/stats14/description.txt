@@ -1,0 +1,1 @@
+A countdown display component with an animated timer, promotional text, and a call-to-action button. Features a decorated container with dotted accents.

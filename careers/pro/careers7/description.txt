@@ -1,0 +1,1 @@
+A component listing job categories and jobs with titles, locations, and "View listing" buttons in a structured layout.

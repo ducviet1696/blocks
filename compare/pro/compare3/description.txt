@@ -1,0 +1,1 @@
+A 3-column comparison block showcasing features between two options, highlighted with icons and badges for visual differentiation.

@@ -1,0 +1,1 @@
+A component displaying pricing options with a billing cycle toggle (monthly/annually), supporting discount display. Includes a 2-column layout for plan comparisons, featuring dynamic pricing, plan benefits, and "Start a free trial" buttons.

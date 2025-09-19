@@ -1,0 +1,1 @@
+A component with a 2-column layout: text with a button on one side and an image within an aspect ratio container on the other. Features a muted background.

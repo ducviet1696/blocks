@@ -1,0 +1,1 @@
+A component displaying a title and a grid of cards (4 columns wide on larger screens, fewer on smaller). Each card includes a glowing stars effect, a title, and text. A button below the grid invites user interaction.

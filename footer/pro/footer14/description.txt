@@ -1,0 +1,1 @@
+A footer component with logo, newsletter, navigation links across three columns, and social icons. Includes a succinct company description and subscription form.

@@ -1,0 +1,1 @@
+A login block with logo, main heading, subheading, email/password inputs, remember me checkbox, forgot password link, login & google login buttons, and signup prompt.

@@ -1,0 +1,1 @@
+A component with a 2-column layout including images and text blocks, showcasing features via placeholders and descriptions.

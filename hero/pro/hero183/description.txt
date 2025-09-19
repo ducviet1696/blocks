@@ -1,0 +1,1 @@
+A component featuring a premium badge, a bold title with descriptive text, buttons for actions, and a grid of images with decorative lines transitioning into a carousel for smaller views.

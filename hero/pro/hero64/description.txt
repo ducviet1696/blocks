@@ -1,0 +1,1 @@
+A testimonial display component with a title, descriptions, a call-to-action button, customer ratings, and profile images in a two-column layout.

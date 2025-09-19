@@ -1,0 +1,1 @@
+A 2-column layout component featuring an icon, a bold headline, descriptive text, a list with checkmarks, and a full-width image.

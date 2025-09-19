@@ -1,0 +1,1 @@
+A component showcasing metrics with icons in a 3-column layout, highlighting improvements in bugs, notifications, and chaos. Features gradient cards.

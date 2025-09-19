@@ -1,0 +1,1 @@
+A block featuring dynamic carousels, badges, and buttons aimed at showcasing solutions and engaging users. It includes a 2-column layout with auto-scroll carousels.

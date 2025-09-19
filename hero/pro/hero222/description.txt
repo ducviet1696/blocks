@@ -1,0 +1,1 @@
+A component displaying dynamic text with mouse tracking cursor effects, utilizing animated elements and a center-aligned layout with a background image.

@@ -1,0 +1,1 @@
+A testimonial block displaying client feedback with navigation buttons, responsive carousel for mobile, and a 4-column masonry layout for larger screens.

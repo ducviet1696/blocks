@@ -1,0 +1,1 @@
+A component featuring a title, description, button, and review section with user avatars and star ratings. It&#x27;s structured in a central column.

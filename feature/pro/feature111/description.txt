@@ -1,0 +1,1 @@
+A component showcasing features with 2 columns, badges, headings, descriptions, links, and images. Unique for its centered content and outlined badges.

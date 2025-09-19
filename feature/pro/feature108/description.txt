@@ -1,0 +1,1 @@
+A tabbed component with 3 tabs, each displaying a title, description, badge, a button with text, and an image. Layout includes two columns in larger views.

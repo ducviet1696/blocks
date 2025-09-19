@@ -1,0 +1,1 @@
+A component featuring a 2-column layout with dynamic text and image, highlighting a bold headline with a gradient effect, and interactive buttons including a rotating action on hover.

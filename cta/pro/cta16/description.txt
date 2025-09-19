@@ -1,0 +1,1 @@
+A component featuring a centered call-to-action with a decorative icon, a bold headline, and two buttons. It&#x27;s set against a darkened full-width background image.

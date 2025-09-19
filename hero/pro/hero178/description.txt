@@ -1,0 +1,1 @@
+A two-column block with text elements & layered images, featuring dynamic text sizes and aspect-ratio controlled images.

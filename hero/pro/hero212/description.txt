@@ -1,0 +1,1 @@
+Animated image carousel with auto-switching feature & a unique marquee with cards. Includes a central button & decorative elements.

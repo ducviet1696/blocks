@@ -1,0 +1,1 @@
+A 2-column layout block with animated images on one side and text elements, including a headline, paragraph, and button on the other.

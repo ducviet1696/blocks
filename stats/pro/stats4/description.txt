@@ -1,0 +1,1 @@
+A component displays platform ratings from Apple Store, Play Store, and Trustpilot, along with a headline. It uses star icons for ratings and logos for each platform.

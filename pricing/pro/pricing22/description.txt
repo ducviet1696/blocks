@@ -1,0 +1,1 @@
+A component displaying 3 pricing plans with features, adjustable to annual or monthly billing, highlighting the "Startup" option uniquely.

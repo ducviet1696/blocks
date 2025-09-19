@@ -1,0 +1,1 @@
+This component displays features using tabs with vertical orientation, switches images and descriptions onClick, includes custom icons.

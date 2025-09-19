@@ -1,0 +1,1 @@
+A component showcasing a group of 6 features, each with a title, description, and image, arranged in up to 3 columns.

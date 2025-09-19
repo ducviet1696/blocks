@@ -1,0 +1,1 @@
+A component showcases a heading and 2-column layout of features with title, subtitle, description, and image. Unique for using images as visual endpoints in each feature card.

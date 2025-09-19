@@ -1,0 +1,1 @@
+A component displaying a guide with options to download, share, and a story narrative; uses icons, buttons, and social links; split into two main sections.

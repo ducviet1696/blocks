@@ -1,0 +1,1 @@
+A component featuring a title, subtitle, and a 2-4 column grid of images and a testimonial, with images in rounded containers.

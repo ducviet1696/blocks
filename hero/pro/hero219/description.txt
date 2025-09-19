@@ -1,0 +1,1 @@
+A dynamic hero block featuring animated text, a particle effect background, and multiple vertical marquees with icons. It includes an engaging headline and a blurred white background overlay.

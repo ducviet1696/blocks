@@ -1,0 +1,1 @@
+A component showcasing a company&#x27;s background with a hero section, images, and detailed narrative on their journey, including a call-to-action for open roles.

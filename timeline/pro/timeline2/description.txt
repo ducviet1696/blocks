@@ -1,0 +1,1 @@
+A component displaying a timeline of sections with images and text. It has a two-column layout, with text on the left and a sticky, changing image on the right as you scroll.

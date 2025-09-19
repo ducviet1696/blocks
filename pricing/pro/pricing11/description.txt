@@ -1,0 +1,1 @@
+A component with pricing plans & feature comparison. It displays billing options, plan details across columns, and uses collapsibles for mobile view.

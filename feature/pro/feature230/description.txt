@@ -1,0 +1,1 @@
+A component showcasing cloud service benefits using a large header, description, and 4 feature callouts with icons, arranged in a 4:6 column layout.

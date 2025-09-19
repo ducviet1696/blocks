@@ -1,0 +1,1 @@
+A two-column block featuring text, buttons, and pricing info on one side and a full-cover image on the other. Includes a title, introductory text, and styled buttons.

@@ -1,0 +1,1 @@
+This component displays overlapping avatars, a bold title, a descriptive paragraph, and a featured button with a playful tagline next to a custom line graphic.

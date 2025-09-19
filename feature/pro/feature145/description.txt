@@ -1,0 +1,1 @@
+A component featuring a customizable accordion for showcasing features with text and images, including a dynamic image display area that updates based on accordion selection.

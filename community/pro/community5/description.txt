@@ -1,0 +1,1 @@
+A component featuring a GitHub profile card with stats (stars, forks, contributors), decorative grid pattern, and links to social media (Discord, Twitter, LinkedIn).

@@ -1,0 +1,1 @@
+This component features a headline, a row of cards with hover effects, and two buttons. Cards dynamically adjust visibility and overlap on different screen sizes.

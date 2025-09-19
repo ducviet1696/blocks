@@ -1,0 +1,1 @@
+A component displaying download options for desktop, iOS, and Android, alongside descriptions and buttons/links for each platform, arranged in a three-column layout.

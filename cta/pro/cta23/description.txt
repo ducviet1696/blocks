@@ -1,0 +1,1 @@
+A component with a newsletter subscription form, badge, heading, description, and features list, styled with icons and varying text sizes.

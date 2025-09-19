@@ -1,0 +1,1 @@
+Two-column pricing component, showcasing starter and enterprise plans with features, prices, and call-to-action buttons.

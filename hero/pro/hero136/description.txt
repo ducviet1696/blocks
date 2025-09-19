@@ -1,0 +1,1 @@
+A component showcasing a large header, descriptive text, two buttons, logos of trusted companies, and a uniquely styled image display with an asymmetrical background design.

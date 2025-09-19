@@ -1,0 +1,1 @@
+A component showcasing 3 add-on options, each with a title, description, and pricing/contact info. It features an image and introductory text.

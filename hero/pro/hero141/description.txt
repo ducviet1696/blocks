@@ -1,0 +1,1 @@
+A component with a video background, featuring a central column for text, a call-to-action button, and a 5-star rating.

@@ -1,0 +1,1 @@
+A component depicting global connectivity with a central title, supportive text, and graphical illustrations of interconnected nodes, accented by a large background image.

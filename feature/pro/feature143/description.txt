@@ -1,0 +1,1 @@
+A component showcasing features with a badge & a grid layout. Utilizes a 3x3 grid for visuals, lists features with icons, and emphasizes modern design.

@@ -1,0 +1,1 @@
+A component featuring a logo, a call-to-action for joining a community, and social buttons for Twitter, GitHub, and Discord.

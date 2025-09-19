@@ -1,0 +1,1 @@
+A multifunctional navigation component featuring dropdown menus for solutions and resources, a platform category with logos, and authentication buttons. It includes a mobile-friendly menu triggered by an icon.

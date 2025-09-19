@@ -1,0 +1,1 @@
+A comparative block showcasing features between two entities in a 3-column layout with icons to highlight specific traits.

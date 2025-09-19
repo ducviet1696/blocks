@@ -1,0 +1,1 @@
+A feature gallery component with a carousel layout, toggles for selecting features, and next/prev buttons. It displays items in two columns, with icons, text, and images.

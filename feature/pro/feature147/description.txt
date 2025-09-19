@@ -1,0 +1,1 @@
+A component showcasing integrations in a grid layout; features a heading, subheading, and 3-column grid of cards with images, titles, and descriptions.

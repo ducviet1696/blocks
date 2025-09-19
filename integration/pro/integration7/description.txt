@@ -1,0 +1,1 @@
+A component showcasing integration with various tools, featuring two column layout, icons, and descriptions. Unique for its customizable gradient placeholders.

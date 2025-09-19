@@ -1,0 +1,1 @@
+A component featuring icons with text, a bold animated headline, a paragraph, dual buttons, and a phone mockup animation.

@@ -1,0 +1,1 @@
+A changelog component displays updates with dialogs for detailed view, including versions, dates, images, contributors, and excerpts. Features tooltip actions.

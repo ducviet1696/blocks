@@ -1,0 +1,1 @@
+A 4-column component featuring sections for product, company, resources, and social links, followed by contact and mobile app info, accentuated with social and mobile app icons.

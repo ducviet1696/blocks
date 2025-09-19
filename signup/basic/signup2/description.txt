@@ -1,0 +1,1 @@
+A signup component with logo, headings, email/password inputs, and buttons for account creation and Google signup, arranged in a centered column layout.

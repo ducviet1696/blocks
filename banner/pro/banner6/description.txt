@@ -1,0 +1,1 @@
+A dismissible banner featuring overlapping avatars, a text description, and a close button.

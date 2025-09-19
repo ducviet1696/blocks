@@ -1,0 +1,1 @@
+A component featuring a title, description, large button, overlapping avatars with quotes, and a 2x2 grid of images incorporating unique aspect ratios and placements.

@@ -1,0 +1,1 @@
+A grid-based component with a unique layout, featuring an image and text in a stylized block with border details, accompanied by a list with icons and a badge.

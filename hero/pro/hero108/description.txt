@@ -1,0 +1,1 @@
+A component featuring a large title about earning from real estate, a list of benefits with check icons, and a &#x27;Start Now&#x27; button. Includes an image section on the right.

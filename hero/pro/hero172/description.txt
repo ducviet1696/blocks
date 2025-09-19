@@ -1,0 +1,1 @@
+A two-column component with a heading, text, email submission form, and unique visual elements. The left column showcases the title, descriptive text, a form for email input with a "Get Started" button, and bullet points with checks. The right column features creative, overlapping images with dynamic shapes and icons for visual interest.

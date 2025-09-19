@@ -1,0 +1,1 @@
+A component featuring "Our Story" and "Our Workplace" sections, with text descriptions and a two-column layout containing multiple images.

@@ -1,0 +1,1 @@
+A component featuring a full-width image background, overlaid with a call-to-action (CTA) message and a large button. Below, two detailed information blocks are displayed side-by-side, each with an icon, title, and description.

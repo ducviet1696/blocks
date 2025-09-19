@@ -1,0 +1,1 @@
+A block showcasing 6 key features with badges, headings, descriptions, and images. Laid out in up to 3 columns, it includes customizable cards for each feature.

@@ -1,0 +1,1 @@
+This component displays a feature section with an outline badge, a title, a subtitle, and a 3-column layout of clickable feature cards, each with titles, descriptions, icons, and images.

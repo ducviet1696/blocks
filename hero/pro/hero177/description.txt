@@ -1,0 +1,1 @@
+A component featuring an app rating badge, a bold headline, descriptive text, list of benefits, call-to-action buttons, and two images in distinct aspect ratios.

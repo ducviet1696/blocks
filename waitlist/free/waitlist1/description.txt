@@ -1,0 +1,1 @@
+A component featuring a "Join the Waitlist" title, a description, an email input field, and a button. Includes avatars showing user count.

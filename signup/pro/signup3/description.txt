@@ -1,0 +1,1 @@
+A signup component with a logo, forms for email and password, and social login options (Google, Github, Facebook). Fits in a column of max-width 340px.

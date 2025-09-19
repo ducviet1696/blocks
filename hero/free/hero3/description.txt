@@ -1,0 +1,1 @@
+A component featuring text, star ratings with avatars, and buttons. It employs a 2-column layout with large image display. Unique elements include overlapped avatars and star ratings.

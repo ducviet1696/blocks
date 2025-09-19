@@ -1,0 +1,1 @@
+A component showcasing 6 core features with icons, using a 2-column grid layout, including a heading and subheading.

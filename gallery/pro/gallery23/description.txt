@@ -1,0 +1,1 @@
+Interactive gallery with expandable images and detailed captions on hover, featuring a statement and button on the left.

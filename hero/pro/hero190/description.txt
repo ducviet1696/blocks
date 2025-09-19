@@ -1,0 +1,1 @@
+A component with text, a button, and decorative patterns, flanked by bordered sections. It features a prominent heading, subtext, and a styled button with an icon.

@@ -1,0 +1,1 @@
+A component displaying 3 resources with titles, descriptions, and images, structured in a bordered container with horizontal dividers.

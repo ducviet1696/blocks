@@ -1,0 +1,1 @@
+A carousel component showcasing testimonials with avatars, names, and comments. Each slide has a dashed border with plus icons at the corners.

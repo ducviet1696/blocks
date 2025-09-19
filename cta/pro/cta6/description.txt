@@ -1,0 +1,1 @@
+A component showcases a dynamic call-to-action with text, a button, and shifting overlaid blocks as a unique visual feature in a two-column layout.

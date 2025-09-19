@@ -1,0 +1,1 @@
+A component showcasing a 3-step workflow with titles, descriptions, and separators, styled in 2 columns for larger screens.

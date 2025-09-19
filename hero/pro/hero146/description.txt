@@ -1,0 +1,1 @@
+A component featuring an attention-grabbing headline and brief description with a gradient "Get Started" button, followed by a teaser section for a video presentation. The video section includes a unique hover effect on the play button and a modal dialog for playback.

@@ -1,0 +1,1 @@
+Feature block with tabs, showcasing three features, each with an image, title, description. Features a demo link with an animated arrow icon.

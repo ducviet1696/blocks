@@ -1,0 +1,1 @@
+A carousel component with autoplay functionality, displaying images and text. Includes navigational dots and a "Try it for free" button.

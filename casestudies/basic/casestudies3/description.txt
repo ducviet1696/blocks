@@ -1,0 +1,1 @@
+A component displaying featured and other casestudies with visuals, titles, and links, formatted in a grid with hover effects.

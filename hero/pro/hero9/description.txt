@@ -1,0 +1,1 @@
+A component featuring a gradient background, badge, headline, paragraph, two buttons, and a shadowed code block next to an image area.

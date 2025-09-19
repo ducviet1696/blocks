@@ -1,0 +1,1 @@
+A FAQ component with collapsible questions, a support section with avatars and a contact button.

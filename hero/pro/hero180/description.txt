@@ -1,0 +1,1 @@
+A component with a title, description, two buttons, and a complex image layout with overlay effects and gradient backgrounds.

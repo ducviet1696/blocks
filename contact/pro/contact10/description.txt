@@ -1,0 +1,1 @@
+A component featuring a contact form with a title, decorative dashed line separator, address/email/social links, and an inquiry form with fields for name, email, company, employee count, and message.

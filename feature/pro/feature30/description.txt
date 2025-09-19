@@ -1,0 +1,1 @@
+A component featuring a 3-column layout with 2 images and a text block, showcasing a blend of aesthetics and information.

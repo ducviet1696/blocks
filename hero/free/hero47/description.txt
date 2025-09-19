@@ -1,0 +1,1 @@
+A component featuring a large heading, subheading, description, two action buttons, and an overlapped image setup. Layout includes a text block and an image side by side.

@@ -1,0 +1,1 @@
+A pricing component showcasing three plans, with toggled monthly/yearly prices, feature lists, and icons identifying plan types.

@@ -1,0 +1,1 @@
+A component featuring a central text block, a navigational link with a badge indicating "7 days ago", and two large buttons. It has a decorative background overlay.

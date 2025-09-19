@@ -1,0 +1,1 @@
+This component displays "Our Core Values" with a badge and a call-to-action link, followed by a three-column grid of icons and texts detailing each value.

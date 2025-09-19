@@ -1,0 +1,1 @@
+A marketing component featuring a title, description, button, a row of logos, and a link to more integrations.

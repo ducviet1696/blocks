@@ -1,0 +1,1 @@
+A 2-column component featuring a title, text, buttons, and a row of logos with decorative border accents.

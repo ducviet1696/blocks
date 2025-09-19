@@ -1,0 +1,1 @@
+A carousel component showcasing team members with images, roles, and years of experience. Includes navigation buttons and a separator.

@@ -1,0 +1,1 @@
+An alert component with dismissible functionality, featuring a title, description, and button. It shows an icon, supports hidden on mobile devices.

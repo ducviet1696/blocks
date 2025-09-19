@@ -1,0 +1,1 @@
+A component with a headline, description, badges, buttons for actions & demo, and a call-to-action link. Includes an image beneath text content. Uses 2 columns and rounded design elements.

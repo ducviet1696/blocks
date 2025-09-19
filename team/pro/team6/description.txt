@@ -1,0 +1,1 @@
+A component displaying a team section with a hiring call, team introduction, and a grid of team members&#x27; profiles including their roles, descriptions, and social links.

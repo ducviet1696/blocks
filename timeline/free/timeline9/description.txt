@@ -1,0 +1,1 @@
+This component displays a vertical timeline of key events in artificial intelligence history, using cards with titles, dates, and content.

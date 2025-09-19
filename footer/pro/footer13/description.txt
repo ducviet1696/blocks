@@ -1,0 +1,1 @@
+This component is a multi-section footer block featuring a call-to-action, newsletter signup, navigational links, and social media connections. It includes 4 columns of navigation links and uses buttons and input for interactions.

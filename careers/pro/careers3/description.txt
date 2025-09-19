@@ -1,0 +1,1 @@
+A block displaying job openings by category, with titles, descriptions, locations, and links. Uses badges for categories and icons for location/navigation.

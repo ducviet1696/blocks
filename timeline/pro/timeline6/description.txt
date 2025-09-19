@@ -1,0 +1,1 @@
+A two-column component featuring a sticky section with a bold statement on the left and a scrollable section on the right showcasing icons with related titles and descriptions.

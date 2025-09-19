@@ -1,0 +1,1 @@
+A pricing component featuring a title, intro text, a card with price detail, a trial button, and a 3-column list of features with check icons.

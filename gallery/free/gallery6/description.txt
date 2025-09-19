@@ -1,0 +1,1 @@
+A carousel component with a heading, &#x27;Book a demo&#x27; link, scrolling buttons, and dynamic content blocks comprising images, titles, and summaries.

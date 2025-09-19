@@ -1,0 +1,1 @@
+A component featuring a central text block with a tagline, title, and description, followed by action buttons. It includes a grid layout with images, metrics, and interactive elements in 4 columns.

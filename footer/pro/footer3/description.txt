@@ -1,0 +1,1 @@
+A footer component with a logo, navigation links in 2-5 columns, social icons, newsletter subscription form, and legal links.

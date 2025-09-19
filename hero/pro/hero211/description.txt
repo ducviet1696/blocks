@@ -1,0 +1,1 @@
+A component featuring a hero block with a motivational title, a text block, an image carousel with pagination, a "Get Started" button with a unique pop-up text animation, and a marquee of cards at the bottom.

@@ -1,0 +1,1 @@
+A component showcasing templates with headlines and a 4-column grid of icons, each detailing a different feature with links.

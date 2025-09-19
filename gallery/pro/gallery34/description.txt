@@ -1,0 +1,1 @@
+A gallery component displaying items in up to 3 columns, featuring interactive image blur on hover and icons indicating different characteristics.

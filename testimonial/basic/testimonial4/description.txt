@@ -1,0 +1,1 @@
+A testimonial component with 1 large image & text block plus 3 smaller text cards, each featuring an avatar.

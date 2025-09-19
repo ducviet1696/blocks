@@ -1,0 +1,1 @@
+A hero block featuring a centered title, subtitle, customizable buttons, and a list highlighting 3 key benefits with icons.

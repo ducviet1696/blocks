@@ -1,0 +1,1 @@
+A component with a visual ripple effect, encapsulating a header, a subtext, and a button within a bordered, rounded container.

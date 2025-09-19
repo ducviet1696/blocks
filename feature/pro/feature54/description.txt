@@ -1,0 +1,1 @@
+A tabbed component showcasing features with images and subfeatures. Includes 5 tabs, images for each feature, and a 3-column layout for subfeatures.

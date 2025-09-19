@@ -1,0 +1,1 @@
+A component featuring three sections highlighting business integrations with icons, titles, and descriptions. Layout includes a main header and a 3-column section beneath it.

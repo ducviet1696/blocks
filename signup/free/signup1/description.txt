@@ -1,0 +1,1 @@
+A signup component featuring a logo, customizable headings, email and password fields, buttons for account creation and Google signup, and a login redirect.

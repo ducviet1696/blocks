@@ -1,0 +1,1 @@
+A component displaying job openings with titles, categories, descriptions, and details on type and location. It has a header and lists jobs in a single column.

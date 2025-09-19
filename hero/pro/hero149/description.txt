@@ -1,0 +1,1 @@
+A component featuring a headline, description, buttons for a demo and video, benefits list, and a large image with unique background patterns. Includes a video dialog.

@@ -1,0 +1,1 @@
+A component featuring a hero section with a catchy headline, subtitle, button, and unique background graphics. It includes multiple angled images for visual depth.

@@ -1,0 +1,1 @@
+A footer component with a logo, social icons, link sections, a newsletter subscription, and legal links. GridLayout adapts to 6 columns on large screens.

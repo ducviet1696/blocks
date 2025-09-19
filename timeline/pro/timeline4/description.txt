@@ -1,0 +1,1 @@
+A component showcasing a step-by-step guide with alternating layout, custom badges, icons, and diagonal patterns.

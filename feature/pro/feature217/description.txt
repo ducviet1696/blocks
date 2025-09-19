@@ -1,0 +1,1 @@
+A component focused on inclusive design features, with a two-column layout for a header and an image, followed by a three-column section showcasing features with icons, titles, and summaries.

@@ -1,0 +1,1 @@
+A split-layout component featuring a text area with a heading, paragraphs, buttons, and a list of features on one side, and a bar chart displaying data on the other.

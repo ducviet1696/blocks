@@ -1,0 +1,1 @@
+A three-row component featuring alternating image-text layouts with descriptive text blocks and images in bordered, rounded frames.

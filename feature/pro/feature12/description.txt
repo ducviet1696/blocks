@@ -1,0 +1,1 @@
+A feature block using a carousel to display slides on various topics. Includes a progress bar and navigation buttons.

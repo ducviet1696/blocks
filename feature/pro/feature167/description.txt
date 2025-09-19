@@ -1,0 +1,1 @@
+A feature presentation block with tabs for "Smart Task Management," "Automated Scheduling," and "Personalized Insights." Includes badges, animated tab indicators, and images for each feature.

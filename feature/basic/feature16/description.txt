@@ -1,0 +1,1 @@
+A component featuring a three-column layout, each with icons (Timer, ZoomIn, Zap) for "Performance", "Quality", and "Innovation", with descriptions.

@@ -1,0 +1,1 @@
+A feature block with a tagline, title, and description, followed by a grid of one main and three smaller linked feature items, each with hover effects and directional arrows.

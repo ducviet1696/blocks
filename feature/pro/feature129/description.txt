@@ -1,0 +1,1 @@
+A tabbed component showcasing integrations like Slack & Google Drive, featuring descriptions, images, and "Learn more" links. Has a title and subtitle.

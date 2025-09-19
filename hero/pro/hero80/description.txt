@@ -1,0 +1,1 @@
+A two-column block with a gradient background, featuring text, links, buttons, avatars with stars, and images. The left column has promotional content and user ratings; the right displays images.

@@ -1,0 +1,1 @@
+A component featuring a logo, engaging headline, paragraph, a button with an icon, and overlapping avatars indicating endorsements. It ends with a large, rounded-top image.

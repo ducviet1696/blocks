@@ -1,0 +1,1 @@
+A logos showcase component with a title, subtitle, and a grid of logos from various companies, customizable via props.

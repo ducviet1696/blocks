@@ -1,0 +1,1 @@
+A signup component with a logo, social sign-up option, email input, continue button, and legal links. It has a two-column layout on larger screens with an image on one side.

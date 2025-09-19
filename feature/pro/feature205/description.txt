@@ -1,0 +1,1 @@
+A two-column component featuring interactive tabs (Efficiency, Collaboration, Insights) with descriptive text and related images showcasing benefits.

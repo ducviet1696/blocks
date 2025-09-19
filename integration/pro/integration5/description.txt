@@ -1,0 +1,1 @@
+A component showcasing integration options with title, description, buttons, and a two-column layout with logos.

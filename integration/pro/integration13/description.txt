@@ -1,0 +1,1 @@
+A component showcasing a collection of integrations with iconic apps, featuring hover-activated animation for emphasis and links for more details.

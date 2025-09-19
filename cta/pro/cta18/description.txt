@@ -1,0 +1,1 @@
+A call-to-action component with two columns: text (with a title and buttons) on one side, and unique, angled placeholder images on the other.

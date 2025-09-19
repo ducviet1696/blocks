@@ -1,0 +1,1 @@
+A carousel component with an image slider and a side list detailing features. It evolves around dynamically updating content based on user interaction.

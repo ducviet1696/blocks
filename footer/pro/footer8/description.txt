@@ -1,0 +1,1 @@
+A footer component with a logo, description, social icons, link sections, newsletter signup, and copyright info arranged in a grid layout.

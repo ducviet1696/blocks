@@ -1,0 +1,1 @@
+A component displaying pricing plans and feature comparison, collapsible on mobile for plan selection, grid layout for desktop showing all plans side-by-side.

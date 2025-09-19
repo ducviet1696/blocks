@@ -1,0 +1,1 @@
+A component displaying a header and a grid of cards, each with an icon, title, and description about team features. Grid has 2 columns. Cards animate on hover.

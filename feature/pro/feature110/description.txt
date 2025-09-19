@@ -1,0 +1,1 @@
+A component featuring badges, a carousel with avatars, and descriptive text blocks, structured in a 2-column layout, each containing dynamic, premium, and structured content blocks.

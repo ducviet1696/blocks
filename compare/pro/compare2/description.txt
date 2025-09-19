@@ -1,0 +1,1 @@
+A component comparing two products, highlighting features using icons and text. Layout includes a central title, product feature lists in 2 columns, and detailed analysis sections.

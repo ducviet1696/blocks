@@ -1,0 +1,1 @@
+A block displaying a collection of add-ons with icons, descriptions, and prices, plus a button to get each add-on. Features dual-column layout on larger displays.

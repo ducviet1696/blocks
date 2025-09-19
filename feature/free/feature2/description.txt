@@ -1,0 +1,1 @@
+A dual-column component with an image on one side, and text content with two buttons on the other. Features customizable title, description, image, and buttons.

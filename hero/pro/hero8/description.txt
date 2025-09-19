@@ -1,0 +1,1 @@
+A centered text block with a large title, paragraph, two buttons, and a full-width image below.

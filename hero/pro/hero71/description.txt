@@ -1,0 +1,1 @@
+A centered text component with a gradient background featuring a large title, supportive text, two buttons, and an image. Utilizes a two-column layout for buttons and adjustable image width.

@@ -1,0 +1,1 @@
+A component with a decorative background, a large, interactive 3-column heading, a subheading, descriptive text, and a button. Features hover effects on headings and button.

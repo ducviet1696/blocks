@@ -1,0 +1,1 @@
+This component features a centered column layout with a headline, a descriptive text, two button options for downloading or joining a waitlist, version information, and system requirements. It also includes a decorative, animated download button and a background video.

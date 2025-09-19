@@ -1,0 +1,1 @@
+A component with a title and a 5-column layout that displays 4 colored blocks, each containing a location name and address.

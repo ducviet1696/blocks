@@ -1,0 +1,1 @@
+A testimonial carousel block with auto-rotation, featuring individual avatars, names, roles, and quotes. Layout includes centered items and pagination dots.

@@ -1,0 +1,1 @@
+A component showcases tutorials with a video dialog, user join counter, course stats, and membership CTA. It uses a two-column layout with icons and avatars.

@@ -1,0 +1,1 @@
+A component featuring 1 row with text and an image, followed by 2 more images below, each in a rounded border.

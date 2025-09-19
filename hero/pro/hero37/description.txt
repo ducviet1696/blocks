@@ -1,0 +1,1 @@
+A component featuring a center-aligned text block with a "New Release" announcement, headline, and descriptive text, followed by primary and secondary buttons. Includes a decorative background of spiraled dots and three angled, overlapping blocks beneath.

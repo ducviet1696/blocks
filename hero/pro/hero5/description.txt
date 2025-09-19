@@ -1,0 +1,1 @@
+A component with a dual-column layout featuring a text block and an image. It includes a heading, paragraph, and a button with an icon. Uses a flexible structure for alignment.

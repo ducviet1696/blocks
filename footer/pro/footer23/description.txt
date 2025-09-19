@@ -1,0 +1,1 @@
+A footer component with a logo, description, link columns, and an animated globe. Includes 3 sections with navigational links and separators.

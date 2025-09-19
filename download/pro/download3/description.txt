@@ -1,0 +1,1 @@
+A component displaying a download card with a logo, a heading, a description, version, file size, system requirements, download and view buttons, and trust indicators.

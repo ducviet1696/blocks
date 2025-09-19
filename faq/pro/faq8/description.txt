@@ -1,0 +1,1 @@
+An FAQ component with collapsible sections for "General" and "Billing" questions, each with their own set of questions and answers. It has a 3-column layout on wider screens.

@@ -1,0 +1,1 @@
+A component showcasing features across a grid layout with dynamic fading effects; includes titles, descriptions, and images.

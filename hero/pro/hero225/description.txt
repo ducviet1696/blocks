@@ -1,0 +1,1 @@
+A component displaying animated circles populated with tech icons and a central text message, accompanied by a call-to-action button.

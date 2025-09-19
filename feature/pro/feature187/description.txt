@@ -1,0 +1,1 @@
+A component displays a 3-step process with titles and descriptions in a three-column layout. Each step is uniquely marked and connected by a visual guide.

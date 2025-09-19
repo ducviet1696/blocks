@@ -1,0 +1,1 @@
+An accordion-style FAQ block with a title and expandable question items, set in a centered layout with a max-width.

@@ -1,0 +1,1 @@
+This component displays a bold, centered message with overlapping avatars and a large "Get started for free" button underneath.

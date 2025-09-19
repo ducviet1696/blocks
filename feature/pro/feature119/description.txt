@@ -1,0 +1,1 @@
+A component featuring a badge, a title, a 3-column layout of steps, and an image. Each column details a step with a numbered badge and text.

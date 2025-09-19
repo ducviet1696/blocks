@@ -1,0 +1,1 @@
+A pricing component with a toggle for annual billing, displaying 3 plans in columns, featuring highlights and a call-to-action button per plan, with special emphasis on a popular choice via scaling and ring decoration.

@@ -1,0 +1,1 @@
+This block features a sign-up form with a dynamic list of benefits and an illustrative image. Includes a bold headline, 4 listed advantages with icons, and an input button combination for email sign-ups.

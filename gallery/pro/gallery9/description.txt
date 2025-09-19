@@ -1,0 +1,1 @@
+A component with a heading, badge, and a carousel displaying images and texts with navigation indicators. Features clickable sections to scroll through content.

@@ -1,0 +1,1 @@
+A navbar component with a logo, navigation menus, sign-in/start buttons, and a collapsible menu for smaller screens, featuring a 2-column layout for feature links.

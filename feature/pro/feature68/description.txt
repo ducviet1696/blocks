@@ -1,0 +1,1 @@
+A component that showcases six features with icons, titles, and descriptions in a 1-2-3 column layout, with an introductory section.

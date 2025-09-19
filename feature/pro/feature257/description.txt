@@ -1,0 +1,1 @@
+A component displays tools in cards with categories, logos, names. Columns adjust from 1 to 3 based on the display size. Unique hover effects.

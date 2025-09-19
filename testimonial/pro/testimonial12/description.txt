@@ -1,0 +1,1 @@
+A component displaying carousel testimonials in a 3-column layout, featuring image+text on the left and detailed stats on the right.

@@ -1,0 +1,1 @@
+A contact form component with two columns: one for direct contact info using icons and one for a submission form.

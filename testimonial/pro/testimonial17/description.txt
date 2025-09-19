@@ -1,0 +1,1 @@
+A testimonial component with a dynamic carousel for mobile and a static 3-column layout for larger screens, showcasing user feedback and logos.

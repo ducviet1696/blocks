@@ -1,0 +1,1 @@
+A gallery component with a text and button panel on left and image carousel on right, including image thumbnails for selection and a patterned background overlay.

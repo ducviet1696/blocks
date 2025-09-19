@@ -1,0 +1,1 @@
+A component featuring dual interactive panels with a central decorative divider, expanding on hover. Each contains a button, heading, and text, against a backdrop image with gradient overlays.

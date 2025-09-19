@@ -1,0 +1,1 @@
+A component with animated buttons and text over dynamic illustrations, arranged centrally in a full-screen overlay.

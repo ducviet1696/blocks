@@ -1,0 +1,1 @@
+A premium plan showcase block with a title, subtitle, price, and features list followed by a button. Uses iconography for feature representation.

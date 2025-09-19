@@ -1,0 +1,1 @@
+A tabbed component showcasing categorized integrations with toggles for connection status and details button. Layout scales from 1 to 3 columns.

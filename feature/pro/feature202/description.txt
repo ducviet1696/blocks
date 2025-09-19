@@ -1,0 +1,1 @@
+A component showcasing 7 architectural solutions each with an icon, title, and description, arranged in a 3-column grid format, with one covering two columns.

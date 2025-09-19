@@ -1,0 +1,1 @@
+A component showcasing a team with a section title, description, and a grid of profiles (up to 4 columns), each with an avatar, name, role, description, and social links.

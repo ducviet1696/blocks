@@ -1,0 +1,1 @@
+A component with a two-column layout. It displays a heading, description, and two buttons on one side. The other side visualizes features with images, titles, and descriptions.

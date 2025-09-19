@@ -1,0 +1,1 @@
+A hero component featuring a beta badge, a headline, a subtext, two buttons, and a placeholder image. It includes a call-to-action link with an arrow icon.

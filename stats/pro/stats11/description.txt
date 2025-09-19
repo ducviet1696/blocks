@@ -1,0 +1,1 @@
+A statistical block displaying achievements with a unique background gradient, 2-column layout for stats, and decorative circles in the backdrop.

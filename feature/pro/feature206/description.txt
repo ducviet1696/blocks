@@ -1,0 +1,1 @@
+A component featuring a title, description, and a grid of images paired with texts to explain various features. Grid adjusts from 2 to 4 columns.

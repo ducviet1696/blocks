@@ -1,0 +1,1 @@
+A component featuring an image and a call-to-action (CTA) side by side in a two-column layout, with an appealing button and engaging text.

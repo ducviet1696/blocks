@@ -1,0 +1,1 @@
+A component with a contact form and methods listed in columns, featuring input fields, checkboxes, and buttons for submissions alongside icons for email, phone, and office directions.

@@ -1,0 +1,1 @@
+A team showcase component with a title, subtitle, description, and a grid of member avatars, names, and roles, supporting up to 4 columns.

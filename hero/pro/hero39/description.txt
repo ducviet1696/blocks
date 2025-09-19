@@ -1,0 +1,1 @@
+A component with a 2-column layout; one side presents text and a button, the other showcases a stylized, geometric arrangement of elements.

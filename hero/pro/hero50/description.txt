@@ -1,0 +1,1 @@
+A component with a call-to-action link, centered title, description text, and two buttons. Features images with overlapping effects.

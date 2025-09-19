@@ -1,0 +1,1 @@
+A component displaying a pricing section with 3 tiers and a customizable payment frequency toggle (Monthly/Yearly). Includes feature lists and call-to-action buttons.

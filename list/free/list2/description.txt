@@ -1,0 +1,1 @@
+A component displaying a list of awards with icons, titles, categories, and descriptions. Includes headings and buttons to view details.

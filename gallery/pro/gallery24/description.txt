@@ -1,0 +1,1 @@
+An interactive gallery block that showcases images with dynamic resizing and details on hover or click, including an "Add to Cart" button.

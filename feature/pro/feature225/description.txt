@@ -1,0 +1,1 @@
+A component displaying AI features with interactive tabs; includes title, description, icons, and images across a 1-to-4 column grid.

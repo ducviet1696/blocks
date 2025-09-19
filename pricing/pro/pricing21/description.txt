@@ -1,0 +1,1 @@
+A pricing component with toggleable monthly/yearly plans, integrating icons, buttons, and badges for a structured display of various subscription tiers and feature comparisons across columns.

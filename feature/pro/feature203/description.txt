@@ -1,0 +1,1 @@
+A component displaying 4 cards in a 2-column grid, each with an icon, title, description, and a list of features with check icons.

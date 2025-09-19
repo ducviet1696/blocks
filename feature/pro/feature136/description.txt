@@ -1,0 +1,1 @@
+A component featuring a productivity tools overview with stats (installs, active users, etc.), and 3 benefits. Layout includes a 2-column section with an image and a 3-column grid for benefits.

@@ -1,0 +1,1 @@
+An FAQ component featuring a title and an expandable accordion with multiple items to display questions and answers.

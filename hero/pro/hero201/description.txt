@@ -1,0 +1,1 @@
+A component featuring centered titles, description, and buttons over a background with two animated spinning images on opposite ends.

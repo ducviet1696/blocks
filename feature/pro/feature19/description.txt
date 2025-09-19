@@ -1,0 +1,1 @@
+A component displaying tabs each with a title, description, list of features, and an image, arranged in a 2-column layout for larger screens.

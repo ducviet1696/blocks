@@ -1,0 +1,1 @@
+A navigational component with six main categories, each expanding into detailed sub-menus including solutions, products, company information, customer stories, partner programs, and resources. Features interactive elements for a comprehensive exploration.

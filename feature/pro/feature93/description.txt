@@ -1,0 +1,1 @@
+A component featuring staggered avatars and a 3-column layout with icons, highlighting customer care themes, and focusing on support, solutions, and feedback.

@@ -1,0 +1,1 @@
+This component features sections about a modern financial entity, including a hero section with a mission statement, stats, core API, a founding team with images, and a unique design with SVG patterns.

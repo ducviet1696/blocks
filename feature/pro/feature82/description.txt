@@ -1,0 +1,1 @@
+A component showcasing integration options with icons and descriptions, structured in up to 4 columns, including a headline, subtext, and a button above a separator.

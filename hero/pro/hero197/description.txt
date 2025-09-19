@@ -1,0 +1,1 @@
+A component featuring a dotted background, a badge with a sparkle icon, a large gradient text headline, a description, and two buttons side by side on smaller screens and stacked on larger screens.

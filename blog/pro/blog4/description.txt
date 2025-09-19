@@ -1,0 +1,1 @@
+A blog component with a header, "View all posts" button, and a grid layout (up to 3 columns) displaying posts with image, label, title, summary, author avatar, and publish date.

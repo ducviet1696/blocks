@@ -1,0 +1,1 @@
+A masonry layout component displaying customer testimonials with avatars, feedback, and dates. Includes a title, subtitle, and a "See More" button.

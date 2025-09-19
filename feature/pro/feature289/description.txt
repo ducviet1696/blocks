@@ -1,0 +1,1 @@
+A component featuring a large title and a tech stack list with clickable links, arranged in a 2-column layout with adjustable gap sizes.

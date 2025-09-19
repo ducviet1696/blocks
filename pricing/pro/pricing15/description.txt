@@ -1,0 +1,1 @@
+A component displaying a pricing plan with benefits and a subscription button. Uses a 2-column layout on larger screens, shifting to a single column on smaller devices.

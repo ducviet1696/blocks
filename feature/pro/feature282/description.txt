@@ -1,0 +1,1 @@
+A 2-column component featuring an interactive encryption card and detailed text on encryption technology, with security highlights listed using bullet-like icons.

@@ -1,0 +1,1 @@
+A component featuring a central title and message, with clickable icons arranged in a staggered layout. Visual enhancements include overlaid decorative circles and gradient effects.
