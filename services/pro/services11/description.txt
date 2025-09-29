@@ -1,0 +1,1 @@
+A component showcasing services with a title and description on the left and clickable image cards to the right in a 1-2 column layout.

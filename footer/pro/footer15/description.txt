@@ -1,0 +1,1 @@
+This component is a footer block featuring a logo, a slogan, social links, navigation with categorized links, a newsletter form, and copyright text. It also includes a badge indicating operational status.

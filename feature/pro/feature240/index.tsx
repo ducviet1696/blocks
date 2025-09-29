@@ -71,7 +71,10 @@ const Feature240 = () => {
         >
           <CarouselContent className="py-5">
             {CarouselItems.map((item, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem
+                key={index}
+                className="text-background dark:text-foreground select-none md:basis-1/2 lg:basis-1/3"
+              >
                 <DottedDiv className="h-150 group w-full place-self-end p-4">
                   <div className="bg-muted/50 group-hover:bg-muted relative h-full w-full p-4 transition-all ease-in-out">
                     <div className="relative h-full w-full overflow-hidden rounded-3xl">
@@ -84,31 +87,29 @@ const Feature240 = () => {
                     </div>
 
                     <div className="absolute top-4 -ml-4 flex h-full w-full flex-col items-center justify-between p-10">
-                      <p className="text-background flex w-full items-center text-xl tracking-tighter">
+                      <p className="flex w-full items-center text-xl tracking-tighter">
                         {item.year}{" "}
-                        <span className="bg-background mx-2 h-2.5 w-[1px]" />
+                        <span className="bg-background dark:bg-foreground mx-2 h-2.5 w-[1px]" />
                         {item.month}
                       </p>
                       <div className="flex flex-col items-center justify-center">
-                        <h2 className="text-background text-center text-5xl font-semibold tracking-tight">
+                        <h2 className="text-center text-4xl font-semibold tracking-tight xl:text-5xl">
                           {item.title}
                         </h2>
                         <div className="bg-background mt-2 h-1 w-6 rounded-full" />
-                        <p className="text- text-background/80 mt-10 max-w-sm px-2 text-center font-light leading-5 tracking-tighter">
+                        <p className="text-background/80 dark:text-foreground/80 mt-10 max-w-sm px-2 text-center font-light leading-5 tracking-tighter">
                           {item.description}
                         </p>
                       </div>
                       <a
                         href="#"
-                        className="text-background group mb-6 flex cursor-pointer flex-col items-center justify-center"
+                        className="group mb-6 flex cursor-pointer flex-col items-center justify-center"
                       >
                         <ChevronUp
                           size={30}
                           className="transition-all ease-in-out group-hover:-translate-y-2"
                         />
-                        <p className="text-background text-xl tracking-tight">
-                          See All
-                        </p>
+                        <p className="text-xl tracking-tight">See All</p>
                       </a>
                     </div>
                   </div>

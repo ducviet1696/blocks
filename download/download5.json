@@ -1,0 +1,56 @@
+{
+    "id": "download5",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "download5.jpg",
+    "thumbnail": "download5-4x3.webp",
+    "description": "A component providing options to download software, with tabs for Linux, MacOS, and a waitlist for Windows. Features version selection and size details.",
+    "createdAt": "2025-09-26T22:00:43.676Z",
+    "dependencies": [
+        "lucide-react",
+        "react",
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        },
+        {
+            "name": "tabs",
+            "registryId": "shadcn",
+            "registryItemUrl": "tabs",
+            "docsUrl": "https://ui.shadcn.com/docs/components/tabs"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "download"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "download5",
+    "collection": "block",
+    "group": "download",
+    "code": "\"use client\";\n\nimport { Download, ExternalLink } from \"lucide-react\";\nimport { useState } from \"react\";\nimport { FaLinux, FaWindows } from \"react-icons/fa\";\n\nimport {\n  Snippet,\n  SnippetCopyButton,\n  SnippetHeader,\n  SnippetTabsContent,\n  SnippetTabsList,\n  SnippetTabsTrigger,\n} from \"@/components/kibo-ui/snippet\";\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\nimport { TabsContent } from \"@/components/ui/tabs\";\n\nconst Download5 = () => {\n  const [linuxVersion, setLinuxVersion] = useState(\"stable\");\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center gap-16 md:flex-row md:items-start\">\n          <div className=\"border-border bg-background rounded-lg border p-1.5\">\n            <div className=\"border-border bg-primary rounded-md border p-8\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n                alt=\"logo\"\n                className=\"w-32 invert\"\n              />\n            </div>\n          </div>\n          <div className=\"flex flex-1 flex-col gap-4\">\n            <div>\n              <div className=\"flex flex-col gap-1\">\n                <h1 className=\"text-3xl font-medium tracking-tighter\">\n                  Download Version 2.2.5\n                </h1>\n                <time\n                  dateTime=\"2025-08-22\"\n                  className=\"text-muted-foreground text-sm\"\n                >\n                  August 22, 2025\n                </time>\n              </div>\n            </div>\n            <div className=\"grid gap-4 lg:grid-cols-2\">\n              <div className=\"grid gap-2\">\n                <div className=\"flex items-center gap-2\">\n                  <FaLinux />\n                  <p className=\"text-sm\">Linux</p>\n                </div>\n                <Snippet\n                  defaultValue=\"stable\"\n                  value={linuxVersion}\n                  onValueChange={setLinuxVersion}\n                >\n                  <SnippetHeader>\n                    <SnippetTabsList>\n                      <SnippetTabsTrigger value=\"stable\">\n                        <span>Stable</span>\n                      </SnippetTabsTrigger>\n                      <SnippetTabsTrigger value=\"preview\">\n                        <span>Preview</span>\n                      </SnippetTabsTrigger>\n                    </SnippetTabsList>\n                    <SnippetCopyButton\n                      onCopy={() =>\n                        console.log(\n                          `Copied \"curl -f https://shadcnblocks.com/install.sh | bash\" to clipboard`,\n                        )\n                      }\n                      onError={() =>\n                        console.error(\n                          `Failed to copy \"curl -f https://shadcnblocks.com/install.sh | bash\" to clipboard`,\n                        )\n                      }\n                      value={\n                        linuxVersion === \"stable\"\n                          ? \"curl -f https://shadcnblocks.com/install.sh | bash\"\n                          : \"curl -f https://shadcnblocks.com/preview.sh | bash\"\n                      }\n                    />\n                  </SnippetHeader>\n                  <SnippetTabsContent value=\"stable\">\n                    curl -f https://shadcnblocks.com/install.sh | bash\n                  </SnippetTabsContent>\n                  <SnippetTabsContent value=\"preview\">\n                    curl -f https://shadcnblocks.com/preview.sh | bash\n                  </SnippetTabsContent>\n                </Snippet>\n                <p className=\"text-muted-foreground text-xs\">\n                  You can also download the package{\" \"}\n                  <a href=\"https://shadcnblocks.com\" className=\"underline\">\n                    manually\n                  </a>\n                </p>\n              </div>\n              <div className=\"grid gap-2\">\n                <div className=\"flex items-center gap-2\">\n                  <img\n                    src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/platforms/macos.png\"\n                    alt=\"macos\"\n                    className=\"h-4 w-4 grayscale\"\n                  />\n                  <p className=\"text-sm\">MacOS</p>\n                </div>\n                <Snippet defaultValue=\"apple-silicon\">\n                  <SnippetHeader>\n                    <SnippetTabsList>\n                      <SnippetTabsTrigger value=\"apple-silicon\">\n                        <span>Apple Silicon</span>\n                      </SnippetTabsTrigger>\n                      <SnippetTabsTrigger value=\"intel\">\n                        <span>Intel</span>\n                      </SnippetTabsTrigger>\n                    </SnippetTabsList>\n                  </SnippetHeader>\n                  <TabsContent\n                    value=\"apple-silicon\"\n                    className=\"bg-background mt-0 text-sm\"\n                  >\n                    <button className=\"hover:bg-accent flex h-[52px] w-full items-center justify-between px-4 text-left transition-colors\">\n                      <div className=\"flex flex-col\">\n                        <p className=\"font-bold\">Download now</p>\n                        <p className=\"text-xs\">Apple Silicon</p>\n                      </div>\n                      <div className=\"flex items-center gap-2\">\n                        <p className=\"text-xs\">1.2GB</p>\n                        <Download className=\"size-4\" />\n                      </div>\n                    </button>\n                  </TabsContent>\n                  <TabsContent\n                    value=\"intel\"\n                    className=\"bg-background mt-0 text-sm\"\n                  >\n                    <button className=\"hover:bg-accent flex h-[52px] w-full items-center justify-between px-4 text-left transition-colors\">\n                      <div className=\"flex flex-col\">\n                        <p className=\"font-bold\">Download now</p>\n                        <p className=\"text-xs\">Intel</p>\n                      </div>\n                      <div className=\"flex items-center gap-2\">\n                        <p className=\"text-xs\">1.2GB</p>\n                        <Download className=\"size-4\" />\n                      </div>\n                    </button>\n                  </TabsContent>\n                </Snippet>\n                <p className=\"text-muted-foreground text-xs\">\n                  Requires version 10.15 or later\n                </p>\n              </div>\n              <div className=\"grid gap-2\">\n                <div className=\"flex items-center gap-2\">\n                  <FaWindows />\n                  <p className=\"text-sm\">Windows</p>\n                </div>\n                <Button variant=\"outline\" className=\"w-full justify-between\">\n                  Sign up for waitlist\n                  <ExternalLink className=\"size-3.5\" />\n                </Button>\n                <p className=\"text-muted-foreground text-xs\">\n                  Or you can build from{\" \"}\n                  <a href=\"#\" className=\"underline\">\n                    source\n                  </a>\n                </p>\n              </div>\n            </div>\n            <div>\n              <Separator />\n              <p className=\"text-muted-foreground mt-4 text-xs\">\n                By downloading and using our software, you agree to its{\" \"}\n                <a href=\"#\" className=\"underline\">\n                  terms and conditions\n                </a>\n                .\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Download5 };\n"
+}

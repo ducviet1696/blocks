@@ -105,7 +105,7 @@ const Casestudy3 = () => {
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
               alt="logo"
-              className="h-8"
+              className="h-6 dark:invert"
             />
             <div className="mt-6 grid grid-cols-2 gap-5 lg:grid-cols-1">
               <div className="col-span-2 lg:col-span-1">

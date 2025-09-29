@@ -51,7 +51,7 @@ const Feature8 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
                 alt="shadcn"
-                className="h-7"
+                className="h-6 dark:invert"
               />
             </div>
           </Card>
@@ -87,9 +87,14 @@ const Feature8 = () => {
             <div className="mt-10 flex items-center justify-between">
               <p className="text-sm font-light lg:text-base">Styled with</p>
               <img
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg"
+                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-light.svg"
                 alt="shadcn"
-                className="h-4"
+                className="h-4 dark:hidden"
+              />
+              <img
+                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-dark.svg"
+                alt="shadcn"
+                className="hidden h-4 dark:block"
               />
             </div>
           </Card>

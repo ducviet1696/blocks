@@ -40,18 +40,18 @@ const Testimonial17 = () => {
           <Carousel setApi={setApi} className="w-full lg:hidden">
             <CarouselContent>
               <CarouselItem>
-                <div className="rounded-2xl border p-8 select-none">
+                <div className="select-none rounded-2xl border p-8">
                   <img
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
                     alt="logo"
-                    className="mb-6 h-6 lg:h-8"
+                    className="mb-6 h-5 dark:invert"
                   />
                   <p className="mb-10 text-xl font-semibold">
                     Our team has seen an incredible boost in productivity since
                     adopting this platform. It&apos;s a game-changer.
                   </p>
                   <div className="mb-3 flex gap-4">
-                    <Avatar className="size-12 rounded-full ring-1 ring-input">
+                    <Avatar className="ring-input size-12 rounded-full ring-1">
                       <AvatarImage
                         src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                         alt="avatar"
@@ -67,18 +67,18 @@ const Testimonial17 = () => {
                 </div>
               </CarouselItem>
               <CarouselItem>
-                <div className="rounded-2xl border p-8 select-none">
+                <div className="select-none rounded-2xl border p-8">
                   <img
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg"
                     alt="logo"
-                    className="mb-6 h-8 lg:h-10"
+                    className="mb-6 h-9 dark:invert"
                   />
                   <p className="mb-10 text-xl font-semibold">
                     This tool has streamlined our development process and
                     improved team collaboration like never before.
                   </p>
                   <div className="mb-3 flex gap-4">
-                    <Avatar className="size-12 rounded-full ring-1 ring-input">
+                    <Avatar className="ring-input size-12 rounded-full ring-1">
                       <AvatarImage
                         src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp"
                         alt="avatar"
@@ -92,9 +92,9 @@ const Testimonial17 = () => {
                 </div>
               </CarouselItem>
               <CarouselItem>
-                <div className="rounded-2xl border p-8 select-none">
+                <div className="select-none rounded-2xl border p-8">
                   <img
-                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg"
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg"
                     alt="logo"
                     className="mb-6 h-4 lg:h-5"
                   />
@@ -103,7 +103,7 @@ const Testimonial17 = () => {
                     the efficiency this platform brings to us.
                   </p>
                   <div className="mb-3 flex gap-4">
-                    <Avatar className="size-12 rounded-full ring-1 ring-input">
+                    <Avatar className="ring-input size-12 rounded-full ring-1">
                       <AvatarImage
                         src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp"
                         alt="avatar"
@@ -137,14 +137,14 @@ const Testimonial17 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
                 alt="logo"
-                className="mb-6 h-6 sm:h-8"
+                className="mb-6 h-6 dark:invert"
               />
               <p className="mb-10 text-xl font-semibold">
                 Our team has seen an incredible boost in productivity since
                 adopting this platform. It&apos;s a game-changer for us!
               </p>
               <div className="mb-3 flex gap-4">
-                <Avatar className="size-12 rounded-full ring-1 ring-input">
+                <Avatar className="ring-input size-12 rounded-full ring-1">
                   <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" alt="avatar" />
                 </Avatar>
                 <div>
@@ -160,14 +160,14 @@ const Testimonial17 = () => {
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg"
                   alt="logo"
-                  className="mb-6 h-8 sm:h-10"
+                  className="mb-6 h-8 dark:invert"
                 />
                 <p className="mb-10 text-xl font-semibold">
                   This tool has streamlined our development process and improved
                   team collaboration like never before.
                 </p>
                 <div className="mb-3 flex gap-4">
-                  <Avatar className="size-12 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-12 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp"
                       alt="avatar"
@@ -181,16 +181,16 @@ const Testimonial17 = () => {
               </div>
               <div className="rounded-2xl border p-8">
                 <img
-                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg"
+                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-black.svg"
                   alt="logo"
-                  className="mb-6 h-4 sm:h-5"
+                  className="mb-6 h-4 dark:invert"
                 />
                 <p className="mb-10 text-xl font-semibold">
                   We’ve reduced our development cycles by 30% thanks to the
                   efficiency this platform brings.
                 </p>
                 <div className="mb-3 flex gap-4">
-                  <Avatar className="size-12 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-12 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp"
                       alt="avatar"

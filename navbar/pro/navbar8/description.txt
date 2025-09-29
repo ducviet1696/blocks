@@ -1,0 +1,1 @@
+A navigation component with dynamic background change on scroll and a responsive mobile menu, featuring logo, links with hover images, and buttons.

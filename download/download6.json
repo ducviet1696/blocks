@@ -1,0 +1,42 @@
+{
+    "id": "download6",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "download6.jpg",
+    "thumbnail": "download6-4x3.webp",
+    "description": "A component displaying download options for different software versions and platforms, highlighting the latest version with a badge. Offers a two-column layout for platform links.",
+    "createdAt": "2025-09-26T22:01:43.676Z",
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "download"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "download6",
+    "collection": "block",
+    "group": "download",
+    "code": "import { Download } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nconst downloads = [\n  {\n    version: \"2.0.1\",\n    platforms: [\n      {\n        name: \"macOS\",\n        variant: \"Mac Universal\",\n        link: \"#\",\n      },\n      {\n        name: \"macOS\",\n        variant: \"Mac Arm64\",\n        link: \"#\",\n      },\n      {\n        name: \"macOS\",\n        variant: \"Mac x64\",\n        link: \"#\",\n      },\n      {\n        name: \"Windows\",\n        variant: \"Windows 10/11 (Arm64)\",\n        link: \"#\",\n      },\n      {\n        name: \"Windows\",\n        variant: \"Windows 10/11 (x64)\",\n        link: \"#\",\n      },\n      {\n        name: \"Linux\",\n        variant: \"AppImage (Arm64)\",\n        link: \"#\",\n      },\n      {\n        name: \"Linux\",\n        variant: \"AppImage (x64)\",\n        link: \"#\",\n      },\n    ],\n  },\n  {\n    version: \"1.2.3\",\n    platforms: [\n      {\n        name: \"macOS\",\n        variant: \"Mac Universal\",\n        link: \"#\",\n      },\n      {\n        name: \"macOS\",\n        variant: \"Mac Arm64\",\n        link: \"#\",\n      },\n      {\n        name: \"macOS\",\n        variant: \"Mac x64\",\n        link: \"#\",\n      },\n      {\n        name: \"Windows\",\n        variant: \"Windows 10/11 (Arm64)\",\n        link: \"#\",\n      },\n      {\n        name: \"Windows\",\n        variant: \"Windows 10/11 (x64)\",\n        link: \"#\",\n      },\n      {\n        name: \"Linux\",\n        variant: \"AppImage (Arm64)\",\n        link: \"#\",\n      },\n      {\n        name: \"Linux\",\n        variant: \"AppImage (x64)\",\n        link: \"#\",\n      },\n    ],\n  },\n];\n\nconst Download6 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col gap-4\">\n          <h1 className=\"text-4xl font-semibold md:text-5xl\">Download</h1>\n          <p className=\"text-muted-foreground md:text-lg\">\n            Select your operating system to access the newest release.\n          </p>\n        </div>\n        <div className=\"mt-12 space-y-8 md:mt-16\">\n          {downloads.map((download, idx) => (\n            <div key={idx}>\n              <h2 className=\"mb-4 flex items-center gap-2 text-2xl font-semibold\">\n                {download.version}\n                {idx === 0 && <Badge variant=\"outline\">Latest</Badge>}\n              </h2>\n              <div className=\"grid grid-cols-1 gap-4 md:grid-cols-2\">\n                {download.platforms.map((platform, idx) => (\n                  <a\n                    href={platform.link}\n                    key={idx}\n                    className=\"border-border hover:bg-muted hover:border-primary group flex justify-between rounded-lg border p-4 transition-all duration-200\"\n                  >\n                    <div>\n                      <h3 className=\"text-lg font-semibold\">{platform.name}</h3>\n                      <p className=\"text-muted-foreground font-mono text-sm\">\n                        {platform.variant}\n                      </p>\n                    </div>\n                    <div>\n                      <Download className=\"size-4 transition-transform duration-200 group-hover:translate-y-1\" />\n                    </div>\n                  </a>\n                ))}\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Download6 };\n"
+}

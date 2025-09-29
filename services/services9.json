@@ -1,0 +1,42 @@
+{
+    "id": "services9",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "services9.jpg",
+    "thumbnail": "services9-4x3.webp",
+    "description": "A component displays services with icons, titles, descriptions, inclusions, durations, and prices in a 2-column grid, with a 'Get Started' button.",
+    "createdAt": "2025-07-01T03:41:13.019Z",
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "services"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "services9",
+    "collection": "block",
+    "group": "services",
+    "code": "\"use client\";\n\nimport { ArrowRight, Code, Cog, PenTool, Shrub } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Services9 = () => {\n  const services = [\n    {\n      icon: <Cog className=\"h-6 w-6\" />,\n      title: \"Product Strategy\",\n      description:\n        \"From market research to user personas, we help you build products that matter.\",\n      items: [\"Market Research\", \"User Personas\"],\n      duration: \"2-4 weeks\",\n      price: \"Starting at $5,000\",\n    },\n    {\n      icon: <PenTool className=\"h-6 w-6\" />,\n      title: \"Design\",\n      description:\n        \"Beautiful, functional designs that create memorable user experiences.\",\n      items: [\"UI/UX Design\", \"Prototyping\", \"Interaction Design\"],\n      duration: \"3-6 weeks\",\n      price: \"Starting at $8,000\",\n    },\n    {\n      icon: <Code className=\"h-6 w-6\" />,\n      title: \"Web Development\",\n      description:\n        \"Robust, scalable applications built with modern technologies and frameworks.\",\n      items: [\"Frontend Dev\", \"Backend Dev\"],\n      duration: \"6-12 weeks\",\n      price: \"Starting at $15,000\",\n    },\n    {\n      icon: <Shrub className=\"h-6 w-6\" />,\n      title: \"Marketing\",\n      description:\n        \"Strategic growth initiatives to scale your product and maximize impact.\",\n      items: [\"SEO Strategy\", \"Analytics & Data\", \"A/B Testing\"],\n      duration: \"Ongoing\",\n      price: \"Starting at $3,000/mo\",\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-6xl space-y-16\">\n          <div className=\"space-y-4 text-center\">\n            <h2 className=\"text-3xl font-semibold tracking-tight md:text-4xl\">\n              Services\n            </h2>\n            <p className=\"text-muted-foreground mx-auto max-w-2xl text-lg tracking-tight md:text-xl\">\n              Transparent pricing for world-class digital solutions tailored to\n              your needs.\n            </p>\n          </div>\n\n          <div className=\"grid grid-cols-1 gap-8 md:grid-cols-2\">\n            {services.map((service, index) => (\n              <div\n                key={index}\n                className=\"border-border flex flex-col rounded-xl border p-8 transition-shadow hover:shadow-lg\"\n              >\n                <div className=\"flex items-start justify-between\">\n                  <div className=\"flex items-center gap-3\">\n                    <div className=\"bg-muted rounded-lg p-2\">\n                      {service.icon}\n                    </div>\n                    <h3 className=\"text-xl font-semibold\">{service.title}</h3>\n                  </div>\n                  <div className=\"text-right\">\n                    <div className=\"text-muted-foreground text-sm\">\n                      Duration\n                    </div>\n                    <div className=\"text-sm font-medium\">\n                      {service.duration}\n                    </div>\n                  </div>\n                </div>\n\n                <p className=\"text-muted-foreground mt-6 leading-relaxed\">\n                  {service.description}\n                </p>\n\n                <div className=\"mt-6 flex-1 space-y-2\">\n                  <div className=\"text-muted-foreground text-sm font-medium\">\n                    What's included:\n                  </div>\n                  <ul className=\"space-y-1\">\n                    {service.items.map((item, itemIndex) => (\n                      <li\n                        key={itemIndex}\n                        className=\"flex items-center gap-2 text-sm\"\n                      >\n                        <div className=\"bg-foreground h-1 w-1 rounded-full\" />\n                        {item}\n                      </li>\n                    ))}\n                  </ul>\n                </div>\n\n                <div className=\"border-border mt-6 border-t pt-6\">\n                  <div className=\"flex items-center justify-between\">\n                    <div className=\"text-lg font-semibold\">{service.price}</div>\n                    <Button size=\"sm\" variant=\"outline\">\n                      Get Started\n                      <ArrowRight className=\"h-3 w-3\" />\n                    </Button>\n                  </div>\n                </div>\n              </div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Services9 };\n"
+}

@@ -1,0 +1,1 @@
+A marketing package selector with 3 options, highlighting features per plan. Includes alerts and clickable elements for user interaction.

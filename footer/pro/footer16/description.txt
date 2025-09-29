@@ -1,0 +1,1 @@
+A footer component featuring logo, contact button, social icons, and navigation in accordion for smaller screens or columns layout.

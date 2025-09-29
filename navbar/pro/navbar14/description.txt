@@ -1,0 +1,1 @@
+An expandable navigation component featuring categorized links with icons, a logo, and action buttons. It transitions to an accordion layout on smaller screens.

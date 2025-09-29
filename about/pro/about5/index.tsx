@@ -1,6 +1,6 @@
 const About5 = () => {
   return (
-    <section className="bg-muted py-32">
+    <section className="bg-muted dark:bg-background py-32">
       <div className="container">
         <div className="grid gap-14 pb-32 md:grid-cols-2">
           <div>
@@ -24,31 +24,41 @@ const About5 = () => {
         <p className="mt-6 text-center text-xl lg:text-right">
           Committed to removing complexity from development processes
         </p>
-        <div className="flex flex-col gap-14 py-40 lg:flex-row">
+        <div className="flex flex-col justify-between gap-14 py-40 lg:flex-row">
           <p className="mx-auto max-w-xl text-center text-2xl lg:mx-0 lg:text-left">
             We are a team of passionate developers, designers, and
             entrepreneurs.
           </p>
-          <div className="grid grid-cols-2 items-center gap-6 md:grid-cols-4">
+          <div className="grid shrink-0 grid-cols-2 items-center gap-6 md:grid-cols-4">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg"
               alt="logo"
-              className="mx-auto max-h-7 md:mx-0"
+              className="mx-auto max-h-6 md:mx-0 dark:invert"
             />
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
               alt="logo"
-              className="mx-auto max-h-9 md:mx-0"
+              className="mx-auto max-h-9 md:mx-0 dark:invert"
             />
             <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg"
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-light.svg"
               alt="logo"
-              className="mx-auto max-h-7 md:mx-0 md:max-h-9"
+              className="mx-auto max-h-7 md:mx-0 md:max-h-9 dark:hidden"
+            />
+            <img
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-dark.svg"
+              alt="logo"
+              className="mx-auto hidden max-h-7 md:mx-0 md:max-h-9 dark:block"
             />
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg"
               alt="logo"
-              className="mx-auto max-h-9 md:mx-0"
+              className="mx-auto max-h-9 md:mx-0 dark:hidden"
+            />
+            <img
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-dark.svg"
+              alt="logo"
+              className="mx-auto hidden max-h-9 md:mx-0 dark:block"
             />
           </div>
         </div>
@@ -73,15 +83,15 @@ const About5 = () => {
               they do best: creating amazing products.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-6 text-center">
-              <div className="flex flex-col items-center justify-center gap-2 rounded-xl border bg-background p-6">
+              <div className="bg-background bg-card flex flex-col items-center justify-center gap-2 rounded-xl border p-6">
                 <span className="text-2xl md:text-4xl">2024</span>
-                <span className="text-sm text-muted-foreground md:text-lg">
+                <span className="text-muted-foreground text-sm md:text-lg">
                   Launched
                 </span>
               </div>
-              <div className="flex flex-col items-center justify-center gap-2 rounded-xl border bg-background p-6">
+              <div className="bg-background bg-card flex flex-col items-center justify-center gap-2 rounded-xl border p-6">
                 <span className="text-2xl md:text-4xl">$2.2M</span>
-                <span className="text-sm text-muted-foreground md:text-lg">
+                <span className="text-muted-foreground text-sm md:text-lg">
                   Pre-Seed Round
                 </span>
               </div>

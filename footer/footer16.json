@@ -1,0 +1,48 @@
+{
+    "id": "footer16",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "footer16.jpg",
+    "thumbnail": "footer16-4x3.webp",
+    "description": "A footer component featuring logo, contact button, social icons, and navigation in accordion for smaller screens or columns layout.",
+    "createdAt": "2025-09-26T22:08:43.676Z",
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "accordion",
+            "registryId": "shadcn",
+            "registryItemUrl": "accordion",
+            "docsUrl": "https://ui.shadcn.com/docs/components/accordion"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "footer"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "footer16",
+    "collection": "block",
+    "group": "footer",
+    "code": "import { Facebook, Github, Linkedin, Twitter } from \"lucide-react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\nimport { Button } from \"@/components/ui/button\";\n\nconst SOCIAL_LINKS = [\n  {\n    icon: Github,\n    href: \"#\",\n  },\n  {\n    icon: Linkedin,\n    href: \"#\",\n  },\n  {\n    icon: Facebook,\n    href: \"#\",\n  },\n  {\n    icon: Twitter,\n    href: \"#\",\n  },\n];\n\nconst NAVIGATION = [\n  {\n    title: \"Tools\",\n    links: [\n      { name: \"Plans\", href: \"#\" },\n      { name: \"Safety\", href: \"#\" },\n      { name: \"Partners\", href: \"#\" },\n    ],\n  },\n  {\n    title: \"Docs\",\n    links: [\n      { name: \"Help\", href: \"#\" },\n      { name: \"API\", href: \"#\" },\n      { name: \"Guide\", href: \"#\" },\n      { name: \"Blog\", href: \"#\" },\n      { name: \"Updates\", href: \"#\" },\n    ],\n  },\n  {\n    title: \"Legal\",\n    links: [\n      { name: \"Privacy\", href: \"#\" },\n      { name: \"Terms\", href: \"#\" },\n      { name: \"DPA\", href: \"#\" },\n      { name: \"Cookies\", href: \"#\" },\n      { name: \"Trust\", href: \"#\" },\n      { name: \"Prefs\", href: \"#\" },\n    ],\n  },\n];\n\nconst Footer16 = () => {\n  return (\n    <section className=\"bg-background dark pt-32\">\n      <footer className=\"container\">\n        <div className=\"grid gap-10 pb-6 md:grid-cols-2 md:pb-0\">\n          <div className=\"flex flex-col justify-start gap-8\">\n            {/* Logo */}\n            <a href=\"https://shadcnblocks.com\">\n              <img\n                src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-wordmark-white.svg\"\n                alt=\"Shadcnblocks\"\n                title=\"Shadcnblocks\"\n                className=\"h-11\"\n              />\n            </a>\n            <div className=\"flex items-center justify-start gap-4 md:flex-row\">\n              {SOCIAL_LINKS.map((item, i) => (\n                <Button\n                  key={`social-link-${i}`}\n                  size=\"icon\"\n                  variant=\"secondary\"\n                >\n                  <a href={item.href}>\n                    <item.icon className=\"size-4 lg:size-5\" />\n                  </a>\n                </Button>\n              ))}\n            </div>\n          </div>\n          <div>\n            <div className=\"hidden md:flex md:gap-10 lg:gap-24 xl:gap-32\">\n              {NAVIGATION.map((section) => (\n                <div className=\"flex flex-col gap-4\" key={section.title}>\n                  <h6 className=\"text-foreground mb-2 text-sm font-semibold uppercase\">\n                    {section.title}\n                  </h6>\n                  {section.links.map((link) => (\n                    <a\n                      className=\"text-muted-foreground hover:text-foreground text-sm font-medium transition-colors duration-200 ease-in-out\"\n                      key={link.name}\n                      href={link.href}\n                    >\n                      {link.name}\n                    </a>\n                  ))}\n                </div>\n              ))}\n            </div>\n            <div className=\"md:hidden\">\n              <Accordion type=\"single\" collapsible className=\"w-full\">\n                {NAVIGATION.map((section, i) => (\n                  <AccordionItem value={`item-${i}`} key={section.title}>\n                    <AccordionTrigger className=\"text-foreground py-4 text-sm uppercase hover:no-underline\">\n                      {section.title}\n                    </AccordionTrigger>\n                    <AccordionContent className=\"flex flex-col gap-2\">\n                      {section.links.map((link) => (\n                        <a\n                          className=\"text-muted-foreground hover:text-foreground text-sm font-medium transition-colors duration-200 ease-in-out\"\n                          key={link.name}\n                          href={link.href}\n                        >\n                          {link.name}\n                        </a>\n                      ))}\n                    </AccordionContent>\n                  </AccordionItem>\n                ))}\n              </Accordion>\n            </div>\n          </div>\n        </div>\n        <div className=\"overflow-hidden\">\n          <img\n            className=\"w-full translate-y-2 opacity-10 md:translate-y-4 lg:translate-y-6 xl:translate-y-8\"\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/shadcnblocks-giant-white-text.svg\"\n            alt=\"\"\n          />\n        </div>\n      </footer>\n    </section>\n  );\n};\n\nexport { Footer16 };\n"
+}

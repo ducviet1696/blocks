@@ -23,7 +23,7 @@
         ],
         "registryIds": []
     },
-    "figma": false,
+    "figma": true,
     "slug": "team7",
     "collection": "block",
     "group": "team",

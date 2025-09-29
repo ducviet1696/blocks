@@ -1,0 +1,40 @@
+{
+    "id": "feature255",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "feature255.jpg",
+    "thumbnail": "feature255-4x3.webp",
+    "description": "A component displaying a list of top contributors with images, titles, and descriptions. Includes a header with a \"View all\" button.",
+    "createdAt": "2025-09-26T22:06:43.676Z",
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "feature"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "feature255",
+    "collection": "block",
+    "group": "feature",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst contributors = [\n  {\n    name: \"Sarah Johnson\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp\",\n    title: \"Open Source Advocate \ud83d\udcbb\",\n    description:\n      \"Building innovative solutions with modern tech stacks \u2013 passionate about clean code, scalability, and mentoring junior developers.\",\n  },\n  {\n    name: \"Marcus Rodriguez\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp\",\n    title: \"UI/UX Designer & Creative Thinker \ud83c\udfa8\",\n    description:\n      \"Crafting beautiful user experiences that delight and convert \u2013 focused on accessibility, user research, and design systems.\",\n  },\n  {\n    name: \"Emily Chen\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp\",\n    title: \"DevOps Engineer & Cloud Specialist \u2601\ufe0f\",\n    description:\n      \"Streamlining deployments and optimizing infrastructure \u2013 expert in automation, monitoring, and building resilient systems.\",\n  },\n  {\n    name: \"David Thompson\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp\",\n    title: \"Product Manager & Strategy Expert \ud83d\udcca\",\n    description:\n      \"Turning ideas into successful products that users love \u2013 specializing in roadmap planning, user feedback, and data-driven decisions.\",\n  },\n  {\n    name: \"Luna Patel\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp\",\n    title: \"Performance Optimizer \ud83d\udcf1\",\n    description:\n      \"Creating smooth mobile experiences across platforms \u2013 focused on native performance, user engagement, and cross-platform solutions.\",\n  },\n  {\n    name: \"Alex Kim\",\n    image: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp\",\n    title: \"Data Scientist & ML Engineer \ud83e\udd16\",\n    description:\n      \"Extracting insights from complex datasets and building intelligent systems \u2013 passionate about predictive modeling and automation.\",\n  },\n];\n\nconst Feature255 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-4xl\">\n          <div className=\"flex items-center justify-between\">\n            <p className=\"text-lg font-medium\">Top contributors this month</p>\n            <Button variant=\"outline\">View all</Button>\n          </div>\n          <div className=\"mt-7\">\n            <div className=\"flex flex-col gap-10\">\n              {contributors.map((contributor, idx) => (\n                <div key={idx}>\n                  <div className=\"flex gap-3 md:gap-4\">\n                    <img\n                      src={contributor.image}\n                      alt={contributor.name}\n                      className=\"border-border size-10 rounded-lg border md:size-12\"\n                    />\n                    <div>\n                      <p className=\"flex flex-col font-medium md:flex-row md:items-center md:gap-1 md:text-lg\">\n                        {contributor.name}\n                        <span className=\"text-muted-foreground whitespace-nowrap text-sm md:text-base md:font-normal\">\n                          {contributor.title}\n                        </span>\n                      </p>\n                      <p className=\"text-muted-foreground hidden md:block\">\n                        {contributor.description}\n                      </p>\n                    </div>\n                  </div>\n                  <p className=\"text-muted-foreground mt-2 text-sm md:hidden md:text-base\">\n                    {contributor.description}\n                  </p>\n                </div>\n              ))}\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Feature255 };\n"
+}

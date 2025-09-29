@@ -1,0 +1,1 @@
+A component showcasing various digital services, each with an icon, title, duration, price, and featured status. Includes an intro badge, section headings, and a grid layout with 1-2 columns. Features detailed service descriptions, included items, deliverables with badges, and customizable "Get Started" buttons. A final call-to-action offers custom solutions.

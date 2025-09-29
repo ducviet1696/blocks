@@ -1,0 +1,1 @@
+A component listing job openings with department, role, location, and a link, featuring a heading, introduction, and a call-to-action for unsolicited applications.

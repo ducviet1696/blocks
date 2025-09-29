@@ -1,0 +1,1 @@
+A component displaying a featured post with an image, summary, and tags, alongside a list of latest posts with their titles, authors, and tags. It&#x27;s structured in a two-column layout with dynamic text effects.

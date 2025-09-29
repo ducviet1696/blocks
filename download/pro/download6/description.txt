@@ -1,0 +1,1 @@
+A component displaying download options for different software versions and platforms, highlighting the latest version with a badge. Offers a two-column layout for platform links.

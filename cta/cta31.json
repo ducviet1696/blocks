@@ -1,0 +1,42 @@
+{
+    "id": "cta31",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "cta31.jpg",
+    "thumbnail": "cta31-4x3.webp",
+    "description": "A component displaying a title, subtitle, and a CTA button, surrounded by logos arranged in a semi-circle, with a gradient background.",
+    "createdAt": "2025-09-26T21:57:43.676Z",
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "cta"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "cta31",
+    "collection": "block",
+    "group": "cta",
+    "code": "import { ArrowRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\nconst Cta31 = () => {\n  return (\n    <section className=\"overflow-hidden py-32\">\n      <div className=\"container relative\">\n        <h1 className=\"from-primary/60 via-primary to-primary/60 mx-auto max-w-4xl bg-gradient-to-r bg-clip-text text-center text-4xl font-semibold text-transparent lg:text-6xl\">\n          Solutions for <br /> Modern Businesses\n        </h1>\n        <p className=\"mt-4 text-center text-lg lg:mt-10\">\n          Transform your workflow with cutting-edge technology\n        </p>\n        <div className=\"relative z-10 mt-8 flex justify-center lg:mt-16\">\n          <Button size=\"lg\">\n            Explore Our Solutions\n            <ArrowRight />\n          </Button>\n        </div>\n        <div className=\"inset-0 -z-10 flex justify-center lg:absolute\">\n          <div className=\"relative -top-8 flex justify-between sm:-top-20 lg:-top-0 lg:w-full\">\n            <div className=\"scale-80 relative -left-20 min-h-44 min-w-[460px] translate-x-28 sm:translate-x-0 lg:min-h-[292px] lg:scale-90 xl:scale-100\">\n              <span className=\"border-border scale-60 absolute -bottom-5 right-0 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border absolute bottom-1 right-24 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-20.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border scale-60 absolute bottom-7 right-44 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border absolute bottom-28 right-44 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border absolute bottom-4 left-24 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-9.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border scale-60 absolute bottom-24 left-20 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-21.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n            </div>\n            <div className=\"scale-80 relative -right-20 min-h-44 min-w-[460px] -translate-x-28 sm:translate-x-0 lg:min-h-[292px] lg:scale-90 xl:scale-100\">\n              <span className=\"border-border scale-60 absolute -bottom-5 left-0 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-12.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border absolute bottom-1 left-24 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-13.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border scale-60 absolute bottom-7 left-44 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-14.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border absolute bottom-28 left-44 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-15.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border absolute bottom-4 right-24 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-17.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n              <span className=\"border-border scale-60 absolute bottom-24 right-20 flex size-20 items-center justify-center rounded-full border p-4\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-19.svg\"\n                  alt=\"logo\"\n                  className=\"brightness-0 invert-0 dark:invert\"\n                />\n              </span>\n            </div>\n            <div className=\"from-background/80 to-background/80 absolute inset-0 bg-gradient-to-r via-transparent\" />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Cta31 };\n"
+}

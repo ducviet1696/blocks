@@ -1,0 +1,49 @@
+{
+    "id": "banner7",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "banner7.jpg",
+    "thumbnail": "banner7-4x3.webp",
+    "description": "A dismissible banner with a promotional message, vertical separator, and \"Learn More\" link. Features a close button.",
+    "createdAt": "2025-09-26T21:42:43.676Z",
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "banner"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "banner7",
+    "collection": "block",
+    "group": "banner",
+    "code": "\"use client\";\n\nimport { ArrowRight, X } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst Banner7 = () => {\n  const [isVisible, setIsVisible] = useState(true);\n\n  const handleClose = () => {\n    setIsVisible(false);\n  };\n\n  if (!isVisible) return null;\n  return (\n    <section className=\"dark:bg-card bg-muted border-t-primary border-t-3 flex items-center justify-between gap-2 px-4 py-4\">\n      <div className=\"flex flex-1 items-center gap-4 text-sm font-medium md:justify-center md:text-center\">\n        <p>\n          Our Premium Plan is now live! \ud83c\udf89 Enjoy more features and flexibility.\n        </p>\n        <Separator\n          orientation=\"vertical\"\n          className=\"bg-primary hidden self-stretch data-[orientation=vertical]:h-auto md:block\"\n        />\n        <a href=\"#\" className=\"group hidden items-center gap-2 md:flex\">\n          <span>Learn more</span>\n          <ArrowRight className=\"size-4 transition-transform duration-200 group-hover:translate-x-0.5\" />\n        </a>\n      </div>\n      <Button variant=\"ghost\" size=\"icon\" onClick={handleClose}>\n        <X />\n      </Button>\n    </section>\n  );\n};\n\nexport { Banner7 };\n"
+}

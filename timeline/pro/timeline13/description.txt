@@ -1,0 +1,1 @@
+A component displaying a product launch timeline with 3 phases, progress bars, and durations. Features an animated timeline indicator.

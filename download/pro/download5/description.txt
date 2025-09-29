@@ -1,0 +1,1 @@
+A component providing options to download software, with tabs for Linux, MacOS, and a waitlist for Windows. Features version selection and size details.

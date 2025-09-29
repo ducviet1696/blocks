@@ -1,0 +1,1 @@
+A component displaying a download section with options for .MSI and .EXE files, Windows compatibility info, and dynamic bordered images.

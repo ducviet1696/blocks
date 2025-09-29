@@ -41,7 +41,7 @@
             "shadcn"
         ]
     },
-    "figma": false,
+    "figma": true,
     "slug": "feature209",
     "collection": "block",
     "group": "feature",

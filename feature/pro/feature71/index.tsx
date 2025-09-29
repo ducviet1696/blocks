@@ -7,13 +7,13 @@ const Feature71 = () => {
     <section className="py-32">
       <div className="container flex flex-col items-center gap-16 lg:px-16">
         <div className="text-center">
-          <p className="mb-6 text-xs font-medium tracking-wider uppercase">
+          <p className="mb-6 text-xs font-medium uppercase tracking-wider">
             Tag Line
           </p>
-          <h3 className="mb-3 text-3xl font-semibold text-pretty md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl">
+          <h3 className="mb-3 text-pretty text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl">
             Feature group
           </h3>
-          <p className="mb-8 text-muted-foreground lg:max-w-2xl lg:text-lg">
+          <p className="text-muted-foreground mb-8 lg:max-w-2xl lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
             doloremque mollitia fugiat omnis! Porro facilis quo animi
             consequatur. Explicabo.
@@ -38,31 +38,31 @@ const Feature71 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between bg-primary/60 p-4 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-3/2 md:p-6 lg:p-10">
+            <div className="sm:aspect-3/2 relative flex h-full w-full flex-col items-start justify-between bg-black/60 p-4 transition-colors hover:bg-black/70 md:p-6 lg:p-10">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg"
                 alt="placeholder logo"
-                className="mb-12 h-10 invert md:h-12"
+                className="mb-12 h-8 invert md:h-12 dark:invert"
               />
-              <div className="flex items-center text-xs font-medium md:text-base lg:text-lg">
+              <div className="flex items-center text-xs font-medium text-white md:text-base lg:text-lg">
                 Read more{" "}
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </div>
             </div>
           </a>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 sm:justify-end md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 sm:justify-end md:p-6 lg:p-10">
             <div className="mb-8 text-3xl sm:mb-2 lg:text-5xl">100+</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 1</div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 sm:justify-end md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 sm:justify-end md:p-6 lg:p-10">
             <div className="mb-8 text-3xl sm:mb-2 lg:text-5xl">5</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 2</div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 md:p-6 lg:p-10">
             <div className="mb-8 text-3xl lg:text-5xl">150+</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 3</div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 md:p-6 lg:p-10">
             <div className="mb-8 text-3xl lg:text-5xl">10</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 4</div>
           </div>
@@ -75,15 +75,15 @@ const Feature71 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between gap-4 bg-primary/50 p-4 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-2/1 md:flex-row md:items-end md:p-6 lg:p-10">
+            <div className="sm:aspect-2/1 relative flex h-full w-full flex-col items-start justify-between gap-4 bg-black/50 p-4 transition-colors hover:bg-black/70 md:flex-row md:items-end md:p-6 lg:p-10">
               <div>
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
                   alt="placeholder logo"
-                  className="mb-8 h-8 invert md:mb-0 md:h-10"
+                  className="mb-8 h-7 invert md:mb-0 dark:invert"
                 />
               </div>
-              <div className="flex shrink-0 items-center text-xs font-medium md:text-base lg:text-lg">
+              <div className="flex shrink-0 items-center text-xs font-medium text-white md:text-base lg:text-lg">
                 Read more{" "}
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </div>

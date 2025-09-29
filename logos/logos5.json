@@ -23,7 +23,7 @@
         ],
         "registryIds": []
     },
-    "figma": false,
+    "figma": true,
     "slug": "logos5",
     "collection": "block",
     "group": "logos",

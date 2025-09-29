@@ -1,43 +1,97 @@
 const items = [
   {
-    id: "next",
     title: "Next.js",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg",
+    image: (
+      <img
+        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg"
+        alt="next.js"
+        className="mt-2.5 max-h-12 lg:mt-0 dark:invert"
+      />
+    ),
   },
   {
-    id: "react",
     title: "React",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark.svg",
+    image: (
+      <img
+        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark.svg"
+        alt="react"
+        className="mt-2.5 max-h-9 lg:mt-0 lg:max-h-12"
+      />
+    ),
   },
   {
-    id: "shadcnui",
     title: "Shadcn/ui",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg",
+    image: (
+      <img
+        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
+        alt="shadcn/ui"
+        className="mt-2.5 max-h-5 lg:mt-0 lg:max-h-7 dark:invert"
+      />
+    ),
   },
   {
-    id: "supabase",
     title: "Supabase",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg",
+    image: (
+      <>
+        <img
+          src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg"
+          alt="supabase"
+          className="mt-2.5 max-h-6 lg:mt-0 lg:max-h-9 dark:hidden"
+        />
+        <img
+          src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-dark.svg"
+          alt="supabase"
+          className="mt-2.5 hidden max-h-6 lg:mt-0 lg:max-h-9 dark:block"
+        />
+      </>
+    ),
   },
   {
-    id: "tailwind",
-    title: "Tailwind",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg",
-  },
-  {
-    id: "vercel",
     title: "Vercel",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg",
+    image: (
+      <img
+        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg "
+        className="mt-2.5 max-h-5 lg:mt-0 lg:max-h-8 dark:invert"
+        alt="vercel"
+      />
+    ),
   },
   {
-    id: "astro",
+    title: "Tailwind",
+    image: (
+      <>
+        <img
+          src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-light.svg"
+          alt="tailwind"
+          className="mt-2.5 max-h-5 lg:mt-0 lg:max-h-6 dark:hidden"
+        />
+        <img
+          src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-dark.svg"
+          alt="tailwind"
+          className="mt-2.5 hidden max-h-5 lg:mt-0 lg:max-h-6 dark:block"
+        />
+      </>
+    ),
+  },
+  {
     title: "Astro",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg",
+    image: (
+      <img
+        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg"
+        alt="astro"
+        className="mt-2.5 max-h-7 lg:mt-0 lg:max-h-9 dark:invert"
+      />
+    ),
   },
   {
-    id: "figma",
-    title: "Figma",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-wordmark.svg",
+    title: "GitHub",
+    image: (
+      <img
+        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-wordmark.svg"
+        alt="github"
+        className="mt-2.5 max-h-6 lg:mt-0 lg:max-h-9 dark:invert"
+      />
+    ),
   },
 ];
 
@@ -45,22 +99,15 @@ const Feature53 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-4">
-          {items.map((item, i) => (
-            <div
-              key={item.id}
-              className="border-b border-l border-border py-4 even:border-r md:border-b-0 md:even:border-r-0 md:nth-[4n]:border-r"
-            >
-              <div className="relative flex min-h-[150px] flex-col md:mx-4 lg:min-h-[280px] lg:pl-8">
-                <p className="text-center font-mono text-xs md:text-left">
-                  <span>{String(i + 1).padStart(2, "0")}</span>
+        <div className="bg-border border-border grid grid-cols-2 gap-px border md:grid-cols-4">
+          {items.map((item, index) => (
+            <div key={index} className="bg-background">
+              <div className="relative mx-4 flex min-h-[150px] flex-col items-center justify-center lg:min-h-[280px]">
+                <p className="absolute left-0 top-4 font-mono text-xs">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
                   <span className="ml-2">{item.title}</span>
                 </p>
-                <img
-                  src={item.imageSrc}
-                  alt={item.title}
-                  className="absolute inset-0 m-auto max-h-12 max-w-[60%] object-contain object-center pt-5 md:max-w-[70%]"
-                />
+                {item.image}
               </div>
             </div>
           ))}

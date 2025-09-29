@@ -1,0 +1,50 @@
+{
+    "id": "download8",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "download8.jpg",
+    "thumbnail": "download8-4x3.webp",
+    "description": "This component displays a download block with a featured image, a title, an auto-detect download button with its last update date, and a list of download options for various platforms categorized in a 2-column layout.",
+    "createdAt": "2025-09-26T22:03:43.676Z",
+    "dependencies": [
+        "lucide-react",
+        "react-icons"
+    ],
+    "registryDependencies": [
+        {
+            "name": "glare-card.json",
+            "registryId": "aceternity",
+            "registryItemUrl": "https://ui.aceternity.com/registry/glare-card.json",
+            "docsUrl": "https://ui.aceternity.com/components/glare-card"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "download"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "aceternity",
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "download8",
+    "collection": "block",
+    "group": "download",
+    "code": "\"use client\";\n\nimport { Download } from \"lucide-react\";\nimport { FaApple, FaGooglePlay, FaLinux, FaWindows } from \"react-icons/fa\";\nimport { SiDebian } from \"react-icons/si\";\n\nimport { GlareCard } from \"@/components/aceternity/glare-card\";\nimport { Button } from \"@/components/ui/button\";\n\nconst downloadData = {\n  ios: [{ icon: FaApple, label: \"App Store\" }],\n  android: [\n    { icon: FaGooglePlay, label: \"Google Play\" },\n    { icon: Download, label: \"APK (Direct)\" },\n  ],\n  windows: [\n    { icon: FaWindows, label: \"Installer (.exe)\" },\n    { icon: Download, label: \"Portable (.zip)\" },\n  ],\n  mac: [\n    { icon: FaApple, label: \"DMG\" },\n    { icon: Download, label: \"Universal (.zip)\" },\n  ],\n  linux: [\n    { icon: FaLinux, label: \"AppImage\" },\n    { icon: SiDebian, label: \"Debian (.deb)\" },\n    { icon: Download, label: \"Tarball (.tar.gz)\" },\n  ],\n};\n\nconst Download8 = () => {\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"flex flex-col items-center justify-center gap-11\">\n          <div className=\"[&>div>div]:border-border [&>div]:aspect-square [&>div]:size-56 sm:[&>div]:size-64\">\n            <GlareCard className=\"bg-primary dark:bg-background flex flex-col items-center justify-center\">\n              <div className=\"absolute inset-0 flex h-full w-full items-center justify-center p-8\">\n                <img\n                  className=\"object-cover opacity-85 invert\"\n                  alt=\"\"\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg\"\n                />\n              </div>\n            </GlareCard>\n          </div>\n          <h1 className=\"text-4xl font-semibold sm:text-5xl\">\n            Shadcnblocks.com\n          </h1>\n        </div>\n        <div className=\"mt-11 flex flex-col items-center justify-center gap-4\">\n          <Button size=\"lg\">\n            Download (Auto Detect)\n            <Download />\n          </Button>\n          <p className=\"text-muted-foreground text-sm\">\n            Last updated September 23, 2025\n          </p>\n        </div>\n        <div className=\"mt-8\">\n          <div className=\"mx-auto max-w-2xl\">\n            <div className=\"border-border divide-border divide-y rounded-lg border\">\n              {Object.entries(downloadData).map(([platform, variants], idx) => (\n                <div key={idx} className=\"grid grid-cols-2 gap-4 px-4 py-3\">\n                  <span className=\"text-sm font-medium capitalize\">\n                    {platform}\n                  </span>\n                  <div className=\"flex flex-col gap-2\">\n                    {variants.map((variant, idx) => {\n                      const IconComponent = variant.icon;\n                      return (\n                        <Button\n                          key={idx}\n                          size=\"sm\"\n                          variant=\"outline\"\n                          className=\"flex cursor-pointer items-center\"\n                        >\n                          <IconComponent className=\"size-4\" />\n                          {variant.label}\n                        </Button>\n                      );\n                    })}\n                  </div>\n                </div>\n              ))}\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Download8 };\n"
+}

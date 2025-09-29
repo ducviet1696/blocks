@@ -1,0 +1,1 @@
+This component displays four services, each with an icon, title, description, and list of features, styled with rounded containers.

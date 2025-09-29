@@ -1,0 +1,1 @@
+Dynamic slideshow component with auto-rotating testimonials, accented by logos and avatars. Features accordion items for detailed views, automated progress bars, and a call-to-action button.

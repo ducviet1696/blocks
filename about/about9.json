@@ -1,0 +1,33 @@
+{
+    "id": "about9",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "about9.jpg",
+    "thumbnail": "about9-4x3.webp",
+    "description": "A component showcasing a professional summary, a large team photo, personal introduction, another photo, followed by a detailed work experience section.",
+    "createdAt": "2025-09-26T21:41:43.676Z",
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "about"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "about9",
+    "collection": "block",
+    "group": "about",
+    "code": "import React from \"react\";\n\nconst About9 = () => {\n  return (\n    <section className=\"py-16 md:py-32\">\n      <div className=\"container\">\n        <div className=\"max-w-6xl\">\n          <h1 className=\"mb-6 max-w-4xl text-3xl font-medium leading-tight tracking-tight md:text-4xl\">\n            Hi, were a team of developers with a passion for building scalable\n            and efficient web applications.\n          </h1>\n\n          <div className=\"mb-8 flex justify-center\">\n            <img\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nubelson-fernandes-tAJYoec13xk-unsplash.jpg\"\n              alt=\"Team at work\"\n              className=\"w-full rounded-sm object-cover\"\n            />\n          </div>\n\n          <div className=\"mx-auto mb-16 flex w-full max-w-6xl flex-col justify-between gap-12 md:flex-row\">\n            <div className=\"text-base font-medium\">\n              <span className=\"text-muted-foreground block\">\n                Full Stack Developer\n              </span>\n              <span className=\"text-foreground font-semibold\">\n                San Francisco CA\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/flags/united-states.png\"\n                  alt=\"United States\"\n                  className=\"h-4 w-4\"\n                />\n              </span>\n            </div>\n\n            <div className=\"mt-8 w-full md:mt-0 md:w-2/3\">\n              <p className=\"text-muted-foreground font-base w-full text-lg leading-[28px] md:w-3/4\">\n                I am a passionate and innovative Full Stack Developer with over\n                6 years of experience in building scalable web applications. My\n                journey began with a fascination for problem-solving and a deep\n                interest in emerging technologies.\n                <br />\n                <br />\n                Specializing in React, Node.js, and cloud technologies, I've\n                helped startups and enterprises build robust digital solutions.\n                From e-commerce platforms to SaaS applications, I focus on\n                creating user-centric experiences with clean, maintainable code\n                architecture.\n              </p>\n\n              <div className=\"mt-12\">\n                <img\n                  src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg\"\n                  alt=\"Work environment\"\n                  className=\"w-full rounded-sm object-cover\"\n                />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { About9 };\n"
+}

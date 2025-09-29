@@ -1,0 +1,54 @@
+{
+    "id": "testimonial30",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "testimonial30.jpg",
+    "thumbnail": "testimonial30-4x3.webp",
+    "description": "Dynamic slideshow component with auto-rotating testimonials, accented by logos and avatars. Features accordion items for detailed views, automated progress bars, and a call-to-action button.",
+    "createdAt": "2025-09-26T22:28:43.676Z",
+    "dependencies": [
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "accordion",
+            "registryId": "shadcn",
+            "registryItemUrl": "accordion",
+            "docsUrl": "https://ui.shadcn.com/docs/components/accordion"
+        },
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        },
+        {
+            "name": "progress",
+            "registryId": "shadcn",
+            "registryItemUrl": "progress",
+            "docsUrl": "https://ui.shadcn.com/docs/components/progress"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "testimonial"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "testimonial30",
+    "collection": "block",
+    "group": "testimonial",
+    "code": "\"use client\";\n\nimport { useCallback, useEffect, useRef, useState } from \"react\";\n\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\";\nimport { Button } from \"@/components/ui/button\";\nimport { Progress } from \"@/components/ui/progress\";\n\nconst testimonials = [\n  {\n    company: \"Descript\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/icons/descript.svg\",\n    wordmark: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg\",\n    author: \"Samantha Lee\",\n    role: \"Productivity Coach, Descript\",\n    avatar:\n      \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/portraits/alexander-hipp-iEEBWgY_6lA-unsplash.jpg\",\n    quote:\n      \"\u201cThis product transformed my daily routine. The intuitive task management and reminders keep me on track like never before.\u201d\",\n    outcome: (\n      <p className=\"text-muted-foreground\">\n        Completed{\" \"}\n        <span className=\"text-foreground font-medium\">\n          12 major projects in 2 months\n        </span>\n      </p>\n    ),\n  },\n  {\n    company: \"Ramp\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/icons/ramp.svg\",\n    wordmark: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg\",\n    author: \"Carlos Rivera\",\n    role: \"Freelance Designer, Ramp\",\n    avatar:\n      \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/portraits/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg\",\n    quote:\n      \"\u201cWith this tool, I finally have a clear overview of my deadlines. The calendar sync is a game changer for my workflow.\u201d\",\n    outcome: (\n      <p className=\"text-muted-foreground\">\n        Increased productivity by{\" \"}\n        <span className=\"text-foreground font-medium\">40% in one quarter</span>\n      </p>\n    ),\n  },\n  {\n    company: \"Watershed\",\n    logo: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/icons/watershed.svg\",\n    wordmark: \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg\",\n    author: \"Priya Patel\",\n    role: \"Operations Lead, watershed\",\n    avatar:\n      \"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/portraits/nima-motaghian-nejad-_omdf_EgRUo-unsplash.jpg\",\n    quote:\n      \"\u201cThe meeting notes and summaries feature saves me hours every week. I can focus on what matters instead of paperwork, thanks to this product.\u201d\",\n    outcome: (\n      <p className=\"text-muted-foreground\">\n        Saved over 30 hours,{\" \"}\n        <span className=\"text-foreground font-medium\">\n          reduced admin time by 60%\n        </span>\n      </p>\n    ),\n  },\n];\n\nconst Testimonial30 = () => {\n  const [currentIndex, setCurrentIndex] = useState(0);\n  const [progress, setProgress] = useState(0);\n  const timerRef = useRef<NodeJS.Timeout | null>(null);\n\n  const startTimer = useCallback(() => {\n    if (timerRef.current) {\n      clearInterval(timerRef.current);\n    }\n\n    timerRef.current = setInterval(() => {\n      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);\n      setProgress(0);\n    }, 5000);\n  }, []);\n\n  useEffect(() => {\n    startTimer();\n\n    return () => {\n      if (timerRef.current) {\n        clearInterval(timerRef.current);\n      }\n    };\n  }, [startTimer]);\n\n  useEffect(() => {\n    const progressInterval = setInterval(() => {\n      setProgress((prevProgress) => {\n        if (prevProgress >= 100) {\n          return 0;\n        }\n        return prevProgress + 2;\n      });\n    }, 100);\n\n    return () => clearInterval(progressInterval);\n  }, [currentIndex]);\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mb-12 flex flex-col items-start justify-between gap-6 md:flex-row md:items-center\">\n          <h1 className=\"text-3xl font-semibold md:text-4xl\">\n            Loved by productivity enthusiasts\n          </h1>\n          <Button variant=\"outline\">Read user reviews</Button>\n        </div>\n        <Accordion\n          type=\"single\"\n          collapsible\n          value={currentIndex.toString()}\n          onValueChange={(value) => {\n            if (value) {\n              const index = parseInt(value);\n              setCurrentIndex(index);\n              setProgress(0);\n              startTimer();\n            }\n          }}\n        >\n          {testimonials.map((testimonial, index) => (\n            <AccordionItem\n              key={index}\n              value={index.toString()}\n              className=\"items-center\"\n            >\n              <AccordionTrigger className=\"hover:no-underline\">\n                <div className=\"flex flex-1 items-center gap-4\">\n                  <div className=\"max-w-3xs flex flex-1 items-center gap-4\">\n                    <span className=\"bg-primary flex size-8 items-center justify-center rounded-lg\">\n                      <img\n                        src={testimonial.logo}\n                        alt={testimonial.company}\n                        className=\"h-4 invert dark:invert-0\"\n                      />\n                    </span>\n                    <p className=\"text-lg font-medium tracking-tight\">\n                      {testimonial.company}\n                    </p>\n                  </div>\n                  <div className=\"hidden text-base font-normal md:block\">\n                    {testimonial.outcome}\n                  </div>\n                </div>\n              </AccordionTrigger>\n              <AccordionContent className=\"flex flex-col gap-12 px-0 py-4 md:flex-row md:items-center md:py-9 lg:px-12\">\n                <img\n                  src={testimonial.avatar}\n                  alt={testimonial.author}\n                  width={208}\n                  height={208}\n                  className=\"aspect-square max-w-52 rounded-lg object-cover\"\n                />\n                <div className=\"flex flex-1 flex-col items-start\">\n                  <img\n                    src={testimonial.wordmark}\n                    alt={testimonial.company}\n                    className=\"h-6 dark:invert\"\n                  />\n                  <p className=\"text-foreground font-hedvigLettersSerif mt-6 max-w-2xl text-2xl\">\n                    {testimonial.quote}\n                  </p>\n                  <div className=\"flex w-full justify-between\">\n                    <div>\n                      <p className=\"mt-3 text-lg text-sm font-medium\">\n                        {testimonial.author}\n                      </p>\n                      <p className=\"text-muted-foreground text-xs\">\n                        {testimonial.role}\n                      </p>\n                    </div>\n                    <Progress value={progress} className=\"h-1 w-16 self-end\" />\n                  </div>\n                </div>\n              </AccordionContent>\n            </AccordionItem>\n          ))}\n        </Accordion>\n      </div>\n    </section>\n  );\n};\n\nexport { Testimonial30 };\n"
+}

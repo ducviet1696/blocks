@@ -1,0 +1,1 @@
+A component displaying a title, subtitle, and a CTA button, surrounded by logos arranged in a semi-circle, with a gradient background.

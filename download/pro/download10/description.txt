@@ -1,0 +1,1 @@
+A component promoting software downloads, subdivided into 3 columns for Desktop, Mobile, and Web versions with respective download options.

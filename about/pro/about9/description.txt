@@ -1,0 +1,1 @@
+A component showcasing a professional summary, a large team photo, personal introduction, another photo, followed by a detailed work experience section.

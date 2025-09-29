@@ -1,0 +1,33 @@
+{
+    "id": "services6",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "services6.jpg",
+    "thumbnail": "services6-4x3.webp",
+    "description": "A component showcasing 4 services with icons, titles, descriptions, and items in a 1-2-4 column layout, featuring hover effects.",
+    "createdAt": "2025-07-01T03:41:07.509Z",
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "services"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "services6",
+    "collection": "block",
+    "group": "services",
+    "code": "\"use client\";\n\nimport { Code, Cog, PenTool, Shrub } from \"lucide-react\";\n\nconst Services6 = () => {\n  const services = [\n    {\n      icon: <Cog className=\"h-8 w-8\" />,\n      title: \"Product Strategy\",\n      description:\n        \"From market research to user personas, we help you build products that matter.\",\n      items: [\"Market Research\", \"User Personas\"],\n    },\n    {\n      icon: <PenTool className=\"h-8 w-8\" />,\n      title: \"Design\",\n      description:\n        \"Beautiful, functional designs that create memorable user experiences.\",\n      items: [\"UI/UX Design\", \"Prototyping\", \"Interaction Design\"],\n    },\n    {\n      icon: <Code className=\"h-8 w-8\" />,\n      title: \"Web Development\",\n      description:\n        \"Robust, scalable applications built with modern technologies and frameworks.\",\n      items: [\"Frontend Dev\", \"Backend Dev\"],\n    },\n    {\n      icon: <Shrub className=\"h-8 w-8\" />,\n      title: \"Marketing\",\n      description:\n        \"Strategic growth initiatives to scale your product and maximize impact.\",\n      items: [\"SEO Strategy\", \"Analytics & Data\", \"A/B Testing\"],\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-6xl space-y-16\">\n          <div className=\"space-y-4 text-center\">\n            <h2 className=\"text-3xl font-semibold tracking-tight md:text-4xl\">\n              Services\n            </h2>\n            <p className=\"text-muted-foreground mx-auto max-w-2xl text-lg tracking-tight md:text-xl\">\n              We deliver end-to-end digital solutions that drive results and\n              exceed expectations.\n            </p>\n          </div>\n\n          <div className=\"grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4\">\n            {services.map((service, index) => (\n              <div key={index} className=\"group space-y-6 text-center\">\n                <div className=\"bg-muted group-hover:bg-foreground group-hover:text-background mx-auto flex h-16 w-16 items-center justify-center rounded-full transition-colors\">\n                  {service.icon}\n                </div>\n                <div className=\"space-y-3\">\n                  <h3 className=\"text-lg font-semibold\">{service.title}</h3>\n                  <p className=\"text-muted-foreground text-sm leading-relaxed\">\n                    {service.description}\n                  </p>\n                </div>\n                <div className=\"space-y-2\">\n                  {service.items.map((item, itemIndex) => (\n                    <div\n                      key={itemIndex}\n                      className=\"text-muted-foreground text-xs font-medium\"\n                    >\n                      {item}\n                    </div>\n                  ))}\n                </div>\n              </div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Services6 };\n"
+}

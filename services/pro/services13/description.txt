@@ -1,0 +1,1 @@
+A component featuring services with a dynamic layout. It has a title, text, and a button, followed by cards for each service with hover effects. The layout shifts from single to multiple columns.

@@ -11,7 +11,7 @@ const Testimonial3 = () => {
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
               alt="shadcn"
-              className="h-7"
+              className="h-5 dark:invert"
             />
             <p className="font-medium">John Doe, Founder & CEO of Company</p>
           </div>

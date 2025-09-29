@@ -1,0 +1,1 @@
+A dismissible banner with a promotional message, vertical separator, and "Learn More" link. Features a close button.

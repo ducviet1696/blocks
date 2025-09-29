@@ -1,0 +1,1 @@
+A component showcasing digital services in a masonry layout with 1-3 columns, variable heights, and hover effects. Includes a title, description, and a view-all button.

@@ -1,0 +1,49 @@
+{
+    "id": "careers9",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "careers9.jpg",
+    "thumbnail": "careers9-4x3.webp",
+    "description": "A component listing job openings with department, role, location, and a link, featuring a heading, introduction, and a call-to-action for unsolicited applications.",
+    "createdAt": "2025-09-26T21:45:43.676Z",
+    "dependencies": [
+        "lucide-react",
+        "react"
+    ],
+    "registryDependencies": [
+        {
+            "name": "badge",
+            "registryId": "shadcn",
+            "registryItemUrl": "badge",
+            "docsUrl": "https://ui.shadcn.com/docs/components/badge"
+        },
+        {
+            "name": "separator",
+            "registryId": "shadcn",
+            "registryItemUrl": "separator",
+            "docsUrl": "https://ui.shadcn.com/docs/components/separator"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "careers"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "careers9",
+    "collection": "block",
+    "group": "careers",
+    "code": "import { ArrowRight } from \"lucide-react\";\nimport React from \"react\";\n\nimport { Badge } from \"@/components/ui/badge\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst jobs = [\n  {\n    department: \"Engineering\",\n    role: \"Senior Full Stack Developer\",\n    location: \"Remote\",\n    link: \"#\",\n  },\n  {\n    department: \"Product\",\n    role: \"Product Manager\",\n    location: \"Hybrid\",\n    link: \"#\",\n  },\n  {\n    department: \"Design\",\n    role: \"UI/UX Designer\",\n    location: \"Remote\",\n    link: \"#\",\n  },\n  {\n    department: \"Data\",\n    role: \"Data Scientist\",\n    location: \"On-site\",\n    link: \"#\",\n  },\n  {\n    department: \"Marketing\",\n    role: \"Growth Marketing Specialist\",\n    location: \"Remote\",\n    link: \"#\",\n  },\n];\n\nconst Careers9 = () => {\n  return (\n    <section className=\"from-background to-muted/20 bg-gradient-to-b py-24\">\n      <div className=\"container max-w-6xl\">\n        <div className=\"mb-16 text-center\">\n          <h2 className=\"text-4xl font-bold md:text-5xl\">Current Openings</h2>\n          <p className=\"text-muted-foreground mx-auto mt-4 max-w-2xl text-lg\">\n            Join our team and help shape the future. We're looking for\n            passionate people who are excited to tackle challenging problems and\n            build amazing products.\n          </p>\n        </div>\n        <div className=\"hidden grid-cols-1 items-center gap-1.5 py-6 text-xs uppercase sm:grid sm:grid-cols-4 sm:gap-10\">\n          <span className=\"text-muted-foreground\">DEPARTMENT</span>\n          <span className=\"text-muted-foreground col-span-2\">ROLE</span>\n          <span className=\"text-muted-foreground uppercase\">LOCATION</span>\n        </div>\n        <Separator />\n        {jobs.map((job, idx) => (\n          <React.Fragment key={idx}>\n            <a\n              href={job.link}\n              className=\"group relative grid grid-cols-1 items-center gap-1.5 py-6 sm:grid-cols-4 sm:gap-10\"\n            >\n              <Badge variant=\"outline\">{job.department}</Badge>\n              <span className=\"col-span-2 text-lg font-semibold\">\n                {job.role}\n              </span>\n              <div className=\"flex items-center justify-between gap-2\">\n                <span className=\"text-muted-foreground\">{job.location}</span>\n                <ArrowRight className=\"text-muted-foreground group-hover:text-primary size-4.5 absolute right-6 top-6 transition-all duration-300 group-hover:translate-x-1 sm:static\" />\n              </div>\n            </a>\n            <Separator />\n          </React.Fragment>\n        ))}\n        <div className=\"mt-12 text-center\">\n          <p className=\"text-muted-foreground mb-4\">\n            Don't see a role that fits? We're always looking for great talent.\n          </p>\n          <a\n            href=\"#contact\"\n            className=\"text-primary hover:text-primary/80 inline-flex items-center gap-2 font-medium transition-colors\"\n          >\n            Send us your resume\n            <ArrowRight className=\"mt-0.5 size-4\" />\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Careers9 };\n"
+}

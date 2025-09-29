@@ -1,0 +1,40 @@
+{
+    "id": "hero49",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "hero49.jpg",
+    "thumbnail": "hero49-4x3.webp",
+    "description": "A component featuring a centered title, description, and a button, alongside a mockup of a mobile device displaying an image. It includes a three-column layout with text elements and a graphical representation of an app interface.",
+    "createdAt": "2025-09-26T22:12:43.676Z",
+    "dependencies": [],
+    "registryDependencies": [
+        {
+            "name": "button",
+            "registryId": "shadcn",
+            "registryItemUrl": "button",
+            "docsUrl": "https://ui.shadcn.com/docs/components/button"
+        }
+    ],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "hero"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Sep 2025"
+        ],
+        "registryIds": [
+            "shadcn"
+        ]
+    },
+    "figma": false,
+    "slug": "hero49",
+    "collection": "block",
+    "group": "hero",
+    "code": "import { Button } from \"@/components/ui/button\";\n\nconst Hero49 = () => {\n  return (\n    <section className=\"bg-background\">\n      <div className=\"container mx-auto flex flex-col items-center px-4 pt-10\">\n        <div className=\"flex max-w-3xl flex-col items-center gap-8 text-center\">\n          <h1 className=\"text-foreground text-5xl font-semibold lg:text-8xl\">\n            Master your monetary matters\n          </h1>\n          <p className=\"text-4 text-muted-foreground max-w-xl leading-[165%] tracking-tight\">\n            Minimize financial stress and build wealth with our intuitive,\n            AI-enhanced budgeting tool. Our platform analyzes your spending and\n            offers insights for smarter financial decisions.\n          </p>\n          <Button className=\"flex h-fit w-fit items-center gap-[8px] rounded-full px-8 py-5 text-base font-medium transition-all hover:scale-95\">\n            <img\n              alt=\"google play and app store download icons\"\n              loading=\"lazy\"\n              width=\"44\"\n              height=\"18\"\n              decoding=\"async\"\n              data-nimg=\"1\"\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/hero49/download.svg\"\n            />\n            <p>Get started now</p>\n          </Button>\n        </div>\n        <div className=\"relative translate-x-[14.7%]\">\n          {/* Image inside Iphone */}\n          <div className=\"left-[36.5%]! h-[67%]! w-[31%]! bg-muted absolute top-[12%] -translate-x-[52%] overflow-hidden rounded-[10px]\">\n            <img\n              className=\"min-h-full min-w-full\"\n              src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg\"\n              alt=\"\"\n            />\n          </div>\n          {/* Iphone Image  */}\n          <img\n            alt=\"\"\n            src=\"https://deifkwefumgah.cloudfront.net/shadcnblocks/block/hero49/iphone.png\"\n            className=\"relative z-10\"\n            loading=\"lazy\"\n            width=\"1008.71\"\n            height=\"857\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Hero49 };\n"
+}

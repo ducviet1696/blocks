@@ -1,0 +1,1 @@
+A component showcasing 4 services with icons, titles, descriptions, and items in a 1-2-4 column layout, featuring hover effects.

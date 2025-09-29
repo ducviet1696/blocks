@@ -1,0 +1,1 @@
+A component displaying a list of top contributors with images, titles, and descriptions. Includes a header with a "View all" button.

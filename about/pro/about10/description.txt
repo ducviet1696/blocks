@@ -1,0 +1,1 @@
+A component showcasing a professional profile with an avatar, contact link, biography, core philosophy, workspace image, and a tools list. Layout includes a sticky sidebar and a main content area with two-thirds width.

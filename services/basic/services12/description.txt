@@ -1,0 +1,1 @@
+A component displaying featured services in a grid layout with a description panel, offering dynamic interaction for each service card.

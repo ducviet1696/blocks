@@ -1,0 +1,1 @@
+A component showcasing career progression with two sections for experience and achievements, each detailed in a 3-column layout, interconnected with separators.

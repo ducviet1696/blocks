@@ -1,0 +1,1 @@
+A component showcasing app download options with a bold title, a badge, and stylized placeholders for 3 phones, arranged dynamically by screen width.

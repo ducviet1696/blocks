@@ -1,0 +1,33 @@
+{
+    "id": "services3",
+    "access": "pro",
+    "weight": 999,
+    "disabled": false,
+    "draft": false,
+    "screenshot": "services3.jpg",
+    "thumbnail": "services3-4x3.webp",
+    "description": "A component displaying four service categories, each with an icon, title, and list of services in a three-column layout.",
+    "createdAt": "2025-07-01T03:41:02.595Z",
+    "dependencies": [
+        "lucide-react"
+    ],
+    "registryDependencies": [],
+    "attrs": {
+        "type": "block",
+        "group": [
+            "services"
+        ],
+        "price": [
+            "pro"
+        ],
+        "release": [
+            "Jul 2025"
+        ],
+        "registryIds": []
+    },
+    "figma": false,
+    "slug": "services3",
+    "collection": "block",
+    "group": "services",
+    "code": "\"use client\";\n\nimport { Code, Cog, PenTool, Shrub } from \"lucide-react\";\n\nconst Services3 = () => {\n  const services = [\n    {\n      icon: <Cog className=\"h-5 w-5\" />,\n      title: \"Product Strategy\",\n      items: [\"Market Research\", \"User Personas\"],\n    },\n    {\n      icon: <PenTool className=\"h-5 w-5\" />,\n      title: \"Design\",\n      items: [\"UI/UX Design\", \"Prototyping\", \"Interaction Design\"],\n    },\n    {\n      icon: <Code className=\"h-5 w-5\" />,\n      title: \"Web Development\",\n      items: [\"Frontend Dev\", \"Backend Dev\"],\n    },\n    {\n      icon: <Shrub className=\"h-5 w-5\" />,\n      title: \"Marketing\",\n      items: [\"SEO Strategy\", \"Analytics & Data\", \"A/B Testing\"],\n    },\n  ];\n\n  return (\n    <section className=\"py-32\">\n      <div className=\"container\">\n        <div className=\"mx-auto max-w-2xl space-y-12\">\n          <div className=\"space-y-4\">\n            <h2 className=\"text-start text-xl font-semibold tracking-tight md:text-3xl\">\n              Services\n            </h2>\n            <p className=\"text-muted-foreground text-start text-lg tracking-tight md:text-xl\">\n              We craft digital experiences that captivate and convert.\n            </p>\n          </div>\n\n          <div className=\"space-y-10\">\n            {services.map((service, index) => (\n              <div\n                key={index}\n                className=\"border-border grid grid-cols-3 border-b pb-6\"\n              >\n                <div className=\"flex items-center gap-4\">\n                  {service.icon}\n                  <h2 className=\"text-base font-medium\">{service.title}</h2>\n                </div>\n                <div />\n                <div className=\"text-muted-foreground item-end flex flex-col gap-1 text-sm\">\n                  {service.items.map((item, itemIndex) => (\n                    <p key={itemIndex}>{item}</p>\n                  ))}\n                </div>\n              </div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport { Services3 };\n"
+}

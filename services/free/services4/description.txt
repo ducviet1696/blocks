@@ -1,0 +1,1 @@
+A component displaying services in a 2-column grid, detailing 4 services with icons, titles, descriptions, and bullet points. Features hover effects and a central header.

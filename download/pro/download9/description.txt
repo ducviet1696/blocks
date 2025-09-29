@@ -1,0 +1,1 @@
+A component for software downloads showcases features, buy/download options, platform compatibility icons in 2 columns.

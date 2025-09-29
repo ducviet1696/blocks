@@ -9,7 +9,7 @@ const Hero6 = () => {
         <div className="mx-auto flex max-w-5xl flex-col items-center">
           <div className="z-10 flex flex-col items-center gap-8 text-center">
             <div className="max-w-3xl">
-              <h1 className="mb-4 text-4xl font-semibold text-pretty lg:text-6xl">
+              <h1 className="mb-4 text-pretty text-4xl font-semibold lg:text-6xl">
                 Build your next project with Blocks
               </h1>
               <p className="text-muted-foreground lg:text-xl">
@@ -21,53 +21,58 @@ const Hero6 = () => {
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
               <Button>
                 Get started now
-                <ChevronRight className="ml-2 h-4" />
+                <ChevronRight className="h-4" />
               </Button>
               <Button variant="ghost">
                 Learn more
-                <ChevronRight className="ml-2 h-4" />
+                <ChevronRight className="h-4" />
               </Button>
             </div>
           </div>
         </div>
-        <div className="mx-auto mt-20 max-w-7xl grid-cols-5 md:grid">
+        <div className="bg-border mx-auto mt-20 grid max-w-7xl gap-px p-px md:grid-cols-5">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
             alt="placeholder"
-            className="col-span-3 h-full max-h-[500px] w-full object-cover"
+            className="h-full max-h-[500px] w-full object-cover md:col-span-3 dark:invert"
           />
-          <div className="relative col-span-2">
+          <div className="relative md:col-span-2">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
               alt="placeholder"
-              className="h-full max-h-[500px] w-full border-t object-cover md:border-l lg:border-t-0"
+              className="h-full max-h-[500px] w-full object-cover dark:invert"
             />
-            <Button variant="outline" className="absolute right-5 bottom-5">
+            <Button variant="outline" className="absolute bottom-5 right-5">
               Learn more
-              <ChevronRight className="ml-2 h-4" />
+              <ChevronRight className="h-4" />
             </Button>
           </div>
         </div>
-        <div className="mx-auto mt-12 flex max-w-7xl flex-wrap items-center justify-between gap-6">
+        <div className="mx-auto mt-12 grid max-w-7xl grid-cols-2 place-items-center gap-6 md:grid-cols-4">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
             alt="logo"
-            className="h-6 sm:h-8"
+            className="h-5 sm:h-7 dark:invert"
           />
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg"
             alt="logo"
-            className="h-8 sm:h-10"
+            className="h-9 sm:h-11 dark:invert"
           />
           <img
-            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-light.svg"
             alt="logo"
-            className="h-4 sm:h-6"
+            className="h-4 sm:h-6 dark:hidden"
+          />
+          <img
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-dark.svg"
+            alt="logo"
+            className="hidden h-4 sm:h-6 dark:block"
           />
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg"
             alt="logo"
-            className="h-8 sm:h-10"
+            className="h-6 sm:h-7 dark:invert"
           />
         </div>
       </div>

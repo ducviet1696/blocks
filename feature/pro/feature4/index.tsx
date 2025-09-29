@@ -12,7 +12,7 @@ const Feature4 = () => {
     <section className="py-32">
       <div className="container">
         <div className="mx-auto xl:px-36">
-          <h1 className="mx-auto mb-16 max-w-xl text-center text-4xl font-semibold text-pretty lg:text-5xl">
+          <h1 className="mx-auto mb-16 max-w-xl text-pretty text-center text-4xl font-semibold lg:text-5xl">
             Get your team on the same page, literally
           </h1>
 
@@ -25,7 +25,7 @@ const Feature4 = () => {
                 <h2 className="mb-1 text-lg font-semibold">
                   Collaborate or co-edit together
                 </h2>
-                <p className="leading-snug text-muted-foreground">
+                <p className="text-muted-foreground leading-snug">
                   Allow others to comment or suggest edits. Just type the @ key
                   to get their attention.
                 </p>
@@ -45,11 +45,11 @@ const Feature4 = () => {
                 </CardHeader>
                 <CardContent className="text-left">
                   <h2 className="mb-1 text-lg font-semibold">Card Title</h2>
-                  <p className="leading-snug text-muted-foreground">
+                  <p className="text-muted-foreground leading-snug">
                     Lorem ipsum dolor sit amet consectetur.
                   </p>
                 </CardContent>
-                <CardFooter className="justify-end pr-0 pb-0">
+                <CardFooter className="justify-end pb-0 pr-0">
                   <img
                     className="h-full max-h-96 w-full rounded-tl-md object-cover object-center"
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
@@ -60,9 +60,9 @@ const Feature4 = () => {
               <Card className="flex w-full flex-col justify-between gap-10 md:gap-20">
                 <CardHeader className="items-start pb-1">
                   <img
-                    className="h-8"
+                    className="h-6 dark:invert"
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
-                    alt=""
+                    alt="logo"
                   />
                 </CardHeader>
                 <CardContent className="text-left">

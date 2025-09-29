@@ -1,0 +1,1 @@
+A component showcasing a business service with a catchy headline, description, upgrade button, overlapped avatars indicating user trust, and a side image.

@@ -1,20 +1,21 @@
 import { ArrowRight } from "lucide-react";
 
+import { BorderBeam } from "@/components/magicui/border-beam";
 import { Button } from "@/components/ui/button";
 
 const Hero143 = () => {
   return (
-    <section className="dark relative overflow-hidden bg-background py-12 font-sans md:py-20">
-      <div className="relative z-20 container max-w-[51.125rem]">
+    <section className="bg-background dark relative overflow-hidden py-12 font-sans md:py-20">
+      <div className="container relative z-20 max-w-[51.125rem]">
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center gap-8 px-4 pt-52 pb-32 md:pb-52">
+          <div className="flex flex-col items-center gap-8 px-4 pb-32 pt-52 md:pb-52">
             <div className="max-w-[25rem] sm:max-w-[33.75rem]">
-              <h1 className="text-center text-4xl leading-tight font-semibold text-foreground [text-shadow:0_4px_4px_rgba(0,0,0,0.15)] sm:text-5xl md:text-[4rem]">
+              <h1 className="text-foreground text-center text-4xl font-semibold leading-tight [text-shadow:0_4px_4px_rgba(0,0,0,0.15)] sm:text-5xl md:text-[4rem]">
                 Your fast track to everything.
               </h1>
             </div>
             <div className="max-w-[22.5rem] md:max-w-full">
-              <p className="text-center text-sm leading-normal tracking-tight text-balance text-muted-foreground [text-shadow:0_4px_4px_rgba(0,0,0,0.25)] md:text-lg">
+              <p className="text-muted-foreground text-balance text-center text-sm leading-normal tracking-tight [text-shadow:0_4px_4px_rgba(0,0,0,0.25)] md:text-lg">
                 A suite of robust productivity tools packed into an adaptable
                 launcher—quick, intuitive, and dependable.
               </p>
@@ -24,7 +25,7 @@ const Hero143 = () => {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button
                 asChild
-                className="inline-flex h-fit w-full items-center justify-center gap-2 rounded-lg border px-3 py-2 text-sm leading-snug font-medium tracking-tight text-nowrap sm:w-fit"
+                className="inline-flex h-fit w-full items-center justify-center gap-2 text-nowrap rounded-lg border px-3 py-2 text-sm font-medium leading-snug tracking-tight sm:w-fit"
               >
                 <a href="#">
                   <svg
@@ -45,7 +46,7 @@ const Hero143 = () => {
               <Button
                 asChild
                 variant="outline"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-linear-to-b from-white/5 to-white/15 px-3 py-2 text-sm leading-snug font-medium tracking-tight text-nowrap text-white transition-colors hover:border-white/40 sm:w-fit"
+                className="bg-linear-to-b inline-flex w-full items-center justify-center gap-2 text-nowrap rounded-lg border border-white/20 from-white/5 to-white/15 px-3 py-2 text-sm font-medium leading-snug tracking-tight text-white transition-colors hover:border-white/40 sm:w-fit"
               >
                 <a href="#">
                   <svg
@@ -64,7 +65,7 @@ const Hero143 = () => {
                 </a>
               </Button>
             </div>
-            <div className="font-geist flex gap-6 text-xs text-muted-foreground">
+            <div className="font-geist text-muted-foreground flex gap-6 text-xs">
               <span>v1.87.5</span>
               <span className="relative before:absolute before:-left-3 before:content-['|']">
                 macOS 12+
@@ -74,18 +75,17 @@ const Hero143 = () => {
               </span>
             </div>
           </div>
-          <div className="group relative mt-10 h-8 overflow-hidden rounded-full p-px shadow-[0_0_25px_0_var(--color-gray-900)] transition-all after:absolute after:top-1/2 after:left-1/2 after:aspect-square after:w-full after:origin-center after:-translate-x-1/2 after:-translate-y-1/2 after:animate-[gradient-spin_2.5s_ease-in-out_infinite] after:transition-all after:content-[''] after:[background:conic-gradient(transparent_0%,var(--color-red-400)_20%,transparent_10%),var(--color-red-950)] hover:shadow-[0_0_25px_0_var(--color-red-950)] hover:after:[background:conic-gradient(transparent_0%,var(--color-red-400)_20%,transparent_10%),var(--color-red-900)]">
-            <a
-              href="#"
-              className="relative z-10 flex h-full w-full items-center gap-3 rounded-full bg-background px-3 py-1 text-sm font-medium text-white"
-            >
-              <div>Download on iOS</div>
-              <div className="flex items-center gap-1 text-muted-foreground">
-                <div>Join waitlist</div>
-                <ArrowRight className="h-4 w-4 stroke-muted-foreground" />
-              </div>
-            </a>
-          </div>
+          <a
+            href="#"
+            className="bg-background border-border/50 group relative mt-10 flex h-8 items-center gap-3 overflow-hidden rounded-full border px-3 py-1 text-sm font-medium text-white"
+          >
+            <span>Download on iOS</span>
+            <span className="text-muted-foreground flex items-center gap-1">
+              <span>Join waitlist</span>
+              <ArrowRight className="stroke-muted-foreground h-4 w-4" />
+            </span>
+            <BorderBeam colorFrom="#fca5a5" colorTo="#ef4444" duration={3} />
+          </a>
         </div>
       </div>
       <div className="absolute -top-24 z-10 h-full w-full before:absolute before:inset-0 before:size-full before:bg-[radial-gradient(circle_at_center,rgba(10,10,10,.3)_15%,rgba(10,10,10,1)_45%)] before:content-['']">

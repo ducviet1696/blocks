@@ -1,0 +1,1 @@
+A component featuring a centered title, description, and a button, alongside a mockup of a mobile device displaying an image. It includes a three-column layout with text elements and a graphical representation of an app interface.

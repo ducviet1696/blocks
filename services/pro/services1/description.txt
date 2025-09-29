@@ -1,0 +1,1 @@
+A component displaying services in 1-2 columns, each service with a title, description, and list of features marked by check icons.

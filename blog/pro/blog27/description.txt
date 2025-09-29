@@ -1,0 +1,1 @@
+A component displaying blog articles with filters, featuring a breadcrumb navigator, an email form, and a "Load More" button, arranged in up to three columns.

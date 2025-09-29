@@ -1,0 +1,1 @@
+A contact form component with 2 columns; one for form input, including text and select fields, and another for process steps and company logos. Includes FAQs and resources links.

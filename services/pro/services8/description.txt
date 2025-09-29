@@ -1,0 +1,1 @@
+An interactive component lists services with accordions, including icons, titles, and descriptions. Features 2-column grid for in-depth details.
